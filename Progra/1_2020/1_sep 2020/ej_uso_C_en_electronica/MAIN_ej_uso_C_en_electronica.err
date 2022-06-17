@@ -1,0 +1,5 @@
+Compiling F:\OneDrive - Soluciones Marva\DevC\1_sep 2020\ej_uso_C_en_electronica\MAIN_ej_uso_C_en_electronica on 08-dic.-20 at 12:52
+>>> Warning 203 "F:\OneDrive - Soluciones Marva\DevC\1_sep 2020\ej_uso_C_en_electronica\MAIN_ej_uso_C_en_electronica.c" Line 24(1,1): Condition always TRUE
+      Memory usage:   ROM=1%      RAM=0% - 0%
+      0 Errors,  1 Warnings.
+Build Successful.

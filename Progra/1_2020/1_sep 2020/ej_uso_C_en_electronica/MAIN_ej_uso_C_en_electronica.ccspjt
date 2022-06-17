@@ -1,0 +1,47 @@
+[defines]
+buildcount=20
+
+[Opened Files]
+1=MAIN_ej_uso_C_en_electronica.c
+t1=24
+2=C:\Program Files (x86)\PICC\Devices\18F4550.h
+t2=101
+Count=2
+3=..\..\..\proyectos de pics\Control_AC_Cruce_cero\Main_principal.c
+t3=41
+[PROJECT]
+Target=MAIN_ej_uso_C_en_electronica.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.093
+Compiler=PCH
+[Target Data]
+FileList=MAIN_ej_uso_C_en_electronica.c
+[MAIN_ej_uso_C_en_electronica.c]
+Type=4
+[mru-list]
+1=MAIN_ej_uso_C_en_electronica.c
+
+[ProjectLog]
+Days=2
+D1=07-12-2020
+D1_L=2
+D1_L1=[32411]Stopped Editing.
+TotalEdit=32
+TotalDebug=0
+D1_E=15
+D1_D=0
+D1_L2=[33068]Project Closed.
+D2=08-12-2020
+D2_L=4
+D2_L1=[45332]Project Opened.
+D2_L2=[45431]Started Editing.
+D2_L3=[46416]Stopped Editing.
+D2_E=17
+D2_D=0
+D2_L4=[46416]Project Closed.
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=MAIN_ej_uso_C_en_electronica (main)

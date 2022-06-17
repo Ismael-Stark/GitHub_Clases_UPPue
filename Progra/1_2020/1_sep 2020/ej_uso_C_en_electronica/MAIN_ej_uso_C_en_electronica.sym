@@ -1,0 +1,68 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+005     main.x
+006     main.i
+007     main.@SCRATCH1
+008     @delay_ms1.P1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  @delay_ms1
+000030  @cinit1
+000030  main
+000040  @cinit2
+
+Project Directory:
+    F:\OneDrive - Soluciones Marva\DevC\1_sep 2020\ej_uso_C_en_electronica\
+
+Project Files:
+    MAIN_ej_uso_C_en_electronica.c                          [08-dic.-20 12:52  CRC=D36D01B8]
+    C:\Program Files (x86)\PICC\Devices\18F4550.h           [21-feb.-20 15:51  CRC=0BC0B1A1]
+
+Source signature=EAEE64FA
+Program memory checksum=0000
+Hex file CRC=7565
+
+Units:
+    F:\OneDrive - Soluciones Marva\DevC\1_sep 2020\ej_uso_C_en_electronica\MAIN_ej_uso_C_en_electronica (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Case Sensitive: Yes
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   MAIN_ej_uso_C_en_electronica.xsym
+    Errors:      MAIN_ej_uso_C_en_electronica.err
+    Ext Symbols: MAIN_ej_uso_C_en_electronica.esym
+    INHX32:      MAIN_ej_uso_C_en_electronica.hex
+    Symbols:     MAIN_ej_uso_C_en_electronica.sym
+    List:        MAIN_ej_uso_C_en_electronica.lst
+    Debug/COFF:  MAIN_ej_uso_C_en_electronica.cof
+    Project:     MAIN_ej_uso_C_en_electronica.ccspjt
+    Call Tree:   MAIN_ej_uso_C_en_electronica.tre
+    Statistics:  MAIN_ej_uso_C_en_electronica.STA

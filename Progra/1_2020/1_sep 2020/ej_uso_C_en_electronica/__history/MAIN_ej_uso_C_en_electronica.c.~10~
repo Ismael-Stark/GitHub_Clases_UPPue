@@ -1,0 +1,27 @@
+#case //obligamos a CCS a respetar mayusculas y minusculas
+#include <18F4550.h>
+#device ADC=10
+
+#fuses MCLR,XT,NOWDT,NOPROTECT,NOLVP,NODEBUG, NOBROWNOUT,CPUDIV1//,BORV45
+#use delay(clock=4M)
+
+
+void main(){
+   int1 x;
+   char t;
+   setup_adc_ports(NO_ANALOGS);
+   setup_adc(ADC_CLOCK_DIV_64|ADC_TAD_MUL_4);
+   setup_comparator(NC_NC_NC_NC);
+   set_tris_a(255);
+   set_tris_e(0);
+   
+   
+   
+   while(1){
+      output_bit(PIN_E0,1);
+      delay_ms(10);
+      output_bit(PIN_E0,0);
+      delay_ms(10);
+   }
+   
+}

@@ -1,0 +1,181 @@
+CCS PCH C Compiler, Version 5.093, 22719               08-dic.-20 12:52
+
+               Filename:   F:\OneDrive - Soluciones Marva\DevC\1_sep 2020\ej_uso_C_en_electronica\MAIN_ej_uso_C_en_electronica.lst
+
+               ROM used:   198 bytes (1%)
+                           Largest free fragment is 32570
+               RAM used:   7 (0%) at main() level
+                           8 (0%) worst case
+               Stack used: 0 locations
+               Stack size: 31
+
+0000:  GOTO   0030
+.................... #case //obligamos a CCS a respetar mayusculas y minusculas
+.................... #include <18F4550.h>
+.................... //////////// Standard Header file for the PIC18F4550 device ////////////////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... ////        (C) Copyright 1996, 2014 Custom Computer Services          ////
+.................... //// This source code may only be used by licensed users of the CCS C  ////
+.................... //// compiler.  This source code may only be distributed to other      ////
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction ////
+.................... //// or distribution is permitted without written permission.          ////
+.................... //// Derivative programs created using this software in object code    ////
+.................... //// form are not restricted in any way.                               ////
+.................... ///////////////////////////////////////////////////////////////////////////
+.................... #device PIC18F4550
+.................... 
+.................... #list
+.................... 
+.................... 
+.................... #device ADC=10
+.................... #fuses MCLR,XT,NOWDT,NOPROTECT,NOLVP,NODEBUG, NOBROWNOUT,CPUDIV1//,BORV45
+.................... #use delay(clock=4M)
+0004:  CLRF   FEA
+0006:  MOVLW  08
+0008:  MOVWF  FE9
+000A:  MOVF   FEF,W
+000C:  BTFSC  FD8.2
+000E:  GOTO   002E
+0012:  MOVLW  01
+0014:  MOVWF  01
+0016:  CLRF   00
+0018:  DECFSZ 00,F
+001A:  BRA    0018
+001C:  DECFSZ 01,F
+001E:  BRA    0016
+0020:  MOVLW  4A
+0022:  MOVWF  00
+0024:  DECFSZ 00,F
+0026:  BRA    0024
+0028:  BRA    002A
+002A:  DECFSZ FEF,F
+002C:  BRA    0012
+002E:  RETURN 0
+.................... 
+.................... 
+.................... void main(){
+0030:  CLRF   FF8
+0032:  BCF    FD0.7
+0034:  MOVF   FC1,W
+0036:  ANDLW  C0
+0038:  IORLW  0F
+003A:  MOVWF  FC1
+003C:  MOVLW  07
+003E:  MOVWF  FB4
+....................    char x, i;
+....................    setup_adc_ports(NO_ANALOGS);
+0040:  MOVF   FC1,W
+0042:  ANDLW  C0
+0044:  IORLW  0F
+0046:  MOVWF  FC1
+....................    setup_adc(ADC_CLOCK_DIV_64|ADC_TAD_MUL_4);
+0048:  MOVF   FC0,W
+004A:  ANDLW  C0
+004C:  IORLW  16
+004E:  MOVWF  FC0
+0050:  BSF    FC0.7
+0052:  BSF    FC2.0
+....................    setup_comparator(NC_NC_NC_NC);
+0054:  MOVLW  07
+0056:  MOVWF  FB4
+0058:  MOVF   F92,W
+005A:  MOVWF  F92
+005C:  MOVLW  03
+005E:  MOVWF  00
+0060:  DECFSZ 00,F
+0062:  BRA    0060
+0064:  MOVF   FB4,W
+0066:  BCF    FA1.6
+....................    set_tris_a(255);
+0068:  MOVLW  FF
+006A:  MOVWF  F92
+....................    set_tris_e(0x00);
+006C:  MOVLW  00
+006E:  MOVWF  F96
+....................    set_tris_b(0x00);
+0070:  MOVWF  F93
+....................    
+....................       output_bit(PIN_E0,1);
+0072:  BSF    F8D.0
+0074:  BCF    F96.0
+....................       delay_ms(1000);
+0076:  MOVLW  04
+0078:  MOVWF  07
+007A:  MOVLW  FA
+007C:  MOVWF  08
+007E:  RCALL  0004
+0080:  DECFSZ 07,F
+0082:  BRA    007A
+....................       output_bit(PIN_E0,0);
+0084:  BCF    F8D.0
+0086:  BCF    F96.0
+....................       delay_ms(1000);
+0088:  MOVLW  04
+008A:  MOVWF  07
+008C:  MOVLW  FA
+008E:  MOVWF  08
+0090:  RCALL  0004
+0092:  DECFSZ 07,F
+0094:  BRA    008C
+....................       
+....................    
+....................    while(1){
+....................       
+....................       /*if( input(PIN_A0)==1 ){
+....................          output_bit(PIN_E0,1);
+....................       }else{
+....................          output_bit(PIN_E0,0);
+....................       }*/
+....................       
+....................       x=1;
+0096:  MOVLW  01
+0098:  MOVWF  05
+....................       output_b(x);
+009A:  CLRF   F93
+009C:  MOVFF  05,F8A
+....................       delay_ms(100);
+00A0:  MOVLW  64
+00A2:  MOVWF  08
+00A4:  RCALL  0004
+....................       for(i=0;i<=8;i++){
+00A6:  CLRF   06
+00A8:  MOVF   06,W
+00AA:  SUBLW  08
+00AC:  BNC   00C2
+....................          x <<= 1;
+00AE:  BCF    FD8.0
+00B0:  RLCF   05,F
+....................          output_b(x);
+00B2:  CLRF   F93
+00B4:  MOVFF  05,F8A
+....................          delay_ms(100);
+00B8:  MOVLW  64
+00BA:  MOVWF  08
+00BC:  RCALL  0004
+00BE:  INCF   06,F
+00C0:  BRA    00A8
+....................       }
+00C2:  BRA    0096
+....................       
+....................       
+....................       /*x=1;
+....................       output_b(x);
+....................       delay_ms(100);
+....................       for(t=0;t<=8;t++){
+....................          x <<= 1;
+....................          output_b(x);
+....................          delay_ms(100);
+....................       }*/
+....................    }
+....................    
+.................... }
+00C4:  SLEEP 
+
+Configuration Fuses:
+   Word  1: C027   PLL12 CPUDIV1 USBDIV XT FCMEN IESO
+   Word  2: 1E20   PUT NOBROWNOUT VREGEN NOWDT WDT32768
+   Word  3: 8700   CCP2C1 PBADEN LPT1OSC MCLR
+   Word  4: 00A1   STVREN NOLVP ICSP2 NOXINST NODEBUG
+   Word  5: C00F   NOPROTECT NOCPB NOCPD
+   Word  6: E00F   NOWRT NOWRTC NOWRTB NOWRTD
+   Word  7: 400F   NOEBTR NOEBTRB

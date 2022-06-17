@@ -1,0 +1,323 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"12 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1Clases2022\HolaMundoC.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+"49
+[v _port_init port_init `(v  1 e 1 0 ]
+"3 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1Clases2022\HolaMundoC.X\uart.c
+[v _serial_init serial_init `(v  1 e 1 0 ]
+"31
+[v _uart_tx uart_tx `(v  1 e 1 0 ]
+"39
+[v _uart_rx uart_rx `(uc  1 e 1 0 ]
+"64
+[v _putch putch `(v  1 e 1 0 ]
+"385 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"592
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"716
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"778
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"3509
+[v _RCREG RCREG `VEuc  1 e 1 @281 ]
+"3567
+[v _TXREG TXREG `VEuc  1 e 1 @282 ]
+"3619
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"3689
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"3743
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+"3923
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S69 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"4137
+[u S78 . 1 `S69 1 . 1 0 ]
+[v _BAUD1CONbits BAUD1CONbits `VES78  1 e 1 @287 ]
+"21106
+[v _PIR3 PIR3 `VEuc  1 e 1 @1807 ]
+"31567
+[v _RXPPS RXPPS `VEuc  1 e 1 @3787 ]
+"32471
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @3872 ]
+"32871
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"34111
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"12 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1Clases2022\HolaMundoC.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"13
+[v main@buffer buffer `[32]uc  1 a 32 7 ]
+[v main@contador contador `uc  1 a 1 40 ]
+[v main@rx rx `uc  1 a 1 39 ]
+"46
+} 0
+"39 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1Clases2022\HolaMundoC.X\uart.c
+[v _uart_rx uart_rx `(uc  1 e 1 0 ]
+{
+"55
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[s S560 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+"13
+[v sprintf@f f `S560  1 a 5 2 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 0 ]
+"9
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[v sprintf@fmt fmt `*.25DCuc  1 p 2 71 ]
+"15
+[v sprintf@s s `*.4uc  1 a 1 1 ]
+"23
+} 0
+"3 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1Clases2022\HolaMundoC.X\uart.c
+[v _serial_init serial_init `(v  1 e 1 0 ]
+{
+"4
+[v serial_init@sx sx `us  1 a 2 8 ]
+"3
+[v serial_init@baudios baudios `ul  1 p 4 0 ]
+"29
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+[v printf@fmt fmt `*.4DCuc  1 a 1 wreg ]
+"8
+[v printf@ap ap `[1]*.4v  1 a 1 72 ]
+"5
+[v printf@fmt fmt `*.4DCuc  1 a 1 wreg ]
+"9
+[v printf@fmt fmt `*.4DCuc  1 a 1 71 ]
+"13
+} 0
+"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S586 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S586  1 a 1 wreg ]
+"1393
+[v vfprintf@cfmt cfmt `*.26uc  1 a 2 69 ]
+"1390
+[v vfprintf@fp fp `*.4S586  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.26DCuc  1 p 2 63 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 65 ]
+"1395
+"1390
+[v vfprintf@fp fp `*.4S586  1 a 1 68 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[s S586 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S586  1 a 1 wreg ]
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 53 ]
+"699
+[v vfpfcnvrt@vp vp `*.4v  1 a 1 61 ]
+"692
+[v vfpfcnvrt@fp fp `*.4S586  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.26uc  1 p 1 46 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 47 ]
+"702
+"692
+[v vfpfcnvrt@fp fp `*.4S586  1 a 1 62 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+[s S586 _IO_FILE 0 ]
+[v dtoa@fp fp `*.4S586  1 a 1 wreg ]
+"290
+[v dtoa@n n `o  1 a 8 36 ]
+"289
+[v dtoa@i i `i  1 a 2 44 ]
+[v dtoa@s s `i  1 a 2 34 ]
+[v dtoa@w w `i  1 a 2 32 ]
+[v dtoa@p p `i  1 a 2 30 ]
+"287
+[v dtoa@fp fp `*.4S586  1 a 1 wreg ]
+[v dtoa@d d `o  1 p 8 16 ]
+"293
+"287
+[v dtoa@fp fp `*.4S586  1 a 1 29 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+[s S586 _IO_FILE 0 ]
+[v pad@fp fp `*.4S586  1 a 1 wreg ]
+"74
+[v pad@w w `i  1 a 2 12 ]
+[v pad@i i `i  1 a 2 10 ]
+"72
+[v pad@fp fp `*.4S586  1 a 1 wreg ]
+[v pad@buf buf `*.4uc  1 p 1 7 ]
+[v pad@p p `i  1 p 2 8 ]
+"77
+"72
+[v pad@fp fp `*.4S586  1 a 1 14 ]
+"95
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@a a `*.4DCuc  1 a 1 3 ]
+"5
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@s s `*.4DCuc  1 a 1 4 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 4 ]
+"10
+[v fputs@c c `uc  1 a 1 3 ]
+"8
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+[s S560 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.4S560  1 p 1 11 ]
+"13
+[v fputs@s s `*.4DCuc  1 a 1 6 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 3 ]
+[s S560 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.4S560  1 p 1 5 ]
+"24
+} 0
+"64 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1Clases2022\HolaMundoC.X\uart.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@dato dato `uc  1 a 1 wreg ]
+[v putch@dato dato `uc  1 a 1 wreg ]
+"66
+[v putch@dato dato `uc  1 a 1 2 ]
+"67
+} 0
+"31
+[v _uart_tx uart_tx `(v  1 e 1 0 ]
+{
+[v uart_tx@dato dato `uc  1 a 1 wreg ]
+[v uart_tx@dato dato `uc  1 a 1 wreg ]
+[v uart_tx@dato dato `uc  1 a 1 1 ]
+"37
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 3 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 2 ]
+[v ___aomod@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aomod@divisor divisor `o  1 p 8 0 ]
+[v ___aomod@dividend dividend `o  1 p 8 8 ]
+"36
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 3 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 2 ]
+[v ___aodiv@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aodiv@divisor divisor `o  1 p 8 0 ]
+[v ___aodiv@dividend dividend `o  1 p 8 8 ]
+"43
+} 0
+"49 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1Clases2022\HolaMundoC.X\Main.c
+[v _port_init port_init `(v  1 e 1 0 ]
+{
+"59
+} 0

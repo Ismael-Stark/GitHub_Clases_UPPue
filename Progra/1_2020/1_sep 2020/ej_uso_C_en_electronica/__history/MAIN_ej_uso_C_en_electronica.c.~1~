@@ -1,0 +1,6 @@
+#include "18f4550.h"
+
+void main(){
+   int1 x;
+   char t;
+}
