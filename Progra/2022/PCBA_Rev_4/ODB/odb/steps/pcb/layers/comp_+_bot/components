@@ -1,0 +1,197 @@
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+
+# CMP 0
+CMP 21 1.5228964 0.3683781 180 N J213 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'Closed Link'
+TOP 0 1.5041956 0.3683781 90 N 4 4 J213-1
+TOP 1 1.5435658 0.3683781 0 N 51 7 J213-2
+#
+# CMP 1
+CMP 21 1.5228964 0.3090552 180 N J212 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'Closed Link'
+TOP 0 1.5041956 0.3090552 90 N 3 4 J212-1
+TOP 1 1.5435658 0.3090552 0 N 50 7 J212-2
+#
+# CMP 2
+CMP 23 1.7795276 0.4635827 0 N J211 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2866'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'SOLDER-STRAP_OPEN'
+TOP 0 1.7942914 0.4635827 180 N 20 5 J211-1
+TOP 1 1.7647638 0.4635827 180 N 38 6 J211-2
+#
+# CMP 3
+CMP 23 1.7795276 0.5226378 0 N J210 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2866'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'SOLDER-STRAP_OPEN'
+TOP 0 1.7942914 0.5226378 180 N 19 5 J210-1
+TOP 1 1.7647638 0.5226378 180 N 37 6 J210-2
+#
+# CMP 4
+CMP 18 0.2255907 0.4000004 180 N J102 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2568'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0'
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components,PCB plane connectors'
+PRP Status 'Active'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Testpoint Array'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.1255907 0.4250004 0 N 86 7 J102-1
+TOP 1 0.1255907 0.3750004 0 N 91 201 J102-2
+TOP 2 0.1755907 0.4250004 0 N 0 2 J102-3
+TOP 3 0.1755907 0.3750004 0 N 99 39 J102-4
+TOP 4 0.2255907 0.4250004 0 N 85 7 J102-5
+TOP 5 0.2255907 0.3750004 0 N 89 6 J102-6
+#
+# CMP 5
+CMP 17 0.4255907 0.2274416 270 N TP100 PCB_implemented_component. ;0=1,1=0.0000
+PRP AN 'A08-2176'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0'
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,Connectors,Test points'
+PRP Status 'Active'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'SMD Test point - 0.8mm'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '2006-02-17'
+TOP 0 0.4255907 0.2274416 270 N 94 1 TP100-1
+#
+# CMP 6
+CMP 17 0.4255904 0.2774416 270 N TP101 PCB_implemented_component. ;0=1,1=0.0000
+PRP AN 'A08-2176'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0'
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,Connectors,Test points'
+PRP Status 'Active'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'SMD Test point - 0.8mm'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '2006-02-17'
+TOP 0 0.4255904 0.2774416 270 N 91 200 TP101-1
+#
+# CMP 7
+CMP 21 0.879331 0.3 180 N J201 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 0.8606302 0.3 90 N 78 11 J201-1
+TOP 1 0.9000004 0.3 0 N 8 9 J201-2
+#
+# CMP 8
+CMP 21 0.879331 0.25 180 N J203 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 0.8606302 0.25 90 N 77 6 J203-1
+TOP 1 0.9000004 0.25 0 N 7 9 J203-2
+#
+# CMP 9
+CMP 21 0.879331 0.5 180 N J202 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 0.8606302 0.5 90 N 71 15 J202-1
+TOP 1 0.9000004 0.5 0 N 43 10 J202-2
+#
+# CMP 10
+CMP 21 0.879331 0.35 180 N J204 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 0.8606302 0.35 90 N 76 16 J204-1
+TOP 1 0.9000004 0.35 0 N 52 5 J204-2
+#
+# CMP 11
+CMP 21 0.879331 0.4 180 N J205 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 0.8606302 0.4 90 N 102 16 J205-1
+TOP 1 0.9000004 0.4 0 N 53 7 J205-2
+#
+# CMP 12
+CMP 21 0.879331 0.45 180 N J206 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 0.8606302 0.45 90 N 101 9 J206-1
+TOP 1 0.9000004 0.45 0 N 18 12 J206-2
+#

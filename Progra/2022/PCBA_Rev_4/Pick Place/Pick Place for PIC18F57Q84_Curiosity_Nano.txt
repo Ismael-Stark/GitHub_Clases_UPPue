@@ -1,0 +1,92 @@
+Altium Designer Pick and Place Locations
+C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\Pick Place\Pick Place for PIC18F57Q84_Curiosity_Nano.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       07.01.21
+Time:       13:01
+Revision:   Not in VersionControl
+Variant:    No variations
+Units used: mm
+
+Designator Comment                                                                                                                                                      Layer       Footprint Center-X(mm) Center-Y(mm) Rotation Description                                                                   
+XC200      "Supersedes A07-0129, A07-0170"                                                                                                                              TopLayer    AP7-00069 34.2841      8.1632       270      "Crystal, 32.768kHz, CL=9.0pF, ESR=70kOhm, SMD  LxW=3.2 x 1.5mm, 20ppm"       
+J215       ""                                                                                                                                                           TopLayer    AP9-00172 37.7407      9.3568       360      "1x1mm, Round Strap, Open, no frame"                                          
+J214       ""                                                                                                                                                           TopLayer    AP9-00172 37.7407      7.8500       360      "1x1mm, Round Strap, Open, no frame"                                          
+C206       ""                                                                                                                                                           TopLayer    AP1-00053 36.1091      9.8882       270      "Ceramic capacitor, SMD 0402, NP0, 50V, +/-5%"                                
+C202       ""                                                                                                                                                           TopLayer    AP1-00053 36.1091      7.3882       270      "Ceramic capacitor, SMD 0402, NP0, 50V, +/-5%"                                
+U200       ""                                                                                                                                                           TopLayer    AP6-00357 50.8000      10.1600      135      "PIC18F57Q84 microcontroller, 48-pin TQFP 7mm x 7mm x 1.0mm"                  
+J211       ""                                                                                                                                                           BottomLayer AP9-00172 45.2000      11.7750      180      "1x1mm, Round Strap, Open, no frame"                                          
+J210       ""                                                                                                                                                           BottomLayer AP9-00172 45.2000      13.2750      180      "1x1mm, Round Strap, Open, no frame"                                          
+R113       ""                                                                                                                                                           TopLayer    AP2-00011 9.1750       11.6840      180      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+TP101      "PCB implemented component."                                                                                                                                 BottomLayer AP8-00870 10.8100      7.0470       90       "SMD Test point - 0.8mm"                                                      
+F100       "Farnell no: 1861197"                                                                                                                                        TopLayer    AP2-00002 6.7500       14.4270      270      "Resetable PTC fuse, Ih = 0.5A, It = 1.0A, 0805 package"                      
+Q101       ""                                                                                                                                                           TopLayer    AP5-00056 9.1750       12.8750      180      "N-channel MOSFET, DFN1006-3 (SOT883), 60V, 330mA, 4Ohm"                      
+U102       "Marking code: AAR"                                                                                                                                          TopLayer    AP6-00504 14.3650      14.2250      360      "500mA Ultra Low Dropout LDO regulator, 2% accuracy, 1.6x1.6mm MLF"           
+J105       ""                                                                                                                                                           TopLayer    AP8-01099 3.6000       10.1600      270      "USB micro AB, Surface mount signals and DIP shield"                          
+U105       "1.05 x 1.05 x 0.4mm
+Cheaper alternative to A06-1576.
+
+Unable to place with two schematic symbols listed.  Removed LVC1T45
+Original SN74LVC1T45DCKR,LVC1T45" TopLayer    AP6-00505 18.5390      9.0250       360      "Single-Bit Dual-Supply Transceive, 1.65-5.5 Translation and 3-State Outputs" 
+U107       "1.05 x 1.05 x 0.4mm
+Cheaper alternative to A06-1576.
+
+Unable to place with two schematic symbols listed.  Removed LVC1T45
+Original SN74LVC1T45DCKR,LVC1T45" TopLayer    AP6-00505 18.5390      12.0250      360      "Single-Bit Dual-Supply Transceive, 1.65-5.5 Translation and 3-State Outputs" 
+U104       "1.05 x 1.05 x 0.4mm
+Cheaper alternative to A06-1576.
+
+Unable to place with two schematic symbols listed.  Removed LVC1T45
+Original SN74LVC1T45DCKR,LVC1T45" TopLayer    AP6-00505 18.5390      6.5250       360      "Single-Bit Dual-Supply Transceive, 1.65-5.5 Translation and 3-State Outputs" 
+U103       "1.05 x 1.05 x 0.4mm
+Cheaper alternative to A06-1576.
+
+Unable to place with two schematic symbols listed.  Removed LVC1T45
+Original SN74LVC1T45DCKR,LVC1T45" TopLayer    AP6-00505 18.5390      5.0250       360      "Single-Bit Dual-Supply Transceive, 1.65-5.5 Translation and 3-State Outputs" 
+R105       ""                                                                                                                                                           TopLayer    AP2-00011 16.9400      6.9989       90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R102       ""                                                                                                                                                           TopLayer    AP2-00011 18.5385      7.7750       360      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+C101       "Farnell no: 1288200"                                                                                                                                        TopLayer    AP1-00053 12.3390      15.1500      90       "Ceramic capacitor, SMD 0402, X5R, 6.3V, +/-20%"                              
+D100       "Replacement to A10-0183
+Not proven to be as good at If = 1mA"                                                                                               TopLayer    AP4-00160 6.5710       4.6000       180      "LED, SMD 0402, Green, Wave length=569nm, 2.1mcd @ (1mA, 1.9Vf)rohm"          
+C107       ""                                                                                                                                                           TopLayer    AP1-00053 14.8150      4.5750       360      "Ceramic capacitor, SMD 0402, X7R, 16V, +/-10%"                               
+R107       ""                                                                                                                                                           TopLayer    AP2-00011 10.8900      4.5750       360      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R100       ""                                                                                                                                                           TopLayer    AP2-00011 11.4390      12.7500      90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+C108       ""                                                                                                                                                           TopLayer    AP1-00053 16.5400      11.0250      90       "Ceramic capacitor, SMD 0402, X7R, 16V, +/-10%"                               
+C100       ""                                                                                                                                                           TopLayer    AP1-00039 9.1179       15.5971      180      "Ceramic capacitor, SMD 0603, X5R, 10V, 10% (de31036)"                        
+C106       ""                                                                                                                                                           TopLayer    AP1-00053 12.8650      4.5750       360      "Ceramic capacitor, SMD 0402, X5R, 6.3V, +/-10% (de26942)"                    
+U100       QFN32                                                                                                                                                        TopLayer    AP6-00418 13.1300      8.1700       90       "Atmel 32-bit RISC MCU 32pin"                                                 
+U101       ""                                                                                                                                                           TopLayer    AP6-00481 11.1390      15.2000      270      "LDO 3.3V 0.5A 6TDFN"                                                         
+C102       ""                                                                                                                                                           TopLayer    AP1-00053 16.3400      15.7250      360      "Ceramic capacitor, SMD 0402, X7R, 16V, +/-10%"                               
+C103       ""                                                                                                                                                           TopLayer    AP1-00053 14.3700      12.7500      360      "CAP CER 2.2UF 10V 10% X5R 0402"                                              
+R101       ""                                                                                                                                                           TopLayer    AP2-00011 16.0400      14.2750      90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R104       ""                                                                                                                                                           TopLayer    AP2-00011 16.9400      14.2750      90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R106       ""                                                                                                                                                           TopLayer    AP2-00011 18.4515      15.7250      360      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R108       ""                                                                                                                                                           TopLayer    AP2-00011 16.5400      8.9740       90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+U106       "1.05 x 1.05 x 0.4mm
+Cheaper alternative to A06-1576.
+
+Unable to place with two schematic symbols listed.  Removed LVC1T45
+Original SN74LVC1T45DCKR,LVC1T45" TopLayer    AP6-00505 18.5390      10.5250      360      "Single-Bit Dual-Supply Transceive, 1.65-5.5 Translation and 3-State Outputs" 
+R103       ""                                                                                                                                                           TopLayer    AP2-00011 14.3650      15.7250      360      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R109       ""                                                                                                                                                           TopLayer    AP2-00011 12.3890      12.7500      90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R110       ""                                                                                                                                                           TopLayer    AP2-00011 9.1750       13.7750      360      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R112       ""                                                                                                                                                           TopLayer    AP2-00011 8.8899       4.5750       360      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+U108       ""                                                                                                                                                           TopLayer    AP6-00513 18.4515      14.2750      180      "Loadswitch, Rds(on) = 14.5mohm, 1.0mm x 1.5mm WLCSP, reverse blocking"       
+R111       ""                                                                                                                                                           TopLayer    AP2-00011 9.1750       10.7550      180      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+C200       ""                                                                                                                                                           TopLayer    AP1-00053 54.9250      6.0500       45       "Ceramic capacitor, SMD 0402, X7R, 16V, +/-10%"                               
+R200       ""                                                                                                                                                           TopLayer    AP2-00011 55.4786      14.1464      135      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R205       ""                                                                                                                                                           TopLayer    AP2-00011 22.5806      14.5542      270      "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R204       ""                                                                                                                                                           TopLayer    AP2-00011 23.0886      5.0851       0        "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+C201       ""                                                                                                                                                           TopLayer    AP1-00053 46.5500      14.4000      45       "Ceramic capacitor, SMD 0402, X7R, 16V, +/-10%"                               
+C203       ""                                                                                                                                                           TopLayer    AP1-00053 40.7000      11.8602      270      "Ceramic capacitor, SMD 0402, NP0, 50V, +/-5%"                                
+C204       ""                                                                                                                                                           TopLayer    AP1-00053 40.7000      14.4703      270      "Ceramic capacitor, SMD 0402, NP0, 50V, +/-5%"                                
+XC201      ""                                                                                                                                                           TopLayer    AP7-00061 38.4000      12.4852      270      "Crystal, 10.0MHz, CL=12.0pF, ESR=150Ohm, SMD  LxW= 3.2 x 2.5mm, 25 ppm"      
+C205       ""                                                                                                                                                           TopLayer    AP1-00053 23.5712      14.5288      270      "CAP CER 2.2UF 10V 10% X5R 0402"                                              
+LABEL1     ""                                                                                                                                                           BottomLayer AP8-00317 -885.5698    -612.5374    180      "PCBA identification label PP Top White Gloss"                                
+SW200      "Rating: DC 12V 50mA
+Max 0.1 ohm contact resistance"                                                                                                         TopLayer    AP8-00137 80.3910      10.1600      270      "SWITCH, SMD, 260gf, 6.4mm X 6.2mm"                                           
+D200       ""                                                                                                                                                           TopLayer    AP4-00169 74.2206      10.1809      270      "LED, SMD 0603, Yellow, Wave length=590nm, 100mcd @ (20mA, 2.2Vf) rohm"       
+R203       ""                                                                                                                                                           TopLayer    AP2-00011 75.3000      10.1559      90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    
+R202       ""                                                                                                                                                           TopLayer    AP2-00011 76.4050      10.1559      90       "Thick film resistor, SMD 0402, 1/16W, 1%"                                    

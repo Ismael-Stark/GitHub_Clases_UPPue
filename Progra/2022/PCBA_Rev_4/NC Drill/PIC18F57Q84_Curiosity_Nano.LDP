@@ -1,0 +1,3 @@
+Layer Pairs Export File for PCB: C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\PIC18F57Q84_Curiosity_Nano.PcbDoc
+LayersSetName=Top_Bot_Thru_Holes|DrillFile=pic18f57q84_curiosity_nano-roundholes.txt|DrillLayers=gtl,gp1,gp2,gbl
+LayersSetName=Top_Bot_Slot_Holes|DrillFile=pic18f57q84_curiosity_nano-slotholes.txt|DrillLayers=gtl,gp1,gp2,gbl

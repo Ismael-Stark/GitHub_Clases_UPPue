@@ -1,0 +1,1179 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\GetSerial.X.production.o
+cinit CODE 0 3F92 3F92 4A 1
+idloc IDLOC 5 200000 200000 40 1
+text0 CODE 0 3A7C 3A7C B8 1
+text1 CODE 0 3DC6 3DC6 8C 1
+text2 CODE 0 406A 406A 26 1
+text3 CODE 0 3EC6 3EC6 66 1
+text4 CODE 0 374E 374E 1A8 1
+text5 CODE 0 38F6 38F6 186 1
+text6 CODE 0 3FDC 3FDC 3A 1
+text7 CODE 0 3D30 3D30 96 1
+text8 CODE 0 412E 412E A 1
+text9 CODE 0 40AA 40AA 18 1
+nvCOMRAM COMRAM 1 53E 53E 12 1
+text10 CODE 0 3F2C 3F2C 66 1
+text11 CODE 0 4140 4140 6 1
+text12 CODE 0 3C96 3C96 9A 1
+text13 CODE 0 4146 4146 2 1
+text14 CODE 0 4148 4148 2 1
+text15 CODE 0 414A 414A 2 1
+text16 CODE 0 4090 4090 1A 1
+text17 CODE 0 3E52 3E52 74 1
+text18 CODE 0 40DA 40DA E 1
+text19 CODE 0 40E8 40E8 E 1
+text20 CODE 0 40F6 40F6 E 1
+text21 CODE 0 4042 4042 28 1
+text22 CODE 0 3BEC 3BEC AA 1
+text23 CODE 0 40C2 40C2 18 1
+text24 CODE 0 4016 4016 2C 1
+text25 CODE 0 3B34 3B34 B8 1
+text26 CODE 0 4104 4104 E 1
+text27 CODE 0 4112 4112 E 1
+text28 CODE 0 4120 4120 E 1
+idataCOMRAM CODE 0 4138 4138 7 1
+cstackCOMRAM COMRAM 1 501 501 3D 1
+cstackBANK5 BANK5 1 560 560 64 1
+bssBANK5 BANK5 1 5C4 5C4 2A 1
+bssBANK6 BANK6 1 600 600 20 1
+smallconst SMALLCONST 0 3700 3700 4E 1
+dataCOMRAM COMRAM 1 559 559 7 1
+bssCOMRAM COMRAM 1 550 550 9 1
+config CONFIG 4 300000 300000 24 1
+$C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+idloc IDLOC 5 200000 200000 40 1
+init CODE 0 1FFFC 1FFFC 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 24 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5EE-5FF 1
+RAM 620-36FF 1
+SFR 0-4FF 1
+SFR 3700-3FFF 1
+BANK5 5EE-5FF 1
+BANK6 620-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-36FF 1
+CONST 413F-413F 1
+CONST 414C-1FFFB 1
+STACK 620-36FF 1
+SMALLCONST 413F-413F 1
+SMALLCONST 414C-1FFFB 1
+CODE 4-36FF 1
+CODE 413F-413F 1
+CODE 414C-1FFFB 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-FFF 1
+BANK16 1000-10FF 1
+BANK17 1100-11FF 1
+BANK18 1200-12FF 1
+BANK19 1300-13FF 1
+BANK20 1400-14FF 1
+BANK21 1500-15FF 1
+BANK22 1600-16FF 1
+BANK23 1700-17FF 1
+BANK24 1800-18FF 1
+BANK25 1900-19FF 1
+BANK26 1A00-1AFF 1
+BANK27 1B00-1BFF 1
+BANK28 1C00-1CFF 1
+BANK29 1D00-1DFF 1
+BANK30 1E00-1EFF 1
+BANK31 1F00-1FFF 1
+BANK32 2000-20FF 1
+BANK33 2100-21FF 1
+BANK34 2200-22FF 1
+BANK35 2300-23FF 1
+BANK36 2400-24FF 1
+BANK37 2500-25FF 1
+BANK38 2600-26FF 1
+BANK39 2700-27FF 1
+BANK40 2800-28FF 1
+BANK41 2900-29FF 1
+BANK42 2A00-2AFF 1
+BANK43 2B00-2BFF 1
+BANK44 2C00-2CFF 1
+BANK45 2D00-2DFF 1
+BANK46 2E00-2EFF 1
+BANK47 2F00-2FFF 1
+BANK48 3000-30FF 1
+BANK49 3100-31FF 1
+BANK50 3200-32FF 1
+BANK51 3300-33FF 1
+BANK52 3400-34FF 1
+BANK53 3500-35FF 1
+BANK54 3600-36FF 1
+BIGRAM 5EE-5FF 1
+BIGRAM 620-36FF 1
+EEDATA 380000-3803FF 1
+MEDIUMCONST 413F-413F 1
+MEDIUMCONST 414C-FFFF 1
+MEDIUMCONST 13700-1FFFB 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\GetSerial.X.production.o
+4120 text28 CODE >418:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+4120 text28 CODE >420:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+412C text28 CODE >421:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+4112 text27 CODE >428:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+4112 text27 CODE >430:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+411E text27 CODE >431:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+4104 text26 CODE >423:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+4104 text26 CODE >425:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+4110 text26 CODE >426:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B34 text25 CODE >65:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B34 text25 CODE >68:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B3A text25 CODE >71:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B3E text25 CODE >74:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B42 text25 CODE >80:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B46 text25 CODE >83:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B4A text25 CODE >86:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B4E text25 CODE >89:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B52 text25 CODE >92:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B56 text25 CODE >95:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B5A text25 CODE >98:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B5E text25 CODE >101:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B62 text25 CODE >104:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B66 text25 CODE >107:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B6A text25 CODE >110:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B6E text25 CODE >113:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B72 text25 CODE >116:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B76 text25 CODE >119:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B7A text25 CODE >122:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B7E text25 CODE >125:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B82 text25 CODE >128:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B86 text25 CODE >131:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B8A text25 CODE >134:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B8E text25 CODE >137:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B92 text25 CODE >140:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B96 text25 CODE >143:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B9A text25 CODE >146:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3B9E text25 CODE >149:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BA2 text25 CODE >152:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BA6 text25 CODE >155:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BAA text25 CODE >158:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BAE text25 CODE >161:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BB0 text25 CODE >164:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BB2 text25 CODE >167:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BB4 text25 CODE >171:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BC4 text25 CODE >172:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BD4 text25 CODE >173:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BE4 text25 CODE >176:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+3BEA text25 CODE >177:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/adc.c
+4016 text24 CODE >183:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4016 text24 CODE >186:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+401C text24 CODE >188:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4020 text24 CODE >190:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4024 text24 CODE >192:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4028 text24 CODE >194:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+402C text24 CODE >196:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4030 text24 CODE >198:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4034 text24 CODE >200:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4038 text24 CODE >201:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+403C text24 CODE >203:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+4040 text24 CODE >205:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/i2c1_master.c
+40C2 text23 CODE >60:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40C2 text23 CODE >63:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40C8 text23 CODE >65:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40CC text23 CODE >67:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40D0 text23 CODE >69:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40D4 text23 CODE >71:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40D8 text23 CODE >72:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+3BEC text22 CODE >55:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3BEC text22 CODE >60:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3BF0 text22 CODE >61:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3BF4 text22 CODE >62:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3BF8 text22 CODE >63:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3BFC text22 CODE >64:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C00 text22 CODE >65:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C04 text22 CODE >70:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C08 text22 CODE >71:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C0C text22 CODE >72:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C0E text22 CODE >73:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C12 text22 CODE >74:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C14 text22 CODE >75:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C16 text22 CODE >80:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C1A text22 CODE >81:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C1C text22 CODE >82:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C20 text22 CODE >83:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C24 text22 CODE >84:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C28 text22 CODE >85:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C2A text22 CODE >90:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C2E text22 CODE >91:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C32 text22 CODE >92:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C36 text22 CODE >93:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C3A text22 CODE >94:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C3E text22 CODE >95:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C42 text22 CODE >100:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C46 text22 CODE >101:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C4A text22 CODE >102:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C4E text22 CODE >103:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C52 text22 CODE >104:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C56 text22 CODE >105:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C5A text22 CODE >110:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C5C text22 CODE >111:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C5E text22 CODE >112:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C60 text22 CODE >113:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C62 text22 CODE >114:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C66 text22 CODE >115:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C68 text22 CODE >120:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C6A text22 CODE >121:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C6C text22 CODE >122:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C6E text22 CODE >123:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C70 text22 CODE >124:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C74 text22 CODE >125:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C76 text22 CODE >134:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C7C text22 CODE >135:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C80 text22 CODE >136:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C84 text22 CODE >137:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C88 text22 CODE >138:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C8C text22 CODE >139:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C90 text22 CODE >140:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+3C94 text22 CODE >141:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/pin_manager.c
+4042 text21 CODE >74:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4042 text21 CODE >77:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4048 text21 CODE >79:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+404C text21 CODE >81:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4050 text21 CODE >83:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4054 text21 CODE >85:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4058 text21 CODE >87:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+405C text21 CODE >89:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4060 text21 CODE >91:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4064 text21 CODE >93:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4068 text21 CODE >94:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40F6 text20 CODE >208:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40F6 text20 CODE >209:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4102 text20 CODE >210:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40E8 text19 CODE >200:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40E8 text19 CODE >201:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40F4 text19 CODE >202:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40DA text18 CODE >204:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40DA text18 CODE >205:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40E6 text18 CODE >206:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E52 text17 CODE >66:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E52 text17 CODE >73:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E58 text17 CODE >76:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E5C text17 CODE >79:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E60 text17 CODE >82:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E64 text17 CODE >85:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E68 text17 CODE >88:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E6C text17 CODE >91:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E70 text17 CODE >94:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E74 text17 CODE >97:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E78 text17 CODE >100:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E7C text17 CODE >103:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E80 text17 CODE >106:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E84 text17 CODE >109:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E88 text17 CODE >112:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E8C text17 CODE >115:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3E90 text17 CODE >118:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3EA0 text17 CODE >119:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3EB0 text17 CODE >120:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3EC0 text17 CODE >122:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3EC4 text17 CODE >124:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4090 text16 CODE >50:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4090 text16 CODE >52:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4094 text16 CODE >53:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+4098 text16 CODE >54:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+409C text16 CODE >55:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40A0 text16 CODE >56:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40A4 text16 CODE >57:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+40A8 text16 CODE >58:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/mcc.c
+414A text15 CODE >197:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+414A text15 CODE >198:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4148 text14 CODE >193:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4146 text13 CODE >195:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3C96 text12 CODE >145:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3C96 text12 CODE >147:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3C96 text12 CODE >149:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3CA4 text12 CODE >151:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3CA8 text12 CODE >153:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3CB8 text12 CODE >154:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3CBA text12 CODE >155:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3CD4 text12 CODE >158:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3CE4 text12 CODE >159:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3CE6 text12 CODE >160:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3D00 text12 CODE >163:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3D10 text12 CODE >164:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3D2A text12 CODE >167:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3D2E text12 CODE >168:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4140 text11 CODE >179:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4140 text11 CODE >181:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4144 text11 CODE >182:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3F2C text10 CODE >9:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3F2C text10 CODE >10:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3F34 text10 CODE >13:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3F4A text10 CODE >18:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3F74 text10 CODE >19:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3F90 text10 CODE >21:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+40AA text9 CODE >170:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40AC text9 CODE >172:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40AC text9 CODE >174:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40BA text9 CODE >176:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+40C0 text9 CODE >177:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+412E text8 CODE >184:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4130 text8 CODE >186:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+4136 text8 CODE >187:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\mcc_generated_files/uart1.c
+3D30 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+3D30 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+3D54 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+3D5A text7 CODE >14:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+3D5E text7 CODE >15:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+3DB2 text7 CODE >20:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+3DC4 text7 CODE >24:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+3FDC text6 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+3FDC text6 CODE >7:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+3FE4 text6 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+3FE8 text6 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+3FEC text6 CODE >8:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+4008 text6 CODE >11:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+4014 text6 CODE >12:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+38F6 text5 CODE >568:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+38F6 text5 CODE >570:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3908 text5 CODE >574:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3910 text5 CODE >575:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3922 text5 CODE >576:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+392A text5 CODE >580:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+393E text5 CODE >581:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3946 text5 CODE >582:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+397E text5 CODE >583:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3986 text5 CODE >584:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+398E text5 CODE >587:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+39A0 text5 CODE >589:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+39B4 text5 CODE >590:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+39B8 text5 CODE >588:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+39D6 text5 CODE >595:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+39DE text5 CODE >596:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+39E2 text5 CODE >597:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A04 text5 CODE >598:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A08 text5 CODE >599:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A0C text5 CODE >596:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A2A text5 CODE >603:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A3C text5 CODE >605:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A50 text5 CODE >606:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A54 text5 CODE >604:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A72 text5 CODE >608:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A72 text5 CODE >610:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3A7A text5 CODE >611:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+374E text4 CODE >692:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+374E text4 CODE >702:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+377A text4 CODE >703:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+378C text4 CODE >705:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+379C text4 CODE >706:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+37A0 text4 CODE >1171:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+37CC text4 CODE >1173:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+37DE text4 CODE >1174:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3816 text4 CODE >1176:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3836 text4 CODE >1372:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3862 text4 CODE >1373:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3874 text4 CODE >1374:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3888 text4 CODE >1375:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3894 text4 CODE >1379:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+38A6 text4 CODE >1380:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+38B2 text4 CODE >1384:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+38DE text4 CODE >1385:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+38F4 text4 CODE >1387:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3EC6 text3 CODE >1390:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3EC6 text3 CODE >1395:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3ECE text3 CODE >1396:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3ED6 text3 CODE >1397:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3EDA text3 CODE >1398:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3EFE text3 CODE >1397:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3F22 text3 CODE >1400:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+3F2A text3 CODE >1404:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+406A text2 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\printf.c
+406A text2 CODE >9:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\printf.c
+4072 text2 CODE >10:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\printf.c
+408E text2 CODE >13:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\printf.c
+3DC6 text1 CODE >3:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strcmp.c
+3DC6 text1 CODE >5:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strcmp.c
+3E22 text1 CODE >6:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strcmp.c
+3E50 text1 CODE >7:C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strcmp.c
+3A7C text0 CODE >22:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3A7C text0 CODE >28:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3A80 text0 CODE >43:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3AA6 text0 CODE >44:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3ABC text0 CODE >45:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3AC8 text0 CODE >46:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3ADC text0 CODE >51:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3B02 text0 CODE >52:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3B04 text0 CODE >55:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3B2A text0 CODE >56:D:\OneDrive - Soluciones Marva\DevC\1_2022\GetSerial.X\main.c
+3F92 cinit CODE >15272:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F92 cinit CODE >15274:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F92 cinit CODE >15277:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F92 cinit CODE >15315:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F94 cinit CODE >15316:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F96 cinit CODE >15317:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F98 cinit CODE >15318:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F9A cinit CODE >15319:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F9C cinit CODE >15320:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3F9E cinit CODE >15321:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FA2 cinit CODE >15322:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FA6 cinit CODE >15323:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FA6 cinit CODE >15324:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FA8 cinit CODE >15325:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FAC cinit CODE >15326:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FAE cinit CODE >15327:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FB0 cinit CODE >15328:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FB2 cinit CODE >15332:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FB6 cinit CODE >15333:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FB8 cinit CODE >15334:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FB8 cinit CODE >15335:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FBA cinit CODE >15336:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FBC cinit CODE >15337:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FBE cinit CODE >15340:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FC2 cinit CODE >15341:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FC4 cinit CODE >15342:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FC4 cinit CODE >15343:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FC6 cinit CODE >15344:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FC8 cinit CODE >15345:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FCA cinit CODE >15348:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FCE cinit CODE >15349:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FD0 cinit CODE >15350:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FD0 cinit CODE >15351:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FD2 cinit CODE >15352:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FD4 cinit CODE >15353:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FD6 cinit CODE >15359:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FD6 cinit CODE >15361:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+3FD8 cinit CODE >15362:C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\GetSerial.X.production.o
+_I2C1_Initialize 4016 0 CODE 0 text24 dist/default/production\GetSerial.X.production.o
+__Hspace_0 20000 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hspace_1 620 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hspace_4 600024 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+ADC_SetContext1ThresholdInterruptHandler@InterruptHandler 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_UART1_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_UART1_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+stoa@F1133 559 0 COMRAM 1 dataCOMRAM dist/default/production\GetSerial.X.production.o
+__end_of_ADC_SetActiveClockTuningInterruptHandler 4120 0 CODE 0 text27 dist/default/production\GetSerial.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\GetSerial.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\GetSerial.X.production.o
+__end_of_UART1_SetFramingErrorHandler 40F6 0 CODE 0 text19 dist/default/production\GetSerial.X.production.o
+__end_of_UART1_SetOverrunErrorHandler 40E8 0 CODE 0 text18 dist/default/production\GetSerial.X.production.o
+_PMD_Initialize 4042 0 CODE 0 text21 dist/default/production\GetSerial.X.production.o
+UART1_SetOverrunErrorHandler@interruptHandler 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+?_vfprintf 52C 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Lsmallconst 3700 0 SMALLCONST 0 smallconst dist/default/production\GetSerial.X.production.o
+_ADCP 3D8 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_LATA 4BE 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_LATB 4BF 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_LATC 4C0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_LATD 4C1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_LATE 4C2 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_LATF 4C3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD0 60 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD1 61 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD2 62 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD3 63 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD4 64 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD5 65 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD6 66 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD7 67 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PMD8 68 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_WPUA 401 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_WPUB 409 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_WPUC 411 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_WPUD 419 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_WPUE 421 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_WPUF 429 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+_main 3A7C 0 CODE 0 text0 dist/default/production\GetSerial.X.production.o
+_nout 550 0 COMRAM 1 bssCOMRAM dist/default/production\GetSerial.X.production.o
+_prec 554 0 COMRAM 1 bssCOMRAM dist/default/production\GetSerial.X.production.o
+_stoa 38F6 0 CODE 0 text5 dist/default/production\GetSerial.X.production.o
+start 1FFFC 0 CODE 0 init C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+__size_of_main 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_stoa 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\GetSerial.X.production.o
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\GetSerial.X.production.o
+_I2C1_DO_IDLE 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+stoa@i 518 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+stoa@l 520 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+stoa@p 51E 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+stoa@s 50E 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+stoa@w 51A 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_UART1_ErrorHandler 547 0 COMRAM 1 nvCOMRAM dist/default/production\GetSerial.X.production.o
+__end_of_vfpfcnvrt 38F6 0 CODE 0 text4 dist/default/production\GetSerial.X.production.o
+_I2C1_DO_RX_EMPTY 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADC_ConversionComplete_ISR 544 0 COMRAM 1 nvCOMRAM dist/default/production\GetSerial.X.production.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADC_SetContext1ThresholdInterruptHandler 4104 0 CODE 0 text26 dist/default/production\GetSerial.X.production.o
+__accesstop 560 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+intlevel0 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+intlevel1 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+intlevel2 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+intlevel3 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\GetSerial.X.production.o
+_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\GetSerial.X.production.o
+__end_of_PMD_Initialize 406A 0 CODE 0 text21 dist/default/production\GetSerial.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\GetSerial.X.production.o
+_vfpfcnvrt 374E 0 CODE 0 text4 dist/default/production\GetSerial.X.production.o
+__end_of_ADC_SetContext1ThresholdInterruptHandler 4112 0 CODE 0 text26 dist/default/production\GetSerial.X.production.o
+__pidataCOMRAM 4138 0 CODE 0 idataCOMRAM dist/default/production\GetSerial.X.production.o
+_leer_serial 3F2C 0 CODE 0 text10 dist/default/production\GetSerial.X.production.o
+__size_of_UART1_Read 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1ERRIE 2B3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1ERRIR 2B2 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1RXPPS 272 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADACCH 3E4 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADACCL 3E3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADACCU 3E5 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADACQH 3EF 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADACQL 3EE 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCON0 3F3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCON1 3F4 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCON2 3F5 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCON3 3F6 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADERRH 3DE 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADERRL 3DD 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADLTHH 3DA 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADLTHL 3D9 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADPREH 3F2 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADPREL 3F1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADRESH 3EB 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADRESL 3EA 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADSTAT 3F7 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADUTHH 3DC 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADUTHL 3DB 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_rdBlkRegCompleteHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ANSELA 400 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ANSELB 408 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ANSELC 410 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ANSELD 418 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ANSELE 420 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ANSELF 428 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+_I2C1BAUD 29D 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1CNTH 28D 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1CNTL 28C 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1CON0 294 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1CON1 295 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1CON2 296 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\GetSerial.X.production.o
+_ADACTPPS 269 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\GetSerial.X.production.o
+_I2C1_DO_BUS_COLLISION 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCPbits 3D8 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\GetSerial.X.production.o
+?_printf 534 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_INLVLA 404 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_INLVLB 40C 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_INLVLC 414 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_INLVLD 41C 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_INLVLE 424 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_INLVLF 42C 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+?_strcmp 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+?_strlen 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_UART1_Write 40AA 0 CODE 0 text9 dist/default/production\GetSerial.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_getch 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\GetSerial.X.production.o
+UART1_SetFramingErrorHandler@interruptHandler 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PIN_MANAGER_Initialize 3BEC 0 CODE 0 text22 dist/default/production\GetSerial.X.production.o
+__end_of_UART1_DefaultFramingErrorHandler 414A 0 CODE 0 text14 dist/default/production\GetSerial.X.production.o
+__end_of_UART1_DefaultOverrunErrorHandler 4148 0 CODE 0 text13 dist/default/production\GetSerial.X.production.o
+start_initialization 3F92 0 CODE 0 cinit dist/default/production\GetSerial.X.production.o
+_ODCONA 402 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ODCONB 40A 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ODCONC 412 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ODCOND 41A 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ODCONE 422 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ODCONF 42A 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_OSCFRQ B1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\GetSerial.X.production.o
+_UART1_Initialize 3E52 0 CODE 0 text17 dist/default/production\GetSerial.X.production.o
+__size_of_UART1_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_UART1_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCSEL1 3FC 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADFLTRH 3E2 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADFLTRL 3E1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADPREVH 3E9 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADPREVL 3E8 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADSTPTH 3E0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADSTPTL 3DF 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_RB1PPS 20A 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_RB2PPS 20B 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_RF0PPS 229 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_SYSTEM_Initialize 40AA 0 CODE 0 text16 dist/default/production\GetSerial.X.production.o
+__pcstackBANK5 560 0 BANK5 1 cstackBANK5 dist/default/production\GetSerial.X.production.o
+_U1CON0bits 2AB 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1BRGH 2AF 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1BRGL 2AE 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1CON0 2AB 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1CON1 2AC 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1CON2 2AD 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1FIFO 2B0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_UART1_SetErrorHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_printf 4090 0 CODE 0 text2 dist/default/production\GetSerial.X.production.o
+__size_of_ADC_SetActiveClockTuningInterruptHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1_Status 5C4 0 BANK5 1 bssBANK5 dist/default/production\GetSerial.X.production.o
+fputc@fp 505 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_ADC_DefaultADI_ISR 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\GetSerial.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\GetSerial.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\GetSerial.X.production.o
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\GetSerial.X.production.o
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\GetSerial.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\GetSerial.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\GetSerial.X.production.o
+__end_of_strcmp 3E52 0 CODE 0 text1 dist/default/production\GetSerial.X.production.o
+__end_of_strlen 4016 0 CODE 0 text6 dist/default/production\GetSerial.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\GetSerial.X.production.o
+__Hidloc 200040 0 IDLOC 5 idloc dist/default/production\GetSerial.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\GetSerial.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\GetSerial.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\GetSerial.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\GetSerial.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\GetSerial.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\GetSerial.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\GetSerial.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\GetSerial.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\GetSerial.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\GetSerial.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\GetSerial.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\GetSerial.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\GetSerial.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\GetSerial.X.production.o
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\GetSerial.X.production.o
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\GetSerial.X.production.o
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\GetSerial.X.production.o
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\GetSerial.X.production.o
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\GetSerial.X.production.o
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\GetSerial.X.production.o
+__Hbank16 0 0 ABS 0 bank16 dist/default/production\GetSerial.X.production.o
+__Hbank17 0 0 ABS 0 bank17 dist/default/production\GetSerial.X.production.o
+__Hbank18 0 0 ABS 0 bank18 dist/default/production\GetSerial.X.production.o
+__Hbank19 0 0 ABS 0 bank19 dist/default/production\GetSerial.X.production.o
+__Hbank20 0 0 ABS 0 bank20 dist/default/production\GetSerial.X.production.o
+__Hbank21 0 0 ABS 0 bank21 dist/default/production\GetSerial.X.production.o
+__Hbank22 0 0 ABS 0 bank22 dist/default/production\GetSerial.X.production.o
+__Hbank23 0 0 ABS 0 bank23 dist/default/production\GetSerial.X.production.o
+__Hbank24 0 0 ABS 0 bank24 dist/default/production\GetSerial.X.production.o
+__Hbank25 0 0 ABS 0 bank25 dist/default/production\GetSerial.X.production.o
+__Hbank26 0 0 ABS 0 bank26 dist/default/production\GetSerial.X.production.o
+__Hbank27 0 0 ABS 0 bank27 dist/default/production\GetSerial.X.production.o
+__Hbank28 0 0 ABS 0 bank28 dist/default/production\GetSerial.X.production.o
+__Hbank29 0 0 ABS 0 bank29 dist/default/production\GetSerial.X.production.o
+__Hbank30 0 0 ABS 0 bank30 dist/default/production\GetSerial.X.production.o
+__Hbank31 0 0 ABS 0 bank31 dist/default/production\GetSerial.X.production.o
+__Hbank32 0 0 ABS 0 bank32 dist/default/production\GetSerial.X.production.o
+__Hbank33 0 0 ABS 0 bank33 dist/default/production\GetSerial.X.production.o
+__Hbank34 0 0 ABS 0 bank34 dist/default/production\GetSerial.X.production.o
+__Hbank35 0 0 ABS 0 bank35 dist/default/production\GetSerial.X.production.o
+__Hbank36 0 0 ABS 0 bank36 dist/default/production\GetSerial.X.production.o
+__Hbank37 0 0 ABS 0 bank37 dist/default/production\GetSerial.X.production.o
+__Hbank38 0 0 ABS 0 bank38 dist/default/production\GetSerial.X.production.o
+__Hbank39 0 0 ABS 0 bank39 dist/default/production\GetSerial.X.production.o
+__Hbank40 0 0 ABS 0 bank40 dist/default/production\GetSerial.X.production.o
+__Hbank41 0 0 ABS 0 bank41 dist/default/production\GetSerial.X.production.o
+__Hbank42 0 0 ABS 0 bank42 dist/default/production\GetSerial.X.production.o
+__Hbank43 0 0 ABS 0 bank43 dist/default/production\GetSerial.X.production.o
+__Hbank44 0 0 ABS 0 bank44 dist/default/production\GetSerial.X.production.o
+__Hbank45 0 0 ABS 0 bank45 dist/default/production\GetSerial.X.production.o
+__Hbank46 0 0 ABS 0 bank46 dist/default/production\GetSerial.X.production.o
+__Hbank47 0 0 ABS 0 bank47 dist/default/production\GetSerial.X.production.o
+__Hbank48 0 0 ABS 0 bank48 dist/default/production\GetSerial.X.production.o
+__Hbank49 0 0 ABS 0 bank49 dist/default/production\GetSerial.X.production.o
+__Hbank50 0 0 ABS 0 bank50 dist/default/production\GetSerial.X.production.o
+__Hbank51 0 0 ABS 0 bank51 dist/default/production\GetSerial.X.production.o
+__Hbank52 0 0 ABS 0 bank52 dist/default/production\GetSerial.X.production.o
+__Hbank53 0 0 ABS 0 bank53 dist/default/production\GetSerial.X.production.o
+__Hbank54 0 0 ABS 0 bank54 dist/default/production\GetSerial.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\GetSerial.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\GetSerial.X.production.o
+__smallconst 3700 0 SMALLCONST 0 smallconst C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+__end_of_ADC_SetADIInterruptHandler 412E 0 CODE 0 text28 dist/default/production\GetSerial.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\GetSerial.X.production.o
+__Hconfig 300024 0 CONFIG 4 config dist/default/production\GetSerial.X.production.o
+__end_of_UART1_DefaultErrorHandler 414C 0 CODE 0 text15 dist/default/production\GetSerial.X.production.o
+leer_serial@i 506 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\GetSerial.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\GetSerial.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\GetSerial.X.production.o
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\GetSerial.X.production.o
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\GetSerial.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\GetSerial.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\GetSerial.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\GetSerial.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\GetSerial.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\GetSerial.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\GetSerial.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\GetSerial.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\GetSerial.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\GetSerial.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\GetSerial.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\GetSerial.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\GetSerial.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\GetSerial.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\GetSerial.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\GetSerial.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\GetSerial.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\GetSerial.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\GetSerial.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\GetSerial.X.production.o
+_wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\GetSerial.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\GetSerial.X.production.o
+__Hinit 20000 0 CODE 0 init dist/default/production\GetSerial.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\GetSerial.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\GetSerial.X.production.o
+__Htemp 0 0 COMRAM 1 temp dist/default/production\GetSerial.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\GetSerial.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\GetSerial.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\GetSerial.X.production.o
+__Linit 1FFFC 0 CODE 0 init dist/default/production\GetSerial.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\GetSerial.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\GetSerial.X.production.o
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\GetSerial.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\GetSerial.X.production.o
+__LcstackBANK5 0 0 ABS 0 cstackBANK5 dist/default/production\GetSerial.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\GetSerial.X.production.o
+_I2C1_DO_BUS_ERROR 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__S0 20000 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__S1 620 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_uart1RxLastError 558 0 COMRAM 1 bssCOMRAM dist/default/production\GetSerial.X.production.o
+__end_of_UART1_Initialize 3EC6 0 CODE 0 text17 dist/default/production\GetSerial.X.production.o
+__pnvCOMRAM 53E 0 COMRAM 1 nvCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1STAT1bits 299 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_UART1_Initialize 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\GetSerial.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\GetSerial.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\GetSerial.X.production.o
+__size_of_ADC_SetContext1ThresholdInterruptHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1_DO_RESET 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_SYSTEM_Initialize 4090 0 CODE 0 text16 dist/default/production\GetSerial.X.production.o
+_I2C1CON0bits 294 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1CON1bits 295 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1ERRbits 297 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+strcmp@l 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+strcmp@r 503 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Hramtop 3700 0 RAM 0 ramtop dist/default/production\GetSerial.X.production.o
+strlen@a 503 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+strlen@s 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\GetSerial.X.production.o
+__activetblptr 3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_leer_serial 3F92 0 CODE 0 text10 dist/default/production\GetSerial.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\GetSerial.X.production.o
+__LbssBANK5 0 0 ABS 0 bssBANK5 dist/default/production\GetSerial.X.production.o
+__LbssBANK6 0 0 ABS 0 bssBANK6 dist/default/production\GetSerial.X.production.o
+_I2C1CLK 29E 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1ERR 297 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1PIE 29B 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1PIR 29A 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1RXB 28A 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1TXB 28B 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\GetSerial.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\GetSerial.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\GetSerial.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\GetSerial.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\GetSerial.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\GetSerial.X.production.o
+__Htext16 0 0 ABS 0 text16 dist/default/production\GetSerial.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\GetSerial.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\GetSerial.X.production.o
+__Htext19 0 0 ABS 0 text19 dist/default/production\GetSerial.X.production.o
+__Htext20 0 0 ABS 0 text20 dist/default/production\GetSerial.X.production.o
+__Htext21 0 0 ABS 0 text21 dist/default/production\GetSerial.X.production.o
+__Htext22 0 0 ABS 0 text22 dist/default/production\GetSerial.X.production.o
+__Htext23 0 0 ABS 0 text23 dist/default/production\GetSerial.X.production.o
+__Htext24 0 0 ABS 0 text24 dist/default/production\GetSerial.X.production.o
+__Htext25 0 0 ABS 0 text25 dist/default/production\GetSerial.X.production.o
+__Htext26 0 0 ABS 0 text26 dist/default/production\GetSerial.X.production.o
+__Htext27 0 0 ABS 0 text27 dist/default/production\GetSerial.X.production.o
+__Htext28 0 0 ABS 0 text28 dist/default/production\GetSerial.X.production.o
+__Htext29 0 0 ABS 0 text29 dist/default/production\GetSerial.X.production.o
+vfpfcnvrt@fmt 524 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_UART1_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADC_Initialize 3B34 0 CODE 0 text25 dist/default/production\GetSerial.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PIE7bits 4A5 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+stoa@nuls 511 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__ptext10 3F2C 0 CODE 0 text10 dist/default/production\GetSerial.X.production.o
+__ptext11 4140 0 CODE 0 text11 dist/default/production\GetSerial.X.production.o
+__ptext12 3C96 0 CODE 0 text12 dist/default/production\GetSerial.X.production.o
+__ptext13 4146 0 CODE 0 text13 dist/default/production\GetSerial.X.production.o
+__ptext14 4148 0 CODE 0 text14 dist/default/production\GetSerial.X.production.o
+__ptext15 414A 0 CODE 0 text15 dist/default/production\GetSerial.X.production.o
+__ptext16 4090 0 CODE 0 text16 dist/default/production\GetSerial.X.production.o
+__ptext17 3E52 0 CODE 0 text17 dist/default/production\GetSerial.X.production.o
+__ptext18 40DA 0 CODE 0 text18 dist/default/production\GetSerial.X.production.o
+__ptext19 40E8 0 CODE 0 text19 dist/default/production\GetSerial.X.production.o
+__ptext20 40F6 0 CODE 0 text20 dist/default/production\GetSerial.X.production.o
+__ptext21 4042 0 CODE 0 text21 dist/default/production\GetSerial.X.production.o
+__ptext22 3BEC 0 CODE 0 text22 dist/default/production\GetSerial.X.production.o
+__ptext23 40C2 0 CODE 0 text23 dist/default/production\GetSerial.X.production.o
+__ptext24 4016 0 CODE 0 text24 dist/default/production\GetSerial.X.production.o
+__ptext25 3B34 0 CODE 0 text25 dist/default/production\GetSerial.X.production.o
+__ptext26 4104 0 CODE 0 text26 dist/default/production\GetSerial.X.production.o
+__ptext27 4112 0 CODE 0 text27 dist/default/production\GetSerial.X.production.o
+__ptext28 4120 0 CODE 0 text28 dist/default/production\GetSerial.X.production.o
+__ptext29 0 0 CODE 0 text29 dist/default/production\GetSerial.X.production.o
+_I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_PIN_MANAGER_Initialize 3C96 0 CODE 0 text22 dist/default/production\GetSerial.X.production.o
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\GetSerial.X.production.o
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\GetSerial.X.production.o
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\GetSerial.X.production.o
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\GetSerial.X.production.o
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\GetSerial.X.production.o
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\GetSerial.X.production.o
+__Lbank16 0 0 ABS 0 bank16 dist/default/production\GetSerial.X.production.o
+__Lbank17 0 0 ABS 0 bank17 dist/default/production\GetSerial.X.production.o
+__Lbank18 0 0 ABS 0 bank18 dist/default/production\GetSerial.X.production.o
+__Lbank19 0 0 ABS 0 bank19 dist/default/production\GetSerial.X.production.o
+__Lbank20 0 0 ABS 0 bank20 dist/default/production\GetSerial.X.production.o
+__Lbank21 0 0 ABS 0 bank21 dist/default/production\GetSerial.X.production.o
+__Lbank22 0 0 ABS 0 bank22 dist/default/production\GetSerial.X.production.o
+__Lbank23 0 0 ABS 0 bank23 dist/default/production\GetSerial.X.production.o
+__Lbank24 0 0 ABS 0 bank24 dist/default/production\GetSerial.X.production.o
+__Lbank25 0 0 ABS 0 bank25 dist/default/production\GetSerial.X.production.o
+__Lbank26 0 0 ABS 0 bank26 dist/default/production\GetSerial.X.production.o
+__Lbank27 0 0 ABS 0 bank27 dist/default/production\GetSerial.X.production.o
+__Lbank28 0 0 ABS 0 bank28 dist/default/production\GetSerial.X.production.o
+__Lbank29 0 0 ABS 0 bank29 dist/default/production\GetSerial.X.production.o
+__Lbank30 0 0 ABS 0 bank30 dist/default/production\GetSerial.X.production.o
+__Lbank31 0 0 ABS 0 bank31 dist/default/production\GetSerial.X.production.o
+__Lbank32 0 0 ABS 0 bank32 dist/default/production\GetSerial.X.production.o
+__Lbank33 0 0 ABS 0 bank33 dist/default/production\GetSerial.X.production.o
+__Lbank34 0 0 ABS 0 bank34 dist/default/production\GetSerial.X.production.o
+__Lbank35 0 0 ABS 0 bank35 dist/default/production\GetSerial.X.production.o
+__Lbank36 0 0 ABS 0 bank36 dist/default/production\GetSerial.X.production.o
+__Lbank37 0 0 ABS 0 bank37 dist/default/production\GetSerial.X.production.o
+__Lbank38 0 0 ABS 0 bank38 dist/default/production\GetSerial.X.production.o
+__Lbank39 0 0 ABS 0 bank39 dist/default/production\GetSerial.X.production.o
+__Lbank40 0 0 ABS 0 bank40 dist/default/production\GetSerial.X.production.o
+__Lbank41 0 0 ABS 0 bank41 dist/default/production\GetSerial.X.production.o
+__Lbank42 0 0 ABS 0 bank42 dist/default/production\GetSerial.X.production.o
+__Lbank43 0 0 ABS 0 bank43 dist/default/production\GetSerial.X.production.o
+__Lbank44 0 0 ABS 0 bank44 dist/default/production\GetSerial.X.production.o
+__Lbank45 0 0 ABS 0 bank45 dist/default/production\GetSerial.X.production.o
+__Lbank46 0 0 ABS 0 bank46 dist/default/production\GetSerial.X.production.o
+__Lbank47 0 0 ABS 0 bank47 dist/default/production\GetSerial.X.production.o
+__Lbank48 0 0 ABS 0 bank48 dist/default/production\GetSerial.X.production.o
+__Lbank49 0 0 ABS 0 bank49 dist/default/production\GetSerial.X.production.o
+__Lbank50 0 0 ABS 0 bank50 dist/default/production\GetSerial.X.production.o
+__Lbank51 0 0 ABS 0 bank51 dist/default/production\GetSerial.X.production.o
+__Lbank52 0 0 ABS 0 bank52 dist/default/production\GetSerial.X.production.o
+__Lbank53 0 0 ABS 0 bank53 dist/default/production\GetSerial.X.production.o
+__Lbank54 0 0 ABS 0 bank54 dist/default/production\GetSerial.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\GetSerial.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\GetSerial.X.production.o
+_I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+UART1_SetErrorHandler@interruptHandler 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1_DO_TX_ACK 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+?_stoa 50C 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\GetSerial.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\GetSerial.X.production.o
+_printf 406A 0 CODE 0 text2 dist/default/production\GetSerial.X.production.o
+_LATFbits 4C3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1SCLPPS 271 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1SDAPPS 270 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\GetSerial.X.production.o
+_strcmp 3DC6 0 CODE 0 text1 dist/default/production\GetSerial.X.production.o
+_strlen 3FDC 0 CODE 0 text6 dist/default/production\GetSerial.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\GetSerial.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_UART1_Write 40C2 0 CODE 0 text9 dist/default/production\GetSerial.X.production.o
+stackhi 36FF 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+stacklo 620 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+stoa@cp 51C 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+stoa@fp 50C 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_OSCCON1 AD 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_OSCCON3 AF 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_OSCTUNE B0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\GetSerial.X.production.o
+_ADCON0bits 3F3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCON1bits 3F4 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCON2bits 3F5 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCON3bits 3F6 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_ADC_SetADIInterruptHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1_DO_RX_NACK_RESTART 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+?_vfpfcnvrt 522 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+main@cadena 560 0 BANK5 1 cstackBANK5 dist/default/production\GetSerial.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__pbssCOMRAM 550 0 COMRAM 1 bssCOMRAM dist/default/production\GetSerial.X.production.o
+__end_of_ADC_Initialize 3BEC 0 CODE 0 text25 dist/default/production\GetSerial.X.production.o
+__HcstackBANK5 0 0 ABS 0 cstackBANK5 dist/default/production\GetSerial.X.production.o
+_I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PIR1bits 4AF 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PIR2bits 4B0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PIR4bits 4B2 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_PIR7bits 4B5 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_UART1_SetFramingErrorHandler 40E8 0 CODE 0 text19 dist/default/production\GetSerial.X.production.o
+printf@ap 53A 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_UART1_SetOverrunErrorHandler 40DA 0 CODE 0 text18 dist/default/production\GetSerial.X.production.o
+_ADC_Context1Thereshld_ISR 541 0 COMRAM 1 nvCOMRAM dist/default/production\GetSerial.X.production.o
+end_of_initialization 3FD6 0 CODE 0 cinit dist/default/production\GetSerial.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\GetSerial.X.production.o
+_UART1_Read 3C96 0 CODE 0 text12 dist/default/production\GetSerial.X.production.o
+__size_of_printf 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+fputc@c 503 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_ADC_ActiveClockTuning_ISR 53E 0 COMRAM 1 nvCOMRAM dist/default/production\GetSerial.X.production.o
+vfprintf@fmt 52E 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\GetSerial.X.production.o
+__HbssBANK5 0 0 ABS 0 bssBANK5 dist/default/production\GetSerial.X.production.o
+__HbssBANK6 0 0 ABS 0 bssBANK6 dist/default/production\GetSerial.X.production.o
+_UART1_FramingErrorHandler 54D 0 COMRAM 1 nvCOMRAM dist/default/production\GetSerial.X.production.o
+_UART1_OverrunErrorHandler 54A 0 COMRAM 1 nvCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1_DO_RX 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_I2C1_DO_TX 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lramtop 3700 0 RAM 0 ramtop dist/default/production\GetSerial.X.production.o
+__size_of_strcmp 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\GetSerial.X.production.o
+__pcinit 3F92 0 CODE 0 cinit dist/default/production\GetSerial.X.production.o
+vfpfcnvrt@ap 526 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+vfpfcnvrt@cp 52A 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+vfpfcnvrt@fp 522 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__ptext0 3A7C 0 CODE 0 text0 dist/default/production\GetSerial.X.production.o
+__ptext1 3DC6 0 CODE 0 text1 dist/default/production\GetSerial.X.production.o
+__ptext2 406A 0 CODE 0 text2 dist/default/production\GetSerial.X.production.o
+__ptext3 3EC6 0 CODE 0 text3 dist/default/production\GetSerial.X.production.o
+__ptext4 374E 0 CODE 0 text4 dist/default/production\GetSerial.X.production.o
+__ptext5 38F6 0 CODE 0 text5 dist/default/production\GetSerial.X.production.o
+__ptext6 3FDC 0 CODE 0 text6 dist/default/production\GetSerial.X.production.o
+__ptext7 3D30 0 CODE 0 text7 dist/default/production\GetSerial.X.production.o
+__ptext8 412E 0 CODE 0 text8 dist/default/production\GetSerial.X.production.o
+__ptext9 40AA 0 CODE 0 text9 dist/default/production\GetSerial.X.production.o
+_I2C1PIEbits 29B 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\GetSerial.X.production.o
+vfprintf@ap 530 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+vfprintf@fp 52C 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1PIRbits 29A 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+vfprintf@cfmt 532 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\GetSerial.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\GetSerial.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\GetSerial.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\GetSerial.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\GetSerial.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\GetSerial.X.production.o
+__Ltext16 0 0 ABS 0 text16 dist/default/production\GetSerial.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\GetSerial.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\GetSerial.X.production.o
+__Ltext19 0 0 ABS 0 text19 dist/default/production\GetSerial.X.production.o
+__Ltext20 0 0 ABS 0 text20 dist/default/production\GetSerial.X.production.o
+__Ltext21 0 0 ABS 0 text21 dist/default/production\GetSerial.X.production.o
+__Ltext22 0 0 ABS 0 text22 dist/default/production\GetSerial.X.production.o
+__Ltext23 0 0 ABS 0 text23 dist/default/production\GetSerial.X.production.o
+__Ltext24 0 0 ABS 0 text24 dist/default/production\GetSerial.X.production.o
+__Ltext25 0 0 ABS 0 text25 dist/default/production\GetSerial.X.production.o
+__Ltext26 0 0 ABS 0 text26 dist/default/production\GetSerial.X.production.o
+__Ltext27 0 0 ABS 0 text27 dist/default/production\GetSerial.X.production.o
+__Ltext28 0 0 ABS 0 text28 dist/default/production\GetSerial.X.production.o
+__Ltext29 0 0 ABS 0 text29 dist/default/production\GetSerial.X.production.o
+_ADC_DefaultContext1Threshold_ISR 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__ramtop 3700 0 RAM 0 ramtop C:\Users\PICTRA~1\AppData\Local\Temp\s12cs.o
+_vfprintf 3EC6 0 CODE 0 text3 dist/default/production\GetSerial.X.production.o
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\GetSerial.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\GetSerial.X.production.o
+_UART1_DefaultErrorHandler 414A 0 CODE 0 text15 dist/default/production\GetSerial.X.production.o
+_ADC_SetADIInterruptHandler 4120 0 CODE 0 text28 dist/default/production\GetSerial.X.production.o
+__psmallconst 3700 0 SMALLCONST 0 smallconst dist/default/production\GetSerial.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\GetSerial.X.production.o
+__end_of_vfprintf 3F2C 0 CODE 0 text3 dist/default/production\GetSerial.X.production.o
+ADC_SetADIInterruptHandler@InterruptHandler 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_SLRCONA 403 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_SLRCONB 40B 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_SLRCONC 413 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_SLRCOND 41B 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_SLRCONE 423 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_SLRCONF 42B 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\GetSerial.X.production.o
+__end_of__initialization 3FD6 0 CODE 0 cinit dist/default/production\GetSerial.X.production.o
+__size_of_leer_serial 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\GetSerial.X.production.o
+_ADSTATbits 3F7 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_UART1_DefaultFramingErrorHandler 4148 0 CODE 0 text14 dist/default/production\GetSerial.X.production.o
+_UART1_DefaultOverrunErrorHandler 4146 0 CODE 0 text13 dist/default/production\GetSerial.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\GetSerial.X.production.o
+__end_of_UART1_Read 3D30 0 CODE 0 text12 dist/default/production\GetSerial.X.production.o
+__end_of_i2c1_fsmStateTable 373A 0 SMALLCONST 0 smallconst dist/default/production\GetSerial.X.production.o
+__pcstackCOMRAM 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_I2C1_Initialize 4042 0 CODE 0 text24 dist/default/production\GetSerial.X.production.o
+putch@txData 502 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__end_of_main 3B34 0 CODE 0 text0 dist/default/production\GetSerial.X.production.o
+__end_of_stoa 3A7C 0 CODE 0 text5 dist/default/production\GetSerial.X.production.o
+_ADC_DefaultActiveClockTuning_ISR 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_UART1_SetErrorHandler 4104 0 CODE 0 text20 dist/default/production\GetSerial.X.production.o
+printf@fmt 534 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+_ADACT 3F9 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCAP 3F0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCLK 3FA 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCNT 3E6 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCTX 3FB 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADPCH 3EC 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADREF 3F8 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADRPT 3E7 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_fputc 3DC6 0 CODE 0 text7 dist/default/production\GetSerial.X.production.o
+__end_of_getch 4146 0 CODE 0 text11 dist/default/production\GetSerial.X.production.o
+_OSCEN B3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_TRISA 4C6 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_TRISB 4C7 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_TRISC 4C8 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_TRISD 4C9 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_TRISE 4CA 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_TRISF 4CB 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1P1H 2A6 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1P1L 2A5 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1P2H 2A8 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1P2L 2A7 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1P3H 2AA 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1P3L 2A9 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1RXB 2A1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1TXB 2A3 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_U1UIR 2B1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_putch 4138 0 CODE 0 text8 dist/default/production\GetSerial.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\GetSerial.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\GetSerial.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\GetSerial.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\GetSerial.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\GetSerial.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\GetSerial.X.production.o
+_I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_flags 556 0 COMRAM 1 bssCOMRAM dist/default/production\GetSerial.X.production.o
+_fputc 3D30 0 CODE 0 text7 dist/default/production\GetSerial.X.production.o
+_getch 4140 0 CODE 0 text11 dist/default/production\GetSerial.X.production.o
+_putch 412E 0 CODE 0 text8 dist/default/production\GetSerial.X.production.o
+_width 552 0 COMRAM 1 bssCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+ADC_SetActiveClockTuningInterruptHandler@InterruptHandler 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+__size_of_UART1_Write 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__end_of_OSCILLATOR_Initialize 40DA 0 CODE 0 text23 dist/default/production\GetSerial.X.production.o
+__initialization 3F92 0 CODE 0 cinit dist/default/production\GetSerial.X.production.o
+__pbssBANK5 5C4 0 BANK5 1 bssBANK5 dist/default/production\GetSerial.X.production.o
+__pbssBANK6 600 0 BANK6 1 bssBANK6 dist/default/production\GetSerial.X.production.o
+_i2c1_fsmStateTable 3701 0 SMALLCONST 0 smallconst dist/default/production\GetSerial.X.production.o
+_UART1_SetErrorHandler 40F6 0 CODE 0 text20 dist/default/production\GetSerial.X.production.o
+__pdataCOMRAM 559 0 COMRAM 1 dataCOMRAM dist/default/production\GetSerial.X.production.o
+_I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\GetSerial.X.production.o
+__Hsmallconst 374E 0 SMALLCONST 0 smallconst dist/default/production\GetSerial.X.production.o
+_ADC_SetActiveClockTuningInterruptHandler 4112 0 CODE 0 text27 dist/default/production\GetSerial.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\GetSerial.X.production.o
+_U1ERRIRbits 2B2 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+_ADCSEL1bits 3FC 0 ABS 0 - dist/default/production\GetSerial.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\GetSerial.X.production.o
+_OSCILLATOR_Initialize 40C2 0 CODE 0 text23 dist/default/production\GetSerial.X.production.o
+UART1_Write@txData 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+leer_serial@ptrCadena 501 0 COMRAM 1 cstackCOMRAM dist/default/production\GetSerial.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text4 0 374E 374E 9F1 1
+text11 0 4140 4140 C 1
+cstackCOMRAM 1 501 501 5F 1
+cstackBANK5 1 560 560 8E 1
+init 0 1FFFC 1FFFC 4 1
+reset_vec 0 0 0 4 1
+bssBANK6 1 600 600 20 1
+smallconst 0 3700 3700 4E 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

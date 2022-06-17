@@ -1,0 +1,176 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F57Q84 ]
+[d frameptr 1249 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"8 D:\OneDrive - Soluciones Marva\DevC\1_2022\MascarasDeBits.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"50 D:\OneDrive - Soluciones Marva\DevC\1_2022\MascarasDeBits.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"57
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"71
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 D:\OneDrive - Soluciones Marva\DevC\1_2022\MascarasDeBits.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"1339 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
+[v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
+"1405
+[v _PMD1 PMD1 `VEuc  1 e 1 @97 ]
+"1467
+[v _PMD2 PMD2 `VEuc  1 e 1 @98 ]
+"1514
+[v _PMD3 PMD3 `VEuc  1 e 1 @99 ]
+"1565
+[v _PMD4 PMD4 `VEuc  1 e 1 @100 ]
+"1621
+[v _PMD5 PMD5 `VEuc  1 e 1 @101 ]
+"1678
+[v _PMD6 PMD6 `VEuc  1 e 1 @102 ]
+"1740
+[v _PMD7 PMD7 `VEuc  1 e 1 @103 ]
+"1802
+[v _PMD8 PMD8 `VEuc  1 e 1 @104 ]
+"3057
+[v _LATA LATA `VEuc  1 e 1 @1214 ]
+"3119
+[v _LATB LATB `VEuc  1 e 1 @1215 ]
+"3181
+[v _LATC LATC `VEuc  1 e 1 @1216 ]
+"3243
+[v _LATD LATD `VEuc  1 e 1 @1217 ]
+"3305
+[v _LATE LATE `VEuc  1 e 1 @1218 ]
+"3337
+[v _LATF LATF `VEuc  1 e 1 @1219 ]
+"3399
+[v _TRISA TRISA `VEuc  1 e 1 @1222 ]
+"3461
+[v _TRISB TRISB `VEuc  1 e 1 @1223 ]
+"3523
+[v _TRISC TRISC `VEuc  1 e 1 @1224 ]
+"3585
+[v _TRISD TRISD `VEuc  1 e 1 @1225 ]
+"3647
+[v _TRISE TRISE `VEuc  1 e 1 @1226 ]
+"3679
+[v _TRISF TRISF `VEuc  1 e 1 @1227 ]
+"5336
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @173 ]
+"5476
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @175 ]
+"5516
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @176 ]
+"5574
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @177 ]
+"5776
+[v _OSCEN OSCEN `VEuc  1 e 1 @179 ]
+"59375
+[v _ANSELA ANSELA `VEuc  1 e 1 @1024 ]
+"59437
+[v _WPUA WPUA `VEuc  1 e 1 @1025 ]
+"59499
+[v _ODCONA ODCONA `VEuc  1 e 1 @1026 ]
+"59561
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @1027 ]
+"59623
+[v _INLVLA INLVLA `VEuc  1 e 1 @1028 ]
+"59871
+[v _ANSELB ANSELB `VEuc  1 e 1 @1032 ]
+"59933
+[v _WPUB WPUB `VEuc  1 e 1 @1033 ]
+"59995
+[v _ODCONB ODCONB `VEuc  1 e 1 @1034 ]
+"60057
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @1035 ]
+"60119
+[v _INLVLB INLVLB `VEuc  1 e 1 @1036 ]
+"60367
+[v _ANSELC ANSELC `VEuc  1 e 1 @1040 ]
+"60429
+[v _WPUC WPUC `VEuc  1 e 1 @1041 ]
+"60491
+[v _ODCONC ODCONC `VEuc  1 e 1 @1042 ]
+"60553
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @1043 ]
+"60615
+[v _INLVLC INLVLC `VEuc  1 e 1 @1044 ]
+"60863
+[v _ANSELD ANSELD `VEuc  1 e 1 @1048 ]
+"60925
+[v _WPUD WPUD `VEuc  1 e 1 @1049 ]
+"60987
+[v _ODCOND ODCOND `VEuc  1 e 1 @1050 ]
+"61049
+[v _SLRCOND SLRCOND `VEuc  1 e 1 @1051 ]
+"61111
+[v _INLVLD INLVLD `VEuc  1 e 1 @1052 ]
+"61173
+[v _ANSELE ANSELE `VEuc  1 e 1 @1056 ]
+"61205
+[v _WPUE WPUE `VEuc  1 e 1 @1057 ]
+"61243
+[v _ODCONE ODCONE `VEuc  1 e 1 @1058 ]
+"61275
+[v _SLRCONE SLRCONE `VEuc  1 e 1 @1059 ]
+"61307
+[v _INLVLE INLVLE `VEuc  1 e 1 @1060 ]
+"61408
+[v _ANSELF ANSELF `VEuc  1 e 1 @1064 ]
+"61470
+[v _WPUF WPUF `VEuc  1 e 1 @1065 ]
+"61532
+[v _ODCONF ODCONF `VEuc  1 e 1 @1066 ]
+"61594
+[v _SLRCONF SLRCONF `VEuc  1 e 1 @1067 ]
+"61656
+[v _INLVLF INLVLF `VEuc  1 e 1 @1068 ]
+"8 D:\OneDrive - Soluciones Marva\DevC\1_2022\MascarasDeBits.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"41
+} 0
+"50 D:\OneDrive - Soluciones Marva\DevC\1_2022\MascarasDeBits.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"55
+} 0
+"71
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"55 D:\OneDrive - Soluciones Marva\DevC\1_2022\MascarasDeBits.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"133
+} 0
+"57 D:\OneDrive - Soluciones Marva\DevC\1_2022\MascarasDeBits.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"69
+} 0

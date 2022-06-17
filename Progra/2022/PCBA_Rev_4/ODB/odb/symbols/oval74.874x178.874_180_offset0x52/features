@@ -1,0 +1,18 @@
+#
+#Feature symbol Names
+#
+$0 r74.874
+#
+#Layer features
+#
+P 0 0 0 P 0 0
+P 0 -0.104 0 P 0 0
+S P 0
+OB 0.037437 0 I
+OS -0.037437 0
+OS -0.037437 -0.104
+OS 0.037437 -0.104
+OS 0.037437 0
+OE
+SE
+

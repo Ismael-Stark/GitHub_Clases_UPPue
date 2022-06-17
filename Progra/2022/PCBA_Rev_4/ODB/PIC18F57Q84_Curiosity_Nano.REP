@@ -1,0 +1,208 @@
+*************************************************************
+FileName = PIC18F57Q84_Curiosity_Nano.PcbDoc
+ODB++ directory structure
+*************************************************************
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\matrix\matrix
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\profile
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\stephdr
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\ground_plane\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\ground_plane\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\power_plane\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\power_plane\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top_overlay\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top_overlay\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_paste\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_paste\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top_paste\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top_paste\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\keep-out_layer\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\keep-out_layer\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\3d_bot__m12_\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\3d_bot__m12_\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\guard_top__m15_\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\guard_top__m15_\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\guard_bot__m14_\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\guard_bot__m14_\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_solder\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_solder\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\3d_top__m13_\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\3d_top__m13_\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\assy_top__m2_\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\assy_top__m2_\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\board__m1_\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\board__m1_\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\assy_bot__m3_\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\assy_bot__m3_\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_layer\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_layer\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top_solder\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top_solder\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_overlay\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\bottom_overlay\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\drill\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\drill\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\drill\tools
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top-layer\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\top-layer\attrlist
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\comp_+_bot\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\comp_+_bot\components
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\comp_+_top\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\layers\comp_+_top\components
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\steps\pcb\eda\data
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect21.6535x23.622_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval11.811x64.9606_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval11.811x64.9606_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect19.685x25.5906_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_90_offset1.9685x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_90_offset-1.9685x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x171_180_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x155_180_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x155_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x171_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_90_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_270_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval66.9291x43.307_180\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval66.9291x43.307_360\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval66.9291x43.307_180\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval66.9291x43.307_360\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect21.6535x23.622_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval11.811x64.9606_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval11.811x64.9606_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect19.685x25.5906_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_90_offset1.9685x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_90_offset-1.9685x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval74.874x178.874_180_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval74.874x162.874_180_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval74.874x162.874_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval74.874x178.874_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect83.4646x87.4016xr22.8347_90_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect83.4646x87.4016xr22.8347_270_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x171_180_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x155_180_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x155_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x171_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_90_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_270_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect26.3779x28.3464_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval16.5354x69.685_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval16.5354x69.685_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect24.4094x30.315_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval27x131_180_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval27x115_180_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval27x115_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval27x131_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect83.4646x87.4016xr22.8347_90_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect83.4646x87.4016xr22.8347_270_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect21.6535x23.622_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval11.811x64.9606_135\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval11.811x64.9606_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect19.685x25.5906_225\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x171_180_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x155_180_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x155_offset0x44\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\oval67x171_offset0x52\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_90_offset-17.2244x0\features
+
+Generated File : C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\Project_Outputs_for_PIC18F57Q84_Curiosity_Nano\ODB\odb\symbols\rect78.7402x82.6772xr20.4725_270_offset-17.2244x0\features
+

@@ -1,0 +1,1333 @@
+#
+#Component attribute names
+#
+@0 .comp_mount_type
+@1 .comp_height
+
+# CMP 0
+CMP 14 1.3497694 0.3213838 90 N XC200 Supersedes_A07-0129,_A07-0170 ;0=1,1=0.0354
+PRP AN 'A07-0171'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.899999976158142'
+PRP Manufacturer 'Microchip'
+PRP MPN 'VMK3-9001-32K7680000TR'
+PRP PartGroup 'Frequency devices,Crystals,SMD'
+PRP Status 'Active'
+PRP TemperatureRange '-40 to 85C'
+PRP Tolerance '20ppm'
+PRP Value '32.768kHz'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '2006-02-17'
+TOP 0 1.3497694 0.3705964 90 N 5 3 XC200-1
+TOP 1 1.3497694 0.2721712 90 N 2 7 XC200-2
+#
+# CMP 1
+CMP 16 1.3596119 0.4151556 180 N J216 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-1454'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 1.3783127 0.4151556 90 N 1 5 J216-1
+TOP 1 1.3409111 0.4151556 90 N 5 2 J216-2
+#
+# CMP 2
+CMP 23 1.4858548 0.3683781 0 N J215 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2866'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'SOLDER-STRAP_OPEN'
+TOP 0 1.471091 0.3683781 0 N 1 7 J215-1
+TOP 1 1.5006186 0.3683781 0 N 51 6 J215-2
+#
+# CMP 3
+CMP 23 1.4858548 0.3090552 0 N J214 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2866'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'SOLDER-STRAP_OPEN'
+TOP 0 1.471091 0.3090552 0 N 2 6 J214-1
+TOP 1 1.5006186 0.3090552 0 N 50 6 J214-2
+#
+# CMP 4
+CMP 1 1.4216198 0.3892972 90 N C206 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0014'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.550000011920929'
+PRP Manufacturer 'Yageo'
+PRP MPN 'CC0402DRNPO9BN8R2'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '50V, +/-5%'
+PRP Value '8.2p'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 1.4216198 0.407998 0 N 1 6 C206-1
+TOP 1 1.4216198 0.3705964 0 N 91 199 C206-2
+#
+# CMP 5
+CMP 1 1.4216198 0.290872 90 N C202 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0014'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.550000011920929'
+PRP Manufacturer 'Yageo'
+PRP MPN 'CC0402DRNPO9BN8R2'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '50V, +/-5%'
+PRP Value '8.2p'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 1.4216198 0.3095728 0 N 91 198 C202-1
+TOP 1 1.4216198 0.2721712 0 N 2 5 C202-2
+#
+# CMP 6
+CMP 7 2 0.4 225 N U200 empty_part_name ;0=1,1=0.0472
+PRP AN 'A06-1711'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '1'
+PRP Manufacturer 'Microchip'
+PRP MPN 'PIC18F57Q84-I/PT'
+PRP PartGroup 'Integrated Circuits,MCU, MPU, DSP,PIC'
+PRP TemperatureRange '-40캜 to + 85캜'
+PRP Value 'PIC18F57Q84-I/PT'
+TOP 0 2.0368864 0.2099998 135 N 29 6 U200-1
+TOP 1 2.0508059 0.2239192 135 N 28 4 U200-2
+TOP 2 2.0647253 0.2378386 135 N 47 10 U200-3
+TOP 3 2.0786448 0.2517581 135 N 46 10 U200-4
+TOP 4 2.0925642 0.2656775 135 N 45 6 U200-5
+TOP 5 2.1064836 0.2795969 135 N 91 181 U200-6
+TOP 6 2.120403 0.2935164 135 N 82 16 U200-7
+TOP 7 2.1343224 0.3074358 135 N 36 4 U200-8
+TOP 8 2.1482419 0.3213552 135 N 35 6 U200-9
+TOP 9 2.1621613 0.3352746 135 N 34 6 U200-10
+TOP 10 2.1760807 0.349194 135 N 33 4 U200-11
+TOP 11 2.1900002 0.3631135 135 N 26 4 U200-12
+TOP 12 2.1900002 0.4368864 225 N 25 4 U200-13
+TOP 13 2.1760807 0.4508058 225 N 24 4 U200-14
+TOP 14 2.1621613 0.4647252 225 N 23 4 U200-15
+TOP 15 2.1482418 0.4786447 225 N 16 8 U200-16
+TOP 16 2.1343224 0.4925641 225 N 15 7 U200-17
+TOP 17 2.120403 0.5064835 225 N 53 6 U200-18
+TOP 18 2.1064836 0.520403 225 N 52 4 U200-19
+TOP 19 2.0925642 0.5343224 225 N 43 8 U200-20
+TOP 20 2.0786447 0.5482418 225 N 42 4 U200-21
+TOP 21 2.0647253 0.5621612 225 N 41 4 U200-22
+TOP 22 2.0508059 0.5760806 225 N 40 4 U200-23
+TOP 23 2.0368864 0.5900001 225 N 18 11 U200-24
+TOP 24 1.9631136 0.5900001 135 N 17 8 U200-25
+TOP 25 1.9491941 0.5760806 135 N 39 6 U200-26
+TOP 26 1.9352747 0.5621612 135 N 10 6 U200-27
+TOP 27 1.9213553 0.5482418 135 N 44 6 U200-28
+TOP 28 1.9074358 0.5343224 135 N 9 8 U200-29
+TOP 29 1.8935164 0.520403 135 N 82 15 U200-30
+TOP 30 1.879597 0.5064835 135 N 91 180 U200-31
+TOP 31 1.8656776 0.4925641 135 N 37 5 U200-32
+TOP 32 1.8517582 0.4786447 135 N 38 5 U200-33
+TOP 33 1.8378387 0.4647252 135 N 51 5 U200-34
+TOP 34 1.8239193 0.4508058 135 N 50 5 U200-35
+TOP 35 1.8099998 0.4368864 135 N 8 8 U200-36
+TOP 36 1.8099998 0.3631135 225 N 7 8 U200-37
+TOP 37 1.8239193 0.349194 225 N 27 6 U200-38
+TOP 38 1.8378387 0.3352746 225 N 6 11 U200-39
+TOP 39 1.8517581 0.3213552 225 N 14 8 U200-40
+TOP 40 1.8656776 0.3074358 225 N 13 8 U200-41
+TOP 41 1.879597 0.2935164 225 N 12 4 U200-42
+TOP 42 1.8935164 0.2795969 225 N 11 3 U200-43
+TOP 43 1.9074358 0.2656775 225 N 49 6 U200-44
+TOP 44 1.9213552 0.2517581 225 N 48 6 U200-45
+TOP 45 1.9352747 0.2378386 225 N 32 4 U200-46
+TOP 46 1.9491941 0.2239192 225 N 31 4 U200-47
+TOP 47 1.9631136 0.2099998 225 N 30 4 U200-48
+#
+# CMP 7
+CMP 21 1.6899606 0.5230378 0 N J208 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'Closed Link'
+TOP 0 1.6712598 0.5230378 270 N 21 6 J208-1
+TOP 1 1.71063 0.5230378 0 N 37 7 J208-2
+#
+# CMP 8
+CMP 21 1.6899607 0.4639828 0 N J207 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-2981'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP Value 'Closed Link'
+TOP 0 1.6712599 0.4639828 270 N 22 5 J207-1
+TOP 1 1.7106301 0.4639828 0 N 38 7 J207-2
+#
+# CMP 9
+CMP 3 0.3612205 0.46 180 N R113 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.3809055 0.46 90 N 69 4 R113-1
+TOP 1 0.3415354 0.46 90 N 91 178 R113-2
+#
+# CMP 10
+CMP 22 1.05 0.567 0 N J101 empty_part_name ;0=2,1=0.0000
+PRP AN 'A08-3029'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link 1x2 100mil header'
+TOP 0 1 0.567 0 N 54 10 J101-1
+TOP 1 1.1 0.567 0 N 82 18 J101-2
+#
+# CMP 11
+CMP 16 0.81872 0.6337959 0 N J100 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-1454'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 0.8000192 0.6337959 270 N 74 19 J100-1
+TOP 1 0.8374208 0.6337959 270 N 54 8 J100-2
+#
+# CMP 12
+CMP 2 0.265748 0.5679922 90 N F100 Farnell_no:_1861197 ;0=1,1=0.0236
+PRP AN 'A02-0622'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '1.25'
+PRP Manufacturer 'Multicomp'
+PRP MPN 'MC36213'
+PRP PartGroup 'Resistors,Resettable fuses,SMD'
+PRP Status 'Active'
+PRP TemperatureRange '-40캜 to + 85캜'
+PRP Tolerance ''
+PRP Value 'MC36213'
+PRP Verified_by 'Ketil Skjerve'
+PRP Verified_date '2006-01-30'
+TOP 0 0.265748 0.6053938 0 N 92 4 F100-1
+TOP 1 0.265748 0.5305907 0 N 55 9 F100-2
+#
+# CMP 13
+CMP 6 0.3602362 0.5068898 180 N Q101 empty_part_name ;0=1,1=0.0209
+PRP AN 'A05-0180'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer 'Diodes Incorporated'
+PRP MPN 'DMN65D8LFB-7'
+PRP PartGroup 'Transistors,Small signal FET,SMD'
+PRP Status 'New'
+PRP TemperatureRange '-55째C to +150째C'
+PRP Tolerance ''
+PRP Value 'DMN65D8LFB'
+PRP Verified_by ''
+PRP Verified_date ''
+TOP 0 0.3740157 0.4980315 180 N 69 5 Q101-1
+TOP 1 0.3740157 0.5157481 180 N 91 179 Q101-2
+TOP 2 0.3464567 0.5068898 180 N 103 3 Q101-3
+#
+# CMP 14
+CMP 10 0.5655513 0.5600391 0 N U102 Marking_code:_AAR ;0=1,1=0.0217
+PRP AN 'A06-1578'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.899999976158142'
+PRP Manufacturer 'Microchip'
+PRP MPN 'MIC5353YMT-TR'
+PRP PartGroup 'Integrated Circuits,Regulators,Linear'
+PRP TemperatureRange '-40째C to +125째C'
+PRP Tolerance ''
+PRP Value 'MIC5353'
+TOP 0 0.5360237 0.5797241 270 N 70 11 U102-1
+TOP 1 0.5360237 0.5600391 270 N 91 188 U102-2
+TOP 2 0.5360237 0.540354 270 N 55 12 U102-3
+TOP 3 0.5950789 0.540354 270 N 73 15 U102-4
+TOP 4 0.5950789 0.5600391 270 N 75 8 U102-5
+TOP 5 0.5950789 0.5797241 270 N 79 3 U102-6
+TOP 6 0.5655513 0.5600391 270 N 91 187 U102-7
+#
+# CMP 15
+CMP 19 0.0846458 0.4000004 90 N J105 empty_part_name ;0=1,1=0.1181
+PRP AN 'A08-2839'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '3'
+PRP Manufacturer 'Allen Creations Corp.'
+PRP MPN 'MU-MB0142AB2-269'
+PRP PartGroup 'Mechanical devices,Connectors,USB'
+PRP Status 'Active'
+PRP TemperatureRange '-30째C to +80째C'
+PRP Tolerance ''
+PRP Value 'MU-MB0142AB2-269'
+PRP Verified_by 'Eirik Rasmussen'
+PRP Verified_date '2006-05-18'
+TOP 0 0.1901576 0.4511815 90 N 55 13 J105-1
+TOP 1 0.1901576 0.4255909 90 N 84 1 J105-2
+TOP 2 0.1901576 0.4000004 90 N 83 1 J105-3
+TOP 3 0.1901576 0.3744098 90 N 0 1 J105-4
+TOP 4 0.1901576 0.3488193 90 N 91 193 J105-5
+TOP 5 0.0846458 0.5643705 270 N 88 0 J105-6
+TOP 6 0.0846458 0.2356303 90 N 88 1 J105-7
+TOP 7 0.198819 0.4875988 90 N 88 3 J105-8
+TOP 8 0.198819 0.312402 90 N 88 2 J105-9
+TOP 9 0.1653545 0.4787406 90 N 0 3 J105-10
+TOP 10 0.1653545 0.3212602 90 N 0 4 J105-11
+#
+# CMP 16
+CMP 11 0.7298822 0.3553161 0 N U105 1.05_x_1.05_x_0.4mm_Cheaper_alternative_to_A06-1576.__Unable_to_place_with_two_schematic_symbols_listed.__Removed_LVC1T45_Original_SN74LVC1T45DCKR,LVC1T45 ;0=1,1=0.0157
+PRP AN 'A06-1580'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.400000005960464'
+PRP Manufacturer 'Diodes Incorporated'
+PRP MPN '74LVC1T45FW4-7'
+PRP PartGroup 'Integrated Circuits,Interface ICs,Level translators'
+PRP Status 'Verified'
+PRP TemperatureRange '-40C - 125C'
+PRP Tolerance ''
+PRP Value '74LVC1T45FW4-7'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '29.08.2013'
+TOP 0 0.7161027 0.3690956 270 N 99 38 U105-1
+TOP 1 0.7161027 0.3553161 270 N 91 189 U105-2
+TOP 2 0.7161027 0.3415365 270 N 68 6 U105-3
+TOP 3 0.7436617 0.3415365 270 N 76 15 U105-4
+TOP 4 0.7436617 0.3553161 270 N 59 7 U105-5
+TOP 5 0.7436617 0.3690956 270 N 74 16 U105-6
+#
+# CMP 17
+CMP 11 0.7298822 0.4734262 0 N U107 1.05_x_1.05_x_0.4mm_Cheaper_alternative_to_A06-1576.__Unable_to_place_with_two_schematic_symbols_listed.__Removed_LVC1T45_Original_SN74LVC1T45DCKR,LVC1T45 ;0=1,1=0.0157
+PRP AN 'A06-1580'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.400000005960464'
+PRP Manufacturer 'Diodes Incorporated'
+PRP MPN '74LVC1T45FW4-7'
+PRP PartGroup 'Integrated Circuits,Interface ICs,Level translators'
+PRP Status 'Verified'
+PRP TemperatureRange '-40C - 125C'
+PRP Tolerance ''
+PRP Value '74LVC1T45FW4-7'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '29.08.2013'
+TOP 0 0.7161027 0.4872057 270 N 99 25 U107-1
+TOP 1 0.7161027 0.4734262 270 N 91 157 U107-2
+TOP 2 0.7161027 0.4596466 270 N 64 2 U107-3
+TOP 3 0.7436617 0.4596466 270 N 101 8 U107-4
+TOP 4 0.7436617 0.4734262 270 N 65 8 U107-5
+TOP 5 0.7436617 0.4872057 270 N 74 12 U107-6
+#
+# CMP 18
+CMP 11 0.7298822 0.2568908 0 N U104 1.05_x_1.05_x_0.4mm_Cheaper_alternative_to_A06-1576.__Unable_to_place_with_two_schematic_symbols_listed.__Removed_LVC1T45_Original_SN74LVC1T45DCKR,LVC1T45 ;0=1,1=0.0157
+PRP AN 'A06-1580'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.400000005960464'
+PRP Manufacturer 'Diodes Incorporated'
+PRP MPN '74LVC1T45FW4-7'
+PRP PartGroup 'Integrated Circuits,Interface ICs,Level translators'
+PRP Status 'Verified'
+PRP TemperatureRange '-40C - 125C'
+PRP Tolerance ''
+PRP Value '74LVC1T45FW4-7'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '29.08.2013'
+TOP 0 0.7161027 0.2706703 270 N 99 26 U104-1
+TOP 1 0.7161027 0.2568908 270 N 91 158 U104-2
+TOP 2 0.7161027 0.2431112 270 N 96 2 U104-3
+TOP 3 0.7436617 0.2431112 270 N 78 10 U104-4
+TOP 4 0.7436617 0.2568908 270 N 61 8 U104-5
+TOP 5 0.7436617 0.2706703 270 N 74 13 U104-6
+#
+# CMP 19
+CMP 11 0.7298822 0.1978355 0 N U103 1.05_x_1.05_x_0.4mm_Cheaper_alternative_to_A06-1576.__Unable_to_place_with_two_schematic_symbols_listed.__Removed_LVC1T45_Original_SN74LVC1T45DCKR,LVC1T45 ;0=1,1=0.0157
+PRP AN 'A06-1580'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.400000005960464'
+PRP Manufacturer 'Diodes Incorporated'
+PRP MPN '74LVC1T45FW4-7'
+PRP PartGroup 'Integrated Circuits,Interface ICs,Level translators'
+PRP Status 'Verified'
+PRP TemperatureRange '-40C - 125C'
+PRP Tolerance ''
+PRP Value '74LVC1T45FW4-7'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '29.08.2013'
+TOP 0 0.7161027 0.211615 270 N 99 27 U103-1
+TOP 1 0.7161027 0.1978355 270 N 91 159 U103-2
+TOP 2 0.7161027 0.1840559 270 N 95 2 U103-3
+TOP 3 0.7436617 0.1840559 270 N 77 5 U103-4
+TOP 4 0.7436617 0.1978355 270 N 97 8 U103-5
+TOP 5 0.7436617 0.211615 270 N 74 14 U103-6
+#
+# CMP 20
+CMP 3 0.6669296 0.2755471 270 N R105 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.6669296 0.2558621 180 N 91 160 R105-1
+TOP 1 0.6669296 0.2952322 180 N 81 3 R105-2
+#
+# CMP 21
+CMP 3 0.7298626 0.3061028 0 N R102 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.7101776 0.3061028 270 N 81 4 R102-1
+TOP 1 0.7495477 0.3061028 270 N 73 12 R102-2
+#
+# CMP 22
+CMP 1 0.485787 0.5964574 270 N C101 Farnell_no:_1288200 ;0=1,1=0.0217
+PRP AN 'A01-0300'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'Kemet'
+PRP MPN 'C0402C225M9PAC'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55째C to +85째C'
+PRP Tolerance '짹20%'
+PRP Value '2.2uF'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.485787 0.5777566 180 N 91 177 C101-1
+TOP 1 0.485787 0.6151582 180 N 99 32 C101-2
+#
+# CMP 23
+CMP 4 0.258701 0.1811024 180 N D100 Replacement_to_A10-0183_Not_proven_to_be_as_good_at_If_=_1mA ;0=1,1=0.0079
+PRP AN 'A10-0213'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.200000002980232'
+PRP Manufacturer 'ROHM'
+PRP MPN 'SML-P12MTT86R'
+PRP PartGroup 'Opto,LEDs,SMD'
+PRP Status 'Active'
+PRP TemperatureRange '-40 to +85'
+PRP Tolerance ''
+PRP Value 'GREEN LED'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '2006-02-17'
+TOP 0 0.278386 0.1811024 90 N 90 3 D100-1
+TOP 1 0.239016 0.1811024 90 N 99 33 D100-2
+#
+# CMP 24
+CMP 1 0.5832679 0.1801189 0 N C107 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0246'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'Kemet'
+PRP MPN 'C0402C104K4RACTU'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '16V, +/-10%'
+PRP Value '100n'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.5645671 0.1801189 270 N 99 28 C107-1
+TOP 1 0.6019687 0.1801189 270 N 91 161 C107-2
+#
+# CMP 25
+CMP 3 0.4287409 0.1801189 0 N R107 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0212'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'Yageo'
+PRP MPN 'RC0402FR071KL'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '1k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.4090559 0.1801189 270 N 90 2 R107-1
+TOP 1 0.448426 0.1801189 270 N 87 2 R107-2
+#
+# CMP 26
+CMP 3 0.4503546 0.5019691 270 N R100 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.4503546 0.4822841 180 N 60 4 R100-1
+TOP 1 0.4503546 0.5216542 180 N 91 162 R100-2
+#
+# CMP 27
+CMP 1 0.6511811 0.4340555 270 N C108 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0246'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'Kemet'
+PRP MPN 'C0402C104K4RACTU'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '16V, +/-10%'
+PRP Value '100n'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.6511811 0.4153547 180 N 99 29 C108-1
+TOP 1 0.6511811 0.4527563 180 N 91 163 C108-2
+#
+# CMP 28
+CMP 0 0.3589716 0.6140605 180 N C100 empty_part_name ;0=1,1=0.0315
+PRP AN 'A01-0377'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.800000011920929'
+PRP Manufacturer 'TDK'
+PRP MPN 'C1608X5R1A475K'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0603'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +85 deg C'
+PRP Tolerance '10%'
+PRP Value '4.7uF'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.3864716 0.6140605 180 N 91 176 C100-1
+TOP 1 0.3314716 0.6140605 180 N 55 8 C100-2
+#
+# CMP 29
+CMP 1 0.5064962 0.1801189 0 N C106 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0286'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'Kemet'
+PRP MPN 'C0402C105K9PAC'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 to 85 deg C'
+PRP Tolerance '+/-10%'
+PRP Value '1u'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.4877954 0.1801189 270 N 91 164 C106-1
+TOP 1 0.525197 0.1801189 270 N 98 2 C106-2
+#
+# CMP 30
+CMP 8 0.5169292 0.3216539 270 N U100 QFN32 ;0=1,1=0.0400
+PRP AN 'A06-1205'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '1.20000004768372'
+PRP Manufacturer 'Microchip'
+PRP MPN 'ATSAMD21E18A-MUT'
+PRP PartGroup 'Integrated Circuits,MCU, MPU, DSP,ARM MCU'
+PRP TemperatureRange '-40째C to +85째C'
+PRP Tolerance ''
+PRP Value 'SAMD21E18A-MUT'
+TOP 0 0.6110237 0.2529139 180 N 95 3 U100-1
+TOP 1 0.6110237 0.2725989 180 N 96 3 U100-2
+TOP 2 0.6110237 0.292284 180 N 80 9 U100-3
+TOP 3 0.6110237 0.3119689 180 N 81 5 U100-4
+TOP 4 0.6110237 0.3316539 180 N 68 5 U100-5
+TOP 5 0.6110237 0.3513389 180 N 100 0 U100-6
+TOP 6 0.6110237 0.3710239 180 N 67 3 U100-7
+TOP 7 0.6110237 0.3907089 180 N 66 3 U100-8
+TOP 8 0.5856694 0.415591 270 N 99 35 U100-9
+TOP 9 0.5659844 0.415591 270 N 91 184 U100-10
+TOP 10 0.5462993 0.415591 270 N 65 9 U100-11
+TOP 11 0.5266143 0.415591 270 N 64 3 U100-12
+TOP 12 0.5069293 0.415591 270 N 70 10 U100-13
+TOP 13 0.4872442 0.415591 270 N 60 6 U100-14
+TOP 14 0.4675592 0.415591 270 N 59 6 U100-15
+TOP 15 0.4478741 0.415591 270 N 72 9 U100-16
+TOP 16 0.4228347 0.3907092 180 N 69 6 U100-17
+TOP 17 0.4228347 0.3710241 180 N 57 9 U100-18
+TOP 18 0.4228347 0.3513391 180 N 61 9 U100-19
+TOP 19 0.4228347 0.3316541 180 N 62 6 U100-20
+TOP 20 0.4228347 0.311969 180 N 97 9 U100-21
+TOP 21 0.4228347 0.292284 180 N 58 9 U100-22
+TOP 22 0.4228347 0.2725989 180 N 84 0 U100-23
+TOP 23 0.4228347 0.2529139 180 N 83 0 U100-24
+TOP 24 0.4481891 0.2278351 270 N 94 0 U100-25
+TOP 25 0.4678742 0.2278351 270 N 89 5 U100-26
+TOP 26 0.4875592 0.2278351 270 N 87 3 U100-27
+TOP 27 0.5072443 0.2278351 270 N 91 183 U100-28
+TOP 28 0.5269293 0.2278351 270 N 98 3 U100-29
+TOP 29 0.5466143 0.2278351 270 N 99 34 U100-30
+TOP 30 0.5662994 0.2278351 270 N 86 6 U100-31
+TOP 31 0.5858268 0.227717 270 N 85 6 U100-32
+TOP 32 0.5169292 0.3218115 270 N 91 182 U100-33
+#
+# CMP 31
+CMP 9 0.438543 0.5984253 90 N U101 empty_part_name ;0=1,1=0.0217
+PRP AN 'A06-1475'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.550000011920929'
+PRP Manufacturer 'Microchip'
+PRP MPN 'MIC5528-3.3YMT-T5'
+PRP PartGroup 'Integrated Circuits,Regulators,Linear'
+PRP TemperatureRange '-40째C ~ 125째C'
+PRP Tolerance ''
+PRP Value 'MIC5528-3.3YMT'
+PRP Verified_by ''
+PRP Verified_date ''
+TOP 0 0.454291 0.6193273 180 N 99 37 U101-1
+TOP 1 0.438543 0.6193273 180 N 99 36 U101-2
+TOP 2 0.422795 0.6193273 180 N 91 186 U101-3
+TOP 3 0.422795 0.5775233 180 N 55 10 U101-4
+TOP 4 0.438543 0.5775233 180 N 0 0 U101-5
+TOP 5 0.454291 0.5775233 180 N 55 11 U101-6
+TOP 6 0.438543 0.5984253 90 N 91 185 U101-7
+#
+# CMP 32
+CMP 1 0.6433072 0.6190949 0 N C102 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0246'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'Kemet'
+PRP MPN 'C0402C104K4RACTU'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '16V, +/-10%'
+PRP Value '100n'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.6246064 0.6190949 270 N 79 2 C102-1
+TOP 1 0.662008 0.6190949 270 N 91 165 C102-2
+#
+# CMP 33
+CMP 1 0.5657482 0.5019681 0 N C103 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0493'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'TDK'
+PRP MPN 'C1005X5R1A225K'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 to 85C'
+PRP Tolerance '+/-10%'
+PRP Value '2.2uF'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.5470474 0.5019681 270 N 91 166 C103-1
+TOP 1 0.584449 0.5019681 270 N 73 13 C103-2
+#
+# CMP 34
+CMP 3 0.6314965 0.5620093 270 N R101 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.6314965 0.5423243 180 N 73 14 R101-1
+TOP 1 0.6314965 0.5816944 180 N 75 5 R101-2
+#
+# CMP 35
+CMP 3 0.6669291 0.5620082 270 N R104 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0246'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'Yageo'
+PRP MPN 'RC0402FR-0727KL'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '27k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.6669291 0.5423232 180 N 91 167 R104-1
+TOP 1 0.6669291 0.5816933 180 N 75 6 R104-2
+#
+# CMP 36
+CMP 3 0.7264374 0.6190949 0 N R106 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0248'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'ASJ Holdings'
+PRP MPN 'CR10-3302-FK'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '33k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.7067524 0.6190949 270 N 75 7 R106-1
+TOP 1 0.7461225 0.6190949 270 N 80 8 R106-2
+#
+# CMP 37
+CMP 3 0.6511811 0.3533075 270 N R108 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0212'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'Yageo'
+PRP MPN 'RC0402FR071KL'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '1k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.6511811 0.3336225 180 N 68 4 R108-1
+TOP 1 0.6511811 0.3729926 180 N 67 2 R108-2
+#
+# CMP 38
+CMP 11 0.7298822 0.4143708 0 N U106 1.05_x_1.05_x_0.4mm_Cheaper_alternative_to_A06-1576.__Unable_to_place_with_two_schematic_symbols_listed.__Removed_LVC1T45_Original_SN74LVC1T45DCKR,LVC1T45 ;0=1,1=0.0157
+PRP AN 'A06-1580'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.400000005960464'
+PRP Manufacturer 'Diodes Incorporated'
+PRP MPN '74LVC1T45FW4-7'
+PRP PartGroup 'Integrated Circuits,Interface ICs,Level translators'
+PRP Status 'Verified'
+PRP TemperatureRange '-40C - 125C'
+PRP Tolerance ''
+PRP Value '74LVC1T45FW4-7'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '29.08.2013'
+TOP 0 0.7161027 0.4281503 270 N 99 30 U106-1
+TOP 1 0.7161027 0.4143708 270 N 91 168 U106-2
+TOP 2 0.7161027 0.4005912 270 N 66 2 U106-3
+TOP 3 0.7436617 0.4005912 270 N 102 14 U106-4
+TOP 4 0.7436617 0.4143708 270 N 72 8 U106-5
+TOP 5 0.7436617 0.4281503 270 N 74 15 U106-6
+#
+# CMP 39
+CMP 3 0.5655508 0.6190949 0 N R103 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.5458658 0.6190949 270 N 70 9 R103-1
+TOP 1 0.5852359 0.6190949 270 N 91 169 R103-2
+#
+# CMP 40
+CMP 3 0.4877556 0.5019692 270 N R109 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.4877556 0.4822842 180 N 60 5 R109-1
+TOP 1 0.4877556 0.5216543 180 N 55 7 R109-2
+#
+# CMP 41
+CMP 3 0.3612205 0.5423228 0 N R110 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0212'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'Yageo'
+PRP MPN 'RC0402FR071KL'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '1k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.3415355 0.5423228 270 N 103 2 R110-1
+TOP 1 0.3809056 0.5423228 270 N 71 14 R110-2
+#
+# CMP 42
+CMP 3 0.3499972 0.1801189 0 N R112 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0212'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'Yageo'
+PRP MPN 'RC0402FR071KL'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '1k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.3303122 0.1801189 270 N 99 31 R112-1
+TOP 1 0.3696823 0.1801189 270 N 58 8 R112-2
+#
+# CMP 43
+CMP 12 0.7264374 0.5620082 180 N U108 empty_part_name ;0=1,1=0.0315
+PRP AN 'A06-1613'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.800000011920929'
+PRP Manufacturer 'Microchip'
+PRP MPN 'MIC94163YCS-TR'
+PRP PartGroup 'Integrated Circuits,General linear,Analog switch, bus switch and MUX'
+PRP Status 'Active'
+PRP TemperatureRange '-40째C to +125째C'
+PRP Tolerance ''
+PRP Value 'MIC94163'
+PRP Verified_by ''
+PRP Verified_comment ''
+PRP Verified_date ''
+TOP 0 0.7362799 0.5423232 180 N 74 17 U108-A1
+TOP 1 0.7165949 0.5423232 180 N 73 16 U108-A2
+TOP 2 0.7362799 0.5620082 180 N 74 18 U108-B1
+TOP 3 0.7165949 0.5620082 180 N 73 17 U108-B2
+TOP 4 0.7362799 0.5816933 180 N 91 190 U108-C1
+TOP 5 0.7165949 0.5816933 180 N 57 10 U108-C2
+#
+# CMP 44
+CMP 3 0.3612205 0.4234245 180 N R111 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.3809055 0.4234245 90 N 57 8 R111-1
+TOP 1 0.3415354 0.4234245 90 N 91 170 R111-2
+#
+# CMP 45
+CMP 1 2.1624016 0.238189 315 N C200 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0246'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'Kemet'
+PRP MPN 'C0402C104K4RACTU'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '16V, +/-10%'
+PRP Value '100n'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 2.1491781 0.2249655 225 N 91 171 C200-1
+TOP 1 2.1756251 0.2514125 225 N 82 12 C200-2
+#
+# CMP 46
+CMP 3 2.1841951 0.5569466 225 N R200 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 2.1981145 0.5430272 135 N 82 17 R200-1
+TOP 1 2.1702756 0.5708661 135 N 43 9 R200-2
+#
+# CMP 47
+CMP 3 0.889 0.573 90 N R205 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.889 0.592685 0 N 102 15 R205-1
+TOP 1 0.889 0.5533149 0 N 91 172 R205-2
+#
+# CMP 48
+CMP 3 0.9090004 0.2002016 0 N R204 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0252'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'KOA'
+PRP MPN 'RK73H1ETTP4702F'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '47k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 0.8893154 0.2002016 270 N 76 14 R204-1
+TOP 1 0.9286855 0.2002016 270 N 91 173 R204-2
+#
+# CMP 49
+CMP 1 1.8326772 0.5669291 315 N C201 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0246'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'Kemet'
+PRP MPN 'C0402C104K4RACTU'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '16V, +/-10%'
+PRP Value '100n'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 1.8194537 0.5537056 225 N 91 174 C201-1
+TOP 1 1.8459007 0.5801526 225 N 82 13 C201-2
+#
+# CMP 50
+CMP 1 1.6023621 0.4669354 90 N C203 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0018'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.550000011920929'
+PRP Manufacturer 'Yageo'
+PRP MPN 'CC0402JRNPO9BN180'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '50V, +/-5%'
+PRP Value '18p'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 1.6023621 0.4856362 0 N 91 195 C203-1
+TOP 1 1.6023621 0.4482346 0 N 22 4 C203-2
+#
+# CMP 51
+CMP 1 1.6023621 0.569695 90 N C204 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0019'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.550000011920929'
+PRP Manufacturer 'Yageo'
+PRP MPN 'CC0402JRNPO9BN220'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '50V, +/-5%'
+PRP Value '22p'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 1.6023621 0.5883958 0 N 21 5 C204-1
+TOP 1 1.6023621 0.5509942 0 N 91 194 C204-2
+#
+# CMP 52
+CMP 16 1.5295276 0.5889827 180 N J209 empty_part_name ;0=1,1=0.0000
+PRP AN 'A08-1454'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,PCB implemented components'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'Closed Link'
+TOP 0 1.5482284 0.5889827 90 N 21 4 J209-1
+TOP 1 1.5108268 0.5889827 90 N 63 1 J209-2
+#
+# CMP 53
+CMP 13 1.511811 0.4915352 90 N XC201 empty_part_name ;0=1,1=0.0276
+PRP AN 'A07-0179'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.800000011920929'
+PRP Manufacturer 'Microchip'
+PRP MPN 'VXM7-9048-10M0000000TR'
+PRP PartGroup 'Frequency devices,Crystals,SMD'
+PRP Status 'Active'
+PRP TemperatureRange '-40 to +85 캜'
+PRP Tolerance '25ppm'
+PRP Value '10.000MHz'
+PRP Verified_by 'Ketil Skjerve'
+PRP Verified_date '2007-06-15'
+TOP 0 1.480315 0.5348488 0 N 63 2 XC201-1
+TOP 1 1.480315 0.4482346 0 N 91 196 XC201-2
+TOP 2 1.5433071 0.4482346 0 N 22 6 XC201-3
+TOP 3 1.5433071 0.5348488 0 N 91 197 XC201-4
+#
+# CMP 54
+CMP 1 0.928 0.572 90 N C205 empty_part_name ;0=1,1=0.0217
+PRP AN 'A01-0493'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.5'
+PRP Manufacturer 'TDK'
+PRP MPN 'C1005X5R1A225K'
+PRP PartGroup 'Capacitors,Ceramic,SMD 0402'
+PRP Status 'Active'
+PRP TemperatureRange '-55 to 85C'
+PRP Tolerance '+/-10%'
+PRP Value '2.2uF'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-15'
+TOP 0 0.928 0.5907009 0 N 54 7 C205-1
+TOP 1 0.928 0.5532991 0 N 91 175 C205-2
+#
+# CMP 55
+CMP 20 0.3000001 0.4000004 0 N J200 empty_part_name ;0=2,1=0.0000
+PRP AN 'A08-2840'
+PRP ComponentStatus '_Active (verified)_'
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height ''
+PRP Manufacturer ''
+PRP MPN ''
+PRP PartGroup 'Mechanical devices,Connectors,Pin headers'
+PRP TemperatureRange ''
+PRP Tolerance ''
+PRP Value 'CNANO56-pin edge connector'
+TOP 0 0.3000001 0.0920004 0 N 0 5 J200-1
+TOP 1 0.3000001 0.0000004 0 N 0 6 J200-1
+TOP 2 0.4000001 0.1080004 0 N 58 7 J200-2
+TOP 3 0.4000001 0.0000004 0 N 58 10 J200-2
+TOP 4 0.5000001 0.0920004 0 N 78 9 J200-3
+TOP 5 0.5000001 0.0000004 0 N 78 12 J200-3
+TOP 6 0.6000001 0.1080004 0 N 77 4 J200-4
+TOP 7 0.6000001 0.0000004 0 N 77 7 J200-4
+TOP 8 0.7000001 0.0920004 0 N 102 13 J200-5
+TOP 9 0.7000001 0.0000004 0 N 102 17 J200-5
+TOP 10 0.8000001 0.1080004 0 N 101 7 J200-6
+TOP 11 0.8000001 0.0000004 0 N 101 10 J200-6
+TOP 12 0.9000001 0.0920004 0 N 12 3 J200-7
+TOP 13 0.9000001 0.0000004 0 N 12 5 J200-7
+TOP 14 1.0000001 0.1080004 0 N 11 2 J200-8
+TOP 15 1.0000001 0.0000004 0 N 11 4 J200-8
+TOP 16 1.1000001 0.0920004 0 N 34 5 J200-9
+TOP 17 1.1000001 0.0000004 0 N 34 7 J200-9
+TOP 18 1.2000001 0.1080004 0 N 35 5 J200-10
+TOP 19 1.2000001 0.0000004 0 N 35 7 J200-10
+TOP 20 1.3000001 0.0920004 0 N 32 3 J200-11
+TOP 21 1.3000001 0.0000004 0 N 32 5 J200-11
+TOP 22 1.4000001 0.1080004 0 N 31 3 J200-12
+TOP 23 1.4000001 0.0000004 0 N 31 5 J200-12
+TOP 24 1.5000001 0.0920004 0 N 30 3 J200-13
+TOP 25 1.5000001 0.0000004 0 N 30 5 J200-13
+TOP 26 1.6000001 0.1080004 0 N 28 3 J200-14
+TOP 27 1.6000001 0.0000004 0 N 28 5 J200-14
+TOP 28 1.7000001 0.0920004 0 N 91 152 J200-15
+TOP 29 1.7000001 0.0000004 0 N 91 205 J200-15
+TOP 30 1.8000001 0.1080004 0 N 36 3 J200-16
+TOP 31 1.8000001 0.0000004 0 N 36 5 J200-16
+TOP 32 1.9000001 0.0920004 0 N 33 3 J200-17
+TOP 33 1.9000001 0.0000004 0 N 33 5 J200-17
+TOP 34 2.0000001 0.1080004 0 N 9 7 J200-18
+TOP 35 2.0000001 0.0000004 0 N 9 9 J200-18
+TOP 36 2.1000001 0.0920004 0 N 29 5 J200-19
+TOP 37 2.1000001 0.0000004 0 N 29 7 J200-19
+TOP 38 2.2000001 0.1080004 0 N 14 7 J200-20
+TOP 39 2.2000001 0.0000004 0 N 14 9 J200-20
+TOP 40 2.3000001 0.0920004 0 N 13 7 J200-21
+TOP 41 2.3000001 0.0000004 0 N 13 9 J200-21
+TOP 42 2.4000001 0.1080004 0 N 49 5 J200-22
+TOP 43 2.4000001 0.0000004 0 N 49 7 J200-22
+TOP 44 2.5000001 0.0920004 0 N 48 5 J200-23
+TOP 45 2.5000001 0.0000004 0 N 48 7 J200-23
+TOP 46 2.6000001 0.1080004 0 N 91 156 J200-24
+TOP 47 2.6000001 0.0000004 0 N 91 206 J200-24
+TOP 48 2.7000001 0.0920004 0 N 8 7 J200-25
+TOP 49 2.7000001 0.0000004 0 N 8 10 J200-25
+TOP 50 2.8000001 0.1080004 0 N 7 7 J200-26
+TOP 51 2.8000001 0.0000004 0 N 7 10 J200-26
+TOP 52 2.9000001 0.0920004 0 N 27 5 J200-27
+TOP 53 2.9000001 0.0000004 0 N 27 7 J200-27
+TOP 54 3.0000001 0.0000004 0 N 6 12 J200-28
+TOP 55 3.0000001 0.1080004 0 N 6 9 J200-28
+TOP 56 3.0000001 0.6920004 180 N 20 4 J200-29
+TOP 57 3.0000001 0.8000004 180 N 20 6 J200-29
+TOP 58 2.9000001 0.7080004 180 N 19 4 J200-30
+TOP 59 2.9000001 0.8000004 180 N 19 6 J200-30
+TOP 60 2.8000001 0.6920004 180 N 10 5 J200-31
+TOP 61 2.8000001 0.8000004 180 N 10 7 J200-31
+TOP 62 2.7000001 0.7080004 180 N 44 5 J200-32
+TOP 63 2.7000001 0.8000004 180 N 44 7 J200-32
+TOP 64 2.6000001 0.6920004 180 N 91 153 J200-33
+TOP 65 2.6000001 0.8000004 180 N 91 204 J200-33
+TOP 66 2.5000001 0.7080004 180 N 26 3 J200-34
+TOP 67 2.5000001 0.8000004 180 N 26 5 J200-34
+TOP 68 2.4000001 0.6920004 180 N 25 3 J200-35
+TOP 69 2.4000001 0.8000004 180 N 25 5 J200-35
+TOP 70 2.3000001 0.7080004 180 N 24 3 J200-36
+TOP 71 2.3000001 0.8000004 180 N 24 5 J200-36
+TOP 72 2.2000001 0.6920004 180 N 23 3 J200-37
+TOP 73 2.2000001 0.8000004 180 N 23 5 J200-37
+TOP 74 2.1000001 0.7080004 180 N 17 7 J200-38
+TOP 75 2.1000001 0.8000004 180 N 17 9 J200-38
+TOP 76 2.0000001 0.6920004 180 N 47 9 J200-39
+TOP 77 2.0000001 0.8000004 180 N 47 11 J200-39
+TOP 78 1.9000001 0.7080004 180 N 46 9 J200-40
+TOP 79 1.9000001 0.8000004 180 N 46 11 J200-40
+TOP 80 1.8000001 0.6920004 180 N 45 5 J200-41
+TOP 81 1.8000001 0.8000004 180 N 45 7 J200-41
+TOP 82 1.7000001 0.7080004 180 N 91 154 J200-42
+TOP 83 1.7000001 0.8000004 180 N 91 203 J200-42
+TOP 84 1.6000001 0.6920004 180 N 42 3 J200-43
+TOP 85 1.6000001 0.8000004 180 N 42 5 J200-43
+TOP 86 1.5000001 0.7080004 180 N 41 3 J200-44
+TOP 87 1.5000001 0.8000004 180 N 41 5 J200-44
+TOP 88 1.4000001 0.6920004 180 N 40 3 J200-45
+TOP 89 1.4000001 0.8000004 180 N 40 5 J200-45
+TOP 90 1.3000001 0.7080004 180 N 16 7 J200-46
+TOP 91 1.3000001 0.8000004 180 N 16 9 J200-46
+TOP 92 1.2000001 0.6920004 180 N 15 6 J200-47
+TOP 93 1.2000001 0.8000004 180 N 15 8 J200-47
+TOP 94 1.1000001 0.7080004 180 N 39 5 J200-48
+TOP 95 1.1000001 0.8000004 180 N 39 7 J200-48
+TOP 96 1.0000001 0.6920004 180 N 4 3 J200-49
+TOP 97 1.0000001 0.8000004 180 N 4 5 J200-49
+TOP 98 0.9000001 0.7080004 180 N 3 3 J200-50
+TOP 99 0.9000001 0.8000004 180 N 3 5 J200-50
+TOP 100 0.8000001 0.6920004 180 N 54 6 J200-51
+TOP 101 0.8000001 0.8000004 180 N 54 9 J200-51
+TOP 102 0.7000001 0.7080004 180 N 91 155 J200-52
+TOP 103 0.7000001 0.8000004 180 N 91 202 J200-52
+TOP 104 0.6000001 0.8000004 180 N 76 17 J200-53
+TOP 105 0.6000001 0.6920004 180 N 76 13 J200-53
+TOP 106 0.5000001 0.7080004 180 N 71 13 J200-54
+TOP 107 0.5000001 0.8000004 180 N 71 16 J200-54
+TOP 108 0.4000001 0.6920004 180 N 62 5 J200-55
+TOP 109 0.4000001 0.8000004 180 N 62 7 J200-55
+TOP 110 0.3000001 0.8000004 180 N 92 5 J200-56
+TOP 111 0.3000001 0.7080004 180 N 92 3 J200-56
+#
+# CMP 56
+CMP 15 3.1650001 0.4000004 90 N SW200 Rating:_DC_12V_50mA_Max_0.1_ohm_contact_resistance ;0=1,1=0.2008
+PRP AN 'A08-2830'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '3.5'
+PRP Manufacturer 'Dailywell Electronics Co.LTD'
+PRP MPN 'TS604VM1-035CR-R'
+PRP PartGroup 'Mechanical devices,Switches,SMD'
+PRP Status 'Active'
+PRP TemperatureRange '-40 - +85 deg C'
+PRP Tolerance ''
+PRP Value 'TS604VM1-035CR'
+PRP Verified_by 'Ketil Skjerve'
+PRP Verified_date '2006-03-15'
+TOP 0 3.2437403 0.5082681 90 N 91 191 SW200-1
+TOP 1 3.2437403 0.2917327 90 N 91 192 SW200-2
+TOP 2 3.0862599 0.5082681 90 N 56 5 SW200-3
+TOP 3 3.0862599 0.2917327 90 N 56 4 SW200-4
+#
+# CMP 57
+CMP 5 2.9220715 0.4008227 90 N D200 empty_part_name ;0=1,1=0.0217
+PRP AN 'A10-0218'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.550000011920929'
+PRP Manufacturer 'ROHM'
+PRP MPN 'SML-D12Y1WT86'
+PRP PartGroup 'Opto,LEDs,SMD'
+PRP Status 'Active'
+PRP TemperatureRange '-40 to +85'
+PRP Tolerance ''
+PRP Value 'YELLOW LED'
+PRP Verified_by 'Sveinung Helgeland'
+PRP Verified_date '2006-02-17'
+TOP 0 2.9220715 0.433303 0 N 93 3 D200-1
+TOP 1 2.9220715 0.3683424 0 N 82 14 D200-2
+#
+# CMP 58
+CMP 3 2.964567 0.3998384 270 N R203 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0212'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'Yageo'
+PRP MPN 'RC0402FR071KL'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '1k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 2.964567 0.3801534 180 N 6 10 R203-1
+TOP 1 2.964567 0.4195235 180 N 93 2 R203-2
+#
+# CMP 59
+CMP 3 3.008071 0.3998384 270 N R202 empty_part_name ;0=1,1=0.0157
+PRP AN 'A02-0212'
+PRP ComponentStatus '_Active (verified)_'
+PRP Design_comment ''
+PRP Filename ''
+PRP FootprintStatus '_Active (Verified)_'
+PRP Height '0.349999994039536'
+PRP Manufacturer 'Yageo'
+PRP MPN 'RC0402FR071KL'
+PRP PartGroup 'Resistors,SMD,0402 1%'
+PRP Status 'Active'
+PRP TemperatureRange '-55 - +125 deg C'
+PRP Tolerance '1 %'
+PRP Value '1k'
+PRP Verified_by 'Lars Helge Mo'
+PRP Verified_date '2005-12-19'
+TOP 0 3.008071 0.3801534 180 N 18 10 R202-1
+TOP 1 3.008071 0.4195235 180 N 56 3 R202-2
+#

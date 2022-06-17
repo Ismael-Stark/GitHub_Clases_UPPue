@@ -1,0 +1,12 @@
+DRC Rules Export File for PCB: C:\Users\M53714\Documents\Git\SVN\devkits\Curiosity_Nano_Kits\PIC18F57Q84_Curiosity_Nano\04_Documentation\Release_files\PIC18F57Q84_Curiosity_Nano.PcbDoc
+RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=5.91
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=ShortCircuit|RuleName=ShortCircuit_NC_edge_connector|Scope=Board|Allowed=1
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=2.36
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskTenting|Scope=Board|Minimum=-39.37
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=5.91
+RuleKind=Width|RuleName=Width_Power|Scope=Board|Minimum=6.89
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=5.91
+RuleKind=Clearance|RuleName=Clearance_Poly|Scope=Board|Minimum=7.87
+RuleKind=Clearance|RuleName=Clearance_Poly_Impedance|Scope=Board|Minimum=23.62
+RuleKind=Clearance|RuleName=Clearance_Via_in_Pad|Scope=Board|Minimum=0.00
