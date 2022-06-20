@@ -1,0 +1,38 @@
+ir a carpeta de mosquito
+cd C:\Program Files\mosquitto
+suscribirse localmente
+mosquitto_sub -h localhost -t UPPue/IET/TST -q 2 -i nUsuario
+
+publicar  localmente
+mosquitto_pub -h localhost -t UPPue/IET/TST -q 2 -i nUsuario2 -m "hola"
+
+
+suscribirse en red
+mosquitto_sub -h 192.168.1.116 -t UPPue/IET/TST -q 2 -i nUsuario
+
+publicar  en red
+mosquitto_pub -h 192.168.1.116 -t UPPue/IET/TST -q 2 -i nUsuario2 -m "hola"
+
+
+
+escribir en una CMD:
+node-red  
+
+en un navegador web abrir
+http://127.0.0.1:1880/
+
+
+JSON
+//como enviar datos
+{
+	"id": "ISR",
+	"temp": "23",
+	"hum":"80"
+}
+
+publicar  el json
+
+{"id":"ISR","temp":"23","hum":"80"}
+
+"{\"id\": \"ISR\", \"temp\": \"23\", \"hum\":\"80\"}"
+mosquitto_pub -h 192.168.1.18 -t UPPue/IET/TST -q 2 -i nUsuario2 -m "{\"id\": \"ISR\", \"temp\": \"23\", \"hum\":\"80\"}"
