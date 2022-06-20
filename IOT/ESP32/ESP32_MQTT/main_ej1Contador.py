@@ -1,5 +1,6 @@
 # Complete project details at https://RandomNerdTutorials.com
 from machine import Pin
+import machine
 import network
 import time
 #from umqttsimple import MQTTClient
@@ -14,15 +15,12 @@ led=Pin(4,Pin.OUT)# Onboard FlashLED on Pin 4 of ESP32
 ssid = 'Electronica_IOT_2022'
 password = 'Elect_IOT'
 ##mqtt_server = 'broker.hivemq.com'
-mqtt_server = '192.168.1.9'
+mqtt_server = '192.168.1.9'#ip local de las clases, puede cambiar en cada clase
 
 #client_id = ubinascii.hexlify(machine.unique_id())
-client_id = bytes('client_'+'12321', 'utf-8') # Just a random client ID
+client_id = bytes('client_'+'1ISR74321', 'utf-8') # Just a random client ID
 topic_sub = b'UPPue/IET/TST'
 topic_pub = b'UPPue/IET/TST'
-
-
-
 
 def connect_wifi():##funcion que se llama desde la linea 46
     wifi = network.WLAN(network.STA_IF)
@@ -72,7 +70,7 @@ def restart_and_reconnect():
     time.sleep(10)
     machine.reset()
 
-
+##aqui empieza el programa
 connect_wifi() # Connecting to WiFi Router
 
 #client = MQTTClient(client_id,mqtt_server,user=USERNAME,password=IO_KEY,ssl=False)
@@ -101,3 +99,4 @@ while True:
             counter += 1
     except OSError as e:
         restart_and_reconnect()
+
