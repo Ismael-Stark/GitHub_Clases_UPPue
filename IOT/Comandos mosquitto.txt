@@ -1,0 +1,28 @@
+
+//////////////////////////////////////////////////WINDOWS
+"Despues de instalar por primera vez, verificar que el puerto
+1883 TCP este abierto desde el firewall, de lo contrario crear
+la regla y abrir el puerto."
+
+
+Para ejecutar mosquitto desde windows en cmd ir a:
+cd C:\Archivos de programa\mosquitto
+y publicar como siempre
+mosquitto_sub -t test -h localhost
+
+mosquitto_pub -t test -h localhost -m “Temp:10”
+
+
+//////////////////////////////////////////////////
+mosquitto_sub -t ejemploIoT/SIC/mqtt -h localhost
+mosquitto_sub -h localhost -t ejemploIoT/SIC/mqtt -q 2 -i  SAT
+
+mosquitto_pub -t ejemploIoT/SIC/mqtt -h localhost -m “Temp:10”
+
+mosquitto_sub -h localhost -t esp32/output -q 2 -i  SAT2
+mosquitto_pub -h localhost -t esp32/output -q 2 -i  SAT3 -m “true”
+
+//////////   Configurar usuario y contraseña mosquitto
+https://domotuto.com/configurar-password-en-mqtt/
+
+node-red  http://127.0.0.1:1880/

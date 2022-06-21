@@ -1,11 +1,14 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"9 Main.c
-[; ;Main.c: 9: void port_init();
+"10 Main.c
+[; ;Main.c: 10: void port_init();
 [v _port_init `(v ~T0 @X0 0 e? ]
 "11 ./uart.h
 [; ;./uart.h: 11: void serial_init(uint32_t baudios);
 [v _serial_init `(v ~T0 @X0 0 ef1`ul ]
+"8 ./adc.h
+[; ;./adc.h: 8: void adc_init();
+[v _adc_init `(v ~T0 @X0 0 e? ]
 "778 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 778: extern volatile unsigned char LATA __attribute__((address(0x016)));
 [v _LATA `Vuc ~T0 @X0 0 e@22 ]
@@ -1637,116 +1640,119 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40
 [p x CPD  =  OFF         ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"12 Main.c
-[; ;Main.c: 12: void main(void) {
+"13 Main.c
+[; ;Main.c: 13: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"13
-[; ;Main.c: 13:     uint8_t rx, buffer[32], contador =0;
+"14
+[; ;Main.c: 14:     uint8_t rx, buffer[32], contador = 0;
 [v _rx `uc ~T0 @X0 1 a ]
 [v _buffer `uc ~T0 @X0 -> 32 `i a ]
 [v _contador `uc ~T0 @X0 1 a ]
 [e = _contador -> -> 0 `i `uc ]
-"15
-[; ;Main.c: 15:     port_init();
-[e ( _port_init ..  ]
 "16
-[; ;Main.c: 16:     serial_init(9600);
+[; ;Main.c: 16:     port_init();
+[e ( _port_init ..  ]
+"17
+[; ;Main.c: 17:     serial_init(9600);
 [e ( _serial_init (1 -> -> -> 9600 `i `l `ul ]
 "18
-[; ;Main.c: 18:     while(1){
+[; ;Main.c: 18:     adc_init();
+[e ( _adc_init ..  ]
+"21
+[; ;Main.c: 21:     while(1){
 [e :U 1568 ]
 {
-"19
-[; ;Main.c: 19:         LATA = LATA | (1<<3);
-[e = _LATA -> | -> _LATA `i << -> 1 `i -> 3 `i `uc ]
-"20
-[; ;Main.c: 20:         _delay((unsigned long)((500)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"21
-[; ;Main.c: 21:         LATA = LATA & ~(1<<3);
-[e = _LATA -> & -> _LATA `i ~ << -> 1 `i -> 3 `i `uc ]
 "22
-[; ;Main.c: 22:         _delay((unsigned long)((500)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+[; ;Main.c: 22:         LATA = LATA | (1<<3);
+[e = _LATA -> | -> _LATA `i << -> 1 `i -> 3 `i `uc ]
 "23
-[; ;Main.c: 23:         sprintf(buffer,"hola mundo %i\n",contador++);
-[e ( _sprintf (1 , (. , -> &U _buffer `*uc :s 1C -> ++ _contador -> -> 1 `i `uc `i ]
+[; ;Main.c: 23:         _delay((unsigned long)((500)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"24
+[; ;Main.c: 24:         LATA = LATA & ~(1<<3);
+[e = _LATA -> & -> _LATA `i ~ << -> 1 `i -> 3 `i `uc ]
 "25
-[; ;Main.c: 25:         printf(buffer);
+[; ;Main.c: 25:         _delay((unsigned long)((500)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"26
+[; ;Main.c: 26:         sprintf(buffer,"hola mundo %i\n",contador++);
+[e ( _sprintf (1 , (. , -> &U _buffer `*uc :s 1C -> ++ _contador -> -> 1 `i `uc `i ]
+"28
+[; ;Main.c: 28:         printf(buffer);
 [e ( _printf -> &U _buffer `*Cuc ]
-"29
-[; ;Main.c: 29:         if (((PIR3>>5) & 0x01) ==1){
+"32
+[; ;Main.c: 32:         if (((PIR3>>5) & 0x01) ==1){
 [e $ ! == & >> -> _PIR3 `i -> 5 `i -> 1 `i -> 1 `i 1570  ]
 {
-"30
-[; ;Main.c: 30:             rx = uart_rx();
+"33
+[; ;Main.c: 33:             rx = uart_rx();
 [e = _rx ( _uart_rx ..  ]
-"31
-[; ;Main.c: 31:         }
+"34
+[; ;Main.c: 34:         }
 }
 [e :U 1570 ]
-"33
-[; ;Main.c: 33:         if (rx == 'b'){
+"36
+[; ;Main.c: 36:         if (rx == 'b'){
 [e $ ! == -> _rx `ui -> 98 `ui 1571  ]
 {
-"34
-[; ;Main.c: 34:             LATA = LATA | (1<<0);
+"37
+[; ;Main.c: 37:             LATA = LATA | (1<<0);
 [e = _LATA -> | -> _LATA `i << -> 1 `i -> 0 `i `uc ]
-"35
-[; ;Main.c: 35:         }else{
+"38
+[; ;Main.c: 38:         }else{
 }
 [e $U 1572  ]
 [e :U 1571 ]
 {
-"36
-[; ;Main.c: 36:             LATA = LATA & ~(1<<0);
+"39
+[; ;Main.c: 39:             LATA = LATA & ~(1<<0);
 [e = _LATA -> & -> _LATA `i ~ << -> 1 `i -> 0 `i `uc ]
-"37
-[; ;Main.c: 37:         }
+"40
+[; ;Main.c: 40:         }
 }
 [e :U 1572 ]
-"44
-[; ;Main.c: 44:     }
+"47
+[; ;Main.c: 47:     }
 }
 [e :U 1567 ]
 [e $U 1568  ]
 [e :U 1569 ]
-"45
-[; ;Main.c: 45:     return;
+"48
+[; ;Main.c: 48:     return;
 [e $UE 1566  ]
-"46
-[; ;Main.c: 46: }
+"49
+[; ;Main.c: 49: }
 [e :UE 1566 ]
 }
-"49
-[; ;Main.c: 49: void port_init(){
+"52
+[; ;Main.c: 52: void port_init(){
 [v _port_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_init ]
 [f ]
-"51
-[; ;Main.c: 51:     ANSELA = 0;
-[e = _ANSELA -> -> 0 `i `uc ]
-"52
-[; ;Main.c: 52:     LATA=0;
-[e = _LATA -> -> 0 `i `uc ]
-"53
-[; ;Main.c: 53:     PORTA =0;
-[e = _PORTA -> -> 0 `i `uc ]
 "54
-[; ;Main.c: 54:     TRISA = 0b11110000;
-[e = _TRISA -> -> 240 `i `uc ]
+[; ;Main.c: 54:     ANSELA = 0;
+[e = _ANSELA -> -> 0 `i `uc ]
+"55
+[; ;Main.c: 55:     LATA=0;
+[e = _LATA -> -> 0 `i `uc ]
+"56
+[; ;Main.c: 56:     PORTA =0;
+[e = _PORTA -> -> 0 `i `uc ]
 "57
-[; ;Main.c: 57:     TRISC = 0b10;
+[; ;Main.c: 57:     TRISA = 0b11110000;
+[e = _TRISA -> -> 240 `i `uc ]
+"60
+[; ;Main.c: 60:     TRISC = 0b10;
 [e = _TRISC -> -> 2 `i `uc ]
-"58
-[; ;Main.c: 58:     ANSELC = 0;
+"61
+[; ;Main.c: 61:     ANSELC = 0;
 [e = _ANSELC -> -> 0 `i `uc ]
-"59
-[; ;Main.c: 59: }
+"62
+[; ;Main.c: 62: }
 [e :UE 1573 ]
 }
 [p f _printf 9437696 ]

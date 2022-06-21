@@ -3,6 +3,7 @@
 #include "fuses.h"
 #include "main.h"
 #include "uart.h"
+#include "adc.h"
 
 
 
@@ -10,10 +11,12 @@ void port_init();
 
 
 void main(void) {
-    uint8_t rx, buffer[32], contador =0;
+    uint8_t rx, buffer[32], contador = 0;
     
     port_init();
     serial_init(9600);
+    adc_init();
+    
     
     while(1){
         LATA = LATA | (1<<3);

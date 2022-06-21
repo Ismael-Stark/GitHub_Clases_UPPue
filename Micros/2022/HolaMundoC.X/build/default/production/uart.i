@@ -19995,7 +19995,7 @@ uint8_t uart_rx(){
 
 
 
-    while (( (PIR3>>5) & 0x01) == 0){}
+    while (((PIR3>>5) & 0x01) == 0){}
 
     if( ((RC1STA >> 1)& 0x01) == 1){
         RC1STA = RC1STA & ~(1<<4);

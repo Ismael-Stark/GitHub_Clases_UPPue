@@ -19982,6 +19982,18 @@ void uart_send_string(uint8_t *dato);
 uint8_t uart_rx();
 # 5 "Main.c" 2
 
+# 1 "./adc.h" 1
+
+
+
+
+
+
+
+void adc_init();
+uint16_t adc_read(uint8_t pin);
+# 6 "Main.c" 2
+
 
 
 
@@ -19989,10 +20001,12 @@ void port_init();
 
 
 void main(void) {
-    uint8_t rx, buffer[32], contador =0;
+    uint8_t rx, buffer[32], contador = 0;
 
     port_init();
     serial_init(9600);
+    adc_init();
+
 
     while(1){
         LATA = LATA | (1<<3);

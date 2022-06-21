@@ -7,6 +7,7 @@
       <itemPath>fuses.h</itemPath>
       <itemPath>main.h</itemPath>
       <itemPath>uart.h</itemPath>
+      <itemPath>adc.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -17,6 +18,7 @@
                    projectFiles="true">
       <itemPath>Main.c</itemPath>
       <itemPath>uart.c</itemPath>
+      <itemPath>adc.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
