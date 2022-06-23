@@ -11,14 +11,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3134 . . ]
 "3354
 [v _LATFbits `VS3134 ~T0 @X0 0 e@1219 ]
-"88 ./LCD_i2c.h
-[; ;./LCD_i2c.h: 88: void lcd_init(void);
-[v _lcd_init `(v ~T0 @X0 0 ef ]
-"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"91 ./LCD_i2c.h
-[; ;./LCD_i2c.h: 91: void lcd_puts(unsigned char *dato);
-[v _lcd_puts `(v ~T0 @X0 0 ef1`*uc ]
 "37 main.c
 [; ;main.c: 37:         lecturaADC = ADC_GetSingleConversion(LM35);
 [c E23268 1 5 59 60 61 62 63 .. ]
@@ -3719,15 +3711,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 3260 ]
-"20
-[; ;main.c: 20:     lcd_init();
-[e ( _lcd_init ..  ]
-"21
-[; ;main.c: 21:     sprintf(buffer,"\fLCD i2c\nIET 3A");
-[e ( _sprintf (1 , -> &U _buffer `*uc :s 1C ]
-"22
-[; ;main.c: 22:     lcd_puts(buffer);
-[e ( _lcd_puts (1 &U _buffer ]
 "23
 [; ;main.c: 23:     do { LATFbits.LATF3 = 1; } while(0);
 [e :U 3264 ]
@@ -3759,13 +3742,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _temperatura -> / -> _V `d .0.01 `f ]
 "40
 [; ;main.c: 40:         printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n\n",contador++,lecturaADC, V, temperatura);
-[e ( _printf , , , , (. :s 2C -> ++ _contador -> -> 1 `i `uc `i -> _lecturaADC `ui -> _V `d -> _temperatura `d ]
+[e ( _printf , , , , (. :s 1C -> ++ _contador -> -> 1 `i `uc `i -> _lecturaADC `ui -> _V `d -> _temperatura `d ]
 "42
 [; ;main.c: 42:         _delay((unsigned long)((500)*(10000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"43
-[; ;main.c: 43:         sprintf(buffer,"\fcont=%d ADC=%i\n",contador,lecturaADC,temperatura);
-[e ( _sprintf (1 , , , (. , -> &U _buffer `*uc :s 3C -> _contador `i -> _lecturaADC `ui -> _temperatura `d ]
 "46
 [; ;main.c: 46:     }
 }
@@ -3777,7 +3757,4 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 3258 ]
 }
 [p f _printf 8396928 ]
-[p f _sprintf 8388736 ]
-[a 1C 12 76 67 68 32 105 50 99 10 73 69 84 32 51 65 0 ]
-[a 3C 12 99 111 110 116 61 37 100 32 65 68 67 61 37 105 10 0 ]
-[a 2C 99 111 110 116 61 37 100 44 32 65 68 67 61 37 105 10 86 61 37 102 44 32 84 101 109 112 61 37 102 10 10 0 ]
+[a 1C 99 111 110 116 61 37 100 44 32 65 68 67 61 37 105 10 86 61 37 102 44 32 84 101 109 112 61 37 102 10 10 0 ]

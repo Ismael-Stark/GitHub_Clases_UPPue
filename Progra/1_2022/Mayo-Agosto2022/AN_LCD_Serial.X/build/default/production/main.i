@@ -39399,9 +39399,9 @@ void main(void)
 
     SYSTEM_Initialize();
     do { LATFbits.LATF3 = 0; } while(0);
-    lcd_init();
-    sprintf(buffer,"\fLCD i2c\nIET 3A");
-    lcd_puts(buffer);
+
+
+
     do { LATFbits.LATF3 = 1; } while(0);
 # 34 "main.c"
     while (1)
@@ -39413,7 +39413,7 @@ void main(void)
         printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n\n",contador++,lecturaADC, V, temperatura);
 
         _delay((unsigned long)((500)*(10000000/4000.0)));
-        sprintf(buffer,"\fcont=%d ADC=%i\n",contador,lecturaADC,temperatura);
+
 
 
     }
