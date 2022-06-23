@@ -39338,56 +39338,13 @@ void OSCILLATOR_Initialize(void);
 void PMD_Initialize(void);
 # 2 "main.c" 2
 
-# 1 "./LCD_i2c.h" 1
-# 45 "./LCD_i2c.h"
-# 1 "./mcc_generated_files/examples/i2c1_master_example.h" 1
-# 54 "./mcc_generated_files/examples/i2c1_master_example.h"
-uint8_t I2C1_Read1ByteRegister(i2c1_address_t address, uint8_t reg);
-uint16_t I2C1_Read2ByteRegister(i2c1_address_t address, uint8_t reg);
-void I2C1_Write1ByteRegister(i2c1_address_t address, uint8_t reg, uint8_t data);
-void I2C1_Write2ByteRegister(i2c1_address_t address, uint8_t reg, uint16_t data);
-void I2C1_WriteNBytes(i2c1_address_t address, uint8_t *data, size_t len);
-void I2C1_ReadNBytes(i2c1_address_t address, uint8_t *data, size_t len);
-void I2C1_ReadDataBlock(i2c1_address_t address, uint8_t reg, uint8_t *data, size_t len);
-# 45 "./LCD_i2c.h" 2
-
-
-
-
-
-typedef uint8_t int8;
-# 71 "./LCD_i2c.h"
-int8 g_LcdX, g_LcdY;
-
-
-
-
-
-int8 const LCD_INIT_STRING[4] =
-{
- 0x20 | (2 << 2),
- 0xc,
- 1,
- 6
- };
-
-void Write_PCF(char dato);
-void Send_D7_D4(int8 address,int8 nibble);
-void lcd_send_byte(int8 address, int8 n);
-void lcd_init(void);
-void lcd_gotoxy(int8 x, int8 y);
-void lcd_putc(unsigned char c);
-void lcd_puts(unsigned char *dato);
-void Clear_LCD();
-void CGRAM(uint8_t n);
-void CGRAM_x(uint8_t p);
-# 3 "main.c" 2
 
 
 uint8_t contador = 0, buffer[40];
 uint16_t lecturaADC = 0;
 
-float mV = 3.3/4095, V, temperatura;
+float mV = (3.3/4095);
+float V, temperatura;
 
 
 
@@ -39397,19 +39354,23 @@ void main(void)
 {
 
     SYSTEM_Initialize();
-    lcd_init();
-    sprintf(buffer,"\fLCD i2c\nIET 3A");
-    lcd_puts(buffer);
-# 32 "main.c"
+    do { LATFbits.LATF3 = 0; } while(0);
+
+
+
+    do { LATFbits.LATF3 = 1; } while(0);
+# 34 "main.c"
     while (1)
     {
+        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
         lecturaADC = ADC_GetSingleConversion(LM35);
         V = mV*lecturaADC;
         temperatura = V / 0.01;
-        printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n",contador++,lecturaADC, V, temperatura);
+        printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n\n",contador++,lecturaADC, V, temperatura);
+
         _delay((unsigned long)((500)*(10000000/4000.0)));
-        sprintf(buffer,"\fcont=%d\n ADC=%i",contador++,lecturaADC);
-        lcd_puts(buffer);
+        sprintf(buffer,"\fcont=%d ADC=%i\n",contador,lecturaADC,temperatura);
+
 
     }
 }
