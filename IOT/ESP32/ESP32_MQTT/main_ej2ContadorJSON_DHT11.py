@@ -9,8 +9,15 @@ import sys
 import ubinascii  #para llamar el id unico de la ESP
 import esp
 esp.osdebug(None)
+import dht
 
+#variables
+global temp, hum
+
+#E/S
 led=Pin(4,Pin.OUT)# Onboard FlashLED on Pin 4 of ESP32
+dht_pin = dht.DHT11(Pin(16)) # Uncomment it if you are using DHT11 and comment the above line
+
 
 ssid = 'Electronica_IOT_2022'
 password = 'Elect_IOT'
@@ -75,6 +82,21 @@ def restart_and_reconnect():
     print('Failed to connect to MQTT broker. Reconnecting...')
     time.sleep(10)
     machine.reset()
+    
+def read_dht():
+    global temp, hum
+    temp = hum = 0
+    try:
+        dht_pin.measure()
+        temp = dht_pin.temperature()
+        hum = dht_pin.humidity()
+        #temp_f = temp * (9/5) + 32.0
+        print('\nTemperatura: %3.1f C' %temp)
+        #print('Temperature: %3.1f F' %temp_f)
+        print('Humedad: %3.1f %% \n' %hum)
+    except OSError as e:
+        print('Failed to read sensor.')
+
 
 ##aqui empieza el programa
 connect_wifi() # Connecting to WiFi Router
@@ -98,8 +120,9 @@ while True:
         client.check_msg()
         #client.wait_msg()
         if (time.time() - last_message) > message_interval:
-            msg = b'{"id":"Ismael S. R.","temp":"%d"' %counter
-            msg = msg+',"hum":"%d"}'%(counter+1)
+            read_dht()
+            msg = b'{"id":"Ismael S. R.","temp":"%d"' %temp
+            msg = msg+',"hum":"%d"}'%hum
             client.publish(topic_pub, msg)
             #print(msg)
             last_message = time.time()

@@ -1,0 +1,340 @@
+[
+    {
+        "id": "22601738ee1f2d3c",
+        "type": "tab",
+        "label": "MQTT_ESP32_DHT11",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "a6b857e3a13901f6",
+        "type": "mqtt in",
+        "z": "22601738ee1f2d3c",
+        "name": "ISR",
+        "topic": "UPPue/IET/TST",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "97bed0d3c3f93ece",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 140,
+        "wires": [
+            [
+                "a5a50a5751062e33"
+            ]
+        ]
+    },
+    {
+        "id": "b51b49be91048119",
+        "type": "ui_text",
+        "z": "22601738ee1f2d3c",
+        "group": "e6fb0e2ec73ec1dc",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mensaje",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 680,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "7373eb714f84f169",
+        "type": "ui_button",
+        "z": "22601738ee1f2d3c",
+        "name": "",
+        "group": "e6fb0e2ec73ec1dc",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 250,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55054f558b4df2f8",
+        "type": "ui_switch",
+        "z": "22601738ee1f2d3c",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "e6fb0e2ec73ec1dc",
+        "order": 5,
+        "width": "3",
+        "height": "1",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 390,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d135ef35f7c8ce71",
+        "type": "ui_slider",
+        "z": "22601738ee1f2d3c",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "e6fb0e2ec73ec1dc",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 290,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "072dc078621f47b1",
+        "type": "ui_text",
+        "z": "22601738ee1f2d3c",
+        "group": "e6fb0e2ec73ec1dc",
+        "order": 6,
+        "width": "15",
+        "height": "1",
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 150,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "e4848d4e16fab944",
+        "type": "ui_gauge",
+        "z": "22601738ee1f2d3c",
+        "name": "",
+        "group": "e6fb0e2ec73ec1dc",
+        "order": 3,
+        "width": "8",
+        "height": "8",
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": "-10",
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 690,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "69456bbb1f7133be",
+        "type": "ui_chart",
+        "z": "22601738ee1f2d3c",
+        "name": "",
+        "group": "e6fb0e2ec73ec1dc",
+        "order": 4,
+        "width": "8",
+        "height": "8",
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 670,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5a50a5751062e33",
+        "type": "json",
+        "z": "22601738ee1f2d3c",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 310,
+        "y": 140,
+        "wires": [
+            [
+                "31007a7d846cdb84",
+                "98fc1615de9ddba8",
+                "94f6c0a25b7935fd"
+            ]
+        ]
+    },
+    {
+        "id": "98fc1615de9ddba8",
+        "type": "function",
+        "z": "22601738ee1f2d3c",
+        "name": "ID",
+        "func": "msg.payload = msg.payload.id;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 60,
+        "wires": [
+            [
+                "b51b49be91048119"
+            ]
+        ]
+    },
+    {
+        "id": "31007a7d846cdb84",
+        "type": "function",
+        "z": "22601738ee1f2d3c",
+        "name": "TEMP",
+        "func": "msg.payload = msg.payload.temp;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 140,
+        "wires": [
+            [
+                "e4848d4e16fab944"
+            ]
+        ]
+    },
+    {
+        "id": "94f6c0a25b7935fd",
+        "type": "function",
+        "z": "22601738ee1f2d3c",
+        "name": "HUM",
+        "func": "msg.payload = msg.payload.hum;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 220,
+        "wires": [
+            [
+                "69456bbb1f7133be"
+            ]
+        ]
+    },
+    {
+        "id": "97bed0d3c3f93ece",
+        "type": "mqtt-broker",
+        "name": "Clases_UPPue",
+        "broker": "192.168.1.9",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "e6fb0e2ec73ec1dc",
+        "type": "ui_group",
+        "name": "Clase_IOT_UPPue",
+        "tab": "af58eddfd9e048eb",
+        "order": 2,
+        "disp": true,
+        "width": "20",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "af58eddfd9e048eb",
+        "type": "ui_tab",
+        "name": "UPPue",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]

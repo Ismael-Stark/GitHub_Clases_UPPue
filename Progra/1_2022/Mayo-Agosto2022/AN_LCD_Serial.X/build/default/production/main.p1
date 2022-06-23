@@ -11,8 +11,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "91 ./LCD_i2c.h
 [; ;./LCD_i2c.h: 91: void lcd_puts(unsigned char *dato);
 [v _lcd_puts `(v ~T0 @X0 0 ef1`*uc ]
-"32 main.c
-[; ;main.c: 32:         lecturaADC = ADC_GetSingleConversion(LM35);
+"34 main.c
+[; ;main.c: 34:         lecturaADC = ADC_GetSingleConversion(LM35);
 [c E23268 1 5 59 60 61 62 63 .. ]
 [n E23268 . channel_ANA1 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "373 ./mcc_generated_files/adc.h
@@ -3682,60 +3682,74 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _lecturaADC
 -> -> 0 `i `us
 ]
+"8
+[; ;main.c: 8: float mV = 3.3/4095, V, temperatura;
+[v _mV `f ~T0 @X0 1 e ]
+[i _mV
+-> / .3.3 -> -> 4095 `i `d `f
+]
+[v _V `f ~T0 @X0 1 e ]
+[v _temperatura `f ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"12
-[; ;main.c: 12: void main(void)
+"14
+[; ;main.c: 14: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"13
-[; ;main.c: 13: {
+"15
+[; ;main.c: 15: {
 {
 [e :U _main ]
 [f ]
-"15
-[; ;main.c: 15:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"16
-[; ;main.c: 16:     lcd_init();
-[e ( _lcd_init ..  ]
 "17
-[; ;main.c: 17:     sprintf(buffer,"\fLCD i2c\nIET 3A");
-[e ( _sprintf (1 , -> &U _buffer `*uc :s 1C ]
+[; ;main.c: 17:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
 "18
-[; ;main.c: 18:     lcd_puts(buffer);
+[; ;main.c: 18:     lcd_init();
+[e ( _lcd_init ..  ]
+"19
+[; ;main.c: 19:     sprintf(buffer,"\fLCD i2c\nIET 3A");
+[e ( _sprintf (1 , -> &U _buffer `*uc :s 1C ]
+"20
+[; ;main.c: 20:     lcd_puts(buffer);
 [e ( _lcd_puts (1 &U _buffer ]
-"30
-[; ;main.c: 30:     while (1)
-[e :U 3260 ]
-"31
-[; ;main.c: 31:     {
-{
 "32
-[; ;main.c: 32:         lecturaADC = ADC_GetSingleConversion(LM35);
-[e = _lecturaADC ( _ADC_GetSingleConversion (1 . `E23268 1 ]
+[; ;main.c: 32:     while (1)
+[e :U 3260 ]
 "33
-[; ;main.c: 33:         printf("cont=%d, ADC=%i\n",contador++,lecturaADC);
-[e ( _printf , , (. :s 2C -> ++ _contador -> -> 1 `i `uc `i -> _lecturaADC `ui ]
+[; ;main.c: 33:     {
+{
 "34
-[; ;main.c: 34:         _delay((unsigned long)((500)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+[; ;main.c: 34:         lecturaADC = ADC_GetSingleConversion(LM35);
+[e = _lecturaADC ( _ADC_GetSingleConversion (1 . `E23268 1 ]
 "35
-[; ;main.c: 35:         sprintf(buffer,"\fcont=%d\n ADC=%i",contador++,lecturaADC);
-[e ( _sprintf (1 , , (. , -> &U _buffer `*uc :s 3C -> ++ _contador -> -> 1 `i `uc `i -> _lecturaADC `ui ]
+[; ;main.c: 35:         V = mV*lecturaADC;
+[e = _V * _mV -> -> _lecturaADC `ui `f ]
 "36
-[; ;main.c: 36:         lcd_puts(buffer);
-[e ( _lcd_puts (1 &U _buffer ]
+[; ;main.c: 36:         temperatura = V / 0.01;
+[e = _temperatura -> / -> _V `d .0.01 `f ]
+"37
+[; ;main.c: 37:         printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n",contador++,lecturaADC, V, temperatura);
+[e ( _printf , , , , (. :s 2C -> ++ _contador -> -> 1 `i `uc `i -> _lecturaADC `ui -> _V `d -> _temperatura `d ]
 "38
-[; ;main.c: 38:     }
+[; ;main.c: 38:         _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"39
+[; ;main.c: 39:         sprintf(buffer,"\fcont=%d\n ADC=%i",contador++,lecturaADC);
+[e ( _sprintf (1 , , (. , -> &U _buffer `*uc :s 3C -> ++ _contador -> -> 1 `i `uc `i -> _lecturaADC `ui ]
+"40
+[; ;main.c: 40:         lcd_puts(buffer);
+[e ( _lcd_puts (1 &U _buffer ]
+"42
+[; ;main.c: 42:     }
 }
 [e :U 3259 ]
 [e $U 3260  ]
 [e :U 3261 ]
-"39
-[; ;main.c: 39: }
+"43
+[; ;main.c: 43: }
 [e :UE 3258 ]
 }
-[p f _printf 8388736 ]
+[p f _printf 8396928 ]
 [p f _sprintf 8388736 ]
 [a 3C 12 99 111 110 116 61 37 100 10 32 65 68 67 61 37 105 0 ]
 [a 1C 12 76 67 68 32 105 50 99 10 73 69 84 32 51 65 0 ]
-[a 2C 99 111 110 116 61 37 100 44 32 65 68 67 61 37 105 10 0 ]
+[a 2C 99 111 110 116 61 37 100 44 32 65 68 67 61 37 105 10 86 61 37 102 44 32 84 101 109 112 61 37 102 10 0 ]

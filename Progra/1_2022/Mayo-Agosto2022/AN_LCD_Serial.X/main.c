@@ -5,6 +5,8 @@
 uint8_t contador = 0, buffer[40];
 uint16_t lecturaADC = 0;
 
+float mV = 3.3/4095, V, temperatura;
+
 
 /*
                          Main application
@@ -30,7 +32,9 @@ void main(void)
     while (1)
     {
         lecturaADC =  ADC_GetSingleConversion(LM35);
-        printf("cont=%d, ADC=%i\n",contador++,lecturaADC);
+        V = mV*lecturaADC;
+        temperatura = V / 0.01;
+        printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n",contador++,lecturaADC, V, temperatura);
         __delay_ms(500);
         sprintf(buffer,"\fcont=%d\n ADC=%i",contador++,lecturaADC);
         lcd_puts(buffer);
