@@ -10,7 +10,7 @@
 const char* ssid = "UPPue-WiFi";
 const char* password = "";
 //const char* ssid = "Electronica_IOT_2022";
-//const char* password = "Elect_IOT";
+//const char* password = "Elect_IOT_2022";
 
 // Set web server port number to 80
 WiFiServer server(80);
