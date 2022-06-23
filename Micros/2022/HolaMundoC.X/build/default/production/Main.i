@@ -19789,6 +19789,7 @@ extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\xc.h" 2 3
 # 2 "Main.c" 2
 
+
 # 1 "./fuses.h" 1
 # 11 "./fuses.h"
 #pragma config FEXTOSC = OFF
@@ -19821,7 +19822,7 @@ extern __bank0 __bit __timeout;
 
 #pragma config CP = OFF
 #pragma config CPD = OFF
-# 3 "Main.c" 2
+# 4 "Main.c" 2
 
 # 1 "./main.h" 1
 
@@ -19971,7 +19972,7 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 7 "./main.h" 2
-# 4 "Main.c" 2
+# 5 "Main.c" 2
 
 # 1 "./uart.h" 1
 # 11 "./uart.h"
@@ -19980,7 +19981,7 @@ void serial_init(uint32_t baudios);
 void uart_tx(uint8_t dato);
 void uart_send_string(uint8_t *dato);
 uint8_t uart_rx();
-# 5 "Main.c" 2
+# 6 "Main.c" 2
 
 # 1 "./adc.h" 1
 
@@ -19992,7 +19993,7 @@ uint8_t uart_rx();
 
 void adc_init();
 uint16_t adc_read(uint8_t pin);
-# 6 "Main.c" 2
+# 7 "Main.c" 2
 
 
 
@@ -20002,6 +20003,7 @@ void port_init();
 
 void main(void) {
     uint8_t rx, buffer[32], contador = 0;
+    uint16_t adc=0;
 
     port_init();
     serial_init(9600);
@@ -20014,7 +20016,13 @@ void main(void) {
         LATA = LATA & ~(1<<3);
         _delay((unsigned long)((500)*(32000000UL/4000.0)));
         sprintf(buffer,"hola mundo %i\n",contador++);
+        printf(buffer);
+        adc = adc_read(4);
+        sprintf(buffer,"adc = %i \n",adc);
+        printf(buffer);
 
+        adc = adc_read(8);
+        sprintf(buffer,"ANB0 = %i \n\n",adc);
         printf(buffer);
 
 
@@ -20047,6 +20055,14 @@ void port_init(){
     TRISA = 0b11110000;
 
 
+    ANSELA = ANSELA | (1<<4);
+
+    LATB=0;
+    PORTB =0;
+    TRISB = TRISA | (1<<0);
+    ANSELB = ANSELB | (1<<0);
+
     TRISC = 0b10;
     ANSELC = 0;
+
 }

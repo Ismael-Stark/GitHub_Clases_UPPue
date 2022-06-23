@@ -1,5 +1,6 @@
 
 #include <xc.h>
+#include <pic16f18855.h>
 #include "fuses.h"
 #include "main.h"
 #include "uart.h"
@@ -12,7 +13,8 @@ void port_init();
 
 void main(void) {
     uint8_t rx, buffer[32], contador = 0;
-    
+    uint16_t adc=0;
+
     port_init();
     serial_init(9600);
     adc_init();
@@ -24,7 +26,13 @@ void main(void) {
         LATA = LATA & ~(1<<3);
         __delay_ms(500);
         sprintf(buffer,"hola mundo %i\n",contador++);
+        printf(buffer);
+        adc = adc_read(4);
+        sprintf(buffer,"adc = %i \n",adc);
+        printf(buffer);
         
+        adc = adc_read(8);
+        sprintf(buffer,"ANB0 = %i \n\n",adc);
         printf(buffer);
         
         //uart_send_string(buffer);
@@ -57,6 +65,14 @@ void port_init(){
     TRISA = 0b11110000;
     //TRISA = TRISA & ~(1<<0 | 1<<1 | 1<<2 | 1<<3);//A0 - A3 COMO SALIDA
     //TRISA = TRISA | (1<<5); //A5 ENTRADA
+    ANSELA = ANSELA | (1<<4);//PIN A4 COMO ENTRADA ANALOGICA
+    
+    LATB=0;
+    PORTB =0;
+    TRISB = TRISA | (1<<0);
+    ANSELB = ANSELB | (1<<0);//rb0 entrada analogica
+    
     TRISC = 0b10;
-    ANSELC = 0;
+    ANSELC = 0;    
+    
 }

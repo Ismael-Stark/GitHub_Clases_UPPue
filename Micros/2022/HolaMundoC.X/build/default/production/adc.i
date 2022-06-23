@@ -19948,10 +19948,33 @@ void adc_init();
 uint16_t adc_read(uint8_t pin);
 # 1 "adc.c" 2
 
-void adc_init(){
 
+void adc_init(){
+    ADCON0 = ADCON0 & ~(1<<7 | 1<<4 );
+    ADCON0 = ADCON0 |(1<<2);
+    ADCON1 = ADCON1 |(1<<7);
+    ADCON2 = ADCON2 & ~(7<<0 );
+    ADCLK = ADCLK |(16<<0);
+
+    ADREF = ADREF & ~(1<<4 );
+    ADREF = ADREF & ~(3<<0 );
+
+
+    ADPCH = 4;
+    ADCAP = 0;
 }
 
 uint16_t adc_read(uint8_t pin){
+    ADPCH = pin;
+    ADCON0 = ADCON0 |(1<<7);
+    ADCON0 = ADCON0 &~(1<<6);
+    ADCON0 = ADCON0 |(1<<0);
 
+
+    __nop();
+
+    while ((ADCON0&0x01)==1){}
+
+
+    return ((uint16_t)((ADRESH << 8) + ADRESL));
 }

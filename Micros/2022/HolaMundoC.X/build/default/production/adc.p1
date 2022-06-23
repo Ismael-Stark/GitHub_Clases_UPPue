@@ -1,4 +1,34 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"1860 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 1860: extern volatile unsigned char ADCON0 __attribute__((address(0x093)));
+[v _ADCON0 `Vuc ~T0 @X0 0 e@147 ]
+"1971
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 1971: extern volatile unsigned char ADCON1 __attribute__((address(0x094)));
+[v _ADCON1 `Vuc ~T0 @X0 0 e@148 ]
+"2010
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 2010: extern volatile unsigned char ADCON2 __attribute__((address(0x095)));
+[v _ADCON2 `Vuc ~T0 @X0 0 e@149 ]
+"2228
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 2228: extern volatile unsigned char ADCLK __attribute__((address(0x098)));
+[v _ADCLK `Vuc ~T0 @X0 0 e@152 ]
+"2338
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 2338: extern volatile unsigned char ADREF __attribute__((address(0x09A)));
+[v _ADREF `Vuc ~T0 @X0 0 e@154 ]
+"2571
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 2571: extern volatile unsigned char ADPCH __attribute__((address(0x09E)));
+[v _ADPCH `Vuc ~T0 @X0 0 e@158 ]
+"2379
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 2379: extern volatile unsigned char ADCAP __attribute__((address(0x09B)));
+[v _ADCAP `Vuc ~T0 @X0 0 e@155 ]
+"8 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
+[v ___nop `(v ~T0 @X0 0 ef ]
+[p i ___nop ]
+"1559 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 1559: extern volatile unsigned char ADRESH __attribute__((address(0x08D)));
+[v _ADRESH `Vuc ~T0 @X0 0 e@141 ]
+"1539
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 1539: extern volatile unsigned char ADRESL __attribute__((address(0x08C)));
+[v _ADRESL `Vuc ~T0 @X0 0 e@140 ]
 "55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1553,24 +1583,79 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35050
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 35050: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"2 adc.c
-[; ;adc.c: 2: void adc_init(){
+"3 adc.c
+[; ;adc.c: 3: void adc_init(){
 [v _adc_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _adc_init ]
 [f ]
 "4
-[; ;adc.c: 4: }
+[; ;adc.c: 4:     ADCON0 = ADCON0 & ~(1<<7 | 1<<4 );
+[e = _ADCON0 -> & -> _ADCON0 `i ~ | << -> 1 `i -> 7 `i << -> 1 `i -> 4 `i `uc ]
+"5
+[; ;adc.c: 5:     ADCON0 = ADCON0 |(1<<2);
+[e = _ADCON0 -> | -> _ADCON0 `i << -> 1 `i -> 2 `i `uc ]
+"6
+[; ;adc.c: 6:     ADCON1 = ADCON1 |(1<<7);
+[e = _ADCON1 -> | -> _ADCON1 `i << -> 1 `i -> 7 `i `uc ]
+"7
+[; ;adc.c: 7:     ADCON2 = ADCON2 & ~(7<<0 );
+[e = _ADCON2 -> & -> _ADCON2 `i ~ << -> 7 `i -> 0 `i `uc ]
+"8
+[; ;adc.c: 8:     ADCLK = ADCLK |(16<<0);
+[e = _ADCLK -> | -> _ADCLK `i << -> 16 `i -> 0 `i `uc ]
+"10
+[; ;adc.c: 10:     ADREF = ADREF & ~(1<<4 );
+[e = _ADREF -> & -> _ADREF `i ~ << -> 1 `i -> 4 `i `uc ]
+"11
+[; ;adc.c: 11:     ADREF = ADREF & ~(3<<0 );
+[e = _ADREF -> & -> _ADREF `i ~ << -> 3 `i -> 0 `i `uc ]
+"14
+[; ;adc.c: 14:     ADPCH = 4;
+[e = _ADPCH -> -> 4 `i `uc ]
+"15
+[; ;adc.c: 15:     ADCAP = 0;
+[e = _ADCAP -> -> 0 `i `uc ]
+"16
+[; ;adc.c: 16: }
 [e :UE 1566 ]
 }
-"6
-[; ;adc.c: 6: uint16_t adc_read(uint8_t pin){
+"18
+[; ;adc.c: 18: uint16_t adc_read(uint8_t pin){
 [v _adc_read `(us ~T0 @X0 1 ef1`uc ]
 {
 [e :U _adc_read ]
 [v _pin `uc ~T0 @X0 1 r1 ]
 [f ]
-"8
-[; ;adc.c: 8: }
+"19
+[; ;adc.c: 19:     ADPCH = pin;
+[e = _ADPCH _pin ]
+"20
+[; ;adc.c: 20:     ADCON0 = ADCON0 |(1<<7);
+[e = _ADCON0 -> | -> _ADCON0 `i << -> 1 `i -> 7 `i `uc ]
+"21
+[; ;adc.c: 21:     ADCON0 = ADCON0 &~(1<<6);
+[e = _ADCON0 -> & -> _ADCON0 `i ~ << -> 1 `i -> 6 `i `uc ]
+"22
+[; ;adc.c: 22:     ADCON0 = ADCON0 |(1<<0);
+[e = _ADCON0 -> | -> _ADCON0 `i << -> 1 `i -> 0 `i `uc ]
+"25
+[; ;adc.c: 25:     __nop();
+[e ( ___nop ..  ]
+"27
+[; ;adc.c: 27:     while ((ADCON0&0x01)==1){}
+[e $U 1568  ]
+[e :U 1569 ]
+{
+}
+[e :U 1568 ]
+[e $ == & -> _ADCON0 `i -> 1 `i -> 1 `i 1569  ]
+[e :U 1570 ]
+"30
+[; ;adc.c: 30:     return ((uint16_t)((ADRESH << 8) + ADRESL));
+[e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
+[e $UE 1567  ]
+"31
+[; ;adc.c: 31: }
 [e :UE 1567 ]
 }
