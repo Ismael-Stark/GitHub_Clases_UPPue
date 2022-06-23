@@ -4,7 +4,7 @@ import fail as f
 
 
 ssid = 'Electronica_IOT_2022'
-password = 'Elect_IOT'
+password = 'Elect_IOT_2022'
 miIP = '192.168.1.70'
 miMask = '255.255.255.0'
 miIProuter = '192.168.1.1'
