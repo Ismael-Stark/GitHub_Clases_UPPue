@@ -7,8 +7,10 @@
 #include <WiFi.h>
 
 // Replace with your network credentials
-const char* ssid = "Electronica_IOT_2022";
-const char* password = "Elect_IOT";
+const char* ssid = "UPPue-WiFi";
+const char* password = "";
+//const char* ssid = "Electronica_IOT_2022";
+//const char* password = "Elect_IOT";
 
 // Set web server port number to 80
 WiFiServer server(80);

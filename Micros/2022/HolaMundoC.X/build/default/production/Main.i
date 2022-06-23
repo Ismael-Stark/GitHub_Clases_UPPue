@@ -19998,6 +19998,9 @@ uint16_t adc_read(uint8_t pin);
 
 
 
+const float mv=(3.3/1023);
+float volt, temperatura;
+
 void port_init();
 
 
@@ -20018,7 +20021,9 @@ void main(void) {
         sprintf(buffer,"hola mundo %i\n",contador++);
         printf(buffer);
         adc = adc_read(4);
-        sprintf(buffer,"adc = %i \n",adc);
+        volt = adc*mv;
+        temperatura = volt/(0.01);
+        sprintf(buffer,"adc = %i, volt %f, temp=%f\n",adc, volt,temperatura);
         printf(buffer);
 
         adc = adc_read(8);

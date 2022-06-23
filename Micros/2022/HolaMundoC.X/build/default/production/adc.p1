@@ -1601,49 +1601,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 "7
 [; ;adc.c: 7:     ADCON2 = ADCON2 & ~(7<<0 );
 [e = _ADCON2 -> & -> _ADCON2 `i ~ << -> 7 `i -> 0 `i `uc ]
-"8
-[; ;adc.c: 8:     ADCLK = ADCLK |(16<<0);
+"17
+[; ;adc.c: 17:     ADCLK = ADCLK |(16<<0);
 [e = _ADCLK -> | -> _ADCLK `i << -> 16 `i -> 0 `i `uc ]
-"10
-[; ;adc.c: 10:     ADREF = ADREF & ~(1<<4 );
+"19
+[; ;adc.c: 19:     ADREF = ADREF & ~(1<<4 );
 [e = _ADREF -> & -> _ADREF `i ~ << -> 1 `i -> 4 `i `uc ]
-"11
-[; ;adc.c: 11:     ADREF = ADREF & ~(3<<0 );
+"20
+[; ;adc.c: 20:     ADREF = ADREF & ~(3<<0 );
 [e = _ADREF -> & -> _ADREF `i ~ << -> 3 `i -> 0 `i `uc ]
-"14
-[; ;adc.c: 14:     ADPCH = 4;
+"23
+[; ;adc.c: 23:     ADPCH = 4;
 [e = _ADPCH -> -> 4 `i `uc ]
-"15
-[; ;adc.c: 15:     ADCAP = 0;
+"24
+[; ;adc.c: 24:     ADCAP = 0;
 [e = _ADCAP -> -> 0 `i `uc ]
-"16
-[; ;adc.c: 16: }
+"25
+[; ;adc.c: 25: }
 [e :UE 1566 ]
 }
-"18
-[; ;adc.c: 18: uint16_t adc_read(uint8_t pin){
+"27
+[; ;adc.c: 27: uint16_t adc_read(uint8_t pin){
 [v _adc_read `(us ~T0 @X0 1 ef1`uc ]
 {
 [e :U _adc_read ]
 [v _pin `uc ~T0 @X0 1 r1 ]
 [f ]
-"19
-[; ;adc.c: 19:     ADPCH = pin;
+"28
+[; ;adc.c: 28:     ADPCH = pin;
 [e = _ADPCH _pin ]
-"20
-[; ;adc.c: 20:     ADCON0 = ADCON0 |(1<<7);
+"29
+[; ;adc.c: 29:     ADCON0 = ADCON0 |(1<<7);
 [e = _ADCON0 -> | -> _ADCON0 `i << -> 1 `i -> 7 `i `uc ]
-"21
-[; ;adc.c: 21:     ADCON0 = ADCON0 &~(1<<6);
+"30
+[; ;adc.c: 30:     ADCON0 = ADCON0 &~(1<<6);
 [e = _ADCON0 -> & -> _ADCON0 `i ~ << -> 1 `i -> 6 `i `uc ]
-"22
-[; ;adc.c: 22:     ADCON0 = ADCON0 |(1<<0);
+"31
+[; ;adc.c: 31:     ADCON0 = ADCON0 |(1<<0);
 [e = _ADCON0 -> | -> _ADCON0 `i << -> 1 `i -> 0 `i `uc ]
-"25
-[; ;adc.c: 25:     __nop();
+"34
+[; ;adc.c: 34:     __nop();
 [e ( ___nop ..  ]
-"27
-[; ;adc.c: 27:     while ((ADCON0&0x01)==1){}
+"36
+[; ;adc.c: 36:     while ((ADCON0&0x01)==1){}
 [e $U 1568  ]
 [e :U 1569 ]
 {
@@ -1651,11 +1651,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 1568 ]
 [e $ == & -> _ADCON0 `i -> 1 `i -> 1 `i 1569  ]
 [e :U 1570 ]
-"30
-[; ;adc.c: 30:     return ((uint16_t)((ADRESH << 8) + ADRESL));
+"39
+[; ;adc.c: 39:     return ((uint16_t)((ADRESH << 8) + ADRESL));
 [e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `us ]
 [e $UE 1567  ]
-"31
-[; ;adc.c: 31: }
+"40
+[; ;adc.c: 40: }
 [e :UE 1567 ]
 }

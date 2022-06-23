@@ -19954,6 +19954,7 @@ void adc_init(){
     ADCON0 = ADCON0 |(1<<2);
     ADCON1 = ADCON1 |(1<<7);
     ADCON2 = ADCON2 & ~(7<<0 );
+# 17 "adc.c"
     ADCLK = ADCLK |(16<<0);
 
     ADREF = ADREF & ~(1<<4 );

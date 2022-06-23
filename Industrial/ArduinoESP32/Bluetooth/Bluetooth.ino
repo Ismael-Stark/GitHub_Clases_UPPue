@@ -8,7 +8,7 @@ BluetoothSerial SerialBT;
 
 void setup() {
   Serial.begin(115200);
-  SerialBT.begin("ESP32test"); //Bluetooth device name
+  SerialBT.begin("ESP32_6C"); //Bluetooth device name
   Serial.println("ESP32 encendida, conecta tu celular!");
 }
 
