@@ -7,6 +7,7 @@
 #include "adc.h"
 
 //tarea, activar RC5 como entrada analogica y leer en ella el LM35
+//y mandar la lectura por puerto Serial
 
 void port_init();
 
