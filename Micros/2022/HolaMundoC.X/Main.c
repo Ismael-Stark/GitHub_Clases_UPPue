@@ -27,11 +27,11 @@ void main(void) {
         __delay_ms(500);
         sprintf(buffer,"hola mundo %i\n",contador++);
         printf(buffer);
-        adc = adc_read(4);
+        adc = adc_read(4);//leo pinA4
         sprintf(buffer,"adc = %i \n",adc);
         printf(buffer);
         
-        adc = adc_read(8);
+        adc = adc_read(8);//leo pinB0
         sprintf(buffer,"ANB0 = %i \n\n",adc);
         printf(buffer);
         
