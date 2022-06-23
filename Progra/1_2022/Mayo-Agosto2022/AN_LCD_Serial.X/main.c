@@ -1,6 +1,6 @@
 
 #include "mcc_generated_files/mcc.h"
-//#include "LCD_i2c.h"
+#include "LCD_i2c.h"
 
 uint8_t contador = 0, buffer[40];
 uint16_t lecturaADC = 0;
@@ -17,9 +17,9 @@ void main(void)
     // Initialize the device
     SYSTEM_Initialize();
     LED_SetLow();
-    //lcd_init();
-    //sprintf(buffer,"\fLCD i2c\nIET 3A");
-    //lcd_puts(buffer);
+    lcd_init();
+    sprintf(buffer,"\fLCD i2c\nIET 3A");
+    lcd_puts(buffer);
     LED_SetHigh();
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
@@ -40,7 +40,7 @@ void main(void)
         printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n\n",contador++,lecturaADC, V, temperatura);
         //printf("%f\n",temperatura);
         __delay_ms(500);
-        sprintf(buffer,"\fcont=%d ADC=%i\n",contador,lecturaADC,temperatura);
+        //sprintf(buffer,"\fcont=%d ADC=%i\n",contador,lecturaADC,temperatura);
         //lcd_puts(buffer);
         // Add your application code
     }
