@@ -10,17 +10,17 @@ cd C:\Archivos de programa\mosquitto
 y publicar como siempre
 mosquitto_sub -t test -h localhost
 
-mosquitto_pub -t test -h localhost -m “Temp:10”
+mosquitto_pub -t test -h localhost -m "Temp:10"
 
 
 //////////////////////////////////////////////////
 mosquitto_sub -t ejemploIoT/SIC/mqtt -h localhost
 mosquitto_sub -h localhost -t ejemploIoT/SIC/mqtt -q 2 -i  SAT
 
-mosquitto_pub -t ejemploIoT/SIC/mqtt -h localhost -m “Temp:10”
+mosquitto_pub -t ejemploIoT/SIC/mqtt -h localhost -m "Temp:10"
 
 mosquitto_sub -h localhost -t esp32/output -q 2 -i  SAT2
-mosquitto_pub -h localhost -t esp32/output -q 2 -i  SAT3 -m “true”
+mosquitto_pub -h localhost -t esp32/output -q 2 -i  SAT3 -m "true"
 
 //////////   Configurar usuario y contraseña mosquitto
 https://domotuto.com/configurar-password-en-mqtt/
