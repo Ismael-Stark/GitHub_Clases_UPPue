@@ -1,0 +1,7 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "led1" LOC = V19;
+NET "btn" LOC = T9;
+
+#net "ldrojo" loc = A5;

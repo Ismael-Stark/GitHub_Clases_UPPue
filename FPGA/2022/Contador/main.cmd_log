@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/2022/Contador/main.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/2022/Contador/main.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s700a-fg484-4 "main.ngc" main.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s700a-fg484-4 "main.ngc" main.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf MAIN.ucf 
+bitgen -intstyle ise -f main.ut main.ncd 

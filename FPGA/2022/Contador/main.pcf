@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed May 25 13:53:02 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "btn" LOCATE = SITE "T9" LEVEL 1;
+PIN btn_pin<0> = BEL "btn" PINNAME PAD;
+PIN "btn_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "leds<0>" LOCATE = SITE "W21" LEVEL 1;
+COMP "leds<1>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "leds<2>" LOCATE = SITE "V20" LEVEL 1;
+COMP "leds<3>" LOCATE = SITE "V19" LEVEL 1;
+SCHEMATIC END;
+

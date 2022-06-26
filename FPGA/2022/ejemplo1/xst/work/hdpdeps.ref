@@ -1,0 +1,8 @@
+V3 3
+FL "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.vhd" 2022/05/25.13:22:16 P.20131013
+EN work/MAIN 1653503971 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/main/ejemplo 1653503972 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.vhd" \
+      EN work/MAIN 1653503971

@@ -1,0 +1,28 @@
+xst -intstyle ise -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -ifn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/MAIN.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/MAIN.syr" 
+xst -intstyle ise -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -ifn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/MAIN.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/MAIN.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s500e-fg320-4 "MAIN.ngc" MAIN.ngd  
+map -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s500e-fg320-4 "MAIN.ngc" MAIN.ngd  
+map -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s500e-fg320-4 "MAIN.ngc" MAIN.ngd  
+map -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o MAIN_map.ncd MAIN.ngd MAIN.pcf 
+par -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 MAIN_map.ncd MAIN.ncd MAIN.pcf 
+trce -filter {D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter} -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml MAIN.twx MAIN.ncd -o MAIN.twr MAIN.pcf -ucf MAIN.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f MAIN.ut MAIN.ncd 
+xst -intstyle ise -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -ifn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s700a-fg484-4 "main.ngc" main.ngd  
+map -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+xst -intstyle ise -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -ifn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s700a-fg484-4 "main.ngc" main.ngd  
+map -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+xst -intstyle ise -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -ifn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s700a-fg484-4 "main.ngc" main.ngd  
+map -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f main.ut main.ncd 
+xst -intstyle ise -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -ifn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/main.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc MAIN.ucf -p xc3s700a-fg484-4 "main.ngc" main.ngd  
+map -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o main_map.ncd main.ngd main.pcf 
+par -filter "D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter" -w -intstyle ise -ol high -t 1 main_map.ncd main.ncd main.pcf 
+trce -filter {D:/OneDrive - Soluciones Marva/Xilinx/2022/ejemplo1/iseconfig/filter.filter} -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml main.twx main.ncd -o main.twr main.pcf -ucf MAIN.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f main.ut main.ncd 
