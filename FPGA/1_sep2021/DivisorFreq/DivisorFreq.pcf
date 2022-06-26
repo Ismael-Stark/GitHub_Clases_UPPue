@@ -1,0 +1,13 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Feb 10 09:33:21 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "E12" LEVEL 1;
+PIN clk_pin<0> = BEL "clk" PINNAME PAD;
+PIN "clk_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "salida<0>" LOCATE = SITE "R20" LEVEL 1;
+COMP "salida<1>" LOCATE = SITE "AA21" LEVEL 1;
+COMP "reset" LOCATE = SITE "T9" LEVEL 1;
+SCHEMATIC END;
+

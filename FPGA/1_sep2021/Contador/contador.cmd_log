@@ -1,0 +1,113 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc3s700a-fg484-4 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -t 1 contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 

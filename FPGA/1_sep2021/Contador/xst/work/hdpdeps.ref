@@ -1,0 +1,9 @@
+V3 3
+FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.vhd" 2022/02/08.09:49:06 P.20131013
+EN work/contador 1644504768 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/contador/Behavioral 1644504769 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.vhd" \
+      EN work/contador 1644504768

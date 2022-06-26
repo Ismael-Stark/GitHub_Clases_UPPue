@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Feb 15 09:44:50 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pulsador" LOCATE = SITE "M17" LEVEL 1;
+PIN pulsador_pin<0> = BEL "pulsador" PINNAME PAD;
+PIN "pulsador_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "salida<0>" LOCATE = SITE "K15" LEVEL 1;
+COMP "salida<1>" LOCATE = SITE "J13" LEVEL 1;
+COMP "salida<2>" LOCATE = SITE "N14" LEVEL 1;
+COMP "salida<3>" LOCATE = SITE "R18" LEVEL 1;
+COMP "reset" LOCATE = SITE "V10" LEVEL 1;
+PIN reset_pin<0> = BEL "reset" PINNAME PAD;
+PIN "reset_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+SCHEMATIC END;
+

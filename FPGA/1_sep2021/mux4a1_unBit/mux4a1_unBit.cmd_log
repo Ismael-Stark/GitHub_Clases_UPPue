@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/mux4a1_unBit.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/mux4a1_unBit.syr" 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/mux4a1_unBit.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/mux4a1_unBit.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mux4a1_unBit.ucf -p xc3s700a-fg484-4 "mux4a1_unBit.ngc" mux4a1_unBit.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o mux4a1_unBit_map.ncd mux4a1_unBit.ngd mux4a1_unBit.pcf 
+par -w -intstyle ise -ol high -t 1 mux4a1_unBit_map.ncd mux4a1_unBit.ncd mux4a1_unBit.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml mux4a1_unBit.twx mux4a1_unBit.ncd -o mux4a1_unBit.twr mux4a1_unBit.pcf -ucf mux4a1_unBit.ucf 
+bitgen -intstyle ise -f mux4a1_unBit.ut mux4a1_unBit.ncd 

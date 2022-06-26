@@ -1,0 +1,9 @@
+
+
+NET "entrada[0]" LOC = T14;
+NET "entrada[2]" LOC = T15;
+NET "entrada[1]" LOC = T16;
+NET "entrada[3]" LOC = U15;
+NET "sel[0]" LOC = U8;
+NET "sel[1]" LOC = T9;
+NET "sal" LOC = R20;

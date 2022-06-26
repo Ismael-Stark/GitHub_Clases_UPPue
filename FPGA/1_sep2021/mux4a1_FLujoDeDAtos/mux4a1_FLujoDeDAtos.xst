@@ -1,0 +1,5 @@
+set -tmpdir "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_FLujoDeDAtos/xst/projnav.tmp"
+set -xsthdpdir "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_FLujoDeDAtos/xst"
+elaborate
+-ifn mux4a1_FLujoDeDAtos.prj
+-ifmt mixed

@@ -1,0 +1,69 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/pa.fromHdl.tcl}
+# create_project -name NexysA7 -dir "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_2" -part xc7a100tcsg324-2
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "contador.ucf" [current_fileset -constrset]
+Adding file 'D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {contador.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top contador $srcset
+# add_files [list {contador.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc7a100tcsg324-2
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.vhd" into library work
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: e76cb61e
+open_rtl_design: Time (s): elapsed = 00:00:21 . Memory (MB): peak = 797.750 ; gain = 342.813
+update_compile_order -fileset sim_1
+set_property slew FAST [get_ports [list {salida[3]} {salida[2]} {salida[1]} {salida[0]}]]
+set_property slew SLOW [get_ports [list {salida[3]} {salida[2]} {salida[1]} {salida[0]}]]
+set_property slew FAST [get_ports [list {salida[2]}]]
+set_property slew FAST [get_ports [list {salida[3]} {salida[2]} {salida[1]} {salida[0]}]]
+set_property iostandard HSTL_I [get_ports [list pulsador]]
+save_constraints
+refresh_design
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+refresh_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 801.832 ; gain = 0.000
+refresh_design
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+refresh_design: Time (s): elapsed = 00:00:12 . Memory (MB): peak = 801.832 ; gain = 0.000
+refresh_design
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+refresh_design: Time (s): elapsed = 00:00:13 . Memory (MB): peak = 801.832 ; gain = 0.000
+refresh_design
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+refresh_design: Time (s): elapsed = 00:00:11 . Memory (MB): peak = 801.832 ; gain = 0.000
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Feb 15 09:42:16 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

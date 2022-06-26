@@ -1,0 +1,9 @@
+V3 3
+FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_FLujoDeDAtos/mux4a1_FLujoDeDAtos.vhd" 2022/02/03.09:02:38 P.20131013
+EN work/mux4a1_FLujoDeDAtos 1643900567 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_FLujoDeDAtos/mux4a1_FLujoDeDAtos.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4a1_FLujoDeDAtos/flujo_de_datos 1643900568 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_FLujoDeDAtos/mux4a1_FLujoDeDAtos.vhd" \
+      EN work/mux4a1_FLujoDeDAtos 1643900567

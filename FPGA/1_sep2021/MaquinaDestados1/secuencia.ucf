@@ -1,0 +1,12 @@
+
+#NET "inicio" LOC = N3;
+#NET "ck" LOC = G12;
+#NET "ck" CLOCK_DEDICATED_ROUTE = FALSE;
+#NET "I0" LOC = P11;
+#NET "O0" LOC = M5;
+
+NET "reset" LOC = B4;
+NET "clock" LOC = A7;
+NET "clock" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "input" LOC = P11;
+NET "Output" LOC = p7;

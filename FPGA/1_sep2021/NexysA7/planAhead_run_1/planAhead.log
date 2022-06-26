@@ -1,0 +1,58 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Feb 15 09:17:01 2022
+# Process ID: 2412
+# Log file: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1/planAhead.log
+# Journal file: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1\planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+open_project {D:\OneDrive - Soluciones Marva\Xilinx\1_sep2021\NexysA7\planAhead_run_1\NexysA7.ppr}
+Scanning sources...
+Finished scanning sources
+Qt: Untested Windows version 6.2 detected!
+launch_runs synth_1
+[Tue Feb 15 09:18:29 2022] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1/NexysA7.runs/synth_1/runme.log
+launch_runs impl_1
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design contador.ngc ...
+WARNING:NetListWriters:298 - No output is written to contador.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file contador.edif ...
+ngc2edif: Total memory usage is 4310312 kilobytes
+
+Parsing EDIF File [./NexysA7.data/cache/contador_ngc_zx.edif]
+Finished Parsing EDIF File [./NexysA7.data/cache/contador_ngc_zx.edif]
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.ucf]
+[Tue Feb 15 09:18:58 2022] Launched impl_1...
+Run output will be captured here: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1/NexysA7.runs/impl_1/runme.log
+launch_runs: Time (s): elapsed = 00:00:14 . Memory (MB): peak = 721.883 ; gain = 238.477
+reset_run synth_1
+launch_runs synth_1
+[Tue Feb 15 09:19:27 2022] Launched synth_1...
+Run output will be captured here: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1/NexysA7.runs/synth_1/runme.log
+reset_run synth_1
+exit
+INFO: [Common 17-206] Exiting PlanAhead at Tue Feb 15 09:19:40 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

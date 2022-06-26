@@ -1,0 +1,15 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Feb 10 08:59:37 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "pulsador" LOCATE = SITE "T15" LEVEL 1;
+PIN pulsador_pin<0> = BEL "pulsador" PINNAME PAD;
+PIN "pulsador_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "salida<0>" LOCATE = SITE "R20" LEVEL 1;
+COMP "salida<1>" LOCATE = SITE "T19" LEVEL 1;
+COMP "salida<2>" LOCATE = SITE "U20" LEVEL 1;
+COMP "salida<3>" LOCATE = SITE "U19" LEVEL 1;
+COMP "reset" LOCATE = SITE "T9" LEVEL 1;
+SCHEMATIC END;
+

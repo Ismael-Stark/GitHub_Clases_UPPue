@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Feb 15 09:17:01 2022
+# Process ID: 2412
+# Log file: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1/planAhead.log
+# Journal file: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:\OneDrive - Soluciones Marva\Xilinx\1_sep2021\NexysA7\planAhead_run_1\NexysA7.ppr}
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+reset_run synth_1

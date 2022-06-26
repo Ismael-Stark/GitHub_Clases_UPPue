@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 30 11:26:28 2021
+# Process ID: 14764
+# Log file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/planAhead_run_1/planAhead.log
+# Journal file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  A]]
+startgroup
+set_property package_pin T9 [get_ports A]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports B]
+endgroup
+startgroup
+set_property package_pin U10 [get_ports C]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports D]
+endgroup
+startgroup
+set_property package_pin T15 [get_ports E]
+endgroup
+startgroup
+set_property package_pin V14 [get_ports f1]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports f2]
+endgroup
+startgroup
+set_property package_pin W16 [get_ports f3]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports f4]
+endgroup
+startgroup
+set_property package_pin AA21 [get_ports f5]
+endgroup
+startgroup
+set_property package_pin AB21 [get_ports f6]
+endgroup
+startgroup
+set_property package_pin AA19 [get_ports f7]
+endgroup
+save_constraints
+startgroup
+set_property package_pin AB21 [get_ports f6]
+endgroup

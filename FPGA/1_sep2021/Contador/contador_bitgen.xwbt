@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\Contador\contador.ncd
+OUTFILE=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\Contador\contador.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700a-4fg484
+WORKINGDIR=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\Contador
+LICENSE=WebPack
+USER_INFO=212274149_0_0_975

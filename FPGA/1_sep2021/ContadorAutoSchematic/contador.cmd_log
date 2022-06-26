@@ -1,0 +1,6 @@
+vhdtdtfi -lib work contador.vhd -prj ContadorAuto -o contador.spl -module contador -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a contador.spl {D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.sym} 
+vhdtdtfi -lib work contador.vhd -prj ContadorAuto -o contador.spl -module contador -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a contador.spl {D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.sym} 
+vhdtdtfi -lib work contador.vhd -prj ContadorAuto -o contador.spl -module contador -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3a contador.spl {D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.sym} 

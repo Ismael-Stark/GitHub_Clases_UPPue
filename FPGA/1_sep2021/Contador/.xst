@@ -1,0 +1,5 @@
+set -tmpdir "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/xst/projnav.tmp"
+set -xsthdpdir "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/xst"
+elaborate
+-ifn .prj
+-ifmt mixed

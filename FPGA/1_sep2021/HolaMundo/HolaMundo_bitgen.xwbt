@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\HolaMundo\HolaMundo.ncd
+OUTFILE=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\HolaMundo\HolaMundo.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700a-4fg484
+WORKINGDIR=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\HolaMundo
+LICENSE=WebPack
+USER_INFO=212274149_0_0_975

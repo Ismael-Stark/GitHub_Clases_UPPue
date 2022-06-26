@@ -1,0 +1,292 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: SelectorMultiple.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SelectorMultiple.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SelectorMultiple"
+Output Format                      : NGC
+Target Device                      : xc3s700an-4-fgg484
+
+---- Source Options
+Top Module Name                    : SelectorMultiple
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd" in Library work.
+Architecture estructural of Entity selectormultiple is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <SelectorMultiple> in library <work> (architecture <estructural>) with generics.
+	ancho = 4
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing generic Entity <SelectorMultiple> in library <work> (Architecture <estructural>).
+	ancho = 4
+WARNING:Xst:2211 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd" line 29: Instantiating black box module <mux4a1>.
+WARNING:Xst:2211 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd" line 29: Instantiating black box module <mux4a1>.
+WARNING:Xst:2211 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd" line 29: Instantiating black box module <mux4a1>.
+WARNING:Xst:2211 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd" line 29: Instantiating black box module <mux4a1>.
+Entity <SelectorMultiple> analyzed. Unit <SelectorMultiple> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SelectorMultiple>.
+    Related source file is "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd".
+WARNING:Xst:2565 - Inout <G<0>> is never assigned.
+WARNING:Xst:2565 - Inout <G<1>> is never assigned.
+WARNING:Xst:2565 - Inout <G<2>> is never assigned.
+WARNING:Xst:2565 - Inout <G<3>> is never assigned.
+Unit <SelectorMultiple> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SelectorMultiple> ...
+
+Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <sal<3>> driven by black box <mux4a1>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <sal<2>> driven by black box <mux4a1>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <sal<1>> driven by black box <mux4a1>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <sal<0>> driven by black box <mux4a1>. Possible simulation mismatch.
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SelectorMultiple, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SelectorMultiple.ngr
+Top Level Output File Name         : SelectorMultiple
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 26
+
+Cell Usage :
+# IO Buffers                       : 22
+#      IBUF                        : 18
+#      OBUF                        : 4
+# Others                           : 4
+#      mux4a1                      : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s700anfgg484-4 
+
+ Number of Slices:                        0  out of   5888     0%  
+ Number of IOs:                          26
+ Number of bonded IOBs:                  22  out of    372     5%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 4.940ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 28 / 28
+-------------------------------------------------------------------------
+Delay:               4.940ns (Levels of Logic = 1)
+  Source:            Lazo[3].Comp:sal (PAD)
+  Destination:       sal<3> (PAD)
+
+  Data Path: Lazo[3].Comp:sal to sal<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    mux4a1:sal             1   0.000   0.420  Lazo[3].Comp (sal_3_OBUF)
+     OBUF:I->O                 4.520          sal_3_OBUF (sal<3>)
+    ----------------------------------------
+    Total                      4.940ns (4.520ns logic, 0.420ns route)
+                                       (91.5% logic, 8.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.24 secs
+ 
+--> 
+
+Total memory usage is 4513584 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

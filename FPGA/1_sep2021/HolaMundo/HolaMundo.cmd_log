@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.syr" 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HolaMundo.ucf -p xc3s700a-fg484-4 "HolaMundo.ngc" HolaMundo.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o HolaMundo_map.ncd HolaMundo.ngd HolaMundo.pcf 
+par -w -intstyle ise -ol high -t 1 HolaMundo_map.ncd HolaMundo.ncd HolaMundo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HolaMundo.twx HolaMundo.ncd -o HolaMundo.twr HolaMundo.pcf -ucf HolaMundo.ucf 
+bitgen -intstyle ise -f HolaMundo.ut HolaMundo.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HolaMundo.ucf -p xc3s700a-fg484-4 "HolaMundo.ngc" HolaMundo.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o HolaMundo_map.ncd HolaMundo.ngd HolaMundo.pcf 
+par -w -intstyle ise -ol high -t 1 HolaMundo_map.ncd HolaMundo.ncd HolaMundo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HolaMundo.twx HolaMundo.ncd -o HolaMundo.twr HolaMundo.pcf -ucf HolaMundo.ucf 
+bitgen -intstyle ise -f HolaMundo.ut HolaMundo.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/HolaMundo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HolaMundo.ucf -p xc3s700a-fg484-4 "HolaMundo.ngc" HolaMundo.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o HolaMundo_map.ncd HolaMundo.ngd HolaMundo.pcf 
+par -w -intstyle ise -ol high -t 1 HolaMundo_map.ncd HolaMundo.ncd HolaMundo.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml HolaMundo.twx HolaMundo.ncd -o HolaMundo.twr HolaMundo.pcf -ucf HolaMundo.ucf 
+bitgen -intstyle ise -f HolaMundo.ut HolaMundo.ncd 

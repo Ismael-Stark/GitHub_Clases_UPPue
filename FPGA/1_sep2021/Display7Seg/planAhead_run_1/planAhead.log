@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Nov 30 11:26:28 2021
+# Process ID: 14764
+# Log file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/planAhead_run_1/planAhead.log
+# Journal file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/pa.fromHdl.tcl}
+# create_project -name Display7Seg -dir "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/planAhead_run_1" -part xc3s700afg484-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Display7Seg.ucf" [current_fileset -constrset]
+Adding file 'D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/Display7Seg.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Display7Seg.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Display7Seg $srcset
+# add_files [list {Display7Seg.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s700afg484-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/Display7Seg.vhd" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/fg484/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/fg484/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/Display7Seg.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/Display7Seg.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 2cdf5893
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  A]]
+startgroup
+set_property package_pin T9 [get_ports A]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports B]
+endgroup
+startgroup
+set_property package_pin U10 [get_ports C]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports D]
+endgroup
+startgroup
+set_property package_pin T15 [get_ports E]
+endgroup
+startgroup
+set_property package_pin V14 [get_ports f1]
+endgroup
+startgroup
+set_property package_pin V15 [get_ports f2]
+endgroup
+startgroup
+set_property package_pin W16 [get_ports f3]
+endgroup
+startgroup
+set_property package_pin V16 [get_ports f4]
+endgroup
+startgroup
+set_property package_pin AA21 [get_ports f5]
+endgroup
+startgroup
+set_property package_pin AB21 [get_ports f6]
+endgroup
+startgroup
+set_property package_pin AA19 [get_ports f7]
+endgroup
+save_constraints
+startgroup
+set_property package_pin AB21 [get_ports f6]
+endgroup

@@ -1,0 +1,346 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Tue Feb 08 09:31:24 2022
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: 'C:\Xilinx\14.7\ISE_DS\\auto_project.ipf' already exists.
+Original project has been renamed to'C:\Xilinx\14.7\ISE_DS\\auto_project_1.ipf'.
+Project: C:\Xilinx\14.7\ISE_DS\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set todefault 6 MHz regardless of explicit arguments supplied for setting the baudrates
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Driver file xusb_emb.sys found.
+ Driver version: src=1029, dest=1029.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS14:14:44, version = 1021.
+ Cable PID = 0008.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1029.
+File version of C:/Xilinx/14.7/ISE_DS/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+Downloading C:/Xilinx/14.7/ISE_DS/ISE/data/xusb_xlp.hex.
+Downloaded firmware version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Type = 0x0004.
+ ESN device is not available for this cable.
+Attempting to identify devices in the boundary-scan chain configuration...
+INFO:iMPACT - Current time: 08/02/2022 09:31:28 a. m.
+// *** BATCH CMD : Identify -inferir 
+PROGRESS_START - Starting Operation.
+Identifying chain contents...'0': : Manufacturer's ID = Xilinx xcf04s, Version : 13
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.7/ISE_DS/ISE/xcf/data/xcf04s.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf04s successfully.
+----------------------------------------------------------------------
+'1': : Manufacturer's ID = Xilinx xc3s700a, Version : 2
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.7/ISE_DS/ISE/spartan3a/data/xc3s700a.bsd...
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+done.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : identifyMPM 
+// *** BATCH CMD : assignFile -p 1 -file "D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit"
+'1': Loading file 'D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 08/02/2022 09:32:25 a. m.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+CRC error                                                                  :        0
+IDCODE not validated while writing FDRI                                    :        0
+DCM Locked                                                                 :        1
+status of GTS_CFG_B                                                        :        1
+status of GWE                                                              :        1
+status of GHIGH                                                            :        1
+value of VSEL pin 0                                                        :        1
+value of VSEL pin 1                                                        :        1
+value of VSEL pin 2                                                        :        1
+value of MODE pin M0                                                       :        0
+value of MODE pin M1                                                       :        0
+value of MODE pin M2                                                       :        0
+value of CFG_RDY (INIT_B)                                                  :        1
+DONEIN input from Done Pin                                                 :        1
+SYNC word not found                                                        :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1000 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : assignFile -p 1 -file "D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit"
+'1': Loading file 'D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 08/02/2022 09:35:23 a. m.
+Updating config file D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+CRC error                                                                  :        0
+IDCODE not validated while writing FDRI                                    :        0
+DCM Locked                                                                 :        1
+status of GTS_CFG_B                                                        :        1
+status of GWE                                                              :        1
+status of GHIGH                                                            :        1
+value of VSEL pin 0                                                        :        1
+value of VSEL pin 1                                                        :        1
+value of VSEL pin 2                                                        :        1
+value of MODE pin M0                                                       :        0
+value of MODE pin M1                                                       :        0
+value of MODE pin M2                                                       :        0
+value of CFG_RDY (INIT_B)                                                  :        1
+DONEIN input from Done Pin                                                 :        1
+SYNC word not found                                                        :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1000 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+INFO:iMPACT - Current time: 08/02/2022 09:35:30 a. m.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+CRC error                                                                  :        0
+IDCODE not validated while writing FDRI                                    :        0
+DCM Locked                                                                 :        1
+status of GTS_CFG_B                                                        :        1
+status of GWE                                                              :        1
+status of GHIGH                                                            :        1
+value of VSEL pin 0                                                        :        1
+value of VSEL pin 1                                                        :        1
+value of VSEL pin 2                                                        :        1
+value of MODE pin M0                                                       :        0
+value of MODE pin M1                                                       :        0
+value of MODE pin M2                                                       :        0
+value of CFG_RDY (INIT_B)                                                  :        1
+DONEIN input from Done Pin                                                 :        1
+SYNC word not found                                                        :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1000 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : assignFile -p 1 -file "D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit"
+'1': Loading file 'D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit' ...
+done.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 08/02/2022 09:39:18 a. m.
+Updating config file D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+CRC error                                                                  :        0
+IDCODE not validated while writing FDRI                                    :        0
+DCM Locked                                                                 :        1
+status of GTS_CFG_B                                                        :        1
+status of GWE                                                              :        1
+status of GHIGH                                                            :        1
+value of VSEL pin 0                                                        :        1
+value of VSEL pin 1                                                        :        1
+value of VSEL pin 2                                                        :        1
+value of MODE pin M0                                                       :        0
+value of MODE pin M1                                                       :        0
+value of MODE pin M2                                                       :        0
+value of CFG_RDY (INIT_B)                                                  :        1
+DONEIN input from Done Pin                                                 :        1
+SYNC word not found                                                        :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1000 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      0 sec.
+// *** BATCH CMD : assignFile -p 1 -file "D:/OneDrive - SolucionesMarva/Xilinx/Parpadea_LED/parpadealed.bit"
+'1': Loading file 'D:/OneDrive - SolucionesMarva/Xilinx/Parpadea_LED/parpadealed.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 08/02/2022 09:40:05 a. m.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+CRC error                                                                  :        0
+IDCODE not validated while writing FDRI                                    :        0
+DCM Locked                                                                 :        1
+status of GTS_CFG_B                                                        :        1
+status of GWE                                                              :        1
+status of GHIGH                                                            :        1
+value of VSEL pin 0                                                        :        1
+value of VSEL pin 1                                                        :        1
+value of VSEL pin 2                                                        :        1
+value of MODE pin M0                                                       :        0
+value of MODE pin M1                                                       :        0
+value of MODE pin M2                                                       :        0
+value of CFG_RDY (INIT_B)                                                  :        1
+DONEIN input from Done Pin                                                 :        1
+SYNC word not found                                                        :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1000 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+// *** BATCH CMD : assignFile -p 1 -file "D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit"
+'1': Loading file 'D:/OneDrive - SolucionesMarva/Xilinx/sep2021/Contador/contador.bit' ...
+done.
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+INFO:iMPACT - Current time: 08/02/2022 09:40:26 a. m.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+'1': Reading status register contents...
+CRC error                                                                  :        0
+IDCODE not validated while writing FDRI                                    :        0
+DCM Locked                                                                 :        1
+status of GTS_CFG_B                                                        :        1
+status of GWE                                                              :        1
+status of GHIGH                                                            :        1
+value of VSEL pin 0                                                        :        1
+value of VSEL pin 1                                                        :        1
+value of VSEL pin 2                                                        :        1
+value of MODE pin M0                                                       :        0
+value of MODE pin M1                                                       :        0
+value of MODE pin M2                                                       :        0
+value of CFG_RDY (INIT_B)                                                  :        1
+DONEIN input from Done Pin                                                 :        1
+SYNC word not found                                                        :        0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1000 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT:188 - '1': Programming completed successfully.
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Project: 'C:\Xilinx\14.7\ISE_DS\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file"C:\Xilinx\14.7\ISE_DS\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   C:\Xilinx\14.7\ISE_DS\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+----------------------------------------------------------------------
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

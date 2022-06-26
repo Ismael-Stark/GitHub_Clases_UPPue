@@ -1,0 +1,9 @@
+V3 3
+FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/mux4a1_unBit.vhd" 2022/02/03.09:22:13 P.20131013
+EN work/mux4a1_unBit 1643902320 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/mux4a1_unBit.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4a1_unBit/flujo_de_datos 1643902321 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/mux4a1_unBit.vhd" \
+      EN work/mux4a1_unBit 1643902320

@@ -1,0 +1,9 @@
+V3 3
+FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.vhd" 2022/02/10.08:58:05 P.20131013
+EN work/CondatorDescendente 1644505167 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/CondatorDescendente/Behavioral 1644505168 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.vhd" \
+      EN work/CondatorDescendente 1644505167

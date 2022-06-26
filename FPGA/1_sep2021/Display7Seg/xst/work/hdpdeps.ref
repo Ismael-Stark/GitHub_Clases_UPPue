@@ -1,0 +1,8 @@
+V3 3
+FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/Display7Seg.vhd" 2021/11/30.11:19:36 P.20131013
+EN work/Display7Seg 1638293485 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/Display7Seg.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Display7Seg/segmentos 1638293486 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Display7Seg/Display7Seg.vhd" \
+      EN work/Display7Seg 1638293485

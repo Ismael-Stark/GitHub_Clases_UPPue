@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Mar 24 08:52:16 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ck" LOCATE = SITE "G12" LEVEL 1;
+PIN ck_pin<0> = BEL "ck" PINNAME PAD;
+PIN "ck_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "O0" LOCATE = SITE "M5" LEVEL 1;
+COMP "inicio" LOCATE = SITE "N3" LEVEL 1;
+COMP "I0" LOCATE = SITE "P11" LEVEL 1;
+NET "ck_BUFGP/IBUFG" BEL "ck_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

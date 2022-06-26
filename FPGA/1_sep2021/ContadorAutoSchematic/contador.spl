@@ -1,0 +1,6 @@
+[Inputs]
+pulsador
+reset
+[Outputs]
+=salida[4:0]=
+[BiDir]

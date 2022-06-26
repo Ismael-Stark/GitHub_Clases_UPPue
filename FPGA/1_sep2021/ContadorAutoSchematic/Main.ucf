@@ -1,0 +1,11 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "Salida[0]" LOC = R20;
+NET "Salida[1]" LOC = T19;
+NET "Salida[2]" LOC = U20;
+NET "Salida[3]" LOC = U19;
+NET "Salida[4]" LOC = V19;
+NET "CLK" LOC = E12;
+NET "RST" LOC = T9;
+NET "RST1" LOC = U8;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="Xst" num="1739" delta="old" >HDL ADVISOR - &quot;<arg fmt="%s" index="1">D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.vhd</arg>&quot; line <arg fmt="%d" index="2">10</arg>: declaration of a buffer port will make it difficult for you to validate this design by simulation. It is preferable to declare it as output.
+</msg>
+
+</messages>
+

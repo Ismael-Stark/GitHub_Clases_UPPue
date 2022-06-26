@@ -1,0 +1,25 @@
+V3 12
+FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.vhd" 2022/02/24.09:12:43 P.20131013
+EN work/contador 1645823641 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/contador/Behavioral 1645823642 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.vhd" \
+      EN work/contador 1645823641
+FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/DivisorFreq.vhd" 2022/02/24.08:37:57 P.20131013
+EN work/DivisorFreq 1645823639 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/DivisorFreq.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB ieee/std_logic_arith 1381692177
+AR work/DivisorFreq/Behavioral 1645823640 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/DivisorFreq.vhd" \
+      EN work/DivisorFreq 1645823639
+FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.vhf" 2022/02/25.15:13:56 P.20131013
+EN work/Main 1645823643 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Main/BEHAVIORAL 1645823644 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.vhf" \
+      EN work/Main 1645823643 CP DivisorFreq CP contador

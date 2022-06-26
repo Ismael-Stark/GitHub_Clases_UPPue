@@ -1,0 +1,18 @@
+
+
+NET "salida[0]" LOC = R20;
+NET "salida[1]" LOC = AA21;
+
+
+
+
+
+
+NET "reset" LOC = T9;
+NET "clk" LOC = E12;
+NET "clk" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# PlanAhead Generated IO constraints 
+
+#NET "pulsador" PULLDOWN;
+#NET "reset" PULLUP;

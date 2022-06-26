@@ -1,0 +1,19 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 30 11:31:36 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "f1" LOCATE = SITE "V14" LEVEL 1;
+COMP "f2" LOCATE = SITE "V15" LEVEL 1;
+COMP "f3" LOCATE = SITE "W16" LEVEL 1;
+COMP "f4" LOCATE = SITE "V16" LEVEL 1;
+COMP "f5" LOCATE = SITE "AA21" LEVEL 1;
+COMP "f6" LOCATE = SITE "AB21" LEVEL 1;
+COMP "f7" LOCATE = SITE "AA19" LEVEL 1;
+COMP "A" LOCATE = SITE "T9" LEVEL 1;
+COMP "B" LOCATE = SITE "U8" LEVEL 1;
+COMP "C" LOCATE = SITE "U10" LEVEL 1;
+COMP "D" LOCATE = SITE "V8" LEVEL 1;
+COMP "E" LOCATE = SITE "T15" LEVEL 1;
+SCHEMATIC END;
+

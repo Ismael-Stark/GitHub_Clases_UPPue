@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 "DivisorFreq.ngc" DivisorFreq.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o DivisorFreq_map.ncd DivisorFreq.ngd DivisorFreq.pcf 
+par -w -intstyle ise -ol high -t 1 DivisorFreq_map.ncd DivisorFreq.ncd DivisorFreq.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DivisorFreq.twx DivisorFreq.ncd -o DivisorFreq.twr DivisorFreq.pcf 
+bitgen -intstyle ise -f DivisorFreq.ut DivisorFreq.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DivisorFreq.ucf -p xc3s700a-fg484-4 "DivisorFreq.ngc" DivisorFreq.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o DivisorFreq_map.ncd DivisorFreq.ngd DivisorFreq.pcf 
+par -w -intstyle ise -ol high -t 1 DivisorFreq_map.ncd DivisorFreq.ncd DivisorFreq.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DivisorFreq.twx DivisorFreq.ncd -o DivisorFreq.twr DivisorFreq.pcf -ucf DivisorFreq.ucf 
+bitgen -intstyle ise -f DivisorFreq.ut DivisorFreq.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DivisorFreq.ucf -p xc3s700a-fg484-4 "DivisorFreq.ngc" DivisorFreq.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o DivisorFreq_map.ncd DivisorFreq.ngd DivisorFreq.pcf 
+par -w -intstyle ise -ol high -t 1 DivisorFreq_map.ncd DivisorFreq.ncd DivisorFreq.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml DivisorFreq.twx DivisorFreq.ncd -o DivisorFreq.twr DivisorFreq.pcf -ucf DivisorFreq.ucf 
+bitgen -intstyle ise -f DivisorFreq.ut DivisorFreq.ncd 

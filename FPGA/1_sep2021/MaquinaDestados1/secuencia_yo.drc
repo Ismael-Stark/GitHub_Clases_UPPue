@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Thu Mar 24 09:03:54 2022
+
+drc -z secuencia_YO.ncd secuencia_YO.pcf
+
+DRC detected 0 errors and 0 warnings.

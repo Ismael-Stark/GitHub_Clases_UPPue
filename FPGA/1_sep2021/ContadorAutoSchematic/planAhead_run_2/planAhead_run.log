@@ -1,0 +1,79 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/pa.fromHdl.tcl}
+# create_project -name ContadorAuto -dir "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/planAhead_run_2" -part xc3s700afg484-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Main.ucf" [current_fileset -constrset]
+Adding file 'D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {DivisorFreq.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {contador.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Main.vhf}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set_property top Main $srcset
+# add_files [list {Main.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s700afg484-4
+Using Verific elaboration
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Parsing VHDL file "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/DivisorFreq.vhd" into library work
+Parsing VHDL file "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.vhd" into library work
+Parsing VHDL file "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.vhf" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/ClockBuffers.xml
+Loading package from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/fg484/Package.xml
+Loading io standards from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/xc3s700a/fg484/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3a/drc.xml
+INFO: [Timing 38-77] Reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+INFO: [Timing 38-34] Done reading timing library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\parts/xilinx/spartan3a/spartan3a/spartan3a-4.lib.
+Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.ucf]
+Finished Parsing UCF File [D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 8cb5edc2
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin R20 [get_ports {Salida[0]}]
+endgroup
+startgroup
+set_property package_pin T19 [get_ports {Salida[1]}]
+endgroup
+startgroup
+set_property package_pin U20 [get_ports {Salida[2]}]
+endgroup
+startgroup
+set_property package_pin V19 [get_ports {Salida[3]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports CLK]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports RST]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports RST1]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Feb 24 08:57:37 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,35 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.vhd" in Library work.
+Entity <contador> compiled.
+ERROR:HDLParsers:164 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/contador.vhd" Line 15. parse error, unexpected TICK
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> 
+
+Total memory usage is 4470584 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

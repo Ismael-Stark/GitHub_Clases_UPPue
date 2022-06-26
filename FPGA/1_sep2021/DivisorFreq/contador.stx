@@ -1,0 +1,44 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" in Library work.
+Entity <DivisorFreq> compiled.
+ERROR:HDLParsers:3010 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 14. Entity contador does not exist.
+ERROR:HDLParsers:3312 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 21. Undefined symbol 'clk'.
+ERROR:HDLParsers:1209 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 21. clk: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 21. Undefined symbol 'reset'.
+ERROR:HDLParsers:1209 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 21. reset: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 25. Undefined symbol 'rising_edge'.
+ERROR:HDLParsers:1209 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 25. rising_edge: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 29. Undefined symbol 'salida'.
+ERROR:HDLParsers:1209 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 32. salida: Undefined symbol (last report in this block)
+WARNING:HDLParsers:1406 - "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" Line 21. No sensitivity list and no wait in the process
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+
+Total memory usage is 4470588 kilobytes
+
+Number of errors   :    9 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

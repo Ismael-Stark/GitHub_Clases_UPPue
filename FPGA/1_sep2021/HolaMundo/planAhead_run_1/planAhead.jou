@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Oct 26 10:50:30 2021
+# Process ID: 2252
+# Log file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/planAhead_run_1/planAhead.log
+# Journal file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/OneDrive - Soluciones Marva/Xilinx/sep2021/HolaMundo/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+set_property package_pin "" [get_ports [list  SW]]
+startgroup
+set_property package_pin W21 [get_ports led]
+endgroup
+save_constraints
+startgroup
+set_property package_pin V8 [get_ports SW]
+endgroup
+startgroup
+set_property package_pin V8 [get_ports SW]
+endgroup
+save_constraints

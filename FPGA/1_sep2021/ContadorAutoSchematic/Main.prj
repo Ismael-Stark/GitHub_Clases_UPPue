@@ -1,0 +1,3 @@
+vhdl work "DivisorFreq.vhd"
+vhdl work "contador.vhd"
+vhdl work "Main.vhf"

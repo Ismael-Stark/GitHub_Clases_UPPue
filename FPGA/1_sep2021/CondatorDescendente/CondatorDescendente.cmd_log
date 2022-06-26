@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.syr" 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/CondatorDescendente/CondatorDescendente.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CondatorDescendente.ucf -p xc3s700a-fg484-4 "CondatorDescendente.ngc" CondatorDescendente.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o CondatorDescendente_map.ncd CondatorDescendente.ngd CondatorDescendente.pcf 
+par -w -intstyle ise -ol high -t 1 CondatorDescendente_map.ncd CondatorDescendente.ncd CondatorDescendente.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CondatorDescendente.twx CondatorDescendente.ncd -o CondatorDescendente.twr CondatorDescendente.pcf -ucf CondatorDescendente.ucf 
+bitgen -intstyle ise -f CondatorDescendente.ut CondatorDescendente.ncd 

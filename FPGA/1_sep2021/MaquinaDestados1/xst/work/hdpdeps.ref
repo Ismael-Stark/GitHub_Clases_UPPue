@@ -1,0 +1,17 @@
+V3 6
+FL "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1.vhd" 2022/03/24.08:43:21 P.20131013
+EN work/secuencia 1648133481 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/secuencia/MaquinaDestados1 1648133482 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1.vhd" \
+      EN work/secuencia 1648133481
+FL "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1_YO.vhd" 2022/03/24.09:02:46 P.20131013
+EN work/secuencia_YO 1648134174 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1_YO.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/secuencia_YO/MaquinaDestados1 1648134175 \
+      FL "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1_YO.vhd" \
+      EN work/secuencia_YO 1648134174

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/display7Seg2/display.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/display7Seg2/display.syr" 

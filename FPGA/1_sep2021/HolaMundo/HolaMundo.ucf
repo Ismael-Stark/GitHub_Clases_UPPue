@@ -1,0 +1,5 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "led" LOC = W21;
+NET "SW" LOC = V8;

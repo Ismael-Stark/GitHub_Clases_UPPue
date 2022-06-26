@@ -1,0 +1,5 @@
+set -tmpdir "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/xst/projnav.tmp"
+set -xsthdpdir "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/xst"
+elaborate
+-ifn secuencia.prj
+-ifmt mixed

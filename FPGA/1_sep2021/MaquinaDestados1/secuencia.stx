@@ -1,0 +1,37 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3516 - Found error in file "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1_YO.vhd". 
+WARNING:HDLParsers:3458 - Because of erroneous VHDL file(s), automatic determination of correct order of compilation of files in project file "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/secuencia_vhdl.prj" may be inaccurate. Please put the files in the project file in correct order with keyword 'nosort' at end of the project file, or compile your vhdl file(s) individually to find and fix the error(s) in your vhdl file(s). 
+Compiling vhdl file "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1_YO.vhd" in Library work.
+Entity <secuencia_yo> compiled.
+ERROR:HDLParsers:164 - "D:/OneDrive - Soluciones Marva/Xilinx/Basys2/MaquinaDestados1/MaquinaDestados1_YO.vhd" Line 18. parse error, unexpected PROCESS
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> 
+
+Total memory usage is 4470576 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

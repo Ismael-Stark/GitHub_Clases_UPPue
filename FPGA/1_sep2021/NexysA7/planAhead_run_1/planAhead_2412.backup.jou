@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue Feb 15 09:08:58 2022
+# Process ID: 11864
+# Log file: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1/planAhead.log
+# Journal file: D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin R15 [get_ports {salida[3]}]
+endgroup
+startgroup
+set_property package_pin H17 [get_ports {salida[0]}]
+endgroup
+startgroup
+set_property package_pin K15 [get_ports {salida[1]}]
+endgroup
+startgroup
+set_property package_pin J13 [get_ports {salida[2]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {salida[3]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {salida[3]}]
+endgroup
+startgroup
+set_property package_pin J15 [get_ports pulsador]
+endgroup
+save_constraints
+set_property pulltype PULLUP [get_ports [list pulsador]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+save_constraints

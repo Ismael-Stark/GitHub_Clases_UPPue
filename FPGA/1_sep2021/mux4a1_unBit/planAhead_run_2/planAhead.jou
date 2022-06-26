@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Feb 03 09:32:15 2022
+# Process ID: 1272
+# Log file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/planAhead_run_2/planAhead.log
+# Journal file: D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/OneDrive - Soluciones Marva/Xilinx/sep2021/mux4a1_unBit/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin T16 [get_ports {entrada[1]}]
+endgroup
+startgroup
+set_property package_pin T15 [get_ports {entrada[2]}]
+endgroup
+startgroup
+set_property package_pin R13 [get_ports {entrada[3]}]
+endgroup
+startgroup
+set_property package_pin U15 [get_ports {entrada[3]}]
+endgroup
+startgroup
+set_property package_pin T9 [get_ports {sel[1]}]
+endgroup
+startgroup
+set_property package_pin U8 [get_ports {sel[0]}]
+endgroup
+save_constraints

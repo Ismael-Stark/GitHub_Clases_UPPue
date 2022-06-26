@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\OneDrive - Soluciones Marva\Xilinx\Basys2\MaquinaDestados1\secuencia_YO.ncd
+OUTFILE=D:\OneDrive - Soluciones Marva\Xilinx\Basys2\MaquinaDestados1\secuencia_YO.bit
+FAMILY=Automotive Spartan3E
+PART=xa3s100e-4cpg132
+WORKINGDIR=D:\OneDrive - Soluciones Marva\Xilinx\Basys2\MaquinaDestados1
+LICENSE=WebPack
+USER_INFO=212274149_0_0_975

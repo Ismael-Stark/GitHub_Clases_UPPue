@@ -1,0 +1,44 @@
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -mt off contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -mt off contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -mt off contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -mt off contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 
+xst -intstyle ise -ifn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.xst" -ofn "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/NexysA7/contador.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc contador.ucf -p xc7a100t-csg324-2 "contador.ngc" contador.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o contador_map.ncd contador.ngd contador.pcf 
+par -w -intstyle ise -ol high -mt off contador_map.ncd contador.ncd contador.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml contador.twx contador.ncd -o contador.twr contador.pcf -ucf contador.ucf 
+bitgen -intstyle ise -f contador.ut contador.ncd 

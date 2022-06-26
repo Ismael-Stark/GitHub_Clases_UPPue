@@ -1,0 +1,28 @@
+
+
+
+NET "salida[0]" LOC = K15;
+NET "salida[1]" LOC = J13;
+NET "salida[2]" LOC = N14;
+NET "salida[3]" LOC = R18;
+
+
+
+
+
+NET "reset" LOC = V10;
+NET "pulsador" LOC = M17;
+NET "pulsador" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "reset" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+#NET "pulsador" PULLDOWN;
+#NET "reset" PULLUP;
+
+# PlanAhead Generated IO constraints 
+
+#NET "salida[3]" SLEW = FAST;
+#NET "salida[2]" SLEW = FAST;
+#NET "salida[1]" SLEW = FAST;
+#NET "salida[0]" SLEW = FAST;
+#NET "pulsador" IOSTANDARD = HSTL_I;

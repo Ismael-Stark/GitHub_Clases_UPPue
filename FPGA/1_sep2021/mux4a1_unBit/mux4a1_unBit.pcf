@@ -1,0 +1,14 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Feb 03 09:34:38 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "entrada<0>" LOCATE = SITE "T14" LEVEL 1;
+COMP "entrada<1>" LOCATE = SITE "T16" LEVEL 1;
+COMP "entrada<2>" LOCATE = SITE "T15" LEVEL 1;
+COMP "entrada<3>" LOCATE = SITE "U15" LEVEL 1;
+COMP "sal" LOCATE = SITE "R20" LEVEL 1;
+COMP "sel<0>" LOCATE = SITE "U8" LEVEL 1;
+COMP "sel<1>" LOCATE = SITE "T9" LEVEL 1;
+SCHEMATIC END;
+

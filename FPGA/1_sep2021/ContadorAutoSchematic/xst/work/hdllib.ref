@@ -1,0 +1,6 @@
+AR main behavioral "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.vhf" sub00/vhpl05 1645823644
+EN main NULL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/Main.vhf" sub00/vhpl04 1645823643
+AR divisorfreq behavioral "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/DivisorFreq.vhd" sub00/vhpl01 1645823640
+EN contador NULL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.vhd" sub00/vhpl02 1645823641
+EN divisorfreq NULL "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/DivisorFreq.vhd" sub00/vhpl00 1645823639
+AR contador behavioral "D:/OneDrive - Soluciones Marva/Xilinx/1_sep2021/ContadorAuto/contador.vhd" sub00/vhpl03 1645823642

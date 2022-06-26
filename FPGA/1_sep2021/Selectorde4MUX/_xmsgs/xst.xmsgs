@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd</arg>&quot; line <arg fmt="%d" index="2">29</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">mux4a1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd</arg>&quot; line <arg fmt="%d" index="2">29</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">mux4a1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd</arg>&quot; line <arg fmt="%d" index="2">29</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">mux4a1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="new" >&quot;<arg fmt="%s" index="1">D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Selectorde4MUX/SelectorMultiple.vhd</arg>&quot; line <arg fmt="%d" index="2">29</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">mux4a1</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2565" delta="new" >Inout &lt;<arg fmt="%s" index="1">G&lt;0&gt;</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="2565" delta="new" >Inout &lt;<arg fmt="%s" index="1">G&lt;1&gt;</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="2565" delta="new" >Inout &lt;<arg fmt="%s" index="1">G&lt;2&gt;</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="2565" delta="new" >Inout &lt;<arg fmt="%s" index="1">G&lt;3&gt;</arg>&gt; is never assigned.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">sal&lt;3&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">mux4a1</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">sal&lt;2&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">mux4a1</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">sal&lt;1&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">mux4a1</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="2036" delta="new" >Inserting OBUF on port &lt;<arg fmt="%s" index="1">sal&lt;0&gt;</arg>&gt; driven by black box &lt;<arg fmt="%s" index="2">mux4a1</arg>&gt;. Possible simulation mismatch.
+</msg>
+
+</messages>
+

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Display7Seg.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Display7Seg.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Display7Seg.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Display7Seg.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Display7Seg.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Display7Seg.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Display7Seg.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Display7Seg.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Display7Seg.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Display7Seg.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Display7Seg.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Display7Seg.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Display7Seg.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Display7Seg.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Display7Seg.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Display7Seg.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Display7Seg.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Display7Seg.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Display7Seg.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Display7Seg.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Display7Seg.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Display7Seg_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Display7Seg_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Display7Seg_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Display7Seg_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Display7Seg_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Display7Seg_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Display7Seg_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Display7Seg_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Display7Seg_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Display7Seg_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Display7Seg_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Display7Seg_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Display7Seg_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Display7Seg_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Display7Seg_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Display7Seg_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="_impact.cmd"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="_impact.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="display7seg.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="display7seg.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="display7seg.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1638293484" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293484" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8708598725298208689" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293484" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="7189273534585080724" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293484" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293484" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="5160403490587672871" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293484" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="4579864356909105523" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293484" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-242603539960005474" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293489" xil_pn:in_ck="-8713771606265276516" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-5561694087685651313" xil_pn:start_ts="1638293484">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Display7Seg.lso"/>
+      <outfile xil_pn:name="Display7Seg.ngc"/>
+      <outfile xil_pn:name="Display7Seg.ngr"/>
+      <outfile xil_pn:name="Display7Seg.prj"/>
+      <outfile xil_pn:name="Display7Seg.stx"/>
+      <outfile xil_pn:name="Display7Seg.syr"/>
+      <outfile xil_pn:name="Display7Seg.xst"/>
+      <outfile xil_pn:name="Display7Seg_vhdl.prj"/>
+      <outfile xil_pn:name="Display7Seg_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293489" xil_pn:in_ck="-8713771606265277768" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-7710576022950239364" xil_pn:start_ts="1638293489">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293493" xil_pn:in_ck="-5915094638014052886" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-302505541844987701" xil_pn:start_ts="1638293489">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Display7Seg.bld"/>
+      <outfile xil_pn:name="Display7Seg.ngd"/>
+      <outfile xil_pn:name="Display7Seg_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293498" xil_pn:in_ck="-441091254926709813" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5706167834589782188" xil_pn:start_ts="1638293493">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Display7Seg.pcf"/>
+      <outfile xil_pn:name="Display7Seg_map.map"/>
+      <outfile xil_pn:name="Display7Seg_map.mrp"/>
+      <outfile xil_pn:name="Display7Seg_map.ncd"/>
+      <outfile xil_pn:name="Display7Seg_map.ngm"/>
+      <outfile xil_pn:name="Display7Seg_map.xrpt"/>
+      <outfile xil_pn:name="Display7Seg_summary.xml"/>
+      <outfile xil_pn:name="Display7Seg_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293509" xil_pn:in_ck="6852859717189168580" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="6973808786348774276" xil_pn:start_ts="1638293498">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Display7Seg.ncd"/>
+      <outfile xil_pn:name="Display7Seg.pad"/>
+      <outfile xil_pn:name="Display7Seg.par"/>
+      <outfile xil_pn:name="Display7Seg.ptwx"/>
+      <outfile xil_pn:name="Display7Seg.unroutes"/>
+      <outfile xil_pn:name="Display7Seg.xpi"/>
+      <outfile xil_pn:name="Display7Seg_pad.csv"/>
+      <outfile xil_pn:name="Display7Seg_pad.txt"/>
+      <outfile xil_pn:name="Display7Seg_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293514" xil_pn:in_ck="-8713771606265285393" xil_pn:name="TRANEXT_bitFile_spartan3a" xil_pn:prop_ck="-426368325978129584" xil_pn:start_ts="1638293509">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Display7Seg.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="display7seg.bgn"/>
+      <outfile xil_pn:name="display7seg.bit"/>
+      <outfile xil_pn:name="display7seg.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293702" xil_pn:in_ck="6656213331594007289" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="3725548802311211136" xil_pn:start_ts="1638293700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_impact.cmd"/>
+      <outfile xil_pn:name="_impact.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1638293509" xil_pn:in_ck="-3586518947783482425" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1638293506">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Display7Seg.twr"/>
+      <outfile xil_pn:name="Display7Seg.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>
