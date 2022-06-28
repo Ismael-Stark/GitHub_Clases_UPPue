@@ -3,23 +3,24 @@
 void serial_init(uint32_t baudios){
     uint16_t sx;
     //BAUDCON1 = 0;
-    BAUD1CONbits.BRG16 = 0; //brg16 deshabilitado, modo brg8
+//    BAUD1CONbits.BRG16 = 0; //brg16 deshabilitado, modo brg8
+    BAUD1CON = 0x08;
 
-    //RC1STA = 0x90;
     RC1STA = 0b10010000;    //serial port habilitado y se habilita la recepcion continua hasta que 
                             //bit CREN sea limpiado;
     //TX1STA = 0x24;
     //TX1STA = 0b00100100;      //modo 8bit transmision, , trsnsmicion habilitada
                                 //modo asincrono, modo alta velocidad
     
-    TX1STA = 0b00100000; //modo 8bit transmision, , trsnsmicion habilitada
-                         //modo asincrono, modo baja velocidad
+    TX1STA = 0b00100100; //modo 8bit transmision, , trsnsmicion habilitada
+                         //modo asincrono
+                         //BRGH (bit2) =1(alta velocidad)
     //para calcular SP1BRGL y SP1BRGH, ver pag552
     //TX1STAbits.BRGH = 1;
-    sx = ((_XTAL_FREQ/baudios)/64 ) - 1;
+    sx = ((_XTAL_FREQ/baudios)/4 ) - 1;//el numero divisor depende de la tabla 33-1, pag 336
     SP1BRGL = (uint8_t)sx;
     SP1BRGH = (uint8_t)(sx>>8);
-//    SP1BRGL = 51;   //paraa 9600
+//    SP1BRGL = 51;   //para 9600, con brg8bits, y lowspeed
 //    SP1BRGH = 0x00;
 
     RC0PPS = 0x10;   //RC0->EUSART:TX;    pag234 y 236
