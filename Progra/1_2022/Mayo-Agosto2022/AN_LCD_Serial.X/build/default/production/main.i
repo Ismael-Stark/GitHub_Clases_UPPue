@@ -39384,7 +39384,7 @@ void CGRAM_x(uint8_t p);
 # 3 "main.c" 2
 
 
-uint8_t contador = 0, buffer[40];
+uint8_t contador = 0, buffer[60];
 uint16_t lecturaADC = 0;
 
 float mV = (3.3/4095);
@@ -39396,24 +39396,20 @@ float V, temperatura;
 
 void main(void)
 {
+    char serialRX;
 
     SYSTEM_Initialize();
-    do { LATFbits.LATF3 = 0; } while(0);
-
-
-
-    do { LATFbits.LATF3 = 1; } while(0);
-# 34 "main.c"
+# 35 "main.c"
     while (1)
     {
-        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-        lecturaADC = ADC_GetSingleConversion(LM35);
-        V = mV*lecturaADC;
-        temperatura = V / 0.01;
-        printf("cont=%d, ADC=%i\nV=%f, Temp=%f\n\n",contador++,lecturaADC, V, temperatura);
+# 49 "main.c"
+        serialRX = getch();
 
-        _delay((unsigned long)((500)*(10000000/4000.0)));
-
+        if(serialRX == 'N'){
+            do { LATFbits.LATF3 = 1; } while(0);
+        }else{
+             do { LATFbits.LATF3 = 0; } while(0);
+        }
 
 
     }

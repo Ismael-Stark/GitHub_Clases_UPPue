@@ -1,0 +1,140 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\SerialPICaPIC.X\adc.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"17 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\SerialPICaPIC.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+"64
+[v _port_init port_init `(v  1 e 1 0 ]
+"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\SerialPICaPIC.X\uart.c
+[v _serial_init serial_init `(v  1 e 1 0 ]
+"42
+[v _uart_rx uart_rx `(uc  1 e 1 0 ]
+"60
+[v _uart_tx uart_tx `(v  1 e 1 0 ]
+"385 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"447
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"592
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"654
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"716
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"778
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"840
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"1539
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1559
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1860
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+"1971
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+"2010
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+"2228
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2338
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2379
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2571
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"3504
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"3558
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"3619
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"3689
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"3743
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+"3923
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+"4103
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+"21106
+[v _PIR3 PIR3 `VEuc  1 e 1 @1807 ]
+"31567
+[v _RXPPS RXPPS `VEuc  1 e 1 @3787 ]
+"32571
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @3874 ]
+"32871
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"33491
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"34111
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"17 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\SerialPICaPIC.X\Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"19
+[v main@adc adc `us  1 a 2 12 ]
+"20
+[v main@flagDatoEnviar flagDatoEnviar `a  1 a 1 15 ]
+"18
+[v main@rx rx `uc  1 a 1 14 ]
+"61
+} 0
+"60 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\SerialPICaPIC.X\uart.c
+[v _uart_tx uart_tx `(v  1 e 1 0 ]
+{
+[v uart_tx@dato dato `uc  1 a 1 wreg ]
+[v uart_tx@dato dato `uc  1 a 1 wreg ]
+[v uart_tx@dato dato `uc  1 a 1 1 ]
+"64
+} 0
+"42
+[v _uart_rx uart_rx `(uc  1 e 1 0 ]
+{
+"58
+} 0
+"4
+[v _serial_init serial_init `(v  1 e 1 0 ]
+{
+"5
+[v serial_init@sx sx `us  1 a 2 8 ]
+"4
+[v serial_init@baudios baudios `ul  1 p 4 0 ]
+"40
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"64 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\SerialPICaPIC.X\Main.c
+[v _port_init port_init `(v  1 e 1 0 ]
+{
+"84
+} 0
+"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\SerialPICaPIC.X\adc.c
+[v _adc_init adc_init `(v  1 e 1 0 ]
+{
+"25
+} 0
