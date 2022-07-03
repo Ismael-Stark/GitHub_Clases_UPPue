@@ -3,4 +3,6 @@ Main.c  \
 fuses.h  \
 main.h  \
 uart.h  \
-adc.h 
+adc.h  \
+I2C.h  \
+LCD_i2c.h 

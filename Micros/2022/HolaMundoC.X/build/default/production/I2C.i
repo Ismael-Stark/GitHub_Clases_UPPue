@@ -1,4 +1,4 @@
-# 1 "uart.c"
+# 1 "I2C.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,9 +6,14 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "uart.c" 2
-# 1 "./uart.h" 1
+# 1 "I2C.c" 2
 
+# 1 "./I2C.h" 1
+
+
+
+
+# 1 "./main.h" 1
 
 
 
@@ -19791,12 +19796,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\xc.h" 2 3
-# 5 "./uart.h" 2
-
-# 1 "./main.h" 1
-
-
-
+# 4 "./main.h" 2
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
@@ -19941,88 +19941,81 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 7 "./main.h" 2
-# 6 "./uart.h" 2
+# 5 "./I2C.h" 2
 
 
 
 
 
-void serial_init(uint32_t baudios);
-
-void uart_tx(uint8_t dato);
-void uart_send_string(uint8_t *dato);
-uint8_t uart_rx();
-# 1 "uart.c" 2
-
-
-void serial_init(uint32_t baudios){
-    uint16_t sx;
-
-
-    BAUD1CON = 0x08;
-
-    RC1STA = 0b10010000;
+void I2C_init();
+void I2C_start(void);
+void I2C_restart(void);
+void I2C_stop(void);
+char I2C_read(void);
+void I2C_ack(void);
+void I2C_nack(void);
+void I2C_write(char I2C_data);
+# 2 "I2C.c" 2
 
 
+void I2C_init(void)
+{
+    SSP1CLKPPS = 0x14;
+    RC3PPS = 0x15;
+    RC4PPS = 0x14;
+    SSP1DATPPS = 0x13;
 
-
-
-    TX1STA = 0b00100100;
-
-
-
-
-    sx = ((32000000UL/baudios)/4 ) - 1;
-    SP1BRGL = (uint8_t)sx;
-    SP1BRGH = (uint8_t)(sx>>8);
-
-
-
-    RC0PPS = 0x10;
-
-    RXPPS = 0x11;
-
+    SSP1STAT = 0b10000000;
+ SSP1CON1 = 0b00101000;
+ SSP1CON3 = 0x00;
+ SSP1ADD = ((32000000UL/(4UL*100000UL))-1);
 }
 
-void uart_tx(uint8_t dato){
-
-    while( ( (PIR3>>4) & 0x01) == 0){}
-
-        TXREG = dato;
-
+ void I2C_start(void)
+ {
+    SSP1CON2bits.SEN = 1;
+    while(SSP1CON2bits.SEN == 1);
 }
 
-uint8_t uart_rx(){
-
-
-
-    while (((PIR3>>5) & 0x01) == 0){}
-
-    if( ((RC1STA >> 1)& 0x01) == 1){
-        RC1STA = RC1STA & ~(1<<4);
-        RC1STA = RC1STA | (1<<4);
-    }
-
-
-
-
-      return RCREG;
-
+void I2C_restart(void)
+{
+    SSP1CON2bits.RSEN = 1;
+    while(SSP1CON2bits.RSEN == 1);
 }
 
-
-void uart_send_string(uint8_t *dato){
-    while(*dato){
-        uart_tx( *dato++);
-    }
+void I2C_stop(void)
+{
+    SSP1CON2bits.PEN = 1;
+    while(SSP1CON2bits.PEN == 1);
 }
 
-void putch(uint8_t dato){
-
-    uart_tx( dato);
+char I2C_read(void)
+{
+    PIR3bits.SSP1IF = 0;
+    SSP1CON2bits.RCEN = 1;
+    while(PIR3bits.SSP1IF == 0);
+    return SSP1BUF;
 }
 
-uint8_t getch(){
+void I2C_ack(void)
+{
+    PIR3bits.SSP1IF = 0;
+    SSP1CON2bits.ACKDT = 0;
+    SSP1CON2bits.ACKEN = 1;
+    while(PIR3bits.SSP1IF == 0);
+}
 
-    return uart_rx();
+void I2C_nack(void)
+{
+    PIR3bits.SSP1IF = 0;
+    SSP1CON2bits.ACKDT = 1;
+    SSP1CON2bits.ACKEN = 1;
+    while(PIR3bits.SSP1IF == 0);
+}
+
+void I2C_write(char I2C_data)
+{
+    PIR3bits.SSP1IF = 0;
+    SSP1BUF = I2C_data;
+    while(PIR3bits.SSP1IF == 0);
 }

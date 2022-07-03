@@ -1,34 +1,69 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"4103 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 4103: extern volatile unsigned char BAUD1CON __attribute__((address(0x11F)));
-[v _BAUD1CON `Vuc ~T0 @X0 0 e@287 ]
-"3743
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 3743: extern volatile unsigned char RC1STA __attribute__((address(0x11D)));
-[v _RC1STA `Vuc ~T0 @X0 0 e@285 ]
-"3923
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 3923: extern volatile unsigned char TX1STA __attribute__((address(0x11E)));
-[v _TX1STA `Vuc ~T0 @X0 0 e@286 ]
-"3619
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 3619: extern volatile unsigned char SP1BRGL __attribute__((address(0x11B)));
-[v _SP1BRGL `Vuc ~T0 @X0 0 e@283 ]
-"3689
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 3689: extern volatile unsigned char SP1BRGH __attribute__((address(0x11C)));
-[v _SP1BRGH `Vuc ~T0 @X0 0 e@284 ]
-"32471
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 32471: extern volatile unsigned char RC0PPS __attribute__((address(0xF20)));
-[v _RC0PPS `Vuc ~T0 @X0 0 e@3872 ]
-"31567
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 31567: extern volatile unsigned char RXPPS __attribute__((address(0xECB)));
-[v _RXPPS `Vuc ~T0 @X0 0 e@3787 ]
-"21106
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 21106: extern volatile unsigned char PIR3 __attribute__((address(0x70F)));
-[v _PIR3 `Vuc ~T0 @X0 0 e@1807 ]
-"3567
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 3567: extern volatile unsigned char TXREG __attribute__((address(0x11A)));
-[v _TXREG `Vuc ~T0 @X0 0 e@282 ]
-"3509
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 3509: extern volatile unsigned char RCREG __attribute__((address(0x119)));
-[v _RCREG `Vuc ~T0 @X0 0 e@281 ]
+"31255 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 31255: extern volatile unsigned char SSP1CLKPPS __attribute__((address(0xEC5)));
+[v _SSP1CLKPPS `Vuc ~T0 @X0 0 e@3781 ]
+"32621
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 32621: extern volatile unsigned char RC3PPS __attribute__((address(0xF23)));
+[v _RC3PPS `Vuc ~T0 @X0 0 e@3875 ]
+"32671
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 32671: extern volatile unsigned char RC4PPS __attribute__((address(0xF24)));
+[v _RC4PPS `Vuc ~T0 @X0 0 e@3876 ]
+"31307
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 31307: extern volatile unsigned char SSP1DATPPS __attribute__((address(0xEC6)));
+[v _SSP1DATPPS `Vuc ~T0 @X0 0 e@3782 ]
+"4559
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 4559: extern volatile unsigned char SSP1STAT __attribute__((address(0x18F)));
+[v _SSP1STAT `Vuc ~T0 @X0 0 e@399 ]
+"4923
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 4923: extern volatile unsigned char SSP1CON1 __attribute__((address(0x190)));
+[v _SSP1CON1 `Vuc ~T0 @X0 0 e@400 ]
+"5230
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5230: extern volatile unsigned char SSP1CON3 __attribute__((address(0x192)));
+[v _SSP1CON3 `Vuc ~T0 @X0 0 e@402 ]
+"4369
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 4369: extern volatile unsigned char SSP1ADD __attribute__((address(0x18D)));
+[v _SSP1ADD `Vuc ~T0 @X0 0 e@397 ]
+"5049
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5049:     struct {
+[s S242 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S242 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"5059
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5059:     struct {
+[s S243 :1 `uc 1 :5 `uc 1 ]
+[n S243 . . ADMSK ]
+"5063
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5063:     struct {
+[s S244 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S244 . . ADMSK1 ADMSK2 ADMSK3 ADMSK4 ADMSK5 ]
+"5071
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5071:     struct {
+[s S245 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S245 . SEN1 ADMSK11 ADMSK21 ADMSK31 ACKEN1 ACKDT1 ACKSTAT1 GCEN1 ]
+"5081
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5081:     struct {
+[s S246 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S246 . . RSEN1 PEN1 RCEN1 ADMSK41 ADMSK51 ]
+"5048
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5048: typedef union {
+[u S241 `S242 1 `S243 1 `S244 1 `S245 1 `S246 1 ]
+[n S241 . . . . . . ]
+"5090
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 5090: extern volatile SSP1CON2bits_t SSP1CON2bits __attribute__((address(0x191)));
+[v _SSP1CON2bits `VS241 ~T0 @X0 0 e@401 ]
+"21112
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 21112:     struct {
+[s S962 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S962 . SSP1IF BCL1IF SSP2IF BCL2IF TXIF RCIF ]
+"21111
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 21111: typedef union {
+[u S961 `S962 1 ]
+[n S961 . . ]
+"21121
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 21121: extern volatile PIR3bits_t PIR3bits __attribute__((address(0x70F)));
+[v _PIR3bits `VS961 ~T0 @X0 0 e@1807 ]
+"4349
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 4349: extern volatile unsigned char SSP1BUF __attribute__((address(0x18C)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@396 ]
 "55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1583,156 +1618,220 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35050
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 35050: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"3 uart.c
-[; ;uart.c: 3: void serial_init(uint32_t baudios){
-[v _serial_init `(v ~T0 @X0 1 ef1`ul ]
+"4 I2C.c
+[; ;I2C.c: 4: void I2C_init(void)
+[v _I2C_init `(v ~T0 @X0 1 ef ]
+"5
+[; ;I2C.c: 5: {
 {
-[e :U _serial_init ]
-[v _baudios `ul ~T0 @X0 1 r1 ]
+[e :U _I2C_init ]
 [f ]
-"4
-[; ;uart.c: 4:     uint16_t sx;
-[v _sx `us ~T0 @X0 1 a ]
+"6
+[; ;I2C.c: 6:     SSP1CLKPPS = 0x14;
+[e = _SSP1CLKPPS -> -> 20 `i `uc ]
 "7
-[; ;uart.c: 7:     BAUD1CON = 0x08;
-[e = _BAUD1CON -> -> 8 `i `uc ]
+[; ;I2C.c: 7:     RC3PPS = 0x15;
+[e = _RC3PPS -> -> 21 `i `uc ]
+"8
+[; ;I2C.c: 8:     RC4PPS = 0x14;
+[e = _RC4PPS -> -> 20 `i `uc ]
 "9
-[; ;uart.c: 9:     RC1STA = 0b10010000;
-[e = _RC1STA -> -> 144 `i `uc ]
+[; ;I2C.c: 9:     SSP1DATPPS = 0x13;
+[e = _SSP1DATPPS -> -> 19 `i `uc ]
+"11
+[; ;I2C.c: 11:     SSP1STAT = 0b10000000;
+[e = _SSP1STAT -> -> 128 `i `uc ]
+"12
+[; ;I2C.c: 12:  SSP1CON1 = 0b00101000;
+[e = _SSP1CON1 -> -> 40 `i `uc ]
+"13
+[; ;I2C.c: 13:  SSP1CON3 = 0x00;
+[e = _SSP1CON3 -> -> 0 `i `uc ]
+"14
+[; ;I2C.c: 14:  SSP1ADD = ((32000000UL/(4UL*100000UL))-1);
+[e = _SSP1ADD -> - / -> 32000000 `ul * -> 4 `ul -> 100000 `ul -> -> -> 1 `i `l `ul `uc ]
 "15
-[; ;uart.c: 15:     TX1STA = 0b00100100;
-[e = _TX1STA -> -> 36 `i `uc ]
-"20
-[; ;uart.c: 20:     sx = ((32000000UL/baudios)/4 ) - 1;
-[e = _sx -> - / / -> 32000000 `ul _baudios -> -> -> 4 `i `l `ul -> -> -> 1 `i `l `ul `us ]
-"21
-[; ;uart.c: 21:     SP1BRGL = (uint8_t)sx;
-[e = _SP1BRGL -> _sx `uc ]
-"22
-[; ;uart.c: 22:     SP1BRGH = (uint8_t)(sx>>8);
-[e = _SP1BRGH -> >> -> _sx `ui -> 8 `i `uc ]
-"26
-[; ;uart.c: 26:     RC0PPS = 0x10;
-[e = _RC0PPS -> -> 16 `i `uc ]
-"28
-[; ;uart.c: 28:     RXPPS = 0x11;
-[e = _RXPPS -> -> 17 `i `uc ]
-"30
-[; ;uart.c: 30: }
+[; ;I2C.c: 15: }
 [e :UE 1566 ]
 }
-"32
-[; ;uart.c: 32: void uart_tx(uint8_t dato){
-[v _uart_tx `(v ~T0 @X0 1 ef1`uc ]
+"17
+[; ;I2C.c: 17:  void I2C_start(void)
+[v _I2C_start `(v ~T0 @X0 1 ef ]
+"18
+[; ;I2C.c: 18:  {
 {
-[e :U _uart_tx ]
-[v _dato `uc ~T0 @X0 1 r1 ]
+[e :U _I2C_start ]
 [f ]
-"34
-[; ;uart.c: 34:     while( ( (PIR3>>4) & 0x01) == 0){}
+"19
+[; ;I2C.c: 19:     SSP1CON2bits.SEN = 1;
+[e = . . _SSP1CON2bits 0 0 -> -> 1 `i `uc ]
+"20
+[; ;I2C.c: 20:     while(SSP1CON2bits.SEN == 1);
 [e $U 1568  ]
 [e :U 1569 ]
-{
-}
 [e :U 1568 ]
-[e $ == & >> -> _PIR3 `i -> 4 `i -> 1 `i -> 0 `i 1569  ]
+[e $ == -> . . _SSP1CON2bits 0 0 `i -> 1 `i 1569  ]
 [e :U 1570 ]
-"36
-[; ;uart.c: 36:         TXREG = dato;
-[e = _TXREG _dato ]
-"38
-[; ;uart.c: 38: }
+"21
+[; ;I2C.c: 21: }
 [e :UE 1567 ]
 }
-"40
-[; ;uart.c: 40: uint8_t uart_rx(){
-[v _uart_rx `(uc ~T0 @X0 1 ef ]
+"23
+[; ;I2C.c: 23: void I2C_restart(void)
+[v _I2C_restart `(v ~T0 @X0 1 ef ]
+"24
+[; ;I2C.c: 24: {
 {
-[e :U _uart_rx ]
+[e :U _I2C_restart ]
 [f ]
-"44
-[; ;uart.c: 44:     while (((PIR3>>5) & 0x01) == 0){}
+"25
+[; ;I2C.c: 25:     SSP1CON2bits.RSEN = 1;
+[e = . . _SSP1CON2bits 0 1 -> -> 1 `i `uc ]
+"26
+[; ;I2C.c: 26:     while(SSP1CON2bits.RSEN == 1);
 [e $U 1572  ]
 [e :U 1573 ]
-{
-}
 [e :U 1572 ]
-[e $ == & >> -> _PIR3 `i -> 5 `i -> 1 `i -> 0 `i 1573  ]
+[e $ == -> . . _SSP1CON2bits 0 1 `i -> 1 `i 1573  ]
 [e :U 1574 ]
-"46
-[; ;uart.c: 46:     if( ((RC1STA >> 1)& 0x01) == 1){
-[e $ ! == & >> -> _RC1STA `i -> 1 `i -> 1 `i -> 1 `i 1575  ]
-{
-"47
-[; ;uart.c: 47:         RC1STA = RC1STA & ~(1<<4);
-[e = _RC1STA -> & -> _RC1STA `i ~ << -> 1 `i -> 4 `i `uc ]
-"48
-[; ;uart.c: 48:         RC1STA = RC1STA | (1<<4);
-[e = _RC1STA -> | -> _RC1STA `i << -> 1 `i -> 4 `i `uc ]
-"49
-[; ;uart.c: 49:     }
-}
-[e :U 1575 ]
-"54
-[; ;uart.c: 54:       return RCREG;
-[e ) _RCREG ]
-[e $UE 1571  ]
-"56
-[; ;uart.c: 56: }
+"27
+[; ;I2C.c: 27: }
 [e :UE 1571 ]
 }
-"59
-[; ;uart.c: 59: void uart_send_string(uint8_t *dato){
-[v _uart_send_string `(v ~T0 @X0 1 ef1`*uc ]
+"29
+[; ;I2C.c: 29: void I2C_stop(void)
+[v _I2C_stop `(v ~T0 @X0 1 ef ]
+"30
+[; ;I2C.c: 30: {
 {
-[e :U _uart_send_string ]
-[v _dato `*uc ~T0 @X0 1 r1 ]
+[e :U _I2C_stop ]
 [f ]
-"60
-[; ;uart.c: 60:     while(*dato){
-[e $U 1577  ]
-[e :U 1578 ]
-{
-"61
-[; ;uart.c: 61:         uart_tx( *dato++);
-[e ( _uart_tx (1 *U ++ _dato * -> -> 1 `i `x -> -> # *U _dato `i `x ]
-"62
-[; ;uart.c: 62:     }
-}
+"31
+[; ;I2C.c: 31:     SSP1CON2bits.PEN = 1;
+[e = . . _SSP1CON2bits 0 2 -> -> 1 `i `uc ]
+"32
+[; ;I2C.c: 32:     while(SSP1CON2bits.PEN == 1);
+[e $U 1576  ]
 [e :U 1577 ]
+[e :U 1576 ]
+[e $ == -> . . _SSP1CON2bits 0 2 `i -> 1 `i 1577  ]
+[e :U 1578 ]
+"33
+[; ;I2C.c: 33: }
+[e :UE 1575 ]
+}
+"35
+[; ;I2C.c: 35: char I2C_read(void)
+[v _I2C_read `(uc ~T0 @X0 1 ef ]
+"36
+[; ;I2C.c: 36: {
+{
+[e :U _I2C_read ]
+[f ]
+"37
+[; ;I2C.c: 37:     PIR3bits.SSP1IF = 0;
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+"38
+[; ;I2C.c: 38:     SSP1CON2bits.RCEN = 1;
+[e = . . _SSP1CON2bits 0 3 -> -> 1 `i `uc ]
+"39
+[; ;I2C.c: 39:     while(PIR3bits.SSP1IF == 0);
+[e $U 1580  ]
+[e :U 1581 ]
+[e :U 1580 ]
+[e $ == -> . . _PIR3bits 0 0 `i -> 0 `i 1581  ]
+[e :U 1582 ]
+"40
+[; ;I2C.c: 40:     return SSP1BUF;
+[e ) -> _SSP1BUF `uc ]
+[e $UE 1579  ]
+"41
+[; ;I2C.c: 41: }
+[e :UE 1579 ]
+}
+"43
+[; ;I2C.c: 43: void I2C_ack(void)
+[v _I2C_ack `(v ~T0 @X0 1 ef ]
+"44
+[; ;I2C.c: 44: {
+{
+[e :U _I2C_ack ]
+[f ]
+"45
+[; ;I2C.c: 45:     PIR3bits.SSP1IF = 0;
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+"46
+[; ;I2C.c: 46:     SSP1CON2bits.ACKDT = 0;
+[e = . . _SSP1CON2bits 0 5 -> -> 0 `i `uc ]
+"47
+[; ;I2C.c: 47:     SSP1CON2bits.ACKEN = 1;
+[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
+"48
+[; ;I2C.c: 48:     while(PIR3bits.SSP1IF == 0);
+[e $U 1584  ]
+[e :U 1585 ]
+[e :U 1584 ]
+[e $ == -> . . _PIR3bits 0 0 `i -> 0 `i 1585  ]
+[e :U 1586 ]
+"49
+[; ;I2C.c: 49: }
+[e :UE 1583 ]
+}
+"51
+[; ;I2C.c: 51: void I2C_nack(void)
+[v _I2C_nack `(v ~T0 @X0 1 ef ]
+"52
+[; ;I2C.c: 52: {
+{
+[e :U _I2C_nack ]
+[f ]
+"53
+[; ;I2C.c: 53:     PIR3bits.SSP1IF = 0;
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+"54
+[; ;I2C.c: 54:     SSP1CON2bits.ACKDT = 1;
+[e = . . _SSP1CON2bits 0 5 -> -> 1 `i `uc ]
+"55
+[; ;I2C.c: 55:     SSP1CON2bits.ACKEN = 1;
+[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
+"56
+[; ;I2C.c: 56:     while(PIR3bits.SSP1IF == 0);
+[e $U 1588  ]
+[e :U 1589 ]
+[e :U 1588 ]
+[e $ == -> . . _PIR3bits 0 0 `i -> 0 `i 1589  ]
+[e :U 1590 ]
+"57
+[; ;I2C.c: 57: }
+[e :UE 1587 ]
+}
+"59
+[; ;I2C.c: 59: void I2C_write(char I2C_data)
+[v _I2C_write `(v ~T0 @X0 1 ef1`uc ]
 "60
-[; ;uart.c: 60:     while(*dato){
-[e $ != -> *U _dato `i -> 0 `i 1578  ]
-[e :U 1579 ]
+[; ;I2C.c: 60: {
+{
+[e :U _I2C_write ]
+"59
+[; ;I2C.c: 59: void I2C_write(char I2C_data)
+[v _I2C_data `uc ~T0 @X0 1 r1 ]
+"60
+[; ;I2C.c: 60: {
+[f ]
+"61
+[; ;I2C.c: 61:     PIR3bits.SSP1IF = 0;
+[e = . . _PIR3bits 0 0 -> -> 0 `i `uc ]
+"62
+[; ;I2C.c: 62:     SSP1BUF = I2C_data;
+[e = _SSP1BUF -> _I2C_data `uc ]
 "63
-[; ;uart.c: 63: }
-[e :UE 1576 ]
-}
-"65
-[; ;uart.c: 65: void putch(uint8_t dato){
-[v _putch `(v ~T0 @X0 1 ef1`uc ]
-{
-[e :U _putch ]
-[v _dato `uc ~T0 @X0 1 r1 ]
-[f ]
-"67
-[; ;uart.c: 67:     uart_tx( dato);
-[e ( _uart_tx (1 _dato ]
-"68
-[; ;uart.c: 68: }
-[e :UE 1580 ]
-}
-"70
-[; ;uart.c: 70: uint8_t getch(){
-[v _getch `(uc ~T0 @X0 1 ef ]
-{
-[e :U _getch ]
-[f ]
-"72
-[; ;uart.c: 72:     return uart_rx();
-[e ) ( _uart_rx ..  ]
-[e $UE 1581  ]
-"73
-[; ;uart.c: 73: }
-[e :UE 1581 ]
+[; ;I2C.c: 63:     while(PIR3bits.SSP1IF == 0);
+[e $U 1592  ]
+[e :U 1593 ]
+[e :U 1592 ]
+[e $ == -> . . _PIR3bits 0 0 `i -> 0 `i 1593  ]
+[e :U 1594 ]
+"64
+[; ;I2C.c: 64: }
+[e :UE 1591 ]
 }

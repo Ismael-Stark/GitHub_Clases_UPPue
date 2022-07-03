@@ -19995,6 +19995,48 @@ void adc_init();
 uint16_t adc_read(uint8_t pin);
 # 7 "Main.c" 2
 
+# 1 "./I2C.h" 1
+# 10 "./I2C.h"
+void I2C_init();
+void I2C_start(void);
+void I2C_restart(void);
+void I2C_stop(void);
+char I2C_read(void);
+void I2C_ack(void);
+void I2C_nack(void);
+void I2C_write(char I2C_data);
+# 8 "Main.c" 2
+
+# 1 "./LCD_i2c.h" 1
+# 13 "./LCD_i2c.h"
+typedef uint8_t int8;
+# 34 "./LCD_i2c.h"
+int8 g_LcdX, g_LcdY;
+
+
+
+
+
+int8 const LCD_INIT_STRING[4] =
+{
+ 0x20 | (2 << 2),
+ 0xc,
+ 1,
+ 6
+ };
+
+void Write_PCF(char dato);
+void Send_D7_D4(int8 address,int8 nibble);
+void lcd_send_byte(int8 address, int8 n);
+void lcd_init(void);
+void lcd_gotoxy(int8 x, int8 y);
+void lcd_putc(unsigned char c);
+void lcd_puts(unsigned char *dato);
+void Clear_LCD();
+void CGRAM(uint8_t n);
+void CGRAM_x(uint8_t p);
+# 9 "Main.c" 2
+
 
 
 
@@ -20005,33 +20047,31 @@ void port_init();
 
 
 void main(void) {
-    uint8_t rx, buffer[32], contador = 0;
+    uint8_t rx, buffer[50], contador = 0;
     uint16_t adc=0;
+    int8_t high_byte;
+    uint8_t low_byte;
 
     port_init();
     serial_init(9600);
     adc_init();
+    I2C_init();
+
+    lcd_init();
+    sprintf(buffer,"\fhola mundo\n%i",contador);
+    lcd_puts(buffer);
+
+    while(1){
+        I2C_start();
+        I2C_write(0b01101000);
+        I2C_stop();
+# 57 "Main.c"
+        _delay((unsigned long)((1)*(32000000UL/4000.0)));
+    }
 
 
     while(1){
-        LATA = LATA | (1<<3);
-        _delay((unsigned long)((500)*(32000000UL/4000.0)));
-        LATA = LATA & ~(1<<3);
-        _delay((unsigned long)((500)*(32000000UL/4000.0)));
-        sprintf(buffer,"hola mundo %i\n",contador++);
-        printf(buffer);
-        adc = adc_read(4);
-        volt = adc*mv;
-        temperatura = volt/(0.01);
-        sprintf(buffer,"adc = %i, volt %f, temp=%f\n",adc, volt,temperatura);
-        printf(buffer);
-
-        adc = adc_read(8);
-        sprintf(buffer,"ANB0 = %i \n\n",adc);
-        printf(buffer);
-
-
-
+# 90 "Main.c"
         if (((PIR3>>5) & 0x01) ==1){
             rx = uart_rx();
         }
@@ -20070,4 +20110,5 @@ void port_init(){
     TRISC = 0b10;
     ANSELC = 0;
 
+    TRISC = TRISC | (1<<4 |1<<3 );
 }

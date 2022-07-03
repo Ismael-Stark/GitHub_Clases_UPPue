@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"14 Main.c
-[; ;Main.c: 14: void port_init();
+"16 Main.c
+[; ;Main.c: 16: void port_init();
 [v _port_init `(v ~T0 @X0 0 e? ]
 "11 ./uart.h
 [; ;./uart.h: 11: void serial_init(uint32_t baudios);
@@ -9,27 +9,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 "8 ./adc.h
 [; ;./adc.h: 8: void adc_init();
 [v _adc_init `(v ~T0 @X0 0 e? ]
-"778 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 778: extern volatile unsigned char LATA __attribute__((address(0x016)));
-[v _LATA `Vuc ~T0 @X0 0 e@22 ]
+"10 ./I2C.h
+[; ;./I2C.h: 10: void I2C_init();
+[v _I2C_init `(v ~T0 @X0 0 e? ]
+"51 ./LCD_i2c.h
+[; ;./LCD_i2c.h: 51: void lcd_init(void);
+[v _lcd_init `(v ~T0 @X0 0 ef ]
+"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"54 ./LCD_i2c.h
+[; ;./LCD_i2c.h: 54: void lcd_puts(unsigned char *dato);
+[v _lcd_puts `(v ~T0 @X0 0 ef1`*uc ]
+"11 ./I2C.h
+[; ;./I2C.h: 11: void I2C_start(void);
+[v _I2C_start `(v ~T0 @X0 0 ef ]
+"17
+[; ;./I2C.h: 17: void I2C_write(char I2C_data);
+[v _I2C_write `(v ~T0 @X0 0 ef1`uc ]
+"13
+[; ;./I2C.h: 13: void I2C_stop(void);
+[v _I2C_stop `(v ~T0 @X0 0 ef ]
 [v F183 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
 [v __delay `JF183 ~T0 @X0 0 e ]
 [p i __delay ]
-"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"111
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"9 ./adc.h
-[; ;./adc.h: 9: uint16_t adc_read(uint8_t pin);
-[v _adc_read `(us ~T0 @X0 0 ef1`uc ]
 "21106 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 21106: extern volatile unsigned char PIR3 __attribute__((address(0x70F)));
 [v _PIR3 `Vuc ~T0 @X0 0 e@1807 ]
 "15 ./uart.h
 [; ;./uart.h: 15: uint8_t uart_rx();
 [v _uart_rx `(uc ~T0 @X0 0 e? ]
-"32871 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+"778 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 778: extern volatile unsigned char LATA __attribute__((address(0x016)));
+[v _LATA `Vuc ~T0 @X0 0 e@22 ]
+"32871
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 32871: extern volatile unsigned char ANSELA __attribute__((address(0xF38)));
 [v _ANSELA `Vuc ~T0 @X0 0 e@3896 ]
 "385
@@ -1654,177 +1667,190 @@ Version 4.0 HI-TECH Software Intermediate Code
 [p x CP  =  OFF          ]
 "40
 [p x CPD  =  OFF         ]
-"11 Main.c
-[; ;Main.c: 11: const float mv=(3.3/1023);
+"34 ./LCD_i2c.h
+[; ;./LCD_i2c.h: 34: int8 g_LcdX, g_LcdY;
+[v _g_LcdX `uc ~T0 @X0 1 e ]
+[v _g_LcdY `uc ~T0 @X0 1 e ]
+"40
+[; ;./LCD_i2c.h: 40: int8 const LCD_INIT_STRING[4] =
+[v _LCD_INIT_STRING `Cuc ~T0 @X0 -> 4 `i e ]
+[i _LCD_INIT_STRING
+:U ..
+-> | -> 32 `i << -> 2 `i -> 2 `i `uc
+-> -> 12 `i `uc
+-> -> 1 `i `uc
+-> -> 6 `i `uc
+..
+]
+"13 Main.c
+[; ;Main.c: 13: const float mv=(3.3/1023);
 [v _mv `Cf ~T0 @X0 1 e ]
 [i _mv
 -> / .3.3 -> -> 1023 `i `d `f
 ]
-"12
-[; ;Main.c: 12: float volt, temperatura;
+"14
+[; ;Main.c: 14: float volt, temperatura;
 [v _volt `f ~T0 @X0 1 e ]
 [v _temperatura `f ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"17
-[; ;Main.c: 17: void main(void) {
+"19
+[; ;Main.c: 19: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"18
-[; ;Main.c: 18:     uint8_t rx, buffer[32], contador = 0;
+"20
+[; ;Main.c: 20:     uint8_t rx, buffer[50], contador = 0;
 [v _rx `uc ~T0 @X0 1 a ]
-[v _buffer `uc ~T0 @X0 -> 32 `i a ]
+[v _buffer `uc ~T0 @X0 -> 50 `i a ]
 [v _contador `uc ~T0 @X0 1 a ]
 [e = _contador -> -> 0 `i `uc ]
-"19
-[; ;Main.c: 19:     uint16_t adc=0;
+"21
+[; ;Main.c: 21:     uint16_t adc=0;
 [v _adc `us ~T0 @X0 1 a ]
 [e = _adc -> -> 0 `i `us ]
-"21
-[; ;Main.c: 21:     port_init();
-[e ( _port_init ..  ]
 "22
-[; ;Main.c: 22:     serial_init(9600);
-[e ( _serial_init (1 -> -> -> 9600 `i `l `ul ]
+[; ;Main.c: 22:     int8_t high_byte;
+[v _high_byte `c ~T0 @X0 1 a ]
 "23
-[; ;Main.c: 23:     adc_init();
-[e ( _adc_init ..  ]
+[; ;Main.c: 23:     uint8_t low_byte;
+[v _low_byte `uc ~T0 @X0 1 a ]
+"25
+[; ;Main.c: 25:     port_init();
+[e ( _port_init ..  ]
 "26
-[; ;Main.c: 26:     while(1){
+[; ;Main.c: 26:     serial_init(9600);
+[e ( _serial_init (1 -> -> -> 9600 `i `l `ul ]
+"27
+[; ;Main.c: 27:     adc_init();
+[e ( _adc_init ..  ]
+"28
+[; ;Main.c: 28:     I2C_init();
+[e ( _I2C_init ..  ]
+"30
+[; ;Main.c: 30:     lcd_init();
+[e ( _lcd_init ..  ]
+"31
+[; ;Main.c: 31:     sprintf(buffer,"\fhola mundo\n%i",contador);
+[e ( _sprintf (1 , (. , -> &U _buffer `*uc :s 1C -> _contador `i ]
+"32
+[; ;Main.c: 32:     lcd_puts(buffer);
+[e ( _lcd_puts (1 &U _buffer ]
+"34
+[; ;Main.c: 34:     while(1){
 [e :U 1568 ]
 {
-"27
-[; ;Main.c: 27:         LATA = LATA | (1<<3);
-[e = _LATA -> | -> _LATA `i << -> 1 `i -> 3 `i `uc ]
-"28
-[; ;Main.c: 28:         _delay((unsigned long)((500)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"29
-[; ;Main.c: 29:         LATA = LATA & ~(1<<3);
-[e = _LATA -> & -> _LATA `i ~ << -> 1 `i -> 3 `i `uc ]
-"30
-[; ;Main.c: 30:         _delay((unsigned long)((500)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"31
-[; ;Main.c: 31:         sprintf(buffer,"hola mundo %i\n",contador++);
-[e ( _sprintf (1 , (. , -> &U _buffer `*uc :s 1C -> ++ _contador -> -> 1 `i `uc `i ]
-"32
-[; ;Main.c: 32:         printf(buffer);
-[e ( _printf -> &U _buffer `*Cuc ]
-"33
-[; ;Main.c: 33:         adc = adc_read(4);
-[e = _adc ( _adc_read (1 -> -> 4 `i `uc ]
-"34
-[; ;Main.c: 34:         volt = adc*mv;
-[e = _volt * -> -> _adc `ui `f _mv ]
 "35
-[; ;Main.c: 35:         temperatura = volt/(0.01);
-[e = _temperatura -> / -> _volt `d .0.01 `f ]
+[; ;Main.c: 35:         I2C_start();
+[e ( _I2C_start ..  ]
 "36
-[; ;Main.c: 36:         sprintf(buffer,"adc = %i, volt %f, temp=%f\n",adc, volt,temperatura);
-[e ( _sprintf (1 , , , (. , -> &U _buffer `*uc :s 2C -> _adc `ui -> _volt `d -> _temperatura `d ]
+[; ;Main.c: 36:         I2C_write(0b01101000);
+[e ( _I2C_write (1 -> -> 104 `i `uc ]
 "37
-[; ;Main.c: 37:         printf(buffer);
-[e ( _printf -> &U _buffer `*Cuc ]
-"39
-[; ;Main.c: 39:         adc = adc_read(8);
-[e = _adc ( _adc_read (1 -> -> 8 `i `uc ]
-"40
-[; ;Main.c: 40:         sprintf(buffer,"ANB0 = %i \n\n",adc);
-[e ( _sprintf (1 , (. , -> &U _buffer `*uc :s 3C -> _adc `ui ]
-"41
-[; ;Main.c: 41:         printf(buffer);
-[e ( _printf -> &U _buffer `*Cuc ]
-"45
-[; ;Main.c: 45:         if (((PIR3>>5) & 0x01) ==1){
-[e $ ! == & >> -> _PIR3 `i -> 5 `i -> 1 `i -> 1 `i 1570  ]
-{
-"46
-[; ;Main.c: 46:             rx = uart_rx();
-[e = _rx ( _uart_rx ..  ]
-"47
-[; ;Main.c: 47:         }
-}
-[e :U 1570 ]
-"49
-[; ;Main.c: 49:         if (rx == 'b'){
-[e $ ! == -> _rx `ui -> 98 `ui 1571  ]
-{
-"50
-[; ;Main.c: 50:             LATA = LATA | (1<<0);
-[e = _LATA -> | -> _LATA `i << -> 1 `i -> 0 `i `uc ]
-"51
-[; ;Main.c: 51:         }else{
-}
-[e $U 1572  ]
-[e :U 1571 ]
-{
-"52
-[; ;Main.c: 52:             LATA = LATA & ~(1<<0);
-[e = _LATA -> & -> _LATA `i ~ << -> 1 `i -> 0 `i `uc ]
-"53
-[; ;Main.c: 53:         }
-}
-[e :U 1572 ]
-"60
-[; ;Main.c: 60:     }
+[; ;Main.c: 37:         I2C_stop();
+[e ( _I2C_stop ..  ]
+"57
+[; ;Main.c: 57:         _delay((unsigned long)((1)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"58
+[; ;Main.c: 58:     }
 }
 [e :U 1567 ]
 [e $U 1568  ]
 [e :U 1569 ]
 "61
-[; ;Main.c: 61:     return;
+[; ;Main.c: 61:     while(1){
+[e :U 1571 ]
+{
+"90
+[; ;Main.c: 90:         if (((PIR3>>5) & 0x01) ==1){
+[e $ ! == & >> -> _PIR3 `i -> 5 `i -> 1 `i -> 1 `i 1573  ]
+{
+"91
+[; ;Main.c: 91:             rx = uart_rx();
+[e = _rx ( _uart_rx ..  ]
+"92
+[; ;Main.c: 92:         }
+}
+[e :U 1573 ]
+"94
+[; ;Main.c: 94:         if (rx == 'b'){
+[e $ ! == -> _rx `ui -> 98 `ui 1574  ]
+{
+"95
+[; ;Main.c: 95:             LATA = LATA | (1<<0);
+[e = _LATA -> | -> _LATA `i << -> 1 `i -> 0 `i `uc ]
+"96
+[; ;Main.c: 96:         }else{
+}
+[e $U 1575  ]
+[e :U 1574 ]
+{
+"97
+[; ;Main.c: 97:             LATA = LATA & ~(1<<0);
+[e = _LATA -> & -> _LATA `i ~ << -> 1 `i -> 0 `i `uc ]
+"98
+[; ;Main.c: 98:         }
+}
+[e :U 1575 ]
+"105
+[; ;Main.c: 105:     }
+}
+[e :U 1570 ]
+[e $U 1571  ]
+[e :U 1572 ]
+"106
+[; ;Main.c: 106:     return;
 [e $UE 1566  ]
-"62
-[; ;Main.c: 62: }
+"107
+[; ;Main.c: 107: }
 [e :UE 1566 ]
 }
-"65
-[; ;Main.c: 65: void port_init(){
+"110
+[; ;Main.c: 110: void port_init(){
 [v _port_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_init ]
 [f ]
-"67
-[; ;Main.c: 67:     ANSELA = 0;
+"112
+[; ;Main.c: 112:     ANSELA = 0;
 [e = _ANSELA -> -> 0 `i `uc ]
-"68
-[; ;Main.c: 68:     LATA=0;
+"113
+[; ;Main.c: 113:     LATA=0;
 [e = _LATA -> -> 0 `i `uc ]
-"69
-[; ;Main.c: 69:     PORTA =0;
+"114
+[; ;Main.c: 114:     PORTA =0;
 [e = _PORTA -> -> 0 `i `uc ]
-"70
-[; ;Main.c: 70:     TRISA = 0b11110000;
+"115
+[; ;Main.c: 115:     TRISA = 0b11110000;
 [e = _TRISA -> -> 240 `i `uc ]
-"73
-[; ;Main.c: 73:     ANSELA = ANSELA | (1<<4);
+"118
+[; ;Main.c: 118:     ANSELA = ANSELA | (1<<4);
 [e = _ANSELA -> | -> _ANSELA `i << -> 1 `i -> 4 `i `uc ]
-"75
-[; ;Main.c: 75:     LATB=0;
+"120
+[; ;Main.c: 120:     LATB=0;
 [e = _LATB -> -> 0 `i `uc ]
-"76
-[; ;Main.c: 76:     PORTB =0;
+"121
+[; ;Main.c: 121:     PORTB =0;
 [e = _PORTB -> -> 0 `i `uc ]
-"77
-[; ;Main.c: 77:     TRISB = TRISA | (1<<0);
+"122
+[; ;Main.c: 122:     TRISB = TRISA | (1<<0);
 [e = _TRISB -> | -> _TRISA `i << -> 1 `i -> 0 `i `uc ]
-"78
-[; ;Main.c: 78:     ANSELB = ANSELB | (1<<0);
+"123
+[; ;Main.c: 123:     ANSELB = ANSELB | (1<<0);
 [e = _ANSELB -> | -> _ANSELB `i << -> 1 `i -> 0 `i `uc ]
-"80
-[; ;Main.c: 80:     TRISC = 0b10;
+"125
+[; ;Main.c: 125:     TRISC = 0b10;
 [e = _TRISC -> -> 2 `i `uc ]
-"81
-[; ;Main.c: 81:     ANSELC = 0;
+"126
+[; ;Main.c: 126:     ANSELC = 0;
 [e = _ANSELC -> -> 0 `i `uc ]
-"83
-[; ;Main.c: 83: }
-[e :UE 1573 ]
+"128
+[; ;Main.c: 128:     TRISC = TRISC | (1<<4 |1<<3 );
+[e = _TRISC -> | -> _TRISC `i | << -> 1 `i -> 4 `i << -> 1 `i -> 3 `i `uc ]
+"129
+[; ;Main.c: 129: }
+[e :UE 1576 ]
 }
-[p f _sprintf 8396928 ]
-[p f _printf 9437696 ]
-[a 1C 104 111 108 97 32 109 117 110 100 111 32 37 105 10 0 ]
-[a 2C 97 100 99 32 61 32 37 105 44 32 118 111 108 116 32 37 102 44 32 116 101 109 112 61 37 102 10 0 ]
-[a 3C 65 78 66 48 32 61 32 37 105 32 10 10 0 ]
+[p f _sprintf 8388736 ]
+[a 1C 12 104 111 108 97 32 109 117 110 100 111 10 37 105 0 ]

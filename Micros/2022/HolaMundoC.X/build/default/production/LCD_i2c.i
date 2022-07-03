@@ -1,4 +1,4 @@
-# 1 "uart.c"
+# 1 "LCD_i2c.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,9 +6,130 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "uart.c" 2
-# 1 "./uart.h" 1
+# 1 "LCD_i2c.c" 2
+# 39 "LCD_i2c.c"
+# 1 "./LCD_i2c.h" 1
 
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+
+
+
+
+typedef __int24 int24_t;
+
+
+
+
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+
+
+
+
+typedef __uint24 uint24_t;
+
+
+
+
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+typedef int24_t int_fast24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+typedef uint24_t uint_fast24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int16_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint16_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 6 "./LCD_i2c.h" 2
+
+
+
+# 1 "./I2C.h" 1
+
+
+
+
+# 1 "./main.h" 1
 
 
 
@@ -25,17 +146,7 @@ extern double __fpnormalize(double);
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-
-
-
-
-
-
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
 # 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
 # 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
@@ -44,10 +155,6 @@ extern double __fpnormalize(double);
 typedef long int wchar_t;
 # 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef __uint24 uint24_t;
 # 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
 
 
@@ -117,92 +224,7 @@ extern void __builtin_software_breakpoint(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef signed char int8_t;
 
-
-
-
-typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long int32_t;
-
-
-
-
-
-typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long intmax_t;
-
-
-
-
-
-typedef unsigned char uint8_t;
-
-
-
-
-typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long uint32_t;
-
-
-
-
-
-typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-
-
-typedef int8_t int_fast8_t;
-
-typedef int64_t int_fast64_t;
-
-
-typedef int8_t int_least8_t;
-typedef int16_t int_least16_t;
-
-typedef int24_t int_least24_t;
-typedef int24_t int_fast24_t;
-
-typedef int32_t int_least32_t;
-
-typedef int64_t int_least64_t;
-
-
-typedef uint8_t uint_fast8_t;
-
-typedef uint64_t uint_fast64_t;
-
-
-typedef uint8_t uint_least8_t;
-typedef uint16_t uint_least16_t;
-
-typedef uint24_t uint_least24_t;
-typedef uint24_t uint_fast24_t;
-
-typedef uint32_t uint_least32_t;
-
-typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
-typedef int16_t int_fast16_t;
-typedef int32_t int_fast32_t;
-typedef uint16_t uint_fast16_t;
-typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-# 5 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\builtins.h" 2 3
 
 
 #pragma intrinsic(__nop)
@@ -19791,12 +19813,7 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\xc.h" 2 3
-# 5 "./uart.h" 2
-
-# 1 "./main.h" 1
-
-
-
+# 4 "./main.h" 2
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
@@ -19941,88 +19958,199 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 7 "./main.h" 2
-# 6 "./uart.h" 2
+# 5 "./I2C.h" 2
 
 
 
 
 
-void serial_init(uint32_t baudios);
-
-void uart_tx(uint8_t dato);
-void uart_send_string(uint8_t *dato);
-uint8_t uart_rx();
-# 1 "uart.c" 2
-
-
-void serial_init(uint32_t baudios){
-    uint16_t sx;
-
-
-    BAUD1CON = 0x08;
-
-    RC1STA = 0b10010000;
+void I2C_init();
+void I2C_start(void);
+void I2C_restart(void);
+void I2C_stop(void);
+char I2C_read(void);
+void I2C_ack(void);
+void I2C_nack(void);
+void I2C_write(char I2C_data);
+# 9 "./LCD_i2c.h" 2
 
 
 
 
-
-    TX1STA = 0b00100100;
-
-
-
-
-    sx = ((32000000UL/baudios)/4 ) - 1;
-    SP1BRGL = (uint8_t)sx;
-    SP1BRGH = (uint8_t)(sx>>8);
+typedef uint8_t int8;
+# 34 "./LCD_i2c.h"
+int8 g_LcdX, g_LcdY;
 
 
 
-    RC0PPS = 0x10;
 
-    RXPPS = 0x11;
+
+int8 const LCD_INIT_STRING[4] =
+{
+ 0x20 | (2 << 2),
+ 0xc,
+ 1,
+ 6
+ };
+
+void Write_PCF(char dato);
+void Send_D7_D4(int8 address,int8 nibble);
+void lcd_send_byte(int8 address, int8 n);
+void lcd_init(void);
+void lcd_gotoxy(int8 x, int8 y);
+void lcd_putc(unsigned char c);
+void lcd_puts(unsigned char *dato);
+void Clear_LCD();
+void CGRAM(uint8_t n);
+void CGRAM_x(uint8_t p);
+# 39 "LCD_i2c.c" 2
+# 104 "LCD_i2c.c"
+void Write_PCF(char dato){
+
+   I2C_start();
+   I2C_write(32|(7<<1));
+   I2C_write(dato|8 );
+   I2C_stop();
+
+
 
 }
+void Send_D7_D4(int8 address,int8 nibble)
+{
+   char datos=0;
 
-void uart_tx(uint8_t dato){
+   if((nibble & 1)==1) datos= datos|16; else datos = datos&~16;
+   if((nibble & 2)==2) datos= datos|32; else datos = datos&~32;
+   if((nibble & 4)==4) datos= datos|64; else datos = datos&~64;
+   if((nibble & 8)==8) datos= datos|128; else datos = datos&~128;
+      _delay((unsigned long)((60)*(32000000UL/4000000.0)));
+   if(address)
+      datos= datos |1;
+   else
+     datos = datos &~1;
 
-    while( ( (PIR3>>4) & 0x01) == 0){}
 
-        TXREG = dato;
-
+   Write_PCF( datos | 4);
+   _delay((unsigned long)((2)*(32000000UL/4000000.0)));
+   Write_PCF( datos & ~4);
 }
 
-uint8_t uart_rx(){
+void lcd_send_byte(int8 address, int8 n)
+{
+   Send_D7_D4(address,n >> 4);
+   Send_D7_D4(address,n & 0xf);
+}
+
+void lcd_init(void){
+   int8 i;
+   I2C_start();
+   I2C_write(32|(7<<1));
+   I2C_write(0x00);
+   I2C_stop();
 
 
 
-    while (((PIR3>>5) & 0x01) == 0){}
+   _delay((unsigned long)((35)*(32000000UL/4000.0)));
 
-    if( ((RC1STA >> 1)& 0x01) == 1){
-        RC1STA = RC1STA & ~(1<<4);
-        RC1STA = RC1STA | (1<<4);
+   for(i=0 ;i < 3; i++){
+      Send_D7_D4(0,0x03);
+      _delay((unsigned long)((5)*(32000000UL/4000.0)));
+   }
+    Send_D7_D4(0,0x02);
+# 168 "LCD_i2c.c"
+   for(i=0; i < sizeof(LCD_INIT_STRING); i++)
+   {
+      lcd_send_byte(0, LCD_INIT_STRING[i]);
+      _delay((unsigned long)((5)*(32000000UL/4000.0)));
+   }
+   g_LcdX = 0;
+   g_LcdY = 0;
+}
+
+void lcd_gotoxy(int8 x, int8 y)
+{
+   int8 address;
+
+   switch(y)
+   {
+      case 1:
+         address = 0x00;
+         break;
+      case 2:
+         address = 0x40;
+         break;
+      case 3:
+         address = 0x14;
+         break;
+      case 4:
+         address = 0x54;
+         break;
+      default:
+         address = 0x00;
+         break;
+   }
+   address += x-1;
+   lcd_send_byte(0, 0x80 | address);
+
+   g_LcdX = x - 1;
+   g_LcdY = y - 1;
+}
+
+void lcd_putc(unsigned char c){
+      switch(c)
+      {
+         case '\f':
+            lcd_send_byte(0,1);
+            _delay((unsigned long)((2)*(32000000UL/4000.0)));
+            g_LcdX = 0;
+            g_LcdY = 0;
+            _delay((unsigned long)((2)*(32000000UL/4000.0)));
+            break;
+         case '\n':
+            lcd_gotoxy(1, g_LcdY+2);
+            break;
+         default:
+            lcd_send_byte(1,c);
+            break;
+      }
+}
+
+void lcd_puts(unsigned char *dato){
+   while (*dato){
+
+      switch(*dato)
+      {
+         case '\f':
+            lcd_send_byte(0,1);
+            _delay((unsigned long)((2)*(32000000UL/4000.0)));
+            g_LcdX = 0;
+            g_LcdY = 0;
+            _delay((unsigned long)((2)*(32000000UL/4000.0)));
+            break;
+         case '\n':
+            lcd_gotoxy(1, g_LcdY+2);
+            break;
+         default:
+            lcd_send_byte(1,*dato);
+            break;
+      }
+
+
+      dato++;
     }
+}
 
-
-
-
-      return RCREG;
-
+void Clear_LCD(){
+     lcd_send_byte(0,1);
+     _delay((unsigned long)((2)*(32000000UL/4000.0)));
 }
 
 
-void uart_send_string(uint8_t *dato){
-    while(*dato){
-        uart_tx( *dato++);
-    }
+
+
+void CGRAM(uint8_t n){
+   lcd_send_byte(1,n);
 }
-
-void putch(uint8_t dato){
-
-    uart_tx( dato);
-}
-
-uint8_t getch(){
-
-    return uart_rx();
+void CGRAM_x(uint8_t p){
+lcd_send_byte(0,0x40+p*8);
 }

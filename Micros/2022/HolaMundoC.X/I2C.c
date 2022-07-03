@@ -3,11 +3,10 @@
 
 void I2C_init(void)
 {
-    SSP1CLKPPS = 0x14;      //RC4->MSSP1:SCL1;
-    RC4PPS = 0x14;          //RC4->MSSP1:SCL1;  
-    
-    RC3PPS = 0x15;          //RC3->MSSP1:SDA1;  
-    SSP1DATPPS = 0x13;      //RC3->MSSP1:SDA1;    
+    SSP1CLKPPS = 0x14;      //RC4->MSSP1:SCL1;    
+    RC3PPS = 0x15;          //RC3->MSSP1:SDA1;    
+    RC4PPS = 0x14;          //RC4->MSSP1:SCL1;    
+    SSP1DATPPS = 0x13;      //RC3->MSSP1:SDA1;   
     
     SSP1STAT = 0b10000000;      //Velocidad standar, especifiacion I2C
 	SSP1CON1 = 0b00101000;      //I2C PIC habilitado en modo maestro velocidad=Fosc/(4*SSPADD+1)
