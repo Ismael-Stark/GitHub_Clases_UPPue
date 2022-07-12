@@ -10,6 +10,10 @@
       <itemPath>adc.h</itemPath>
       <itemPath>I2C.h</itemPath>
       <itemPath>LCD_i2c.h</itemPath>
+      <itemPath>EMC1001.h</itemPath>
+      <itemPath>teclado.h</itemPath>
+      <itemPath>interrupt.h</itemPath>
+      <itemPath>misVar.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -23,6 +27,9 @@
       <itemPath>adc.c</itemPath>
       <itemPath>I2C.c</itemPath>
       <itemPath>LCD_i2c.c</itemPath>
+      <itemPath>EMC1001.c</itemPath>
+      <itemPath>teclado.c</itemPath>
+      <itemPath>interrupt.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -32,6 +39,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>.</Elem>
+    <Elem>../../../Industrial</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

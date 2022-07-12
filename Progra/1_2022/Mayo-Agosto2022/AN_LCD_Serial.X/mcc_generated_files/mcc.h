@@ -52,8 +52,11 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <conio.h>
+#include "interrupt_manager.h"
 #include "i2c1_master.h"
 #include "adc.h"
+#include "pwm1.h"
+#include "tmr2.h"
 #include "uart1.h"
 
 

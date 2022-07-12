@@ -1,4 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[v F23493 `(v ~T0 @X0 0 tf ]
+[v F23495 `(v ~T0 @X0 0 tf ]
 "56 ./mcc_generated_files/examples/i2c1_master_example.h
 [; ;./mcc_generated_files/examples/i2c1_master_example.h: 56: void I2C1_Write1ByteRegister(i2c1_address_t address, uint8_t reg, uint8_t data);
 [v _I2C1_Write1ByteRegister `(v ~T0 @X0 0 ef3`uc`uc`uc ]
@@ -3636,6 +3638,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70875
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h: 70875: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
+"518 ./mcc_generated_files/uart1.h
+[; ;./mcc_generated_files/uart1.h: 518: void (*UART1_RxInterruptHandler)(void);
+[v _UART1_RxInterruptHandler `*F23493 ~T0 @X0 1 e ]
+"536
+[; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
+[v _UART1_TxInterruptHandler `*F23495 ~T0 @X0 1 e ]
 "71 ./LCD_i2c.h
 [; ;./LCD_i2c.h: 71: int8 g_LcdX, g_LcdY;
 [v _g_LcdX `uc ~T0 @X0 1 e ]

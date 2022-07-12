@@ -11,9 +11,9 @@ void I2C_init();
 void I2C_start(void);
 void I2C_restart(void);
 void I2C_stop(void);
-char I2C_read(void);
+uint8_t I2C_read(void);
 void I2C_ack(void);
 void I2C_nack(void);
-void I2C_write(char I2C_data);
+bool I2C_write(uint8_t I2C_data);
 
 #endif	/* I2C_H */

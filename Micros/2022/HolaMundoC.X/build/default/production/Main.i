@@ -19974,6 +19974,11 @@ char *tempnam(const char *, const char *);
 # 7 "./main.h" 2
 # 5 "Main.c" 2
 
+# 1 "./misVar.h" 1
+# 11 "./misVar.h"
+uint8_t counts = 0,countsAnterior;
+# 6 "Main.c" 2
+
 # 1 "./uart.h" 1
 # 11 "./uart.h"
 void serial_init(uint32_t baudios);
@@ -19981,7 +19986,7 @@ void serial_init(uint32_t baudios);
 void uart_tx(uint8_t dato);
 void uart_send_string(uint8_t *dato);
 uint8_t uart_rx();
-# 6 "Main.c" 2
+# 7 "Main.c" 2
 
 # 1 "./adc.h" 1
 
@@ -19993,7 +19998,7 @@ uint8_t uart_rx();
 
 void adc_init();
 uint16_t adc_read(uint8_t pin);
-# 7 "Main.c" 2
+# 8 "Main.c" 2
 
 # 1 "./I2C.h" 1
 # 10 "./I2C.h"
@@ -20001,16 +20006,16 @@ void I2C_init();
 void I2C_start(void);
 void I2C_restart(void);
 void I2C_stop(void);
-char I2C_read(void);
+uint8_t I2C_read(void);
 void I2C_ack(void);
 void I2C_nack(void);
-void I2C_write(char I2C_data);
-# 8 "Main.c" 2
+_Bool I2C_write(uint8_t I2C_data);
+# 9 "Main.c" 2
 
 # 1 "./LCD_i2c.h" 1
-# 13 "./LCD_i2c.h"
+# 47 "./LCD_i2c.h"
 typedef uint8_t int8;
-# 34 "./LCD_i2c.h"
+# 84 "./LCD_i2c.h"
 int8 g_LcdX, g_LcdY;
 
 
@@ -20035,58 +20040,104 @@ void lcd_puts(unsigned char *dato);
 void Clear_LCD();
 void CGRAM(uint8_t n);
 void CGRAM_x(uint8_t p);
-# 9 "Main.c" 2
+# 10 "Main.c" 2
+
+# 1 "./EMC1001.h" 1
+# 44 "./EMC1001.h"
+    void EMC1001_read(int8_t *TH, uint8_t *TL);
+# 11 "Main.c" 2
+
+# 1 "./teclado.h" 1
+# 61 "./teclado.h"
+    const char KEYS[4][4] =
+         {{'1','2','3','A'},
+          {'4','5','6','B'},
+          {'7','8','9','C'},
+          {'*','0','#','d'}};
 
 
+    void teclado_init();
+    uint8_t teclado_get();
+    uint8_t teclado_scanner();
+# 12 "Main.c" 2
+
+# 1 "./interrupt.h" 1
+# 43 "./interrupt.h"
+    void enable_interrupt();
+    void disable_interrupt();
+# 13 "Main.c" 2
+# 25 "Main.c"
+void port_init();
+
+int miVar;
 
 
+uint8_t rx, buffer[50];
+uint16_t adc=0;
+int8_t high_byte, tecla;
+uint8_t low_byte;
+_Bool encontrado=0;
 const float mv=(3.3/1023);
 float volt, temperatura;
-
-void port_init();
+uint8_t contador = 0;
 
 
 void main(void) {
-    uint8_t rx, buffer[50], contador = 0;
-    uint16_t adc=0;
-    int8_t high_byte;
-    uint8_t low_byte;
+
 
     port_init();
     serial_init(9600);
-    adc_init();
+
     I2C_init();
+    teclado_init();
+
+    enable_interrupt();
+
 
     lcd_init();
     sprintf(buffer,"\fhola mundo\n%i",contador);
     lcd_puts(buffer);
 
-    while(1){
-        I2C_start();
-        I2C_write(0b01101000);
-        I2C_stop();
-# 57 "Main.c"
-        _delay((unsigned long)((1)*(32000000UL/4000.0)));
+
+    printf("Holaaa\n\n");
+    _delay((unsigned long)((10)*(32000000UL/4000.0)));
+
+    while(1)
+    {
+# 72 "Main.c"
+        if(counts != countsAnterior){
+            countsAnterior = counts;
+            printf("%d\n",counts);
+        }
+
+        LATA = LATA & ~(1<<3);
+        _delay((unsigned long)((50)*(32000000UL/4000.0)));
+        LATA = LATA | (1<<3);
+        _delay((unsigned long)((50)*(32000000UL/4000.0)));
+
+    }
+
+     while(1){
+
+
+        EMC1001_read(&high_byte, &low_byte);
+
+        sprintf(buffer,"%d.%d\n",high_byte, low_byte);
+        printf(buffer);
+        sprintf(buffer,"\f%d.%d\n",high_byte, low_byte);
+        lcd_puts(buffer);
+        _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+
     }
 
 
     while(1){
-# 90 "Main.c"
-        if (((PIR3>>5) & 0x01) ==1){
-            rx = uart_rx();
+        tecla = teclado_get();
+        if(tecla !=0 ){
+            printf("tecla presionada %c\n\n",tecla);
         }
-
-        if (rx == 'b'){
-            LATA = LATA | (1<<0);
-        }else{
-            LATA = LATA & ~(1<<0);
-        }
-
-
-
-
-
-
+        _delay((unsigned long)((100)*(32000000UL/4000.0)));
+# 149 "Main.c"
     }
     return;
 }
@@ -20100,15 +20151,16 @@ void port_init(){
     TRISA = 0b11110000;
 
 
+    ANSELA = 0;
     ANSELA = ANSELA | (1<<4);
 
     LATB=0;
     PORTB =0;
     TRISB = TRISA | (1<<0);
+    ANSELB = 0;
     ANSELB = ANSELB | (1<<0);
 
     TRISC = 0b10;
     ANSELC = 0;
-
     TRISC = TRISC | (1<<4 |1<<3 );
 }

@@ -3,6 +3,10 @@
 
 void I2C_init(void)
 {
+    TRISCbits.TRISC3 = 1;
+    TRISCbits.TRISC4 = 1;
+    ANSELCbits.ANSC3 = 0;
+    ANSELCbits.ANSC4 = 0;
     SSP1CLKPPS = 0x14;      //RC4->MSSP1:SCL1;    
     RC3PPS = 0x15;          //RC3->MSSP1:SDA1;    
     RC4PPS = 0x14;          //RC4->MSSP1:SCL1;    
@@ -14,8 +18,8 @@ void I2C_init(void)
 	SSP1ADD = VALOR;
 }
 
- void I2C_start(void)
- {   
+void I2C_start(void)
+{   
     SSP1CON2bits.SEN = 1;           //inicia la comunicación i2c
     while(SSP1CON2bits.SEN == 1);
 }
@@ -32,7 +36,7 @@ void I2C_stop(void)
     while(SSP1CON2bits.PEN == 1);
 }
 
-char I2C_read(void)
+uint8_t I2C_read(void)
 {
     PIR3bits.SSP1IF = 0;         	//limpiar SSP interrupt bit
     SSP1CON2bits.RCEN = 1;       	//set the receive enable bit to initiate a read of 8 bits from the serial eeprom
@@ -56,9 +60,13 @@ void I2C_nack(void)
     while(PIR3bits.SSP1IF == 0);    //espera por la flag de interrupcion=1 indicando la transmicion completa
 }
 
-void I2C_write(char I2C_data)
+bool I2C_write(uint8_t I2C_data)
 {    
     PIR3bits.SSP1IF = 0;            
     SSP1BUF = I2C_data;             // Envia data por I2C
     while(PIR3bits.SSP1IF == 0);	// espera por la flag de interrupcion=1 indicando la transmicion completa
+    if(SSP1CON2bits.ACKSTAT==0)
+        return 1;           //Hubo respuesta ack
+    else
+        return 0;           //no hubo respuesta no ack
 }

@@ -7,13 +7,8 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "LCD_i2c.c" 2
-# 39 "LCD_i2c.c"
 # 1 "./LCD_i2c.h" 1
-
-
-
-
-
+# 43 "./LCD_i2c.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
 
 
@@ -120,19 +115,13 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-# 6 "./LCD_i2c.h" 2
-
-
-
-# 1 "./I2C.h" 1
+# 43 "./LCD_i2c.h" 2
 
 
 
 
-# 1 "./main.h" 1
-
-
-
+typedef uint8_t int8;
+# 59 "./LCD_i2c.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -19813,7 +19802,12 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 29 "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\\pic\\include\\xc.h" 2 3
-# 4 "./main.h" 2
+# 59 "./LCD_i2c.h" 2
+
+# 1 "./main.h" 1
+
+
+
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
@@ -19958,27 +19952,20 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 7 "./main.h" 2
-# 5 "./I2C.h" 2
+# 60 "./LCD_i2c.h" 2
 
-
-
-
-
+# 1 "./I2C.h" 1
+# 10 "./I2C.h"
 void I2C_init();
 void I2C_start(void);
 void I2C_restart(void);
 void I2C_stop(void);
-char I2C_read(void);
+uint8_t I2C_read(void);
 void I2C_ack(void);
 void I2C_nack(void);
-void I2C_write(char I2C_data);
-# 9 "./LCD_i2c.h" 2
-
-
-
-
-typedef uint8_t int8;
-# 34 "./LCD_i2c.h"
+_Bool I2C_write(uint8_t I2C_data);
+# 61 "./LCD_i2c.h" 2
+# 84 "./LCD_i2c.h"
 int8 g_LcdX, g_LcdY;
 
 
@@ -20003,20 +19990,22 @@ void lcd_puts(unsigned char *dato);
 void Clear_LCD();
 void CGRAM(uint8_t n);
 void CGRAM_x(uint8_t p);
-# 39 "LCD_i2c.c" 2
-# 104 "LCD_i2c.c"
+# 1 "LCD_i2c.c" 2
+
+
 void Write_PCF(char dato){
 
-   I2C_start();
-   I2C_write(32|(7<<1));
-   I2C_write(dato|8 );
-   I2C_stop();
 
+
+       I2C_start();
+       I2C_write(64|(7<<1));
+       I2C_write(dato|8 );
+       I2C_stop();
 
 
 }
-void Send_D7_D4(int8 address,int8 nibble)
-{
+
+void Send_D7_D4(int8 address,int8 nibble){
    char datos=0;
 
    if((nibble & 1)==1) datos= datos|16; else datos = datos&~16;
@@ -20035,19 +20024,21 @@ void Send_D7_D4(int8 address,int8 nibble)
    Write_PCF( datos & ~4);
 }
 
-void lcd_send_byte(int8 address, int8 n)
-{
+void lcd_send_byte(int8 address, int8 n){
    Send_D7_D4(address,n >> 4);
    Send_D7_D4(address,n & 0xf);
 }
 
 void lcd_init(void){
    int8 i;
-   I2C_start();
-   I2C_write(32|(7<<1));
-   I2C_write(0x00);
-   I2C_stop();
 
+
+
+
+        I2C_start();
+        I2C_write(64|(7<<1));
+        I2C_write(0x00);
+        I2C_stop();
 
 
    _delay((unsigned long)((35)*(32000000UL/4000.0)));
@@ -20057,7 +20048,7 @@ void lcd_init(void){
       _delay((unsigned long)((5)*(32000000UL/4000.0)));
    }
     Send_D7_D4(0,0x02);
-# 168 "LCD_i2c.c"
+# 70 "LCD_i2c.c"
    for(i=0; i < sizeof(LCD_INIT_STRING); i++)
    {
       lcd_send_byte(0, LCD_INIT_STRING[i]);
@@ -20067,10 +20058,8 @@ void lcd_init(void){
    g_LcdY = 0;
 }
 
-void lcd_gotoxy(int8 x, int8 y)
-{
+void lcd_gotoxy(int8 x, int8 y){
    int8 address;
-
    switch(y)
    {
       case 1:
@@ -20097,9 +20086,8 @@ void lcd_gotoxy(int8 x, int8 y)
 }
 
 void lcd_putc(unsigned char c){
-      switch(c)
-      {
-         case '\f':
+    switch(c){
+        case '\f':
             lcd_send_byte(0,1);
             _delay((unsigned long)((2)*(32000000UL/4000.0)));
             g_LcdX = 0;
@@ -20112,31 +20100,29 @@ void lcd_putc(unsigned char c){
          default:
             lcd_send_byte(1,c);
             break;
-      }
+    }
 }
 
 void lcd_puts(unsigned char *dato){
-   while (*dato){
-
-      switch(*dato)
-      {
-         case '\f':
-            lcd_send_byte(0,1);
-            _delay((unsigned long)((2)*(32000000UL/4000.0)));
-            g_LcdX = 0;
-            g_LcdY = 0;
-            _delay((unsigned long)((2)*(32000000UL/4000.0)));
-            break;
-         case '\n':
-            lcd_gotoxy(1, g_LcdY+2);
-            break;
-         default:
-            lcd_send_byte(1,*dato);
-            break;
-      }
+    while (*dato){
+        switch(*dato){
+            case '\f':
+                lcd_send_byte(0,1);
+                _delay((unsigned long)((2)*(32000000UL/4000.0)));
+                g_LcdX = 0;
+                g_LcdY = 0;
+                _delay((unsigned long)((2)*(32000000UL/4000.0)));
+                break;
+            case '\n':
+                lcd_gotoxy(1, g_LcdY+2);
+                break;
+            default:
+                lcd_send_byte(1,*dato);
+                break;
+        }
 
 
-      dato++;
+        dato++;
     }
 }
 
@@ -20151,6 +20137,7 @@ void Clear_LCD(){
 void CGRAM(uint8_t n){
    lcd_send_byte(1,n);
 }
+
 void CGRAM_x(uint8_t p){
-lcd_send_byte(0,0x40+p*8);
+    lcd_send_byte(0,0x40+p*8);
 }

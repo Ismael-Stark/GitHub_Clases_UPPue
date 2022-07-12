@@ -1,12 +1,47 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[v F23493 `(v ~T0 @X0 0 tf ]
+[v F23495 `(v ~T0 @X0 0 tf ]
 [p mainexit ]
-"72 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
+"75 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 75: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"14 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\conio.h
-[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\conio.h: 14: extern char getch(void);
-[v _getch `(uc ~T0 @X0 0 ef ]
-"3343 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
+[v F183 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\builtins.h
+[v __delay `JF183 ~T0 @X0 0 e ]
+[p i __delay ]
+"4095 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
+[s S3161 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3161 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
+"4104
+[s S3162 :7 `uc 1 :1 `uc 1 ]
+[n S3162 . . GIEH ]
+"4094
+[u S3160 `S3161 1 `S3162 1 ]
+[n S3160 . . . ]
+"4109
+[v _INTCON0bits `VS3160 ~T0 @X0 0 e@1238 ]
+"124 ./mcc_generated_files/pwm1.h
+[; ;./mcc_generated_files/pwm1.h: 124: void PWM1_LoadDutyValue(uint16_t dutyValue);
+[v _PWM1_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
+"55 main.c
+[; ;main.c: 55:         lecturaADC = ADC_GetSingleConversion(POT1);
+[c E23269 1 2 5 59 60 61 62 63 .. ]
+[n E23269 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"374 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
+[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23269 ]
+"3311 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h: 3311: 
+[s S3133 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3133 . LATE0 LATE1 LATE2 ]
+"3310
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h: 3310: 
+[u S3132 `S3133 1 ]
+[n S3132 . . ]
+"3317
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h: 3317: typedef union {
+[v _LATEbits `VS3132 ~T0 @X0 0 e@1218 ]
+"3343
 [s S3135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3135 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
 "3342
@@ -3644,6 +3679,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70875
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h: 70875: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
+"518 ./mcc_generated_files/uart1.h
+[; ;./mcc_generated_files/uart1.h: 518: void (*UART1_RxInterruptHandler)(void);
+[v _UART1_RxInterruptHandler `*F23493 ~T0 @X0 1 e ]
+"536
+[; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
+[v _UART1_TxInterruptHandler `*F23495 ~T0 @X0 1 e ]
 "71 ./LCD_i2c.h
 [; ;./LCD_i2c.h: 71: int8 g_LcdX, g_LcdY;
 [v _g_LcdX `uc ~T0 @X0 1 e ]
@@ -3659,88 +3700,179 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 6 `i `uc
 ..
 ]
-"5 main.c
-[; ;main.c: 5: uint8_t contador = 0, buffer[60];
+"6 ./MisVariables.h
+[; ;./MisVariables.h: 6: char serialRX;
+[v _serialRX `uc ~T0 @X0 1 e ]
+"6 main.c
+[; ;main.c: 6: uint8_t contador = 0, buffer[60];
 [v _contador `uc ~T0 @X0 1 e ]
 [i _contador
 -> -> 0 `i `uc
 ]
 [v _buffer `uc ~T0 @X0 -> 60 `i e ]
-"6
-[; ;main.c: 6: uint16_t lecturaADC = 0;
+"7
+[; ;main.c: 7: uint16_t lecturaADC = 0;
 [v _lecturaADC `us ~T0 @X0 1 e ]
 [i _lecturaADC
 -> -> 0 `i `us
 ]
-"8
-[; ;main.c: 8: float mV = (3.3/4095);
+"9
+[; ;main.c: 9: float mV = (3.3/4095);
 [v _mV `f ~T0 @X0 1 e ]
 [i _mV
 -> / .3.3 -> -> 4095 `i `d `f
 ]
-"9
-[; ;main.c: 9: float V, temperatura;
+"10
+[; ;main.c: 10: float V, temperatura;
 [v _V `f ~T0 @X0 1 e ]
 [v _temperatura `f ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"15
-[; ;main.c: 15: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
 "16
-[; ;main.c: 16: {
+[; ;main.c: 16: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"17
+[; ;main.c: 17: {
 {
 [e :U _main ]
 [f ]
-"17
-[; ;main.c: 17:     char serialRX;
-[v _serialRX `uc ~T0 @X0 1 a ]
-"19
-[; ;main.c: 19:     SYSTEM_Initialize();
+"20
+[; ;main.c: 20:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"35
-[; ;main.c: 35:     while (1)
-[e :U 3260 ]
+"22
+[; ;main.c: 22:     _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
 "36
-[; ;main.c: 36:     {
+[; ;main.c: 36:     (INTCON0bits.GIE = 1);
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+"40
+[; ;main.c: 40:     PWM1_LoadDutyValue(65);
+[e ( _PWM1_LoadDutyValue (1 -> -> 65 `i `us ]
+"42
+[; ;main.c: 42:     while(1){
+[e :U 3260 ]
 {
-"49
-[; ;main.c: 49:         serialRX = getch();
-[e = _serialRX ( _getch ..  ]
-"51
-[; ;main.c: 51:         if(serialRX == 'N'){
-[e $ ! == -> _serialRX `ui -> 78 `ui 3262  ]
+"43
+[; ;main.c: 43:         for (int i=0; i<=512;i++){
 {
-"52
-[; ;main.c: 52:             do { LATFbits.LATF3 = 1; } while(0);
-[e :U 3265 ]
-{
-[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 3264 ]
-"53
-[; ;main.c: 53:         }else{
-}
-[e $U 3266  ]
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ <= _i -> 512 `i 3262  ]
+[e $U 3263  ]
 [e :U 3262 ]
 {
-"54
-[; ;main.c: 54:              do { LATFbits.LATF3 = 0; } while(0);
-[e :U 3269 ]
+"44
+[; ;main.c: 44:             PWM1_LoadDutyValue(i);
+[e ( _PWM1_LoadDutyValue (1 -> _i `us ]
+"45
+[; ;main.c: 45:             _delay((unsigned long)((1)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"46
+[; ;main.c: 46:         }
+}
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 512 `i 3262  ]
+[e :U 3263 ]
+}
+"48
+[; ;main.c: 48:         for (int i=512; i>=0;i--){
 {
-[e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 512 `i ]
+[e $ >= _i -> 0 `i 3265  ]
+[e $U 3266  ]
+[e :U 3265 ]
+{
+"49
+[; ;main.c: 49:             PWM1_LoadDutyValue(i);
+[e ( _PWM1_LoadDutyValue (1 -> _i `us ]
+"50
+[; ;main.c: 50:             _delay((unsigned long)((1)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"51
+[; ;main.c: 51:         }
 }
-[e :U 3268 ]
-"55
-[; ;main.c: 55:         }
-}
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 3265  ]
 [e :U 3266 ]
-"58
-[; ;main.c: 58:     }
+}
+"52
+[; ;main.c: 52:     }
 }
 [e :U 3259 ]
 [e $U 3260  ]
 [e :U 3261 ]
+"53
+[; ;main.c: 53:     while (1)
+[e :U 3269 ]
+"54
+[; ;main.c: 54:     {
+{
+"55
+[; ;main.c: 55:         lecturaADC = ADC_GetSingleConversion(POT1);
+[e = _lecturaADC ( _ADC_GetSingleConversion (1 . `E23269 0 ]
+"56
+[; ;main.c: 56:         PWM1_LoadDutyValue( (lecturaADC>>2) );
+[e ( _PWM1_LoadDutyValue (1 -> >> -> _lecturaADC `ui -> 2 `i `us ]
 "59
-[; ;main.c: 59: }
+[; ;main.c: 59:         do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
+[e :U 3273 ]
+{
+[e = . . _LATEbits 0 0 -> ~ -> . . _LATEbits 0 0 `i `uc ]
+}
+[e :U 3272 ]
+"62
+[; ;main.c: 62:         if(serialRX == 'N'){
+[e $ ! == -> _serialRX `ui -> 78 `ui 3274  ]
+{
+"63
+[; ;main.c: 63:             do { LATFbits.LATF3 = 1; } while(0);
+[e :U 3277 ]
+{
+[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 3276 ]
+"64
+[; ;main.c: 64:         }else if(serialRX == 'b'){
+}
+[e $U 3278  ]
+[e :U 3274 ]
+[e $ ! == -> _serialRX `ui -> 98 `ui 3279  ]
+{
+"65
+[; ;main.c: 65:             do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);;
+[e :U 3282 ]
+{
+[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
+}
+[e :U 3281 ]
+"66
+[; ;main.c: 66:         }else{
+}
+[e $U 3283  ]
+[e :U 3279 ]
+{
+"67
+[; ;main.c: 67:              do { LATFbits.LATF3 = 0; } while(0);
+[e :U 3286 ]
+{
+[e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 3285 ]
+"68
+[; ;main.c: 68:         }
+}
+[e :U 3283 ]
+[e :U 3278 ]
+"70
+[; ;main.c: 70:         _delay((unsigned long)((50)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"72
+[; ;main.c: 72:     }
+}
+[e :U 3268 ]
+[e $U 3269  ]
+[e :U 3270 ]
+"73
+[; ;main.c: 73: }
 [e :UE 3258 ]
 }

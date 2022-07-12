@@ -19951,15 +19951,19 @@ void I2C_init();
 void I2C_start(void);
 void I2C_restart(void);
 void I2C_stop(void);
-char I2C_read(void);
+uint8_t I2C_read(void);
 void I2C_ack(void);
 void I2C_nack(void);
-void I2C_write(char I2C_data);
+_Bool I2C_write(uint8_t I2C_data);
 # 2 "I2C.c" 2
 
 
 void I2C_init(void)
 {
+    TRISCbits.TRISC3 = 1;
+    TRISCbits.TRISC4 = 1;
+    ANSELCbits.ANSC3 = 0;
+    ANSELCbits.ANSC4 = 0;
     SSP1CLKPPS = 0x14;
     RC3PPS = 0x15;
     RC4PPS = 0x14;
@@ -19971,8 +19975,8 @@ void I2C_init(void)
  SSP1ADD = ((32000000UL/(4UL*100000UL))-1);
 }
 
- void I2C_start(void)
- {
+void I2C_start(void)
+{
     SSP1CON2bits.SEN = 1;
     while(SSP1CON2bits.SEN == 1);
 }
@@ -19989,7 +19993,7 @@ void I2C_stop(void)
     while(SSP1CON2bits.PEN == 1);
 }
 
-char I2C_read(void)
+uint8_t I2C_read(void)
 {
     PIR3bits.SSP1IF = 0;
     SSP1CON2bits.RCEN = 1;
@@ -20013,9 +20017,13 @@ void I2C_nack(void)
     while(PIR3bits.SSP1IF == 0);
 }
 
-void I2C_write(char I2C_data)
+_Bool I2C_write(uint8_t I2C_data)
 {
     PIR3bits.SSP1IF = 0;
     SSP1BUF = I2C_data;
     while(PIR3bits.SSP1IF == 0);
+    if(SSP1CON2bits.ACKSTAT==0)
+        return 1;
+    else
+        return 0;
 }
