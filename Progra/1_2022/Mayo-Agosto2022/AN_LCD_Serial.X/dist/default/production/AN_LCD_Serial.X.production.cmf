@@ -11,7 +11,7 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+$C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 idloc IDLOC 5 200000 200000 40 1
 init CODE 0 1A 1A 4 1
 reset_vec CODE 0 0 0 4 1
@@ -439,45 +439,45 @@ $dist/default/production\AN_LCD_Serial.X.production.o
 3A94 text0 CODE >49:D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
 3AA0 text0 CODE >50:D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
 3AAE text0 CODE >51:D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
-3B96 cinit CODE >24999:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3B96 cinit CODE >25001:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3B96 cinit CODE >25004:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3B96 cinit CODE >25076:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3B98 cinit CODE >25077:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3B9A cinit CODE >25078:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3B9C cinit CODE >25079:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3B9E cinit CODE >25080:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BA0 cinit CODE >25081:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BA2 cinit CODE >25082:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BA6 cinit CODE >25083:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BAA cinit CODE >25084:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BAA cinit CODE >25085:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BAC cinit CODE >25086:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BB0 cinit CODE >25087:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BB2 cinit CODE >25088:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BB4 cinit CODE >25089:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BB6 cinit CODE >25093:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BBA cinit CODE >25094:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BBC cinit CODE >25095:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BBC cinit CODE >25096:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BBE cinit CODE >25097:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BC0 cinit CODE >25098:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BC2 cinit CODE >25101:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BC6 cinit CODE >25102:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BC8 cinit CODE >25103:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BC8 cinit CODE >25104:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BCA cinit CODE >25105:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BCC cinit CODE >25106:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BCE cinit CODE >25114:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BD0 cinit CODE >25115:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BD2 cinit CODE >25116:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BD4 cinit CODE >25117:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BD6 cinit CODE >25118:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BD8 cinit CODE >25119:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BDA cinit CODE >25120:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BDC cinit CODE >25126:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BDC cinit CODE >25128:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
-3BDE cinit CODE >25129:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.s
+3B96 cinit CODE >24999:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3B96 cinit CODE >25001:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3B96 cinit CODE >25004:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3B96 cinit CODE >25076:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3B98 cinit CODE >25077:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3B9A cinit CODE >25078:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3B9C cinit CODE >25079:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3B9E cinit CODE >25080:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BA0 cinit CODE >25081:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BA2 cinit CODE >25082:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BA6 cinit CODE >25083:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BAA cinit CODE >25084:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BAA cinit CODE >25085:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BAC cinit CODE >25086:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BB0 cinit CODE >25087:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BB2 cinit CODE >25088:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BB4 cinit CODE >25089:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BB6 cinit CODE >25093:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BBA cinit CODE >25094:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BBC cinit CODE >25095:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BBC cinit CODE >25096:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BBE cinit CODE >25097:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BC0 cinit CODE >25098:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BC2 cinit CODE >25101:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BC6 cinit CODE >25102:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BC8 cinit CODE >25103:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BC8 cinit CODE >25104:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BCA cinit CODE >25105:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BCC cinit CODE >25106:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BCE cinit CODE >25114:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BD0 cinit CODE >25115:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BD2 cinit CODE >25116:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BD4 cinit CODE >25117:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BD6 cinit CODE >25118:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BD8 cinit CODE >25119:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BDA cinit CODE >25120:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BDC cinit CODE >25126:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BDC cinit CODE >25128:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
+3BDE cinit CODE >25129:C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -503,7 +503,7 @@ __size_of_UART1_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\AN_LC
 __end_of_ADC_SetActiveClockTuningInterruptHandler 3DDC 0 CODE 0 text17 dist/default/production\AN_LCD_Serial.X.production.o
 __end_of_PWM1_Initialize 3D62 0 CODE 0 text9 dist/default/production\AN_LCD_Serial.X.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\AN_LCD_Serial.X.production.o
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 _ADC_GetSingleConversion 3C56 0 CODE 0 text20 dist/default/production\AN_LCD_Serial.X.production.o
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\AN_LCD_Serial.X.production.o
 __end_of_UART1_SetFramingErrorHandler 3DB2 0 CODE 0 text6 dist/default/production\AN_LCD_Serial.X.production.o
@@ -540,9 +540,9 @@ _WPUC 411 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _WPUD 419 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _WPUE 421 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _WPUF 429 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
-___sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+___sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 _main 3A20 0 CODE 0 text0 dist/default/production\AN_LCD_Serial.X.production.o
-start 1A 0 CODE 0 init C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+start 1A 0 CODE 0 init C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 _uart1TxBufferRemaining 54F 0 COMRAM 1 nvCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
 __size_of_main 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 __HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
@@ -558,11 +558,11 @@ __LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/default/production\AN_LCD_Serial.X.productio
 __size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 __HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
 _ADC_SetContext1ThresholdInterruptHandler 3DC0 0 CODE 0 text16 dist/default/production\AN_LCD_Serial.X.production.o
-__accesstop 560 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
-intlevel0 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
-intlevel1 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
-intlevel2 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
-intlevel3 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+__accesstop 560 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
+intlevel0 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
+intlevel1 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
+intlevel2 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
+intlevel3 0 0 CODE 0 text C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 _PWM1_Initialize 3D4A 0 CODE 0 text9 dist/default/production\AN_LCD_Serial.X.production.o
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
 __size_of_ADC_Initialize 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
@@ -608,14 +608,14 @@ _ANSELD 418 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _ANSELE 420 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _ANSELF 428 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 __size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
-___inthi_sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 _I2C1BAUD 29D 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _I2C1CNTH 28D 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _I2C1CNTL 28C 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _I2C1CON0 294 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _I2C1CON1 295 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _I2C1CON2 296 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
-___intlo_sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 __LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
 _CCPR1H 341 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _CCPR1L 340 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
@@ -688,7 +688,7 @@ _U1FIFO 2B0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 __size_of_UART1_SetErrorHandler 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 __size_of_ADC_SetActiveClockTuningInterruptHandler 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _UART1_Transmit_ISR 3BE2 0 CODE 0 text24 dist/default/production\AN_LCD_Serial.X.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+isa$xinst 0 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 _I2C1_Status 501 0 COMRAM 1 bssCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
 _ADC_DefaultADI_ISR 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
@@ -764,7 +764,7 @@ __Hbank53 0 0 ABS 0 bank53 dist/default/production\AN_LCD_Serial.X.production.o
 __Hbank54 0 0 ABS 0 bank54 dist/default/production\AN_LCD_Serial.X.production.o
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\AN_LCD_Serial.X.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\AN_LCD_Serial.X.production.o
-__smallconst 3700 0 SMALLCONST 0 smallconst C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+__smallconst 3700 0 SMALLCONST 0 smallconst C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 __end_of_ADC_SetADIInterruptHandler 3DEA 0 CODE 0 text18 dist/default/production\AN_LCD_Serial.X.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\AN_LCD_Serial.X.production.o
 __Hconfig 300024 0 CONFIG 4 config dist/default/production\AN_LCD_Serial.X.production.o
@@ -979,9 +979,9 @@ _I2C1SDAPPS 270 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\AN_LCD_Serial.X.production.o
 UART1_SetRxInterruptHandler@InterruptHandler 551 0 COMRAM 1 cstackCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\AN_LCD_Serial.X.production.o
-isa$std 1 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
-stackhi 36FF 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
-stacklo 5C0 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+isa$std 1 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
+stackhi 36FF 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
+stacklo 5C0 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 _OSCCON1 AD 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _OSCCON3 AF 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
 _OSCTUNE B0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
@@ -1067,7 +1067,7 @@ __Ltext28 0 0 ABS 0 text28 dist/default/production\AN_LCD_Serial.X.production.o
 __Ltext29 0 0 ABS 0 text29 dist/default/production\AN_LCD_Serial.X.production.o
 __Ltext30 0 0 ABS 0 text30 dist/default/production\AN_LCD_Serial.X.production.o
 _ADC_DefaultContext1Threshold_ISR 0 0 ABS 0 - dist/default/production\AN_LCD_Serial.X.production.o
-__ramtop 3700 0 RAM 0 ramtop C:\Users\PICTRA~1\AppData\Local\Temp\xcAs3hg.o
+__ramtop 3700 0 RAM 0 ramtop C:\Users\PICTRA~1\AppData\Local\Temp\xcAsl3k.o
 __end_of_PWM1_LoadDutyValue 3C56 0 CODE 0 text19 dist/default/production\AN_LCD_Serial.X.production.o
 PWM1_LoadDutyValue@dutyValue 551 0 COMRAM 1 cstackCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
 ?_ADC_GetSingleConversion 551 0 COMRAM 1 cstackCOMRAM dist/default/production\AN_LCD_Serial.X.production.o
