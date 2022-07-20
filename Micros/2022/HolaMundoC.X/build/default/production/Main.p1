@@ -6,6 +6,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "11 ./uart.h
 [; ;./uart.h: 11: void serial_init(uint32_t baudios);
 [v _serial_init `(v ~T0 @X0 0 ef1`ul ]
+"8 ./adc.h
+[; ;./adc.h: 8: void adc_init();
+[v _adc_init `(v ~T0 @X0 0 e? ]
 "10 ./I2C.h
 [; ;./I2C.h: 10: void I2C_init();
 [v _I2C_init `(v ~T0 @X0 0 e? ]
@@ -1772,6 +1775,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44
 [; ;Main.c: 44:     serial_init(9600);
 [e ( _serial_init (1 -> -> -> 9600 `i `l `ul ]
+"45
+[; ;Main.c: 45:     adc_init();
+[e ( _adc_init ..  ]
 "46
 [; ;Main.c: 46:     I2C_init();
 [e ( _I2C_init ..  ]

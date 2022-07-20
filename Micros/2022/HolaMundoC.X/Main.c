@@ -42,7 +42,7 @@ void main(void) {
 
     port_init();
     serial_init(9600);
-    //adc_init();
+    adc_init();
     I2C_init();
     teclado_init();
     
