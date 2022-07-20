@@ -84,7 +84,7 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
-      <item path="EMC1001.c" ex="true" overriding="false">
+      <item path="EMC1001.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -94,7 +94,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="EMC1001.h" ex="true" overriding="false">
+      <item path="EMC1001.h" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -184,7 +184,7 @@
         <property key="program-the-device-with-default-config-words" value="true"/>
         <property key="remove-unused-sections" value="true"/>
       </HI-TECH-LINK>
-      <item path="I2C.c" ex="true" overriding="false">
+      <item path="I2C.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -194,7 +194,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="I2C.h" ex="true" overriding="false">
+      <item path="I2C.h" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -204,7 +204,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="LCD_i2c.c" ex="true" overriding="false">
+      <item path="LCD_i2c.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -214,7 +214,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="LCD_i2c.h" ex="true" overriding="false">
+      <item path="LCD_i2c.h" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -243,7 +243,7 @@
         <property key="user-pack-device-support" value=""/>
         <property key="wpo-lto" value="false"/>
       </XC8-config-global>
-      <item path="adc.c" ex="true" overriding="false">
+      <item path="adc.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -253,7 +253,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="adc.h" ex="true" overriding="false">
+      <item path="adc.h" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -263,7 +263,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="interrupt.c" ex="true" overriding="false">
+      <item path="interrupt.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -273,7 +273,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="misVar.h" ex="true" overriding="false">
+      <item path="misVar.h" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -283,7 +283,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="teclado.c" ex="true" overriding="false">
+      <item path="teclado.c" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
@@ -293,7 +293,7 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
-      <item path="teclado.h" ex="true" overriding="false">
+      <item path="teclado.h" ex="false" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
         <HI-TECH-LINK>
