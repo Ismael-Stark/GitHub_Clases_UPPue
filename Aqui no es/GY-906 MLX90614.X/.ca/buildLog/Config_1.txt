@@ -1,0 +1,79 @@
+make -f nbproject/Makefile-Config_1.mk SUBPROJECTS= .clean-conf
+make[1]: Entering directory 'D:/OneDriveTrabajo/Clases/GitHub_Clases/Micros/2022/GY-906 MLX90614.X'
+rm -f  -r .ca/build/Config_1/production
+rm -f  -r .ca/dist/Config_1/production
+make[1]: Leaving directory 'D:/OneDriveTrabajo/Clases/GitHub_Clases/Micros/2022/GY-906 MLX90614.X'
+[32mCLEAN SUCCESSFUL (total time: 257ms)[0m
+make -f nbproject/Makefile-Config_1.mk SUBPROJECTS= .build-conf
+make[1]: Entering directory 'D:/OneDriveTrabajo/Clases/GitHub_Clases/Micros/2022/GY-906 MLX90614.X'
+make  -f nbproject/Makefile-Config_1.mk .ca/dist/Config_1/production/GY-906_MLX90614.X.production.hex
+make[2]: Entering directory 'D:/OneDriveTrabajo/Clases/GitHub_Clases/Micros/2022/GY-906 MLX90614.X'
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F18855 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/uart.p1 uart.c 
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F18855 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/adc.p1 adc.c 
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F18855 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/I2C.p1 I2C.c 
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F18855 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/Main.p1 Main.c 
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F18855 -c   -mdfp="C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -DXPRJ_Config_1=Config_1  -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits   -std=c99 -gdwarf-3 -mstack=compiled:auto:auto     -o .ca/build/Config_1/production/MLX90614.p1 MLX90614.c 
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195[0m
+MLX90614.c:28:27: warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    valReg = (I2C_read(0) << 8) + valReg;
+              ~~~~~~~~~~~~^~~~  ~
+MLX90614.c:40:17: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wconversion]
+    return (reg / 65535.0);
+    ~~~~~~  ~~~~^~~~~~~~~
+Main.c:42:5: warning: '/*' within block comment [-Wcomment]
+    /*while(MLX90614_init()==1){
+    ^
+Main.c:48:30: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wconversion]
+        temp = (temp * 0.02) - 273.15;
+             ~ ~~~~~~~~~~~~~~^~~~~~~~
+Main.c:50:17: warning: implicit conversion turns floating-point number into integer: 'float' to 'uint16_t' (aka 'unsigned short') [-Wfloat-conversion]
+        leerT = (float)MLX90614_ReadTemp(MLX90614_TOBJ1);
+              ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Main.c:51:31: warning: implicit conversion loses floating-point precision: 'double' to 'float' [-Wconversion]
+        temp = (leerT * 0.02) - 273.15;
+             ~ ~~~~~~~~~~~~~~~^~~~~~~~
+4 warnings generated.
+2 warnings generated.
+"C:\Program Files\Microchip\xc8\v2.32\bin\xc8-cc.exe"  -mcpu=16F18855 -Wl,-Map=.ca/dist/Config_1/production/GY-906_MLX90614.X.production.map  -DXPRJ_Config_1=Config_1  -Wl,--defsym=__MPLAB_BUILD=1   -mdfp="C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8"  -fno-short-double -fno-short-float -O1 -fasmfile -maddrqual=ignore -xassembler-with-cpp -mwarn=-3 -Wa,-a -msummary=-psect,-class,+mem,-hex,-file  -ginhx32 -Wl,--data-init -mno-keep-startup -mno-osccal -mno-resetbits -mno-save-resetbits -mno-download -mno-stackcall -mdefault-config-bits -std=c99 -gdwarf-3 -mstack=compiled:auto:auto      -Wl,--memorysummary,.ca/dist/Config_1/production/memoryfile.xml -o .ca/dist/Config_1/production/GY-906_MLX90614.X.production.elf  .ca/build/Config_1/production/Main.p1 .ca/build/Config_1/production/adc.p1 .ca/build/Config_1/production/uart.p1 .ca/build/Config_1/production/I2C.p1 .ca/build/Config_1/production/MLX90614.p1     
+[31mNon line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195[0m
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+Main.c:68:: warning: (520) function "_sensorPlaca" is never called
+adc.c:27:: warning: (520) function "_adc_read" is never called
+uart.c:45:: warning: (520) function "_uart_rx" is never called
+uart.c:69:: warning: (520) function "_uart_send_string" is never called
+uart.c:77:: warning: (520) function "_getch" is never called
+MLX90614.c:12:: warning: (520) function "_MLX90614_init" is never called
+Main.c:27:: warning: (1518) direct function call made with an incomplete prototype (port_init)
+Main.c:29:: warning: (1518) direct function call made with an incomplete prototype (adc_init)
+Main.c:30:: warning: (1518) direct function call made with an incomplete prototype (I2C_init)
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+Non line specific message::: warning: (1020) unknown attribute "CONFIGPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 186
+Non line specific message::: warning: (1020) unknown attribute "IDLOCPROG" in chipinfo file "C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\dat\ini\16f18855.ini" at line 195
+
+Memory Summary:
+    Program space        used  1FABh (  8107) of  2000h words   ( 99.0%)
+    Data space           used   13Dh (   317) of   400h bytes   ( 31.0%)
+    EEPROM space         used     0h (     0) of   100h bytes   (  0.0%)
+    Configuration bits   used     5h (     5) of     5h words   (100.0%)
+    ID Location space    used     4h (     4) of     4h bytes   (100.0%)
+
+make[2]: Leaving directory 'D:/OneDriveTrabajo/Clases/GitHub_Clases/Micros/2022/GY-906 MLX90614.X'
+"--------------------------------------"
+"User defined post-build step: [cp ".ca/dist/Config_1/production\GY-906_MLX90614.X.production.hex" X:/]"
+"--------------------------------------"
+make[1]: Leaving directory 'D:/OneDriveTrabajo/Clases/GitHub_Clases/Micros/2022/GY-906 MLX90614.X'
+[32mBUILD SUCCESSFUL (total time: 18s)[0m

@@ -39741,23 +39741,13 @@ void main(void)
 
     PWM1_LoadDutyValue(65);
 
-    while(1){
-        for (int i=0; i<=512;i++){
-            PWM1_LoadDutyValue(i);
-            _delay((unsigned long)((1)*(10000000/4000.0)));
-        }
 
-        for (int i=512; i>=0;i--){
-            PWM1_LoadDutyValue(i);
-            _delay((unsigned long)((1)*(10000000/4000.0)));
-        }
-    }
     while (1)
     {
-        lecturaADC = ADC_GetSingleConversion(POT1);
-        PWM1_LoadDutyValue( (lecturaADC>>2) );
-
-
+        lecturaADC = ADC_GetSingleConversion(LM35);
+        V = mV*lecturaADC;
+        temperatura = V / 0.01;
+        printf("%3.3f\n",temperatura);
         do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
 
 
@@ -39769,7 +39759,7 @@ void main(void)
              do { LATFbits.LATF3 = 0; } while(0);
         }
 
-        _delay((unsigned long)((50)*(10000000/4000.0)));
+        _delay((unsigned long)((500)*(10000000/4000.0)));
 
     }
 }

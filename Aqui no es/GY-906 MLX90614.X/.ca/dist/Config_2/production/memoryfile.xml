@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name=".ca/dist/Config_2/production\GY-906_MLX90614.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>8013</used>
+      <free>179</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>1024</length>
+      <used>317</used>
+      <free>707</free>
+    </memory>
+  </executable>
+</project>

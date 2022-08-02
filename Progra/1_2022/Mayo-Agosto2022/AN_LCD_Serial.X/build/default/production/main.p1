@@ -23,13 +23,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 "124 ./mcc_generated_files/pwm1.h
 [; ;./mcc_generated_files/pwm1.h: 124: void PWM1_LoadDutyValue(uint16_t dutyValue);
 [v _PWM1_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
-"55 main.c
-[; ;main.c: 55:         lecturaADC = ADC_GetSingleConversion(POT1);
+"45 main.c
+[; ;main.c: 45:         lecturaADC = ADC_GetSingleConversion(LM35);
 [c E23269 1 2 5 59 60 61 62 63 .. ]
 [n E23269 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "374 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
 [v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23269 ]
+"111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
 "3311 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h: 3311: 
 [s S3133 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -3747,132 +3749,86 @@ Version 4.0 HI-TECH Software Intermediate Code
 "40
 [; ;main.c: 40:     PWM1_LoadDutyValue(65);
 [e ( _PWM1_LoadDutyValue (1 -> -> 65 `i `us ]
-"42
-[; ;main.c: 42:     while(1){
-[e :U 3260 ]
-{
 "43
-[; ;main.c: 43:         for (int i=0; i<=512;i++){
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 0 `i ]
-[e $ <= _i -> 512 `i 3262  ]
-[e $U 3263  ]
-[e :U 3262 ]
-{
+[; ;main.c: 43:     while (1)
+[e :U 3260 ]
 "44
-[; ;main.c: 44:             PWM1_LoadDutyValue(i);
-[e ( _PWM1_LoadDutyValue (1 -> _i `us ]
+[; ;main.c: 44:     {
+{
 "45
-[; ;main.c: 45:             _delay((unsigned long)((1)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+[; ;main.c: 45:         lecturaADC = ADC_GetSingleConversion(LM35);
+[e = _lecturaADC ( _ADC_GetSingleConversion (1 . `E23269 2 ]
 "46
-[; ;main.c: 46:         }
-}
-[e ++ _i -> 1 `i ]
-[e $ <= _i -> 512 `i 3262  ]
-[e :U 3263 ]
-}
+[; ;main.c: 46:         V = mV*lecturaADC;
+[e = _V * _mV -> -> _lecturaADC `ui `f ]
+"47
+[; ;main.c: 47:         temperatura = V / 0.01;
+[e = _temperatura -> / -> _V `d .0.01 `f ]
 "48
-[; ;main.c: 48:         for (int i=512; i>=0;i--){
-{
-[v _i `i ~T0 @X0 1 a ]
-[e = _i -> 512 `i ]
-[e $ >= _i -> 0 `i 3265  ]
-[e $U 3266  ]
-[e :U 3265 ]
-{
+[; ;main.c: 48:         printf("%3.3f\n",temperatura);
+[e ( _printf , (. :s 1C -> _temperatura `d ]
 "49
-[; ;main.c: 49:             PWM1_LoadDutyValue(i);
-[e ( _PWM1_LoadDutyValue (1 -> _i `us ]
-"50
-[; ;main.c: 50:             _delay((unsigned long)((1)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"51
-[; ;main.c: 51:         }
+[; ;main.c: 49:         do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
+[e :U 3264 ]
+{
+[e = . . _LATEbits 0 0 -> ~ -> . . _LATEbits 0 0 `i `uc ]
 }
-[e -- _i -> 1 `i ]
-[e $ >= _i -> 0 `i 3265  ]
-[e :U 3266 ]
-}
+[e :U 3263 ]
 "52
-[; ;main.c: 52:     }
+[; ;main.c: 52:         if(serialRX == 'N'){
+[e $ ! == -> _serialRX `ui -> 78 `ui 3265  ]
+{
+"53
+[; ;main.c: 53:             do { LATFbits.LATF3 = 1; } while(0);
+[e :U 3268 ]
+{
+[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 3267 ]
+"54
+[; ;main.c: 54:         }else if(serialRX == 'b'){
+}
+[e $U 3269  ]
+[e :U 3265 ]
+[e $ ! == -> _serialRX `ui -> 98 `ui 3270  ]
+{
+"55
+[; ;main.c: 55:             do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);;
+[e :U 3273 ]
+{
+[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
+}
+[e :U 3272 ]
+"56
+[; ;main.c: 56:         }else{
+}
+[e $U 3274  ]
+[e :U 3270 ]
+{
+"57
+[; ;main.c: 57:              do { LATFbits.LATF3 = 0; } while(0);
+[e :U 3277 ]
+{
+[e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
+}
+[e :U 3276 ]
+"58
+[; ;main.c: 58:         }
+}
+[e :U 3274 ]
+[e :U 3269 ]
+"60
+[; ;main.c: 60:         _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"62
+[; ;main.c: 62:     }
 }
 [e :U 3259 ]
 [e $U 3260  ]
 [e :U 3261 ]
-"53
-[; ;main.c: 53:     while (1)
-[e :U 3269 ]
-"54
-[; ;main.c: 54:     {
-{
-"55
-[; ;main.c: 55:         lecturaADC = ADC_GetSingleConversion(POT1);
-[e = _lecturaADC ( _ADC_GetSingleConversion (1 . `E23269 0 ]
-"56
-[; ;main.c: 56:         PWM1_LoadDutyValue( (lecturaADC>>2) );
-[e ( _PWM1_LoadDutyValue (1 -> >> -> _lecturaADC `ui -> 2 `i `us ]
-"59
-[; ;main.c: 59:         do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
-[e :U 3273 ]
-{
-[e = . . _LATEbits 0 0 -> ~ -> . . _LATEbits 0 0 `i `uc ]
-}
-[e :U 3272 ]
-"62
-[; ;main.c: 62:         if(serialRX == 'N'){
-[e $ ! == -> _serialRX `ui -> 78 `ui 3274  ]
-{
 "63
-[; ;main.c: 63:             do { LATFbits.LATF3 = 1; } while(0);
-[e :U 3277 ]
-{
-[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 3276 ]
-"64
-[; ;main.c: 64:         }else if(serialRX == 'b'){
-}
-[e $U 3278  ]
-[e :U 3274 ]
-[e $ ! == -> _serialRX `ui -> 98 `ui 3279  ]
-{
-"65
-[; ;main.c: 65:             do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);;
-[e :U 3282 ]
-{
-[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
-}
-[e :U 3281 ]
-"66
-[; ;main.c: 66:         }else{
-}
-[e $U 3283  ]
-[e :U 3279 ]
-{
-"67
-[; ;main.c: 67:              do { LATFbits.LATF3 = 0; } while(0);
-[e :U 3286 ]
-{
-[e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
-}
-[e :U 3285 ]
-"68
-[; ;main.c: 68:         }
-}
-[e :U 3283 ]
-[e :U 3278 ]
-"70
-[; ;main.c: 70:         _delay((unsigned long)((50)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"72
-[; ;main.c: 72:     }
-}
-[e :U 3268 ]
-[e $U 3269  ]
-[e :U 3270 ]
-"73
-[; ;main.c: 73: }
+[; ;main.c: 63: }
 [e :UE 3258 ]
 }
+[p f _printf 8495104 ]
+[a 1C 37 51 46 51 102 10 0 ]

@@ -39,23 +39,13 @@ void main(void)
     //INTERRUPT_GlobalInterruptDisable();
     PWM1_LoadDutyValue(65);
     
-    while(1){
-        for (int i=0; i<=512;i++){
-            PWM1_LoadDutyValue(i);
-            __delay_ms(1);
-        }
-        
-        for (int i=512; i>=0;i--){
-            PWM1_LoadDutyValue(i);
-            __delay_ms(1);
-        }
-    }
+   
     while (1)
     {
-        lecturaADC =  ADC_GetSingleConversion(POT1);
-        PWM1_LoadDutyValue( (lecturaADC>>2) );
-        
-        
+        lecturaADC =  ADC_GetSingleConversion(LM35);
+        V = mV*lecturaADC;
+        temperatura = V / 0.01;
+        printf("%3.3f\n",temperatura);
         LED2_Toggle();
        // serialRX = getch();//FUNCION BLOQUEANDO, PARA EVITAR ESTO, SE USA INTERRUPCIONES
         //printf("cont\n" );
@@ -67,13 +57,25 @@ void main(void)
              LED_SetLow();//led se enciende            
         }
         
-        __delay_ms(50);
+        __delay_ms(500);
         
     }
 }
 /**
  End of File
 */
+
+ /*while(1){
+        for (int i=0; i<=512;i++){
+            PWM1_LoadDutyValue(i);
+            __delay_ms(1);
+        }
+        
+        for (int i=512; i>=0;i--){
+            PWM1_LoadDutyValue(i);
+            __delay_ms(1);
+        }
+    }/*
 
 /*for (int i=0; i<=65;i++){
             PWM1_LoadDutyValue(i);

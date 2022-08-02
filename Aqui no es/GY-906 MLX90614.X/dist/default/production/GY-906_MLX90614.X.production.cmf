@@ -1,0 +1,1903 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\GY-906_MLX90614.X.production.o
+cinit CODE 0 68 68 798 2
+idloc IDLOC 5 8000 8000 4 2
+text1 CODE 0 177C 177C 84 2
+text5 CODE 0 976 976 68A 2
+text9 CODE 0 3D 3D 13 2
+text10 CODE 0 2A 2A 13 2
+text11 CODE 0 50 50 18 2
+text41 CODE 0 82C 82C 14A 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 50 1
+cstackBANK1 BANK1 1 CA CA 18 1
+stringtext1 STRCODE 0 1800 1800 1D 2
+stringtext2 STRCODE 0 181D 181D D 2
+stringtext3 STRCODE 0 182A 182A A 2
+stringtext4 STRCODE 0 1834 1834 6 2
+bssBANK1 BANK1 1 A0 A0 2A 1
+dataBANK1 BANK1 1 E2 E2 7 1
+clrtext CODE 0 24 24 6 2
+config CONFIG 4 8007 8007 5 2
+$C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+idloc IDLOC 5 8000 8000 4 2
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E9-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK1 E9-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 4-23 2
+CONST 800-82B 2
+CONST 1000-177B 2
+CONST 183A-1FFF 2
+ENTRY 4-23 2
+ENTRY 800-82B 2
+ENTRY 1000-177B 2
+ENTRY 183A-1FFF 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2099-23EF 1
+CODE 4-23 2
+CODE 800-82B 2
+CODE 1000-177B 2
+CODE 183A-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 4-23 2
+STRCODE 800-82B 2
+STRCODE 1000-177B 2
+STRCODE 183A-1FFF 2
+STRING 4-23 2
+STRING 800-82B 2
+STRING 1000-177B 2
+STRING 183A-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\GY-906_MLX90614.X.production.o
+68 cinit CODE >6591:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+68 cinit CODE >6594:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+68 cinit CODE >6632:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+69 cinit CODE >570:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+6A cinit CODE >6634:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+6B cinit CODE >570:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+6C cinit CODE >6636:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+6D cinit CODE >570:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+6E cinit CODE >6638:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+6F cinit CODE >570:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+70 cinit CODE >6640:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+71 cinit CODE >6642:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+72 cinit CODE >570:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+73 cinit CODE >6644:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+74 cinit CODE >570:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+75 cinit CODE >6646:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+76 cinit CODE >6663:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+77 cinit CODE >6664:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+78 cinit CODE >6665:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+79 cinit CODE >6666:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+7A cinit CODE >6667:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+7B cinit CODE >6668:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+7E cinit CODE >6674:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+7E cinit CODE >6676:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+7F cinit CODE >6677:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+80 cinit CODE >51:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+80 cinit CODE >52:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+A7 cinit CODE >53:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+A8 cinit CODE >26:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+A8 cinit CODE >31:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+A9 cinit CODE >32:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+B4 cinit CODE >33:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+B6 cinit CODE >34:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+B8 cinit CODE >50:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+B8 cinit CODE >53:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+C9 cinit CODE >54:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+CB cinit CODE >55:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+D4 cinit CODE >59:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+E5 cinit CODE >67:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+E7 cinit CODE >68:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+F0 cinit CODE >69:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+F2 cinit CODE >71:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+100 cinit CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+100 cinit CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+103 cinit CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+110 cinit CODE >32:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+111 cinit CODE >35:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+113 cinit CODE >36:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+116 cinit CODE >37:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+119 cinit CODE >38:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+11B cinit CODE >39:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+11E cinit CODE >40:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+122 cinit CODE >41:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+123 cinit CODE >40:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+124 cinit CODE >41:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+130 cinit CODE >42:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+133 cinit CODE >43:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+134 cinit CODE >44:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+138 cinit CODE >45:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+139 cinit CODE >46:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+13A cinit CODE >48:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+13C cinit CODE >49:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+13E cinit CODE >50:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+141 cinit CODE >51:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+144 cinit CODE >52:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+146 cinit CODE >53:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+147 cinit CODE >54:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+148 cinit CODE >56:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+14A cinit CODE >57:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+14B cinit CODE >83:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+14B cinit CODE >84:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+14D cinit CODE >85:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+150 cinit CODE >86:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+153 cinit CODE >87:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+155 cinit CODE >88:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+158 cinit CODE >89:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+15D cinit CODE >90:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+15F cinit CODE >92:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+161 cinit CODE >93:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+164 cinit CODE >94:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+167 cinit CODE >95:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+169 cinit CODE >96:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+16C cinit CODE >97:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+171 cinit CODE >98:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+173 cinit CODE >100:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+179 cinit CODE >101:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+18F cinit CODE >75:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+190 cinit CODE >77:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+192 cinit CODE >78:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+195 cinit CODE >79:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+198 cinit CODE >80:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+19A cinit CODE >81:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+19B cinit CODE >83:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+19C cinit CODE >27:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+19C cinit CODE >29:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+19D cinit CODE >30:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1A0 cinit CODE >21:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1A0 cinit CODE >23:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1A2 cinit CODE >24:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1A5 cinit CODE >33:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1A5 cinit CODE >35:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1A7 cinit CODE >36:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1AA cinit CODE >59:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1AA cinit CODE >61:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1AB cinit CODE >62:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1AD cinit CODE >63:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1AE cinit CODE >64:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+1B2 cinit CODE >54:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+1B2 cinit CODE >55:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+1DA cinit CODE >56:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+1DB cinit CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DB cinit CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1DF cinit CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E1 cinit CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E2 cinit CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E3 cinit CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E6 cinit CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1E8 cinit CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EA cinit CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EA cinit CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EB cinit CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EC cinit CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1EE cinit CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F1 cinit CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F3 cinit CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F4 cinit CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F5 cinit CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1F8 cinit CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FA cinit CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FC cinit CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FC cinit CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FD cinit CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+1FE cinit CODE >55:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+200 cinit CODE >65:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+205 cinit CODE >66:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+20A cinit CODE >119:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+213 cinit CODE >120:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+217 cinit CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+21C cinit CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+224 cinit CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+226 cinit CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+228 cinit CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+22A cinit CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+22C cinit CODE >125:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+234 cinit CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+236 cinit CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+23D cinit CODE >131:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+244 cinit CODE >133:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+24B cinit CODE >134:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+252 cinit CODE >136:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+259 cinit CODE >138:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+25E cinit CODE >140:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+265 cinit CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+279 cinit CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+27C cinit CODE >149:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+281 cinit CODE >149:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+284 cinit CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+285 cinit CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+287 cinit CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+289 cinit CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+28D cinit CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+28E cinit CODE >155:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+28F cinit CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+290 cinit CODE >157:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+294 cinit CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+295 cinit CODE >163:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+296 cinit CODE >164:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+298 cinit CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2A4 cinit CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2A5 cinit CODE >169:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2A8 cinit CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2AA cinit CODE >174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2AD cinit CODE >175:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2B3 cinit CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2B5 cinit CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2B9 cinit CODE >178:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2BA cinit CODE >178:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2BC cinit CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2BE cinit CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2C2 cinit CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2C4 cinit CODE >184:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2CB cinit CODE >185:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2CC cinit CODE >187:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2CF cinit CODE >187:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2D3 cinit CODE >187:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2D5 cinit CODE >188:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2DA cinit CODE >190:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2DB cinit CODE >191:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2DC cinit CODE >194:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2DF cinit CODE >195:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2E6 cinit CODE >196:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2E7 cinit CODE >197:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2E8 cinit CODE >199:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2EA cinit CODE >200:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2EA cinit CODE >201:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2EC cinit CODE >203:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2F4 cinit CODE >205:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+2F5 cinit CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+2F6 cinit CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+2F8 cinit CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+2FB cinit CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+2FD cinit CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+301 cinit CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+303 cinit CODE >55:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+304 cinit CODE >56:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+307 cinit CODE >59:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+30B cinit CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+30C cinit CODE >126:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+30C cinit CODE >131:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+311 cinit CODE >131:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+313 cinit CODE >132:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+315 cinit CODE >134:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+31E cinit CODE >136:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+324 cinit CODE >137:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+336 cinit CODE >140:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+347 cinit CODE >142:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+34D cinit CODE >143:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+350 cinit CODE >143:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+352 cinit CODE >140:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+360 cinit CODE >149:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+374 cinit CODE >150:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+376 cinit CODE >150:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+378 cinit CODE >147:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+381 cinit CODE >152:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+386 cinit CODE >157:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+392 cinit CODE >158:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+394 cinit CODE >158:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3A6 cinit CODE >158:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3A9 cinit CODE >160:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3D0 cinit CODE >161:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3D4 cinit CODE >163:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3DA cinit CODE >164:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3DC cinit CODE >164:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3DE cinit CODE >166:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3E1 cinit CODE >168:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3E9 cinit CODE >169:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3EC cinit CODE >170:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3F0 cinit CODE >171:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3F3 cinit CODE >172:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3F9 cinit CODE >172:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+3FD cinit CODE >172:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+405 cinit CODE >172:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+408 cinit CODE >174:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+40B cinit CODE >182:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+40D cinit CODE >182:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+40F cinit CODE >176:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+41F cinit CODE >177:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+429 cinit CODE >178:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+42C cinit CODE >178:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+430 cinit CODE >178:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+432 cinit CODE >179:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+439 cinit CODE >180:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+466 cinit CODE >181:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+46A cinit CODE >182:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+46C cinit CODE >182:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+46F cinit CODE >183:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+474 cinit CODE >184:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+475 cinit CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+475 cinit CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+480 cinit CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+482 cinit CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+486 cinit CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+491 cinit CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+493 cinit CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+495 cinit CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+497 cinit CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4A9 cinit CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4AD cinit CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4BD cinit CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4BF cinit CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4C0 cinit CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4C2 cinit CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4C6 cinit CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4CA cinit CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
+4CF cinit CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4CF cinit CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4D4 cinit CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4D6 cinit CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4D7 cinit CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4D8 cinit CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4DB cinit CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4DD cinit CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4E1 cinit CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4E1 cinit CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4E3 cinit CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4E3 cinit CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4E7 cinit CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4EA cinit CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4EC cinit CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4ED cinit CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4EE cinit CODE >56:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4F1 cinit CODE >58:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4F3 cinit CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4F7 cinit CODE >61:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4F7 cinit CODE >63:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4F9 cinit CODE >67:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4F9 cinit CODE >69:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+4FD cinit CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+501 cinit CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+503 cinit CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+504 cinit CODE >76:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+508 cinit CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+50B cinit CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+50D cinit CODE >79:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+516 cinit CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+519 cinit CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+51E cinit CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+523 cinit CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+527 cinit CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+529 cinit CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+531 cinit CODE >93:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+535 cinit CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+539 cinit CODE >96:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+53A cinit CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+53C cinit CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+53E cinit CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+541 cinit CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+545 cinit CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+549 cinit CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+54A cinit CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+54B cinit CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+54F cinit CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+551 cinit CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+555 cinit CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+559 cinit CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+55D cinit CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+55F cinit CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+560 cinit CODE >116:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+568 cinit CODE >118:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+569 cinit CODE >97:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+56A cinit CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+56E cinit CODE >122:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+56F cinit CODE >123:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+570 cinit CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+572 cinit CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+576 cinit CODE >129:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+577 cinit CODE >130:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+578 cinit CODE >133:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+579 cinit CODE >132:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+57D cinit CODE >133:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+57E cinit CODE >133:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+580 cinit CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+581 cinit CODE >139:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+582 cinit CODE >140:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+584 cinit CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+590 cinit CODE >141:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+591 cinit CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+594 cinit CODE >142:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+596 cinit CODE >150:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+599 cinit CODE >151:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+59F cinit CODE >152:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5A1 cinit CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5A5 cinit CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5A6 cinit CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5A8 cinit CODE >159:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5AA cinit CODE >159:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5AE cinit CODE >159:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5B0 cinit CODE >160:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5B5 cinit CODE >162:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5B5 cinit CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5B8 cinit CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5BC cinit CODE >165:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5BE cinit CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5C2 cinit CODE >169:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5C3 cinit CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5C6 cinit CODE >175:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5C8 cinit CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5C9 cinit CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5CA cinit CODE >179:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5CA cinit CODE >180:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5CB cinit CODE >182:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+5CE cinit CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5D0 cinit CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5D4 cinit CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5DD cinit CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5DF cinit CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5E1 cinit CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5E3 cinit CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5E4 cinit CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5EC cinit CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5EC cinit CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5F0 cinit CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5F2 cinit CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5F7 cinit CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5F9 cinit CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5FD cinit CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+5FE cinit CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+600 cinit CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+601 cinit CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+601 cinit CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+602 cinit CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+603 cinit CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+60A cinit CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+60F cinit CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+611 cinit CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+613 cinit CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+614 cinit CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+618 cinit CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+61A cinit CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+61B cinit CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+61C cinit CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+61D cinit CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+62A cinit CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+62E cinit CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+62F cinit CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+637 cinit CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+638 cinit CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+638 cinit CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+63C cinit CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+63E cinit CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+640 cinit CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
+641 cinit CODE >242:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+641 cinit CODE >248:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+643 cinit CODE >249:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+65D cinit CODE >250:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+65E cinit CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+65E cinit CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+665 cinit CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+66A cinit CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+67B cinit CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+67C cinit CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+67D cinit CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+67E cinit CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+67F cinit CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+681 cinit CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+684 cinit CODE >54:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+686 cinit CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+68D cinit CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+68F cinit CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+691 cinit CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+694 cinit CODE >63:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+698 cinit CODE >64:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+699 cinit CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+69A cinit CODE >67:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+69D cinit CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+6A2 cinit CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+6A4 cinit CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+6A6 cinit CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+6A8 cinit CODE >70:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+6A9 cinit CODE >3:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6A9 cinit CODE >4:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6AC cinit CODE >5:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6AF cinit CODE >6:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6B2 cinit CODE >7:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6B4 cinit CODE >17:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6B7 cinit CODE >19:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6B8 cinit CODE >20:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6BA cinit CODE >23:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6BC cinit CODE >24:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6BD cinit CODE >25:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+6BE cinit CODE >4:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6BE cinit CODE >6:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6C0 cinit CODE >7:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6C1 cinit CODE >8:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6C3 cinit CODE >9:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6C4 cinit CODE >10:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6C7 cinit CODE >11:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6CA cinit CODE >12:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6CC cinit CODE >13:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6CF cinit CODE >15:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6D2 cinit CODE >16:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6D4 cinit CODE >17:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6D5 cinit CODE >18:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6D7 cinit CODE >19:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6D8 cinit CODE >105:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6D8 cinit CODE >107:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6DA cinit CODE >108:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6DC cinit CODE >109:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6DD cinit CODE >110:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6DF cinit CODE >113:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6E3 cinit CODE >115:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6E5 cinit CODE >116:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6E6 cinit CODE >117:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6E9 cinit CODE >118:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6ED cinit CODE >124:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+6EE cinit CODE >67:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6EE cinit CODE >69:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6EF cinit CODE >70:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6F1 cinit CODE >71:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+6F2 cinit CODE >72:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+7EB cinit CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7EB cinit CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7ED cinit CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7EF cinit CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7F3 cinit CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7F5 cinit CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7F7 cinit CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7FB cinit CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+7FF cinit CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+82C text41 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+82C text41 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+830 text41 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+832 text41 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+833 text41 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+834 text41 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+837 text41 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+839 text41 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+83D text41 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+83D text41 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+83F text41 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+83F text41 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+843 text41 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+847 text41 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+849 text41 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+84A text41 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+84B text41 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+84D text41 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+84E text41 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+84F text41 CODE >55:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+852 text41 CODE >57:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+854 text41 CODE >59:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+858 text41 CODE >60:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+858 text41 CODE >62:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+85A text41 CODE >66:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+85A text41 CODE >68:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+85E text41 CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+860 text41 CODE >75:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+862 text41 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+864 text41 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+866 text41 CODE >81:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+868 text41 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+86A text41 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+86C text41 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+86E text41 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+870 text41 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+872 text41 CODE >87:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+874 text41 CODE >88:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+876 text41 CODE >89:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+878 text41 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+87A text41 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+87C text41 CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+87E text41 CODE >93:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+880 text41 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+882 text41 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+884 text41 CODE >98:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+885 text41 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+88D text41 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+894 text41 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+898 text41 CODE >100:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+89A text41 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+89F text41 CODE >101:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8A5 text41 CODE >102:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8A9 text41 CODE >103:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8AB text41 CODE >104:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8AC text41 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8AC text41 CODE >109:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8AE text41 CODE >110:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8B1 text41 CODE >111:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8B2 text41 CODE >112:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8B2 text41 CODE >113:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8B3 text41 CODE >114:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8B3 text41 CODE >115:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8B5 text41 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8B8 text41 CODE >106:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8BA text41 CODE >121:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8BA text41 CODE >124:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8BC text41 CODE >127:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8BF text41 CODE >128:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8C0 text41 CODE >132:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8C8 text41 CODE >134:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8CA text41 CODE >135:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8CC text41 CODE >136:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8CF text41 CODE >137:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8D0 text41 CODE >138:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8D0 text41 CODE >139:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8D1 text41 CODE >140:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8D3 text41 CODE >145:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8D4 text41 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8DA text41 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8DE text41 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8E2 text41 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8E6 text41 CODE >153:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+8E8 text41 CODE >154:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+909 text41 CODE >155:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+90B text41 CODE >156:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+90D text41 CODE >157:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+90E text41 CODE >158:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+911 text41 CODE >162:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+919 text41 CODE >163:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+919 text41 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+91D text41 CODE >166:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+923 text41 CODE >172:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+927 text41 CODE >173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+928 text41 CODE >174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+929 text41 CODE >176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+92B text41 CODE >177:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+92D text41 CODE >178:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+92E text41 CODE >179:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+92E text41 CODE >180:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+92F text41 CODE >182:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+931 text41 CODE >183:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+932 text41 CODE >171:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+934 text41 CODE >192:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+935 text41 CODE >193:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+937 text41 CODE >194:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+93A text41 CODE >198:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+93D text41 CODE >195:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+93F text41 CODE >203:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+944 text41 CODE >205:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+946 text41 CODE >206:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+94A text41 CODE >207:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+94B text41 CODE >208:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+94C text41 CODE >215:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+951 text41 CODE >216:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+955 text41 CODE >218:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+957 text41 CODE >219:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+958 text41 CODE >225:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+95A text41 CODE >226:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+95B text41 CODE >227:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+95C text41 CODE >229:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+95C text41 CODE >230:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+95D text41 CODE >232:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+95F text41 CODE >233:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+960 text41 CODE >234:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+961 text41 CODE >237:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+50 text11 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+50 text11 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+5E text11 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+60 text11 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+67 text11 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isalpha.c
+2A text10 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+2A text10 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+33 text10 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+35 text10 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+3C text10 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isupper.c
+3D text9 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+3D text9 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+46 text9 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+48 text9 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+4F text9 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
+976 text5 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+977 text5 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+97B text5 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+97E text5 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+986 text5 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+994 text5 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+995 text5 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+99D text5 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+99E text5 CODE >72:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+99F text5 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9A2 text5 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9A6 text5 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9B0 text5 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9B2 text5 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9B8 text5 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9BC text5 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9BE text5 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9C6 text5 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9C8 text5 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9CA text5 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9CB text5 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9D0 text5 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9D2 text5 CODE >92:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9D2 text5 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9DD text5 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9DE text5 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+9DF text5 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+9E1 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+9EB text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+9F1 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+9F3 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+9F5 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+9F6 text5 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9F7 text5 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9FC text5 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+9FE text5 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A00 text5 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A01 text5 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A02 text5 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A06 text5 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A08 text5 CODE >847:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A13 text5 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A15 text5 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A17 text5 CODE >850:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A29 text5 CODE >852:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A40 text5 CODE >1171:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A47 text5 CODE >1173:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A49 text5 CODE >1174:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A52 text5 CODE >1176:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A5A text5 CODE >1296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A64 text5 CODE >1298:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A68 text5 CODE >1299:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A6D text5 CODE >1299:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A71 text5 CODE >1300:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A7A text5 CODE >1302:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A93 text5 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A9A text5 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+A9C text5 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AA0 text5 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AA5 text5 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AA6 text5 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AA8 text5 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AAB text5 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AB2 text5 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AB5 text5 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AB8 text5 CODE >568:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AB9 text5 CODE >570:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AC7 text5 CODE >574:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AC9 text5 CODE >575:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ACC text5 CODE >576:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ACE text5 CODE >580:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AD5 text5 CODE >581:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+ADD text5 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AE5 text5 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AE9 text5 CODE >582:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AF0 text5 CODE >583:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AF5 text5 CODE >584:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+AFD text5 CODE >587:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B01 text5 CODE >589:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B05 text5 CODE >590:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B07 text5 CODE >590:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B09 text5 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B0B text5 CODE >588:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B0D text5 CODE >595:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B10 text5 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B16 text5 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B1A text5 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B1C text5 CODE >597:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B27 text5 CODE >598:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B29 text5 CODE >599:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B2A text5 CODE >599:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B2C text5 CODE >596:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B2D text5 CODE >603:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B31 text5 CODE >605:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B35 text5 CODE >606:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B37 text5 CODE >606:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B39 text5 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B3B text5 CODE >604:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B3D text5 CODE >610:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B42 text5 CODE >611:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B43 text5 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B43 text5 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B48 text5 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B4A text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B65 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B69 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B6B text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B71 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B73 text5 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+B74 text5 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+B75 text5 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+B76 text5 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+B7C text5 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+B7D text5 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+B7E text5 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+B84 text5 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+B85 text5 CODE >82:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+B86 text5 CODE >84:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+B87 text5 CODE >63:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+B88 text5 CODE >65:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+B91 text5 CODE >66:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+B94 text5 CODE >67:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+B95 text5 CODE >645:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B98 text5 CODE >654:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+B9B text5 CODE >654:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BA0 text5 CODE >654:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BAF text5 CODE >655:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BB7 text5 CODE >656:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BBA text5 CODE >657:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BBD text5 CODE >657:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BBF text5 CODE >661:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BD0 text5 CODE >662:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BD3 text5 CODE >663:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BD5 text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BD6 text5 CODE >665:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BD9 text5 CODE >665:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BDB text5 CODE >666:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BDF text5 CODE >667:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BE4 text5 CODE >667:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BE8 text5 CODE >667:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BEF text5 CODE >667:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BF1 text5 CODE >668:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BF5 text5 CODE >668:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BFB text5 CODE >668:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+BFD text5 CODE >668:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C15 text5 CODE >668:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C17 text5 CODE >668:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C21 text5 CODE >669:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C2B text5 CODE >671:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C31 text5 CODE >672:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C33 text5 CODE >672:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C35 text5 CODE >673:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C36 text5 CODE >673:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C38 text5 CODE >674:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C43 text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C49 text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C4D text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C58 text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C5F text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C63 text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C6B text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C6F text5 CODE >664:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C74 text5 CODE >678:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C77 text5 CODE >679:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C7B text5 CODE >680:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C7E text5 CODE >681:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C81 text5 CODE >682:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C83 text5 CODE >686:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C91 text5 CODE >687:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+C92 text5 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+C92 text5 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+C9B text5 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+C9D text5 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
+CAD text5 CODE >287:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CAE text5 CODE >293:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CBE text5 CODE >294:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CCC text5 CODE >295:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CCF text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CDA text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CDD text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CE0 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CE3 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CE6 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CE8 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CEA text5 CODE >297:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CEA text5 CODE >300:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CEC text5 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CEF text5 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+CF4 text5 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D03 text5 CODE >304:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D0B text5 CODE >305:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D12 text5 CODE >306:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D15 text5 CODE >306:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D17 text5 CODE >310:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D1B text5 CODE >311:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D1D text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D27 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D2E text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D32 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D3A text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D3E text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D43 text5 CODE >313:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D46 text5 CODE >313:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D48 text5 CODE >314:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D73 text5 CODE >315:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D75 text5 CODE >315:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D77 text5 CODE >316:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D78 text5 CODE >316:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+D7A text5 CODE >317:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DA5 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DAB text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DAF text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DB1 text5 CODE >321:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DB9 text5 CODE >322:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DBC text5 CODE >322:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DBE text5 CODE >323:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DCD text5 CODE >327:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DDB text5 CODE >328:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DDC text5 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DDC text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DDD text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DDE text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DE5 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DF1 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DF4 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DF7 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DFA text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+DFD text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E00 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E03 text5 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E05 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E0D text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E19 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E1C text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E1F text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E22 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E25 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E28 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E2B text5 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E2D text5 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E37 text5 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E40 text5 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E42 text5 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E43 text5 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E44 text5 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E46 text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E4E text5 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E4F text5 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E57 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E59 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E5D text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E61 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E65 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E69 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E6D text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E71 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E75 text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E77 text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E87 text5 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E88 text5 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E90 text5 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E92 text5 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+E95 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EA0 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EA3 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EA6 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EA9 text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EAC text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EAF text5 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EB2 text5 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EC3 text5 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+EC4 text5 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EC4 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EC5 text5 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EC6 text5 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+ECD text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+ED3 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+ED6 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+ED9 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EDC text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EDF text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EE2 text5 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EE5 text5 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EE7 text5 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EEF text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EFB text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+EFE text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F01 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F04 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F07 text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F0A text5 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F0D text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F16 text5 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F18 text5 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F19 text5 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F1A text5 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F1C text5 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F24 text5 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F25 text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F27 text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F2B text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F2F text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F33 text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F37 text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F3B text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F3F text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F43 text5 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F45 text5 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F55 text5 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F5D text5 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F5F text5 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F64 text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F67 text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F6A text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F6D text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F70 text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F73 text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F76 text5 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F79 text5 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F8A text5 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F8B text5 CODE >1:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F8B text5 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F90 text5 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F94 text5 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F9B text5 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+177C text1 CODE >4:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+177C text1 CODE >8:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+177F text1 CODE >10:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+1781 text1 CODE >16:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+1783 text1 CODE >21:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17AB text1 CODE >22:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17AE text1 CODE >23:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17B2 text1 CODE >28:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17B4 text1 CODE >29:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17B7 text1 CODE >30:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17B9 text1 CODE >31:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17BA text1 CODE >32:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17BD text1 CODE >34:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17C0 text1 CODE >43:D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+17C1 text1 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17C1 text1 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17C5 text1 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17C9 text1 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17CB text1 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17CC text1 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17CD text1 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17CF text1 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17D3 text1 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17D4 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17D8 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17DA text1 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17DE text1 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17E2 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17E6 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17E8 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17F0 text1 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17F1 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17F5 text1 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17F7 text1 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+17FF text1 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
+24 clrtext CODE >6652:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+24 clrtext CODE >6653:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+25 clrtext CODE >6654:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+25 clrtext CODE >6655:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+26 clrtext CODE >6656:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+27 clrtext CODE >6657:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+28 clrtext CODE >6658:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+29 clrtext CODE >6659:C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+putch@dato 72 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__Hspace_0 183A 0 ABS 0 - -
+__Hspace_1 E9 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+stoa@F1141 E2 0 BANK1 1 dataBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_sensorPlaca 31E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+isalpha@c 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_i2c_init D7C 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_i2c_nack DDC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_i2c_read 272 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_i2c_stop 34A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL2 1F44 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL4 1F5E 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL6 DEC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL8 E18 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+?_abs 73 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?_pad 24 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 66 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_LATA 16 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_LATB 17 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_PIR3 70F 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+_dbuf AA 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_dtoa 195A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_main 150 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_nout A0 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_prec A4 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_stoa 1570 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_xtoa 172A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+abs@a 73 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+pad@i 27 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+pad@p 25 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+pad@w 29 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+start 4 0 CODE 0 init C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+___aomod@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@aexp 37 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@bexp 3C 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@prod 3D 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@sign 36 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@temp 41 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___aodiv 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___aomod 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_i2c_init DB0 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_i2c_nack DEC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_i2c_read 296 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_i2c_stop 354 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___fladd 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___fldiv 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___flmul 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___flneg 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___flsub 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___fltol 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_dtoa 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_stoa 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_xtoa 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+pad@fp 2B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_toupper 1924 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+isupper@c 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__Hpowerup 0 0 CODE 0 powerup -
+stoa@i 27 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+stoa@l 2F 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+stoa@p 2D 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+stoa@s 7B 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+stoa@w 29 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_vfpfcnvrt 1570 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+wtemp0 7E 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+xtoa@c 4A 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+xtoa@d 2C 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+xtoa@i 4C 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+xtoa@n 40 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+xtoa@p 3D 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+xtoa@w 48 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+xtoa@x 34 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_MLX90614_readAmbientTempC 3B6 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_MLX90614_ReadReg 220 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+i2c_write@I2C_data 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_vfpfcnvrt 13EC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+dtoa@fp 3D 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+xtoa@fp 3F 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_ADCON0 93 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ADCON1 94 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ADCON2 95 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ANSELB F43 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ANSELC F4E 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of__Umul8_16 618 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__size_of__Umul8_16 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+?_toupper 74 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_i2c_ack 354 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__Hpa_nodes0 0 0 ABS 0 pa_nodes0 -
+__end_of___flge 99E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___wmul 1000 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@tempo_float CC 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of_i2c_start 34A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@aexp 2C 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@bexp 2B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_i2c_write 338 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?_printf CA 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_i2c_start 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_i2c_write 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___aodiv 1D88 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___aomod 1F16 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__Umul8_16 5EA 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_uart_tx 170E 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___fladd 12C4 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___fldiv B9C 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___flmul 5EA 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___flneg C82 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___flsub CBC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___fltol D52 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_isalpha 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___lldiv 3000 0 CODE 0 text1 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_islower 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_isupper 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___aodiv@quotient 73 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?_strlen 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__Umul8_16@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+___stacklo 2099 0 ABS 0 - C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+___aomod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Lpa_nodes0 0 0 ABS 0 pa_nodes0 -
+__size_of_fputc 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_fputs 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___fladd@a 47 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___fladd@b 43 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@a 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@b 74 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@a 2E 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@b 2A 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flsub@a 57 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flsub@b 5B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_i2c_start 340 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_i2c_write 31E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@tempo_int CA 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@text 63 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_sensorPlaca 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___lldiv@counter 7C 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___aomod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+start_initialization D0 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_MLX90614_readAmbientTempC 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_low_byte A8 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_TRISCbits 13 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___lldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_MLX90614_ReadReg 272 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_RC0PPS F20 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_RC1STA 11D 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_RC4PPS F24 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL2 1F5E 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL4 1F76 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL6 E18 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL8 E2A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_i2c_restart 340 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+?_MLX90614_readAmbientTempC 57 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+clear_ram0 48 0 CODE 0 clrtext dist/default/production\GY-906_MLX90614.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__pcstackBANK1 CA 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_serial_init 2F82 0 CODE 0 text1 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_MLX90614_ReadReg 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_TX1REG 11A 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_TX1STA 11E 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+islower@c 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_dtoa$926 39 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_printf 220 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+fputc@fp 75 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+fputs@fp 7B 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+toupper@c 74 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@decimal 64 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+__end_of_strlen 170A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__Hidloc 10008 0 IDLOC 5 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__size_of___xxtofl 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_port_init DDC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 11F 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___xxtofl@arg 26 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___xxtofl@exp 25 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___xxtofl@val 79 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_port_init 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+serial_init@sx 28 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+__end_of_isalpha D0 0 CODE 0 text11 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_FLOAT_to_string 8EA 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit D0 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 5 idloc -
+__end_of_islower A0 0 CODE 0 text9 dist/default/production\GY-906_MLX90614.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__end_of_isupper 7A 0 CODE 0 text10 dist/default/production\GY-906_MLX90614.X.production.o
+___flmul@grs 38 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 3000 0 STRCODE 0 stringtext1 dist/default/production\GY-906_MLX90614.X.production.o
+__pstringtext2 303A 0 STRCODE 0 stringtext2 dist/default/production\GY-906_MLX90614.X.production.o
+__pstringtext3 3054 0 STRCODE 0 stringtext3 dist/default/production\GY-906_MLX90614.X.production.o
+__pstringtext4 3068 0 STRCODE 0 stringtext4 dist/default/production\GY-906_MLX90614.X.production.o
+__pstringtext5 0 0 STRCODE 0 stringtext5 dist/default/production\GY-906_MLX90614.X.production.o
+___aodiv@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_SSP1CON3 192 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___flge 8EA 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___wmul FD6 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___aomod@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_port_init DB0 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_toupper$1027 78 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+PL10 E2A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL12 1F76 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL14 E40 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL16 E60 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL18 E80 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL20 E9A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL22 EB8 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL24 1F84 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL26 ED2 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL28 1F9C 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL30 EE8 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL32 EFC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL34 F10 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL36 F22 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL38 F34 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL40 1FB0 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL42 F46 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL44 12C4 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+PL46 1FC2 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL48 F54 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL50 1FD0 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL52 F62 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL54 1FDE 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL56 12D4 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+PL58 F70 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL60 F7E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL62 F8A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL64 F96 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL66 FA2 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL68 12E2 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+PL70 1FEC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+PL72 FAE 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL74 FB8 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL76 FC2 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL78 FCC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+PL80 1FF6 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__S0 183A 0 ABS 0 - -
+__S1 E9 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_abs 1F16 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_pad 133C 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@cont_for D4 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+uart_tx@dato 71 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___aodiv@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_MLX90614_readAmbientTempC 364 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_toupper 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___xxtofl B9C 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL10 E40 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL12 1F84 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL14 E60 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL16 E80 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL18 E9A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL20 EB8 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL22 ED2 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL24 1F9C 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL26 EE8 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL28 1FB0 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL30 EFC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL32 F10 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL34 F22 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL36 F34 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL38 F46 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL40 1FC2 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL42 F54 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL44 12D4 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL46 1FD0 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL48 F62 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL50 1FDE 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL52 F70 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL54 1FEC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL56 12E2 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL58 F7E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL60 F8A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL62 F96 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL64 FA2 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL66 FAE 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL68 12EC 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL70 1FF6 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL72 FB8 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL74 FC2 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL76 FCC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL78 FD6 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_ofPL80 2000 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_abs 1F44 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_pad 13BC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__Lintentry 4 0 CODE 0 intentry -
+___lldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_FLOAT_to_string 618 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_MLX90614_readObjectTempC 100 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Edicion\AppData\Local\Temp\xcAsa2k.o
+strlen@a 72 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+strlen@s 73 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_adc_init 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of___xxtofl C70 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+serial_init@baudios 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__pdataBANK1 E2 0 BANK1 1 dataBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___flge 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+vfpfcnvrt@fmt 4E 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+vfpfcnvrt@llu 5B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+pad@buf 24 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+stoa@nuls 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___fladd@signs 53 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext10 54 0 CODE 0 text10 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext11 A0 0 CODE 0 text11 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext12 1570 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext13 195A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext14 133C 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext15 16E8 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext16 13BC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext17 1686 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext18 170A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext19 170E 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext20 1F16 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext21 1D88 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext22 1BB8 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext23 FD6 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext24 DB0 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext25 D7C 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext26 D52 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext27 100 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext28 364 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext29 220 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext30 31E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext31 34A 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext32 340 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext33 338 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext34 272 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext35 DDC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext36 354 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext37 618 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext38 B9C 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext39 CBC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext40 C82 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext41 1058 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext42 C70 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext43 3B6 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext44 5EA 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext45 8EA 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext46 99E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___aodiv 1BB8 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+___aomod 1D88 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+___fladd 1058 0 CODE 0 text41 dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv 99E 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___flmul 3B6 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___flneg C70 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___flsub C82 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___fltol CBC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___lldiv 2F82 0 CODE 0 text1 dist/default/production\GY-906_MLX90614.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 150 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__size_of_i2c_restart 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__Umul8_16@multiplier 76 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?_dtoa 30 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?_stoa 7B 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?_xtoa 2C 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_printf 200 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+_sensorPlaca 296 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_serial_init 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@largo_entera D2 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@grs 27 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@rem 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+main@temp DE 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_strlen 16E8 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_i2c_ack 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+?_MLX90614_ReadReg 71 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___fldiv@new_exp 25 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+stoa@cp 2C 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+stoa@fp 2B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_SSP1CLKPPS EC5 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_adc_init D52 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___fladd@grs 56 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+main@buffer D6 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+?_vfpfcnvrt 4E 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__size_of_uart_tx 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+?_MLX90614_readObjectTempC 57 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__Umul8_16@product 72 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___flge@ff1 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___flge@ff2 74 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_PIR3bits 70F 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__Lend_init 4 0 CODE 0 end_init -
+___aodiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_toupper 195A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+___aodiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_adc_init D7C 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___fltol@exp1 79 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+printf@ap 6D 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+end_of_initialization FC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__Hintentry 4 0 CODE 0 intentry -
+__size_of_printf 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+fputc@c 73 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+fputs@c 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+fputs@i 21 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+fputs@s 23 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___aodiv 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?___aomod 20 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?___fladd 43 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?___fldiv 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?___flmul 2A 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?___flneg 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?___flsub 57 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?___fltol 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_FLOAT_to_string 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+?___lldiv 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+vfprintf@fmt 66 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+i2c_read@ack 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__size_of_strlen 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+vfpfcnvrt@ap 4F 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+vfpfcnvrt@cp 64 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+vfpfcnvrt@fp 65 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+vfpfcnvrt@ll 53 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___flneg@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__ptext1 2EF8 0 CODE 0 text1 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext2 2F82 0 CODE 0 text1 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext3 296 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext4 200 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__ptext5 12EC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext6 13EC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext7 172A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext8 1924 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__ptext9 7A 0 CODE 0 text9 dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@largo_n D0 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+vfprintf@ap 68 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+vfprintf@fp 6A 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+vfprintf@cfmt 6B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+?__Umul8_16 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_MLX90614_readObjectTempC 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_vfprintf 12EC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+MLX90614_ReadReg@reg 76 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?___xxtofl 79 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_isalpha A0 0 CODE 0 text11 dist/default/production\GY-906_MLX90614.X.production.o
+___fladd@aexp 54 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+___fladd@bexp 55 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_islower 7A 0 CODE 0 text9 dist/default/production\GY-906_MLX90614.X.production.o
+__Umul8_16@word_mpld 74 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+___fltol@sign1 78 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_isupper 54 0 CODE 0 text10 dist/default/production\GY-906_MLX90614.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+__end_of_vfprintf 133C 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+___fltol@f1 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+FLOAT_to_string@number 5F 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_xtoa$947 39 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_xtoa$948 3B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of__initialization FC 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_i2c_ack 364 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__pidataBANK1 0 0 CODE 0 idataBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_SP1BRGH 11C 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_SP1BRGL 11B 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON2bits 191 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+___lldiv@quotient 78 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_high_byte A9 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_uart_tx 172A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__Hend_init 8 0 CODE 0 end_init -
+vfpfcnvrt@c 63 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_dtoa 1BB8 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_main 200 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_stoa 1686 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_xtoa 1924 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+printf@fmt CA 0 BANK1 1 cstackBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_ADCAP 9B 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ADCLK 98 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ADPCH 9E 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_ADREF 9A 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_i2c_init 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_i2c_nack 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_i2c_read 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_i2c_stop 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_fputc 16E8 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_fputs 13EC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_PORTA C 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_PORTB D 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_RXPPS ECB 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_TRISB 12 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+_TRISC 13 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_putch 170E 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+MLX90614_ReadReg@valReg 77 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+_flags A6 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_fputc 1686 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_fputs 13BC 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_putch 170A 0 CODE 0 text5 dist/default/production\GY-906_MLX90614.X.production.o
+_width A2 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+?_isalpha 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?_islower 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+?_isupper 70 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__size_of_pad 0 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+_i2c_restart 338 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+__initialization D0 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+___xxtofl@sign 24 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\GY-906_MLX90614.X.production.o
+_serial_init 2EF8 0 CODE 0 text1 dist/default/production\GY-906_MLX90614.X.production.o
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\GY-906_MLX90614.X.production.o
+__end_of_MLX90614_readObjectTempC 150 0 CODE 0 cinit dist/default/production\GY-906_MLX90614.X.production.o
+dtoa@d 30 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+dtoa@i 4A 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+dtoa@n 42 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+dtoa@p 3B 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+dtoa@s 40 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+dtoa@w 3E 0 BANK0 1 cstackBANK0 dist/default/production\GY-906_MLX90614.X.production.o
+_ANSELCbits F4E 0 ABS 0 - dist/default/production\GY-906_MLX90614.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 68 D0 798 2
+text1 0 177C 2EF8 84 2
+text5 0 976 12EC 68A 2
+text9 0 3D 7A 13 2
+text10 0 2A 54 13 2
+text11 0 50 A0 18 2
+text41 0 82C 1058 14A 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+stringtext1 0 1800 3000 3A 2
+reset_vec 0 0 0 4 2
+bssBANK1 1 A0 A0 49 1
+clrtext 0 24 48 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
