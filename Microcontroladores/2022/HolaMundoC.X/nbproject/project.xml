@@ -15,6 +15,7 @@
             <sourceRootList>
                 <sourceRootElem>.</sourceRootElem>
                 <sourceRootElem>../../../Industrial</sourceRootElem>
+                <sourceRootElem>../Timers.X</sourceRootElem>
             </sourceRootList>
             <confList>
                 <confElem>

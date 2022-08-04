@@ -52,11 +52,15 @@ void main(void) {
         //temp = (temp * 0.02) - 273.15;
         temp = MLX90614_readAmbientTempC();
         FLOAT_to_string(temp,buffer,2);
-        printf("tempAmb: %s\n",buffer);
+        //printf("tempAmb: %s\n",buffer);
+        //printf("{\"tAmb\":\"%s\",\"tobj\":\"%s\",\"tplaca\":\"%s\"}");//json completo, que enviare en partes
+        printf("{\"tAmb\":\"%s\",\"tobj\":\"",buffer);
         //printf("tempAmb: %3.2f\n",temp);
         //leerT = (float)MLX90614_ReadTemp(MLX90614_TOBJ1);
         //temp = (leerT * 0.02) - 273.15;
+        //__delay_ms(500);
         temp = MLX90614_readObjectTempC();
+        
         //printf("Tobj: %3.2f\t%d\t0x%x\n",temp,leerT,leerT);
         //printf("Tobj: %3.2f\n",temp);
         //temp = MLX90614_readEmissivity();
@@ -65,10 +69,11 @@ void main(void) {
         //leerReg = MLX90614_ReadReg(MLX90614_CONFIG);
         //printf("ConfigReg: %u\n",leerReg);
         FLOAT_to_string(temp,buffer,2);
-        printf("Tobj: %s\n",buffer);
+        //printf("Tobj: %s\n",buffer);
+        printf("%s\",\"tplaca\":\"",buffer);
         sensorPlaca();
         //printf("\n");
-        __delay_ms(500);
+        __delay_ms(1000);
     }
     //printf("Sensor MLX90614 NO Existe\n\n");
     
@@ -98,7 +103,8 @@ void sensorPlaca(){
         i2c_stop();
         
         low_byte = low_byte >> 6;
-        printf("La temperatura es: %d.%d*C\n\n", high_byte, low_byte *25 );
+        //printf("La temperatura es: %d.%d*C\n\n", high_byte, low_byte *25 );
+        printf("%d.%d\"}",high_byte, low_byte *25);
        
 }
 

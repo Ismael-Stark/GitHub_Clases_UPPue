@@ -20,3 +20,14 @@ D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\SerialVisu
 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.csproj.CoreCompileInputs.cache
 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.exe
 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.pdb
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\bin\Debug\Serial.exe.config
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\bin\Debug\Serial.exe
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\bin\Debug\Serial.pdb
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.csproj.AssemblyReference.cache
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.csproj.SuggestedBindingRedirects.cache
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.Form1.resources
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.Properties.Resources.resources
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.csproj.GenerateResource.cache
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.csproj.CoreCompileInputs.cache
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.exe
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\SerialVisualStudio\Serial\obj\Debug\Serial.pdb

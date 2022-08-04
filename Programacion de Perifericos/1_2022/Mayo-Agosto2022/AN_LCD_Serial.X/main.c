@@ -2,12 +2,9 @@
 #include "mcc_generated_files/mcc.h"
 #include "LCD_i2c.h"
 #include "MisVariables.h"
+#include <string.h> 
 
-uint8_t contador = 0, buffer[60];
-uint16_t lecturaADC = 0;
 
-float mV = (3.3/4095);
-float V, temperatura;
 
 
 /*
@@ -42,18 +39,19 @@ void main(void)
    
     while (1)
     {
-        lecturaADC =  ADC_GetSingleConversion(LM35);
+        lecturaADC = ADC_GetSingleConversion(LM35);
         V = mV*lecturaADC;
         temperatura = V / 0.01;
-        printf("%3.3f\n",temperatura);
+        printf("%3.2f\n",temperatura);
+        
+        
         LED2_Toggle();
        // serialRX = getch();//FUNCION BLOQUEANDO, PARA EVITAR ESTO, SE USA INTERRUPCIONES
         //printf("cont\n" );
-        if(serialRX == 'N'){
+        if(strstr(bufferRx,"LED1OFF")){
             LED_SetHigh();//led se apaga
-        }else if(serialRX == 'b'){
-            LED_Toggle();;//led se apaga
-        }else{
+        }
+        if (strstr(bufferRx,"LED1ON")){
              LED_SetLow();//led se enciende            
         }
         

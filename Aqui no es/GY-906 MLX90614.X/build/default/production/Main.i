@@ -20053,23 +20053,21 @@ void main(void) {
 
         temp = MLX90614_readAmbientTempC();
         FLOAT_to_string(temp,buffer,2);
-        printf("tempAmb: %s\n",buffer);
+
+
+        printf("{\"tAmb\":\"%s\",\"tobj\":\"",buffer);
+
 
 
 
         temp = MLX90614_readObjectTempC();
-
-
-
-
-
-
-
+# 71 "Main.c"
         FLOAT_to_string(temp,buffer,2);
-        printf("Tobj: %s\n",buffer);
+
+        printf("%s\",\"tplaca\":\"",buffer);
         sensorPlaca();
 
-        _delay((unsigned long)((500)*(32000000UL/4000.0)));
+        _delay((unsigned long)((1000)*(32000000UL/4000.0)));
     }
 
 
@@ -20099,7 +20097,8 @@ void sensorPlaca(){
         i2c_stop();
 
         low_byte = low_byte >> 6;
-        printf("La temperatura es: %d.%d*C\n\n", high_byte, low_byte *25 );
+
+        printf("%d.%d\"}",high_byte, low_byte *25);
 
 }
 

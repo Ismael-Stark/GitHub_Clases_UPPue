@@ -39664,12 +39664,14 @@ void PMD_Initialize(void);
 # 50 "mcc_generated_files/interrupt_manager.c" 2
 
 # 1 "mcc_generated_files/../MisVariables.h" 1
+# 13 "mcc_generated_files/../MisVariables.h"
+    char serialRX;
+    uint8_t bufferRx[10], contadorRx=0;
+    uint8_t contador = 0, buffer[60];
+    uint16_t lecturaADC = 0;
 
-
-
-
-
-char serialRX;
+float mV = (3.3/4095);
+float V, temperatura;
 # 51 "mcc_generated_files/interrupt_manager.c" 2
 
 
@@ -39690,6 +39692,14 @@ void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
     {
         UART1_RxInterruptHandler();
         serialRX = getch();
+        bufferRx[contadorRx] = serialRX;
+        if(serialRX == '\n'){
+            bufferRx[contadorRx] = '\0';
+            contadorRx = 0;
+        }else{
+            contadorRx++;
+        }
+
     }
     else
     {

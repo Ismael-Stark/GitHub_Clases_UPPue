@@ -1715,352 +1715,352 @@ Version 4.0 HI-TECH Software Intermediate Code
 "54
 [; ;Main.c: 54:         FLOAT_to_string(temp,buffer,2);
 [e ( _FLOAT_to_string (3 , , -> _temp `d -> &U _buffer `*uc -> -> 2 `i `uc ]
-"55
-[; ;Main.c: 55:         printf("tempAmb: %s\n",buffer);
+"57
+[; ;Main.c: 57:         printf("{\"tAmb\":\"%s\",\"tobj\":\"",buffer);
 [e ( _printf , (. :s 1C &U _buffer ]
-"59
-[; ;Main.c: 59:         temp = MLX90614_readObjectTempC();
+"62
+[; ;Main.c: 62:         temp = MLX90614_readObjectTempC();
 [e = _temp ( _MLX90614_readObjectTempC ..  ]
-"67
-[; ;Main.c: 67:         FLOAT_to_string(temp,buffer,2);
-[e ( _FLOAT_to_string (3 , , -> _temp `d -> &U _buffer `*uc -> -> 2 `i `uc ]
-"68
-[; ;Main.c: 68:         printf("Tobj: %s\n",buffer);
-[e ( _printf , (. :s 2C &U _buffer ]
-"69
-[; ;Main.c: 69:         sensorPlaca();
-[e ( _sensorPlaca ..  ]
 "71
-[; ;Main.c: 71:         _delay((unsigned long)((500)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"72
-[; ;Main.c: 72:     }
+[; ;Main.c: 71:         FLOAT_to_string(temp,buffer,2);
+[e ( _FLOAT_to_string (3 , , -> _temp `d -> &U _buffer `*uc -> -> 2 `i `uc ]
+"73
+[; ;Main.c: 73:         printf("%s\",\"tplaca\":\"",buffer);
+[e ( _printf , (. :s 2C &U _buffer ]
+"74
+[; ;Main.c: 74:         sensorPlaca();
+[e ( _sensorPlaca ..  ]
+"76
+[; ;Main.c: 76:         _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"77
+[; ;Main.c: 77:     }
 }
 [e :U 1567 ]
 [e $U 1568  ]
 [e :U 1569 ]
-"75
-[; ;Main.c: 75:     while(1){
+"80
+[; ;Main.c: 80:     while(1){
 [e :U 1571 ]
 {
-"77
-[; ;Main.c: 77:         _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+"82
+[; ;Main.c: 82:         _delay((unsigned long)((1000)*(32000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"79
-[; ;Main.c: 79:     }
+"84
+[; ;Main.c: 84:     }
 }
 [e :U 1570 ]
 [e $U 1571  ]
 [e :U 1572 ]
-"80
-[; ;Main.c: 80:     return;
+"85
+[; ;Main.c: 85:     return;
 [e $UE 1566  ]
-"81
-[; ;Main.c: 81: }
+"86
+[; ;Main.c: 86: }
 [e :UE 1566 ]
 }
-"83
-[; ;Main.c: 83: void sensorPlaca(){
+"88
+[; ;Main.c: 88: void sensorPlaca(){
 [v _sensorPlaca `(v ~T0 @X0 1 ef ]
 {
 [e :U _sensorPlaca ]
 [f ]
-"84
-[; ;Main.c: 84:     i2c_start();
-[e ( _i2c_start ..  ]
-"85
-[; ;Main.c: 85:         i2c_write(0b01110000);
-[e ( _i2c_write (1 -> -> 112 `i `uc ]
-"86
-[; ;Main.c: 86:         i2c_write(0);
-[e ( _i2c_write (1 -> -> 0 `i `uc ]
-"87
-[; ;Main.c: 87:         i2c_restart();
-[e ( _i2c_restart ..  ]
-"88
-[; ;Main.c: 88:         i2c_write(0b01110001);
-[e ( _i2c_write (1 -> -> 113 `i `uc ]
 "89
-[; ;Main.c: 89:         high_byte = (int8_t)i2c_read(0);
-[e = _high_byte -> ( _i2c_read (1 -> -> 0 `i `a `c ]
-"90
-[; ;Main.c: 90:         i2c_stop();
-[e ( _i2c_stop ..  ]
-"92
-[; ;Main.c: 92:         i2c_start();
+[; ;Main.c: 89:     i2c_start();
 [e ( _i2c_start ..  ]
-"93
-[; ;Main.c: 93:         i2c_write(0b01110000);
+"90
+[; ;Main.c: 90:         i2c_write(0b01110000);
 [e ( _i2c_write (1 -> -> 112 `i `uc ]
-"94
-[; ;Main.c: 94:         i2c_write(2);
-[e ( _i2c_write (1 -> -> 2 `i `uc ]
-"95
-[; ;Main.c: 95:         i2c_restart();
+"91
+[; ;Main.c: 91:         i2c_write(0);
+[e ( _i2c_write (1 -> -> 0 `i `uc ]
+"92
+[; ;Main.c: 92:         i2c_restart();
 [e ( _i2c_restart ..  ]
-"96
-[; ;Main.c: 96:         i2c_write(0b01110001);
+"93
+[; ;Main.c: 93:         i2c_write(0b01110001);
 [e ( _i2c_write (1 -> -> 113 `i `uc ]
-"97
-[; ;Main.c: 97:         low_byte = i2c_read(0);
-[e = _low_byte ( _i2c_read (1 -> -> 0 `i `a ]
-"98
-[; ;Main.c: 98:         i2c_stop();
+"94
+[; ;Main.c: 94:         high_byte = (int8_t)i2c_read(0);
+[e = _high_byte -> ( _i2c_read (1 -> -> 0 `i `a `c ]
+"95
+[; ;Main.c: 95:         i2c_stop();
 [e ( _i2c_stop ..  ]
+"97
+[; ;Main.c: 97:         i2c_start();
+[e ( _i2c_start ..  ]
+"98
+[; ;Main.c: 98:         i2c_write(0b01110000);
+[e ( _i2c_write (1 -> -> 112 `i `uc ]
+"99
+[; ;Main.c: 99:         i2c_write(2);
+[e ( _i2c_write (1 -> -> 2 `i `uc ]
 "100
-[; ;Main.c: 100:         low_byte = low_byte >> 6;
-[e = _low_byte -> >> -> _low_byte `i -> 6 `i `uc ]
+[; ;Main.c: 100:         i2c_restart();
+[e ( _i2c_restart ..  ]
 "101
-[; ;Main.c: 101:         printf("La temperatura es: %d.%d*C\n\n", high_byte, low_byte *25 );
-[e ( _printf , , (. :s 3C -> _high_byte `i * -> _low_byte `i -> 25 `i ]
+[; ;Main.c: 101:         i2c_write(0b01110001);
+[e ( _i2c_write (1 -> -> 113 `i `uc ]
+"102
+[; ;Main.c: 102:         low_byte = i2c_read(0);
+[e = _low_byte ( _i2c_read (1 -> -> 0 `i `a ]
 "103
-[; ;Main.c: 103: }
+[; ;Main.c: 103:         i2c_stop();
+[e ( _i2c_stop ..  ]
+"105
+[; ;Main.c: 105:         low_byte = low_byte >> 6;
+[e = _low_byte -> >> -> _low_byte `i -> 6 `i `uc ]
+"107
+[; ;Main.c: 107:         printf("%d.%d\"}",high_byte, low_byte *25);
+[e ( _printf , , (. :s 3C -> _high_byte `i * -> _low_byte `i -> 25 `i ]
+"109
+[; ;Main.c: 109: }
 [e :UE 1573 ]
 }
-"105
-[; ;Main.c: 105: void port_init(){
+"111
+[; ;Main.c: 111: void port_init(){
 [v _port_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_init ]
 [f ]
-"107
-[; ;Main.c: 107:     ANSELA = 0;
-[e = _ANSELA -> -> 0 `i `uc ]
-"108
-[; ;Main.c: 108:     LATA=0;
-[e = _LATA -> -> 0 `i `uc ]
-"109
-[; ;Main.c: 109:     PORTA =0;
-[e = _PORTA -> -> 0 `i `uc ]
-"110
-[; ;Main.c: 110:     TRISA = 0b11110000;
-[e = _TRISA -> -> 240 `i `uc ]
 "113
-[; ;Main.c: 113:     ANSELA = ANSELA | (1<<4);
-[e = _ANSELA -> | -> _ANSELA `i << -> 1 `i -> 4 `i `uc ]
+[; ;Main.c: 113:     ANSELA = 0;
+[e = _ANSELA -> -> 0 `i `uc ]
+"114
+[; ;Main.c: 114:     LATA=0;
+[e = _LATA -> -> 0 `i `uc ]
 "115
-[; ;Main.c: 115:     LATB=0;
-[e = _LATB -> -> 0 `i `uc ]
+[; ;Main.c: 115:     PORTA =0;
+[e = _PORTA -> -> 0 `i `uc ]
 "116
-[; ;Main.c: 116:     PORTB =0;
+[; ;Main.c: 116:     TRISA = 0b11110000;
+[e = _TRISA -> -> 240 `i `uc ]
+"119
+[; ;Main.c: 119:     ANSELA = ANSELA | (1<<4);
+[e = _ANSELA -> | -> _ANSELA `i << -> 1 `i -> 4 `i `uc ]
+"121
+[; ;Main.c: 121:     LATB=0;
+[e = _LATB -> -> 0 `i `uc ]
+"122
+[; ;Main.c: 122:     PORTB =0;
 [e = _PORTB -> -> 0 `i `uc ]
-"117
-[; ;Main.c: 117:     TRISB = TRISA | (1<<0);
+"123
+[; ;Main.c: 123:     TRISB = TRISA | (1<<0);
 [e = _TRISB -> | -> _TRISA `i << -> 1 `i -> 0 `i `uc ]
-"118
-[; ;Main.c: 118:     ANSELB = ANSELB | (1<<0);
-[e = _ANSELB -> | -> _ANSELB `i << -> 1 `i -> 0 `i `uc ]
 "124
-[; ;Main.c: 124: }
+[; ;Main.c: 124:     ANSELB = ANSELB | (1<<0);
+[e = _ANSELB -> | -> _ANSELB `i << -> 1 `i -> 0 `i `uc ]
+"130
+[; ;Main.c: 130: }
 [e :UE 1574 ]
 }
-"126
-[; ;Main.c: 126: void FLOAT_to_string(double number, char *text, char decimal)
+"132
+[; ;Main.c: 132: void FLOAT_to_string(double number, char *text, char decimal)
 [v _FLOAT_to_string `(v ~T0 @X0 1 ef3`d`*uc`uc ]
-"127
-[; ;Main.c: 127: {
+"133
+[; ;Main.c: 133: {
 {
 [e :U _FLOAT_to_string ]
-"126
-[; ;Main.c: 126: void FLOAT_to_string(double number, char *text, char decimal)
+"132
+[; ;Main.c: 132: void FLOAT_to_string(double number, char *text, char decimal)
 [v _number `d ~T0 @X0 1 r1 ]
 [v _text `*uc ~T0 @X0 1 r2 ]
 [v _decimal `uc ~T0 @X0 1 r3 ]
-"127
-[; ;Main.c: 127: {
+"133
+[; ;Main.c: 133: {
 [f ]
-"128
-[; ;Main.c: 128:     int largo_entera, largo_n, cont_for, tempo_int;
+"134
+[; ;Main.c: 134:     int largo_entera, largo_n, cont_for, tempo_int;
 [v _largo_entera `i ~T0 @X0 1 a ]
 [v _largo_n `i ~T0 @X0 1 a ]
 [v _cont_for `i ~T0 @X0 1 a ]
 [v _tempo_int `i ~T0 @X0 1 a ]
-"129
-[; ;Main.c: 129:     double tempo_float;
-[v _tempo_float `d ~T0 @X0 1 a ]
-"131
-[; ;Main.c: 131:     largo_n = decimal + 1;
-[e = _largo_n + -> _decimal `i -> 1 `i ]
-"132
-[; ;Main.c: 132:     largo_entera = 0;
-[e = _largo_entera -> 0 `i ]
-"134
-[; ;Main.c: 134:     if (number < 0)
-[e $ ! < _number -> -> 0 `i `d 1576  ]
 "135
-[; ;Main.c: 135:     {
-{
-"136
-[; ;Main.c: 136:         *text++ = '-';
-[e = *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x -> -> 45 `ui `uc ]
+[; ;Main.c: 135:     double tempo_float;
+[v _tempo_float `d ~T0 @X0 1 a ]
 "137
-[; ;Main.c: 137:         number = -number;
-[e = _number -U _number ]
+[; ;Main.c: 137:     largo_n = decimal + 1;
+[e = _largo_n + -> _decimal `i -> 1 `i ]
 "138
-[; ;Main.c: 138:     }
-}
-[e :U 1576 ]
+[; ;Main.c: 138:     largo_entera = 0;
+[e = _largo_entera -> 0 `i ]
 "140
-[; ;Main.c: 140:     if (number > 0.0) while (number < 1.0)
-[e $ ! > _number .0.0 1577  ]
-[e $U 1578  ]
-[e :U 1579 ]
+[; ;Main.c: 140:     if (number < 0)
+[e $ ! < _number -> -> 0 `i `d 1576  ]
 "141
 [; ;Main.c: 141:     {
 {
 "142
-[; ;Main.c: 142:         number =number* 10.00;
-[e = _number * _number .10.00 ]
+[; ;Main.c: 142:         *text++ = '-';
+[e = *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x -> -> 45 `ui `uc ]
 "143
-[; ;Main.c: 143:         largo_entera--;
-[e -- _largo_entera -> 1 `i ]
+[; ;Main.c: 143:         number = -number;
+[e = _number -U _number ]
 "144
 [; ;Main.c: 144:     }
+}
+[e :U 1576 ]
+"146
+[; ;Main.c: 146:     if (number > 0.0) while (number < 1.0)
+[e $ ! > _number .0.0 1577  ]
+[e $U 1578  ]
+[e :U 1579 ]
+"147
+[; ;Main.c: 147:     {
+{
+"148
+[; ;Main.c: 148:         number =number* 10.00;
+[e = _number * _number .10.00 ]
+"149
+[; ;Main.c: 149:         largo_entera--;
+[e -- _largo_entera -> 1 `i ]
+"150
+[; ;Main.c: 150:     }
 }
 [e :U 1578 ]
-"140
-[; ;Main.c: 140:     if (number > 0.0) while (number < 1.0)
+"146
+[; ;Main.c: 146:     if (number > 0.0) while (number < 1.0)
 [e $ < _number .1.0 1579  ]
 [e :U 1580 ]
-"144
-[; ;Main.c: 144:     }
+"150
+[; ;Main.c: 150:     }
 [e :U 1577 ]
-"147
-[; ;Main.c: 147:     while (number >= 10.0)
+"153
+[; ;Main.c: 153:     while (number >= 10.0)
 [e $U 1581  ]
 [e :U 1582 ]
-"148
-[; ;Main.c: 148:     {
+"154
+[; ;Main.c: 154:     {
 {
-"149
-[; ;Main.c: 149:         number = number/10.0;
+"155
+[; ;Main.c: 155:         number = number/10.0;
 [e = _number / _number .10.0 ]
-"150
-[; ;Main.c: 150:         largo_entera++;
+"156
+[; ;Main.c: 156:         largo_entera++;
 [e ++ _largo_entera -> 1 `i ]
-"151
-[; ;Main.c: 151:     }
+"157
+[; ;Main.c: 157:     }
 }
 [e :U 1581 ]
-"147
-[; ;Main.c: 147:     while (number >= 10.0)
+"153
+[; ;Main.c: 153:     while (number >= 10.0)
 [e $ >= _number .10.0 1582  ]
 [e :U 1583 ]
-"152
-[; ;Main.c: 152:     largo_n = largo_n+largo_entera;
+"158
+[; ;Main.c: 158:     largo_n = largo_n+largo_entera;
 [e = _largo_n + _largo_n _largo_entera ]
-"157
-[; ;Main.c: 157:     for (tempo_float = cont_for = 1; cont_for < largo_n; cont_for++)
+"163
+[; ;Main.c: 163:     for (tempo_float = cont_for = 1; cont_for < largo_n; cont_for++)
 {
 [e = _tempo_float -> = _cont_for -> 1 `i `d ]
 [e $U 1587  ]
 [e :U 1584 ]
-"158
-[; ;Main.c: 158:         tempo_float = tempo_float/10.0;
+"164
+[; ;Main.c: 164:         tempo_float = tempo_float/10.0;
 [e = _tempo_float / _tempo_float .10.0 ]
 [e ++ _cont_for -> 1 `i ]
 [e :U 1587 ]
 [e $ < _cont_for _largo_n 1584  ]
 [e :U 1585 ]
 }
-"160
-[; ;Main.c: 160:     number += tempo_float/2.0;
+"166
+[; ;Main.c: 166:     number += tempo_float/2.0;
 [e =+ _number / _tempo_float .2.0 ]
-"161
-[; ;Main.c: 161:     if (number >= 10.0)
+"167
+[; ;Main.c: 167:     if (number >= 10.0)
 [e $ ! >= _number .10.0 1588  ]
-"162
-[; ;Main.c: 162:     {
+"168
+[; ;Main.c: 168:     {
 {
-"163
-[; ;Main.c: 163:         number = 1.0;
+"169
+[; ;Main.c: 169:         number = 1.0;
 [e = _number .1.0 ]
-"164
-[; ;Main.c: 164:         largo_entera++;
+"170
+[; ;Main.c: 170:         largo_entera++;
 [e ++ _largo_entera -> 1 `i ]
-"165
-[; ;Main.c: 165:     }
+"171
+[; ;Main.c: 171:     }
 }
 [e :U 1588 ]
-"166
-[; ;Main.c: 166:     if (largo_entera<0)
+"172
+[; ;Main.c: 172:     if (largo_entera<0)
 [e $ ! < _largo_entera -> 0 `i 1589  ]
-"167
-[; ;Main.c: 167:     {
+"173
+[; ;Main.c: 173:     {
 {
-"168
-[; ;Main.c: 168:         *text++ = '0'; *text++ = '.';
+"174
+[; ;Main.c: 174:         *text++ = '0'; *text++ = '.';
 [e = *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x -> -> 48 `ui `uc ]
 [e = *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x -> -> 46 `ui `uc ]
-"169
-[; ;Main.c: 169:         if (largo_n < 0)
+"175
+[; ;Main.c: 175:         if (largo_n < 0)
 [e $ ! < _largo_n -> 0 `i 1590  ]
-"170
-[; ;Main.c: 170:             largo_entera = largo_entera-largo_n;
+"176
+[; ;Main.c: 176:             largo_entera = largo_entera-largo_n;
 [e = _largo_entera - _largo_entera _largo_n ]
 [e :U 1590 ]
-"171
-[; ;Main.c: 171:         for (cont_for = -1; cont_for > largo_entera; cont_for--)
+"177
+[; ;Main.c: 177:         for (cont_for = -1; cont_for > largo_entera; cont_for--)
 {
 [e = _cont_for -U -> 1 `i ]
 [e $U 1594  ]
 [e :U 1591 ]
-"172
-[; ;Main.c: 172:             *text++ = '0';
+"178
+[; ;Main.c: 178:             *text++ = '0';
 [e = *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x -> -> 48 `ui `uc ]
 [e -- _cont_for -> 1 `i ]
 [e :U 1594 ]
 [e $ > _cont_for _largo_entera 1591  ]
 [e :U 1592 ]
 }
-"173
-[; ;Main.c: 173:     }
+"179
+[; ;Main.c: 179:     }
 }
 [e :U 1589 ]
-"174
-[; ;Main.c: 174:     for (cont_for=0; cont_for < largo_n; cont_for++)
+"180
+[; ;Main.c: 180:     for (cont_for=0; cont_for < largo_n; cont_for++)
 {
 [e = _cont_for -> 0 `i ]
 [e $U 1598  ]
 [e :U 1595 ]
-"175
-[; ;Main.c: 175:     {
+"181
+[; ;Main.c: 181:     {
 {
-"176
-[; ;Main.c: 176:         tempo_int = (int)number;
+"182
+[; ;Main.c: 182:         tempo_int = (int)number;
 [e = _tempo_int -> _number `i ]
-"177
-[; ;Main.c: 177:         *text++ = (char)tempo_int + 48;
+"183
+[; ;Main.c: 183:         *text++ = (char)tempo_int + 48;
 [e = *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x -> + -> -> _tempo_int `uc `i -> 48 `i `uc ]
-"178
-[; ;Main.c: 178:         if (cont_for == largo_entera )
+"184
+[; ;Main.c: 184:         if (cont_for == largo_entera )
 [e $ ! == _cont_for _largo_entera 1599  ]
-"179
-[; ;Main.c: 179:             *text++ = '.';
+"185
+[; ;Main.c: 185:             *text++ = '.';
 [e = *U ++ _text * -> -> 1 `i `x -> -> # *U _text `i `x -> -> 46 `ui `uc ]
 [e :U 1599 ]
-"180
-[; ;Main.c: 180:         number -= (tempo_float=tempo_int);
+"186
+[; ;Main.c: 186:         number -= (tempo_float=tempo_int);
 [e =- _number = _tempo_float -> _tempo_int `d ]
-"181
-[; ;Main.c: 181:         number = number *10.0;
+"187
+[; ;Main.c: 187:         number = number *10.0;
 [e = _number * _number .10.0 ]
-"182
-[; ;Main.c: 182:     }
+"188
+[; ;Main.c: 188:     }
 }
 [e ++ _cont_for -> 1 `i ]
 [e :U 1598 ]
 [e $ < _cont_for _largo_n 1595  ]
 [e :U 1596 ]
 }
-"183
-[; ;Main.c: 183:     *text =0;
+"189
+[; ;Main.c: 189:     *text =0;
 [e = *U _text -> -> 0 `i `uc ]
-"184
-[; ;Main.c: 184: }
+"190
+[; ;Main.c: 190: }
 [e :UE 1575 ]
 }
 [p f _printf 8650880 ]
-[a 2C 84 111 98 106 58 32 37 115 10 0 ]
-[a 1C 116 101 109 112 65 109 98 58 32 37 115 10 0 ]
-[a 3C 76 97 32 116 101 109 112 101 114 97 116 117 114 97 32 101 115 58 32 37 100 46 37 100 42 67 10 10 0 ]
+[a 3C 37 100 46 37 100 34 125 0 ]
+[a 1C 123 34 116 65 109 98 34 58 34 37 115 34 44 34 116 111 98 106 34 58 34 0 ]
+[a 2C 37 115 34 44 34 116 112 108 97 99 97 34 58 34 0 ]

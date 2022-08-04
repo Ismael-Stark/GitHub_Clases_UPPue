@@ -3674,9 +3674,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 "536
 [; ;mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
 [v _UART1_TxInterruptHandler `*F23495 ~T0 @X0 1 e ]
-"6 mcc_generated_files/../MisVariables.h
-[; ;mcc_generated_files/../MisVariables.h: 6: char serialRX;
+"13 mcc_generated_files/../MisVariables.h
+[; ;mcc_generated_files/../MisVariables.h: 13:     char serialRX;
 [v _serialRX `uc ~T0 @X0 1 e ]
+"14
+[; ;mcc_generated_files/../MisVariables.h: 14:     uint8_t bufferRx[10], contadorRx=0;
+[v _bufferRx `uc ~T0 @X0 -> 10 `i e ]
+[v _contadorRx `uc ~T0 @X0 1 e ]
+[i _contadorRx
+-> -> 0 `i `uc
+]
+"15
+[; ;mcc_generated_files/../MisVariables.h: 15:     uint8_t contador = 0, buffer[60];
+[v _contador `uc ~T0 @X0 1 e ]
+[i _contador
+-> -> 0 `i `uc
+]
+[v _buffer `uc ~T0 @X0 -> 60 `i e ]
+"16
+[; ;mcc_generated_files/../MisVariables.h: 16:     uint16_t lecturaADC = 0;
+[v _lecturaADC `us ~T0 @X0 1 e ]
+[i _lecturaADC
+-> -> 0 `i `us
+]
+"18
+[; ;mcc_generated_files/../MisVariables.h: 18: float mV = (3.3/4095);
+[v _mV `f ~T0 @X0 1 e ]
+[i _mV
+-> / .3.3 -> -> 4095 `i `d `f
+]
+"19
+[; ;mcc_generated_files/../MisVariables.h: 19: float V, temperatura;
+[v _V `f ~T0 @X0 1 e ]
+[v _temperatura `f ~T0 @X0 1 e ]
 "53 mcc_generated_files/interrupt_manager.c
 [; ;mcc_generated_files/interrupt_manager.c: 53: void INTERRUPT_Initialize (void)
 [v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
@@ -3728,21 +3758,47 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/interrupt_manager.c: 69:         serialRX = getch();
 [e = _serialRX ( _getch ..  ]
 "70
-[; ;mcc_generated_files/interrupt_manager.c: 70:     }
-}
-[e $U 3263  ]
+[; ;mcc_generated_files/interrupt_manager.c: 70:         bufferRx[contadorRx] = serialRX;
+[e = *U + &U _bufferRx * -> _contadorRx `ux -> -> # *U &U _bufferRx `ui `ux -> _serialRX `uc ]
 "71
-[; ;mcc_generated_files/interrupt_manager.c: 71:     else
-[e :U 3262 ]
-"72
-[; ;mcc_generated_files/interrupt_manager.c: 72:     {
+[; ;mcc_generated_files/interrupt_manager.c: 71:         if(serialRX == '\n'){
+[e $ ! == -> _serialRX `ui -> 10 `ui 3263  ]
 {
+"72
+[; ;mcc_generated_files/interrupt_manager.c: 72:             bufferRx[contadorRx] = '\0';
+[e = *U + &U _bufferRx * -> _contadorRx `ux -> -> # *U &U _bufferRx `ui `ux -> -> 0 `ui `uc ]
+"73
+[; ;mcc_generated_files/interrupt_manager.c: 73:             contadorRx = 0;
+[e = _contadorRx -> -> 0 `i `uc ]
 "74
-[; ;mcc_generated_files/interrupt_manager.c: 74:     }
+[; ;mcc_generated_files/interrupt_manager.c: 74:         }else{
 }
+[e $U 3264  ]
 [e :U 3263 ]
-[e :U 3261 ]
+{
 "75
-[; ;mcc_generated_files/interrupt_manager.c: 75: }
+[; ;mcc_generated_files/interrupt_manager.c: 75:             contadorRx++;
+[e ++ _contadorRx -> -> 1 `i `uc ]
+"76
+[; ;mcc_generated_files/interrupt_manager.c: 76:         }
+}
+[e :U 3264 ]
+"78
+[; ;mcc_generated_files/interrupt_manager.c: 78:     }
+}
+[e $U 3265  ]
+"79
+[; ;mcc_generated_files/interrupt_manager.c: 79:     else
+[e :U 3262 ]
+"80
+[; ;mcc_generated_files/interrupt_manager.c: 80:     {
+{
+"82
+[; ;mcc_generated_files/interrupt_manager.c: 82:     }
+}
+[e :U 3265 ]
+[e :U 3261 ]
+"83
+[; ;mcc_generated_files/interrupt_manager.c: 83: }
 [e :UE 3259 ]
 }

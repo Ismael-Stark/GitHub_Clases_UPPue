@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 18F57Q84 ]
 [d frameptr 1249 ]
-"67 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/examples/i2c1_master_example.c
+"67 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/examples/i2c1_master_example.c
 [e E355 . `uc
 I2C1_NOERR 0
 I2C1_BUSY 1
@@ -17,7 +17,7 @@ I2C1_RESTART_WRITE 3
 I2C1_CONTINUE 4
 I2C1_RESET_LINK 5
 ]
-"159 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
+"159 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
 [e E23252 . `uc
 I2C1_IDLE 0
 I2C1_SEND_ADR_READ 1
@@ -61,7 +61,7 @@ I2C1_DATA_NACK 3
 I2C1_TIMEOUT 4
 I2C1_NULL 5
 ]
-"194 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
+"194 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
 [e E22873 . `uc
 CONTEXT_1 0
 ]
@@ -76,7 +76,7 @@ channel_DAC1 61
 channel_FVR_Buffer1 62
 channel_FVR_Buffer2 63
 ]
-"88 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/tmr2.c
+"88 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/tmr2.c
 [e E22862 . `uc
 TMR2_ROP_STARTS_TMRON 0
 TMR2_ROP_STARTS_TMRON_ERSHIGH 1
@@ -140,7 +140,7 @@ TMR2_UART5_RX_EDGE 34
 TMR2_UART5_TX_EDGE 35
 TMR2_RESERVED_4 36
 ]
-"45 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+"42 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
 [e E23269 . `uc
 POT1 1
 POT2 2
@@ -207,12 +207,16 @@ channel_FVR_Buffer2 63
 [v ___fldiv __fldiv `(d  1 e 4 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strchr.c
+[v _strchr strchr `(*.39uc  1 e 2 0 ]
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strcpy.c
 [v _strcpy strcpy `(*.39uc  1 e 2 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
 [v _strncmp strncmp `(i  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strstr.c
+[v _strstr strstr `(*.39uc  1 e 2 0 ]
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
 [v _tolower tolower `(i  1 e 2 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
@@ -223,7 +227,7 @@ channel_FVR_Buffer2 63
 [v ___omul __omul `(uo  1 e 8 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
-"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\LCD_i2c.c
+"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\LCD_i2c.c
 [v _Write_PCF Write_PCF `(v  1 e 1 0 ]
 "13
 [v _Send_D7_D4 Send_D7_D4 `(v  1 e 1 0 ]
@@ -231,9 +235,9 @@ channel_FVR_Buffer2 63
 [v _lcd_send_byte lcd_send_byte `(v  1 e 1 0 ]
 "74
 [v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
-"16 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+"13 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"65 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
+"65 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 "246
 [v _ADC_GetSingleConversion ADC_GetSingleConversion `(us  1 e 2 0 ]
@@ -249,7 +253,7 @@ channel_FVR_Buffer2 63
 [v _ADC_DefaultContext1Threshold_ISR ADC_DefaultContext1Threshold_ISR `(v  1 s 1 ADC_DefaultContext1Threshold_ISR ]
 "446
 [v _ADC_DefaultActiveClockTuning_ISR ADC_DefaultActiveClockTuning_ISR `(v  1 s 1 ADC_DefaultActiveClockTuning_ISR ]
-"91 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/examples/i2c1_master_example.c
+"91 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/examples/i2c1_master_example.c
 [v _I2C1_Write1ByteRegister I2C1_Write1ByteRegister `(v  1 e 1 0 ]
 "142
 [v _rd1RegCompleteHandler rd1RegCompleteHandler `(E360  1 s 1 rd1RegCompleteHandler ]
@@ -261,7 +265,7 @@ channel_FVR_Buffer2 63
 [v _wr2RegCompleteHandler wr2RegCompleteHandler `(E360  1 s 1 wr2RegCompleteHandler ]
 "170
 [v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E360  1 s 1 rdBlkRegCompleteHandler ]
-"183 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
+"183 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 "207
 [v _I2C1_Open I2C1_Open `(E355  1 e 1 0 ]
@@ -381,23 +385,23 @@ channel_FVR_Buffer2 63
 [v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
 "816
 [v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
-"53 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/interrupt_manager.c
+"53 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 "59
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
-"50 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
+"50 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 "63
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 "77
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
-"55 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pin_manager.c
+"55 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-"64 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pwm1.c
+"64 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pwm1.c
 [v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
 "82
 [v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
-"62 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/tmr2.c
+"62 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 "100
 [v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
@@ -409,7 +413,7 @@ channel_FVR_Buffer2 63
 [v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
 "147
 [v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
-"86 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
+"86 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 "179
 [v _UART1_Read UART1_Read `(uc  1 e 1 0 ]
@@ -441,17 +445,25 @@ channel_FVR_Buffer2 63
 [v _UART1_SetRxInterruptHandler UART1_SetRxInterruptHandler `(v  1 e 1 0 ]
 "318
 [v _UART1_SetTxInterruptHandler UART1_SetTxInterruptHandler `(v  1 e 1 0 ]
-"71 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X/LCD_i2c.h
+"71 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X/LCD_i2c.h
 [v _g_LcdX g_LcdX `uc  1 e 1 0 ]
 [v _g_LcdY g_LcdY `uc  1 e 1 0 ]
 "77
 [v _LCD_INIT_STRING LCD_INIT_STRING `C[4]uc  1 e 4 0 ]
-"518 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X/mcc_generated_files/uart1.h
+"518 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X/mcc_generated_files/uart1.h
 [v _UART1_RxInterruptHandler UART1_RxInterruptHandler `*.38(v  1 e 3 0 ]
 "536
 [v _UART1_TxInterruptHandler UART1_TxInterruptHandler `*.38(v  1 e 3 0 ]
-"6 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X/MisVariables.h
+"13 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X/MisVariables.h
 [v _serialRX serialRX `uc  1 e 1 0 ]
+"14
+[v _bufferRx bufferRx `[10]uc  1 e 10 0 ]
+[v _contadorRx contadorRx `uc  1 e 1 0 ]
+"16
+[v _lecturaADC lecturaADC `us  1 e 2 0 ]
+"19
+[v _V V `f  1 e 4 0 ]
+[v _temperatura temperatura `f  1 e 4 0 ]
 "1339 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
 [v _PMD0 PMD0 `VEuc  1 e 1 @96 ]
 [s S1070 . 1 `uc 1 U1RXIE 1 0 :1:0 
@@ -566,16 +578,16 @@ channel_FVR_Buffer2 63
 [v _LATD LATD `VEuc  1 e 1 @1217 ]
 "3305
 [v _LATE LATE `VEuc  1 e 1 @1218 ]
-[s S2356 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S2364 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "3317
-[u S2360 . 1 `S2356 1 . 1 0 ]
-[v _LATEbits LATEbits `VES2360  1 e 1 @1218 ]
+[u S2368 . 1 `S2364 1 . 1 0 ]
+[v _LATEbits LATEbits `VES2368  1 e 1 @1218 ]
 "3337
 [v _LATF LATF `VEuc  1 e 1 @1219 ]
-[s S2367 . 1 `uc 1 LATF0 1 0 :1:0 
+[s S2381 . 1 `uc 1 LATF0 1 0 :1:0 
 `uc 1 LATF1 1 0 :1:1 
 `uc 1 LATF2 1 0 :1:2 
 `uc 1 LATF3 1 0 :1:3 
@@ -585,8 +597,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATF7 1 0 :1:7 
 ]
 "3354
-[u S2376 . 1 `S2367 1 . 1 0 ]
-[v _LATFbits LATFbits `VES2376  1 e 1 @1219 ]
+[u S2390 . 1 `S2381 1 . 1 0 ]
+[v _LATFbits LATFbits `VES2390  1 e 1 @1219 ]
 "3399
 [v _TRISA TRISA `VEuc  1 e 1 @1222 ]
 "3461
@@ -1307,18 +1319,13 @@ channel_FVR_Buffer2 63
 [v _dbuf dbuf `[80]uc  1 s 80 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"7 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
-[v _lecturaADC lecturaADC `us  1 e 2 0 ]
-"10
-[v _V V `f  1 e 4 0 ]
-[v _temperatura temperatura `f  1 e 4 0 ]
-"56 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
+"56 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
 [v _ADC_ConversionComplete_ISR ADC_ConversionComplete_ISR `*.38(v  1 s 3 ADC_ConversionComplete_ISR ]
 "57
 [v _ADC_Context1Thereshld_ISR ADC_Context1Thereshld_ISR `*.38(v  1 s 3 ADC_Context1Thereshld_ISR ]
 "58
 [v _ADC_ActiveClockTuning_ISR ADC_ActiveClockTuning_ISR `*.38(v  1 s 3 ADC_ActiveClockTuning_ISR ]
-"159 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
+"159 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `C[19]*.38(E23252  1 e 57 0 ]
 [s S320 . 42 `[6]*.38(E360 1 callbackTable 18 0 `[6]*.39v 1 callbackPayload 12 18 `us 1 time_out 2 30 `us 1 time_out_value 2 32 `uc 1 address 1 34 `*.39uc 1 data_ptr 2 35 `ui 1 data_length 2 37 `E23252 1 state 1 39 `E355 1 error 1 40 `uc 1 addressNackCheck 1 41 :2:0 
 `uc 1 busy 1 41 :1:2 
@@ -1327,7 +1334,7 @@ channel_FVR_Buffer2 63
 ]
 "181
 [v _I2C1_Status I2C1_Status `S320  1 e 42 0 ]
-"63 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
+"63 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
 [v _uart1TxHead uart1TxHead `VEuc  1 s 1 uart1TxHead ]
 "64
 [v _uart1TxTail uart1TxTail `VEuc  1 s 1 uart1TxTail ]
@@ -1359,10 +1366,27 @@ channel_FVR_Buffer2 63
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.38(v  1 e 3 0 ]
 "80
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.38(v  1 e 3 0 ]
-"16 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+"13 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"63
+"61
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strstr.c
+[v _strstr strstr `(*.39uc  1 e 2 0 ]
+{
+"7
+[v strstr@nl nl `ui  1 a 2 16 ]
+"4
+[v strstr@h h `*.39Cuc  1 p 2 12 ]
+[v strstr@n n `*.32Cuc  1 p 2 14 ]
+"15
+} 0
+"3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strchr.c
+[v _strchr strchr `(*.39uc  1 e 2 0 ]
+{
+[v strchr@s s `*.39Cuc  1 p 2 1 ]
+[v strchr@c c `i  1 p 2 3 ]
+"11
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
@@ -1378,9 +1402,9 @@ channel_FVR_Buffer2 63
 {
 "1393
 [v vfprintf@cfmt cfmt `*.32uc  1 a 2 88 ]
-[s S2916 _IO_FILE 0 ]
+[s S2936 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.2S2916  1 p 2 56 ]
+[v vfprintf@fp fp `*.2S2936  1 p 2 56 ]
 [v vfprintf@fmt fmt `*.32Cuc  1 p 2 58 ]
 [v vfprintf@ap ap `*.39*.39v  1 p 2 60 ]
 "1404
@@ -1393,9 +1417,9 @@ channel_FVR_Buffer2 63
 "694
 [v vfpfcnvrt@ct ct `[3]uc  1 a 3 84 ]
 [v vfpfcnvrt@c c `uc  1 a 1 87 ]
-[s S2916 _IO_FILE 0 ]
+[s S2936 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.2S2916  1 p 2 64 ]
+[v vfpfcnvrt@fp fp `*.2S2936  1 p 2 64 ]
 [v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 66 ]
 [v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 68 ]
 "1387
@@ -1436,9 +1460,9 @@ channel_FVR_Buffer2 63
 "334
 [v efgtoa@mode mode `uc  1 a 1 33 ]
 [v efgtoa@nmode nmode `uc  1 a 1 32 ]
-[s S2916 _IO_FILE 0 ]
+[s S2936 _IO_FILE 0 ]
 "332
-[v efgtoa@fp fp `*.2S2916  1 p 2 52 ]
+[v efgtoa@fp fp `*.2S2936  1 p 2 52 ]
 [v efgtoa@f f `d  1 p 4 54 ]
 [v efgtoa@c c `uc  1 p 1 58 ]
 "525
@@ -1473,9 +1497,9 @@ channel_FVR_Buffer2 63
 "74
 [v pad@w w `i  1 a 2 28 ]
 [v pad@i i `i  1 a 2 26 ]
-[s S2916 _IO_FILE 0 ]
+[s S2936 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.2S2916  1 p 2 19 ]
+[v pad@fp fp `*.2S2936  1 p 2 19 ]
 [v pad@buf buf `*.39uc  1 p 2 21 ]
 [v pad@p p `i  1 p 2 23 ]
 "95
@@ -1484,9 +1508,9 @@ channel_FVR_Buffer2 63
 [v _strlen strlen `(ui  1 e 2 0 ]
 {
 "7
-[v strlen@a a `*.39Cuc  1 a 2 3 ]
+[v strlen@a a `*.34Cuc  1 a 2 3 ]
 "5
-[v strlen@s s `*.39Cuc  1 p 2 1 ]
+[v strlen@s s `*.34Cuc  1 p 2 1 ]
 "12
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
@@ -1498,19 +1522,19 @@ channel_FVR_Buffer2 63
 [v fputs@c c `uc  1 a 1 16 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 12 ]
-[s S2900 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.2S2900  1 p 2 14 ]
+[s S2920 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.2S2920  1 p 2 14 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 3 ]
-[s S2900 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.2S2900  1 p 2 5 ]
+[s S2920 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.2S2920  1 p 2 5 ]
 "24
 } 0
-"229 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
+"229 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@txData txData `uc  1 a 1 wreg ]
@@ -1530,9 +1554,9 @@ channel_FVR_Buffer2 63
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S3058 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S3078 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S3058  1 a 4 42 ]
+[v floorf@u u `S3078  1 a 4 42 ]
 "7
 [v floorf@m m `ul  1 a 4 36 ]
 "6
@@ -1540,21 +1564,21 @@ channel_FVR_Buffer2 63
 "3
 [v floorf@x x `f  1 p 4 26 ]
 "4
-[v floorf@F527 F527 `S3058  1 s 4 F527 ]
+[v floorf@F527 F527 `S3078  1 s 4 F527 ]
 "27
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S3058 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S3078 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S3058  1 a 4 11 ]
+[v ___fpclassifyf@u u `S3078  1 a 4 11 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 9 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 1 ]
 "5
-[v ___fpclassifyf@F465 F465 `S3058  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S3078  1 s 4 F465 ]
 "11
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
@@ -1599,17 +1623,17 @@ channel_FVR_Buffer2 63
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 4 0 ]
 {
-[s S2761 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+[s S2781 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
 "13
-[s S2766 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2769 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2761 1 fAsBytes 4 0 `S2766 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2769  1 a 4 34 ]
+[s S2786 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2789 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2781 1 fAsBytes 4 0 `S2786 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2789  1 a 4 34 ]
 "12
 [v ___flmul@grs grs `ul  1 a 4 29 ]
-[s S2837 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+[s S2857 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
-[u S2840 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2837 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2840  1 a 2 38 ]
+[u S2860 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2857 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2860  1 a 2 38 ]
 "10
 [v ___flmul@bexp bexp `uc  1 a 1 33 ]
 "11
@@ -1726,12 +1750,12 @@ channel_FVR_Buffer2 63
 [v ___xxtofl@sign sign `uc  1 a 1 9 ]
 "44
 } 0
-"50 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
+"50 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
 "61
 } 0
-"86 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
+"86 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
 [v _UART1_Initialize UART1_Initialize `(v  1 e 1 0 ]
 {
 "158
@@ -1766,42 +1790,42 @@ channel_FVR_Buffer2 63
 [v UART1_SetErrorHandler@interruptHandler interruptHandler `*.38(v  1 p 3 1 ]
 "310
 } 0
-"62 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/tmr2.c
+"62 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
 {
 "86
 } 0
-"64 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pwm1.c
+"64 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pwm1.c
 [v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
 {
 "80
 } 0
-"77 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
+"77 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 {
 "97
 } 0
-"55 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pin_manager.c
+"55 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 {
 "142
 } 0
-"63 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
+"63 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
 "75
 } 0
-"53 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/interrupt_manager.c
+"53 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
 {
 "57
 } 0
-"183 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
+"183 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/i2c1_master.c
 [v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
 {
 "205
 } 0
-"65 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
+"65 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
 {
 "177
@@ -1824,13 +1848,13 @@ channel_FVR_Buffer2 63
 [v ADC_SetADIInterruptHandler@InterruptHandler InterruptHandler `*.38(v  1 p 3 1 ]
 "421
 } 0
-"82 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pwm1.c
+"82 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/pwm1.c
 [v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
 {
 [v PWM1_LoadDutyValue@dutyValue dutyValue `us  1 p 2 1 ]
 "98
 } 0
-"246 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
+"246 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
 [v _ADC_GetSingleConversion ADC_GetSingleConversion `(us  1 e 2 0 ]
 {
 [v ADC_GetSingleConversion@channel channel `E22863  1 a 1 wreg ]
@@ -1839,12 +1863,12 @@ channel_FVR_Buffer2 63
 [v ADC_GetSingleConversion@channel channel `E22863  1 a 1 5 ]
 "267
 } 0
-"59 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/interrupt_manager.c
+"59 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `IIH(v  1 e 1 0 ]
 {
-"75
+"83
 } 0
-"224 D:\OneDriveTrabajo\Clases\GitHub_Clases\Progra\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
+"224 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
 [v _getch getch `(uc  1 e 1 0 ]
 {
 "227

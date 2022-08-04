@@ -81,7 +81,8 @@ namespace Serial
         {
             try
             {
-                serialPort1.Write("q");
+                serialPort1.Write("LED1ON");
+                serialPort1.Write("\n");
             }
             catch (Exception ex)
             {
@@ -95,7 +96,8 @@ namespace Serial
         {
             try
             {
-                serialPort1.Write("N");
+                serialPort1.Write("LED1OFF");
+                serialPort1.Write("\n");
             }
             catch (Exception ex)
             {
@@ -238,6 +240,13 @@ namespace Serial
             }*/
         }
 
-        
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+            // set the current caret position to the end
+            richTextBox1.SelectionStart = richTextBox1.Text.Length;
+            // scroll it automatically
+            richTextBox1.ScrollToCaret();
+
+        }
     }
 }

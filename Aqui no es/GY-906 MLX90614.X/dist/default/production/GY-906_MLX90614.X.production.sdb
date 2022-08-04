@@ -1,9 +1,9 @@
-[p PRO_MODE GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E SPACEOPT ]
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
 [d version 1.1 ]
 [d edition pro ]
 [d chip 16F18855 ]
 [d frameptr 6 ]
-"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\adc.c
 [v _adc_init adc_init `(v  1 e 1 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
@@ -65,7 +65,7 @@
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\I2C.c
 [v _i2c_init i2c_init `(v  1 e 1 0 ]
 "21
 [v _i2c_start i2c_start `(v  1 e 1 0 ]
@@ -81,15 +81,15 @@
 [v _i2c_nack i2c_nack `(v  1 e 1 0 ]
 "75
 [v _i2c_write i2c_write `(a  1 e 1 0 ]
-"26 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+"26 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\Main.c
 [v _main main `(v  1 e 1 0 ]
-"83
+"88
 [v _sensorPlaca sensorPlaca `(v  1 e 1 0 ]
-"105
+"111
 [v _port_init port_init `(v  1 e 1 0 ]
-"126
+"132
 [v _FLOAT_to_string FLOAT_to_string `(v  1 e 1 0 ]
-"32 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+"32 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\MLX90614.c
 [v _MLX90614_ReadReg MLX90614_ReadReg `(us  1 e 2 0 ]
 "51
 [v _MLX90614_readObjectTempC MLX90614_readObjectTempC `(f  1 e 4 0 ]
@@ -99,7 +99,7 @@
 [v _MLX90614_WriteReg MLX90614_WriteReg `(v  1 e 1 0 ]
 "94
 [v _crc8 crc8 `(uc  1 e 1 0 ]
-"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\uart.c
 [v _serial_init serial_init `(v  1 e 1 0 ]
 "45
 [v _uart_rx uart_rx `(uc  1 e 1 0 ]
@@ -259,7 +259,7 @@
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"17 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+"17 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\Main.c
 [v _high_byte high_byte `c  1 e 1 0 ]
 "18
 [v _low_byte low_byte `uc  1 e 1 0 ]
@@ -267,12 +267,12 @@
 [v _main main `(v  1 e 1 0 ]
 {
 "30
-[v main@buffer buffer `[8]uc  1 a 8 12 ]
+[v main@buffer buffer `[8]uc  1 a 8 19 ]
 "27
-[v main@temp temp `f  1 a 4 20 ]
-"81
+[v main@temp temp `f  1 a 4 27 ]
+"86
 } 0
-"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\uart.c
 [v _serial_init serial_init `(v  1 e 1 0 ]
 {
 "5
@@ -285,26 +285,26 @@
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "10
-[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+[v ___lldiv@quotient quotient `ul  1 a 4 9 ]
 "11
-[v ___lldiv@counter counter `uc  1 a 1 12 ]
+[v ___lldiv@counter counter `uc  1 a 1 13 ]
 "5
 [v ___lldiv@divisor divisor `ul  1 p 4 0 ]
 [v ___lldiv@dividend dividend `ul  1 p 4 4 ]
 "30
 } 0
-"83 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+"88 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\Main.c
 [v _sensorPlaca sensorPlaca `(v  1 e 1 0 ]
 {
-"103
+"109
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.4v  1 a 1 77 ]
+[v printf@ap ap `[1]*.4v  1 a 1 14 ]
 "5
-[v printf@fmt fmt `*.25DCuc  1 p 2 0 ]
+[v printf@fmt fmt `*.25DCuc  1 p 2 8 ]
 "13
 } 0
 "1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
@@ -313,14 +313,14 @@
 [s S864 _IO_FILE 0 ]
 [v vfprintf@fp fp `*.1S864  1 a 1 wreg ]
 "1393
-[v vfprintf@cfmt cfmt `*.25uc  1 a 2 75 ]
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 6 ]
 "1390
 [v vfprintf@fp fp `*.1S864  1 a 1 wreg ]
-[v vfprintf@fmt fmt `*.25DCuc  1 p 2 70 ]
-[v vfprintf@ap ap `*.4*.4v  1 p 1 72 ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 0 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 2 ]
 "1395
 "1390
-[v vfprintf@fp fp `*.1S864  1 a 1 74 ]
+[v vfprintf@fp fp `*.1S864  1 a 1 5 ]
 "1404
 } 0
 "692
@@ -329,19 +329,19 @@
 [s S864 _IO_FILE 0 ]
 [v vfpfcnvrt@fp fp `*.1S864  1 a 1 wreg ]
 "697
-[v vfpfcnvrt@llu llu `uo  1 a 8 59 ]
+[v vfpfcnvrt@llu llu `uo  1 a 8 68 ]
 "696
-[v vfpfcnvrt@ll ll `o  1 a 8 51 ]
+[v vfpfcnvrt@ll ll `o  1 a 8 60 ]
 "694
-[v vfpfcnvrt@cp cp `*.4uc  1 a 1 68 ]
-[v vfpfcnvrt@c c `uc  1 a 1 67 ]
+[v vfpfcnvrt@cp cp `*.4uc  1 a 1 77 ]
+[v vfpfcnvrt@c c `uc  1 a 1 76 ]
 "692
 [v vfpfcnvrt@fp fp `*.1S864  1 a 1 wreg ]
-[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 46 ]
-[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 47 ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 53 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 54 ]
 "702
 "692
-[v vfpfcnvrt@fp fp `*.1S864  1 a 1 69 ]
+[v vfpfcnvrt@fp fp `*.1S864  1 a 1 78 ]
 "1387
 } 0
 "645
@@ -350,25 +350,25 @@
 [s S864 _IO_FILE 0 ]
 [v xtoa@fp fp `*.1S864  1 a 1 wreg ]
 "648
-[v xtoa@n n `uo  1 a 8 32 ]
+[v xtoa@n n `uo  1 a 8 41 ]
 "647
-[v xtoa@i i `i  1 a 2 44 ]
-[v xtoa@c c `i  1 a 2 42 ]
-[v xtoa@w w `i  1 a 2 40 ]
-[v xtoa@p p `i  1 a 2 29 ]
+[v xtoa@c c `i  1 a 2 51 ]
+[v xtoa@i i `i  1 a 2 49 ]
+[v xtoa@w w `i  1 a 2 39 ]
+[v xtoa@p p `i  1 a 2 36 ]
 "645
 [v xtoa@fp fp `*.1S864  1 a 1 wreg ]
-[v xtoa@d d `uo  1 p 8 12 ]
-[v xtoa@x x `uc  1 p 1 20 ]
+[v xtoa@d d `uo  1 p 8 15 ]
+[v xtoa@x x `uc  1 p 1 23 ]
 "651
 "645
-[v xtoa@fp fp `*.1S864  1 a 1 31 ]
+[v xtoa@fp fp `*.1S864  1 a 1 38 ]
 "687
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\toupper.c
 [v _toupper toupper `(i  1 e 2 0 ]
 {
-[v toupper@c c `i  1 p 2 4 ]
+[v toupper@c c `i  1 p 2 6 ]
 "8
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\islower.c
@@ -395,21 +395,21 @@
 [s S864 _IO_FILE 0 ]
 [v stoa@fp fp `*.1S864  1 a 1 wreg ]
 "570
-[v stoa@nuls nuls `[7]uc  1 a 7 0 ]
+[v stoa@nuls nuls `[7]uc  1 a 7 3 ]
 "571
-[v stoa@l l `i  1 a 2 15 ]
-[v stoa@p p `i  1 a 2 13 ]
-[v stoa@w w `i  1 a 2 9 ]
-[v stoa@i i `i  1 a 2 7 ]
+[v stoa@l l `i  1 a 2 18 ]
+[v stoa@p p `i  1 a 2 16 ]
+[v stoa@w w `i  1 a 2 12 ]
+[v stoa@i i `i  1 a 2 10 ]
 "570
-[v stoa@cp cp `*.4uc  1 a 1 12 ]
+[v stoa@cp cp `*.4uc  1 a 1 15 ]
 "568
 [v stoa@fp fp `*.1S864  1 a 1 wreg ]
 [v stoa@s s `*.4uc  1 p 1 11 ]
 "570
 [v stoa@F1141 F1141 `[7]uc  1 s 7 F1141 ]
 "568
-[v stoa@fp fp `*.1S864  1 a 1 11 ]
+[v stoa@fp fp `*.1S864  1 a 1 14 ]
 "611
 } 0
 "287
@@ -418,18 +418,18 @@
 [s S864 _IO_FILE 0 ]
 [v dtoa@fp fp `*.1S864  1 a 1 wreg ]
 "290
-[v dtoa@n n `o  1 a 8 34 ]
+[v dtoa@n n `o  1 a 8 36 ]
 "289
-[v dtoa@i i `i  1 a 2 42 ]
-[v dtoa@s s `i  1 a 2 32 ]
-[v dtoa@w w `i  1 a 2 30 ]
-[v dtoa@p p `i  1 a 2 27 ]
+[v dtoa@i i `i  1 a 2 44 ]
+[v dtoa@s s `i  1 a 2 34 ]
+[v dtoa@w w `i  1 a 2 32 ]
+[v dtoa@p p `i  1 a 2 29 ]
 "287
 [v dtoa@fp fp `*.1S864  1 a 1 wreg ]
 [v dtoa@d d `o  1 p 8 16 ]
 "293
 "287
-[v dtoa@fp fp `*.1S864  1 a 1 29 ]
+[v dtoa@fp fp `*.1S864  1 a 1 31 ]
 "328
 } 0
 "72
@@ -438,15 +438,15 @@
 [s S864 _IO_FILE 0 ]
 [v pad@fp fp `*.1S864  1 a 1 wreg ]
 "74
-[v pad@w w `i  1 a 2 9 ]
-[v pad@i i `i  1 a 2 7 ]
+[v pad@w w `i  1 a 2 12 ]
+[v pad@i i `i  1 a 2 10 ]
 "72
 [v pad@fp fp `*.1S864  1 a 1 wreg ]
-[v pad@buf buf `*.4uc  1 p 1 4 ]
-[v pad@p p `i  1 p 2 5 ]
+[v pad@buf buf `*.4uc  1 p 1 7 ]
+[v pad@p p `i  1 p 2 8 ]
 "77
 "72
-[v pad@fp fp `*.1S864  1 a 1 11 ]
+[v pad@fp fp `*.1S864  1 a 1 14 ]
 "95
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
@@ -454,11 +454,11 @@
 {
 [v strlen@s s `*.4DCuc  1 a 1 wreg ]
 "7
-[v strlen@a a `*.4DCuc  1 a 1 2 ]
+[v strlen@a a `*.4DCuc  1 a 1 3 ]
 "5
 [v strlen@s s `*.4DCuc  1 a 1 wreg ]
 "7
-[v strlen@s s `*.4DCuc  1 a 1 3 ]
+[v strlen@s s `*.4DCuc  1 a 1 4 ]
 "12
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
@@ -466,15 +466,15 @@
 {
 [v fputs@s s `*.4DCuc  1 a 1 wreg ]
 "11
-[v fputs@i i `i  1 a 2 1 ]
+[v fputs@i i `i  1 a 2 4 ]
 "10
-[v fputs@c c `uc  1 a 1 0 ]
+[v fputs@c c `uc  1 a 1 3 ]
 "8
 [v fputs@s s `*.4DCuc  1 a 1 wreg ]
 [s S847 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
 [v fputs@fp fp `*.1S847  1 p 1 11 ]
 "13
-[v fputs@s s `*.4DCuc  1 a 1 3 ]
+[v fputs@s s `*.4DCuc  1 a 1 6 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
@@ -485,7 +485,7 @@
 [v fputc@fp fp `*.1S847  1 p 1 5 ]
 "24
 } 0
-"82 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\uart.c
+"82 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\uart.c
 [v _putch putch `(v  1 e 1 0 ]
 {
 [v putch@dato dato `uc  1 a 1 wreg ]
@@ -542,22 +542,22 @@
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"105 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+"111 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\Main.c
 [v _port_init port_init `(v  1 e 1 0 ]
 {
-"124
+"130
 } 0
-"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+"4 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\I2C.c
 [v _i2c_init i2c_init `(v  1 e 1 0 ]
 {
 "19
 } 0
-"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\adc.c
+"3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\adc.c
 [v _adc_init adc_init `(v  1 e 1 0 ]
 {
 "25
 } 0
-"51 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\MLX90614.c
+"51 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\MLX90614.c
 [v _MLX90614_readObjectTempC MLX90614_readObjectTempC `(f  1 e 4 0 ]
 {
 "53
@@ -579,7 +579,7 @@
 [v MLX90614_ReadReg@reg reg `uc  1 a 1 6 ]
 "45
 } 0
-"75 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\I2C.c
+"75 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\I2C.c
 [v _i2c_write i2c_write `(a  1 e 1 0 ]
 {
 [v i2c_write@I2C_data I2C_data `uc  1 a 1 wreg ]
@@ -622,21 +622,21 @@
 {
 "65
 } 0
-"126 D:\OneDriveTrabajo\Clases\GitHub_Clases\Micros\2022\GY-906 MLX90614.X\Main.c
+"132 D:\OneDriveTrabajo\Clases\GitHub_Clases\Aqui no es\GY-906 MLX90614.X\Main.c
 [v _FLOAT_to_string FLOAT_to_string `(v  1 e 1 0 ]
 {
-"129
+"135
 [v FLOAT_to_string@tempo_float tempo_float `d  1 a 4 2 ]
-"128
-[v FLOAT_to_string@cont_for cont_for `i  1 a 2 10 ]
-[v FLOAT_to_string@largo_entera largo_entera `i  1 a 2 8 ]
+"134
+[v FLOAT_to_string@largo_entera largo_entera `i  1 a 2 10 ]
+[v FLOAT_to_string@cont_for cont_for `i  1 a 2 8 ]
 [v FLOAT_to_string@largo_n largo_n `i  1 a 2 6 ]
 [v FLOAT_to_string@tempo_int tempo_int `i  1 a 2 0 ]
-"126
-[v FLOAT_to_string@number number `d  1 p 4 63 ]
-[v FLOAT_to_string@text text `*.4uc  1 p 1 67 ]
-[v FLOAT_to_string@decimal decimal `uc  1 p 1 68 ]
-"184
+"132
+[v FLOAT_to_string@number number `d  1 p 4 64 ]
+[v FLOAT_to_string@text text `*.4uc  1 p 1 68 ]
+[v FLOAT_to_string@decimal decimal `uc  1 p 1 69 ]
+"190
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]
@@ -657,8 +657,8 @@
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 9 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 8 ]
+[v ___fltol@exp1 exp1 `uc  1 a 1 10 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 9 ]
 "43
 [v ___fltol@f1 f1 `d  1 p 4 0 ]
 "70
@@ -666,24 +666,24 @@
 "242 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
 [v ___flsub __flsub `(d  1 e 4 0 ]
 {
-[v ___flsub@a a `d  1 p 4 55 ]
-[v ___flsub@b b `d  1 p 4 59 ]
+[v ___flsub@a a `d  1 p 4 56 ]
+[v ___flsub@b b `d  1 p 4 60 ]
 "250
 } 0
 "10
 [v ___fladd __fladd `(d  1 e 4 0 ]
 {
 "17
-[v ___fladd@grs grs `uc  1 a 1 54 ]
+[v ___fladd@grs grs `uc  1 a 1 55 ]
 "15
-[v ___fladd@bexp bexp `uc  1 a 1 53 ]
+[v ___fladd@bexp bexp `uc  1 a 1 54 ]
 "16
-[v ___fladd@aexp aexp `uc  1 a 1 52 ]
+[v ___fladd@aexp aexp `uc  1 a 1 53 ]
 "13
-[v ___fladd@signs signs `uc  1 a 1 51 ]
+[v ___fladd@signs signs `uc  1 a 1 52 ]
 "10
-[v ___fladd@b b `d  1 p 4 35 ]
-[v ___fladd@a a `d  1 p 4 39 ]
+[v ___fladd@b b `d  1 p 4 36 ]
+[v ___fladd@a a `d  1 p 4 40 ]
 "237
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
@@ -699,19 +699,19 @@
 "13
 [s S701 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
 [u S704 . 4 `l 1 i 4 0 `d 1 f 4 0 `S696 1 fAsBytes 4 0 `S701 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S704  1 a 4 29 ]
+[v ___flmul@prod prod `S704  1 a 4 30 ]
 "12
-[v ___flmul@grs grs `ul  1 a 4 24 ]
+[v ___flmul@grs grs `ul  1 a 4 25 ]
 [s S773 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
 "14
 [u S776 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S773 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S776  1 a 2 33 ]
+[v ___flmul@temp temp `S776  1 a 2 34 ]
 "10
-[v ___flmul@bexp bexp `uc  1 a 1 28 ]
+[v ___flmul@bexp bexp `uc  1 a 1 29 ]
 "11
-[v ___flmul@aexp aexp `uc  1 a 1 23 ]
+[v ___flmul@aexp aexp `uc  1 a 1 24 ]
 "9
-[v ___flmul@sign sign `uc  1 a 1 22 ]
+[v ___flmul@sign sign `uc  1 a 1 23 ]
 "8
 [v ___flmul@b b `d  1 p 4 10 ]
 [v ___flmul@a a `d  1 p 4 14 ]
@@ -722,13 +722,13 @@
 {
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
 "6
-[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 4 ]
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 6 ]
 "5
-[v __Umul8_16@product product `ui  1 a 2 2 ]
+[v __Umul8_16@product product `ui  1 a 2 4 ]
 "4
 [v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
 [v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
-[v __Umul8_16@multiplier multiplier `uc  1 a 1 6 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 8 ]
 "60
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c

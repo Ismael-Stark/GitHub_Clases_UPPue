@@ -67,6 +67,14 @@ void __interrupt() INTERRUPT_InterruptManager (void)
     {
         UART1_RxInterruptHandler();
         serialRX = getch();
+        bufferRx[contadorRx] = serialRX;
+        if(serialRX == '\n'){
+            bufferRx[contadorRx] = '\0';
+            contadorRx = 0;
+        }else{
+            contadorRx++;
+        }
+        
     }
     else
     {
