@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"25 Main.c
-[; ;Main.c: 25: void port_init();
+"27 Main.c
+[; ;Main.c: 27: void port_init();
 [v _port_init `(v ~T0 @X0 0 e? ]
 "43 ./interrupt.h
 [; ;./interrupt.h: 43:     void enable_Global_interrupt();
@@ -14,13 +14,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35 ./Timer0.h
 [; ;./Timer0.h: 35:     void Timer0_8bit_InterruptInit(uint8_t postscaler, uint8_t prescaler, uint8_t TimerValue );
 [v _Timer0_8bit_InterruptInit `(v ~T0 @X0 0 ef3`uc`uc`uc ]
-"39 Main.c
-[; ;Main.c: 39:     Timer0_8bit_InterruptInit(T0Poscaler_div1,9,255);
+"41 Main.c
+[; ;Main.c: 41:     Timer0_8bit_InterruptInit(T0Poscaler_div1,9,255);
 [c E12016 0 1 2 3 4 5 .. ]
 [n E12016 . T0Poscaler_div1 T0Poscaler_div2 T0Poscaler_div3 T0Poscaler_div4 T0Poscaler_div5 T0Poscaler_div6  ]
 "12 ./Timer1.h
 [; ;./Timer1.h: 12:     void Timer1_init(uint8_t prescaler, uint16_t TimerValue );
 [v _Timer1_init `(v ~T0 @X0 0 ef2`uc`us ]
+"39 ./Timer5.h
+[; ;./Timer5.h: 39:     void Timer5_Interrupt_init(uint8_t prescaler, uint16_t TimerValue );
+[v _Timer5_Interrupt_init `(v ~T0 @X0 0 ef2`uc`us ]
+"47 Main.c
+[; ;Main.c: 47:     Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
+[c E12100 0 1 2 3 .. ]
+[n E12100 . T5PrescDiv1 T5PrescDiv2 T5PrescDiv4 T5PrescDiv8  ]
 [v F183 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\builtins.h
 [v __delay `JF183 ~T0 @X0 0 e ]
@@ -1756,213 +1763,508 @@ Version 4.0 HI-TECH Software Intermediate Code
 "25
 [; ;./servo.h: 25:     uint8_t valTIMER0;
 [v _valTIMER0 `uc ~T0 @X0 1 e ]
+"27 ./MultiServo.h
+[; ;./MultiServo.h: 27:     char SERVO3,SERVO4,SERVO5,SERVO6,SERVO7 ,SERVO8;
+[v _SERVO3 `uc ~T0 @X0 1 e ]
+[v _SERVO4 `uc ~T0 @X0 1 e ]
+[v _SERVO5 `uc ~T0 @X0 1 e ]
+[v _SERVO6 `uc ~T0 @X0 1 e ]
+[v _SERVO7 `uc ~T0 @X0 1 e ]
+[v _SERVO8 `uc ~T0 @X0 1 e ]
+"29
+[; ;./MultiServo.h: 29:     const uint16_t Ticks4Window = 0x9C40;
+[v _Ticks4Window `Cus ~T0 @X0 1 e ]
+[i _Ticks4Window
+-> -> 40000 `ui `us
+]
+"30
+[; ;./MultiServo.h: 30:     const uint16_t Ticks4Minimum = 0X2BC0;
+[v _Ticks4Minimum `Cus ~T0 @X0 1 e ]
+[i _Ticks4Minimum
+-> -> 11200 `i `us
+]
+"31
+[; ;./MultiServo.h: 31:     const uint16_t Ticks4Center = 24000;
+[v _Ticks4Center `Cus ~T0 @X0 1 e ]
+[i _Ticks4Center
+-> -> 24000 `i `us
+]
+"32
+[; ;./MultiServo.h: 32:     const uint16_t Ticks4Maximum = 0X8FC0;
+[v _Ticks4Maximum `Cus ~T0 @X0 1 e ]
+[i _Ticks4Maximum
+-> -> 36800 `ui `us
+]
+"34
+[; ;./MultiServo.h: 34:     _Bool valid_command;
+[v _valid_command `a ~T0 @X0 1 e ]
+"35
+[; ;./MultiServo.h: 35:     uint8_t command;
+[v _command `uc ~T0 @X0 1 e ]
+"36
+[; ;./MultiServo.h: 36:     uint16_t Servo_PWM[8]={24000,24000,0,0,0,0,0,0};
+[v _Servo_PWM `us ~T0 @X0 -> 8 `i e ]
+[i _Servo_PWM
+:U ..
+-> -> 24000 `i `us
+-> -> 24000 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+-> -> 0 `i `us
+..
+]
+"37
+[; ;./MultiServo.h: 37:     uint8_t Servo_Idx=0;
+[v _Servo_Idx `uc ~T0 @X0 1 e ]
+[i _Servo_Idx
+-> -> 0 `i `uc
+]
+"38
+[; ;./MultiServo.h: 38:     _Bool SERVO1_ON=1;
+[v _SERVO1_ON `a ~T0 @X0 1 e ]
+[i _SERVO1_ON
+-> -> 1 `i `a
+]
+"39
+[; ;./MultiServo.h: 39:     _Bool SERVO2_ON=1;
+[v _SERVO2_ON `a ~T0 @X0 1 e ]
+[i _SERVO2_ON
+-> -> 1 `i `a
+]
+"40
+[; ;./MultiServo.h: 40:     _Bool SERVO3_ON=0;
+[v _SERVO3_ON `a ~T0 @X0 1 e ]
+[i _SERVO3_ON
+-> -> 0 `i `a
+]
+"41
+[; ;./MultiServo.h: 41:     _Bool SERVO4_ON=0;
+[v _SERVO4_ON `a ~T0 @X0 1 e ]
+[i _SERVO4_ON
+-> -> 0 `i `a
+]
+"42
+[; ;./MultiServo.h: 42:     _Bool SERVO5_ON=0;
+[v _SERVO5_ON `a ~T0 @X0 1 e ]
+[i _SERVO5_ON
+-> -> 0 `i `a
+]
+"43
+[; ;./MultiServo.h: 43:     _Bool SERVO6_ON=0;
+[v _SERVO6_ON `a ~T0 @X0 1 e ]
+[i _SERVO6_ON
+-> -> 0 `i `a
+]
+"44
+[; ;./MultiServo.h: 44:     _Bool SERVO7_ON=0;
+[v _SERVO7_ON `a ~T0 @X0 1 e ]
+[i _SERVO7_ON
+-> -> 0 `i `a
+]
+"45
+[; ;./MultiServo.h: 45:     _Bool SERVO8_ON=0;
+[v _SERVO8_ON `a ~T0 @X0 1 e ]
+[i _SERVO8_ON
+-> -> 0 `i `a
+]
+"46
+[; ;./MultiServo.h: 46:     uint8_t flag_Phase;
+[v _flag_Phase `uc ~T0 @X0 1 e ]
+"48
+[; ;./MultiServo.h: 48:     static uint16_t Ticks4NextInterrupt=25536;
+[v _Ticks4NextInterrupt `us ~T0 @X0 1 s ]
+[i _Ticks4NextInterrupt
+-> -> 25536 `i `us
+]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"27 Main.c
-[; ;Main.c: 27: void main(void) {
+"29 Main.c
+[; ;Main.c: 29: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"28
-[; ;Main.c: 28:     port_init();
-[e ( _port_init ..  ]
 "30
-[; ;Main.c: 30:     enable_Global_interrupt();
+[; ;Main.c: 30:     port_init();
+[e ( _port_init ..  ]
+"32
+[; ;Main.c: 32:     enable_Global_interrupt();
 [e ( _enable_Global_interrupt ..  ]
-"31
-[; ;Main.c: 31:     enable_Peripheral_interrupt();
-[e ( _enable_Peripheral_interrupt ..  ]
 "33
-[; ;Main.c: 33:     printf("Holaaa\n\n");
+[; ;Main.c: 33:     enable_Peripheral_interrupt();
+[e ( _enable_Peripheral_interrupt ..  ]
+"35
+[; ;Main.c: 35:     printf("Holaaa\n\n");
 [e ( _printf :s 1C ]
-"39
-[; ;Main.c: 39:     Timer0_8bit_InterruptInit(T0Poscaler_div1,9,255);
+"41
+[; ;Main.c: 41:     Timer0_8bit_InterruptInit(T0Poscaler_div1,9,255);
 [e ( _Timer0_8bit_InterruptInit (3 , , -> . `E12016 0 `uc -> -> 9 `i `uc -> -> 255 `i `uc ]
-"42
-[; ;Main.c: 42:     Timer1_init(3, 34286);
+"43
+[; ;Main.c: 43:     Timer1_init(3, 34286);
 [e ( _Timer1_init (2 , -> -> 3 `i `uc -> -> 34286 `l `us ]
-"44
-[; ;Main.c: 44:     _delay((unsigned long)((1000)*(32000000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"48
-[; ;Main.c: 48:     while(1)
-[e :U 1568 ]
+"47
+[; ;Main.c: 47:     Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
+[e ( _Timer5_Interrupt_init (2 , -> . `E12100 1 `uc -> -> 25536 `i `us ]
 "49
-[; ;Main.c: 49:     {
+[; ;Main.c: 49:     _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"53
+[; ;Main.c: 53:     while(1)
+[e :U 1568 ]
+"54
+[; ;Main.c: 54:     {
 {
-"50
-[; ;Main.c: 50:         if (PIR4bits.TMR1IF == 1){
+"55
+[; ;Main.c: 55:         if (PIR4bits.TMR1IF == 1){
 [e $ ! == -> . . _PIR4bits 0 0 `i -> 1 `i 1570  ]
 {
-"51
-[; ;Main.c: 51:             PIR4bits.TMR1IF = 0;
+"56
+[; ;Main.c: 56:             PIR4bits.TMR1IF = 0;
 [e = . . _PIR4bits 0 0 -> -> 0 `i `uc ]
-"52
-[; ;Main.c: 52:             LATAbits.LATA0 = !LATAbits.LATA0;
+"57
+[; ;Main.c: 57:             LATAbits.LATA0 = !LATAbits.LATA0;
 [e = . . _LATAbits 0 0 -> -> ! != -> . . _LATAbits 0 0 `i -> 0 `i `i `uc ]
-"53
-[; ;Main.c: 53:         }
+"58
+[; ;Main.c: 58:         }
 }
 [e :U 1570 ]
-"56
-[; ;Main.c: 56:         if (flagRTCC ==1){
+"61
+[; ;Main.c: 61:         if (flagRTCC ==1){
 [e $ ! == -> _flagRTCC `i -> 1 `i 1571  ]
 {
-"57
-[; ;Main.c: 57:             flagRTCC=0;
+"62
+[; ;Main.c: 62:             flagRTCC=0;
 [e = _flagRTCC -> -> 0 `i `a ]
-"58
-[; ;Main.c: 58:             LATCbits.LATC7 = 1;
-[e = . . _LATCbits 0 7 -> -> 1 `i `uc ]
-"59
-[; ;Main.c: 59:             flagSERVO1=1;
+"63
+[; ;Main.c: 63:             LATCbits.LATC6 = 1;
+[e = . . _LATCbits 0 6 -> -> 1 `i `uc ]
+"64
+[; ;Main.c: 64:             flagSERVO1=1;
 [e = _flagSERVO1 -> -> 1 `i `a ]
-"60
-[; ;Main.c: 60:         }
+"65
+[; ;Main.c: 65:         }
 }
 [e :U 1571 ]
-"61
-[; ;Main.c: 61:         if(flagSERVO1==1){
+"66
+[; ;Main.c: 66:         if(flagSERVO1==1){
 [e $ ! == -> _flagSERVO1 `i -> 1 `i 1572  ]
 {
-"62
-[; ;Main.c: 62:             valTIMER0 = Timer0_8bit_get();
+"67
+[; ;Main.c: 67:             valTIMER0 = Timer0_8bit_get();
 [e = _valTIMER0 ( _Timer0_8bit_get ..  ]
-"63
-[; ;Main.c: 63:             if(valTIMER0>tSERVO1){
+"68
+[; ;Main.c: 68:             if(valTIMER0>tSERVO1){
 [e $ ! > -> _valTIMER0 `i -> _tSERVO1 `i 1573  ]
 {
-"64
-[; ;Main.c: 64:                 flagSERVO1=0;
+"69
+[; ;Main.c: 69:                 flagSERVO1=0;
 [e = _flagSERVO1 -> -> 0 `i `a ]
-"65
-[; ;Main.c: 65:                 LATCbits.LATC7 = 0;
-[e = . . _LATCbits 0 7 -> -> 0 `i `uc ]
-"66
-[; ;Main.c: 66:             }
+"70
+[; ;Main.c: 70:                 LATCbits.LATC6 = 0;
+[e = . . _LATCbits 0 6 -> -> 0 `i `uc ]
+"71
+[; ;Main.c: 71:             }
 }
 [e :U 1573 ]
-"67
-[; ;Main.c: 67:         }
+"72
+[; ;Main.c: 72:         }
 }
 [e :U 1572 ]
-"70
-[; ;Main.c: 70:         if (recepcionRX != '\0'){
+"75
+[; ;Main.c: 75:         if (recepcionRX != '\0'){
 [e $ ! != -> _recepcionRX `ui -> 0 `ui 1574  ]
 {
-"71
-[; ;Main.c: 71:             if(recepcionRX == 'a'){
-[e $ ! == -> _recepcionRX `ui -> 97 `ui 1575  ]
+"76
+[; ;Main.c: 76:             if(recepcionRX == 'z'){
+[e $ ! == -> _recepcionRX `ui -> 122 `ui 1575  ]
 {
-"72
-[; ;Main.c: 72:                 tSERVO1 += 9;
+"77
+[; ;Main.c: 77:                 tSERVO1 += 9;
 [e =+ _tSERVO1 -> -> 9 `i `uc ]
-"73
-[; ;Main.c: 73:                 recepcionRX = '\0';
+"78
+[; ;Main.c: 78:                 recepcionRX = '\0';
 [e = _recepcionRX -> -> 0 `ui `uc ]
-"74
-[; ;Main.c: 74:             }
+"79
+[; ;Main.c: 79:             }
 }
 [e :U 1575 ]
-"75
-[; ;Main.c: 75:             if(recepcionRX == 's'){
-[e $ ! == -> _recepcionRX `ui -> 115 `ui 1576  ]
+"80
+[; ;Main.c: 80:             if(recepcionRX == 'x'){
+[e $ ! == -> _recepcionRX `ui -> 120 `ui 1576  ]
 {
-"76
-[; ;Main.c: 76:                 tSERVO1 = 93;
+"81
+[; ;Main.c: 81:                 tSERVO1 = 93;
 [e = _tSERVO1 -> -> 93 `i `uc ]
-"77
-[; ;Main.c: 77:                 recepcionRX = '\0';
+"82
+[; ;Main.c: 82:                 recepcionRX = '\0';
 [e = _recepcionRX -> -> 0 `ui `uc ]
-"78
-[; ;Main.c: 78:             }
+"83
+[; ;Main.c: 83:             }
 }
 [e :U 1576 ]
-"79
-[; ;Main.c: 79:             if(recepcionRX == 'd'){
-[e $ ! == -> _recepcionRX `ui -> 100 `ui 1577  ]
+"84
+[; ;Main.c: 84:             if(recepcionRX == 'c'){
+[e $ ! == -> _recepcionRX `ui -> 99 `ui 1577  ]
 {
-"80
-[; ;Main.c: 80:                 tSERVO1 -= 9;
+"85
+[; ;Main.c: 85:                 tSERVO1 -= 9;
 [e =- _tSERVO1 -> -> 9 `i `uc ]
-"81
-[; ;Main.c: 81:                 recepcionRX = '\0';
+"86
+[; ;Main.c: 86:                 recepcionRX = '\0';
 [e = _recepcionRX -> -> 0 `ui `uc ]
-"82
-[; ;Main.c: 82:             }
+"87
+[; ;Main.c: 87:             }
 }
 [e :U 1577 ]
-"83
-[; ;Main.c: 83:         }
+"88
+[; ;Main.c: 88:         }
 }
 [e :U 1574 ]
-"86
-[; ;Main.c: 86:     }
+"91
+[; ;Main.c: 91:         if(command!='\0'){
+[e $ ! != -> _command `ui -> 0 `ui 1578  ]
+{
+"93
+[; ;Main.c: 93:           valid_command=0;
+[e = _valid_command -> -> 0 `i `a ]
+"96
+[; ;Main.c: 96:           if(command=='a'){
+[e $ ! == -> _command `ui -> 97 `ui 1579  ]
+{
+"97
+[; ;Main.c: 97:             Servo_PWM[0] -= 580;
+[e =- *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
+"98
+[; ;Main.c: 98:             if ( Servo_PWM[0] < Ticks4Minimum) {
+[e $ ! < -> *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux `ui -> _Ticks4Minimum `ui 1580  ]
+{
+"99
+[; ;Main.c: 99:                 Servo_PWM[0] = Ticks4Minimum;
+[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Minimum ]
+"100
+[; ;Main.c: 100:             }
+}
+[e :U 1580 ]
+"101
+[; ;Main.c: 101:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"102
+[; ;Main.c: 102:           }
+}
+[e :U 1579 ]
+"103
+[; ;Main.c: 103:           if(command=='d'){
+[e $ ! == -> _command `ui -> 100 `ui 1581  ]
+{
+"104
+[; ;Main.c: 104:             Servo_PWM[0] += 580;
+[e =+ *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
+"105
+[; ;Main.c: 105:             if ( Servo_PWM[0] > Ticks4Maximum) {
+[e $ ! > -> *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux `ui -> _Ticks4Maximum `ui 1582  ]
+{
+"106
+[; ;Main.c: 106:                 Servo_PWM[0] = Ticks4Maximum;
+[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Maximum ]
+"107
+[; ;Main.c: 107:             }
+}
+[e :U 1582 ]
+"108
+[; ;Main.c: 108:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"109
+[; ;Main.c: 109:           }
+}
+[e :U 1581 ]
+"110
+[; ;Main.c: 110:           if(command=='j'){
+[e $ ! == -> _command `ui -> 106 `ui 1583  ]
+{
+"111
+[; ;Main.c: 111:             Servo_PWM[0] = Ticks4Minimum;
+[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Minimum ]
+"112
+[; ;Main.c: 112:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"113
+[; ;Main.c: 113:           }
+}
+[e :U 1583 ]
+"114
+[; ;Main.c: 114:           if(command=='k'){
+[e $ ! == -> _command `ui -> 107 `ui 1584  ]
+{
+"115
+[; ;Main.c: 115:             Servo_PWM[0] = Ticks4Center;
+[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Center ]
+"116
+[; ;Main.c: 116:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"117
+[; ;Main.c: 117:           }
+}
+[e :U 1584 ]
+"118
+[; ;Main.c: 118:           if(command=='l'){
+[e $ ! == -> _command `ui -> 108 `ui 1585  ]
+{
+"119
+[; ;Main.c: 119:             Servo_PWM[0] = Ticks4Maximum;
+[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Maximum ]
+"120
+[; ;Main.c: 120:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"121
+[; ;Main.c: 121:           }
+}
+[e :U 1585 ]
+"125
+[; ;Main.c: 125:           if(command=='w'){
+[e $ ! == -> _command `ui -> 119 `ui 1586  ]
+{
+"126
+[; ;Main.c: 126:             Servo_PWM[1] += 580;
+[e =+ *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
+"127
+[; ;Main.c: 127:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"128
+[; ;Main.c: 128:           }
+}
+[e :U 1586 ]
+"129
+[; ;Main.c: 129:           if(command=='s'){
+[e $ ! == -> _command `ui -> 115 `ui 1587  ]
+{
+"130
+[; ;Main.c: 130:             Servo_PWM[1] -= 580;
+[e =- *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
+"131
+[; ;Main.c: 131:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"132
+[; ;Main.c: 132:           }
+}
+[e :U 1587 ]
+"133
+[; ;Main.c: 133:            if(command=='i'){
+[e $ ! == -> _command `ui -> 105 `ui 1588  ]
+{
+"134
+[; ;Main.c: 134:             Servo_PWM[1] = Ticks4Minimum;
+[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Minimum ]
+"135
+[; ;Main.c: 135:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"136
+[; ;Main.c: 136:           }
+}
+[e :U 1588 ]
+"137
+[; ;Main.c: 137:           if(command=='o'){
+[e $ ! == -> _command `ui -> 111 `ui 1589  ]
+{
+"138
+[; ;Main.c: 138:             Servo_PWM[1] = Ticks4Center;
+[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Center ]
+"139
+[; ;Main.c: 139:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"140
+[; ;Main.c: 140:           }
+}
+[e :U 1589 ]
+"141
+[; ;Main.c: 141:           if(command=='p'){
+[e $ ! == -> _command `ui -> 112 `ui 1590  ]
+{
+"142
+[; ;Main.c: 142:             Servo_PWM[1] = Ticks4Maximum;
+[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Maximum ]
+"143
+[; ;Main.c: 143:             valid_command=1;
+[e = _valid_command -> -> 1 `i `a ]
+"144
+[; ;Main.c: 144:           }
+}
+[e :U 1590 ]
+"148
+[; ;Main.c: 148:           command='\0';
+[e = _command -> -> 0 `ui `uc ]
+"149
+[; ;Main.c: 149:         }
+}
+[e :U 1578 ]
+"151
+[; ;Main.c: 151:     }
 }
 [e :U 1567 ]
 [e $U 1568  ]
 [e :U 1569 ]
-"87
-[; ;Main.c: 87:     return;
+"152
+[; ;Main.c: 152:     return;
 [e $UE 1566  ]
-"88
-[; ;Main.c: 88: }
+"153
+[; ;Main.c: 153: }
 [e :UE 1566 ]
 }
-"91
-[; ;Main.c: 91: void port_init(){
+"156
+[; ;Main.c: 156: void port_init(){
 [v _port_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_init ]
 [f ]
-"93
-[; ;Main.c: 93:     ANSELA = 0;
+"158
+[; ;Main.c: 158:     ANSELA = 0;
 [e = _ANSELA -> -> 0 `i `uc ]
-"94
-[; ;Main.c: 94:     LATA=0;
+"159
+[; ;Main.c: 159:     LATA=0;
 [e = _LATA -> -> 0 `i `uc ]
-"95
-[; ;Main.c: 95:     PORTA =0;
+"160
+[; ;Main.c: 160:     PORTA =0;
 [e = _PORTA -> -> 0 `i `uc ]
-"96
-[; ;Main.c: 96:     TRISA = 0b11110000;
+"161
+[; ;Main.c: 161:     TRISA = 0b11110000;
 [e = _TRISA -> -> 240 `i `uc ]
-"99
-[; ;Main.c: 99:     ANSELA = 0;
+"164
+[; ;Main.c: 164:     ANSELA = 0;
 [e = _ANSELA -> -> 0 `i `uc ]
-"100
-[; ;Main.c: 100:     ANSELA = ANSELA | (1<<4);
+"165
+[; ;Main.c: 165:     ANSELA = ANSELA | (1<<4);
 [e = _ANSELA -> | -> _ANSELA `i << -> 1 `i -> 4 `i `uc ]
-"102
-[; ;Main.c: 102:     LATB=0;
+"167
+[; ;Main.c: 167:     LATB=0;
 [e = _LATB -> -> 0 `i `uc ]
-"103
-[; ;Main.c: 103:     PORTB =0;
+"168
+[; ;Main.c: 168:     PORTB =0;
 [e = _PORTB -> -> 0 `i `uc ]
-"104
-[; ;Main.c: 104:     TRISB = TRISA | (1<<0);
+"169
+[; ;Main.c: 169:     TRISB = TRISA | (1<<0);
 [e = _TRISB -> | -> _TRISA `i << -> 1 `i -> 0 `i `uc ]
-"105
-[; ;Main.c: 105:     ANSELB = 0;
+"170
+[; ;Main.c: 170:     ANSELB = 0;
 [e = _ANSELB -> -> 0 `i `uc ]
-"106
-[; ;Main.c: 106:     ANSELB = ANSELB | (1<<0);
+"171
+[; ;Main.c: 171:     ANSELB = ANSELB | (1<<0);
 [e = _ANSELB -> | -> _ANSELB `i << -> 1 `i -> 0 `i `uc ]
-"108
-[; ;Main.c: 108:     TRISC = 0b10;
+"173
+[; ;Main.c: 173:     TRISC = 0b10;
 [e = _TRISC -> -> 2 `i `uc ]
-"109
-[; ;Main.c: 109:     ANSELC = 0;
+"174
+[; ;Main.c: 174:     ANSELC = 0;
 [e = _ANSELC -> -> 0 `i `uc ]
-"110
-[; ;Main.c: 110:     TRISC = TRISC | (1<<4 |1<<3 );
+"175
+[; ;Main.c: 175:     TRISC = TRISC | (1<<4 |1<<3 );
 [e = _TRISC -> | -> _TRISC `i | << -> 1 `i -> 4 `i << -> 1 `i -> 3 `i `uc ]
-"112
-[; ;Main.c: 112:     serial_Interrupt_init(9600);
+"177
+[; ;Main.c: 177:     serial_Interrupt_init(9600);
 [e ( _serial_Interrupt_init (1 -> -> -> 9600 `i `l `ul ]
-"115
-[; ;Main.c: 115: }
-[e :UE 1578 ]
+"180
+[; ;Main.c: 180: }
+[e :UE 1591 ]
 }
 [p f _printf 8388608 ]
 [a 1C 72 111 108 97 97 97 10 10 0 ]

@@ -11,7 +11,15 @@ using System.IO.Ports;          //para listar los puertos COM disponibles
 using System.Media;
 using System.Text.RegularExpressions;
 
+//poner un ICONO AL FORM
+//hacer que el formulario no se pueda redimensionar por el usuario
+//bloquear el boton de maximizar/restaurar
+//hacer un diseño a gusto en el form, colores, tamaño forma.. etc...
 
+
+//proto, poner los botones, leds, y pontenciometros qu falten,
+//enviar los datos del micro cada vez que se presione el boton o cada vez que cambie el valor del pot
+//el valor de la tempertura se envia cada 2 seg
 namespace Serial
 {
     public partial class Form1 : Form
@@ -29,27 +37,44 @@ namespace Serial
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            deshabilitar();
+            cargarListaBaudios();
+            btn_recarga_Click(sender, e);
+
+        }
+        private void deshabilitar()
+        {
             btn_desconectar.Enabled = false;
             btn_encender.Enabled = false;
             btn_apagar.Enabled = false;
-            listaBaudios.Items.Add("9600");
+            btn_conectar.Enabled = false;
+            trackBar1.Enabled = false;
+        }
+        private void habilitar()
+        {
+            btn_desconectar.Enabled = true;
+            btn_conectar.Enabled = false;
+            btn_encender.Enabled = true;
+            btn_apagar.Enabled = true;
+            trackBar1.Enabled = true;
+            timer1.Enabled = true;
+        }
+
+        private void cargarListaBaudios()
+        {
+            listaBaudios.Items.Add("9600"); //agregar mas velocidades standard a la lista
             listaBaudios.Items.Add("115200");
             listaBaudios.SelectedIndex = 0;
             serialPort1.BaudRate = Convert.ToInt32(listaBaudios.SelectedItem.ToString());
-
         }
-
         private void btn_conectar_Click(object sender, EventArgs e)
         {
             try {
                 serialPort1.Open();
                 serialPort1.DtrEnable = true;//habilitar forzamente para poder mandar
                                              //datos a la curyosity
-                btn_desconectar.Enabled = true;
-                btn_conectar.Enabled = false;
-                btn_encender.Enabled = true;
-                btn_apagar.Enabled = true;
-                //timer1.Enabled = true;
+                habilitar();
+                
             }catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -69,6 +94,8 @@ namespace Serial
                 btn_encender.Enabled = false;
                 btn_apagar.Enabled = false;
                 timer1.Enabled = false;
+                btn_recarga_Click(sender, e);
+
             }
             catch (Exception ex)
             {
@@ -112,19 +139,22 @@ namespace Serial
             try
             {
                 string[] ports;
-
                 ports = SerialPort.GetPortNames();
                 listapuertosCOM.Items.Clear();
+                listapuertosCOM.Text = "";
+                listapuertosCOM.Enabled = true;
                 foreach (string port in ports)
                 {
                     listapuertosCOM.Items.Add(port);
                 }
                 listapuertosCOM.SelectedIndex = 0;
+                btn_conectar.Enabled = true;
             }
                 
             catch
             {
-                ;
+                listapuertosCOM.Enabled=false;
+                btn_conectar.Enabled = false;
             }
         }
 
@@ -140,8 +170,11 @@ namespace Serial
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            string datosRecibidos = serialPort1.ReadLine();
-            richTextBox1.Text = richTextBox1.Text + datosRecibidos + "\n";
+            if (!serialPort1.IsOpen)
+            {
+                btn_desconectar_Click(sender, e);
+
+            }
         }
 
         private void btn_borrarTexto_Click(object sender, EventArgs e)
@@ -247,6 +280,15 @@ namespace Serial
             // scroll it automatically
             richTextBox1.ScrollToCaret();
 
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            if (serialPort1.IsOpen)
+            {
+                serialPort1.Write(Convert.ToString(trackBar1.Value));
+                serialPort1.Write("\n");
+            }
         }
     }
 }

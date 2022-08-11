@@ -140,7 +140,7 @@ TMR2_UART5_RX_EDGE 34
 TMR2_UART5_TX_EDGE 35
 TMR2_RESERVED_4 36
 ]
-"42 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+"46 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
 [e E23269 . `uc
 POT1 1
 POT2 2
@@ -197,6 +197,8 @@ channel_FVR_Buffer2 63
 [v _fputc fputc `(i  1 e 2 0 ]
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
@@ -235,7 +237,9 @@ channel_FVR_Buffer2 63
 [v _lcd_send_byte lcd_send_byte `(v  1 e 1 0 ]
 "74
 [v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
-"13 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+"10 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+[v _map map `(f  1 e 4 0 ]
+"17
 [v _main main `(v  1 e 1 0 ]
 "65 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/adc.c
 [v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
@@ -459,9 +463,15 @@ channel_FVR_Buffer2 63
 "14
 [v _bufferRx bufferRx `[10]uc  1 e 10 0 ]
 [v _contadorRx contadorRx `uc  1 e 1 0 ]
+"15
+[v _buffer buffer `[60]uc  1 e 60 0 ]
 "16
 [v _lecturaADC lecturaADC `us  1 e 2 0 ]
-"19
+"17
+[v _enteroRecibido enteroRecibido `uc  1 e 1 0 ]
+"18
+[v _PWMvalue PWMvalue `us  1 e 2 0 ]
+"21
 [v _V V `f  1 e 4 0 ]
 [v _temperatura temperatura `f  1 e 4 0 ]
 "1339 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
@@ -578,16 +588,16 @@ channel_FVR_Buffer2 63
 [v _LATD LATD `VEuc  1 e 1 @1217 ]
 "3305
 [v _LATE LATE `VEuc  1 e 1 @1218 ]
-[s S2364 . 1 `uc 1 LATE0 1 0 :1:0 
+[s S2366 . 1 `uc 1 LATE0 1 0 :1:0 
 `uc 1 LATE1 1 0 :1:1 
 `uc 1 LATE2 1 0 :1:2 
 ]
 "3317
-[u S2368 . 1 `S2364 1 . 1 0 ]
-[v _LATEbits LATEbits `VES2368  1 e 1 @1218 ]
+[u S2370 . 1 `S2366 1 . 1 0 ]
+[v _LATEbits LATEbits `VES2370  1 e 1 @1218 ]
 "3337
 [v _LATF LATF `VEuc  1 e 1 @1219 ]
-[s S2381 . 1 `uc 1 LATF0 1 0 :1:0 
+[s S2383 . 1 `uc 1 LATF0 1 0 :1:0 
 `uc 1 LATF1 1 0 :1:1 
 `uc 1 LATF2 1 0 :1:2 
 `uc 1 LATF3 1 0 :1:3 
@@ -597,8 +607,8 @@ channel_FVR_Buffer2 63
 `uc 1 LATF7 1 0 :1:7 
 ]
 "3354
-[u S2390 . 1 `S2381 1 . 1 0 ]
-[v _LATFbits LATFbits `VES2390  1 e 1 @1219 ]
+[u S2392 . 1 `S2383 1 . 1 0 ]
+[v _LATFbits LATFbits `VES2392  1 e 1 @1219 ]
 "3399
 [v _TRISA TRISA `VEuc  1 e 1 @1222 ]
 "3461
@@ -1366,10 +1376,10 @@ channel_FVR_Buffer2 63
 [v _UART1_OverrunErrorHandler UART1_OverrunErrorHandler `*.38(v  1 e 3 0 ]
 "80
 [v _UART1_ErrorHandler UART1_ErrorHandler `*.38(v  1 e 3 0 ]
-"13 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+"17 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"61
+"71
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strstr.c
 [v _strstr strstr `(*.39uc  1 e 2 0 ]
@@ -1388,40 +1398,53 @@ channel_FVR_Buffer2 63
 [v strchr@c c `i  1 p 2 3 ]
 "11
 } 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[s S2977 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+"13
+[v sprintf@f f `S2977  1 a 6 122 ]
+"12
+[v sprintf@ap ap `[1]*.39v  1 a 2 120 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 116 ]
+[v sprintf@fmt fmt `*.32Cuc  1 p 2 118 ]
+"23
+} 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.39v  1 a 2 90 ]
+[v printf@ap ap `[1]*.39v  1 a 2 122 ]
 "5
-[v printf@fmt fmt `*.32Cuc  1 p 2 62 ]
+[v printf@fmt fmt `*.32Cuc  1 p 2 116 ]
 "13
 } 0
 "1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
 "1393
-[v vfprintf@cfmt cfmt `*.32uc  1 a 2 88 ]
-[s S2936 _IO_FILE 0 ]
+[v vfprintf@cfmt cfmt `*.32uc  1 a 2 114 ]
+[s S3003 _IO_FILE 0 ]
 "1390
-[v vfprintf@fp fp `*.2S2936  1 p 2 56 ]
-[v vfprintf@fmt fmt `*.32Cuc  1 p 2 58 ]
-[v vfprintf@ap ap `*.39*.39v  1 p 2 60 ]
+[v vfprintf@fp fp `*.39S3003  1 p 2 108 ]
+[v vfprintf@fmt fmt `*.32Cuc  1 p 2 110 ]
+[v vfprintf@ap ap `*.39*.39v  1 p 2 112 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
 "698
-[v vfpfcnvrt@f f `d  1 a 4 80 ]
+[v vfpfcnvrt@f f `d  1 a 4 103 ]
 "694
-[v vfpfcnvrt@ct ct `[3]uc  1 a 3 84 ]
-[v vfpfcnvrt@c c `uc  1 a 1 87 ]
-[s S2936 _IO_FILE 0 ]
+[v vfpfcnvrt@ct ct `[3]uc  1 a 3 100 ]
+[v vfpfcnvrt@c c `uc  1 a 1 107 ]
+[s S3003 _IO_FILE 0 ]
 "692
-[v vfpfcnvrt@fp fp `*.2S2936  1 p 2 64 ]
-[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 66 ]
-[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 68 ]
+[v vfpfcnvrt@fp fp `*.39S3003  1 p 2 88 ]
+[v vfpfcnvrt@fmt fmt `*.39*.32uc  1 p 2 90 ]
+[v vfpfcnvrt@ap ap `*.39*.39v  1 p 2 92 ]
 "1387
 } 0
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strncmp.c
@@ -1440,31 +1463,31 @@ channel_FVR_Buffer2 63
 [v _efgtoa efgtoa `(i  1 s 2 efgtoa ]
 {
 "336
-[v efgtoa@u u `d  1 a 4 52 ]
-[v efgtoa@g g `d  1 a 4 44 ]
-[v efgtoa@l l `d  1 a 4 38 ]
-[v efgtoa@h h `d  1 a 4 34 ]
-[v efgtoa@ou ou `d  1 a 4 20 ]
+[v efgtoa@u u `d  1 a 4 84 ]
+[v efgtoa@g g `d  1 a 4 76 ]
+[v efgtoa@l l `d  1 a 4 70 ]
+[v efgtoa@h h `d  1 a 4 66 ]
+[v efgtoa@ou ou `d  1 a 4 52 ]
 "335
-[v efgtoa@n n `i  1 a 2 50 ]
-[v efgtoa@e e `i  1 a 2 48 ]
-[v efgtoa@i i `i  1 a 2 42 ]
-[v efgtoa@w w `i  1 a 2 30 ]
-[v efgtoa@p p `i  1 a 2 28 ]
-[v efgtoa@sign sign `i  1 a 2 26 ]
-[v efgtoa@d d `i  1 a 2 24 ]
-[v efgtoa@m m `i  1 a 2 18 ]
-[v efgtoa@ne ne `i  1 a 2 16 ]
-[v efgtoa@pp pp `i  1 a 2 14 ]
-[v efgtoa@t t `i  1 a 2 12 ]
+[v efgtoa@n n `i  1 a 2 82 ]
+[v efgtoa@e e `i  1 a 2 80 ]
+[v efgtoa@i i `i  1 a 2 74 ]
+[v efgtoa@w w `i  1 a 2 62 ]
+[v efgtoa@p p `i  1 a 2 60 ]
+[v efgtoa@sign sign `i  1 a 2 58 ]
+[v efgtoa@d d `i  1 a 2 56 ]
+[v efgtoa@m m `i  1 a 2 50 ]
+[v efgtoa@ne ne `i  1 a 2 48 ]
+[v efgtoa@pp pp `i  1 a 2 46 ]
+[v efgtoa@t t `i  1 a 2 44 ]
 "334
-[v efgtoa@mode mode `uc  1 a 1 33 ]
-[v efgtoa@nmode nmode `uc  1 a 1 32 ]
-[s S2936 _IO_FILE 0 ]
+[v efgtoa@mode mode `uc  1 a 1 65 ]
+[v efgtoa@nmode nmode `uc  1 a 1 64 ]
+[s S3003 _IO_FILE 0 ]
 "332
-[v efgtoa@fp fp `*.2S2936  1 p 2 52 ]
-[v efgtoa@f f `d  1 p 4 54 ]
-[v efgtoa@c c `uc  1 p 1 58 ]
+[v efgtoa@fp fp `*.39S3003  1 p 2 20 ]
+[v efgtoa@f f `d  1 p 4 22 ]
+[v efgtoa@c c `uc  1 p 1 26 ]
 "525
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\tolower.c
@@ -1497,9 +1520,9 @@ channel_FVR_Buffer2 63
 "74
 [v pad@w w `i  1 a 2 28 ]
 [v pad@i i `i  1 a 2 26 ]
-[s S2936 _IO_FILE 0 ]
+[s S3003 _IO_FILE 0 ]
 "72
-[v pad@fp fp `*.2S2936  1 p 2 19 ]
+[v pad@fp fp `*.39S3003  1 p 2 19 ]
 [v pad@buf buf `*.39uc  1 p 2 21 ]
 [v pad@p p `i  1 p 2 23 ]
 "95
@@ -1522,16 +1545,16 @@ channel_FVR_Buffer2 63
 [v fputs@c c `uc  1 a 1 16 ]
 "8
 [v fputs@s s `*.39Cuc  1 p 2 12 ]
-[s S2920 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputs@fp fp `*.2S2920  1 p 2 14 ]
+[s S2977 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputs@fp fp `*.39S2977  1 p 2 14 ]
 "19
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 3 ]
-[s S2920 _IO_FILE 6 `*.2uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
-[v fputc@fp fp `*.2S2920  1 p 2 5 ]
+[s S2977 _IO_FILE 6 `*.39uc 1 buffer 2 0 `i 1 count 2 2 `i 1 limit 2 4 ]
+[v fputc@fp fp `*.39S2977  1 p 2 5 ]
 "24
 } 0
 "229 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\mcc_generated_files/uart1.c
@@ -1554,65 +1577,42 @@ channel_FVR_Buffer2 63
 "3 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\floorf.c
 [v _floorf floorf `(f  1 e 4 0 ]
 {
-[u S3078 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S3137 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "5
-[v floorf@u u `S3078  1 a 4 42 ]
+[v floorf@u u `S3137  1 a 4 6 ]
 "7
-[v floorf@m m `ul  1 a 4 36 ]
+[v floorf@m m `ul  1 a 4 0 ]
 "6
-[v floorf@e e `i  1 a 2 40 ]
+[v floorf@e e `i  1 a 2 4 ]
 "3
-[v floorf@x x `f  1 p 4 26 ]
+[v floorf@x x `f  1 p 4 75 ]
 "4
-[v floorf@F527 F527 `S3078  1 s 4 F527 ]
+[v floorf@F527 F527 `S3137  1 s 4 F527 ]
 "27
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__fpclassifyf.c
 [v ___fpclassifyf __fpclassifyf `(i  1 e 2 0 ]
 {
-[u S3078 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
+[u S3137 . 4 `f 1 f 4 0 `ul 1 i 4 0 ]
 "6
-[v ___fpclassifyf@u u `S3078  1 a 4 11 ]
+[v ___fpclassifyf@u u `S3137  1 a 4 11 ]
 "7
 [v ___fpclassifyf@e e `i  1 a 2 9 ]
 "4
 [v ___fpclassifyf@x x `f  1 p 4 1 ]
 "5
-[v ___fpclassifyf@F465 F465 `S3078  1 s 4 F465 ]
+[v ___fpclassifyf@F465 F465 `S3137  1 s 4 F465 ]
 "11
 } 0
 "43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
 [v ___fltol __fltol `(l  1 e 4 0 ]
 {
 "45
-[v ___fltol@exp1 exp1 `uc  1 a 1 10 ]
-[v ___fltol@sign1 sign1 `uc  1 a 1 9 ]
+[v ___fltol@exp1 exp1 `uc  1 a 1 88 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 87 ]
 "43
-[v ___fltol@f1 f1 `d  1 p 4 1 ]
+[v ___fltol@f1 f1 `d  1 p 4 79 ]
 "70
-} 0
-"245 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
-[v ___flsub __flsub `(d  1 e 4 0 ]
-{
-[v ___flsub@b b `d  1 p 4 40 ]
-[v ___flsub@a a `d  1 p 4 44 ]
-"250
-} 0
-"10
-[v ___fladd __fladd `(d  1 e 4 0 ]
-{
-"17
-[v ___fladd@grs grs `uc  1 a 1 16 ]
-"15
-[v ___fladd@bexp bexp `uc  1 a 1 15 ]
-"16
-[v ___fladd@aexp aexp `uc  1 a 1 14 ]
-"13
-[v ___fladd@signs signs `uc  1 a 1 13 ]
-"10
-[v ___fladd@b b `d  1 p 4 1 ]
-[v ___fladd@a a `d  1 p 4 5 ]
-"237
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flneg.c
 [v ___flneg __flneg `(d  1 e 4 0 ]
@@ -1620,36 +1620,11 @@ channel_FVR_Buffer2 63
 [v ___flneg@f1 f1 `d  1 p 4 1 ]
 "20
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
-[v ___flmul __flmul `(d  1 e 4 0 ]
-{
-[s S2781 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
-"13
-[s S2786 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
-[u S2789 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2781 1 fAsBytes 4 0 `S2786 1 fAsWords 4 0 ]
-[v ___flmul@prod prod `S2789  1 a 4 34 ]
-"12
-[v ___flmul@grs grs `ul  1 a 4 29 ]
-[s S2857 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
-"14
-[u S2860 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2857 1 nAsBytes 2 0 ]
-[v ___flmul@temp temp `S2860  1 a 2 38 ]
-"10
-[v ___flmul@bexp bexp `uc  1 a 1 33 ]
-"11
-[v ___flmul@aexp aexp `uc  1 a 1 28 ]
-"9
-[v ___flmul@sign sign `uc  1 a 1 27 ]
-"8
-[v ___flmul@b b `d  1 p 4 15 ]
-[v ___flmul@a a `d  1 p 4 19 ]
-"205
-} 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\flge.c
 [v ___flge __flge `(b  1 e 0 0 ]
 {
-[v ___flge@ff1 ff1 `d  1 p 4 40 ]
-[v ___flge@ff2 ff2 `d  1 p 4 44 ]
+[v ___flge@ff1 ff1 `d  1 p 4 42 ]
+[v ___flge@ff2 ff2 `d  1 p 4 46 ]
 "19
 } 0
 "4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
@@ -1658,26 +1633,6 @@ channel_FVR_Buffer2 63
 [v ___fleq@ff1 ff1 `d  1 p 4 1 ]
 [v ___fleq@ff2 ff2 `d  1 p 4 5 ]
 "12
-} 0
-"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
-[v ___fldiv __fldiv `(d  1 e 4 0 ]
-{
-"21
-[v ___fldiv@grs grs `ul  1 a 4 20 ]
-"22
-[v ___fldiv@rem rem `ul  1 a 4 13 ]
-"20
-[v ___fldiv@new_exp new_exp `s  1 a 2 18 ]
-"19
-[v ___fldiv@aexp aexp `uc  1 a 1 25 ]
-"18
-[v ___fldiv@bexp bexp `uc  1 a 1 24 ]
-"16
-[v ___fldiv@sign sign `uc  1 a 1 17 ]
-"11
-[v ___fldiv@b b `d  1 p 4 1 ]
-[v ___fldiv@a a `d  1 p 4 5 ]
-"185
 } 0
 "7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\awmod.c
 [v ___awmod __awmod `(i  1 e 2 0 ]
@@ -1710,7 +1665,7 @@ channel_FVR_Buffer2 63
 [v atoi@n n `i  1 a 2 21 ]
 [v atoi@neg neg `i  1 a 2 14 ]
 "4
-[v atoi@s s `*.32Cuc  1 p 2 8 ]
+[v atoi@s s `*.34Cuc  1 p 2 8 ]
 "16
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\isspace.c
@@ -1734,6 +1689,84 @@ channel_FVR_Buffer2 63
 [v ___wmul@multiplier multiplier `ui  1 p 2 1 ]
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 3 ]
 "53
+} 0
+"10 D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\1_2022\Mayo-Agosto2022\AN_LCD_Serial.X\main.c
+[v _map map `(f  1 e 4 0 ]
+{
+[v map@x x `f  1 p 4 0 ]
+[v map@in_min in_min `f  1 p 4 4 ]
+[v map@in_max in_max `f  1 p 4 8 ]
+[v map@out_min out_min `f  1 p 4 12 ]
+[v map@out_max out_max `f  1 p 4 16 ]
+"12
+} 0
+"245 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@b b `d  1 p 4 42 ]
+[v ___flsub@a a `d  1 p 4 46 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 16 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 15 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 14 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 13 ]
+"10
+[v ___fladd@b b `d  1 p 4 1 ]
+[v ___fladd@a a `d  1 p 4 5 ]
+"237
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S2806 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S2811 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S2814 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2806 1 fAsBytes 4 0 `S2811 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2814  1 a 4 36 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 30 ]
+[s S2882 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2885 . 2 `s 1 i 2 0 `us 1 n 2 0 `S2882 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2885  1 a 2 40 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 35 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 34 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 29 ]
+"8
+[v ___flmul@b b `d  1 p 4 17 ]
+[v ___flmul@a a `d  1 p 4 21 ]
+"205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 69 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 62 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 67 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 74 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 73 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 66 ]
+"11
+[v ___fldiv@b b `d  1 p 4 50 ]
+[v ___fldiv@a a `d  1 p 4 54 ]
+"185
 } 0
 "10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
 [v ___xxtofl __xxtofl `(d  1 e 4 0 ]

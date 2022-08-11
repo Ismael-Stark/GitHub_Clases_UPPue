@@ -2,10 +2,14 @@
 #include "mcc_generated_files/mcc.h"
 #include "LCD_i2c.h"
 #include "MisVariables.h"
+#include <stdlib.h>
 #include <string.h> 
 
+//Pin PWM RF2 a 1khz y 9bits
 
-
+float map(float x, float in_min, float in_max, float out_min, float out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 
 /*
                          Main application
@@ -34,7 +38,7 @@ void main(void)
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-    PWM1_LoadDutyValue(65);
+    PWM1_LoadDutyValue(127);
     
    
     while (1)
@@ -50,12 +54,18 @@ void main(void)
         //printf("cont\n" );
         if(strstr(bufferRx,"LED1OFF")){
             LED_SetHigh();//led se apaga
-        }
-        if (strstr(bufferRx,"LED1ON")){
-             LED_SetLow();//led se enciende            
+            sprintf(buffer,"");
+        }else  if (strstr(bufferRx,"LED1ON")){
+             LED_SetLow();//led se enciende  
+             sprintf(buffer,"");
+        }else {
+            enteroRecibido = atoi(bufferRx);
+            PWMvalue = map(enteroRecibido, 0, 10, 0, 512);
+            PWM1_LoadDutyValue(PWMvalue);
+            sprintf(buffer,"");
         }
         
-        __delay_ms(500);
+        __delay_ms(100);
         
     }
 }

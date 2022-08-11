@@ -23,8 +23,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "124 ./mcc_generated_files/pwm1.h
 [; ;./mcc_generated_files/pwm1.h: 124: void PWM1_LoadDutyValue(uint16_t dutyValue);
 [v _PWM1_LoadDutyValue `(v ~T0 @X0 0 ef1`us ]
-"42 main.c
-[; ;main.c: 42:         lecturaADC = ADC_GetSingleConversion(LM35);
+"46 main.c
+[; ;main.c: 46:         lecturaADC = ADC_GetSingleConversion(LM35);
 [c E23269 1 2 5 59 60 61 62 63 .. ]
 [n E23269 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "374 ./mcc_generated_files/adc.h
@@ -54,6 +54,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3134 . . ]
 "3354
 [v _LATFbits `VS3134 ~T0 @X0 0 e@1219 ]
+"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"23 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdlib.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdlib.h: 23: int atoi (const char *);
+[v _atoi `(i ~T0 @X0 0 ef1`*Cuc ]
 "363 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC18F-Q_DFP/1.13.211/xc8\pic\include\proc\pic18f57q84.h: 363: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3728,108 +3733,167 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _lecturaADC
 -> -> 0 `i `us
 ]
+"17
+[; ;./MisVariables.h: 17:     uint8_t enteroRecibido = 0;
+[v _enteroRecibido `uc ~T0 @X0 1 e ]
+[i _enteroRecibido
+-> -> 0 `i `uc
+]
 "18
-[; ;./MisVariables.h: 18: float mV = (3.3/4095);
+[; ;./MisVariables.h: 18:     uint16_t PWMvalue = 0;
+[v _PWMvalue `us ~T0 @X0 1 e ]
+[i _PWMvalue
+-> -> 0 `i `us
+]
+"20
+[; ;./MisVariables.h: 20: float mV = (3.3/4095);
 [v _mV `f ~T0 @X0 1 e ]
 [i _mV
 -> / .3.3 -> -> 4095 `i `d `f
 ]
-"19
-[; ;./MisVariables.h: 19: float V, temperatura;
+"21
+[; ;./MisVariables.h: 21: float V, temperatura;
 [v _V `f ~T0 @X0 1 e ]
 [v _temperatura `f ~T0 @X0 1 e ]
+"10 main.c
+[; ;main.c: 10: float map(float x, float in_min, float in_max, float out_min, float out_max) {
+[v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
+{
+[e :U _map ]
+[v _x `f ~T0 @X0 1 r1 ]
+[v _in_min `f ~T0 @X0 1 r2 ]
+[v _in_max `f ~T0 @X0 1 r3 ]
+[v _out_min `f ~T0 @X0 1 r4 ]
+[v _out_max `f ~T0 @X0 1 r5 ]
+[f ]
+"11
+[; ;main.c: 11:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
+[e $UE 3259  ]
+"12
+[; ;main.c: 12: }
+[e :UE 3259 ]
+}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"13 main.c
-[; ;main.c: 13: void main(void)
+"17
+[; ;main.c: 17: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"14
-[; ;main.c: 14: {
+"18
+[; ;main.c: 18: {
 {
 [e :U _main ]
 [f ]
-"17
-[; ;main.c: 17:     SYSTEM_Initialize();
+"21
+[; ;main.c: 21:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"19
-[; ;main.c: 19:     _delay((unsigned long)((500)*(10000000/4000.0)));
+"23
+[; ;main.c: 23:     _delay((unsigned long)((500)*(10000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"33
-[; ;main.c: 33:     (INTCON0bits.GIE = 1);
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
 "37
-[; ;main.c: 37:     PWM1_LoadDutyValue(65);
-[e ( _PWM1_LoadDutyValue (1 -> -> 65 `i `us ]
-"40
-[; ;main.c: 40:     while (1)
-[e :U 3261 ]
+[; ;main.c: 37:     (INTCON0bits.GIE = 1);
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
 "41
-[; ;main.c: 41:     {
-{
-"42
-[; ;main.c: 42:         lecturaADC = ADC_GetSingleConversion(LM35);
-[e = _lecturaADC ( _ADC_GetSingleConversion (1 . `E23269 2 ]
-"43
-[; ;main.c: 43:         V = mV*lecturaADC;
-[e = _V * _mV -> -> _lecturaADC `ui `f ]
+[; ;main.c: 41:     PWM1_LoadDutyValue(127);
+[e ( _PWM1_LoadDutyValue (1 -> -> 127 `i `us ]
 "44
-[; ;main.c: 44:         temperatura = V / 0.01;
-[e = _temperatura -> / -> _V `d .0.01 `f ]
+[; ;main.c: 44:     while (1)
+[e :U 3262 ]
 "45
-[; ;main.c: 45:         printf("%3.2f\n",temperatura);
-[e ( _printf , (. :s 1C -> _temperatura `d ]
+[; ;main.c: 45:     {
+{
+"46
+[; ;main.c: 46:         lecturaADC = ADC_GetSingleConversion(LM35);
+[e = _lecturaADC ( _ADC_GetSingleConversion (1 . `E23269 2 ]
+"47
+[; ;main.c: 47:         V = mV*lecturaADC;
+[e = _V * _mV -> -> _lecturaADC `ui `f ]
 "48
-[; ;main.c: 48:         do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
-[e :U 3265 ]
+[; ;main.c: 48:         temperatura = V / 0.01;
+[e = _temperatura -> / -> _V `d .0.01 `f ]
+"49
+[; ;main.c: 49:         printf("%3.2f\n",temperatura);
+[e ( _printf , (. :s 1C -> _temperatura `d ]
+"52
+[; ;main.c: 52:         do { LATEbits.LATE0 = ~LATEbits.LATE0; } while(0);
+[e :U 3266 ]
 {
 [e = . . _LATEbits 0 0 -> ~ -> . . _LATEbits 0 0 `i `uc ]
 }
-[e :U 3264 ]
-"51
-[; ;main.c: 51:         if(strstr(bufferRx,"LED1OFF")){
-[e $ ! != ( _strstr (2 , -> &U _bufferRx `*Cuc :s 3C -> -> 0 `i `*uc 3266  ]
+[e :U 3265 ]
+"55
+[; ;main.c: 55:         if(strstr(bufferRx,"LED1OFF")){
+[e $ ! != ( _strstr (2 , -> &U _bufferRx `*Cuc :s 3C -> -> 0 `i `*uc 3267  ]
 {
-"52
-[; ;main.c: 52:             do { LATFbits.LATF3 = 1; } while(0);
-[e :U 3269 ]
+"56
+[; ;main.c: 56:             do { LATFbits.LATF3 = 1; } while(0);
+[e :U 3270 ]
 {
 [e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 3268 ]
-"53
-[; ;main.c: 53:         }
+[e :U 3269 ]
+"57
+[; ;main.c: 57:             sprintf(buffer,"");
+[e ( _sprintf (1 , -> &U _buffer `*uc :s 4C ]
+"58
+[; ;main.c: 58:         }else if (strstr(bufferRx,"LED1ON")){
 }
-[e :U 3266 ]
-"54
-[; ;main.c: 54:         if (strstr(bufferRx,"LED1ON")){
-[e $ ! != ( _strstr (2 , -> &U _bufferRx `*Cuc :s 5C -> -> 0 `i `*uc 3270  ]
+[e $U 3271  ]
+[e :U 3267 ]
+[e $ ! != ( _strstr (2 , -> &U _bufferRx `*Cuc :s 6C -> -> 0 `i `*uc 3272  ]
 {
-"55
-[; ;main.c: 55:              do { LATFbits.LATF3 = 0; } while(0);
-[e :U 3273 ]
+"59
+[; ;main.c: 59:              do { LATFbits.LATF3 = 0; } while(0);
+[e :U 3275 ]
 {
 [e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 3272 ]
-"56
-[; ;main.c: 56:         }
-}
-[e :U 3270 ]
-"58
-[; ;main.c: 58:         _delay((unsigned long)((500)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+[e :U 3274 ]
 "60
-[; ;main.c: 60:     }
-}
-[e :U 3260 ]
-[e $U 3261  ]
-[e :U 3262 ]
+[; ;main.c: 60:              sprintf(buffer,"");
+[e ( _sprintf (1 , -> &U _buffer `*uc :s 7C ]
 "61
-[; ;main.c: 61: }
-[e :UE 3259 ]
+[; ;main.c: 61:         }else {
+}
+[e $U 3276  ]
+[e :U 3272 ]
+{
+"62
+[; ;main.c: 62:             enteroRecibido = atoi(bufferRx);
+[e = _enteroRecibido -> ( _atoi (1 -> &U _bufferRx `*Cuc `uc ]
+"63
+[; ;main.c: 63:             PWMvalue = map(enteroRecibido, 0, 10, 0, 512);
+[e = _PWMvalue -> ( _map (4 , , , , -> _enteroRecibido `f -> -> 0 `i `f -> -> 10 `i `f -> -> 0 `i `f -> -> 512 `i `f `us ]
+"64
+[; ;main.c: 64:             PWM1_LoadDutyValue(PWMvalue);
+[e ( _PWM1_LoadDutyValue (1 _PWMvalue ]
+"65
+[; ;main.c: 65:             sprintf(buffer,"");
+[e ( _sprintf (1 , -> &U _buffer `*uc :s 8C ]
+"66
+[; ;main.c: 66:         }
+}
+[e :U 3276 ]
+[e :U 3271 ]
+"68
+[; ;main.c: 68:         _delay((unsigned long)((2000)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 2000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"70
+[; ;main.c: 70:     }
+}
+[e :U 3261 ]
+[e $U 3262  ]
+[e :U 3263 ]
+"71
+[; ;main.c: 71: }
+[e :UE 3260 ]
 }
 [p f _printf 8495104 ]
-[a 4C 76 69 68 49 79 78 0 ]
+[p f _sprintf 8388608 ]
 [a 5C 76 69 68 49 79 78 0 ]
+[a 6C 76 69 68 49 79 78 0 ]
 [a 2C 76 69 68 49 79 70 70 0 ]
 [a 3C 76 69 68 49 79 70 70 0 ]
 [a 1C 37 51 46 50 102 10 0 ]
+[a 4C 0 ]
+[a 7C 0 ]
+[a 8C 0 ]

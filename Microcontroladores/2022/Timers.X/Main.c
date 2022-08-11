@@ -10,6 +10,8 @@
 #include "interrupt.h"
 #include "servo.h"
 #include "Timer1.h"
+#include "MultiServo.h"
+#include "Timer5.h"
 
 
 //tarea, activar interrupciones del timer1
@@ -38,8 +40,11 @@ void main(void) {
     //configuro timer0 para el servo
     Timer0_8bit_InterruptInit(T0Poscaler_div1,9,255);
     
-    
     Timer1_init(3, 34286);
+    
+    
+    //Time5 para servo
+    Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
     
     __delay_ms(1000);
     //eeprom_write(0,26);
@@ -68,20 +73,80 @@ void main(void) {
         
         
         if (recepcionRX != '\0'){
-            if(recepcionRX == 'a'){
+            if(recepcionRX == 'z'){
                 tSERVO1 += 9;
                 recepcionRX = '\0';
             }
-            if(recepcionRX == 's'){
+            if(recepcionRX == 'x'){
                 tSERVO1 = 93;
                 recepcionRX = '\0';
             }
-            if(recepcionRX == 'd'){
+            if(recepcionRX == 'c'){
                 tSERVO1 -= 9;
                 recepcionRX = '\0';
             }
         }
         
+    
+        if(command!='\0'){
+          //command=toupper(command);//#include <ctype.h> //Convierte un carácter a mayúsculas
+          valid_command=0;
+          //printf("%c\r\n>",command);
+          
+          if(command=='a'){
+            Servo_PWM[0] -= 580;
+            if ( Servo_PWM[0] < Ticks4Minimum) {
+                Servo_PWM[0] = Ticks4Minimum;
+            }
+            valid_command=1;
+          }
+          if(command=='d'){
+            Servo_PWM[0] += 580;
+            if ( Servo_PWM[0] > Ticks4Maximum) {
+                Servo_PWM[0] = Ticks4Maximum;
+            }
+            valid_command=1;
+          }
+          if(command=='j'){
+            Servo_PWM[0] = Ticks4Minimum;
+            valid_command=1;
+          }
+          if(command=='k'){
+            Servo_PWM[0] = Ticks4Center;
+            valid_command=1;
+          }
+          if(command=='l'){
+            Servo_PWM[0] = Ticks4Maximum;
+            valid_command=1;
+          }
+          
+          
+          
+          if(command=='w'){
+            Servo_PWM[1] += 580;
+            valid_command=1;
+          }
+          if(command=='s'){
+            Servo_PWM[1] -= 580;
+            valid_command=1;
+          }
+           if(command=='i'){
+            Servo_PWM[1] = Ticks4Minimum;
+            valid_command=1;
+          }
+          if(command=='o'){
+            Servo_PWM[1] = Ticks4Center;
+            valid_command=1;
+          }
+          if(command=='p'){
+            Servo_PWM[1] = Ticks4Maximum;
+            valid_command=1;
+          }
+          
+
+          //if(!valid_command) printf("?\r\n>");
+          command='\0';
+        }
         
     }
     return;

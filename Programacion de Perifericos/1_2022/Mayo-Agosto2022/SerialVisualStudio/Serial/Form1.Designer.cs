@@ -43,6 +43,8 @@
             this.btn_borrarTexto = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_conectar
@@ -86,7 +88,7 @@
             // 
             // btn_encender
             // 
-            this.btn_encender.Location = new System.Drawing.Point(353, 44);
+            this.btn_encender.Location = new System.Drawing.Point(335, 42);
             this.btn_encender.Name = "btn_encender";
             this.btn_encender.Size = new System.Drawing.Size(75, 23);
             this.btn_encender.TabIndex = 4;
@@ -105,7 +107,7 @@
             // 
             // btn_apagar
             // 
-            this.btn_apagar.Location = new System.Drawing.Point(353, 86);
+            this.btn_apagar.Location = new System.Drawing.Point(335, 79);
             this.btn_apagar.Name = "btn_apagar";
             this.btn_apagar.Size = new System.Drawing.Size(75, 23);
             this.btn_apagar.TabIndex = 7;
@@ -113,14 +115,10 @@
             this.btn_apagar.UseVisualStyleBackColor = true;
             this.btn_apagar.Click += new System.EventHandler(this.btn_apagar_Click);
             // 
-            // serialPort1
-            // 
-            this.serialPort1.PortName = "COM7";
-            // 
             // listaBaudios
             // 
             this.listaBaudios.FormattingEnabled = true;
-            this.listaBaudios.Location = new System.Drawing.Point(205, 46);
+            this.listaBaudios.Location = new System.Drawing.Point(205, 44);
             this.listaBaudios.Name = "listaBaudios";
             this.listaBaudios.Size = new System.Drawing.Size(106, 21);
             this.listaBaudios.TabIndex = 8;
@@ -143,9 +141,9 @@
             // 
             // btn_borrarTexto
             // 
-            this.btn_borrarTexto.Location = new System.Drawing.Point(606, 253);
+            this.btn_borrarTexto.Location = new System.Drawing.Point(25, 417);
             this.btn_borrarTexto.Name = "btn_borrarTexto";
-            this.btn_borrarTexto.Size = new System.Drawing.Size(70, 70);
+            this.btn_borrarTexto.Size = new System.Drawing.Size(70, 42);
             this.btn_borrarTexto.TabIndex = 10;
             this.btn_borrarTexto.Text = "Borrar Texto";
             this.btn_borrarTexto.UseVisualStyleBackColor = true;
@@ -153,7 +151,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(519, 73);
+            this.button1.Location = new System.Drawing.Point(263, 419);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 35);
             this.button1.TabIndex = 11;
@@ -163,7 +161,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(513, 27);
+            this.button2.Location = new System.Drawing.Point(124, 417);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(118, 38);
             this.button2.TabIndex = 12;
@@ -171,11 +169,20 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(397, 419);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(262, 45);
+            this.trackBar1.TabIndex = 13;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(677, 419);
+            this.ClientSize = new System.Drawing.Size(839, 471);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_borrarTexto);
@@ -191,6 +198,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,6 +220,7 @@
         private System.Windows.Forms.Button btn_borrarTexto;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
 

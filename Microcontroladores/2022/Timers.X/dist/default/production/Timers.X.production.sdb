@@ -3,7 +3,7 @@
 [d edition pro ]
 [d chip 16F18855 ]
 [d frameptr 6 ]
-"39 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
+"41 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
 [e E12016 . `uc
 T0Poscaler_div1 0
 T0Poscaler_div2 1
@@ -11,6 +11,32 @@ T0Poscaler_div3 2
 T0Poscaler_div4 3
 T0Poscaler_div5 4
 T0Poscaler_div6 5
+]
+"47
+[e E12100 . `uc
+T5PrescDiv1 0
+T5PrescDiv2 1
+T5PrescDiv4 2
+T5PrescDiv8 3
+]
+"14 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer5.c
+[e E12010 . `uc
+T5TxCKIPPS 0
+T5FOSC_4 1
+T5FOSC 2
+T5HFINTOSC 3
+T5LFINTOSC 4
+T5MFINTOSC 5
+T5SOSC 6
+T5CLKR_output_clock 7
+T5TMR0_overflow_output 8
+T5TMR1_overflow_output 9
+T5TMR3_overflow_output 10
+T5TMR5_overflow_output 11
+T5LC1_out 12
+T5LC2_out 13
+T5LC3_out 14
+T5LC4_out 15
 ]
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
@@ -34,15 +60,15 @@ T0Poscaler_div6 5
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"7 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\interrupt.c
+"9 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\interrupt.c
 [v _enable_Global_interrupt enable_Global_interrupt `(v  1 e 1 0 ]
-"11
+"13
 [v _enable_Peripheral_interrupt enable_Peripheral_interrupt `(v  1 e 1 0 ]
-"35
+"37
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
-"27 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
+"29 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
 [v _main main `(v  1 e 1 0 ]
-"91
+"156
 [v _port_init port_init `(v  1 e 1 0 ]
 "14 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer0.c
 [v _Timer0_8bit_InterruptInit Timer0_8bit_InterruptInit `(v  1 e 1 0 ]
@@ -52,6 +78,10 @@ T0Poscaler_div6 5
 [v _Timer0_8bit_set Timer0_8bit_set `(v  1 e 1 0 ]
 "3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer1.c
 [v _Timer1_init Timer1_init `(v  1 e 1 0 ]
+"24 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer5.c
+[v _Timer5_Interrupt_init Timer5_Interrupt_init `(v  1 e 1 0 ]
+"40
+[v _Timer5_set Timer5_set `(v  1 e 1 0 ]
 "32 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\uart.c
 [v _serial_Interrupt_init serial_Interrupt_init `(v  1 e 1 0 ]
 "65
@@ -64,6 +94,41 @@ T0Poscaler_div6 5
 [v _counts counts `uc  1 e 1 0 ]
 "12
 [v _recepcionRX recepcionRX `uc  1 e 1 0 ]
+"27 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X/MultiServo.h
+[v _SERVO3 SERVO3 `uc  1 e 1 0 ]
+[v _SERVO4 SERVO4 `uc  1 e 1 0 ]
+[v _SERVO5 SERVO5 `uc  1 e 1 0 ]
+[v _SERVO6 SERVO6 `uc  1 e 1 0 ]
+[v _SERVO7 SERVO7 `uc  1 e 1 0 ]
+[v _SERVO8 SERVO8 `uc  1 e 1 0 ]
+"34
+[v _valid_command valid_command `a  1 e 1 0 ]
+"35
+[v _command command `uc  1 e 1 0 ]
+"36
+[v _Servo_PWM Servo_PWM `[8]us  1 e 16 0 ]
+"37
+[v _Servo_Idx Servo_Idx `uc  1 e 1 0 ]
+"38
+[v _SERVO1_ON SERVO1_ON `a  1 e 1 0 ]
+"39
+[v _SERVO2_ON SERVO2_ON `a  1 e 1 0 ]
+"40
+[v _SERVO3_ON SERVO3_ON `a  1 e 1 0 ]
+"41
+[v _SERVO4_ON SERVO4_ON `a  1 e 1 0 ]
+"42
+[v _SERVO5_ON SERVO5_ON `a  1 e 1 0 ]
+"43
+[v _SERVO6_ON SERVO6_ON `a  1 e 1 0 ]
+"44
+[v _SERVO7_ON SERVO7_ON `a  1 e 1 0 ]
+"45
+[v _SERVO8_ON SERVO8_ON `a  1 e 1 0 ]
+"46
+[v _flag_Phase flag_Phase `uc  1 e 1 0 ]
+"48
+[v _Ticks4NextInterrupt@MultiServo$F479 Ticks4NextInterrupt `us  1 s 2 Ticks4NextInterrupt ]
 "19 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X/servo.h
 [v _flagRTCC flagRTCC `a  1 e 1 0 ]
 "20
@@ -76,14 +141,14 @@ T0Poscaler_div6 5
 [v _valTIMER0 valTIMER0 `uc  1 e 1 0 ]
 "352 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
 [v _INTCON INTCON `VEuc  1 e 1 @11 ]
-[s S331 . 1 `uc 1 INTEDG 1 0 :1:0 
+[s S366 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
 "365
-[u S336 . 1 `S331 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES336  1 e 1 @11 ]
+[u S371 . 1 `S366 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES371  1 e 1 @11 ]
 "385
 [v _PORTA PORTA `VEuc  1 e 1 @12 ]
 "447
@@ -96,7 +161,7 @@ T0Poscaler_div6 5
 [v _TRISC TRISC `VEuc  1 e 1 @19 ]
 "778
 [v _LATA LATA `VEuc  1 e 1 @22 ]
-[s S82 . 1 `uc 1 LATA0 1 0 :1:0 
+[s S93 . 1 `uc 1 LATA0 1 0 :1:0 
 `uc 1 LATA1 1 0 :1:1 
 `uc 1 LATA2 1 0 :1:2 
 `uc 1 LATA3 1 0 :1:3 
@@ -106,11 +171,11 @@ T0Poscaler_div6 5
 `uc 1 LATA7 1 0 :1:7 
 ]
 "795
-[u S91 . 1 `S82 1 . 1 0 ]
-[v _LATAbits LATAbits `VES91  1 e 1 @22 ]
+[u S102 . 1 `S93 1 . 1 0 ]
+[v _LATAbits LATAbits `VES102  1 e 1 @22 ]
 "840
 [v _LATB LATB `VEuc  1 e 1 @23 ]
-[s S103 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S114 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -120,8 +185,8 @@ T0Poscaler_div6 5
 `uc 1 LATC7 1 0 :1:7 
 ]
 "919
-[u S112 . 1 `S103 1 . 1 0 ]
-[v _LATCbits LATCbits `VES112  1 e 1 @24 ]
+[u S123 . 1 `S114 1 . 1 0 ]
+[v _LATCbits LATCbits `VES123  1 e 1 @24 ]
 "964
 [v _TMR0L TMR0L `VEuc  1 e 1 @28 ]
 "1102
@@ -152,17 +217,48 @@ T0Poscaler_div6 5
 [v _T1CON T1CON `VEuc  1 e 1 @526 ]
 "6990
 [v _T1CLK T1CLK `VEuc  1 e 1 @529 ]
-[s S260 . 1 `uc 1 INTF 1 0 :1:0 
+"8036
+[v _TMR5L TMR5L `VEuc  1 e 1 @536 ]
+"8206
+[v _TMR5H TMR5H `VEuc  1 e 1 @537 ]
+"8326
+[v _T5CON T5CON `VEuc  1 e 1 @538 ]
+[s S587 . 1 `uc 1 ON 1 0 :1:0 
+`uc 1 RD16 1 0 :1:1 
+`uc 1 nSYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 CKPS 1 0 :2:4 
+]
+"8357
+[s S593 . 1 `uc 1 TMR5ON 1 0 :1:0 
+`uc 1 T5RD16 1 0 :1:1 
+`uc 1 nT5SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T5CKPS0 1 0 :1:4 
+`uc 1 T5CKPS1 1 0 :1:5 
+]
+[s S600 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+]
+[s S604 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RD165 1 0 :1:1 
+]
+[u S607 . 1 `S587 1 . 1 0 `S593 1 . 1 0 `S600 1 . 1 0 `S604 1 . 1 0 ]
+[v _T5CONbits T5CONbits `VES607  1 e 1 @538 ]
+"8784
+[v _T5CLK T5CLK `VEuc  1 e 1 @541 ]
+[s S295 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
 "21014
-[u S265 . 1 `S260 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES265  1 e 1 @1804 ]
+[u S300 . 1 `S295 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES300  1 e 1 @1804 ]
 "21106
 [v _PIR3 PIR3 `VEuc  1 e 1 @1807 ]
-[s S191 . 1 `uc 1 SSP1IF 1 0 :1:0 
+[s S226 . 1 `uc 1 SSP1IF 1 0 :1:0 
 `uc 1 BCL1IF 1 0 :1:1 
 `uc 1 SSP2IF 1 0 :1:2 
 `uc 1 BCL2IF 1 0 :1:3 
@@ -170,9 +266,9 @@ T0Poscaler_div6 5
 `uc 1 RCIF 1 0 :1:5 
 ]
 "21121
-[u S198 . 1 `S191 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES198  1 e 1 @1807 ]
-[s S65 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S233 . 1 `S226 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES233  1 e 1 @1807 ]
+[s S76 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 TMR3IF 1 0 :1:2 
 `uc 1 TMR4IF 1 0 :1:3 
@@ -180,19 +276,19 @@ T0Poscaler_div6 5
 `uc 1 TMR6IF 1 0 :1:5 
 ]
 "21171
-[u S72 . 1 `S65 1 . 1 0 ]
-[v _PIR4bits PIR4bits `VES72  1 e 1 @1808 ]
+[u S83 . 1 `S76 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES83  1 e 1 @1808 ]
 "21423
 [v _PIE0 PIE0 `VEuc  1 e 1 @1814 ]
-[s S273 . 1 `uc 1 INTE 1 0 :1:0 
+[s S308 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
 "21436
-[u S278 . 1 `S273 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES278  1 e 1 @1814 ]
-[s S208 . 1 `uc 1 SSP1IE 1 0 :1:0 
+[u S313 . 1 `S308 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES313  1 e 1 @1814 ]
+[s S243 . 1 `uc 1 SSP1IE 1 0 :1:0 
 `uc 1 BCL1IE 1 0 :1:1 
 `uc 1 SSP2IE 1 0 :1:2 
 `uc 1 BCL2IE 1 0 :1:3 
@@ -200,8 +296,18 @@ T0Poscaler_div6 5
 `uc 1 RCIE 1 0 :1:5 
 ]
 "21543
-[u S215 . 1 `S208 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES215  1 e 1 @1817 ]
+[u S250 . 1 `S243 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES250  1 e 1 @1817 ]
+[s S400 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 TMR3IE 1 0 :1:2 
+`uc 1 TMR4IE 1 0 :1:3 
+`uc 1 TMR5IE 1 0 :1:4 
+`uc 1 TMR6IE 1 0 :1:5 
+]
+"21593
+[u S407 . 1 `S400 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES407  1 e 1 @1818 ]
 "29655
 [v _INTPPS INTPPS `VEuc  1 e 1 @3728 ]
 "31567
@@ -220,55 +326,55 @@ T0Poscaler_div6 5
 [v _width width `i  1 s 2 width ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"27 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
+"29 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"88
+"153
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.4v  1 a 1 22 ]
+[v printf@ap ap `[1]*.4v  1 a 1 0 ]
 "5
-[v printf@fmt fmt `*.25DCuc  1 p 2 19 ]
+[v printf@fmt fmt `*.25DCuc  1 p 2 25 ]
 "13
 } 0
 "1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S854 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.1S854  1 a 1 wreg ]
+[s S1101 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1101  1 a 1 wreg ]
 "1393
-[v vfprintf@cfmt cfmt `*.25uc  1 a 2 17 ]
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 23 ]
 "1390
-[v vfprintf@fp fp `*.1S854  1 a 1 wreg ]
-[v vfprintf@fmt fmt `*.25DCuc  1 p 2 11 ]
-[v vfprintf@ap ap `*.4*.4v  1 p 1 13 ]
+[v vfprintf@fp fp `*.1S1101  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 17 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 19 ]
 "1395
 "1390
-[v vfprintf@fp fp `*.1S854  1 a 1 16 ]
+[v vfprintf@fp fp `*.1S1101  1 a 1 22 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S854 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.1S854  1 a 1 wreg ]
-[v vfpfcnvrt@fp fp `*.1S854  1 a 1 wreg ]
-[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 8 ]
-[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 9 ]
+[s S1101 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1101  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.1S1101  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 9 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 10 ]
 "702
 "692
-[v vfpfcnvrt@fp fp `*.1S854  1 a 1 10 ]
+[v vfpfcnvrt@fp fp `*.1S1101  1 a 1 16 ]
 "1387
 } 0
 "8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
-[v fputc@c c `i  1 p 2 5 ]
-[s S837 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.1S837  1 p 1 7 ]
+[v fputc@c c `i  1 p 2 1 ]
+[s S1084 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S1084  1 p 1 3 ]
 "24
 } 0
 "98 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\uart.c
@@ -277,7 +383,7 @@ T0Poscaler_div6 5
 [v putch@dato dato `uc  1 a 1 wreg ]
 [v putch@dato dato `uc  1 a 1 wreg ]
 "100
-[v putch@dato dato `uc  1 a 1 4 ]
+[v putch@dato dato `uc  1 a 1 0 ]
 "101
 } 0
 "65
@@ -285,52 +391,61 @@ T0Poscaler_div6 5
 {
 [v uart_tx@dato dato `uc  1 a 1 wreg ]
 [v uart_tx@dato dato `uc  1 a 1 wreg ]
-[v uart_tx@dato dato `uc  1 a 1 3 ]
+[v uart_tx@dato dato `uc  1 a 1 5 ]
 "71
 } 0
-"91 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
+"156 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Main.c
 [v _port_init port_init `(v  1 e 1 0 ]
 {
-"115
+"180
 } 0
 "32 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\uart.c
 [v _serial_Interrupt_init serial_Interrupt_init `(v  1 e 1 0 ]
 {
 "33
-[v serial_Interrupt_init@sx sx `us  1 a 2 14 ]
+[v serial_Interrupt_init@sx sx `us  1 a 2 21 ]
 "32
-[v serial_Interrupt_init@baudios baudios `ul  1 p 4 6 ]
+[v serial_Interrupt_init@baudios baudios `ul  1 p 4 13 ]
 "63
 } 0
 "5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\__lldiv.c
 [v ___lldiv __lldiv `(ul  1 e 4 0 ]
 {
 "10
-[v ___lldiv@quotient quotient `ul  1 a 4 1 ]
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
 "11
-[v ___lldiv@counter counter `uc  1 a 1 5 ]
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
 "5
-[v ___lldiv@divisor divisor `ul  1 p 4 2 ]
-[v ___lldiv@dividend dividend `ul  1 p 4 6 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
 "30
 } 0
-"11 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\interrupt.c
+"13 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\interrupt.c
 [v _enable_Peripheral_interrupt enable_Peripheral_interrupt `(v  1 e 1 0 ]
 {
-"14
+"16
 } 0
-"7
+"9
 [v _enable_Global_interrupt enable_Global_interrupt `(v  1 e 1 0 ]
 {
-"10
+"12
+} 0
+"24 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer5.c
+[v _Timer5_Interrupt_init Timer5_Interrupt_init `(v  1 e 1 0 ]
+{
+[v Timer5_Interrupt_init@prescaler prescaler `uc  1 a 1 wreg ]
+[v Timer5_Interrupt_init@prescaler prescaler `uc  1 a 1 wreg ]
+[v Timer5_Interrupt_init@TimerValue TimerValue `us  1 p 2 4 ]
+[v Timer5_Interrupt_init@prescaler prescaler `uc  1 a 1 1 ]
+"38
 } 0
 "3 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer1.c
 [v _Timer1_init Timer1_init `(v  1 e 1 0 ]
 {
 [v Timer1_init@prescaler prescaler `uc  1 a 1 wreg ]
 [v Timer1_init@prescaler prescaler `uc  1 a 1 wreg ]
-[v Timer1_init@TimerValue TimerValue `us  1 p 2 2 ]
-[v Timer1_init@prescaler prescaler `uc  1 a 1 5 ]
+[v Timer1_init@TimerValue TimerValue `us  1 p 2 4 ]
+[v Timer1_init@prescaler prescaler `uc  1 a 1 1 ]
 "13
 } 0
 "31 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer0.c
@@ -343,20 +458,26 @@ T0Poscaler_div6 5
 {
 [v Timer0_8bit_InterruptInit@postscaler postscaler `uc  1 a 1 wreg ]
 [v Timer0_8bit_InterruptInit@postscaler postscaler `uc  1 a 1 wreg ]
-[v Timer0_8bit_InterruptInit@prescaler prescaler `uc  1 p 1 2 ]
-[v Timer0_8bit_InterruptInit@TimerValue TimerValue `uc  1 p 1 3 ]
-[v Timer0_8bit_InterruptInit@postscaler postscaler `uc  1 a 1 4 ]
+[v Timer0_8bit_InterruptInit@prescaler prescaler `uc  1 p 1 4 ]
+[v Timer0_8bit_InterruptInit@TimerValue TimerValue `uc  1 p 1 5 ]
+[v Timer0_8bit_InterruptInit@postscaler postscaler `uc  1 a 1 0 ]
 "29
 } 0
-"35 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\interrupt.c
+"37 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\interrupt.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
-"63
+"105
 } 0
 "73 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\uart.c
 [v _uart_rx uart_rx `(uc  1 e 1 0 ]
 {
 "89
+} 0
+"40 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer5.c
+[v _Timer5_set Timer5_set `(v  1 e 1 0 ]
+{
+[v Timer5_set@time time `us  1 p 2 0 ]
+"60
 } 0
 "34 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\Timers.X\Timer0.c
 [v _Timer0_8bit_set Timer0_8bit_set `(v  1 e 1 0 ]

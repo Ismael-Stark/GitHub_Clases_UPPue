@@ -14,6 +14,8 @@ extern "C" {
     uint8_t bufferRx[10], contadorRx=0;
     uint8_t contador = 0, buffer[60];
     uint16_t lecturaADC = 0;
+    uint8_t enteroRecibido = 0;
+    uint16_t PWMvalue = 0;
 
 float mV = (3.3/4095);
 float V, temperatura;

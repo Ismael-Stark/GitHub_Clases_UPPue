@@ -20060,7 +20060,73 @@ uint8_t uart_rx();
     uint16_t Timer1_get();
     void Timer1_set(uint16_t TimerValue);
 # 12 "Main.c" 2
-# 25 "Main.c"
+
+# 1 "./MultiServo.h" 1
+# 27 "./MultiServo.h"
+    char SERVO3,SERVO4,SERVO5,SERVO6,SERVO7 ,SERVO8;
+
+    const uint16_t Ticks4Window = 0x9C40;
+    const uint16_t Ticks4Minimum = 0X2BC0;
+    const uint16_t Ticks4Center = 24000;
+    const uint16_t Ticks4Maximum = 0X8FC0;
+
+    _Bool valid_command;
+    uint8_t command;
+    uint16_t Servo_PWM[8]={24000,24000,0,0,0,0,0,0};
+    uint8_t Servo_Idx=0;
+    _Bool SERVO1_ON=1;
+    _Bool SERVO2_ON=1;
+    _Bool SERVO3_ON=0;
+    _Bool SERVO4_ON=0;
+    _Bool SERVO5_ON=0;
+    _Bool SERVO6_ON=0;
+    _Bool SERVO7_ON=0;
+    _Bool SERVO8_ON=0;
+    uint8_t flag_Phase;
+
+    static uint16_t Ticks4NextInterrupt=25536;
+
+
+    void servoMenu(void);
+# 13 "Main.c" 2
+
+# 1 "./Timer5.h" 1
+# 11 "./Timer5.h"
+    typedef enum{
+        T5PrescDiv1 = 0,
+        T5PrescDiv2,
+        T5PrescDiv4,
+        T5PrescDiv8
+    }T5Prescaler_t;
+
+    typedef enum{
+        T5TxCKIPPS = 0,
+        T5FOSC_4,
+        T5FOSC,
+        T5HFINTOSC,
+        T5LFINTOSC ,
+        T5MFINTOSC ,
+        T5SOSC ,
+        T5CLKR_output_clock,
+        T5TMR0_overflow_output ,
+        T5TMR1_overflow_output ,
+        T5TMR3_overflow_output ,
+        T5TMR5_overflow_output ,
+        T5LC1_out ,
+        T5LC2_out ,
+        T5LC3_out ,
+        T5LC4_out
+    }Timer5_Clock;
+
+    void Timer5_init(uint8_t prescaler, uint16_t TimerValue );
+
+    void Timer5_Interrupt_init(uint8_t prescaler, uint16_t TimerValue );
+
+    void Timer5_set(uint16_t time);
+
+    uint16_t Timer5_get();
+# 14 "Main.c" 2
+# 27 "Main.c"
 void port_init();
 
 void main(void) {
@@ -20077,8 +20143,11 @@ void main(void) {
 
     Timer0_8bit_InterruptInit(T0Poscaler_div1,9,255);
 
-
     Timer1_init(3, 34286);
+
+
+
+    Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
 
     _delay((unsigned long)((1000)*(32000000UL/4000.0)));
 
@@ -20094,33 +20163,93 @@ void main(void) {
 
         if (flagRTCC ==1){
             flagRTCC=0;
-            LATCbits.LATC7 = 1;
+            LATCbits.LATC6 = 1;
             flagSERVO1=1;
         }
         if(flagSERVO1==1){
             valTIMER0 = Timer0_8bit_get();
             if(valTIMER0>tSERVO1){
                 flagSERVO1=0;
-                LATCbits.LATC7 = 0;
+                LATCbits.LATC6 = 0;
             }
         }
 
 
         if (recepcionRX != '\0'){
-            if(recepcionRX == 'a'){
+            if(recepcionRX == 'z'){
                 tSERVO1 += 9;
                 recepcionRX = '\0';
             }
-            if(recepcionRX == 's'){
+            if(recepcionRX == 'x'){
                 tSERVO1 = 93;
                 recepcionRX = '\0';
             }
-            if(recepcionRX == 'd'){
+            if(recepcionRX == 'c'){
                 tSERVO1 -= 9;
                 recepcionRX = '\0';
             }
         }
 
+
+        if(command!='\0'){
+
+          valid_command=0;
+
+
+          if(command=='a'){
+            Servo_PWM[0] -= 580;
+            if ( Servo_PWM[0] < Ticks4Minimum) {
+                Servo_PWM[0] = Ticks4Minimum;
+            }
+            valid_command=1;
+          }
+          if(command=='d'){
+            Servo_PWM[0] += 580;
+            if ( Servo_PWM[0] > Ticks4Maximum) {
+                Servo_PWM[0] = Ticks4Maximum;
+            }
+            valid_command=1;
+          }
+          if(command=='j'){
+            Servo_PWM[0] = Ticks4Minimum;
+            valid_command=1;
+          }
+          if(command=='k'){
+            Servo_PWM[0] = Ticks4Center;
+            valid_command=1;
+          }
+          if(command=='l'){
+            Servo_PWM[0] = Ticks4Maximum;
+            valid_command=1;
+          }
+
+
+
+          if(command=='w'){
+            Servo_PWM[1] += 580;
+            valid_command=1;
+          }
+          if(command=='s'){
+            Servo_PWM[1] -= 580;
+            valid_command=1;
+          }
+           if(command=='i'){
+            Servo_PWM[1] = Ticks4Minimum;
+            valid_command=1;
+          }
+          if(command=='o'){
+            Servo_PWM[1] = Ticks4Center;
+            valid_command=1;
+          }
+          if(command=='p'){
+            Servo_PWM[1] = Ticks4Maximum;
+            valid_command=1;
+          }
+
+
+
+          command='\0';
+        }
 
     }
     return;

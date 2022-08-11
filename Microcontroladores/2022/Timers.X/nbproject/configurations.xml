@@ -12,6 +12,8 @@
       <itemPath>interrupt.h</itemPath>
       <itemPath>servo.h</itemPath>
       <itemPath>Timer1.h</itemPath>
+      <itemPath>Timer5.h</itemPath>
+      <itemPath>MultiServo.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -25,6 +27,8 @@
       <itemPath>Timer0.c</itemPath>
       <itemPath>interrupt.c</itemPath>
       <itemPath>Timer1.c</itemPath>
+      <itemPath>MultiServo.c</itemPath>
+      <itemPath>Timer5.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

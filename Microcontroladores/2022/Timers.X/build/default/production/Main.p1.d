@@ -7,4 +7,6 @@ uart.h  \
 Timer0.h  \
 interrupt.h  \
 servo.h  \
-Timer1.h 
+Timer1.h  \
+MultiServo.h  \
+Timer5.h 

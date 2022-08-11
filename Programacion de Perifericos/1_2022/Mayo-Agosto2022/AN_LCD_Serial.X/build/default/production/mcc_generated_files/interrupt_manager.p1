@@ -3697,14 +3697,26 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _lecturaADC
 -> -> 0 `i `us
 ]
+"17
+[; ;mcc_generated_files/../MisVariables.h: 17:     uint8_t enteroRecibido = 0;
+[v _enteroRecibido `uc ~T0 @X0 1 e ]
+[i _enteroRecibido
+-> -> 0 `i `uc
+]
 "18
-[; ;mcc_generated_files/../MisVariables.h: 18: float mV = (3.3/4095);
+[; ;mcc_generated_files/../MisVariables.h: 18:     uint16_t PWMvalue = 0;
+[v _PWMvalue `us ~T0 @X0 1 e ]
+[i _PWMvalue
+-> -> 0 `i `us
+]
+"20
+[; ;mcc_generated_files/../MisVariables.h: 20: float mV = (3.3/4095);
 [v _mV `f ~T0 @X0 1 e ]
 [i _mV
 -> / .3.3 -> -> 4095 `i `d `f
 ]
-"19
-[; ;mcc_generated_files/../MisVariables.h: 19: float V, temperatura;
+"21
+[; ;mcc_generated_files/../MisVariables.h: 21: float V, temperatura;
 [v _V `f ~T0 @X0 1 e ]
 [v _temperatura `f ~T0 @X0 1 e ]
 "53 mcc_generated_files/interrupt_manager.c

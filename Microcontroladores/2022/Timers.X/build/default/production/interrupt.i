@@ -19992,6 +19992,43 @@ uint8_t recepcionRX=0;
     void Timer0_16bit_set(uint16_t TimerValue);
 # 2 "interrupt.c" 2
 
+# 1 "./Timer5.h" 1
+# 11 "./Timer5.h"
+    typedef enum{
+        T5PrescDiv1 = 0,
+        T5PrescDiv2,
+        T5PrescDiv4,
+        T5PrescDiv8
+    }T5Prescaler_t;
+
+    typedef enum{
+        T5TxCKIPPS = 0,
+        T5FOSC_4,
+        T5FOSC,
+        T5HFINTOSC,
+        T5LFINTOSC ,
+        T5MFINTOSC ,
+        T5SOSC ,
+        T5CLKR_output_clock,
+        T5TMR0_overflow_output ,
+        T5TMR1_overflow_output ,
+        T5TMR3_overflow_output ,
+        T5TMR5_overflow_output ,
+        T5LC1_out ,
+        T5LC2_out ,
+        T5LC3_out ,
+        T5LC4_out
+    }Timer5_Clock;
+
+    void Timer5_init(uint8_t prescaler, uint16_t TimerValue );
+
+    void Timer5_Interrupt_init(uint8_t prescaler, uint16_t TimerValue );
+
+    void Timer5_set(uint16_t time);
+
+    uint16_t Timer5_get();
+# 3 "interrupt.c" 2
+
 # 1 "./servo.h" 1
 # 14 "./servo.h"
     const uint8_t AJUSTE_FINO_DE_RTCC = 30;
@@ -20006,7 +20043,7 @@ uint8_t recepcionRX=0;
     uint8_t tSERVO1 = 93;
 
     uint8_t valTIMER0;
-# 3 "interrupt.c" 2
+# 4 "interrupt.c" 2
 
 
 # 1 "./uart.h" 1
@@ -20017,7 +20054,36 @@ void serial_Interrupt_init(uint32_t baudios);
 void uart_tx(uint8_t dato);
 void uart_send_string(uint8_t *dato);
 uint8_t uart_rx();
-# 5 "interrupt.c" 2
+# 6 "interrupt.c" 2
+
+# 1 "./MultiServo.h" 1
+# 27 "./MultiServo.h"
+    char SERVO3,SERVO4,SERVO5,SERVO6,SERVO7 ,SERVO8;
+
+    const uint16_t Ticks4Window = 0x9C40;
+    const uint16_t Ticks4Minimum = 0X2BC0;
+    const uint16_t Ticks4Center = 24000;
+    const uint16_t Ticks4Maximum = 0X8FC0;
+
+    _Bool valid_command;
+    uint8_t command;
+    uint16_t Servo_PWM[8]={24000,24000,0,0,0,0,0,0};
+    uint8_t Servo_Idx=0;
+    _Bool SERVO1_ON=1;
+    _Bool SERVO2_ON=1;
+    _Bool SERVO3_ON=0;
+    _Bool SERVO4_ON=0;
+    _Bool SERVO5_ON=0;
+    _Bool SERVO6_ON=0;
+    _Bool SERVO7_ON=0;
+    _Bool SERVO8_ON=0;
+    uint8_t flag_Phase;
+
+    static uint16_t Ticks4NextInterrupt=25536;
+
+
+    void servoMenu(void);
+# 7 "interrupt.c" 2
 
 
 void enable_Global_interrupt(){
@@ -20072,7 +20138,47 @@ void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
     {
         if(PIE3bits.RCIE == 1 && PIR3bits.RCIF == 1){
             PIR3bits.RCIF = 0;
-            recepcionRX = uart_rx();
+
+            command = uart_rx();
+        }else if(PIE4bits.TMR5IE == 1 && PIR4bits.TMR5IF == 1)
+        {
+
+
+            PIR4bits.TMR5IF = 0;
+            if(flag_Phase==0){
+                if(Servo_Idx==0 && SERVO1_ON) LATCbits.LATC2 = 1;
+                if(Servo_Idx==1 && SERVO2_ON) LATCbits.LATC7 = 1;
+                if(Servo_Idx==2 && SERVO3_ON) SERVO3 = 1;
+                if(Servo_Idx==3 && SERVO4_ON) SERVO4 = 1;
+                if(Servo_Idx==4 && SERVO5_ON) SERVO5 = 1;
+                if(Servo_Idx==5 && SERVO6_ON) SERVO6 = 1;
+                if(Servo_Idx==6 && SERVO7_ON) SERVO7 = 1;
+                if(Servo_Idx==7 && SERVO8_ON) SERVO8 = 1;
+                Ticks4NextInterrupt = 65535 - Servo_PWM[Servo_Idx];
+                Timer5_set(Ticks4NextInterrupt);
+            }
+            if(flag_Phase==1){
+                if(Servo_Idx==0 && SERVO1_ON) LATCbits.LATC2 = 0;
+                if(Servo_Idx==1 && SERVO2_ON) LATCbits.LATC7 = 0;
+                if(Servo_Idx==2 && SERVO3_ON) SERVO3 = 0;
+                if(Servo_Idx==3 && SERVO4_ON) SERVO4 = 0;
+                if(Servo_Idx==4 && SERVO5_ON) SERVO5 = 0;
+                if(Servo_Idx==5 && SERVO6_ON) SERVO6 = 0;
+                if(Servo_Idx==6 && SERVO7_ON) SERVO7 = 0;
+                if(Servo_Idx==7 && SERVO8_ON) SERVO8 = 0;
+                Ticks4NextInterrupt = 65535 - Ticks4Window + Servo_PWM[Servo_Idx];
+                Timer5_set(Ticks4NextInterrupt);
+                if(++Servo_Idx>7) Servo_Idx=0;
+            }
+
+            if( ++flag_Phase > 1){
+                flag_Phase = 0;
+            }
+
+        }
+        else
+        {
+
         }
 
     }

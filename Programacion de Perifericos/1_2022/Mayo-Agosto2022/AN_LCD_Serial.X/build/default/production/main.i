@@ -39713,10 +39713,13 @@ void CGRAM_x(uint8_t p);
     uint8_t bufferRx[10], contadorRx=0;
     uint8_t contador = 0, buffer[60];
     uint16_t lecturaADC = 0;
+    uint8_t enteroRecibido = 0;
+    uint16_t PWMvalue = 0;
 
 float mV = (3.3/4095);
 float V, temperatura;
 # 4 "main.c" 2
+
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 1 3
 # 25 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\string.h" 3
@@ -39773,11 +39776,14 @@ size_t strxfrm_l (char *restrict, const char *restrict, size_t, locale_t);
 
 
 void *memccpy (void *restrict, const void *restrict, int, size_t);
-# 5 "main.c" 2
+# 6 "main.c" 2
 
 
 
 
+float map(float x, float in_min, float in_max, float out_min, float out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 
 
 
@@ -39789,12 +39795,12 @@ void main(void)
     SYSTEM_Initialize();
 
     _delay((unsigned long)((500)*(10000000/4000.0)));
-# 33 "main.c"
+# 37 "main.c"
     (INTCON0bits.GIE = 1);
 
 
 
-    PWM1_LoadDutyValue(65);
+    PWM1_LoadDutyValue(127);
 
 
     while (1)
@@ -39810,12 +39816,18 @@ void main(void)
 
         if(strstr(bufferRx,"LED1OFF")){
             do { LATFbits.LATF3 = 1; } while(0);
-        }
-        if (strstr(bufferRx,"LED1ON")){
+            sprintf(buffer,"");
+        }else if (strstr(bufferRx,"LED1ON")){
              do { LATFbits.LATF3 = 0; } while(0);
+             sprintf(buffer,"");
+        }else {
+            enteroRecibido = atoi(bufferRx);
+            PWMvalue = map(enteroRecibido, 0, 10, 0, 512);
+            PWM1_LoadDutyValue(PWMvalue);
+            sprintf(buffer,"");
         }
 
-        _delay((unsigned long)((500)*(10000000/4000.0)));
+        _delay((unsigned long)((2000)*(10000000/4000.0)));
 
     }
 }
