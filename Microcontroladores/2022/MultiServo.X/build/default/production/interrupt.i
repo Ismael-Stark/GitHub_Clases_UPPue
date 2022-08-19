@@ -20068,7 +20068,7 @@ uint8_t uart_rx();
 
     _Bool valid_command;
     uint8_t command;
-    uint16_t Servo_PWM[8]={24000,0X2BC0,0,0,0,0,0,0};
+    uint16_t Servo_PWM[8]={0X2BC0,0X2BC0,0,0,0,0,0,0};
     uint8_t Servo_Idx=0;
     _Bool SERVO1_ON=1;
     _Bool SERVO2_ON=1;

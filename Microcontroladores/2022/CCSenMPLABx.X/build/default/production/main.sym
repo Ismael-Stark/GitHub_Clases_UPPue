@@ -1,0 +1,84 @@
+004-005 @READ_PACKED_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+004-005 @READ_PROGRAM_MEMORY8.P3
+004-005 @WRITE_PACKED_MEMORY.P4
+006-007 @WRITE_PACKED_MEMORY.P1
+006-007 @READ_PACKED_MEMORY.P2
+020-021 @sprintf_string
+022     @PSTRINGC7_994.@SCRATCH1
+023     @PSTRINGC7_994.@SCRATCH2
+024     @PSTRINGC7_994.@SCRATCH3
+025     @PUTCHAR_1_.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+095.3   ADACLR
+30C     CCP_1_LOW
+30C     CCP_1
+30D     CCP_1_HIGH
+310     CCP_2_LOW
+310     CCP_2
+311     CCP_2_HIGH
+38E.5   PWM6OUT
+392.5   PWM7OUT
+592.5   N1OUT
+810.2   WDTSTATE
+81A-81B @WRITE_PROGRAM_MEMORY8.P1
+81A-81B @READ_PROGRAM_MEMORY8.P2
+897.0   MDBIT
+897.5   MDOUT
+990.6   C1OUT
+994.6   C2OUT
+E10.5   LC1OUT
+E1A.5   LC2OUT
+E24.5   LC3OUT
+E2E.5   LC4OUT
+
+ROM Allocation:
+000003  @const1007.call
+000009  @PUTCHAR_1_
+00003F  @PSTRINGC7_994
+00008A  main
+00008A  @cinit1
+00009B  @cinit2
+
+Project Directory:
+    D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\CCSenMPLABx.X\
+
+Project Files:
+    main.c                                                  [12-ago.-22 15:36  CRC=B96F2DBD]
+    main.h                                                  [12-ago.-22 15:29  CRC=5B3100A2]
+    C:\Program Files (x86)\PICC_5.105\devices\16LF18855.h   [12-jul.-21 10:18  CRC=FDD30863]
+
+Source signature=10463F25
+Program memory checksum=0000
+Hex file CRC=659B
+
+Units:
+    D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\CCSenMPLABx.X\main (main)
+
+Compiler Settings:
+    Processor:      PIC16LF18855
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Enhanced 16:    Yes
+    Compile Mode:   CCS5
+    Predefined symbols:
+       #define __16F18855 1
+
+Output Files:
+    XREF file:   build\default\production\main.xsym
+    Errors:      build\default\production\main.err
+    Ext Symbols: build\default\production\main.esym
+    INHX8:       build\default\production\main.hex
+    Symbols:     build\default\production\main.sym
+    List:        build\default\production\main.lst
+    Debug/COFF:  build\default\production\main.cof
+    Project:     main.ccspjt
+    Call Tree:   build\default\production\main.tre
+    Statistics:  build\default\production\main.STA

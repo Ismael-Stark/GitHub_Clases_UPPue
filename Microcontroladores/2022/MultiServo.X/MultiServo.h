@@ -28,13 +28,13 @@ extern "C" {
 
     const uint16_t Ticks4Window = 0x9C40; //40000 PWM Window for servo = 2.5 ms x 8 = 20 ms
     
-    const uint16_t Ticks4Minimum = 0X2BC0; // PWM High for Minimum Position = 0.7 ms
+    const uint16_t Ticks4Minimum = 0X2BC0; // PWM High for Minimum Position = 0.7 ms, 11200
     const uint16_t Ticks4Center = 24000; // PWM High for Center Position = 1.5 ms
-    const uint16_t Ticks4Maximum = 0X8FC0; // PWM High for Maximum Position = 2.3 ms
+    const uint16_t Ticks4Maximum = 0X8FC0; // PWM High for Maximum Position = 2.3 ms  36800
 
     bool valid_command;
     uint8_t command;
-    uint16_t Servo_PWM[8]={24000,0X2BC0,0,0,0,0,0,0};
+    uint16_t Servo_PWM[8]={0X2BC0,0X2BC0,0,0,0,0,0,0};
     uint8_t  Servo_Idx=0;
     bool     SERVO1_ON=1;
     bool     SERVO2_ON=1;

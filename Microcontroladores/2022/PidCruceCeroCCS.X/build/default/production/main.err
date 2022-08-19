@@ -1,0 +1,14 @@
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\main on 12-ago.-22 at 15:45
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:2:10:  Warning#202  Variable never used:   valor
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:3:10:  Warning#202  Variable never used:   control
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:10:  Warning#202  Variable never used:   rT
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:13:  Warning#202  Variable never used:   eT
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:16:  Warning#202  Variable never used:   iT
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:19:  Warning#202  Variable never used:   dT
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:22:  Warning#202  Variable never used:   yT
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:25:  Warning#202  Variable never used:   uT
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:28:  Warning#202  Variable never used:   iT0
+D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:32:  Warning#202  Variable never used:   eT0
+      Memory usage:   ROM=7%      RAM=4% - 5%
+      0 Errors,  10 Warnings.
+Build Successful.

@@ -1594,11 +1594,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./MultiServo.h: 36:     uint8_t command;
 [v _command `uc ~T0 @X0 1 e ]
 "37
-[; ;./MultiServo.h: 37:     uint16_t Servo_PWM[8]={24000,0X2BC0,0,0,0,0,0,0};
+[; ;./MultiServo.h: 37:     uint16_t Servo_PWM[8]={0X2BC0,0X2BC0,0,0,0,0,0,0};
 [v _Servo_PWM `us ~T0 @X0 -> 8 `i e ]
 [i _Servo_PWM
 :U ..
--> -> 24000 `i `us
+-> -> 11200 `i `us
 -> -> 11200 `i `us
 -> -> 0 `i `us
 -> -> 0 `i `us

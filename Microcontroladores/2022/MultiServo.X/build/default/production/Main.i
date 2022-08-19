@@ -20038,7 +20038,7 @@ uint8_t uart_rx();
 
     _Bool valid_command;
     uint8_t command;
-    uint16_t Servo_PWM[8]={24000,0X2BC0,0,0,0,0,0,0};
+    uint16_t Servo_PWM[8]={0X2BC0,0X2BC0,0,0,0,0,0,0};
     uint8_t Servo_Idx=0;
     _Bool SERVO1_ON=1;
     _Bool SERVO2_ON=1;
@@ -20095,7 +20095,9 @@ uint8_t uart_rx();
 
 
 
-
+float map(float x, float in_min, float in_max, float out_min, float out_max) {
+  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
 
 void port_init();
 
@@ -20120,68 +20122,28 @@ void main(void) {
     while(1)
     {
 
-        if(command!='\0'){
-
-          valid_command=0;
-
-
-          if(command=='a'){
-            Servo_PWM[0] -= 580;
-            if ( Servo_PWM[0] < Ticks4Minimum) {
-                Servo_PWM[0] = Ticks4Minimum;
+        if(command == 's'){
+            for (int i = 0; i<=90; i+=1 ){
+                Servo_PWM[1] = map(i, 0, 180, Ticks4Minimum, Ticks4Maximum);
+                if ( Servo_PWM[1] > Ticks4Maximum) {
+                    Servo_PWM[1] = Ticks4Maximum;
+                }
+            _delay((unsigned long)((50)*(32000000UL/4000.0)));
             }
-            valid_command=1;
-          }
-          if(command=='d'){
-            Servo_PWM[0] += 580;
-            if ( Servo_PWM[0] > Ticks4Maximum) {
-                Servo_PWM[0] = Ticks4Maximum;
-            }
-            valid_command=1;
-          }
-          if(command=='j'){
-            Servo_PWM[0] = Ticks4Minimum;
-            valid_command=1;
-          }
-          if(command=='k'){
-            Servo_PWM[0] = Ticks4Center;
-            valid_command=1;
-          }
-          if(command=='l'){
-            Servo_PWM[0] = Ticks4Maximum;
-            valid_command=1;
-          }
-
-
-
-          if(command=='w'){
-            Servo_PWM[1] += 580;
-            valid_command=1;
-          }
-          if(command=='s'){
-            Servo_PWM[1] -= 580;
-            valid_command=1;
-          }
-           if(command=='i'){
-            Servo_PWM[1] = Ticks4Minimum;
-            valid_command=1;
-          }
-          if(command=='o'){
-            Servo_PWM[1] = Ticks4Center;
-            valid_command=1;
-          }
-          if(command=='p'){
-            Servo_PWM[1] = Ticks4Maximum;
-            valid_command=1;
-          }
-
-
-
-          command='\0';
+            command = '\0';
         }
+        if(command == 'v'){
+            for (int i = 90; i>0;i--){
 
-
-
+                    Servo_PWM[1] = map(i, 0, 180, Ticks4Minimum, Ticks4Maximum);
+                    if ( Servo_PWM[1] < Ticks4Minimum) {
+                        Servo_PWM[1] = Ticks4Minimum;
+                    }
+                    _delay((unsigned long)((100)*(32000000UL/4000.0)));
+                }
+            command = '\0';
+        }
+# 116 "Main.c"
     }
     return;
 }

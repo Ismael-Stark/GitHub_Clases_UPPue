@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"18 Main.c
-[; ;Main.c: 18: void port_init();
+"20 Main.c
+[; ;Main.c: 20: void port_init();
 [v _port_init `(v ~T0 @X0 0 e? ]
 "43 ./interrupt.h
 [; ;./interrupt.h: 43:     void enable_Global_interrupt();
@@ -17,8 +17,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "39 ./Timer5.h
 [; ;./Timer5.h: 39:     void Timer5_Interrupt_init(uint8_t prescaler, uint16_t TimerValue );
 [v _Timer5_Interrupt_init `(v ~T0 @X0 0 ef2`uc`us ]
-"32 Main.c
-[; ;Main.c: 32:     Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
+"34 Main.c
+[; ;Main.c: 34:     Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
 [c E12064 0 1 2 3 .. ]
 [n E12064 . T5PrescDiv1 T5PrescDiv2 T5PrescDiv4 T5PrescDiv8  ]
 [v F183 `(v ~T0 @X0 1 tf1`ul ]
@@ -1759,11 +1759,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./MultiServo.h: 36:     uint8_t command;
 [v _command `uc ~T0 @X0 1 e ]
 "37
-[; ;./MultiServo.h: 37:     uint16_t Servo_PWM[8]={24000,0X2BC0,0,0,0,0,0,0};
+[; ;./MultiServo.h: 37:     uint16_t Servo_PWM[8]={0X2BC0,0X2BC0,0,0,0,0,0,0};
 [v _Servo_PWM `us ~T0 @X0 -> 8 `i e ]
 [i _Servo_PWM
 :U ..
--> -> 24000 `i `us
+-> -> 11200 `i `us
 -> -> 11200 `i `us
 -> -> 0 `i `us
 -> -> 0 `i `us
@@ -1836,283 +1836,214 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _Ticks4NextInterrupt
 -> -> 25536 `i `us
 ]
+"16 Main.c
+[; ;Main.c: 16: float map(float x, float in_min, float in_max, float out_min, float out_max) {
+[v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
+{
+[e :U _map ]
+[v _x `f ~T0 @X0 1 r1 ]
+[v _in_min `f ~T0 @X0 1 r2 ]
+[v _in_max `f ~T0 @X0 1 r3 ]
+[v _out_min `f ~T0 @X0 1 r4 ]
+[v _out_max `f ~T0 @X0 1 r5 ]
+[f ]
+"17
+[; ;Main.c: 17:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
+[e $UE 1566  ]
+"18
+[; ;Main.c: 18: }
+[e :UE 1566 ]
+}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"20 Main.c
-[; ;Main.c: 20: void main(void) {
+"22
+[; ;Main.c: 22: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"21
-[; ;Main.c: 21:     port_init();
-[e ( _port_init ..  ]
 "23
-[; ;Main.c: 23:     enable_Global_interrupt();
+[; ;Main.c: 23:     port_init();
+[e ( _port_init ..  ]
+"25
+[; ;Main.c: 25:     enable_Global_interrupt();
 [e ( _enable_Global_interrupt ..  ]
-"24
-[; ;Main.c: 24:     enable_Peripheral_interrupt();
-[e ( _enable_Peripheral_interrupt ..  ]
 "26
-[; ;Main.c: 26:     printf("Holaaa\n\n");
-[e ( _printf :s 1C ]
+[; ;Main.c: 26:     enable_Peripheral_interrupt();
+[e ( _enable_Peripheral_interrupt ..  ]
 "28
-[; ;Main.c: 28:     Timer1_InterruptInit(3, 55286);
+[; ;Main.c: 28:     printf("Holaaa\n\n");
+[e ( _printf :s 1C ]
+"30
+[; ;Main.c: 30:     Timer1_InterruptInit(3, 55286);
 [e ( _Timer1_InterruptInit (2 , -> -> 3 `i `uc -> -> 55286 `l `us ]
-"32
-[; ;Main.c: 32:     Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
-[e ( _Timer5_Interrupt_init (2 , -> . `E12064 1 `uc -> -> 25536 `i `us ]
 "34
-[; ;Main.c: 34:     _delay((unsigned long)((1000)*(32000000UL/4000.0)));
+[; ;Main.c: 34:     Timer5_Interrupt_init(T5PrescDiv2,0x63c0);
+[e ( _Timer5_Interrupt_init (2 , -> . `E12064 1 `uc -> -> 25536 `i `us ]
+"36
+[; ;Main.c: 36:     _delay((unsigned long)((1000)*(32000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
-"38
-[; ;Main.c: 38:     while(1)
-[e :U 1568 ]
-"39
-[; ;Main.c: 39:     {
-{
+"40
+[; ;Main.c: 40:     while(1)
+[e :U 1569 ]
 "41
-[; ;Main.c: 41:         if(command!='\0'){
-[e $ ! != -> _command `ui -> 0 `ui 1570  ]
+[; ;Main.c: 41:     {
 {
 "43
-[; ;Main.c: 43:           valid_command=0;
-[e = _valid_command -> -> 0 `i `a ]
+[; ;Main.c: 43:         if(command == 's'){
+[e $ ! == -> _command `ui -> 115 `ui 1571  ]
+{
+"44
+[; ;Main.c: 44:             for (int i = 0; i<=90; i+=1 ){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ <= _i -> 90 `i 1572  ]
+[e $U 1573  ]
+[e :U 1572 ]
+{
+"45
+[; ;Main.c: 45:                 Servo_PWM[1] = map(i, 0, 180, Ticks4Minimum, Ticks4Maximum);
+[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> ( _map (4 , , , , -> _i `f -> -> 0 `i `f -> -> 180 `i `f -> _Ticks4Minimum `f -> _Ticks4Maximum `f `us ]
 "46
-[; ;Main.c: 46:           if(command=='a'){
-[e $ ! == -> _command `ui -> 97 `ui 1571  ]
+[; ;Main.c: 46:                 if ( Servo_PWM[1] > Ticks4Maximum) {
+[e $ ! > -> *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux `ui -> _Ticks4Maximum `ui 1575  ]
 {
 "47
-[; ;Main.c: 47:             Servo_PWM[0] -= 580;
-[e =- *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
+[; ;Main.c: 47:                     Servo_PWM[1] = Ticks4Maximum;
+[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Maximum ]
 "48
-[; ;Main.c: 48:             if ( Servo_PWM[0] < Ticks4Minimum) {
-[e $ ! < -> *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux `ui -> _Ticks4Minimum `ui 1572  ]
-{
+[; ;Main.c: 48:                 }
+}
+[e :U 1575 ]
 "49
-[; ;Main.c: 49:                 Servo_PWM[0] = Ticks4Minimum;
-[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Minimum ]
+[; ;Main.c: 49:             _delay((unsigned long)((50)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 50 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
 "50
 [; ;Main.c: 50:             }
 }
-[e :U 1572 ]
+[e =+ _i -> 1 `i ]
+[e $ <= _i -> 90 `i 1572  ]
+[e :U 1573 ]
+}
 "51
-[; ;Main.c: 51:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
+[; ;Main.c: 51:             command = '\0';
+[e = _command -> -> 0 `ui `uc ]
 "52
-[; ;Main.c: 52:           }
+[; ;Main.c: 52:         }
 }
 [e :U 1571 ]
 "53
-[; ;Main.c: 53:           if(command=='d'){
-[e $ ! == -> _command `ui -> 100 `ui 1573  ]
+[; ;Main.c: 53:         if(command == 'v'){
+[e $ ! == -> _command `ui -> 118 `ui 1576  ]
 {
 "54
-[; ;Main.c: 54:             Servo_PWM[0] += 580;
-[e =+ *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
-"55
-[; ;Main.c: 55:             if ( Servo_PWM[0] > Ticks4Maximum) {
-[e $ ! > -> *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux `ui -> _Ticks4Maximum `ui 1574  ]
+[; ;Main.c: 54:             for (int i = 90; i>0;i--){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 90 `i ]
+[e $ > _i -> 0 `i 1577  ]
+[e $U 1578  ]
+[e :U 1577 ]
 {
 "56
-[; ;Main.c: 56:                 Servo_PWM[0] = Ticks4Maximum;
-[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Maximum ]
+[; ;Main.c: 56:                     Servo_PWM[1] = map(i, 0, 180, Ticks4Minimum, Ticks4Maximum);
+[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> ( _map (4 , , , , -> _i `f -> -> 0 `i `f -> -> 180 `i `f -> _Ticks4Minimum `f -> _Ticks4Maximum `f `us ]
 "57
-[; ;Main.c: 57:             }
-}
-[e :U 1574 ]
+[; ;Main.c: 57:                     if ( Servo_PWM[1] < Ticks4Minimum) {
+[e $ ! < -> *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux `ui -> _Ticks4Minimum `ui 1580  ]
+{
 "58
-[; ;Main.c: 58:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"59
-[; ;Main.c: 59:           }
-}
-[e :U 1573 ]
-"60
-[; ;Main.c: 60:           if(command=='j'){
-[e $ ! == -> _command `ui -> 106 `ui 1575  ]
-{
-"61
-[; ;Main.c: 61:             Servo_PWM[0] = Ticks4Minimum;
-[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Minimum ]
-"62
-[; ;Main.c: 62:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"63
-[; ;Main.c: 63:           }
-}
-[e :U 1575 ]
-"64
-[; ;Main.c: 64:           if(command=='k'){
-[e $ ! == -> _command `ui -> 107 `ui 1576  ]
-{
-"65
-[; ;Main.c: 65:             Servo_PWM[0] = Ticks4Center;
-[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Center ]
-"66
-[; ;Main.c: 66:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"67
-[; ;Main.c: 67:           }
-}
-[e :U 1576 ]
-"68
-[; ;Main.c: 68:           if(command=='l'){
-[e $ ! == -> _command `ui -> 108 `ui 1577  ]
-{
-"69
-[; ;Main.c: 69:             Servo_PWM[0] = Ticks4Maximum;
-[e = *U + &U _Servo_PWM * -> -> -> 0 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Maximum ]
-"70
-[; ;Main.c: 70:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"71
-[; ;Main.c: 71:           }
-}
-[e :U 1577 ]
-"75
-[; ;Main.c: 75:           if(command=='w'){
-[e $ ! == -> _command `ui -> 119 `ui 1578  ]
-{
-"76
-[; ;Main.c: 76:             Servo_PWM[1] += 580;
-[e =+ *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
-"77
-[; ;Main.c: 77:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"78
-[; ;Main.c: 78:           }
-}
-[e :U 1578 ]
-"79
-[; ;Main.c: 79:           if(command=='s'){
-[e $ ! == -> _command `ui -> 115 `ui 1579  ]
-{
-"80
-[; ;Main.c: 80:             Servo_PWM[1] -= 580;
-[e =- *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux -> -> 580 `i `us ]
-"81
-[; ;Main.c: 81:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"82
-[; ;Main.c: 82:           }
-}
-[e :U 1579 ]
-"83
-[; ;Main.c: 83:            if(command=='i'){
-[e $ ! == -> _command `ui -> 105 `ui 1580  ]
-{
-"84
-[; ;Main.c: 84:             Servo_PWM[1] = Ticks4Minimum;
+[; ;Main.c: 58:                         Servo_PWM[1] = Ticks4Minimum;
 [e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Minimum ]
-"85
-[; ;Main.c: 85:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"86
-[; ;Main.c: 86:           }
+"59
+[; ;Main.c: 59:                     }
 }
 [e :U 1580 ]
-"87
-[; ;Main.c: 87:           if(command=='o'){
-[e $ ! == -> _command `ui -> 111 `ui 1581  ]
-{
-"88
-[; ;Main.c: 88:             Servo_PWM[1] = Ticks4Center;
-[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Center ]
-"89
-[; ;Main.c: 89:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"90
-[; ;Main.c: 90:           }
+"60
+[; ;Main.c: 60:                     _delay((unsigned long)((100)*(32000000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 32000000 `ul `d .4000.0 `ul ]
+"61
+[; ;Main.c: 61:                 }
 }
-[e :U 1581 ]
-"91
-[; ;Main.c: 91:           if(command=='p'){
-[e $ ! == -> _command `ui -> 112 `ui 1582  ]
-{
-"92
-[; ;Main.c: 92:             Servo_PWM[1] = Ticks4Maximum;
-[e = *U + &U _Servo_PWM * -> -> -> 1 `i `ui `ux -> -> # *U &U _Servo_PWM `ui `ux _Ticks4Maximum ]
-"93
-[; ;Main.c: 93:             valid_command=1;
-[e = _valid_command -> -> 1 `i `a ]
-"94
-[; ;Main.c: 94:           }
+[e -- _i -> 1 `i ]
+[e $ > _i -> 0 `i 1577  ]
+[e :U 1578 ]
 }
-[e :U 1582 ]
-"98
-[; ;Main.c: 98:           command='\0';
+"62
+[; ;Main.c: 62:             command = '\0';
 [e = _command -> -> 0 `ui `uc ]
-"99
-[; ;Main.c: 99:         }
+"63
+[; ;Main.c: 63:         }
 }
+[e :U 1576 ]
+"116
+[; ;Main.c: 116:     }
+}
+[e :U 1568 ]
+[e $U 1569  ]
 [e :U 1570 ]
-"103
-[; ;Main.c: 103:     }
+"117
+[; ;Main.c: 117:     return;
+[e $UE 1567  ]
+"118
+[; ;Main.c: 118: }
+[e :UE 1567 ]
 }
-[e :U 1567 ]
-[e $U 1568  ]
-[e :U 1569 ]
-"104
-[; ;Main.c: 104:     return;
-[e $UE 1566  ]
-"105
-[; ;Main.c: 105: }
-[e :UE 1566 ]
-}
-"108
-[; ;Main.c: 108: void port_init(){
+"121
+[; ;Main.c: 121: void port_init(){
 [v _port_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _port_init ]
 [f ]
-"110
-[; ;Main.c: 110:     ANSELA = 0;
-[e = _ANSELA -> -> 0 `i `uc ]
-"111
-[; ;Main.c: 111:     LATA=0;
-[e = _LATA -> -> 0 `i `uc ]
-"112
-[; ;Main.c: 112:     PORTA =0;
-[e = _PORTA -> -> 0 `i `uc ]
-"113
-[; ;Main.c: 113:     TRISA = 0b11110000;
-[e = _TRISA -> -> 240 `i `uc ]
-"116
-[; ;Main.c: 116:     ANSELA = 0;
-[e = _ANSELA -> -> 0 `i `uc ]
-"117
-[; ;Main.c: 117:     ANSELA = ANSELA | (1<<4);
-[e = _ANSELA -> | -> _ANSELA `i << -> 1 `i -> 4 `i `uc ]
-"119
-[; ;Main.c: 119:     LATB=0;
-[e = _LATB -> -> 0 `i `uc ]
-"120
-[; ;Main.c: 120:     PORTB =0;
-[e = _PORTB -> -> 0 `i `uc ]
-"121
-[; ;Main.c: 121:     TRISB = TRISA | (1<<0);
-[e = _TRISB -> | -> _TRISA `i << -> 1 `i -> 0 `i `uc ]
-"122
-[; ;Main.c: 122:     ANSELB = 0;
-[e = _ANSELB -> -> 0 `i `uc ]
 "123
-[; ;Main.c: 123:     ANSELB = ANSELB | (1<<0);
-[e = _ANSELB -> | -> _ANSELB `i << -> 1 `i -> 0 `i `uc ]
+[; ;Main.c: 123:     ANSELA = 0;
+[e = _ANSELA -> -> 0 `i `uc ]
+"124
+[; ;Main.c: 124:     LATA=0;
+[e = _LATA -> -> 0 `i `uc ]
 "125
-[; ;Main.c: 125:     TRISC = 0b10;
-[e = _TRISC -> -> 2 `i `uc ]
+[; ;Main.c: 125:     PORTA =0;
+[e = _PORTA -> -> 0 `i `uc ]
 "126
-[; ;Main.c: 126:     ANSELC = 0;
-[e = _ANSELC -> -> 0 `i `uc ]
-"127
-[; ;Main.c: 127:     TRISC = TRISC | (1<<4 |1<<3 );
-[e = _TRISC -> | -> _TRISC `i | << -> 1 `i -> 4 `i << -> 1 `i -> 3 `i `uc ]
+[; ;Main.c: 126:     TRISA = 0b11110000;
+[e = _TRISA -> -> 240 `i `uc ]
 "129
-[; ;Main.c: 129:     serial_Interrupt_init(9600);
-[e ( _serial_Interrupt_init (1 -> -> -> 9600 `i `l `ul ]
+[; ;Main.c: 129:     ANSELA = 0;
+[e = _ANSELA -> -> 0 `i `uc ]
+"130
+[; ;Main.c: 130:     ANSELA = ANSELA | (1<<4);
+[e = _ANSELA -> | -> _ANSELA `i << -> 1 `i -> 4 `i `uc ]
 "132
-[; ;Main.c: 132: }
-[e :UE 1583 ]
+[; ;Main.c: 132:     LATB=0;
+[e = _LATB -> -> 0 `i `uc ]
+"133
+[; ;Main.c: 133:     PORTB =0;
+[e = _PORTB -> -> 0 `i `uc ]
+"134
+[; ;Main.c: 134:     TRISB = TRISA | (1<<0);
+[e = _TRISB -> | -> _TRISA `i << -> 1 `i -> 0 `i `uc ]
+"135
+[; ;Main.c: 135:     ANSELB = 0;
+[e = _ANSELB -> -> 0 `i `uc ]
+"136
+[; ;Main.c: 136:     ANSELB = ANSELB | (1<<0);
+[e = _ANSELB -> | -> _ANSELB `i << -> 1 `i -> 0 `i `uc ]
+"138
+[; ;Main.c: 138:     TRISC = 0b10;
+[e = _TRISC -> -> 2 `i `uc ]
+"139
+[; ;Main.c: 139:     ANSELC = 0;
+[e = _ANSELC -> -> 0 `i `uc ]
+"140
+[; ;Main.c: 140:     TRISC = TRISC | (1<<4 |1<<3 );
+[e = _TRISC -> | -> _TRISC `i | << -> 1 `i -> 4 `i << -> 1 `i -> 3 `i `uc ]
+"142
+[; ;Main.c: 142:     serial_Interrupt_init(9600);
+[e ( _serial_Interrupt_init (1 -> -> -> 9600 `i `l `ul ]
+"145
+[; ;Main.c: 145: }
+[e :UE 1581 ]
 }
 [p f _printf 8388608 ]
 [a 1C 72 111 108 97 97 97 10 10 0 ]
