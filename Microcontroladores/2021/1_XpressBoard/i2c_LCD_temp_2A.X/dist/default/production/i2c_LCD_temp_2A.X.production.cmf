@@ -1,0 +1,1907 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 4 8007 8007 5 2
+$dist/default/production\i2c_LCD_temp_2A.X.production.o
+cinit CODE 0 7EA 7EA 16 2
+text1 CODE 0 F2A F2A 28 2
+text2 CODE 0 DDF DDF 10 2
+text3 CODE 0 FD3 FD3 2D 2
+text4 CODE 0 402 402 D0 2
+text5 CODE 0 6A1 6A1 149 2
+text6 CODE 0 1F3 1F3 49 2
+text7 CODE 0 E2E E2E 18 2
+text8 CODE 0 EDD EDD 25 2
+text9 CODE 0 168 168 45 2
+text10 CODE 0 CFC CFC 5 2
+text11 CODE 0 D30 D30 8 2
+text12 CODE 0 E17 E17 17 2
+text13 CODE 0 4D2 4D2 DC 2
+text14 CODE 0 5AE 5AE F3 2
+text15 CODE 0 28C 28C 53 2
+text16 CODE 0 E9 E9 3E 2
+text17 CODE 0 2DF 2DF 5B 2
+text18 CODE 0 5 5 19 2
+text19 CODE 0 1AD 1AD 46 2
+text20 CODE 0 D5F D5F B 2
+text21 CODE 0 1E 1E 2E 2
+text22 CODE 0 E7D E7D 1F 2
+text23 CODE 0 EBC EBC 21 2
+text24 CODE 0 DEF DEF 11 2
+text25 CODE 0 D90 D90 F 2
+text26 CODE 0 D28 D28 8 2
+text27 CODE 0 7D 7D 35 2
+text28 CODE 0 D41 D41 9 2
+text29 CODE 0 D38 D38 9 2
+text30 CODE 0 E9C E9C 20 2
+text31 CODE 0 CF7 CF7 5 2
+text32 CODE 0 D0D D0D 6 2
+text33 CODE 0 CF2 CF2 5 2
+text34 CODE 0 4C 4C 31 2
+text35 CODE 0 D76 D76 C 2
+text36 CODE 0 B2 B2 37 2
+text37 CODE 0 D54 D54 B 2
+text38 CODE 0 CDF CDF 4 2
+text39 CODE 0 E5F E5F 1E 2
+text40 CODE 0 D4A D4A A 2
+text41 CODE 0 CDB CDB 4 2
+text42 CODE 0 F52 F52 2A 2
+text43 CODE 0 F7C F7C 2B 2
+text44 CODE 0 CED CED 5 2
+text45 CODE 0 CD7 CD7 4 2
+text46 CODE 0 CD3 CD3 4 2
+text47 CODE 0 CCF CCF 4 2
+text48 CODE 0 CCB CCB 4 2
+text49 CODE 0 CC7 CC7 4 2
+text50 CODE 0 CC3 CC3 4 2
+text51 CODE 0 CBF CBF 4 2
+text52 CODE 0 D07 D07 6 2
+text53 CODE 0 127 127 41 2
+text54 CODE 0 23C 23C 50 2
+text55 CODE 0 D19 D19 7 2
+text56 CODE 0 D20 D20 8 2
+text57 CODE 0 CE8 CE8 5 2
+text58 CODE 0 FA7 FA7 2C 2
+text59 CODE 0 CB4 CB4 3 2
+text60 CODE 0 D01 D01 6 2
+text61 CODE 0 CE3 CE3 5 2
+text62 CODE 0 CBB CBB 4 2
+text63 CODE 0 CB1 CB1 3 2
+text64 CODE 0 CB7 CB7 4 2
+text65 CODE 0 CAE CAE 3 2
+text66 CODE 0 C9D C9D 2 2
+text67 CODE 0 C9B C9B 2 2
+text68 CODE 0 E00 E00 17 2
+text69 CODE 0 DCF DCF 10 2
+text70 CODE 0 DBF DBF 10 2
+text71 CODE 0 DAF DAF 10 2
+text72 CODE 0 D9F D9F 10 2
+text73 CODE 0 D6A D6A C 2
+text74 CODE 0 F02 F02 28 2
+text75 CODE 0 D82 D82 E 2
+text76 CODE 0 CAB CAB 3 2
+text77 CODE 0 CA8 CA8 3 2
+text78 CODE 0 CA5 CA5 3 2
+text79 CODE 0 E46 E46 19 2
+text80 CODE 0 C99 C99 2 2
+text81 CODE 0 CA2 CA2 3 2
+text82 CODE 0 C9F C9F 3 2
+nvBANK1 BANK1 1 E3 E3 6 1
+maintext CODE 0 33A 33A C8 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 4D 1
+cstackBANK1 BANK1 1 A0 A0 3B 1
+stringtext1 STRCODE 0 1021 1021 20 2
+stringtext2 STRCODE 0 1077 1077 4 2
+stringtext3 STRCODE 0 800 800 32 2
+stringtext4 STRCODE 0 1000 1000 21 2
+stringtext5 STRCODE 0 1041 1041 1C 2
+stringtext6 STRCODE 0 105D 105D 1A 2
+bssBANK0 BANK0 1 6D 6D 3 1
+bssBANK1 BANK1 1 DB DB 8 1
+bssBANK2 BANK2 1 120 120 3D 1
+clrtext CODE 0 D13 D13 6 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E9-EF 1
+RAM 15D-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK1 E9-EF 1
+BANK2 15D-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 4-4 2
+CONST 832-C98 2
+CONST 107B-1FFF 2
+ENTRY 4-4 2
+ENTRY 832-C98 2
+ENTRY 107B-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 20DD-23EF 1
+CODE 4-4 2
+CODE 832-C98 2
+CODE 107B-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 4-4 2
+STRCODE 832-C98 2
+STRCODE 107B-1FFF 2
+STRING 4-4 2
+STRING 832-C98 2
+STRING 107B-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\i2c_LCD_temp_2A.X.production.o
+7EA cinit CODE >7888:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7EA cinit CODE >7891:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7EA cinit CODE >7945:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7EB cinit CODE >7946:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7EC cinit CODE >7947:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7ED cinit CODE >7948:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7EE cinit CODE >7952:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7EF cinit CODE >7953:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F0 cinit CODE >7954:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F1 cinit CODE >7955:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F2 cinit CODE >7956:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F3 cinit CODE >7957:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F6 cinit CODE >7961:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F7 cinit CODE >7962:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F8 cinit CODE >7963:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7F9 cinit CODE >7964:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7FA cinit CODE >7965:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7FB cinit CODE >7966:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7FD cinit CODE >7972:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7FD cinit CODE >7974:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+7FE cinit CODE >7975:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+C9F text82 CODE >640:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C9F text82 CODE >642:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA1 text82 CODE >643:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA2 text81 CODE >557:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA2 text81 CODE >560:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA4 text81 CODE >561:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C99 text80 CODE >635:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C99 text80 CODE >637:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C9A text80 CODE >638:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E46 text79 CODE >209:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E46 text79 CODE >211:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E48 text79 CODE >212:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E4B text79 CODE >214:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E4C text79 CODE >215:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E50 text79 CODE >216:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E53 text79 CODE >217:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E56 text79 CODE >218:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E58 text79 CODE >219:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E5D text79 CODE >221:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E5E text79 CODE >222:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA5 text78 CODE >588:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA5 text78 CODE >590:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA7 text78 CODE >591:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA8 text77 CODE >573:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CA8 text77 CODE >575:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CAA text77 CODE >576:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CAB text76 CODE >593:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CAB text76 CODE >595:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CAD text76 CODE >596:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D82 text75 CODE >263:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D83 text75 CODE >265:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D86 text75 CODE >267:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D8A text75 CODE >268:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D8E text75 CODE >269:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D8F text75 CODE >271:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F02 text74 CODE >298:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F03 text74 CODE >300:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F07 text74 CODE >302:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F10 text74 CODE >303:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F19 text74 CODE >304:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F1A text74 CODE >307:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F23 text74 CODE >308:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F29 text74 CODE >310:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D6A text73 CODE >273:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D6A text73 CODE >275:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D75 text73 CODE >276:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D9F text72 CODE >163:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+D9F text72 CODE >165:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DA7 text72 CODE >166:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DAD text72 CODE >167:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DAE text72 CODE >168:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DAF text71 CODE >142:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DAF text71 CODE >144:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DB7 text71 CODE >145:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DBD text71 CODE >146:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DBE text71 CODE >147:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DBF text70 CODE >149:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DBF text70 CODE >151:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DC7 text70 CODE >152:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DCD text70 CODE >153:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DCE text70 CODE >154:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DCF text69 CODE >156:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DCF text69 CODE >158:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DD7 text69 CODE >159:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DDD text69 CODE >160:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+DDE text69 CODE >161:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+E00 text68 CODE >170:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+E00 text68 CODE >172:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+E0F text68 CODE >173:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+E15 text68 CODE >174:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+E16 text68 CODE >175:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+C9B text67 CODE >520:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C9B text67 CODE >522:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C9C text67 CODE >523:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C9D text66 CODE >525:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C9D text66 CODE >527:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C9E text66 CODE >528:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CAE text65 CODE >583:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CAE text65 CODE >585:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB0 text65 CODE >586:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB7 text64 CODE >609:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB7 text64 CODE >611:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB9 text64 CODE >612:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CBA text64 CODE >613:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB1 text63 CODE >563:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB1 text63 CODE >565:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB3 text63 CODE >566:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CBB text62 CODE >603:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CBB text62 CODE >605:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CBD text62 CODE >606:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CBE text62 CODE >607:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CE3 text61 CODE >568:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CE4 text61 CODE >570:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CE7 text61 CODE >571:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D01 text60 CODE >598:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D01 text60 CODE >600:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D06 text60 CODE >601:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB4 text59 CODE >645:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB4 text59 CODE >647:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CB6 text59 CODE >648:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FA7 text58 CODE >409:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FA7 text58 CODE >411:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FA9 text58 CODE >412:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FAA text58 CODE >416:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FAD text58 CODE >418:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FAF text58 CODE >419:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FB1 text58 CODE >422:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FB4 text58 CODE >423:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FC1 text58 CODE >423:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FC6 text58 CODE >423:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FC9 text58 CODE >423:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FCC text58 CODE >423:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FCF text58 CODE >423:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FD2 text58 CODE >424:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CE8 text57 CODE >333:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CE8 text57 CODE >335:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CEA text57 CODE >336:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CEB text57 CODE >337:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CEC text57 CODE >338:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D20 text56 CODE >340:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D20 text56 CODE >342:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D22 text56 CODE >343:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D26 text56 CODE >344:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D27 text56 CODE >345:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D19 text55 CODE >347:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D19 text55 CODE >349:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D1B text55 CODE >350:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D1E text55 CODE >351:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D1F text55 CODE >352:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+23C text54 CODE >354:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+23C text54 CODE >356:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+240 text54 CODE >356:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+243 text54 CODE >361:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+246 text54 CODE >363:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+249 text54 CODE >367:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+24C text54 CODE >368:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+25F text54 CODE >368:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+264 text54 CODE >368:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+267 text54 CODE >368:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+26A text54 CODE >368:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+26D text54 CODE >368:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+270 text54 CODE >370:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+270 text54 CODE >372:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+272 text54 CODE >373:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+27F text54 CODE >374:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+28B text54 CODE >376:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+127 text53 CODE >378:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+127 text53 CODE >380:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+135 text53 CODE >381:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+13D text53 CODE >383:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+13F text53 CODE >384:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+141 text53 CODE >386:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+141 text53 CODE >388:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+142 text53 CODE >389:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+143 text53 CODE >393:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+146 text53 CODE >397:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+149 text53 CODE >398:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+156 text53 CODE >398:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+15B text53 CODE >398:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+15E text53 CODE >398:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+161 text53 CODE >398:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+164 text53 CODE >398:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+167 text53 CODE >400:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D07 text52 CODE >402:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D07 text52 CODE >404:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D09 text52 CODE >405:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D0B text52 CODE >406:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D0C text52 CODE >407:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CBF text51 CODE >450:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CBF text51 CODE >452:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC1 text51 CODE >453:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC2 text51 CODE >454:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC3 text50 CODE >456:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC3 text50 CODE >458:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC5 text50 CODE >459:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC6 text50 CODE >460:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC7 text49 CODE >463:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC7 text49 CODE >465:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC9 text49 CODE >466:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CCA text49 CODE >467:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CCB text48 CODE >469:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CCB text48 CODE >471:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CCD text48 CODE >472:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CCE text48 CODE >473:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CCF text47 CODE >475:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CCF text47 CODE >477:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD1 text47 CODE >478:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD2 text47 CODE >479:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD3 text46 CODE >482:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD3 text46 CODE >484:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD5 text46 CODE >485:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD6 text46 CODE >486:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD7 text45 CODE >488:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD7 text45 CODE >490:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD9 text45 CODE >491:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CDA text45 CODE >492:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CED text44 CODE >494:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CED text44 CODE >496:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CEF text44 CODE >497:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CF0 text44 CODE >498:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CF1 text44 CODE >499:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F7C text43 CODE >500:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F7C text43 CODE >502:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F7E text43 CODE >503:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F82 text43 CODE >504:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F83 text43 CODE >508:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F86 text43 CODE >510:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F89 text43 CODE >511:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F9B text43 CODE >511:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FA0 text43 CODE >511:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FA3 text43 CODE >511:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+FA6 text43 CODE >512:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F52 text42 CODE >321:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F52 text42 CODE >323:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F55 text42 CODE >325:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F5C text42 CODE >325:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F5E text42 CODE >327:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F64 text42 CODE >329:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+F7B text42 CODE >330:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CDB text41 CODE >650:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CDB text41 CODE >652:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CDB text41 CODE >654:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D4A text40 CODE >312:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D4A text40 CODE >314:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D4D text40 CODE >316:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D50 text40 CODE >317:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D53 text40 CODE >314:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E5F text39 CODE >224:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E61 text39 CODE >226:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E63 text39 CODE >227:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E66 text39 CODE >229:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E67 text39 CODE >230:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E69 text39 CODE >232:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E6C text39 CODE >234:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E6F text39 CODE >235:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E70 text39 CODE >238:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E75 text39 CODE >240:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E78 text39 CODE >241:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E7A text39 CODE >243:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E7C text39 CODE >244:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CDF text38 CODE >251:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CDF text38 CODE >253:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CE2 text38 CODE >254:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D54 text37 CODE >543:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D54 text37 CODE >545:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D57 text37 CODE >547:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D58 text37 CODE >548:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D5A text37 CODE >549:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D5B text37 CODE >550:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D5D text37 CODE >551:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D5E text37 CODE >555:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+B2 text36 CODE >176:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+B3 text36 CODE >178:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+B5 text36 CODE >180:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+B8 text36 CODE >182:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+BC text36 CODE >183:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+BD text36 CODE >184:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+BE text36 CODE >185:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+BF text36 CODE >186:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C3 text36 CODE >187:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C7 text36 CODE >188:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+C8 text36 CODE >191:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CC text36 CODE >192:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+CD text36 CODE >193:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D1 text36 CODE >194:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D2 text36 CODE >195:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D6 text36 CODE >196:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D7 text36 CODE >197:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+DB text36 CODE >198:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+DC text36 CODE >199:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E0 text36 CODE >200:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E1 text36 CODE >202:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E4 text36 CODE >203:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E6 text36 CODE >204:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E7 text36 CODE >205:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E7 text36 CODE >206:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+E8 text36 CODE >207:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D76 text35 CODE >283:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D76 text35 CODE >285:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D81 text35 CODE >286:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+4C text34 CODE >63:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+4D text34 CODE >65:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+4E text34 CODE >67:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+54 text34 CODE >67:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+56 text34 CODE >68:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+62 text34 CODE >69:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+6A text34 CODE >70:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+71 text34 CODE >71:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+74 text34 CODE >72:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+78 text34 CODE >72:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+7A text34 CODE >74:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+7C text34 CODE >75:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+CF2 text33 CODE >174:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+CF2 text33 CODE >175:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+CF6 text33 CODE >176:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D0D text32 CODE >166:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D0D text32 CODE >167:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D12 text32 CODE >168:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+CF7 text31 CODE >170:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+CF7 text31 CODE >171:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+CFB text31 CODE >172:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+E9C text30 CODE >66:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+E9C text30 CODE >71:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+E9F text30 CODE >74:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EA1 text30 CODE >77:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EA3 text30 CODE >80:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EA5 text30 CODE >83:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EA6 text30 CODE >86:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EAD text30 CODE >87:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EB4 text30 CODE >88:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EBA text30 CODE >90:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+EBB text30 CODE >92:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D38 text29 CODE >167:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D38 text29 CODE >169:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D3A text29 CODE >170:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D3C text29 CODE >171:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D3D text29 CODE >172:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D3F text29 CODE >173:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D40 text29 CODE >174:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/i2c1_master.c
+D41 text28 CODE >59:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D41 text28 CODE >62:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D44 text28 CODE >64:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D45 text28 CODE >66:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D46 text28 CODE >68:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D48 text28 CODE >70:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D49 text28 CODE >71:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+7D text27 CODE >55:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+7D text27 CODE >60:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+7F text27 CODE >61:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+80 text27 CODE >62:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+81 text27 CODE >67:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+83 text27 CODE >68:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+85 text27 CODE >69:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+87 text27 CODE >74:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+8A text27 CODE >75:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+8C text27 CODE >76:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+8E text27 CODE >81:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+8F text27 CODE >82:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+90 text27 CODE >83:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+91 text27 CODE >84:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+92 text27 CODE >89:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+93 text27 CODE >90:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+94 text27 CODE >91:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+95 text27 CODE >96:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+97 text27 CODE >97:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+99 text27 CODE >98:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+9B text27 CODE >103:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+9D text27 CODE >104:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+9F text27 CODE >105:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+A1 text27 CODE >106:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+A2 text27 CODE >115:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+A4 text27 CODE >116:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+A7 text27 CODE >117:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+A9 text27 CODE >118:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+AC text27 CODE >119:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+AE text27 CODE >120:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+B1 text27 CODE >121:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/pin_manager.c
+D28 text26 CODE >73:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D28 text26 CODE >76:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D2A text26 CODE >78:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D2B text26 CODE >80:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D2C text26 CODE >82:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D2D text26 CODE >84:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D2E text26 CODE >86:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D2F text26 CODE >87:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D90 text25 CODE >50:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D90 text25 CODE >52:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D93 text25 CODE >53:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D96 text25 CODE >54:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D99 text25 CODE >55:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D9C text25 CODE >56:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+D9E text25 CODE >57:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/mcc.c
+DEF text24 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DF0 text24 CODE >6:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DF1 text24 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DF3 text24 CODE >44:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DF7 text24 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DF9 text24 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DFB text24 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DFE text24 CODE >50:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+DFF text24 CODE >51:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8.c
+EBC text23 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EBD text23 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EBE text23 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EC1 text23 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EC3 text23 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EC5 text23 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EC7 text23 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ECB text23 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ECC text23 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ECE text23 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ED0 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ED2 text23 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ED4 text23 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ED5 text23 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+ED7 text23 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EDB text23 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+EDC text23 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbdiv.c
+E7D text22 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E7E text22 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E82 text22 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E83 text22 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E8E text22 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E90 text22 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E92 text22 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E94 text22 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E96 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E9A text22 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+E9B text22 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\lbmod.c
+1E text21 CODE >91:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+1F text21 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+25 text21 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+27 text21 CODE >94:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+33 text21 CODE >95:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+3B text21 CODE >96:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+42 text21 CODE >97:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+45 text21 CODE >98:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+49 text21 CODE >98:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/examples/i2c1_master_example.c
+D5F text20 CODE >3:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+D60 text20 CODE >9:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+D69 text20 CODE >11:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1AD text19 CODE >13:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1AE text19 CODE >14:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1AF text19 CODE >16:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1B9 text19 CODE >17:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1C3 text19 CODE >18:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1CD text19 CODE >19:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1D7 text19 CODE >20:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1DA text19 CODE >21:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1DE text19 CODE >22:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1E1 text19 CODE >24:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1E6 text19 CODE >27:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1EB text19 CODE >28:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1ED text19 CODE >29:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1F2 text19 CODE >30:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+5 text18 CODE >32:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+6 text18 CODE >33:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+14 text18 CODE >34:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+1D text18 CODE >35:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2DF text17 CODE >37:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2DF text17 CODE >44:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2E5 text17 CODE >46:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2EE text17 CODE >48:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2F0 text17 CODE >49:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2F8 text17 CODE >50:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+301 text17 CODE >51:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+308 text17 CODE >51:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+30A text17 CODE >52:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+312 text17 CODE >65:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+314 text17 CODE >67:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+318 text17 CODE >67:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+323 text17 CODE >68:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+32C text17 CODE >69:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+333 text17 CODE >69:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+335 text17 CODE >70:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+337 text17 CODE >71:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+339 text17 CODE >72:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+E9 text16 CODE >74:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+EA text16 CODE >76:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+EB text16 CODE >79:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+EC text16 CODE >80:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+ED text16 CODE >82:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+EF text16 CODE >85:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+F1 text16 CODE >88:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+F5 text16 CODE >89:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+F6 text16 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+FB text16 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+100 text16 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+103 text16 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+106 text16 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+109 text16 CODE >93:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+10C text16 CODE >94:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+111 text16 CODE >95:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+119 text16 CODE >97:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+120 text16 CODE >98:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+126 text16 CODE >99:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+28C text15 CODE >119:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+28D text15 CODE >120:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+28E text15 CODE >123:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+294 text15 CODE >124:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+29D text15 CODE >125:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+29F text15 CODE >126:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2A1 text15 CODE >127:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2AA text15 CODE >128:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2AB text15 CODE >130:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2B4 text15 CODE >131:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2B5 text15 CODE >133:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2C0 text15 CODE >138:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2C5 text15 CODE >120:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2CB text15 CODE >135:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2D3 text15 CODE >135:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2D8 text15 CODE >135:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2DB text15 CODE >135:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+2DE text15 CODE >120:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\LCD_i2c.c
+5AE text14 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5AE text14 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5AF text14 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5B7 text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5C1 text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5C4 text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5C7 text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5CA text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5CD text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5D0 text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5D3 text14 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5D6 text14 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5D8 text14 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5E0 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5EA text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5ED text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5F0 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5F3 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5F6 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5F9 text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5FC text14 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5FF text14 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+603 text14 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+60D text14 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+616 text14 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+618 text14 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+61A text14 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+61C text14 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+624 text14 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+628 text14 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+629 text14 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+631 text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+633 text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+637 text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+63B text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+63F text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+643 text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+647 text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+64B text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+64F text14 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+651 text14 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+661 text14 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+662 text14 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+66A text14 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+66E text14 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+671 text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+67A text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+67D text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+680 text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+683 text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+686 text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+689 text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+68C text14 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+68F text14 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+6A0 text14 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+4D2 text13 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4D2 text13 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4D3 text13 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4DB text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4E5 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4E8 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4EB text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4EE text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4F1 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4F4 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4F7 text13 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4FA text13 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4FC text13 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+504 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+50E text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+511 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+514 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+517 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+51A text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+51D text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+520 text13 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+523 text13 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+52C text13 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+52E text13 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+530 text13 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+532 text13 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+53A text13 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+53E text13 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+53F text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+541 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+545 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+549 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+54D text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+551 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+555 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+559 text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+55D text13 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+55F text13 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+56F text13 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+577 text13 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+57B text13 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+57E text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+587 text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+58A text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+58D text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+590 text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+593 text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+596 text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+599 text13 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+59C text13 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+5AD text13 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+E17 text12 CODE >1:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+E17 text12 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+E1C text12 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+E20 text12 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+E27 text12 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+D30 text11 CODE >132:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D31 text11 CODE >134:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D31 text11 CODE >136:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D34 text11 CODE >138:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D37 text11 CODE >139:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+CFC text10 CODE >146:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+CFD text10 CODE >148:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+D00 text10 CODE >149:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\mcc_generated_files/eusart.c
+168 text9 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+168 text9 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+16D text9 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+170 text9 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+171 text9 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+18E text9 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+192 text9 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+194 text9 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1A4 text9 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1AA text9 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+1AC text9 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+EDD text8 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+EDE text8 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+EE0 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+EEE text8 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+EFC text8 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+F01 text8 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+E2E text7 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+E2F text7 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+E33 text7 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+E3A text7 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+E3E text7 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+E3F text7 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+E45 text7 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+1F3 text6 CODE >72:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1F4 text6 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1F6 text6 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1FE text6 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+207 text6 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+209 text6 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+20F text6 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+213 text6 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+215 text6 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+221 text6 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+226 text6 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+227 text6 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+22A text6 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+232 text6 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+23B text6 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6A1 text5 CODE >287:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6A2 text5 CODE >293:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6B2 text5 CODE >294:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C4 text5 CODE >295:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C8 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6D1 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6D4 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6D7 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6DA text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6DD text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6E0 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6E3 text5 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6E6 text5 CODE >297:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6E6 text5 CODE >300:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6E9 text5 CODE >301:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6EE text5 CODE >302:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6EE text5 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6F5 text5 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6FA text5 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+70A text5 CODE >304:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+712 text5 CODE >305:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+718 text5 CODE >306:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+71C text5 CODE >307:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+71C text5 CODE >310:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+720 text5 CODE >311:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+722 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+72C text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+733 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+737 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+73F text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+743 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+748 text5 CODE >313:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+74D text5 CODE >314:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+77B text5 CODE >315:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+77F text5 CODE >316:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+783 text5 CODE >317:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7AF text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7AF text5 CODE >318:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7B5 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7B9 text5 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7BB text5 CODE >321:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7C2 text5 CODE >322:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7C6 text5 CODE >323:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7D9 text5 CODE >327:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7E9 text5 CODE >328:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+402 text4 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+403 text4 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+412 text4 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+418 text4 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+41A text4 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+420 text4 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+425 text4 CODE >847:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+444 text4 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+44A text4 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+44C text4 CODE >850:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+465 text4 CODE >852:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+47D text4 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+48C text4 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+492 text4 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+494 text4 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+49E text4 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4A4 text4 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4AA text4 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4AC text4 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4AF text4 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4C8 text4 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+4CF text4 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FD3 text3 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FD4 text3 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FD8 text3 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FDB text3 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FE3 text3 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FF6 text3 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FF7 text3 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+FFF text3 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+DDF text2 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+DDF text2 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+DE3 text2 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+DEE text2 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+F2A text1 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F2C text1 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F32 text1 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F38 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F3A text1 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F3C text1 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F48 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F51 text1 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+33A maintext CODE >8:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+33A maintext CODE >10:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+343 maintext CODE >13:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+34B maintext CODE >14:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+353 maintext CODE >16:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+356 maintext CODE >32:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+35E maintext CODE >34:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+361 maintext CODE >37:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+369 maintext CODE >38:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+36D maintext CODE >40:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+36E maintext CODE >45:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+378 maintext CODE >46:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+385 maintext CODE >47:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+38A maintext CODE >48:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+395 maintext CODE >51:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3A0 maintext CODE >52:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3AB maintext CODE >53:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3AF maintext CODE >54:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3B3 maintext CODE >55:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3B9 maintext CODE >56:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3BF maintext CODE >57:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3D2 maintext CODE >58:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3F0 maintext CODE >59:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+3F4 maintext CODE >60:D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\i2c_LCD_temp_2A.X\main.c
+D13 clrtext CODE >7934:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+D13 clrtext CODE >7935:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+D14 clrtext CODE >7936:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+D14 clrtext CODE >7937:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+D15 clrtext CODE >7938:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+D16 clrtext CODE >7939:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+D17 clrtext CODE >7940:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+D18 clrtext CODE >7941:C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_SetCallback 1E54 0 CODE 0 text74 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_Initialize 1A70 0 CODE 0 text29 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hspace_0 107B 0 ABS 0 - -
+__Hspace_1 15D 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+Send_D7_D4@nibble 2B 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_SetCallback 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_Poller 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_I2C1_SetBuffer 1B20 0 CODE 0 text75 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetDataCompleteCallback@ptr 77 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PMD_Initialize 1A50 0 CODE 0 text26 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterDisableIrq 1936 0 CODE 0 text80 dist/default/production\i2c_LCD_temp_2A.X.production.o
+?_abs 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+?_pad 24 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@a D6 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@d D7 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@l D5 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@u D8 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 5E 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_LATA 16 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_LATB 17 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_LATC 18 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PMD0 796 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PMD1 797 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PMD2 798 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PMD3 799 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PMD4 79A 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PMD5 79B 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_WPUA F39 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_WPUB F44 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_WPUC F4F 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_WPUE F65 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+_dbuf 13D 0 BANK2 1 bssBANK2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_dtoa D42 0 CODE 0 text5 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_main 674 0 CODE 0 maintext dist/default/production\i2c_LCD_temp_2A.X.production.o
+_nout DB 0 BANK1 1 bssBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_prec DF 0 BANK1 1 bssBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+abs@a 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+pad@i 28 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+pad@p 25 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+pad@w 2A 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+start 4 0 CODE 0 init C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+___aomod@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_Write 1A60 0 CODE 0 text11 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of___aodiv 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of___aomod 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_dtoa 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of___lbdiv 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of___lbmod 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Close@returnValue 71 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterSendAck 1976 0 CODE 0 text62 dist/default/production\i2c_LCD_temp_2A.X.production.o
+pad@fp 2C 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_EUSART_SetFramingErrorHandler 1A26 0 CODE 0 text32 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_EUSART_SetOverrunErrorHandler 19F8 0 CODE 0 text31 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterSendTxData 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_SetDataCompleteCallback 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterDisableIrq 1932 0 CODE 0 text80 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_EUSART_Initialize 1D78 0 CODE 0 text30 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_wr2RegCompleteHandler 1B5E 0 CODE 0 text72 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_Write_PCF 1AD4 0 CODE 0 text20 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_I2C1_DO_IDLE 19D0 0 CODE 0 text57 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_RCEN 1A0E 0 CODE 0 text52 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_CallbackReturnReset 193A 0 CODE 0 text66 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_vfpfcnvrt 9A4 0 CODE 0 text4 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_SetDataCompleteCallback 1AEC 0 CODE 0 text73 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_Write_PCF 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_lcd_gotoxy 24E 0 CODE 0 text16 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterStartRx 1962 0 CODE 0 text65 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+rd1RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterWaitForEvent 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+__size_of_I2C1_MasterIsNack 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_TX_EMPTY 1FA6 0 CODE 0 text58 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_Send_D7_D4 35A 0 CODE 0 text19 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterGetRxData 1962 0 CODE 0 text63 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__size_of_I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_wr2RegCompleteHandler 1B3E 0 CODE 0 text72 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_PMD_Initialize 1A60 0 CODE 0 text26 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_Write_PCF 1ABE 0 CODE 0 text20 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_I2C1_Read1ByteRegister 98 0 CODE 0 text34 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Read1ByteRegister@reg 25 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Write1ByteRegister@reg 25 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_vfpfcnvrt 804 0 CODE 0 text4 dist/default/production\i2c_LCD_temp_2A.X.production.o
+dtoa@fp 3D 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_RX_NACK_RESTART 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_rdBlkRegCompleteHandler 1C00 0 CODE 0 text68 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_ANSELB F43 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_ANSELC F4E 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterFsm 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_RX_NACK_STOP 19AE 0 CODE 0 text46 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterEnableRestart 1950 0 CODE 0 text77 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_IDLE 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_RCEN 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_rdBlkRegCompleteHandler 1C2E 0 CODE 0 text68 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterStartRx 195C 0 CODE 0 text65 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_Close 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_RX 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_TX 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of___bmul 1C00 0 CODE 0 text24 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterSetIrq 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_EUSART_Write 1A70 0 CODE 0 text11 dist/default/production\i2c_LCD_temp_2A.X.production.o
+lcd_send_byte@address 32 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Write1ByteRegister@address 28 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@min D3 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@seg D4 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterOpen 1ABE 0 CODE 0 text37 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterStop 195C 0 CODE 0 text76 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_SEND_RESTART 198E 0 CODE 0 text49 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+?_printf 66 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterOperation 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+___bmul@multiplier 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_SEND_RESTART_WRITE 1986 0 CODE 0 text50 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of___aodiv D42 0 CODE 0 text14 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of___aomod B5C 0 CODE 0 text13 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of___lbdiv 1DBA 0 CODE 0 text23 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of___lbmod 1D38 0 CODE 0 text22 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aodiv@quotient 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_IDLE 19DA 0 CODE 0 text57 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_RCEN 1A1A 0 CODE 0 text52 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_INLVLA F3C 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_INLVLB F47 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_INLVLC F52 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_INLVLE F68 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_MasterSendTxData@data 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+Send_D7_D4@datos 2E 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+?_strlen 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+___stacklo 20DD 0 ABS 0 - C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+__end_of_Send_D7_D4 3E6 0 CODE 0 text19 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aomod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_Initialize 1D38 0 CODE 0 text30 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterOperation 1CFA 0 CODE 0 text39 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_fputs 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_SEND_RESTART_READ 197E 0 CODE 0 text51 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PIN_MANAGER_Initialize FA 0 CODE 0 text27 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aomod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+start_initialization FD4 0 CODE 0 cinit dist/default/production\i2c_LCD_temp_2A.X.production.o
+_ODCONA F3A 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_ODCONB F45 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_ODCONC F50 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+lcd_puts@dato 3A 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_SetErrorHandler 19E4 0 CODE 0 text33 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_OSCFRQ 893 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+EUSART_SetOverrunErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_SEND_ADR_WRITE 1A32 0 CODE 0 text55 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+lcd_gotoxy@address 37 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_RC0PPS F20 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_RC1STA 11D 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_RC4PPS F24 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_EUSART_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_EUSART_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+rdBlkRegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_SYSTEM_Initialize 1B3E 0 CODE 0 text25 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterOpen 1AA8 0 CODE 0 text37 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterStop 1956 0 CODE 0 text76 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_rd2RegCompleteHandler 1B9E 0 CODE 0 text70 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_CallbackReturnReset@funPtr 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+clear_ram0 1A26 0 CODE 0 clrtext dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_Poller 1A94 0 CODE 0 text40 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_Write1ByteRegister 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetCallback@idx 74 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetCallback@ptr 72 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterIsNack 1A0E 0 CODE 0 text60 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_TX1REG 11A 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_TX1STA 11E 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterSendNack 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_printf 1BDE 0 CODE 0 text2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_Status 120 0 BANK2 1 bssBANK2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+fputc@fp 74 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+fputs@fp 7A 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbdiv@counter 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+I2C1_Read1ByteRegister@returnValue 28 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_rd2RegCompleteHandler 1B7E 0 CODE 0 text70 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+__end_of_strlen 1C8C 0 CODE 0 text7 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__end_of_wr1RegCompleteHandler 1BBE 0 CODE 0 text69 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hstack 0 0 STACK 2 stack -
+_I2C1_SetAddressNackCallback 1AEC 0 CODE 0 text35 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 11F 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_sprintf 1EA4 0 CODE 0 text1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_lcd_puts 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+__size_of_lcd_gotoxy 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterSendAck 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterEnableRestart 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_MasterOperation@read 23 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit FD4 0 CODE 0 cinit -
+EUSART_SetErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__size_of_I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterSetIrq 196E 0 CODE 0 text59 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_wr1RegCompleteHandler 1B9E 0 CODE 0 text69 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 2042 0 STRCODE 0 stringtext1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pstringtext2 20EE 0 STRCODE 0 stringtext2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pstringtext3 1000 0 STRCODE 0 stringtext3 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pstringtext4 2000 0 STRCODE 0 stringtext4 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pstringtext5 2082 0 STRCODE 0 stringtext5 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pstringtext6 20BA 0 STRCODE 0 stringtext6 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pstringtext7 0 0 STRCODE 0 stringtext7 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_SetBuffer 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pnvBANK1 E3 0 BANK1 1 nvBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aodiv@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1CON2 191 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_Read1ByteRegister FA 0 CODE 0 text34 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___bmul 1BDE 0 CODE 0 text24 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aomod@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_I2C1_MasterSendNack 196E 0 CODE 0 text64 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__S0 107B 0 ABS 0 - -
+__S1 15D 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_abs 1C2E 0 CODE 0 text12 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_pad 3E6 0 CODE 0 text6 dist/default/production\i2c_LCD_temp_2A.X.production.o
+Write_PCF@dato 2A 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_ADDRESS_NACK 1F4E 0 CODE 0 text43 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterDisableIrq 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+Send_D7_D4@address 2D 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_CallbackReturnStop 1936 0 CODE 0 text67 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_CallbackReturnReset 193E 0 CODE 0 text66 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Open@address 71 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aodiv@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_SEND_STOP 199E 0 CODE 0 text48 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_CallbackReturnStop 193A 0 CODE 0 text67 dist/default/production\i2c_LCD_temp_2A.X.production.o
+sprintf@fmt 66 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_RESET 19DA 0 CODE 0 text44 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SYSTEM_Initialize 1B20 0 CODE 0 text25 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_dtoa$1768 3B 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterOpen 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterStop 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_abs 1C5C 0 CODE 0 text12 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_pad 478 0 CODE 0 text6 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_g_LcdX E1 0 BANK1 1 bssBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_g_LcdY 6F 0 BANK0 1 bssBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_lcd_init 5BE 0 CODE 0 text17 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_lcd_puts 518 0 CODE 0 text15 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterIsNack 1A02 0 CODE 0 text60 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\PICTRA~1\AppData\Local\Temp\xcAs92g.o
+strlen@a 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+strlen@s 74 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterStartRx 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of___bmul 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__end_of_lcd_init 674 0 CODE 0 text17 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_lcd_puts 5BE 0 CODE 0 text15 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+__Lstringtext6 0 0 ABS 0 stringtext6 -
+__Lstringtext7 0 0 ABS 0 stringtext7 -
+wr2RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfpfcnvrt@fmt 4E 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_Send_D7_D4 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PIE3bits 719 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_lcd_send_byte A 0 CODE 0 text18 dist/default/production\i2c_LCD_temp_2A.X.production.o
+EUSART_SetFramingErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+pad@buf 24 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetDataCompleteCallback@cb 75 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext10 19F8 0 CODE 0 text10 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext11 1A60 0 CODE 0 text11 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext12 1C2E 0 CODE 0 text12 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext13 9A4 0 CODE 0 text13 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext14 B5C 0 CODE 0 text14 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext15 518 0 CODE 0 text15 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext16 1D2 0 CODE 0 text16 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext17 5BE 0 CODE 0 text17 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext18 A 0 CODE 0 text18 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext19 35A 0 CODE 0 text19 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext20 1ABE 0 CODE 0 text20 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext21 3C 0 CODE 0 text21 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext22 1CFA 0 CODE 0 text22 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext23 1D78 0 CODE 0 text23 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext24 1BDE 0 CODE 0 text24 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext25 1B20 0 CODE 0 text25 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext26 1A50 0 CODE 0 text26 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext27 FA 0 CODE 0 text27 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext28 1A82 0 CODE 0 text28 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext29 1A70 0 CODE 0 text29 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext30 1D38 0 CODE 0 text30 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext31 19EE 0 CODE 0 text31 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext32 1A1A 0 CODE 0 text32 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext33 19E4 0 CODE 0 text33 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext34 98 0 CODE 0 text34 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext35 1AEC 0 CODE 0 text35 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext36 164 0 CODE 0 text36 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext37 1AA8 0 CODE 0 text37 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext38 19BE 0 CODE 0 text38 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext39 1CBE 0 CODE 0 text39 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext40 1A94 0 CODE 0 text40 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext41 19B6 0 CODE 0 text41 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext42 1EA4 0 CODE 0 text42 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext43 1EF8 0 CODE 0 text43 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext44 19DA 0 CODE 0 text44 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext45 19AE 0 CODE 0 text45 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext46 19A6 0 CODE 0 text46 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext47 199E 0 CODE 0 text47 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext48 1996 0 CODE 0 text48 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext49 198E 0 CODE 0 text49 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext50 1986 0 CODE 0 text50 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext51 197E 0 CODE 0 text51 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext52 1A0E 0 CODE 0 text52 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext53 24E 0 CODE 0 text53 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext54 478 0 CODE 0 text54 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext55 1A32 0 CODE 0 text55 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext56 1A40 0 CODE 0 text56 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext57 19D0 0 CODE 0 text57 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext58 1F4E 0 CODE 0 text58 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext59 1968 0 CODE 0 text59 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext60 1A02 0 CODE 0 text60 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext61 19C6 0 CODE 0 text61 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext62 1976 0 CODE 0 text62 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext63 1962 0 CODE 0 text63 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext64 196E 0 CODE 0 text64 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext65 195C 0 CODE 0 text65 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext66 193A 0 CODE 0 text66 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext67 1936 0 CODE 0 text67 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext68 1C00 0 CODE 0 text68 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext69 1B9E 0 CODE 0 text69 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext70 1B7E 0 CODE 0 text70 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext71 1B5E 0 CODE 0 text71 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext72 1B3E 0 CODE 0 text72 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext73 1AD4 0 CODE 0 text73 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext74 1E04 0 CODE 0 text74 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext75 1B04 0 CODE 0 text75 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext76 1956 0 CODE 0 text76 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext77 1950 0 CODE 0 text77 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext78 194A 0 CODE 0 text78 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext79 1C8C 0 CODE 0 text79 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext80 1932 0 CODE 0 text80 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext81 1944 0 CODE 0 text81 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext82 193E 0 CODE 0 text82 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_RX_ACK 199E 0 CODE 0 text47 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterEnableRestart 1956 0 CODE 0 text77 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_PIN_MANAGER_Initialize 164 0 CODE 0 text27 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aodiv B5C 0 CODE 0 text14 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aomod 9A4 0 CODE 0 text13 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbdiv 1D78 0 CODE 0 text23 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbmod 1CFA 0 CODE 0 text22 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 674 0 CODE 0 maintext dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__end_of_I2C1_MasterSendTxData 19D0 0 CODE 0 text61 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetBuffer@bufferSize 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_RX_NACK_STOP 19A6 0 CODE 0 text46 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_EUSART_SetErrorHandler 19EE 0 CODE 0 text33 dist/default/production\i2c_LCD_temp_2A.X.production.o
+?_dtoa 30 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Write1ByteRegister@data 26 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_I2C1_Open 1D2 0 CODE 0 text36 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_printf 1BBE 0 CODE 0 text2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterClearIrq 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterWaitForEvent 19B6 0 CODE 0 text41 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterSetIrq 1968 0 CODE 0 text59 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_Open 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_SEND_ADR_WRITE 1A40 0 CODE 0 text55 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterFsm 1EA4 0 CODE 0 text42 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetAddressNackCallback@ptr 77 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_MasterOperation@returnValue 24 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterWaitForEvent 19BE 0 CODE 0 text41 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterClose 1944 0 CODE 0 text81 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterStart 194A 0 CODE 0 text78 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterWrite 19BE 0 CODE 0 text38 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_strlen 1C5C 0 CODE 0 text7 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@temph DA 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@templ D9 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_rd1RegCompleteHandler 1B7E 0 CODE 0 text71 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_FramingErrorHandler E7 0 BANK1 1 nvBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_OverrunErrorHandler E5 0 BANK1 1 nvBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterSendTxData 19C6 0 CODE 0 text61 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterGetRxData 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Open@returnValue 72 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterSendNack 1976 0 CODE 0 text64 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1CLKPPS EC5 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_rdBlkRegCompleteHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_OSCCON1 88D 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_OSCCON3 88F 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_OSCTUNE 892 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_Open 164 0 CODE 0 text36 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_ErrorHandler E3 0 BANK1 1 nvBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+main@buffer AB 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_RX_NACK_RESTART 19AE 0 CODE 0 text45 dist/default/production\i2c_LCD_temp_2A.X.production.o
+?_vfpfcnvrt 4E 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__end_of_I2C1_DO_RX_NACK_RESTART 19B6 0 CODE 0 text45 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_SEND_STOP 1996 0 CODE 0 text48 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_rd1RegCompleteHandler 1B5E 0 CODE 0 text71 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_PIR3bits 70F 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterOperation 1CBE 0 CODE 0 text39 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lend_init 4 0 CODE 0 end_init -
+_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aodiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___aodiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_I2C1_MasterGetRxData 1968 0 CODE 0 text63 dist/default/production\i2c_LCD_temp_2A.X.production.o
+printf@ap 6B 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_SetFramingErrorHandler 1A1A 0 CODE 0 text32 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_EUSART_SetOverrunErrorHandler 19EE 0 CODE 0 text31 dist/default/production\i2c_LCD_temp_2A.X.production.o
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_LCD_INIT_STRING 20F6 0 STRCODE 0 stringtext2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_RX_ACK 19A6 0 CODE 0 text47 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_RESET 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hintentry 4 0 CODE 0 intentry -
+__size_of_printf 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+fputc@c 72 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+fputs@c 20 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+fputs@i 21 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+fputs@s 23 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_MasterClearIrq 193E 0 CODE 0 text82 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___aodiv 20 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+?___aomod 20 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfprintf@fmt 5E 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__end_of_I2C1_Poller 1AA8 0 CODE 0 text40 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterFsm 1EF8 0 CODE 0 text42 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_Close 1C8C 0 CODE 0 text79 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_RX 24E 0 CODE 0 text53 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_TX 478 0 CODE 0 text54 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_strlen 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfpfcnvrt@ap 4F 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfpfcnvrt@fp 5D 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfpfcnvrt@ll 55 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext1 1E54 0 CODE 0 text1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext2 1BBE 0 CODE 0 text2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext3 1FA6 0 CODE 0 text3 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext4 804 0 CODE 0 text4 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext5 D42 0 CODE 0 text5 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext6 3E6 0 CODE 0 text6 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext7 1C5C 0 CODE 0 text7 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext8 1DBA 0 CODE 0 text8 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__ptext9 2D0 0 CODE 0 text9 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbdiv@quotient 74 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfprintf@ap 60 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfprintf@fp 63 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+vfprintf@cfmt 64 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_sprintf 1E54 0 CODE 0 text1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_Read1ByteRegister 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_vfprintf 1FA6 0 CODE 0 text3 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_lcd_send_byte 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbmod@dividend 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_I2C1_SetDataCompleteCallback 1AD4 0 CODE 0 text73 dist/default/production\i2c_LCD_temp_2A.X.production.o
+lcd_init@i 34 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+sprintf@ap A0 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+wr1RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_RESET 19E4 0 CODE 0 text44 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_SEND_RESTART 1996 0 CODE 0 text49 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+__Hstringtext6 0 0 ABS 0 stringtext6 -
+__Hstringtext7 0 0 ABS 0 stringtext7 -
+__end_of_vfprintf 2000 0 CODE 0 text3 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterClose 194A 0 CODE 0 text81 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_SetCallback 1E04 0 CODE 0 text74 dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetCallback@cb 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SLRCONA F3B 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SLRCONB F46 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SLRCONC F51 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterStart 1950 0 CODE 0 text78 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterWrite 19C6 0 CODE 0 text38 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_SEND_ADR_READ 1A50 0 CODE 0 text56 dist/default/production\i2c_LCD_temp_2A.X.production.o
+EUSART_Write@txData 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+_LCD_INIT_STRING 20EE 0 STRCODE 0 stringtext2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterClose 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetBuffer@buffer 73 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterStart 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_MasterWrite 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SP1BRGH 11C 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SP1BRGL 11B 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 190 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1CON2bits 191 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_SEND_RESTART_WRITE 198E 0 CODE 0 text50 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_Write1ByteRegister 3C 0 CODE 0 text21 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_lcd_send_byte 3C 0 CODE 0 text18 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_i2c1_fsmStateTable 2082 0 STRCODE 0 stringtext1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_Write1ByteRegister 98 0 CODE 0 text21 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_SEND_ADR_READ 1A40 0 CODE 0 text56 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_Initialize 1A82 0 CODE 0 text29 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hend_init 8 0 CODE 0 end_init -
+__end_of_I2C1_Close 1CBE 0 CODE 0 text79 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_RX 2D0 0 CODE 0 text53 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_TX 518 0 CODE 0 text54 dist/default/production\i2c_LCD_temp_2A.X.production.o
+lcd_gotoxy@x 36 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+lcd_gotoxy@y 33 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbmod@rem 75 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+lcd_send_byte@n 2F 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+sprintf@f A2 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+sprintf@s A1 0 BANK1 1 cstackBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+putch@txData 71 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_SetAddressNackCallback 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_dtoa FD4 0 CODE 0 text5 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_main 804 0 CODE 0 maintext dist/default/production\i2c_LCD_temp_2A.X.production.o
+rd2RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_Read1ByteRegister@address 27 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+printf@fmt 66 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_fputc 35A 0 CODE 0 text9 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_fputs 1E04 0 CODE 0 text8 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_SetBuffer 1B04 0 CODE 0 text75 dist/default/production\i2c_LCD_temp_2A.X.production.o
+?_sprintf 66 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_OSCEN 891 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_RXPPS ECB 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_TRISB 12 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_TRISC 13 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_putch 1A02 0 CODE 0 text10 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_I2C1_DO_ADDRESS_NACK 1EF8 0 CODE 0 text43 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_flags 6D 0 BANK0 1 bssBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_fputc 2D0 0 CODE 0 text9 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_fputs 1DBA 0 CODE 0 text8 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_putch 19F8 0 CODE 0 text10 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_width DD 0 BANK1 1 bssBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_eusartRxLastError E2 0 BANK1 1 bssBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_DO_SEND_RESTART_READ 1986 0 CODE 0 text51 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterClearIrq 1944 0 CODE 0 text82 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_pad 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_EUSART_SetErrorHandler 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_OSCILLATOR_Initialize 1A94 0 CODE 0 text28 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__initialization FD4 0 CODE 0 cinit dist/default/production\i2c_LCD_temp_2A.X.production.o
+___bmul@product 72 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+I2C1_SetAddressNackCallback@cb 75 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pbssBANK0 6D 0 BANK0 1 bssBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pbssBANK1 DB 0 BANK1 1 bssBANK1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_i2c1_fsmStateTable 2042 0 STRCODE 0 stringtext1 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__size_of_I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\i2c_LCD_temp_2A.X.production.o
+_I2C1_DO_TX_EMPTY 1F4E 0 CODE 0 text58 dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_SetAddressNackCallback 1B04 0 CODE 0 text35 dist/default/production\i2c_LCD_temp_2A.X.production.o
+dtoa@d 30 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+dtoa@i 4C 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+dtoa@n 44 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+dtoa@p 3E 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+dtoa@s 42 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+dtoa@w 40 0 BANK0 1 cstackBANK0 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_lcd_gotoxy 1D2 0 CODE 0 text16 dist/default/production\i2c_LCD_temp_2A.X.production.o
+___lbmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\i2c_LCD_temp_2A.X.production.o
+__end_of_I2C1_MasterSendAck 197E 0 CODE 0 text62 dist/default/production\i2c_LCD_temp_2A.X.production.o
+_OSCILLATOR_Initialize 1A82 0 CODE 0 text28 dist/default/production\i2c_LCD_temp_2A.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7EA FD4 16 2
+text1 0 F2A 1E54 28 2
+text2 0 DDF 1BBE 10 2
+text3 0 FD3 1FA6 2D 2
+text4 0 402 804 D0 2
+text5 0 6A1 D42 149 2
+text6 0 1F3 3E6 49 2
+text7 0 E2E 1C5C 18 2
+text8 0 EDD 1DBA 25 2
+text9 0 168 2D0 45 2
+text10 0 CFC 19F8 5 2
+text11 0 D30 1A60 8 2
+text12 0 E17 1C2E 17 2
+text13 0 4D2 9A4 DC 2
+text14 0 5AE B5C F3 2
+text15 0 28C 518 53 2
+text16 0 E9 1D2 3E 2
+text17 0 2DF 5BE 5B 2
+text18 0 5 A 19 2
+text19 0 1AD 35A 46 2
+text20 0 D5F 1ABE B 2
+text21 0 1E 3C 2E 2
+text22 0 E7D 1CFA 1F 2
+text23 0 EBC 1D78 21 2
+text24 0 DEF 1BDE 11 2
+text25 0 D90 1B20 F 2
+text26 0 D28 1A50 8 2
+text27 0 7D FA 35 2
+text28 0 D41 1A82 9 2
+text29 0 D38 1A70 9 2
+text30 0 E9C 1D38 20 2
+text31 0 CF7 19EE 5 2
+text32 0 D0D 1A1A 6 2
+text33 0 CF2 19E4 5 2
+text34 0 4C 98 31 2
+text35 0 D76 1AEC C 2
+text36 0 B2 164 37 2
+text37 0 D54 1AA8 B 2
+text38 0 CDF 19BE 4 2
+text39 0 E5F 1CBE 1E 2
+text40 0 D4A 1A94 A 2
+text41 0 CDB 19B6 4 2
+text42 0 F52 1EA4 2A 2
+text43 0 F7C 1EF8 2B 2
+text44 0 CED 19DA 5 2
+text45 0 CD7 19AE 4 2
+text46 0 CD3 19A6 4 2
+text47 0 CCF 199E 4 2
+text48 0 CCB 1996 4 2
+text49 0 CC7 198E 4 2
+text50 0 CC3 1986 4 2
+text51 0 CBF 197E 4 2
+text52 0 D07 1A0E 6 2
+text53 0 127 24E 41 2
+text54 0 23C 478 50 2
+text55 0 D19 1A32 7 2
+text56 0 D20 1A40 8 2
+text57 0 CE8 19D0 5 2
+text58 0 FA7 1F4E 2C 2
+text59 0 CB4 1968 3 2
+text60 0 D01 1A02 6 2
+text61 0 CE3 19C6 5 2
+text62 0 CBB 1976 4 2
+text63 0 CB1 1962 3 2
+text64 0 CB7 196E 4 2
+text65 0 CAE 195C 3 2
+text66 0 C9D 193A 2 2
+text67 0 C9B 1936 2 2
+text68 0 E00 1C00 17 2
+text69 0 DCF 1B9E 10 2
+text70 0 DBF 1B7E 10 2
+text71 0 DAF 1B5E 10 2
+text72 0 D9F 1B3E 10 2
+text73 0 D6A 1AD4 C 2
+text74 0 F02 1E04 28 2
+text75 0 D82 1B04 E 2
+text76 0 CAB 1956 3 2
+text77 0 CA8 1950 3 2
+text78 0 CA5 194A 3 2
+text79 0 E46 1C8C 19 2
+text80 0 C99 1932 2 2
+text81 0 CA2 1944 3 2
+text82 0 C9F 193E 3 2
+maintext 0 33A 674 C8 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 49 1
+stringtext3 0 800 1000 32 2
+stringtext4 0 1000 2000 7B 2
+reset_vec 0 0 0 4 2
+bssBANK2 1 120 120 3D 1
+clrtext 0 D13 1A26 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

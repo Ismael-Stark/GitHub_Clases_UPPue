@@ -1,0 +1,855 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"120 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/adc/src/adcc.c
+[e E11687 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+POT 4
+LM35 8
+]
+"34 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/i2c_host/src/i2c_simple_host.c
+[e E12048 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"53
+[e E12043 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"64 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[e E12004 I2C_ERROR `uc
+I2C_ERROR_NONE 0
+I2C_ERROR_NACK 1
+I2C_ERROR_BUS_COLLISION 2
+]
+"181
+[e E12162 . `uc
+I2C1_IDLE 0
+I2C1_SEND_ADR_READ 1
+I2C1_SEND_ADR_WRITE 2
+I2C1_TX 3
+I2C1_RX 4
+I2C1_RCEN 5
+I2C1_TX_EMPTY 6
+I2C1_SEND_RESTART_READ 7
+I2C1_SEND_RESTART_WRITE 8
+I2C1_SEND_RESTART 9
+I2C1_SEND_STOP 10
+I2C1_RX_ACK 11
+I2C1_RX_NACK_STOP 12
+I2C1_RX_NACK_RESTART 13
+I2C1_RESET 14
+I2C1_ADDRESS_NACK 15
+]
+"205
+[e E12048 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+[e E12043 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"224
+[e E12180 . `uc
+I2C1_DATA_COMPLETE 0
+I2C1_WRITE_COLLISION 1
+I2C1_ADDR_NACK 2
+I2C1_DATA_NACK 3
+I2C1_TIMEOUT 4
+I2C1_NULL 5
+]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"8 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"71 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"34 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/i2c_host/src/i2c_simple_host.c
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E12048  1 s 1 wr1RegCompleteHandler ]
+"81
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E12048  1 s 1 rd1RegCompleteHandler ]
+"119
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E12048  1 s 1 rd2RegCompleteHandler ]
+"151
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E12048  1 s 1 wr2RegCompleteHandler ]
+"185
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E12048  1 s 1 rdBlkRegCompleteHandler ]
+"209 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _I2C1_Open I2C1_Open `(E12043  1 e 1 0 ]
+"244
+[v _I2C1_Close I2C1_Close `(E12043  1 e 1 0 ]
+"259
+[v _I2C1_HostOperation I2C1_HostOperation `(E12043  1 e 1 0 ]
+"281
+[v _I2C1_HostRead I2C1_HostRead `(E12043  1 e 1 0 ]
+"286
+[v _I2C1_HostWrite I2C1_HostWrite `(E12043  1 e 1 0 ]
+"298
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+"308
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+"318
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+"333
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+"347
+[v _I2C1_Poller I2C1_Poller `(v  1 s 1 I2C1_Poller ]
+"356
+[v _I2C1_HostFsm I2C1_HostFsm `T(v  1 s 1 I2C1_HostFsm ]
+"368
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E12162  1 s 1 I2C1_DO_IDLE ]
+"375
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E12162  1 s 1 I2C1_DO_SEND_ADR_READ ]
+"382
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E12162  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+"389
+[v _I2C1_DO_TX I2C1_DO_TX `(E12162  1 s 1 I2C1_DO_TX ]
+"413
+[v _I2C1_DO_RX I2C1_DO_RX `(E12162  1 s 1 I2C1_DO_RX ]
+"437
+[v _I2C1_DO_RCEN I2C1_DO_RCEN `(E12162  1 s 1 I2C1_DO_RCEN ]
+"444
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E12162  1 s 1 I2C1_DO_TX_EMPTY ]
+"484
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E12162  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+"490
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E12162  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+"497
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E12162  1 s 1 I2C1_DO_SEND_RESTART ]
+"503
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E12162  1 s 1 I2C1_DO_SEND_STOP ]
+"509
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E12162  1 s 1 I2C1_DO_RX_ACK ]
+"516
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E12162  1 s 1 I2C1_DO_RX_NACK_STOP ]
+"522
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E12162  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+"528
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E12162  1 s 1 I2C1_DO_RESET ]
+"534
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E12162  1 s 1 I2C1_DO_ADDRESS_NACK ]
+"555
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E12048  1 e 1 0 ]
+"560
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E12048  1 e 1 0 ]
+"577
+[v _I2C1_HostOpen I2C1_HostOpen `T(a  1 s 1 I2C1_HostOpen ]
+"591
+[v _I2C1_HostClose I2C1_HostClose `T(v  1 s 1 I2C1_HostClose ]
+"597
+[v _I2C1_HostGetRxData I2C1_HostGetRxData `T(uc  1 s 1 I2C1_HostGetRxData ]
+"602
+[v _I2C1_HostSendTxData I2C1_HostSendTxData `T(v  1 s 1 I2C1_HostSendTxData ]
+"607
+[v _I2C1_HostEnableRestart I2C1_HostEnableRestart `T(v  1 s 1 I2C1_HostEnableRestart ]
+"612
+[v _I2C1_HostDisableRestart I2C1_HostDisableRestart `T(v  1 s 1 I2C1_HostDisableRestart ]
+"617
+[v _I2C1_HostStartRx I2C1_HostStartRx `T(v  1 s 1 I2C1_HostStartRx ]
+"622
+[v _I2C1_HostStart I2C1_HostStart `T(v  1 s 1 I2C1_HostStart ]
+"627
+[v _I2C1_HostStop I2C1_HostStop `T(v  1 s 1 I2C1_HostStop ]
+"632
+[v _I2C1_HostIsNack I2C1_HostIsNack `T(a  1 s 1 I2C1_HostIsNack ]
+"637
+[v _I2C1_HostSendAck I2C1_HostSendAck `T(v  1 s 1 I2C1_HostSendAck ]
+"643
+[v _I2C1_HostSendNack I2C1_HostSendNack `T(v  1 s 1 I2C1_HostSendNack ]
+"649
+[v _I2C1_HostClearBusCollision I2C1_HostClearBusCollision `T(v  1 s 1 I2C1_HostClearBusCollision ]
+"660
+[v _I2C1_HostEnableIrq I2C1_HostEnableIrq `T(v  1 s 1 I2C1_HostEnableIrq ]
+"670
+[v _I2C1_HostDisableIrq I2C1_HostDisableIrq `T(v  1 s 1 I2C1_HostDisableIrq ]
+"675
+[v _I2C1_HostClearIrq I2C1_HostClearIrq `T(v  1 s 1 I2C1_HostClearIrq ]
+"680
+[v _I2C1_HostSetIrq I2C1_HostSetIrq `T(v  1 s 1 I2C1_HostSetIrq ]
+"685
+[v _I2C1_HostWaitForEvent I2C1_HostWaitForEvent `T(v  1 s 1 I2C1_HostWaitForEvent ]
+"696
+[v _rdBlkRegCompleteHandler@mssp1$F1327 rdBlkRegCompleteHandler `(E12048  1 s 1 rdBlkRegCompleteHandler ]
+"706
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"715
+[v _I2C1_Write I2C1_Write `(a  1 e 1 0 ]
+"726
+[v _I2C1_Read I2C1_Read `(a  1 e 1 0 ]
+"736
+[v _I2C1_WriteRead I2C1_WriteRead `(a  1 e 1 0 ]
+"757
+[v _I2C1_ErrorGet I2C1_ErrorGet `(E12004  1 e 1 0 ]
+"762
+[v _I2C1_IsBusy I2C1_IsBusy `(a  1 e 1 0 ]
+"767
+[v _I2C1_CallbackRegister I2C1_CallbackRegister `(v  1 e 1 0 ]
+"59 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"63 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"85
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"94
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"98
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"47 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"62 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"93 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/uart/src/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"121
+[v _EUSART_IsTxReady EUSART_IsTxReady `(a  1 e 1 0 ]
+"131
+[v _EUSART_IsRxReady EUSART_IsRxReady `(a  1 e 1 0 ]
+"141
+[v _EUSART_IsTxDone EUSART_IsTxDone `(a  1 e 1 0 ]
+"81 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/uart/eusart.h
+"82
+[s S1474 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"151 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/uart/src/eusart.c
+[u S1479 . 1 `S1474 1 . 1 0 `uc 1 status 1 0 ]
+[v _EUSART_GetLastStatus EUSART_GetLastStatus `(S1479  1 e 1 0 ]
+"159
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"178
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"199
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"201
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"209
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"212
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"216
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"220
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+[s S1707 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"365 C:/Users/Edicion/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.8.149/xc8\pic\include\proc\pic16f18855.h
+[u S1712 . 1 `S1707 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1712  1 e 1 @11 ]
+[s S1629 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"402
+[u S1638 . 1 `S1629 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1638  1 e 1 @12 ]
+"592
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"654
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"716
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"778
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+[s S1650 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"795
+[u S1659 . 1 `S1650 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1659  1 e 1 @22 ]
+"840
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"902
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1539
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1559
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1573
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @142 ]
+"1643
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @143 ]
+"1720
+[v _ADACCL ADACCL `VEuc  1 e 1 @144 ]
+"1790
+[v _ADACCH ADACCH `VEuc  1 e 1 @145 ]
+"1860
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S63 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1896
+[s S71 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S75 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S77 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S82 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+`uc 1 ADFRM1 1 0 :1:3 
+]
+[u S87 . 1 `S63 1 . 1 0 `S71 1 . 1 0 `S75 1 . 1 0 `S77 1 . 1 0 `S82 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES87  1 e 1 @147 ]
+"1971
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+[s S213 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+"1985
+[u S219 . 1 `S213 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES219  1 e 1 @148 ]
+"2010
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+[s S149 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+"2032
+[s S154 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+]
+[u S162 . 1 `S149 1 . 1 0 `S154 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES162  1 e 1 @149 ]
+"2087
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+[s S120 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+"2108
+[s S128 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[u S132 . 1 `S120 1 . 1 0 `S128 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES132  1 e 1 @150 ]
+"2158
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+[s S181 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 ADMACT 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+"2178
+[s S188 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+]
+[u S192 . 1 `S181 1 . 1 0 `S188 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES192  1 e 1 @151 ]
+"2228
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2286
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2338
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2379
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2431
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2501
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2571
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2629
+[v _ADCNT ADCNT `VEuc  1 e 1 @268 ]
+"2699
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2776
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2846
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2923
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2993
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"3070
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3140
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+"3217
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @276 ]
+"3287
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @277 ]
+"3364
+[v _ADERRL ADERRL `VEuc  1 e 1 @278 ]
+"3434
+[v _ADERRH ADERRH `VEuc  1 e 1 @279 ]
+"3504
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"3558
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"3619
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"3689
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"3743
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+[s S1533 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3769
+[u S1542 . 1 `S1533 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES1542  1 e 1 @285 ]
+"3923
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S1512 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3949
+[u S1521 . 1 `S1512 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES1521  1 e 1 @286 ]
+"4103
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+"4349
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @396 ]
+"4369
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @397 ]
+"4559
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @399 ]
+[s S915 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"4668
+[s S924 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S929 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S934 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S939 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S944 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S950 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S959 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S965 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 I2C_START1 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S971 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ1 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS1 1 0 :1:5 
+]
+[s S977 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A1 1 0 :1:5 
+]
+[s S982 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA1 1 0 :1:5 
+]
+[s S987 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT1 1 0 :1:5 
+]
+[s S992 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S997 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS1 1 0 :1:5 
+]
+[u S1002 . 1 `S915 1 . 1 0 `S924 1 . 1 0 `S929 1 . 1 0 `S934 1 . 1 0 `S939 1 . 1 0 `S944 1 . 1 0 `S950 1 . 1 0 `S959 1 . 1 0 `S965 1 . 1 0 `S971 1 . 1 0 `S977 1 . 1 0 `S982 1 . 1 0 `S987 1 . 1 0 `S992 1 . 1 0 `S997 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES1002  1 e 1 @399 ]
+"4923
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
+[s S771 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4953
+[s S777 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S782 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S791 . 1 `S771 1 . 1 0 `S777 1 . 1 0 `S782 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES791  1 e 1 @400 ]
+"5043
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @401 ]
+[s S821 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"5090
+[s S830 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK 1 0 :5:1 
+]
+[s S833 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S840 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S849 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S856 . 1 `S821 1 . 1 0 `S830 1 . 1 0 `S833 1 . 1 0 `S840 1 . 1 0 `S849 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES856  1 e 1 @401 ]
+[s S1694 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"21014
+[u S1699 . 1 `S1694 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1699  1 e 1 @1804 ]
+[s S41 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 ADTIF 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 CSWIF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"21048
+[u S47 . 1 `S41 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES47  1 e 1 @1805 ]
+[s S898 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+"21121
+[u S905 . 1 `S898 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES905  1 e 1 @1807 ]
+[s S1106 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 SSP2IE 1 0 :1:2 
+`uc 1 BCL2IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+"21543
+[u S1113 . 1 `S1106 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES1113  1 e 1 @1817 ]
+"23196
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"23266
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @2190 ]
+"23336
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"23376
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"23433
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"23484
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"23542
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"31203
+[v _ADCACTPPS ADCACTPPS `VEuc  1 e 1 @3779 ]
+"31255
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3781 ]
+"31307
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3782 ]
+"31567
+[v _RXPPS RXPPS `VEuc  1 e 1 @3787 ]
+"32471
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @3872 ]
+"32621
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3875 ]
+"32671
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3876 ]
+"32871
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"32933
+[v _WPUA WPUA `VEuc  1 e 1 @3897 ]
+"32995
+[v _ODCONA ODCONA `VEuc  1 e 1 @3898 ]
+"33057
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3899 ]
+"33119
+[v _INLVLA INLVLA `VEuc  1 e 1 @3900 ]
+"33181
+[v _IOCAP IOCAP `VEuc  1 e 1 @3901 ]
+"33243
+[v _IOCAN IOCAN `VEuc  1 e 1 @3902 ]
+"33305
+[v _IOCAF IOCAF `VEuc  1 e 1 @3903 ]
+"33491
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"33553
+[v _WPUB WPUB `VEuc  1 e 1 @3908 ]
+"33615
+[v _ODCONB ODCONB `VEuc  1 e 1 @3909 ]
+"33677
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3910 ]
+"33739
+[v _INLVLB INLVLB `VEuc  1 e 1 @3911 ]
+"33801
+[v _IOCBP IOCBP `VEuc  1 e 1 @3912 ]
+"33863
+[v _IOCBN IOCBN `VEuc  1 e 1 @3913 ]
+"33925
+[v _IOCBF IOCBF `VEuc  1 e 1 @3914 ]
+"34111
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"34173
+[v _WPUC WPUC `VEuc  1 e 1 @3919 ]
+"34235
+[v _ODCONC ODCONC `VEuc  1 e 1 @3920 ]
+"34297
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3921 ]
+"34359
+[v _INLVLC INLVLC `VEuc  1 e 1 @3922 ]
+"34421
+[v _IOCCP IOCCP `VEuc  1 e 1 @3923 ]
+"34483
+[v _IOCCN IOCCN `VEuc  1 e 1 @3924 ]
+"34545
+[v _IOCCF IOCCF `VEuc  1 e 1 @3925 ]
+"34731
+[v _WPUE WPUE `VEuc  1 e 1 @3941 ]
+"34752
+[v _INLVLE INLVLE `VEuc  1 e 1 @3944 ]
+"34773
+[v _IOCEP IOCEP `VEuc  1 e 1 @3945 ]
+"34794
+[v _IOCEN IOCEN `VEuc  1 e 1 @3946 ]
+"34815
+[v _IOCEF IOCEF `VEuc  1 e 1 @3947 ]
+"181 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _fsmStateTable fsmStateTable `DC[16]*.37(E12162  1 e 32 0 ]
+"204
+[v _I2C1_InterruptHandler I2C1_InterruptHandler `*.37(v  1 s 2 I2C1_InterruptHandler ]
+[s S611 . 29 `[6]*.37(E12048 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E12162 1 state 1 26 `E12043 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+`uc 1 busy 1 28 :1:1 
+`uc 1 inUse 1 28 :1:2 
+`uc 1 bufferFree 1 28 :1:3 
+]
+"205
+[v _I2C1_Status I2C1_Status `S611  1 e 29 0 ]
+"206
+[v _i2c1ErrorState i2c1ErrorState `E12004  1 e 1 0 ]
+"61 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/interrupt.c
+[v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
+[s S1474 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"79 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/uart/src/eusart.c
+[u S1479 . 1 `S1474 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1479  1 e 1 0 ]
+"85
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"86
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"87
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"8 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"20
+} 0
+"62 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"47 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"128
+} 0
+"63 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"94
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"96
+} 0
+"706 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"713
+} 0
+"93 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/uart/src/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"216
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"218
+} 0
+"212
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"214
+} 0
+"220
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"222
+} 0
+"59 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"71 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Repaso_MCC.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"118
+} 0

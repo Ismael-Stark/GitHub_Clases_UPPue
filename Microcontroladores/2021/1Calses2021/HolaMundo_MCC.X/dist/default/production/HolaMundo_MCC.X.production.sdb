@@ -1,0 +1,1402 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F18855 ]
+[d frameptr 6 ]
+"120 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/adc/src/adcc.c
+[e E11687 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+POT 4
+LM35 8
+]
+"64 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[e E12004 I2C_ERROR `uc
+I2C_ERROR_NONE 0
+I2C_ERROR_NACK 1
+I2C_ERROR_BUS_COLLISION 2
+]
+"181
+[e E12162 . `uc
+I2C1_IDLE 0
+I2C1_SEND_ADR_READ 1
+I2C1_SEND_ADR_WRITE 2
+I2C1_TX 3
+I2C1_RX 4
+I2C1_RCEN 5
+I2C1_TX_EMPTY 6
+I2C1_SEND_RESTART_READ 7
+I2C1_SEND_RESTART_WRITE 8
+I2C1_SEND_RESTART 9
+I2C1_SEND_STOP 10
+I2C1_RX_ACK 11
+I2C1_RX_NACK_STOP 12
+I2C1_RX_NACK_RESTART 13
+I2C1_RESET 14
+I2C1_ADDRESS_NACK 15
+]
+"205
+[e E12048 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+[e E12043 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"224
+[e E12180 . `uc
+I2C1_DATA_COMPLETE 0
+I2C1_WRITE_COLLISION 1
+I2C1_ADDR_NACK 2
+I2C1_DATA_NACK 3
+I2C1_TIMEOUT 4
+I2C1_NULL 5
+]
+"34 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/i2c_simple_host.c
+[e E12048 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"53
+[e E12043 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"29 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\main.c
+[e E11703 . `uc
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+POT 4
+LM35 8
+]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"242
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"104 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\LCD_i2c.c
+[v _Write_PCF Write_PCF `(v  1 e 1 0 ]
+"114
+[v _Send_D7_D4 Send_D7_D4 `(v  1 e 1 0 ]
+"134
+[v _lcd_send_byte lcd_send_byte `(v  1 e 1 0 ]
+"140
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+"177
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+"225
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+"10 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\main.c
+[v _main main `(i  1 e 2 0 ]
+"71 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"144
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+"34 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/i2c_simple_host.c
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E12048  1 s 1 wr1RegCompleteHandler ]
+"51
+[v _i2c_write1ByteRegister i2c_write1ByteRegister `(v  1 e 1 0 ]
+"81
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E12048  1 s 1 rd1RegCompleteHandler ]
+"97
+[v _i2c_read1ByteRegister i2c_read1ByteRegister `(uc  1 e 1 0 ]
+"119
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E12048  1 s 1 rd2RegCompleteHandler ]
+"151
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E12048  1 s 1 wr2RegCompleteHandler ]
+"185
+[v _rdBlkRegCompleteHandler@i2c_simple_host$F1303 rdBlkRegCompleteHandler `(E12048  1 s 1 rdBlkRegCompleteHandler ]
+"209 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _I2C1_Open I2C1_Open `(E12043  1 e 1 0 ]
+"244
+[v _I2C1_Close I2C1_Close `(E12043  1 e 1 0 ]
+"259
+[v _I2C1_HostOperation I2C1_HostOperation `(E12043  1 e 1 0 ]
+"281
+[v _I2C1_HostRead I2C1_HostRead `(E12043  1 e 1 0 ]
+"286
+[v _I2C1_HostWrite I2C1_HostWrite `(E12043  1 e 1 0 ]
+"298
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+"308
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+"318
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+"333
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+"347
+[v _I2C1_Poller I2C1_Poller `(v  1 s 1 I2C1_Poller ]
+"356
+[v _I2C1_HostFsm I2C1_HostFsm `T(v  1 s 1 I2C1_HostFsm ]
+"368
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E12162  1 s 1 I2C1_DO_IDLE ]
+"375
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E12162  1 s 1 I2C1_DO_SEND_ADR_READ ]
+"382
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E12162  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+"389
+[v _I2C1_DO_TX I2C1_DO_TX `(E12162  1 s 1 I2C1_DO_TX ]
+"413
+[v _I2C1_DO_RX I2C1_DO_RX `(E12162  1 s 1 I2C1_DO_RX ]
+"437
+[v _I2C1_DO_RCEN I2C1_DO_RCEN `(E12162  1 s 1 I2C1_DO_RCEN ]
+"444
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E12162  1 s 1 I2C1_DO_TX_EMPTY ]
+"484
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E12162  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+"490
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E12162  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+"497
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E12162  1 s 1 I2C1_DO_SEND_RESTART ]
+"503
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E12162  1 s 1 I2C1_DO_SEND_STOP ]
+"509
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E12162  1 s 1 I2C1_DO_RX_ACK ]
+"516
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E12162  1 s 1 I2C1_DO_RX_NACK_STOP ]
+"522
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E12162  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+"528
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E12162  1 s 1 I2C1_DO_RESET ]
+"534
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E12162  1 s 1 I2C1_DO_ADDRESS_NACK ]
+"555
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E12048  1 e 1 0 ]
+"560
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E12048  1 e 1 0 ]
+"577
+[v _I2C1_HostOpen I2C1_HostOpen `T(a  1 s 1 I2C1_HostOpen ]
+"591
+[v _I2C1_HostClose I2C1_HostClose `T(v  1 s 1 I2C1_HostClose ]
+"597
+[v _I2C1_HostGetRxData I2C1_HostGetRxData `T(uc  1 s 1 I2C1_HostGetRxData ]
+"602
+[v _I2C1_HostSendTxData I2C1_HostSendTxData `T(v  1 s 1 I2C1_HostSendTxData ]
+"607
+[v _I2C1_HostEnableRestart I2C1_HostEnableRestart `T(v  1 s 1 I2C1_HostEnableRestart ]
+"612
+[v _I2C1_HostDisableRestart I2C1_HostDisableRestart `T(v  1 s 1 I2C1_HostDisableRestart ]
+"617
+[v _I2C1_HostStartRx I2C1_HostStartRx `T(v  1 s 1 I2C1_HostStartRx ]
+"622
+[v _I2C1_HostStart I2C1_HostStart `T(v  1 s 1 I2C1_HostStart ]
+"627
+[v _I2C1_HostStop I2C1_HostStop `T(v  1 s 1 I2C1_HostStop ]
+"632
+[v _I2C1_HostIsNack I2C1_HostIsNack `T(a  1 s 1 I2C1_HostIsNack ]
+"637
+[v _I2C1_HostSendAck I2C1_HostSendAck `T(v  1 s 1 I2C1_HostSendAck ]
+"643
+[v _I2C1_HostSendNack I2C1_HostSendNack `T(v  1 s 1 I2C1_HostSendNack ]
+"649
+[v _I2C1_HostClearBusCollision I2C1_HostClearBusCollision `T(v  1 s 1 I2C1_HostClearBusCollision ]
+"660
+[v _I2C1_HostEnableIrq I2C1_HostEnableIrq `T(v  1 s 1 I2C1_HostEnableIrq ]
+"670
+[v _I2C1_HostDisableIrq I2C1_HostDisableIrq `T(v  1 s 1 I2C1_HostDisableIrq ]
+"675
+[v _I2C1_HostClearIrq I2C1_HostClearIrq `T(v  1 s 1 I2C1_HostClearIrq ]
+"680
+[v _I2C1_HostSetIrq I2C1_HostSetIrq `T(v  1 s 1 I2C1_HostSetIrq ]
+"685
+[v _I2C1_HostWaitForEvent I2C1_HostWaitForEvent `T(v  1 s 1 I2C1_HostWaitForEvent ]
+"696
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E12048  1 s 1 rdBlkRegCompleteHandler ]
+"706
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"715
+[v _I2C1_Write I2C1_Write `(a  1 e 1 0 ]
+"726
+[v _I2C1_Read I2C1_Read `(a  1 e 1 0 ]
+"736
+[v _I2C1_WriteRead I2C1_WriteRead `(a  1 e 1 0 ]
+"757
+[v _I2C1_ErrorGet I2C1_ErrorGet `(E12004  1 e 1 0 ]
+"762
+[v _I2C1_IsBusy I2C1_IsBusy `(a  1 e 1 0 ]
+"767
+[v _I2C1_CallbackRegister I2C1_CallbackRegister `(v  1 e 1 0 ]
+"59 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+"63 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+"85
+[v _INT_CallBack INT_CallBack `(v  1 e 1 0 ]
+"94
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+"98
+[v _INT_DefaultInterruptHandler INT_DefaultInterruptHandler `(v  1 e 1 0 ]
+"47 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"62 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"93 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/uart/src/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"121
+[v _EUSART_IsTxReady EUSART_IsTxReady `(a  1 e 1 0 ]
+"131
+[v _EUSART_IsRxReady EUSART_IsRxReady `(a  1 e 1 0 ]
+"141
+[v _EUSART_IsTxDone EUSART_IsTxDone `(a  1 e 1 0 ]
+"81 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/uart/eusart.h
+"82
+[s S1550 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"151 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/uart/src/eusart.c
+[u S1555 . 1 `S1550 1 . 1 0 `uc 1 status 1 0 ]
+[v _EUSART_GetLastStatus EUSART_GetLastStatus `(S1555  1 e 1 0 ]
+"159
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"178
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"192
+[v _putch putch `(v  1 e 1 0 ]
+"199
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"201
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"209
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"212
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"216
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"220
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"32 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X/LCD_i2c.h
+[v _g_LcdY g_LcdY `uc  1 e 1 0 ]
+"38
+[v _LCD_INIT_STRING LCD_INIT_STRING `DC[4]uc  1 e 4 0 ]
+[s S1376 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"365 C:/Users/Edicion/.mchp_packs/Microchip/PIC16F1xxxx_DFP/1.8.149/xc8\pic\include\proc\pic16f18855.h
+[u S1381 . 1 `S1376 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1381  1 e 1 @11 ]
+"592
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"654
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"716
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"778
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"840
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"902
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1539
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1559
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1860
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S63 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1896
+[s S71 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S75 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S77 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S82 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+`uc 1 ADFRM1 1 0 :1:3 
+]
+[u S87 . 1 `S63 1 . 1 0 `S71 1 . 1 0 `S75 1 . 1 0 `S77 1 . 1 0 `S82 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES87  1 e 1 @147 ]
+"1971
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+"2010
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+"2087
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+"2158
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+"2228
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2286
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2338
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2379
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2431
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2501
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2571
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2699
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2776
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2846
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2923
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2993
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"3070
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3140
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+"3504
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"3558
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"3619
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"3689
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"3743
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+[s S1609 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3769
+[u S1618 . 1 `S1609 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES1618  1 e 1 @285 ]
+"3923
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S1588 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3949
+[u S1597 . 1 `S1588 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES1597  1 e 1 @286 ]
+"4103
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+"4349
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @396 ]
+"4369
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @397 ]
+"4559
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @399 ]
+"4923
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
+[s S643 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4953
+[s S649 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S654 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S663 . 1 `S643 1 . 1 0 `S649 1 . 1 0 `S654 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES663  1 e 1 @400 ]
+"5043
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @401 ]
+[s S693 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"5090
+[s S702 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK 1 0 :5:1 
+]
+[s S705 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S712 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S721 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S728 . 1 `S693 1 . 1 0 `S702 1 . 1 0 `S705 1 . 1 0 `S712 1 . 1 0 `S721 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES728  1 e 1 @401 ]
+[s S1363 . 1 `uc 1 INTF 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"21014
+[u S1368 . 1 `S1363 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1368  1 e 1 @1804 ]
+[s S41 . 1 `uc 1 ADIF 1 0 :1:0 
+`uc 1 ADTIF 1 0 :1:1 
+`uc 1 . 1 0 :4:2 
+`uc 1 CSWIF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"21048
+[u S47 . 1 `S41 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES47  1 e 1 @1805 ]
+[s S770 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+"21121
+[u S777 . 1 `S770 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES777  1 e 1 @1807 ]
+[s S978 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 SSP2IE 1 0 :1:2 
+`uc 1 BCL2IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+"21543
+[u S985 . 1 `S978 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES985  1 e 1 @1817 ]
+"23196
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"23266
+[v _OSCCON2 OSCCON2 `VEuc  1 e 1 @2190 ]
+"23336
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"23376
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"23433
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"23484
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"23542
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"31255
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3781 ]
+"31307
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3782 ]
+"31567
+[v _RXPPS RXPPS `VEuc  1 e 1 @3787 ]
+"32471
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @3872 ]
+"32621
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3875 ]
+"32671
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @3876 ]
+"32871
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"32933
+[v _WPUA WPUA `VEuc  1 e 1 @3897 ]
+"32995
+[v _ODCONA ODCONA `VEuc  1 e 1 @3898 ]
+"33057
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3899 ]
+"33119
+[v _INLVLA INLVLA `VEuc  1 e 1 @3900 ]
+"33181
+[v _IOCAP IOCAP `VEuc  1 e 1 @3901 ]
+"33243
+[v _IOCAN IOCAN `VEuc  1 e 1 @3902 ]
+"33305
+[v _IOCAF IOCAF `VEuc  1 e 1 @3903 ]
+"33491
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"33553
+[v _WPUB WPUB `VEuc  1 e 1 @3908 ]
+"33615
+[v _ODCONB ODCONB `VEuc  1 e 1 @3909 ]
+"33677
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3910 ]
+"33739
+[v _INLVLB INLVLB `VEuc  1 e 1 @3911 ]
+"33801
+[v _IOCBP IOCBP `VEuc  1 e 1 @3912 ]
+"33863
+[v _IOCBN IOCBN `VEuc  1 e 1 @3913 ]
+"33925
+[v _IOCBF IOCBF `VEuc  1 e 1 @3914 ]
+"34111
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"34173
+[v _WPUC WPUC `VEuc  1 e 1 @3919 ]
+"34235
+[v _ODCONC ODCONC `VEuc  1 e 1 @3920 ]
+"34297
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3921 ]
+"34359
+[v _INLVLC INLVLC `VEuc  1 e 1 @3922 ]
+"34421
+[v _IOCCP IOCCP `VEuc  1 e 1 @3923 ]
+"34483
+[v _IOCCN IOCCN `VEuc  1 e 1 @3924 ]
+"34545
+[v _IOCCF IOCCF `VEuc  1 e 1 @3925 ]
+"34731
+[v _WPUE WPUE `VEuc  1 e 1 @3941 ]
+"34752
+[v _INLVLE INLVLE `VEuc  1 e 1 @3944 ]
+"34773
+[v _IOCEP IOCEP `VEuc  1 e 1 @3945 ]
+"34794
+[v _IOCEN IOCEN `VEuc  1 e 1 @3946 ]
+"34815
+[v _IOCEF IOCEF `VEuc  1 e 1 @3947 ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+"181 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _fsmStateTable fsmStateTable `DC[16]*.37(E12162  1 e 32 0 ]
+[s S483 . 29 `[6]*.37(E12048 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E12162 1 state 1 26 `E12043 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+`uc 1 busy 1 28 :1:1 
+`uc 1 inUse 1 28 :1:2 
+`uc 1 bufferFree 1 28 :1:3 
+]
+"205
+[v _I2C1_Status I2C1_Status `S483  1 e 29 0 ]
+[s S1550 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"79 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/uart/src/eusart.c
+[u S1555 . 1 `S1550 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1555  1 e 1 0 ]
+"10 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"12
+[v main@buffer buffer `[40]uc  1 a 40 7 ]
+"16
+[v main@temp temp `f  1 a 4 49 ]
+"14
+[v main@ADC ADC `us  1 a 2 47 ]
+"13
+[v main@adch adch `uc  1 a 1 56 ]
+[v main@templ templ `uc  1 a 1 55 ]
+[v main@adcl adcl `uc  1 a 1 54 ]
+[v main@temph temph `uc  1 a 1 53 ]
+"40
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[s S2235 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+"13
+[v sprintf@f f `S2235  1 a 5 2 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 0 ]
+"9
+[v sprintf@s s `*.4uc  1 a 1 wreg ]
+[v sprintf@fmt fmt `*.25DCuc  1 p 2 64 ]
+"15
+[v sprintf@s s `*.4uc  1 a 1 1 ]
+"23
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.4v  1 a 1 74 ]
+"5
+[v printf@fmt fmt `*.25DCuc  1 p 2 64 ]
+"13
+} 0
+"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S2261 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S2261  1 a 1 wreg ]
+"1393
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 62 ]
+"1390
+[v vfprintf@fp fp `*.4S2261  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 57 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 59 ]
+"1395
+"1390
+[v vfprintf@fp fp `*.4S2261  1 a 1 61 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[s S2261 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S2261  1 a 1 wreg ]
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 48 ]
+"692
+[v vfpfcnvrt@fp fp `*.4S2261  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 43 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 44 ]
+"702
+"692
+[v vfpfcnvrt@fp fp `*.4S2261  1 a 1 56 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+[s S2261 _IO_FILE 0 ]
+[v dtoa@fp fp `*.4S2261  1 a 1 wreg ]
+"290
+[v dtoa@n n `o  1 a 8 33 ]
+"289
+[v dtoa@i i `i  1 a 2 41 ]
+[v dtoa@s s `i  1 a 2 31 ]
+[v dtoa@w w `i  1 a 2 29 ]
+[v dtoa@p p `i  1 a 2 27 ]
+"287
+[v dtoa@fp fp `*.4S2261  1 a 1 wreg ]
+[v dtoa@d d `o  1 p 8 16 ]
+"293
+"287
+[v dtoa@fp fp `*.4S2261  1 a 1 26 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+[s S2261 _IO_FILE 0 ]
+[v pad@fp fp `*.4S2261  1 a 1 wreg ]
+"74
+[v pad@w w `i  1 a 2 9 ]
+[v pad@i i `i  1 a 2 7 ]
+"72
+[v pad@fp fp `*.4S2261  1 a 1 wreg ]
+[v pad@buf buf `*.5uc  1 p 1 4 ]
+[v pad@p p `i  1 p 2 5 ]
+"77
+"72
+[v pad@fp fp `*.4S2261  1 a 1 11 ]
+"95
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.5DCuc  1 a 1 wreg ]
+"7
+[v strlen@a a `*.5DCuc  1 a 1 2 ]
+"5
+[v strlen@s s `*.5DCuc  1 a 1 wreg ]
+"7
+[v strlen@s s `*.5DCuc  1 a 1 3 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 1 ]
+"10
+[v fputs@c c `uc  1 a 1 0 ]
+"8
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+[s S2235 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.4S2235  1 p 1 10 ]
+"13
+[v fputs@s s `*.5DCuc  1 a 1 3 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[s S2235 _IO_FILE 5 `*.4uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.4S2235  1 p 1 4 ]
+"24
+} 0
+"192 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/uart/src/eusart.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"194
+[v putch@txData txData `uc  1 a 1 1 ]
+"195
+} 0
+"178
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 p 1 0 ]
+"185
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 3 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 2 ]
+[v ___aomod@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aomod@divisor divisor `o  1 p 8 0 ]
+[v ___aomod@dividend dividend `o  1 p 8 8 ]
+"36
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 3 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 2 ]
+[v ___aodiv@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aodiv@divisor divisor `o  1 p 8 0 ]
+[v ___aodiv@dividend dividend `o  1 p 8 8 ]
+"43
+} 0
+"225 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\LCD_i2c.c
+[v _lcd_puts lcd_puts `(v  1 e 1 0 ]
+{
+[v lcd_puts@dato dato `*.26uc  1 p 2 7 ]
+"248
+} 0
+"177
+[v _lcd_gotoxy lcd_gotoxy `(v  1 e 1 0 ]
+{
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+"179
+[v lcd_gotoxy@address address `uc  1 a 1 6 ]
+"177
+[v lcd_gotoxy@x x `uc  1 a 1 wreg ]
+[v lcd_gotoxy@y y `uc  1 p 1 2 ]
+[v lcd_gotoxy@x x `uc  1 a 1 5 ]
+"204
+} 0
+"140
+[v _lcd_init lcd_init `(v  1 e 1 0 ]
+{
+"141
+[v lcd_init@i i `uc  1 a 1 4 ]
+"175
+} 0
+"134
+[v _lcd_send_byte lcd_send_byte `(v  1 e 1 0 ]
+{
+[v lcd_send_byte@address address `uc  1 a 1 wreg ]
+[v lcd_send_byte@address address `uc  1 a 1 wreg ]
+[v lcd_send_byte@n n `uc  1 p 1 0 ]
+"136
+[v lcd_send_byte@address address `uc  1 a 1 1 ]
+"138
+} 0
+"114
+[v _Send_D7_D4 Send_D7_D4 `(v  1 e 1 0 ]
+{
+[v Send_D7_D4@address address `uc  1 a 1 wreg ]
+"116
+[v Send_D7_D4@datos datos `uc  1 a 1 13 ]
+"114
+[v Send_D7_D4@address address `uc  1 a 1 wreg ]
+[v Send_D7_D4@nibble nibble `uc  1 p 1 11 ]
+"116
+[v Send_D7_D4@address address `uc  1 a 1 12 ]
+"132
+} 0
+"104
+[v _Write_PCF Write_PCF `(v  1 e 1 0 ]
+{
+[v Write_PCF@dato dato `uc  1 a 1 wreg ]
+[v Write_PCF@dato dato `uc  1 a 1 wreg ]
+"111
+[v Write_PCF@dato dato `uc  1 a 1 10 ]
+"113
+} 0
+"51 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/i2c_simple_host.c
+[v _i2c_write1ByteRegister i2c_write1ByteRegister `(v  1 e 1 0 ]
+{
+[v i2c_write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c_write1ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c_write1ByteRegister@reg reg `uc  1 p 1 7 ]
+[v i2c_write1ByteRegister@data data `uc  1 p 1 8 ]
+[v i2c_write1ByteRegister@address address `uc  1 a 1 9 ]
+"59
+} 0
+"97
+[v _i2c_read1ByteRegister i2c_read1ByteRegister `(uc  1 e 1 0 ]
+{
+[v i2c_read1ByteRegister@address address `uc  1 a 1 wreg ]
+"101
+[v i2c_read1ByteRegister@x x `i  1 a 2 10 ]
+"99
+[v i2c_read1ByteRegister@d2 d2 `uc  1 a 1 12 ]
+"100
+[v i2c_read1ByteRegister@e e `E12043  1 a 1 9 ]
+"97
+[v i2c_read1ByteRegister@address address `uc  1 a 1 wreg ]
+[v i2c_read1ByteRegister@reg reg `uc  1 p 1 7 ]
+"99
+[v i2c_read1ByteRegister@address address `uc  1 a 1 8 ]
+"116
+} 0
+"318 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+{
+[v I2C1_SetAddressNackCallback@cb cb `*.37(E12048  1 p 2 4 ]
+[v I2C1_SetAddressNackCallback@ptr ptr `*.1v  1 p 1 6 ]
+"321
+} 0
+"209
+[v _I2C1_Open I2C1_Open `(E12043  1 e 1 0 ]
+{
+[v I2C1_Open@address address `uc  1 a 1 wreg ]
+"211
+[v I2C1_Open@returnValue returnValue `E12043  1 a 1 1 ]
+"209
+[v I2C1_Open@address address `uc  1 a 1 wreg ]
+"211
+[v I2C1_Open@address address `uc  1 a 1 0 ]
+"242
+} 0
+"577
+[v _I2C1_HostOpen I2C1_HostOpen `T(a  1 s 1 I2C1_HostOpen ]
+{
+"589
+} 0
+"286
+[v _I2C1_HostWrite I2C1_HostWrite `(E12043  1 e 1 0 ]
+{
+"289
+} 0
+"259
+[v _I2C1_HostOperation I2C1_HostOperation `(E12043  1 e 1 0 ]
+{
+[v I2C1_HostOperation@read read `a  1 a 1 wreg ]
+"261
+[v I2C1_HostOperation@returnValue returnValue `E12043  1 a 1 6 ]
+"259
+[v I2C1_HostOperation@read read `a  1 a 1 wreg ]
+"261
+[v I2C1_HostOperation@read read `a  1 a 1 5 ]
+"279
+} 0
+"347
+[v _I2C1_Poller I2C1_Poller `(v  1 s 1 I2C1_Poller ]
+{
+"354
+} 0
+"685
+[v _I2C1_HostWaitForEvent I2C1_HostWaitForEvent `T(v  1 s 1 I2C1_HostWaitForEvent ]
+{
+"694
+} 0
+"356
+[v _I2C1_HostFsm I2C1_HostFsm `T(v  1 s 1 I2C1_HostFsm ]
+{
+"365
+} 0
+"534
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E12162  1 s 1 I2C1_DO_ADDRESS_NACK ]
+{
+"547
+} 0
+"528
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E12162  1 s 1 I2C1_DO_RESET ]
+{
+"533
+} 0
+"522
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E12162  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+{
+"526
+} 0
+"516
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E12162  1 s 1 I2C1_DO_RX_NACK_STOP ]
+{
+"520
+} 0
+"509
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E12162  1 s 1 I2C1_DO_RX_ACK ]
+{
+"513
+} 0
+"503
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E12162  1 s 1 I2C1_DO_SEND_STOP ]
+{
+"507
+} 0
+"497
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E12162  1 s 1 I2C1_DO_SEND_RESTART ]
+{
+"501
+} 0
+"490
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E12162  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+{
+"494
+} 0
+"484
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E12162  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+{
+"488
+} 0
+"437
+[v _I2C1_DO_RCEN I2C1_DO_RCEN `(E12162  1 s 1 I2C1_DO_RCEN ]
+{
+"442
+} 0
+"413
+[v _I2C1_DO_RX I2C1_DO_RX `(E12162  1 s 1 I2C1_DO_RX ]
+{
+"435
+} 0
+"389
+[v _I2C1_DO_TX I2C1_DO_TX `(E12162  1 s 1 I2C1_DO_TX ]
+{
+"411
+} 0
+"382
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E12162  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+{
+"387
+} 0
+"375
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E12162  1 s 1 I2C1_DO_SEND_ADR_READ ]
+{
+"380
+} 0
+"368
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E12162  1 s 1 I2C1_DO_IDLE ]
+{
+"373
+} 0
+"444
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E12162  1 s 1 I2C1_DO_TX_EMPTY ]
+{
+"459
+} 0
+"680
+[v _I2C1_HostSetIrq I2C1_HostSetIrq `T(v  1 s 1 I2C1_HostSetIrq ]
+{
+"683
+} 0
+"632
+[v _I2C1_HostIsNack I2C1_HostIsNack `T(a  1 s 1 I2C1_HostIsNack ]
+{
+"635
+} 0
+"602
+[v _I2C1_HostSendTxData I2C1_HostSendTxData `T(v  1 s 1 I2C1_HostSendTxData ]
+{
+[v I2C1_HostSendTxData@data data `uc  1 a 1 wreg ]
+[v I2C1_HostSendTxData@data data `uc  1 a 1 wreg ]
+"604
+[v I2C1_HostSendTxData@data data `uc  1 a 1 0 ]
+"605
+} 0
+"637
+[v _I2C1_HostSendAck I2C1_HostSendAck `T(v  1 s 1 I2C1_HostSendAck ]
+{
+"641
+} 0
+"597
+[v _I2C1_HostGetRxData I2C1_HostGetRxData `T(uc  1 s 1 I2C1_HostGetRxData ]
+{
+"600
+} 0
+"643
+[v _I2C1_HostSendNack I2C1_HostSendNack `T(v  1 s 1 I2C1_HostSendNack ]
+{
+"647
+} 0
+"617
+[v _I2C1_HostStartRx I2C1_HostStartRx `T(v  1 s 1 I2C1_HostStartRx ]
+{
+"620
+} 0
+"185 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/i2c_simple_host.c
+[v _rdBlkRegCompleteHandler@i2c_simple_host$F1303 rdBlkRegCompleteHandler `(E12048  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@i2c_simple_host$F1303@p p `*.1v  1 p 1 7 ]
+"190
+} 0
+"119
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E12048  1 s 1 rd2RegCompleteHandler ]
+{
+[v rd2RegCompleteHandler@p p `*.1v  1 p 1 7 ]
+"124
+} 0
+"81
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E12048  1 s 1 rd1RegCompleteHandler ]
+{
+[v rd1RegCompleteHandler@p p `*.1v  1 p 1 7 ]
+"86
+} 0
+"34
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E12048  1 s 1 wr1RegCompleteHandler ]
+{
+[v wr1RegCompleteHandler@p p `*.1v  1 p 1 7 ]
+"39
+} 0
+"696 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E12048  1 s 1 rdBlkRegCompleteHandler ]
+{
+[v rdBlkRegCompleteHandler@ptr ptr `*.1v  1 p 1 7 ]
+"701
+} 0
+"560
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E12048  1 e 1 0 ]
+{
+"563
+} 0
+"555
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E12048  1 e 1 0 ]
+{
+"558
+} 0
+"151 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/i2c_simple_host.c
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E12048  1 s 1 wr2RegCompleteHandler ]
+{
+[v wr2RegCompleteHandler@p p `*.1v  1 p 1 7 ]
+"156
+} 0
+"308 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+{
+[v I2C1_SetDataCompleteCallback@cb cb `*.37(E12048  1 p 2 4 ]
+[v I2C1_SetDataCompleteCallback@ptr ptr `*.1v  1 p 1 6 ]
+"311
+} 0
+"333
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+{
+[v I2C1_SetCallback@idx idx `E12180  1 a 1 wreg ]
+[v I2C1_SetCallback@idx idx `E12180  1 a 1 wreg ]
+[v I2C1_SetCallback@cb cb `*.37(E12048  1 p 2 0 ]
+[v I2C1_SetCallback@ptr ptr `*.1v  1 p 1 2 ]
+"335
+[v I2C1_SetCallback@idx idx `E12180  1 a 1 3 ]
+"345
+} 0
+"298
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+{
+[v I2C1_SetBuffer@buffer buffer `*.1v  1 a 1 wreg ]
+[v I2C1_SetBuffer@buffer buffer `*.1v  1 a 1 wreg ]
+[v I2C1_SetBuffer@bufferSize bufferSize `ui  1 p 2 0 ]
+"300
+[v I2C1_SetBuffer@buffer buffer `*.1v  1 a 1 2 ]
+"306
+} 0
+"627
+[v _I2C1_HostStop I2C1_HostStop `T(v  1 s 1 I2C1_HostStop ]
+{
+"630
+} 0
+"607
+[v _I2C1_HostEnableRestart I2C1_HostEnableRestart `T(v  1 s 1 I2C1_HostEnableRestart ]
+{
+"610
+} 0
+"622
+[v _I2C1_HostStart I2C1_HostStart `T(v  1 s 1 I2C1_HostStart ]
+{
+"625
+} 0
+"244
+[v _I2C1_Close I2C1_Close `(E12043  1 e 1 0 ]
+{
+"246
+[v I2C1_Close@returnValue returnValue `E12043  1 a 1 0 ]
+"257
+} 0
+"670
+[v _I2C1_HostDisableIrq I2C1_HostDisableIrq `T(v  1 s 1 I2C1_HostDisableIrq ]
+{
+"673
+} 0
+"591
+[v _I2C1_HostClose I2C1_HostClose `T(v  1 s 1 I2C1_HostClose ]
+{
+"595
+} 0
+"675
+[v _I2C1_HostClearIrq I2C1_HostClearIrq `T(v  1 s 1 I2C1_HostClearIrq ]
+{
+"678
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 50 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 49 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 41 ]
+"70
+} 0
+"242 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___flsub __flsub `(d  1 e 4 0 ]
+{
+[v ___flsub@a a `d  1 p 4 8 ]
+[v ___flsub@b b `d  1 p 4 12 ]
+"250
+} 0
+"10
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 11 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 10 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 9 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 8 ]
+"10
+[v ___fladd@b b `d  1 p 4 0 ]
+[v ___fladd@a a `d  1 p 4 4 ]
+"237
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S2088 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S2093 . 4 `i 1 wordA 2 0 `i 1 wordB 2 2 ]
+[u S2096 . 4 `l 1 i 4 0 `d 1 f 4 0 `S2088 1 fAsBytes 4 0 `S2093 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S2096  1 a 4 35 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 30 ]
+[s S2165 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S2168 . 2 `i 1 i 2 0 `ui 1 n 2 0 `S2165 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S2168  1 a 2 39 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 34 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 29 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 28 ]
+"8
+[v ___flmul@b b `d  1 p 4 16 ]
+[v ___flmul@a a `d  1 p 4 20 ]
+"205
+} 0
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+{
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v __Umul8_16@word_mpld word_mpld `ui  1 a 2 4 ]
+"5
+[v __Umul8_16@product product `ui  1 a 2 2 ]
+"4
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 wreg ]
+[v __Umul8_16@multiplicand multiplicand `uc  1 p 1 0 ]
+[v __Umul8_16@multiplier multiplier `uc  1 a 1 6 ]
+"60
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 60 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 53 ]
+"20
+[v ___fldiv@new_exp new_exp `i  1 a 2 58 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 65 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 64 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 57 ]
+"8
+[v ___fldiv@a a `d  1 p 4 41 ]
+[v ___fldiv@b b `d  1 p 4 45 ]
+"185
+} 0
+"62 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/system.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"47 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/pins.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"127
+} 0
+"63 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/interrupt.c
+[v _INTERRUPT_Initialize INTERRUPT_Initialize `(v  1 e 1 0 ]
+{
+"73
+} 0
+"94
+[v _INT_SetInterruptHandler INT_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v INT_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"96
+} 0
+"706 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/i2c_host/src/mssp1.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"713
+} 0
+"93 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/uart/src/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"216
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"218
+} 0
+"212
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"214
+} 0
+"220
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"222
+} 0
+"59 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/system/src/clock.c
+[v _CLOCK_Initialize CLOCK_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"71 G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\HolaMundo_MCC.X\mcc_generated_files/adc/src/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"118
+} 0
+"144
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E11687  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E11687  1 a 1 wreg ]
+"147
+[v ADCC_GetSingleConversion@channel channel `E11687  1 a 1 2 ]
+"167
+} 0

@@ -1,0 +1,1604 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\TeclacoM.X.production.o
+cinit CODE 0 7F2 7F2 E 2
+text1 CODE 0 4 4 C 2
+text2 CODE 0 C8 C8 23 2
+text3 CODE 0 21 21 12 2
+text4 CODE 0 16B 16B 2E 2
+text5 CODE 0 577 577 AE 2
+text6 CODE 0 503 503 74 2
+text7 CODE 0 33F 33F 4F 2
+text8 CODE 0 F24 F24 6 2
+text9 CODE 0 F62 F62 A 2
+text10 CODE 0 3E3 3E3 59 2
+text11 CODE 0 2B3 2B3 46 2
+text12 CODE 0 49F 49F 64 2
+text13 CODE 0 4B 4B 1B 2
+text14 CODE 0 43C 43C 63 2
+text15 CODE 0 FA0 FA0 D 2
+text16 CODE 0 1C8 1C8 33 2
+text17 CODE 0 F93 F93 D 2
+text18 CODE 0 233 233 3A 2
+text19 CODE 0 F86 F86 D 2
+text20 CODE 0 F01 F01 5 2
+text21 CODE 0 A5 A5 23 2
+text22 CODE 0 F79 F79 D 2
+text23 CODE 0 F1E F1E 6 2
+text24 CODE 0 13D 13D 2E 2
+text25 CODE 0 111 111 2C 2
+text26 CODE 0 EFC EFC 5 2
+text27 CODE 0 EF7 EF7 5 2
+text28 CODE 0 EF2 EF2 5 2
+text29 CODE 0 EED EED 5 2
+text30 CODE 0 EE8 EE8 5 2
+text31 CODE 0 EE3 EE3 5 2
+text32 CODE 0 EDE EDE 5 2
+text33 CODE 0 ED9 ED9 5 2
+text34 CODE 0 F30 F30 7 2
+text35 CODE 0 26D 26D 46 2
+text36 CODE 0 38E 38E 55 2
+text37 CODE 0 F3F F3F 8 2
+text38 CODE 0 F59 F59 9 2
+text39 CODE 0 ED4 ED4 5 2
+text40 CODE 0 199 199 2F 2
+text41 CODE 0 EC4 EC4 3 2
+text42 CODE 0 F18 F18 6 2
+text43 CODE 0 ECF ECF 5 2
+text44 CODE 0 ECB ECB 4 2
+text45 CODE 0 EC1 EC1 3 2
+text46 CODE 0 EC7 EC7 4 2
+text47 CODE 0 EBE EBE 3 2
+text48 CODE 0 EAA EAA 2 2
+text49 CODE 0 EA8 EA8 2 2
+text50 CODE 0 33 33 18 2
+text51 CODE 0 10 10 11 2
+text52 CODE 0 FEF FEF 11 2
+text53 CODE 0 FDE FDE 11 2
+text54 CODE 0 FCD FCD 11 2
+text55 CODE 0 F6C F6C D 2
+text56 CODE 0 EB EB 26 2
+text57 CODE 0 FBD FBD 10 2
+text58 CODE 0 EBB EBB 3 2
+text59 CODE 0 EB8 EB8 3 2
+text60 CODE 0 EB5 EB5 3 2
+text61 CODE 0 66 66 1C 2
+text62 CODE 0 EB2 EB2 3 2
+text63 CODE 0 EAF EAF 3 2
+text64 CODE 0 EAC EAC 3 2
+text65 CODE 0 625 625 1CD 2
+text66 CODE 0 FAD FAD 10 2
+text67 CODE 0 F37 F37 8 2
+text68 CODE 0 1FB 1FB 38 2
+text69 CODE 0 F50 F50 9 2
+text70 CODE 0 F47 F47 9 2
+text71 CODE 0 82 82 23 2
+text72 CODE 0 F12 F12 6 2
+text73 CODE 0 F0C F0C 6 2
+text74 CODE 0 F06 F06 6 2
+nvBANK1 BANK1 1 E6 E6 6 1
+maintext CODE 0 2F9 2F9 46 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 4E 1
+stringtext1 STRCODE 0 800 800 20 2
+stringtext2 STRCODE 0 1000 1000 10 2
+stringtext3 STRCODE 0 1010 1010 4 2
+stringtext4 STRCODE 0 820 820 1A 2
+stringtext5 STRCODE 0 83A 83A 13 2
+stringtext6 STRCODE 0 84D 84D 11 2
+bssBANK0 BANK0 1 6E 6E 2 1
+bssBANK1 BANK1 1 A0 A0 46 1
+clrtext CODE 0 F2A F2A 6 2
+config CONFIG 4 8007 8007 5 2
+$C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM EC-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK1 EC-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 85E-EA7 2
+CONST 1014-1FFF 2
+ENTRY 85E-EA7 2
+ENTRY 1014-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 209C-23EF 1
+CODE 85E-EA7 2
+CODE 1014-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 85E-EA7 2
+STRCODE 1014-1FFF 2
+STRING 85E-EA7 2
+STRING 1014-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\TeclacoM.X.production.o
+7F2 cinit CODE >8881:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F2 cinit CODE >8884:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F2 cinit CODE >8935:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F3 cinit CODE >8936:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F4 cinit CODE >8937:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F5 cinit CODE >8941:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F6 cinit CODE >8942:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F7 cinit CODE >8943:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F8 cinit CODE >8944:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7F9 cinit CODE >8945:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7FA cinit CODE >8946:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7FD cinit CODE >8952:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7FD cinit CODE >8954:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+7FE cinit CODE >8955:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F06 text74 CODE >174:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F06 text74 CODE >175:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F0B text74 CODE >176:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F0C text73 CODE >166:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F0C text73 CODE >167:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F11 text73 CODE >168:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F12 text72 CODE >170:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F12 text72 CODE >171:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F17 text72 CODE >172:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+82 text71 CODE >66:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+82 text71 CODE >71:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+85 text71 CODE >74:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+87 text71 CODE >77:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+89 text71 CODE >80:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+8B text71 CODE >83:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+8D text71 CODE >86:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+94 text71 CODE >87:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+9B text71 CODE >88:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+A2 text71 CODE >90:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+A4 text71 CODE >92:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F47 text70 CODE >167:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F47 text70 CODE >169:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F49 text70 CODE >170:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F4B text70 CODE >171:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F4C text70 CODE >172:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F4E text70 CODE >173:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F4F text70 CODE >174:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F50 text69 CODE >59:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F50 text69 CODE >62:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F53 text69 CODE >64:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F54 text69 CODE >66:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F55 text69 CODE >68:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F57 text69 CODE >70:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F58 text69 CODE >71:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+1FB text68 CODE >55:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+1FB text68 CODE >60:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+1FD text68 CODE >61:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+1FE text68 CODE >62:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+1FF text68 CODE >67:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+201 text68 CODE >68:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+203 text68 CODE >69:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+205 text68 CODE >74:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+208 text68 CODE >75:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+20A text68 CODE >76:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+20C text68 CODE >81:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+20D text68 CODE >82:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+20F text68 CODE >83:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+211 text68 CODE >84:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+212 text68 CODE >89:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+213 text68 CODE >90:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+214 text68 CODE >91:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+215 text68 CODE >96:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+217 text68 CODE >97:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+219 text68 CODE >98:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+21B text68 CODE >103:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+21D text68 CODE >104:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+21F text68 CODE >105:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+221 text68 CODE >106:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+223 text68 CODE >115:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+225 text68 CODE >116:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+228 text68 CODE >117:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+22A text68 CODE >118:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+22D text68 CODE >119:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+22F text68 CODE >120:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+232 text68 CODE >121:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/pin_manager.c
+F37 text67 CODE >73:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F37 text67 CODE >76:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F39 text67 CODE >78:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F3A text67 CODE >80:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F3B text67 CODE >82:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F3C text67 CODE >84:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F3D text67 CODE >86:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+F3E text67 CODE >87:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+FAD text66 CODE >50:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+FAD text66 CODE >52:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+FB0 text66 CODE >53:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+FB3 text66 CODE >54:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+FB6 text66 CODE >55:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+FB9 text66 CODE >56:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+FBC text66 CODE >57:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/mcc.c
+625 text65 CODE >54:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+625 text65 CODE >56:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+62A text65 CODE >57:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+62E text65 CODE >58:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+64A text65 CODE >59:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+665 text65 CODE >60:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+680 text65 CODE >61:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+69B text65 CODE >63:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+69F text65 CODE >64:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+6BA text65 CODE >65:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+6D5 text65 CODE >66:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+6F0 text65 CODE >67:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+70B text65 CODE >69:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+70F text65 CODE >70:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+72A text65 CODE >71:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+745 text65 CODE >72:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+760 text65 CODE >73:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+77B text65 CODE >75:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+77F text65 CODE >76:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+783 text65 CODE >77:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+79F text65 CODE >78:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+7BA text65 CODE >79:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+7D5 text65 CODE >80:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+7F0 text65 CODE >82:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+7F1 text65 CODE >83:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+EAC text64 CODE >640:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EAC text64 CODE >642:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EAE text64 CODE >643:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EAF text63 CODE >557:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EAF text63 CODE >560:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB1 text63 CODE >561:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB2 text62 CODE >635:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB2 text62 CODE >637:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB4 text62 CODE >638:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+66 text61 CODE >209:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+66 text61 CODE >211:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+68 text61 CODE >212:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+6D text61 CODE >214:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+6E text61 CODE >215:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+72 text61 CODE >216:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+75 text61 CODE >217:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+78 text61 CODE >218:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+7B text61 CODE >219:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+80 text61 CODE >221:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+81 text61 CODE >222:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB5 text60 CODE >588:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB5 text60 CODE >590:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB7 text60 CODE >591:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB8 text59 CODE >573:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB8 text59 CODE >575:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EBA text59 CODE >576:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EBB text58 CODE >593:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EBB text58 CODE >595:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EBD text58 CODE >596:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FBD text57 CODE >263:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FBE text57 CODE >265:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FC3 text57 CODE >267:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FC7 text57 CODE >268:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FCB text57 CODE >269:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FCC text57 CODE >271:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EB text56 CODE >298:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC text56 CODE >300:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F2 text56 CODE >302:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FA text56 CODE >303:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+102 text56 CODE >304:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+103 text56 CODE >307:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+10B text56 CODE >308:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+110 text56 CODE >310:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F6C text55 CODE >273:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F6C text55 CODE >275:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F78 text55 CODE >276:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+FCD text54 CODE >163:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FCD text54 CODE >165:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FD5 text54 CODE >166:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FDC text54 CODE >167:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FDD text54 CODE >168:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FDE text53 CODE >142:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FDE text53 CODE >144:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FE6 text53 CODE >145:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FED text53 CODE >146:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FEE text53 CODE >147:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FEF text52 CODE >149:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FEF text52 CODE >151:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FF7 text52 CODE >152:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FFE text52 CODE >153:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FFF text52 CODE >154:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+10 text51 CODE >156:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+10 text51 CODE >158:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+18 text51 CODE >159:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1F text51 CODE >160:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+20 text51 CODE >161:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+33 text50 CODE >170:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+33 text50 CODE >172:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+42 text50 CODE >173:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+49 text50 CODE >174:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+4A text50 CODE >175:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+EA8 text49 CODE >520:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EA8 text49 CODE >522:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EA9 text49 CODE >523:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EAA text48 CODE >525:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EAA text48 CODE >527:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EAB text48 CODE >528:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EBE text47 CODE >583:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EBE text47 CODE >585:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC0 text47 CODE >586:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC7 text46 CODE >609:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC7 text46 CODE >611:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC9 text46 CODE >612:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ECA text46 CODE >613:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC1 text45 CODE >563:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC1 text45 CODE >565:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC3 text45 CODE >566:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ECB text44 CODE >603:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ECB text44 CODE >605:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ECD text44 CODE >606:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ECE text44 CODE >607:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ECF text43 CODE >568:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED0 text43 CODE >570:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED3 text43 CODE >571:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F18 text42 CODE >598:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F18 text42 CODE >600:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F1D text42 CODE >601:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC4 text41 CODE >645:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC4 text41 CODE >647:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EC6 text41 CODE >648:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+199 text40 CODE >409:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+199 text40 CODE >411:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+19B text40 CODE >412:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+19C text40 CODE >416:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1A0 text40 CODE >418:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1A3 text40 CODE >419:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1A5 text40 CODE >422:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1A9 text40 CODE >423:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1B6 text40 CODE >423:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1BB text40 CODE >423:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1BE text40 CODE >423:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1C1 text40 CODE >423:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1C4 text40 CODE >423:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1C7 text40 CODE >424:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED4 text39 CODE >333:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED4 text39 CODE >335:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED6 text39 CODE >336:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED7 text39 CODE >337:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED8 text39 CODE >338:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F59 text38 CODE >340:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F59 text38 CODE >342:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F5B text38 CODE >343:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F60 text38 CODE >344:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F61 text38 CODE >345:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F3F text37 CODE >347:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F3F text37 CODE >349:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F41 text37 CODE >350:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F45 text37 CODE >351:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F46 text37 CODE >352:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+38E text36 CODE >354:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+38E text36 CODE >356:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+392 text36 CODE >356:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+397 text36 CODE >361:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+39B text36 CODE >363:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+39F text36 CODE >367:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3A3 text36 CODE >368:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3B5 text36 CODE >368:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3BA text36 CODE >368:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3BD text36 CODE >368:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3C0 text36 CODE >368:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3C3 text36 CODE >368:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3C6 text36 CODE >370:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3C6 text36 CODE >372:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3C8 text36 CODE >373:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3D4 text36 CODE >374:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+3E2 text36 CODE >376:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+26D text35 CODE >378:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+26D text35 CODE >380:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+27B text35 CODE >381:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+285 text35 CODE >383:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+288 text35 CODE >384:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+28A text35 CODE >386:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+28A text35 CODE >388:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+28B text35 CODE >389:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+28C text35 CODE >393:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+290 text35 CODE >397:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+294 text35 CODE >398:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+2A1 text35 CODE >398:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+2A6 text35 CODE >398:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+2A9 text35 CODE >398:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+2AC text35 CODE >398:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+2AF text35 CODE >398:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+2B2 text35 CODE >400:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F30 text34 CODE >402:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F30 text34 CODE >404:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F32 text34 CODE >405:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F35 text34 CODE >406:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F36 text34 CODE >407:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED9 text33 CODE >450:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+ED9 text33 CODE >452:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EDC text33 CODE >453:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EDD text33 CODE >454:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EDE text32 CODE >456:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EDE text32 CODE >458:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE1 text32 CODE >459:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE2 text32 CODE >460:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE3 text31 CODE >463:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE3 text31 CODE >465:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE6 text31 CODE >466:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE7 text31 CODE >467:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE8 text30 CODE >469:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EE8 text30 CODE >471:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EEB text30 CODE >472:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EEC text30 CODE >473:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EED text29 CODE >475:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EED text29 CODE >477:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF0 text29 CODE >478:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF1 text29 CODE >479:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF2 text28 CODE >482:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF2 text28 CODE >484:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF5 text28 CODE >485:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF6 text28 CODE >486:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF7 text27 CODE >488:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EF7 text27 CODE >490:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EFA text27 CODE >491:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EFB text27 CODE >492:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EFC text26 CODE >494:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EFC text26 CODE >496:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EFE text26 CODE >497:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+EFF text26 CODE >498:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F00 text26 CODE >499:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+111 text25 CODE >500:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+111 text25 CODE >502:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+113 text25 CODE >503:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+117 text25 CODE >504:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+118 text25 CODE >508:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+11C text25 CODE >510:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+120 text25 CODE >511:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+131 text25 CODE >511:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+136 text25 CODE >511:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+139 text25 CODE >511:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+13C text25 CODE >512:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+13D text24 CODE >321:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+13D text24 CODE >323:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+140 text24 CODE >325:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+149 text24 CODE >325:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+14D text24 CODE >327:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+153 text24 CODE >329:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+16A text24 CODE >330:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F1E text23 CODE >650:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F1E text23 CODE >652:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F1E text23 CODE >654:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F23 text23 CODE >659:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F79 text22 CODE >312:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F79 text22 CODE >314:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F7A text22 CODE >316:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F7D text22 CODE >317:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F80 text22 CODE >314:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F85 text22 CODE >319:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+A5 text21 CODE >224:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+A7 text21 CODE >226:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+A9 text21 CODE >227:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+AE text21 CODE >229:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+AF text21 CODE >230:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+B1 text21 CODE >232:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+B6 text21 CODE >234:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+B9 text21 CODE >235:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+BA text21 CODE >238:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+BF text21 CODE >240:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+C2 text21 CODE >241:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+C5 text21 CODE >243:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+C7 text21 CODE >244:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F01 text20 CODE >251:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F01 text20 CODE >253:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F05 text20 CODE >254:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F86 text19 CODE >543:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F86 text19 CODE >545:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F8B text19 CODE >547:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F8C text19 CODE >548:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F8E text19 CODE >549:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F8F text19 CODE >550:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F91 text19 CODE >551:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F92 text19 CODE >555:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+233 text18 CODE >176:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+234 text18 CODE >178:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+236 text18 CODE >180:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+23B text18 CODE >182:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+23F text18 CODE >183:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+240 text18 CODE >184:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+241 text18 CODE >185:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+242 text18 CODE >186:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+246 text18 CODE >187:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+24A text18 CODE >188:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+24B text18 CODE >191:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+24F text18 CODE >192:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+250 text18 CODE >193:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+254 text18 CODE >194:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+255 text18 CODE >195:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+259 text18 CODE >196:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+25A text18 CODE >197:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+25E text18 CODE >198:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+25F text18 CODE >199:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+263 text18 CODE >200:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+264 text18 CODE >202:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+267 text18 CODE >203:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+26A text18 CODE >204:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+26B text18 CODE >205:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+26B text18 CODE >206:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+26C text18 CODE >207:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F93 text17 CODE >283:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F93 text17 CODE >285:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+F9F text17 CODE >286:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/i2c1_master.c
+1C8 text16 CODE >91:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1CA text16 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1D0 text16 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1D4 text16 CODE >94:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1E0 text16 CODE >95:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1E8 text16 CODE >96:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1EF text16 CODE >97:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1F2 text16 CODE >98:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1F6 text16 CODE >98:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+1FA text16 CODE >99:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/examples/i2c1_master_example.c
+FA0 text15 CODE >104:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+FA2 text15 CODE >111:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+FAC text15 CODE >113:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+43C text14 CODE >114:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+43E text14 CODE >116:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+43F text14 CODE >118:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+44E text14 CODE >119:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+45D text14 CODE >120:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+46C text14 CODE >121:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+47B text14 CODE >122:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+47E text14 CODE >123:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+484 text14 CODE >124:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+48A text14 CODE >126:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+48F text14 CODE >129:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+494 text14 CODE >130:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+498 text14 CODE >131:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+49E text14 CODE >132:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4B text13 CODE >134:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4D text13 CODE >136:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+5B text13 CODE >137:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+65 text13 CODE >138:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+49F text12 CODE >140:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+49F text12 CODE >147:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4A6 text12 CODE >149:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4B3 text12 CODE >151:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4B5 text12 CODE >152:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4BD text12 CODE >153:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4C6 text12 CODE >154:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4CD text12 CODE >154:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4D1 text12 CODE >155:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4D9 text12 CODE >168:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4DB text12 CODE >170:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4DF text12 CODE >170:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4EA text12 CODE >171:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4F3 text12 CODE >172:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4FA text12 CODE >172:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+4FE text12 CODE >173:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+500 text12 CODE >174:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+502 text12 CODE >175:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2B3 text11 CODE >177:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2B5 text11 CODE >181:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2B6 text11 CODE >184:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2B7 text11 CODE >185:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2B8 text11 CODE >187:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2BC text11 CODE >188:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2BD text11 CODE >190:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2C1 text11 CODE >191:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2C2 text11 CODE >193:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2C6 text11 CODE >194:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2C7 text11 CODE >198:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2CC text11 CODE >198:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2D1 text11 CODE >198:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2D4 text11 CODE >198:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2D7 text11 CODE >198:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2DA text11 CODE >198:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2DD text11 CODE >199:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2E2 text11 CODE >200:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2EB text11 CODE >202:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2F2 text11 CODE >203:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+2F8 text11 CODE >204:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+3E3 text10 CODE >225:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+3E3 text10 CODE >226:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+3E4 text10 CODE >231:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+3EA text10 CODE >232:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+3F3 text10 CODE >233:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+3F5 text10 CODE >234:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+3F7 text10 CODE >235:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+400 text10 CODE >236:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+401 text10 CODE >238:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+40A text10 CODE >239:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+40B text10 CODE >241:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+417 text10 CODE >242:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+418 text10 CODE >243:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+421 text10 CODE >243:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+426 text10 CODE >243:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+429 text10 CODE >243:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+42C text10 CODE >246:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+431 text10 CODE >226:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+43B text10 CODE >248:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\LCD_i2c.c
+F62 text9 CODE >132:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F63 text9 CODE >134:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F63 text9 CODE >136:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F68 text9 CODE >138:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F6B text9 CODE >139:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F24 text8 CODE >146:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F25 text8 CODE >148:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+F29 text8 CODE >149:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\mcc_generated_files/eusart.c
+33F text7 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+33F text7 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+349 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+34D text7 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+34E text7 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+36D text7 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+371 text7 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+375 text7 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+385 text7 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+38B text7 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+38D text7 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+503 text6 CODE >259:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+505 text6 CODE >264:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+51D text6 CODE >267:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+522 text6 CODE >268:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+531 text6 CODE >271:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+539 text6 CODE >272:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+53B text6 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+53C text6 CODE >274:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+548 text6 CODE >275:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+54D text6 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+553 text6 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+557 text6 CODE >273:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+55B text6 CODE >278:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+560 text6 CODE >279:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+56F text6 CODE >282:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+576 text6 CODE >283:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+577 text5 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+579 text5 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+58A text5 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+590 text5 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+592 text5 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+597 text5 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+59B text5 CODE >814:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5AD text5 CODE >815:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5B3 text5 CODE >815:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5B5 text5 CODE >816:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5C1 text5 CODE >817:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5CE text5 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5DF text5 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5E5 text5 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5E7 text5 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5F2 text5 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5F7 text5 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5FD text5 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5FF text5 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+602 text5 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+61B text5 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+621 text5 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+624 text5 CODE >1387:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+16B text4 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+16D text4 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+171 text4 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+174 text4 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+175 text4 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+186 text4 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+190 text4 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+198 text4 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+21 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+21 text3 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+26 text3 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+32 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+C8 text2 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+CA text2 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+CE text2 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+D2 text2 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+D4 text2 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+D6 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+E2 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+EA text2 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+4 text1 CODE >10:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+4 text1 CODE >12:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+6 text1 CODE >13:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+7 text1 CODE >14:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+9 text1 CODE >15:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+A text1 CODE >17:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+D text1 CODE >18:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+F text1 CODE >19:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\teclado.c
+2F9 maintext CODE >12:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+2F9 maintext CODE >14:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+2F9 maintext CODE >17:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+2FC maintext CODE >33:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+2FF maintext CODE >34:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+302 maintext CODE >35:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+30A maintext CODE >38:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+311 maintext CODE >39:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+316 maintext CODE >41:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+324 maintext CODE >42:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+334 maintext CODE >43:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\TeclacoM.X\main.c
+F2A clrtext CODE >8924:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F2A clrtext CODE >8925:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F2B clrtext CODE >8926:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F2B clrtext CODE >8927:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F2C clrtext CODE >8928:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F2D clrtext CODE >8929:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F2E clrtext CODE >8930:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+F2F clrtext CODE >8931:C:\Users\Edicion\AppData\Local\Temp\xcAseo4.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_SetCallback 222 0 CODE 0 text56 dist/default/production\TeclacoM.X.production.o
+_I2C1_Initialize 1E8E 0 CODE 0 text70 dist/default/production\TeclacoM.X.production.o
+_teclado_init 8 0 CODE 0 text1 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_CallbackReturnStop 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Hspace_0 1014 0 ABS 0 - -
+__Hspace_1 EC 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+Send_D7_D4@nibble 2B 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_SSP1STATbits 18F 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_SetCallback 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_Poller 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__end_of_I2C1_SetBuffer 1F9A 0 CODE 0 text57 dist/default/production\TeclacoM.X.production.o
+I2C1_SetDataCompleteCallback@ptr 77 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+_PMD_Initialize 1E6E 0 CODE 0 text67 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterDisableIrq 1D6A 0 CODE 0 text62 dist/default/production\TeclacoM.X.production.o
+main@c 6D 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 2F 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_KEYS 2000 0 STRCODE 0 stringtext2 dist/default/production\TeclacoM.X.production.o
+_LATA 16 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_LATB 17 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_LATC 18 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PMD0 796 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PMD1 797 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PMD2 798 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PMD3 799 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PMD4 79A 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PMD5 79B 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_WPUA F39 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_WPUB F44 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_WPUC F4F 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_WPUE F65 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+_ctoa A06 0 CODE 0 text6 dist/default/production\TeclacoM.X.production.o
+_main 5F2 0 CODE 0 maintext dist/default/production\TeclacoM.X.production.o
+_nout DD 0 BANK1 1 bssBANK1 dist/default/production\TeclacoM.X.production.o
+_prec E1 0 BANK1 1 bssBANK1 dist/default/production\TeclacoM.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+start 4 0 CODE 0 init C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+_EUSART_Write 1EC4 0 CODE 0 text9 dist/default/production\TeclacoM.X.production.o
+__size_of_ctoa 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+I2C1_Close@returnValue 71 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterSendAck 1D96 0 CODE 0 text44 dist/default/production\TeclacoM.X.production.o
+__end_of_EUSART_SetFramingErrorHandler 1E24 0 CODE 0 text73 dist/default/production\TeclacoM.X.production.o
+__end_of_EUSART_SetOverrunErrorHandler 1E30 0 CODE 0 text72 dist/default/production\TeclacoM.X.production.o
+__end_of_keypad_scanner FE4 0 CODE 0 text65 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterSendTxData 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_SetDataCompleteCallback 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_SEND_RESTART_READ 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterDisableIrq 1D64 0 CODE 0 text62 dist/default/production\TeclacoM.X.production.o
+__end_of_EUSART_Initialize 14A 0 CODE 0 text71 dist/default/production\TeclacoM.X.production.o
+__end_of_wr2RegCompleteHandler 1FBC 0 CODE 0 text54 dist/default/production\TeclacoM.X.production.o
+__size_of_teclado_init 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_Write_PCF 1F5A 0 CODE 0 text15 dist/default/production\TeclacoM.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+_I2C1_DO_IDLE 1DA8 0 CODE 0 text39 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_RCEN 1E60 0 CODE 0 text34 dist/default/production\TeclacoM.X.production.o
+_I2C1_CallbackReturnReset 1D54 0 CODE 0 text48 dist/default/production\TeclacoM.X.production.o
+__end_of_vfpfcnvrt C4A 0 CODE 0 text5 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_SetDataCompleteCallback 1EF2 0 CODE 0 text55 dist/default/production\TeclacoM.X.production.o
+__size_of_Write_PCF 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_lcd_gotoxy 5F2 0 CODE 0 text11 dist/default/production\TeclacoM.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterStartRx 1D82 0 CODE 0 text47 dist/default/production\TeclacoM.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+rd1RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__size_of_rd1RegCompleteHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterWaitForEvent 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+__size_of_I2C1_MasterIsNack 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_TX_EMPTY 390 0 CODE 0 text40 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_SEND_RESTART_WRITE 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_Send_D7_D4 878 0 CODE 0 text14 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterGetRxData 1D82 0 CODE 0 text45 dist/default/production\TeclacoM.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+__size_of_I2C1_DO_RX_NACK_STOP 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_RC1STAbits 11D 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_wr2RegCompleteHandler 1F9A 0 CODE 0 text54 dist/default/production\TeclacoM.X.production.o
+_EUSART_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_PMD_Initialize 1E7E 0 CODE 0 text67 dist/default/production\TeclacoM.X.production.o
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_Write_PCF 1F40 0 CODE 0 text15 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_RX_ACK 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_TX_EMPTY 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_teclado_init 20 0 CODE 0 text1 dist/default/production\TeclacoM.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+I2C1_Write1ByteRegister@reg 25 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_vfpfcnvrt AEE 0 CODE 0 text5 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_RX_NACK_RESTART 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_rdBlkRegCompleteHandler 66 0 CODE 0 text50 dist/default/production\TeclacoM.X.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_ANSELB F43 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_ANSELC F4E 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_Initialize 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterFsm 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_RX_NACK_STOP 1DEE 0 CODE 0 text28 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterEnableRestart 1D70 0 CODE 0 text59 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_IDLE 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_RCEN 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_rdBlkRegCompleteHandler 96 0 CODE 0 text50 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterStartRx 1D7C 0 CODE 0 text47 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_Close 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_RX 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_TX 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterSetIrq 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_EUSART_Write 1ED8 0 CODE 0 text9 dist/default/production\TeclacoM.X.production.o
+lcd_send_byte@address 32 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+I2C1_Write1ByteRegister@address 28 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterOpen 1F26 0 CODE 0 text19 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterStop 1D7C 0 CODE 0 text58 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_SEND_RESTART 1DC6 0 CODE 0 text31 dist/default/production\TeclacoM.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+?_printf 37 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterOperation 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+_I2C1_DO_SEND_RESTART_WRITE 1DBC 0 CODE 0 text32 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_IDLE 1DB2 0 CODE 0 text39 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_RCEN 1E6E 0 CODE 0 text34 dist/default/production\TeclacoM.X.production.o
+_INLVLA F3C 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_INLVLB F47 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_INLVLC F52 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_INLVLE F68 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+I2C1_MasterSendTxData@data 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+Send_D7_D4@datos 2E 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+___stacklo 209C 0 ABS 0 - C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+__end_of_Send_D7_D4 93E 0 CODE 0 text14 dist/default/production\TeclacoM.X.production.o
+_EUSART_Initialize 104 0 CODE 0 text71 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterOperation 190 0 CODE 0 text21 dist/default/production\TeclacoM.X.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_SEND_STOP 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_SEND_ADR_READ 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_SEND_RESTART_READ 1DB2 0 CODE 0 text33 dist/default/production\TeclacoM.X.production.o
+_PIN_MANAGER_Initialize 3F6 0 CODE 0 text68 dist/default/production\TeclacoM.X.production.o
+start_initialization FE4 0 CODE 0 cinit dist/default/production\TeclacoM.X.production.o
+_ODCONA F3A 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_ODCONB F45 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_ODCONC F50 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+lcd_puts@dato 38 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_EUSART_SetErrorHandler 1E0C 0 CODE 0 text74 dist/default/production\TeclacoM.X.production.o
+_OSCFRQ 893 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+EUSART_SetOverrunErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_SEND_ADR_WRITE 1E7E 0 CODE 0 text37 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_CallbackReturnReset 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+lcd_gotoxy@address 37 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_RC0PPS F20 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_RC1REG 119 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_RC1STA 11D 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_RC4PPS F24 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_EUSART_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_EUSART_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+rdBlkRegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__end_of_SYSTEM_Initialize 1F7A 0 CODE 0 text66 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterOpen 1F0C 0 CODE 0 text19 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterStop 1D76 0 CODE 0 text58 dist/default/production\TeclacoM.X.production.o
+__end_of_rd2RegCompleteHandler 2000 0 CODE 0 text52 dist/default/production\TeclacoM.X.production.o
+I2C1_CallbackReturnReset@funPtr 79 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+clear_ram0 1E54 0 CODE 0 clrtext dist/default/production\TeclacoM.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_I2C1_Poller 1EF2 0 CODE 0 text22 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_Write1ByteRegister 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+I2C1_SetCallback@idx 74 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+I2C1_SetCallback@ptr 72 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterIsNack 1E3C 0 CODE 0 text42 dist/default/production\TeclacoM.X.production.o
+_TX1REG 11A 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_TX1STA 11E 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterSendNack 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_printf 66 0 CODE 0 text3 dist/default/production\TeclacoM.X.production.o
+_I2C1_Status C0 0 BANK1 1 bssBANK1 dist/default/production\TeclacoM.X.production.o
+fputc@fp 74 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+_rd2RegCompleteHandler 1FDE 0 CODE 0 text52 dist/default/production\TeclacoM.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__end_of_wr1RegCompleteHandler 42 0 CODE 0 text51 dist/default/production\TeclacoM.X.production.o
+__Hstack 0 0 STACK 2 stack -
+_I2C1_SetAddressNackCallback 1F26 0 CODE 0 text17 dist/default/production\TeclacoM.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+_BAUD1CON 11F 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_sprintf 1D6 0 CODE 0 text2 dist/default/production\TeclacoM.X.production.o
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_lcd_puts 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+__size_of_lcd_gotoxy 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterSendAck 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterEnableRestart 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+I2C1_MasterOperation@read 23 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit FE4 0 CODE 0 cinit -
+EUSART_SetErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__size_of_I2C1_DO_ADDRESS_NACK 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterSetIrq 1D8E 0 CODE 0 text41 dist/default/production\TeclacoM.X.production.o
+_PORTBbits D 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_wr1RegCompleteHandler 20 0 CODE 0 text51 dist/default/production\TeclacoM.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 1000 0 STRCODE 0 stringtext1 dist/default/production\TeclacoM.X.production.o
+__pstringtext2 2000 0 STRCODE 0 stringtext2 dist/default/production\TeclacoM.X.production.o
+__pstringtext3 2020 0 STRCODE 0 stringtext3 dist/default/production\TeclacoM.X.production.o
+__pstringtext4 1040 0 STRCODE 0 stringtext4 dist/default/production\TeclacoM.X.production.o
+__pstringtext5 1074 0 STRCODE 0 stringtext5 dist/default/production\TeclacoM.X.production.o
+__pstringtext6 109A 0 STRCODE 0 stringtext6 dist/default/production\TeclacoM.X.production.o
+__pstringtext7 0 0 STRCODE 0 stringtext7 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_SetBuffer 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__pnvBANK1 E6 0 BANK1 1 nvBANK1 dist/default/production\TeclacoM.X.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SSP1CON2 191 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_I2C1_MasterSendNack 1D8E 0 CODE 0 text46 dist/default/production\TeclacoM.X.production.o
+__S0 1014 0 ABS 0 - -
+__S1 EC 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+Write_PCF@dato 2A 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_ADDRESS_NACK 27A 0 CODE 0 text25 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterDisableIrq 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+Send_D7_D4@address 2D 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_I2C1_CallbackReturnStop 1D50 0 CODE 0 text49 dist/default/production\TeclacoM.X.production.o
+__size_of_keypad_scanner 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_CallbackReturnReset 1D58 0 CODE 0 text48 dist/default/production\TeclacoM.X.production.o
+I2C1_Open@address 71 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_SEND_STOP 1DDA 0 CODE 0 text30 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_CallbackReturnStop 1D54 0 CODE 0 text49 dist/default/production\TeclacoM.X.production.o
+sprintf@fmt 37 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_RESET 1DF8 0 CODE 0 text26 dist/default/production\TeclacoM.X.production.o
+_SYSTEM_Initialize 1F5A 0 CODE 0 text66 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterOpen 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterStop 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_g_LcdX E5 0 BANK1 1 bssBANK1 dist/default/production\TeclacoM.X.production.o
+_g_LcdY 6E 0 BANK0 1 bssBANK0 dist/default/production\TeclacoM.X.production.o
+_lcd_init 93E 0 CODE 0 text12 dist/default/production\TeclacoM.X.production.o
+_lcd_puts 7C6 0 CODE 0 text10 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterIsNack 1E30 0 CODE 0 text42 dist/default/production\TeclacoM.X.production.o
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Edicion\AppData\Local\Temp\xcAseo4.o
+__size_of_wr2RegCompleteHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterStartRx 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_lcd_init A06 0 CODE 0 text12 dist/default/production\TeclacoM.X.production.o
+__end_of_lcd_puts 878 0 CODE 0 text10 dist/default/production\TeclacoM.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+__Lstringtext4 0 0 ABS 0 stringtext4 -
+__Lstringtext5 0 0 ABS 0 stringtext5 -
+__Lstringtext6 0 0 ABS 0 stringtext6 -
+__Lstringtext7 0 0 ABS 0 stringtext7 -
+wr2RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+vfpfcnvrt@fmt 7C 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__size_of_Send_D7_D4 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_PMD_Initialize 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PIE3bits 719 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_lcd_send_byte 96 0 CODE 0 text13 dist/default/production\TeclacoM.X.production.o
+EUSART_SetFramingErrorHandler@interruptHandler 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+I2C1_SetDataCompleteCallback@cb 75 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__ptext10 7C6 0 CODE 0 text10 dist/default/production\TeclacoM.X.production.o
+__ptext11 566 0 CODE 0 text11 dist/default/production\TeclacoM.X.production.o
+__ptext12 93E 0 CODE 0 text12 dist/default/production\TeclacoM.X.production.o
+__ptext13 96 0 CODE 0 text13 dist/default/production\TeclacoM.X.production.o
+__ptext14 878 0 CODE 0 text14 dist/default/production\TeclacoM.X.production.o
+__ptext15 1F40 0 CODE 0 text15 dist/default/production\TeclacoM.X.production.o
+__ptext16 390 0 CODE 0 text16 dist/default/production\TeclacoM.X.production.o
+__ptext17 1F26 0 CODE 0 text17 dist/default/production\TeclacoM.X.production.o
+__ptext18 466 0 CODE 0 text18 dist/default/production\TeclacoM.X.production.o
+__ptext19 1F0C 0 CODE 0 text19 dist/default/production\TeclacoM.X.production.o
+__ptext20 1E02 0 CODE 0 text20 dist/default/production\TeclacoM.X.production.o
+__ptext21 14A 0 CODE 0 text21 dist/default/production\TeclacoM.X.production.o
+__ptext22 1EF2 0 CODE 0 text22 dist/default/production\TeclacoM.X.production.o
+__ptext23 1E3C 0 CODE 0 text23 dist/default/production\TeclacoM.X.production.o
+__ptext24 27A 0 CODE 0 text24 dist/default/production\TeclacoM.X.production.o
+__ptext25 222 0 CODE 0 text25 dist/default/production\TeclacoM.X.production.o
+__ptext26 1DF8 0 CODE 0 text26 dist/default/production\TeclacoM.X.production.o
+__ptext27 1DEE 0 CODE 0 text27 dist/default/production\TeclacoM.X.production.o
+__ptext28 1DE4 0 CODE 0 text28 dist/default/production\TeclacoM.X.production.o
+__ptext29 1DDA 0 CODE 0 text29 dist/default/production\TeclacoM.X.production.o
+__ptext30 1DD0 0 CODE 0 text30 dist/default/production\TeclacoM.X.production.o
+__ptext31 1DC6 0 CODE 0 text31 dist/default/production\TeclacoM.X.production.o
+__ptext32 1DBC 0 CODE 0 text32 dist/default/production\TeclacoM.X.production.o
+__ptext33 1DB2 0 CODE 0 text33 dist/default/production\TeclacoM.X.production.o
+__ptext34 1E60 0 CODE 0 text34 dist/default/production\TeclacoM.X.production.o
+__ptext35 4DA 0 CODE 0 text35 dist/default/production\TeclacoM.X.production.o
+__ptext36 71C 0 CODE 0 text36 dist/default/production\TeclacoM.X.production.o
+__ptext37 1E7E 0 CODE 0 text37 dist/default/production\TeclacoM.X.production.o
+__ptext38 1EB2 0 CODE 0 text38 dist/default/production\TeclacoM.X.production.o
+__ptext39 1DA8 0 CODE 0 text39 dist/default/production\TeclacoM.X.production.o
+__ptext40 332 0 CODE 0 text40 dist/default/production\TeclacoM.X.production.o
+__ptext41 1D88 0 CODE 0 text41 dist/default/production\TeclacoM.X.production.o
+__ptext42 1E30 0 CODE 0 text42 dist/default/production\TeclacoM.X.production.o
+__ptext43 1D9E 0 CODE 0 text43 dist/default/production\TeclacoM.X.production.o
+__ptext44 1D96 0 CODE 0 text44 dist/default/production\TeclacoM.X.production.o
+__ptext45 1D82 0 CODE 0 text45 dist/default/production\TeclacoM.X.production.o
+__ptext46 1D8E 0 CODE 0 text46 dist/default/production\TeclacoM.X.production.o
+__ptext47 1D7C 0 CODE 0 text47 dist/default/production\TeclacoM.X.production.o
+__ptext48 1D54 0 CODE 0 text48 dist/default/production\TeclacoM.X.production.o
+__ptext49 1D50 0 CODE 0 text49 dist/default/production\TeclacoM.X.production.o
+__ptext50 66 0 CODE 0 text50 dist/default/production\TeclacoM.X.production.o
+__ptext51 20 0 CODE 0 text51 dist/default/production\TeclacoM.X.production.o
+__ptext52 1FDE 0 CODE 0 text52 dist/default/production\TeclacoM.X.production.o
+__ptext53 1FBC 0 CODE 0 text53 dist/default/production\TeclacoM.X.production.o
+__ptext54 1F9A 0 CODE 0 text54 dist/default/production\TeclacoM.X.production.o
+__ptext55 1ED8 0 CODE 0 text55 dist/default/production\TeclacoM.X.production.o
+__ptext56 1D6 0 CODE 0 text56 dist/default/production\TeclacoM.X.production.o
+__ptext57 1F7A 0 CODE 0 text57 dist/default/production\TeclacoM.X.production.o
+__ptext58 1D76 0 CODE 0 text58 dist/default/production\TeclacoM.X.production.o
+__ptext59 1D70 0 CODE 0 text59 dist/default/production\TeclacoM.X.production.o
+__ptext60 1D6A 0 CODE 0 text60 dist/default/production\TeclacoM.X.production.o
+__ptext61 CC 0 CODE 0 text61 dist/default/production\TeclacoM.X.production.o
+__ptext62 1D64 0 CODE 0 text62 dist/default/production\TeclacoM.X.production.o
+__ptext63 1D5E 0 CODE 0 text63 dist/default/production\TeclacoM.X.production.o
+__ptext64 1D58 0 CODE 0 text64 dist/default/production\TeclacoM.X.production.o
+__ptext65 C4A 0 CODE 0 text65 dist/default/production\TeclacoM.X.production.o
+__ptext66 1F5A 0 CODE 0 text66 dist/default/production\TeclacoM.X.production.o
+__ptext67 1E6E 0 CODE 0 text67 dist/default/production\TeclacoM.X.production.o
+__ptext68 3F6 0 CODE 0 text68 dist/default/production\TeclacoM.X.production.o
+__ptext69 1EA0 0 CODE 0 text69 dist/default/production\TeclacoM.X.production.o
+__ptext70 1E8E 0 CODE 0 text70 dist/default/production\TeclacoM.X.production.o
+__ptext71 104 0 CODE 0 text71 dist/default/production\TeclacoM.X.production.o
+__ptext72 1E24 0 CODE 0 text72 dist/default/production\TeclacoM.X.production.o
+__ptext73 1E18 0 CODE 0 text73 dist/default/production\TeclacoM.X.production.o
+__ptext74 1E0C 0 CODE 0 text74 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_RX_ACK 1DDA 0 CODE 0 text29 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterEnableRestart 1D76 0 CODE 0 text59 dist/default/production\TeclacoM.X.production.o
+__end_of_PIN_MANAGER_Initialize 466 0 CODE 0 text68 dist/default/production\TeclacoM.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 5F2 0 CODE 0 maintext dist/default/production\TeclacoM.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__end_of_I2C1_MasterSendTxData 1DA8 0 CODE 0 text43 dist/default/production\TeclacoM.X.production.o
+I2C1_SetBuffer@bufferSize 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_RX_NACK_STOP 1DE4 0 CODE 0 text28 dist/default/production\TeclacoM.X.production.o
+__end_of_EUSART_SetErrorHandler 1E18 0 CODE 0 text74 dist/default/production\TeclacoM.X.production.o
+?_ctoa 7A 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+I2C1_Write1ByteRegister@data 26 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_I2C1_Open 4DA 0 CODE 0 text18 dist/default/production\TeclacoM.X.production.o
+_printf 42 0 CODE 0 text3 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterClearIrq 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterWaitForEvent 1E3C 0 CODE 0 text23 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterSetIrq 1D88 0 CODE 0 text41 dist/default/production\TeclacoM.X.production.o
+_LATAbits 16 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_Open 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_SEND_ADR_WRITE 1E8E 0 CODE 0 text37 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterFsm 27A 0 CODE 0 text24 dist/default/production\TeclacoM.X.production.o
+I2C1_SetAddressNackCallback@ptr 77 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+I2C1_MasterOperation@returnValue 24 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterWaitForEvent 1E48 0 CODE 0 text23 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterClose 1D5E 0 CODE 0 text63 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterStart 1D6A 0 CODE 0 text60 dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterWrite 1E02 0 CODE 0 text20 dist/default/production\TeclacoM.X.production.o
+__end_of_rd1RegCompleteHandler 1FDE 0 CODE 0 text53 dist/default/production\TeclacoM.X.production.o
+_EUSART_FramingErrorHandler EA 0 BANK1 1 nvBANK1 dist/default/production\TeclacoM.X.production.o
+_EUSART_OverrunErrorHandler E8 0 BANK1 1 nvBANK1 dist/default/production\TeclacoM.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterSendTxData 1D9E 0 CODE 0 text43 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterGetRxData 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+I2C1_Open@returnValue 72 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterSendNack 1D96 0 CODE 0 text46 dist/default/production\TeclacoM.X.production.o
+_SSP1CLKPPS EC5 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_rdBlkRegCompleteHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_OSCCON1 88D 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_OSCCON3 88F 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_OSCTUNE 892 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_I2C1_Open 466 0 CODE 0 text18 dist/default/production\TeclacoM.X.production.o
+_EUSART_ErrorHandler E6 0 BANK1 1 nvBANK1 dist/default/production\TeclacoM.X.production.o
+main@buffer 45 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_RX_NACK_RESTART 1DEE 0 CODE 0 text27 dist/default/production\TeclacoM.X.production.o
+?_vfpfcnvrt 7C 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__end_of_I2C1_DO_RX_NACK_RESTART 1DF8 0 CODE 0 text27 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_SEND_STOP 1DD0 0 CODE 0 text30 dist/default/production\TeclacoM.X.production.o
+_rd1RegCompleteHandler 1FBC 0 CODE 0 text53 dist/default/production\TeclacoM.X.production.o
+_PIR3bits 70F 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterOperation 14A 0 CODE 0 text21 dist/default/production\TeclacoM.X.production.o
+__Lend_init 4 0 CODE 0 end_init -
+_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_I2C1_MasterGetRxData 1D88 0 CODE 0 text45 dist/default/production\TeclacoM.X.production.o
+printf@ap 3C 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_EUSART_SetFramingErrorHandler 1E18 0 CODE 0 text73 dist/default/production\TeclacoM.X.production.o
+_EUSART_SetOverrunErrorHandler 1E24 0 CODE 0 text72 dist/default/production\TeclacoM.X.production.o
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\TeclacoM.X.production.o
+__end_of_LCD_INIT_STRING 2028 0 STRCODE 0 stringtext3 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_RX_ACK 1DE4 0 CODE 0 text29 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_RESET 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Hintentry 4 0 CODE 0 intentry -
+__size_of_printf 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+fputc@c 72 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+_I2C1_MasterClearIrq 1D58 0 CODE 0 text64 dist/default/production\TeclacoM.X.production.o
+_TX1STAbits 11E 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+vfprintf@fmt 2F 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__end_of_I2C1_Poller 1F0C 0 CODE 0 text22 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterFsm 2D6 0 CODE 0 text24 dist/default/production\TeclacoM.X.production.o
+_I2C1_Close CC 0 CODE 0 text61 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_RX 4DA 0 CODE 0 text35 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_TX 71C 0 CODE 0 text36 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_SEND_RESTART 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+vfpfcnvrt@ap 7D 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+vfpfcnvrt@fp 2E 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__ptext1 8 0 CODE 0 text1 dist/default/production\TeclacoM.X.production.o
+__ptext2 190 0 CODE 0 text2 dist/default/production\TeclacoM.X.production.o
+__ptext3 42 0 CODE 0 text3 dist/default/production\TeclacoM.X.production.o
+__ptext4 2D6 0 CODE 0 text4 dist/default/production\TeclacoM.X.production.o
+__ptext5 AEE 0 CODE 0 text5 dist/default/production\TeclacoM.X.production.o
+__ptext6 A06 0 CODE 0 text6 dist/default/production\TeclacoM.X.production.o
+__ptext7 67E 0 CODE 0 text7 dist/default/production\TeclacoM.X.production.o
+__ptext8 1E48 0 CODE 0 text8 dist/default/production\TeclacoM.X.production.o
+__ptext9 1EC4 0 CODE 0 text9 dist/default/production\TeclacoM.X.production.o
+vfprintf@ap 31 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+vfprintf@fp 34 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+vfprintf@cfmt 35 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_sprintf 190 0 CODE 0 text2 dist/default/production\TeclacoM.X.production.o
+_vfprintf 2D6 0 CODE 0 text4 dist/default/production\TeclacoM.X.production.o
+__size_of_lcd_send_byte 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_I2C1_SetDataCompleteCallback 1ED8 0 CODE 0 text55 dist/default/production\TeclacoM.X.production.o
+lcd_init@i 35 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+sprintf@ap 3C 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+wr1RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_RESET 1E02 0 CODE 0 text26 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_SEND_RESTART 1DD0 0 CODE 0 text31 dist/default/production\TeclacoM.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__size_of_rd2RegCompleteHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__Hstringtext4 0 0 ABS 0 stringtext4 -
+__Hstringtext5 0 0 ABS 0 stringtext5 -
+__Hstringtext6 0 0 ABS 0 stringtext6 -
+__Hstringtext7 0 0 ABS 0 stringtext7 -
+__end_of_vfprintf 332 0 CODE 0 text4 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterClose 1D64 0 CODE 0 text63 dist/default/production\TeclacoM.X.production.o
+_I2C1_SetCallback 1D6 0 CODE 0 text56 dist/default/production\TeclacoM.X.production.o
+I2C1_SetCallback@cb 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+_SLRCONA F3B 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SLRCONB F46 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SLRCONC F51 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterStart 1D70 0 CODE 0 text60 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterWrite 1E0C 0 CODE 0 text20 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_SEND_ADR_READ 1EC4 0 CODE 0 text38 dist/default/production\TeclacoM.X.production.o
+EUSART_Write@txData 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\TeclacoM.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+_LCD_INIT_STRING 2020 0 STRCODE 0 stringtext3 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterClose 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+I2C1_SetBuffer@buffer 73 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterStart 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_MasterWrite 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SP1BRGH 11C 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SP1BRGL 11B 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON1bits 190 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SSP1CON2bits 191 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_SEND_RESTART_WRITE 1DC6 0 CODE 0 text32 dist/default/production\TeclacoM.X.production.o
+ctoa@fp 27 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_I2C1_Write1ByteRegister 390 0 CODE 0 text16 dist/default/production\TeclacoM.X.production.o
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_lcd_send_byte CC 0 CODE 0 text13 dist/default/production\TeclacoM.X.production.o
+__end_of_i2c1_fsmStateTable 1040 0 STRCODE 0 stringtext1 dist/default/production\TeclacoM.X.production.o
+__size_of_wr1RegCompleteHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_Write1ByteRegister 3F6 0 CODE 0 text16 dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_SEND_ADR_READ 1EB2 0 CODE 0 text38 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_Initialize 1EA0 0 CODE 0 text70 dist/default/production\TeclacoM.X.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__Hend_init 8 0 CODE 0 end_init -
+__end_of_I2C1_Close 104 0 CODE 0 text61 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_RX 566 0 CODE 0 text35 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_TX 7C6 0 CODE 0 text36 dist/default/production\TeclacoM.X.production.o
+lcd_gotoxy@x 36 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+lcd_gotoxy@y 33 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+lcd_send_byte@n 2F 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+vfpfcnvrt@c 2D 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+sprintf@f 3E 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+sprintf@s 3D 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+putch@txData 71 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_SetAddressNackCallback 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_KEYS 2020 0 STRCODE 0 stringtext2 dist/default/production\TeclacoM.X.production.o
+__end_of_ctoa AEE 0 CODE 0 text6 dist/default/production\TeclacoM.X.production.o
+__end_of_main 67E 0 CODE 0 maintext dist/default/production\TeclacoM.X.production.o
+rd2RegCompleteHandler@ptr 79 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+printf@fmt 37 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__end_of_fputc 71C 0 CODE 0 text7 dist/default/production\TeclacoM.X.production.o
+_I2C1_SetBuffer 1F7A 0 CODE 0 text57 dist/default/production\TeclacoM.X.production.o
+?_sprintf 37 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+_OSCEN 891 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_PORTB D 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_RXPPS ECB 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_TRISB 12 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_TRISC 13 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_putch 1E54 0 CODE 0 text8 dist/default/production\TeclacoM.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_I2C1_DO_ADDRESS_NACK 222 0 CODE 0 text25 dist/default/production\TeclacoM.X.production.o
+_flags E3 0 BANK1 1 bssBANK1 dist/default/production\TeclacoM.X.production.o
+_fputc 67E 0 CODE 0 text7 dist/default/production\TeclacoM.X.production.o
+_putch 1E48 0 CODE 0 text8 dist/default/production\TeclacoM.X.production.o
+_width DF 0 BANK1 1 bssBANK1 dist/default/production\TeclacoM.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_eusartRxLastError 6F 0 BANK0 1 bssBANK0 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_DO_SEND_RESTART_READ 1DBC 0 CODE 0 text33 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterClearIrq 1D5E 0 CODE 0 text64 dist/default/production\TeclacoM.X.production.o
+__size_of_EUSART_SetErrorHandler 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+__end_of_OSCILLATOR_Initialize 1EB2 0 CODE 0 text69 dist/default/production\TeclacoM.X.production.o
+__initialization FE4 0 CODE 0 cinit dist/default/production\TeclacoM.X.production.o
+I2C1_SetAddressNackCallback@cb 75 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+__pbssBANK0 6E 0 BANK0 1 bssBANK0 dist/default/production\TeclacoM.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\TeclacoM.X.production.o
+_i2c1_fsmStateTable 1000 0 STRCODE 0 stringtext1 dist/default/production\TeclacoM.X.production.o
+__size_of_I2C1_DO_SEND_ADR_WRITE 0 0 ABS 0 - dist/default/production\TeclacoM.X.production.o
+_I2C1_DO_TX_EMPTY 332 0 CODE 0 text40 dist/default/production\TeclacoM.X.production.o
+ctoa@c 7A 0 COMMON 1 cstackCOMMON dist/default/production\TeclacoM.X.production.o
+ctoa@l 23 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+ctoa@w 25 0 BANK0 1 cstackBANK0 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_SetAddressNackCallback 1F40 0 CODE 0 text17 dist/default/production\TeclacoM.X.production.o
+_keypad_scanner C4A 0 CODE 0 text65 dist/default/production\TeclacoM.X.production.o
+_lcd_gotoxy 566 0 CODE 0 text11 dist/default/production\TeclacoM.X.production.o
+__end_of_I2C1_MasterSendAck 1D9E 0 CODE 0 text44 dist/default/production\TeclacoM.X.production.o
+_OSCILLATOR_Initialize 1EA0 0 CODE 0 text69 dist/default/production\TeclacoM.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7F2 FE4 E 2
+text2 0 C8 190 23 2
+text3 0 21 42 12 2
+text4 0 16B 2D6 2E 2
+text5 0 577 AEE AE 2
+text6 0 503 A06 74 2
+text7 0 33F 67E 4F 2
+text8 0 F24 1E48 6 2
+text9 0 F62 1EC4 A 2
+text10 0 3E3 7C6 59 2
+text11 0 2B3 566 46 2
+text12 0 49F 93E 64 2
+text13 0 4B 96 1B 2
+text14 0 43C 878 63 2
+text15 0 FA0 1F40 D 2
+text16 0 1C8 390 33 2
+text17 0 F93 1F26 D 2
+text18 0 233 466 3A 2
+text19 0 F86 1F0C D 2
+text20 0 F01 1E02 5 2
+text21 0 A5 14A 23 2
+text22 0 F79 1EF2 D 2
+text23 0 F1E 1E3C 6 2
+text24 0 13D 27A 2E 2
+text25 0 111 222 2C 2
+text26 0 EFC 1DF8 5 2
+text27 0 EF7 1DEE 5 2
+text28 0 EF2 1DE4 5 2
+text29 0 EED 1DDA 5 2
+text30 0 EE8 1DD0 5 2
+text31 0 EE3 1DC6 5 2
+text32 0 EDE 1DBC 5 2
+text33 0 ED9 1DB2 5 2
+text34 0 F30 1E60 7 2
+text35 0 26D 4DA 46 2
+text36 0 38E 71C 55 2
+text37 0 F3F 1E7E 8 2
+text38 0 F59 1EB2 9 2
+text39 0 ED4 1DA8 5 2
+text40 0 199 332 2F 2
+text41 0 EC4 1D88 3 2
+text42 0 F18 1E30 6 2
+text43 0 ECF 1D9E 5 2
+text44 0 ECB 1D96 4 2
+text45 0 EC1 1D82 3 2
+text46 0 EC7 1D8E 4 2
+text47 0 EBE 1D7C 3 2
+text48 0 EAA 1D54 2 2
+text49 0 EA8 1D50 2 2
+text50 0 33 66 18 2
+text51 0 10 20 11 2
+text52 0 FEF 1FDE 11 2
+text53 0 FDE 1FBC 11 2
+text54 0 FCD 1F9A 11 2
+text55 0 F6C 1ED8 D 2
+text56 0 EB 1D6 26 2
+text57 0 FBD 1F7A 10 2
+text58 0 EBB 1D76 3 2
+text59 0 EB8 1D70 3 2
+text60 0 EB5 1D6A 3 2
+text61 0 66 CC 1C 2
+text62 0 EB2 1D64 3 2
+text63 0 EAF 1D5E 3 2
+text64 0 EAC 1D58 3 2
+text65 0 625 C4A 1CD 2
+text66 0 FAD 1F5A 10 2
+text67 0 F37 1E6E 8 2
+text68 0 1FB 3F6 38 2
+text69 0 F50 1EA0 9 2
+text70 0 F47 1E8E 9 2
+text71 0 82 104 23 2
+text72 0 F12 1E24 6 2
+text73 0 F0C 1E18 6 2
+text74 0 F06 1E0C 6 2
+maintext 0 2F9 5F2 46 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+stringtext1 0 800 1000 5E 2
+stringtext2 0 1000 2000 14 2
+reset_vec 0 0 0 10 2
+bssBANK1 1 A0 A0 4C 1
+clrtext 0 F2A 1E54 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

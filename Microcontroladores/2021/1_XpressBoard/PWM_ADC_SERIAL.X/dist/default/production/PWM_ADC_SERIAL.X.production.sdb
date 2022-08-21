@@ -1,0 +1,881 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16LF18855 ]
+[d frameptr 6 ]
+"108 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/adcc.c
+[e E11694 . `uc
+POT 4
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+]
+"88 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/tmr2.c
+[e E11693 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"94
+[e E11716 . `uc
+TMR2_T2INPPS 0
+TMR2_RESERVED 1
+TMR2_T4POSTSCALED 2
+TMR2_T6POSTSCALED 3
+TMR2_CCP1_OUT 4
+TMR2_CCP2_OUT 5
+TMR2_CCP3_OUT 6
+TMR2_CCP4_OUT 7
+TMR2_CCP5_OUT 8
+TMR2_PWM6_OUT 9
+TMR2_PWM7_OUT 10
+TMR2_C1_OUT_SYNC 11
+TMR2_C2_OUT_SYNC 12
+TMR2_ZCD_OUTPUT 13
+TMR2_CLC1_OUT 14
+TMR2_CLC2_OUT 15
+TMR2_CLC3_OUT 16
+TMR2_CLC4_OUT 17
+]
+"32 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\main.c
+[e E11709 . `uc
+POT 4
+channel_VSS 60
+channel_Temp 61
+channel_DAC1 62
+channel_FVR_buf1 63
+]
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _pad pad `(i  1 s 2 pad ]
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+"1390
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"3 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"63 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+"132
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+"66 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"146
+[v _putch putch `(v  1 e 1 0 ]
+"153
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"155
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"163
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"50 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"76
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"55 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+"64 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+"82
+[v _PWM5_LoadDutyValue PWM5_LoadDutyValue `(v  1 e 1 0 ]
+"62 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"100
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"111
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"122
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"136
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"147
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"592 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC16F1xxxx_DFP/1.5.133/xc8\pic\include\proc\pic16lf18855.h
+[v _TRISA TRISA `VEuc  1 e 1 @17 ]
+"654
+[v _TRISB TRISB `VEuc  1 e 1 @18 ]
+"716
+[v _TRISC TRISC `VEuc  1 e 1 @19 ]
+"778
+[v _LATA LATA `VEuc  1 e 1 @22 ]
+"840
+[v _LATB LATB `VEuc  1 e 1 @23 ]
+"902
+[v _LATC LATC `VEuc  1 e 1 @24 ]
+"1539
+[v _ADRESL ADRESL `VEuc  1 e 1 @140 ]
+"1559
+[v _ADRESH ADRESH `VEuc  1 e 1 @141 ]
+"1573
+[v _ADPREVL ADPREVL `VEuc  1 e 1 @142 ]
+"1643
+[v _ADPREVH ADPREVH `VEuc  1 e 1 @143 ]
+"1720
+[v _ADACCL ADACCL `VEuc  1 e 1 @144 ]
+"1790
+[v _ADACCH ADACCH `VEuc  1 e 1 @145 ]
+"1860
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @147 ]
+[s S215 . 1 `uc 1 ADGO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM 1 0 :2:2 
+`uc 1 ADCS 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADCONT 1 0 :1:6 
+`uc 1 ADON 1 0 :1:7 
+]
+"1896
+[s S223 . 1 `uc 1 DONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM 1 0 :2:2 
+]
+[s S227 . 1 `uc 1 nDONE 1 0 :1:0 
+]
+[s S229 . 1 `uc 1 GO 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFM0 1 0 :1:2 
+`uc 1 ADFM1 1 0 :1:3 
+]
+[s S234 . 1 `uc 1 GO_nDONE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ADFRM0 1 0 :1:2 
+`uc 1 ADFRM1 1 0 :1:3 
+]
+[u S239 . 1 `S215 1 . 1 0 `S223 1 . 1 0 `S227 1 . 1 0 `S229 1 . 1 0 `S234 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES239  1 e 1 @147 ]
+"1971
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @148 ]
+[s S369 . 1 `uc 1 ADDSEN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 ADGPOL 1 0 :1:5 
+`uc 1 ADIPEN 1 0 :1:6 
+`uc 1 ADPPOL 1 0 :1:7 
+]
+"1985
+[u S375 . 1 `S369 1 . 1 0 ]
+[v _ADCON1bits ADCON1bits `VES375  1 e 1 @148 ]
+"2010
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @149 ]
+[s S305 . 1 `uc 1 ADMD 1 0 :3:0 
+`uc 1 ADACLR 1 0 :1:3 
+`uc 1 ADCRS 1 0 :3:4 
+`uc 1 ADPSIS 1 0 :1:7 
+]
+"2032
+[s S310 . 1 `uc 1 ADMD0 1 0 :1:0 
+`uc 1 ADMD1 1 0 :1:1 
+`uc 1 ADMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCRS0 1 0 :1:4 
+`uc 1 ADCRS1 1 0 :1:5 
+`uc 1 ADCRS2 1 0 :1:6 
+]
+[u S318 . 1 `S305 1 . 1 0 `S310 1 . 1 0 ]
+[v _ADCON2bits ADCON2bits `VES318  1 e 1 @149 ]
+"2087
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @150 ]
+[s S276 . 1 `uc 1 ADTMD0 1 0 :1:0 
+`uc 1 ADTMD1 1 0 :1:1 
+`uc 1 ADTMD2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCALC0 1 0 :1:4 
+`uc 1 ADCALC1 1 0 :1:5 
+`uc 1 ADCALC2 1 0 :1:6 
+]
+"2108
+[s S284 . 1 `uc 1 ADTMD 1 0 :3:0 
+`uc 1 ADSOI 1 0 :1:3 
+`uc 1 ADCALC 1 0 :3:4 
+]
+[u S288 . 1 `S276 1 . 1 0 `S284 1 . 1 0 ]
+[v _ADCON3bits ADCON3bits `VES288  1 e 1 @150 ]
+"2158
+[v _ADSTAT ADSTAT `VEuc  1 e 1 @151 ]
+[s S337 . 1 `uc 1 ADSTAT 1 0 :3:0 
+`uc 1 ADMACT 1 0 :1:3 
+`uc 1 ADMATH 1 0 :1:4 
+`uc 1 ADLTHR 1 0 :1:5 
+`uc 1 ADUTHR 1 0 :1:6 
+`uc 1 ADAOV 1 0 :1:7 
+]
+"2178
+[s S344 . 1 `uc 1 ADSTAT0 1 0 :1:0 
+`uc 1 ADSTAT1 1 0 :1:1 
+`uc 1 ADSTAT2 1 0 :1:2 
+]
+[u S348 . 1 `S337 1 . 1 0 `S344 1 . 1 0 ]
+[v _ADSTATbits ADSTATbits `VES348  1 e 1 @151 ]
+"2228
+[v _ADCLK ADCLK `VEuc  1 e 1 @152 ]
+"2286
+[v _ADACT ADACT `VEuc  1 e 1 @153 ]
+"2338
+[v _ADREF ADREF `VEuc  1 e 1 @154 ]
+"2379
+[v _ADCAP ADCAP `VEuc  1 e 1 @155 ]
+"2431
+[v _ADPRE ADPRE `VEuc  1 e 1 @156 ]
+"2501
+[v _ADACQ ADACQ `VEuc  1 e 1 @157 ]
+"2571
+[v _ADPCH ADPCH `VEuc  1 e 1 @158 ]
+"2629
+[v _ADCNT ADCNT `VEuc  1 e 1 @268 ]
+"2699
+[v _ADRPT ADRPT `VEuc  1 e 1 @269 ]
+"2776
+[v _ADLTHL ADLTHL `VEuc  1 e 1 @270 ]
+"2846
+[v _ADLTHH ADLTHH `VEuc  1 e 1 @271 ]
+"2923
+[v _ADUTHL ADUTHL `VEuc  1 e 1 @272 ]
+"2993
+[v _ADUTHH ADUTHH `VEuc  1 e 1 @273 ]
+"3070
+[v _ADSTPTL ADSTPTL `VEuc  1 e 1 @274 ]
+"3140
+[v _ADSTPTH ADSTPTH `VEuc  1 e 1 @275 ]
+"3217
+[v _ADFLTRL ADFLTRL `VEuc  1 e 1 @276 ]
+"3287
+[v _ADFLTRH ADFLTRH `VEuc  1 e 1 @277 ]
+"3364
+[v _ADERRL ADERRL `VEuc  1 e 1 @278 ]
+"3434
+[v _ADERRH ADERRH `VEuc  1 e 1 @279 ]
+"3504
+[v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
+"3558
+[v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
+"3619
+[v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
+"3689
+[v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
+"3743
+[v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
+[s S106 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3769
+[u S115 . 1 `S106 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES115  1 e 1 @285 ]
+"3923
+[v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
+[s S85 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3949
+[u S94 . 1 `S85 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES94  1 e 1 @286 ]
+"4103
+[v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
+[s S447 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+"8949
+[s S452 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[u S461 . 1 `S447 1 . 1 0 `S452 1 . 1 0 ]
+[v _CCPTMRS0bits CCPTMRS0bits `VES461  1 e 1 @542 ]
+[s S883 . 1 `uc 1 C5TSEL 1 0 :2:0 
+`uc 1 P6TSEL 1 0 :2:2 
+`uc 1 P7TSEL 1 0 :2:4 
+]
+"9034
+[s S887 . 1 `uc 1 C5TSEL0 1 0 :1:0 
+`uc 1 C5TSEL1 1 0 :1:1 
+`uc 1 P6TSEL0 1 0 :1:2 
+`uc 1 P6TSEL1 1 0 :1:3 
+`uc 1 P7TSEL0 1 0 :1:4 
+`uc 1 P7TSEL1 1 0 :1:5 
+]
+[u S894 . 1 `S883 1 . 1 0 `S887 1 . 1 0 ]
+[v _CCPTMRS1bits CCPTMRS1bits `VES894  1 e 1 @543 ]
+"9084
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"9089
+[v _TMR2 TMR2 `VEuc  1 e 1 @652 ]
+"9122
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"9127
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+"9160
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S776 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"9196
+[s S780 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S784 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+[s S792 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S801 . 1 `S776 1 . 1 0 `S780 1 . 1 0 `S784 1 . 1 0 `S792 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES801  1 e 1 @654 ]
+"9306
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+[s S669 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"9339
+[s S674 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S680 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S685 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S691 . 1 `S669 1 . 1 0 `S674 1 . 1 0 `S680 1 . 1 0 `S685 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES691  1 e 1 @655 ]
+"9434
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"9592
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+[s S738 . 1 `uc 1 RSEL 1 0 :5:0 
+]
+"9619
+[s S740 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+`uc 1 RSEL4 1 0 :1:4 
+]
+[s S746 . 1 `uc 1 T2RSEL 1 0 :5:0 
+]
+[s S748 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+`uc 1 T2RSEL4 1 0 :1:4 
+]
+[u S754 . 1 `S738 1 . 1 0 `S740 1 . 1 0 `S746 1 . 1 0 `S748 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES754  1 e 1 @657 ]
+"10891
+[v _CCPR1L CCPR1L `VEuc  1 e 1 @780 ]
+"10911
+[v _CCPR1H CCPR1H `VEuc  1 e 1 @781 ]
+"10931
+[v _CCP1CON CCP1CON `VEuc  1 e 1 @782 ]
+[s S479 . 1 `uc 1 MODE 1 0 :4:0 
+`uc 1 FMT 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"10968
+[s S485 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+]
+[s S490 . 1 `uc 1 CCP1MODE 1 0 :4:0 
+`uc 1 CCP1FMT 1 0 :1:4 
+`uc 1 CCP1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP1EN 1 0 :1:7 
+]
+[s S496 . 1 `uc 1 CCP1MODE0 1 0 :1:0 
+`uc 1 CCP1MODE1 1 0 :1:1 
+`uc 1 CCP1MODE2 1 0 :1:2 
+`uc 1 CCP1MODE3 1 0 :1:3 
+]
+[s S501 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 P1M1 1 0 :1:7 
+]
+[u S504 . 1 `S479 1 . 1 0 `S485 1 . 1 0 `S490 1 . 1 0 `S496 1 . 1 0 `S501 1 . 1 0 ]
+[v _CCP1CONbits CCP1CONbits `VES504  1 e 1 @782 ]
+"11859
+[v _CCPR5L CCPR5L `VEuc  1 e 1 @796 ]
+"11879
+[v _CCPR5H CCPR5H `VEuc  1 e 1 @797 ]
+"11899
+[v _CCP5CON CCP5CON `VEuc  1 e 1 @798 ]
+"11936
+[s S920 . 1 `uc 1 CCP5MODE 1 0 :4:0 
+`uc 1 CCP5FMT 1 0 :1:4 
+`uc 1 CCP5OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 CCP5EN 1 0 :1:7 
+]
+[s S926 . 1 `uc 1 CCP5MODE0 1 0 :1:0 
+`uc 1 CCP5MODE1 1 0 :1:1 
+`uc 1 CCP5MODE2 1 0 :1:2 
+`uc 1 CCP5MODE3 1 0 :1:3 
+]
+[s S931 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 P5M1 1 0 :1:7 
+]
+[u S934 . 1 `S479 1 . 1 0 `S485 1 . 1 0 `S920 1 . 1 0 `S926 1 . 1 0 `S931 1 . 1 0 ]
+[v _CCP5CONbits CCP5CONbits `VES934  1 e 1 @798 ]
+[s S68 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+"21166
+[u S75 . 1 `S68 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES75  1 e 1 @1807 ]
+[s S629 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 TMR3IF 1 0 :1:2 
+`uc 1 TMR4IF 1 0 :1:3 
+`uc 1 TMR5IF 1 0 :1:4 
+`uc 1 TMR6IF 1 0 :1:5 
+]
+"21216
+[u S636 . 1 `S629 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES636  1 e 1 @1808 ]
+"21890
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"21947
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"22018
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"22063
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"22119
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"22170
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"23206
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"23346
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"23443
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"23494
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"23552
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"31569
+[v _RXPPS RXPPS `VEuc  1 e 1 @3787 ]
+"31673
+[v _RA0PPS RA0PPS `VEuc  1 e 1 @3856 ]
+"31723
+[v _RA1PPS RA1PPS `VEuc  1 e 1 @3857 ]
+"31773
+[v _RA2PPS RA2PPS `VEuc  1 e 1 @3858 ]
+"31823
+[v _RA3PPS RA3PPS `VEuc  1 e 1 @3859 ]
+"32473
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @3872 ]
+"32823
+[v _RC7PPS RC7PPS `VEuc  1 e 1 @3879 ]
+"32873
+[v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
+"32935
+[v _WPUA WPUA `VEuc  1 e 1 @3897 ]
+"32997
+[v _ODCONA ODCONA `VEuc  1 e 1 @3898 ]
+"33059
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @3899 ]
+"33121
+[v _INLVLA INLVLA `VEuc  1 e 1 @3900 ]
+"33493
+[v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
+"33555
+[v _WPUB WPUB `VEuc  1 e 1 @3908 ]
+"33617
+[v _ODCONB ODCONB `VEuc  1 e 1 @3909 ]
+"33679
+[v _SLRCONB SLRCONB `VEuc  1 e 1 @3910 ]
+"33741
+[v _INLVLB INLVLB `VEuc  1 e 1 @3911 ]
+"34113
+[v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
+"34175
+[v _WPUC WPUC `VEuc  1 e 1 @3919 ]
+"34237
+[v _ODCONC ODCONC `VEuc  1 e 1 @3920 ]
+"34299
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @3921 ]
+"34361
+[v _INLVLC INLVLC `VEuc  1 e 1 @3922 ]
+"34733
+[v _WPUE WPUE `VEuc  1 e 1 @3941 ]
+"34754
+[v _INLVLE INLVLE `VEuc  1 e 1 @3944 ]
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _flags flags `i  1 s 2 flags ]
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"66
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"69
+[v _nout nout `i  1 s 2 nout ]
+[s S22 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/eusart.c
+[u S27 . 1 `S22 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES27  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"3 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"5
+[v main@duty duty `us  1 a 2 77 ]
+"42
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+[v _printf printf `(i  1 e 2 0 ]
+{
+"8
+[v printf@ap ap `[1]*.4v  1 a 1 75 ]
+"5
+[v printf@fmt fmt `*.25DCuc  1 p 2 70 ]
+"13
+} 0
+"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S1478 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1478  1 a 1 wreg ]
+"1393
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 68 ]
+"1390
+[v vfprintf@fp fp `*.1S1478  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 62 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 64 ]
+"1395
+"1390
+[v vfprintf@fp fp `*.1S1478  1 a 1 67 ]
+"1404
+} 0
+"692
+[v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
+{
+[s S1478 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1478  1 a 1 wreg ]
+"696
+[v vfpfcnvrt@ll ll `o  1 a 8 53 ]
+"692
+[v vfpfcnvrt@fp fp `*.1S1478  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 46 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 47 ]
+"702
+"692
+[v vfpfcnvrt@fp fp `*.1S1478  1 a 1 61 ]
+"1387
+} 0
+"287
+[v _dtoa dtoa `(i  1 s 2 dtoa ]
+{
+[s S1478 _IO_FILE 0 ]
+[v dtoa@fp fp `*.1S1478  1 a 1 wreg ]
+"290
+[v dtoa@n n `o  1 a 8 36 ]
+"289
+[v dtoa@i i `i  1 a 2 44 ]
+[v dtoa@s s `i  1 a 2 34 ]
+[v dtoa@w w `i  1 a 2 32 ]
+[v dtoa@p p `i  1 a 2 29 ]
+"287
+[v dtoa@fp fp `*.1S1478  1 a 1 wreg ]
+[v dtoa@d d `o  1 p 8 16 ]
+"293
+"287
+[v dtoa@fp fp `*.1S1478  1 a 1 31 ]
+"328
+} 0
+"72
+[v _pad pad `(i  1 s 2 pad ]
+{
+[s S1478 _IO_FILE 0 ]
+[v pad@fp fp `*.1S1478  1 a 1 wreg ]
+"74
+[v pad@w w `i  1 a 2 10 ]
+[v pad@i i `i  1 a 2 8 ]
+"72
+[v pad@fp fp `*.1S1478  1 a 1 wreg ]
+[v pad@buf buf `*.4uc  1 p 1 4 ]
+[v pad@p p `i  1 p 2 5 ]
+"77
+"72
+[v pad@fp fp `*.1S1478  1 a 1 12 ]
+"95
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+[v _strlen strlen `(ui  1 e 2 0 ]
+{
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@a a `*.4DCuc  1 a 1 3 ]
+"5
+[v strlen@s s `*.4DCuc  1 a 1 wreg ]
+"7
+[v strlen@s s `*.4DCuc  1 a 1 4 ]
+"12
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 1 ]
+"10
+[v fputs@c c `uc  1 a 1 0 ]
+"8
+[v fputs@s s `*.4DCuc  1 a 1 wreg ]
+[s S1461 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.1S1461  1 p 1 10 ]
+"13
+[v fputs@s s `*.4DCuc  1 a 1 3 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 2 ]
+[s S1461 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S1461  1 p 1 4 ]
+"24
+} 0
+"146 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/eusart.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+[v putch@txData txData `uc  1 a 1 wreg ]
+[v putch@txData txData `uc  1 a 1 wreg ]
+"148
+[v putch@txData txData `uc  1 a 1 1 ]
+"149
+} 0
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"139
+} 0
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 3 ]
+"4
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+[v ___aomod __aomod `(o  1 e 8 0 ]
+{
+"12
+[v ___aomod@sign sign `uc  1 a 1 2 ]
+[v ___aomod@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aomod@divisor divisor `o  1 p 8 0 ]
+[v ___aomod@dividend dividend `o  1 p 8 8 ]
+"36
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+[v ___aodiv __aodiv `(o  1 e 8 0 ]
+{
+"12
+[v ___aodiv@quotient quotient `o  1 a 8 3 ]
+"13
+[v ___aodiv@sign sign `uc  1 a 1 2 ]
+[v ___aodiv@counter counter `uc  1 a 1 1 ]
+"7
+[v ___aodiv@divisor divisor `o  1 p 8 0 ]
+[v ___aodiv@dividend dividend `o  1 p 8 8 ]
+"43
+} 0
+"50 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"62 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"86
+} 0
+"64 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pwm5.c
+[v _PWM5_Initialize PWM5_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"64 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pwm1.c
+[v _PWM1_Initialize PWM1_Initialize `(v  1 e 1 0 ]
+{
+"80
+} 0
+"76 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"90
+} 0
+"55 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"122
+} 0
+"62 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"74
+} 0
+"66 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"170
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"172
+} 0
+"166
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"168
+} 0
+"174
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 0 ]
+"176
+} 0
+"63 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/adcc.c
+[v _ADCC_Initialize ADCC_Initialize `(v  1 e 1 0 ]
+{
+"106
+} 0
+"82 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pwm5.c
+[v _PWM5_LoadDutyValue PWM5_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM5_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"98
+} 0
+"82 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/pwm1.c
+[v _PWM1_LoadDutyValue PWM1_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM1_LoadDutyValue@dutyValue dutyValue `us  1 p 2 0 ]
+"98
+} 0
+"132 D:\OneDrive - Soluciones Marva\MPLABx\XC8\1_XpressBoard\PWM_ADC_SERIAL.X\mcc_generated_files/adcc.c
+[v _ADCC_GetSingleConversion ADCC_GetSingleConversion `(us  1 e 2 0 ]
+{
+[v ADCC_GetSingleConversion@channel channel `E11694  1 a 1 wreg ]
+[v ADCC_GetSingleConversion@channel channel `E11694  1 a 1 wreg ]
+"135
+[v ADCC_GetSingleConversion@channel channel `E11694  1 a 1 2 ]
+"157
+} 0

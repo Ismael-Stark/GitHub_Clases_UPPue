@@ -1,0 +1,254 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/Main.o
+barfunc CODE 0 7CF 7CF 31 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 0-7CE 2
+CONST 800-1FFF 2
+ENTRY 0-7CE 2
+ENTRY 800-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-F9D 1
+CODE 0-7CE 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+COMMON 70-7F 1
+EEDATA F000-F0FF 2
+STRCODE 0-7CE 2
+STRCODE 800-1FFF 2
+STRING 0-7CE 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/Main.o
+7CF barfunc CODE >58:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7CF barfunc CODE >60:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D0 barfunc CODE >64:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D1 barfunc CODE >65:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D2 barfunc CODE >66:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D3 barfunc CODE >67:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D4 barfunc CODE >68:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D5 barfunc CODE >69:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D6 barfunc CODE >70:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D7 barfunc CODE >71:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D8 barfunc CODE >72:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7D9 barfunc CODE >134:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7DA barfunc CODE >135:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7DB barfunc CODE >136:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7DC barfunc CODE >138:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7DD barfunc CODE >139:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7DE barfunc CODE >140:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7DF barfunc CODE >141:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E0 barfunc CODE >143:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E1 barfunc CODE >151:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E2 barfunc CODE >152:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E3 barfunc CODE >153:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E4 barfunc CODE >154:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E5 barfunc CODE >155:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E6 barfunc CODE >156:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E7 barfunc CODE >158:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E8 barfunc CODE >159:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7E9 barfunc CODE >160:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7EA barfunc CODE >161:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7EB barfunc CODE >162:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7EC barfunc CODE >163:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7ED barfunc CODE >165:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7EE barfunc CODE >166:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7EF barfunc CODE >167:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F0 barfunc CODE >168:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F1 barfunc CODE >171:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F2 barfunc CODE >172:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F3 barfunc CODE >173:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F4 barfunc CODE >174:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F5 barfunc CODE >175:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F6 barfunc CODE >176:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F7 barfunc CODE >178:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F8 barfunc CODE >179:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7F9 barfunc CODE >180:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7FA barfunc CODE >181:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7FB barfunc CODE >182:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7FC barfunc CODE >183:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7FD barfunc CODE >185:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7FE barfunc CODE >186:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+7FF barfunc CODE >187:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\1erProyectoASM.X\Main.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+__Hudata_bank0 0 0 ABS 0 udata_bank0 -
+__Hudata_bank1 0 0 ABS 0 udata_bank1 -
+__Hudata_bank2 0 0 ABS 0 udata_bank2 -
+__Hudata_bank3 0 0 ABS 0 udata_bank3 -
+__Hudata_bank4 0 0 ABS 0 udata_bank4 -
+__Hudata_bank5 0 0 ABS 0 udata_bank5 -
+__Hudata_bank6 0 0 ABS 0 udata_bank6 -
+__Hudata_bank7 0 0 ABS 0 udata_bank7 -
+__Hudata_bank8 0 0 ABS 0 udata_bank8 -
+__Hudata_bank9 0 0 ABS 0 udata_bank9 -
+__Hudata_bank10 0 0 ABS 0 udata_bank10 -
+__Hudata_bank11 0 0 ABS 0 udata_bank11 -
+__Hudata_bank12 0 0 ABS 0 udata_bank12 -
+__Hedata 0 0 ABS 0 edata -
+__Hudata 0 0 ABS 0 udata -
+__Hconfig 10018 0 CONFIG 4 config -
+__Ledata 0 0 ABS 0 edata -
+__Ludata 0 0 ABS 0 udata -
+__Lbarfunc 0 0 ABS 0 barfunc -
+__Hcode 0 0 ABS 0 code -
+__Hdata 0 0 ABS 0 data -
+__Lcode 0 0 ABS 0 code -
+__Ldata 0 0 ABS 0 data -
+__S0 800 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Ludata_bank10 0 0 ABS 0 udata_bank10 -
+__Ludata_bank11 0 0 ABS 0 udata_bank11 -
+__Ludata_bank12 0 0 ABS 0 udata_bank12 -
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Hbarfunc 0 0 ABS 0 barfunc -
+__Ludata_bank0 0 0 ABS 0 udata_bank0 -
+__Ludata_bank1 0 0 ABS 0 udata_bank1 -
+__Ludata_bank2 0 0 ABS 0 udata_bank2 -
+__Ludata_bank3 0 0 ABS 0 udata_bank3 -
+__Ludata_bank4 0 0 ABS 0 udata_bank4 -
+__Ludata_bank5 0 0 ABS 0 udata_bank5 -
+__Ludata_bank6 0 0 ABS 0 udata_bank6 -
+__Ludata_bank7 0 0 ABS 0 udata_bank7 -
+__Ludata_bank8 0 0 ABS 0 udata_bank8 -
+__Ludata_bank9 0 0 ABS 0 udata_bank9 -
+__Hudata_shr 0 0 ABS 0 udata_shr -
+__Ludata_shr 0 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+barfunc 0 7CF F9E 31 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

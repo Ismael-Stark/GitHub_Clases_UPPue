@@ -1,0 +1,1280 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 2 2 2 2
+config CONFIG 4 8007 8007 5 2
+$dist/default/production\Serial1_XC8.X.production.o
+cinit CODE 0 7ED 7ED 13 2
+text1 CODE 0 F6D F6D 23 2
+text2 CODE 0 48 48 49 2
+text3 CODE 0 266 266 90 2
+text4 CODE 0 5 5 12 2
+text5 CODE 0 17 17 31 2
+text6 CODE 0 3B7 3B7 DB 2
+text7 CODE 0 67D 67D 170 2
+text8 CODE 0 138 138 59 2
+text9 CODE 0 F34 F34 1A 2
+text10 CODE 0 F90 F90 29 2
+text11 CODE 0 91 91 4F 2
+text12 CODE 0 E5D E5D 6 2
+text13 CODE 0 E87 E87 A 2
+text14 CODE 0 F1A F1A 1A 2
+text15 CODE 0 492 492 EA 2
+text16 CODE 0 57C 57C 101 2
+text17 CODE 0 E0 E0 58 2
+text18 CODE 0 FB9 FB9 47 2
+text19 CODE 0 191 191 61 2
+text20 CODE 0 EEB EEB 16 2
+text21 CODE 0 1F2 1F2 74 2
+text22 CODE 0 EB4 EB4 11 2
+text23 CODE 0 EA8 EA8 C 2
+text24 CODE 0 E77 E77 7 2
+text25 CODE 0 E70 E70 7 2
+text26 CODE 0 F01 F01 19 2
+text27 CODE 0 E7E E7E 9 2
+text28 CODE 0 E57 E57 6 2
+text29 CODE 0 EC5 EC5 12 2
+text30 CODE 0 F4E F4E 1F 2
+text31 CODE 0 E69 E69 7 2
+text32 CODE 0 E9C E9C C 2
+text33 CODE 0 E91 E91 B 2
+text34 CODE 0 ED7 ED7 14 2
+maintext CODE 0 2F6 2F6 C1 2
+cstackCOMMON COMMON 1 70 70 E 1
+cstackBANK0 BANK0 1 20 20 50 1
+cstackBANK1 BANK1 1 A0 A0 2E 1
+stringtext1 STRCODE 0 1000 1000 2D 2
+stringtext2 STRCODE 0 102D 102D 20 2
+bssBANK1 BANK1 1 CE CE 12 1
+bssBANK2 BANK2 1 120 120 20 1
+clrtext CODE 0 E63 E63 6 2
+config CONFIG 4 8007 8007 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM E0-EF 1
+RAM 140-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK1 E0-EF 1
+BANK2 140-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 4-4 2
+CONST 800-E56 2
+CONST 104D-1FFF 2
+ENTRY 4-4 2
+ENTRY 800-E56 2
+ENTRY 104D-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 20C0-23EF 1
+CODE 4-4 2
+CODE 800-E56 2
+CODE 104D-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F000-F0FF 2
+STRCODE 4-4 2
+STRCODE 800-E56 2
+STRCODE 104D-1FFF 2
+STRING 4-4 2
+STRING 800-E56 2
+STRING 104D-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\Serial1_XC8.X.production.o
+7ED cinit CODE >8660:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7ED cinit CODE >8663:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7ED cinit CODE >8720:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7EE cinit CODE >8721:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7EF cinit CODE >8722:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F0 cinit CODE >8723:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F1 cinit CODE >8724:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F2 cinit CODE >8725:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F5 cinit CODE >8729:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F6 cinit CODE >8730:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F7 cinit CODE >8731:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F8 cinit CODE >8732:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7F9 cinit CODE >8733:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7FA cinit CODE >8734:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7FD cinit CODE >8740:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7FD cinit CODE >8742:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+7FE cinit CODE >8743:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+ED7 text34 CODE >3:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+ED7 text34 CODE >4:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EDA text34 CODE >6:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EDC text34 CODE >7:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EDD text34 CODE >8:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EDF text34 CODE >11:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EE2 text34 CODE >12:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EE5 text34 CODE >13:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EE7 text34 CODE >14:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EEA text34 CODE >15:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E91 text33 CODE >46:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E91 text33 CODE >47:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E93 text33 CODE >48:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E95 text33 CODE >49:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E96 text33 CODE >50:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E9B text33 CODE >51:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E9C text32 CODE >32:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E9C text32 CODE >33:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E9E text32 CODE >34:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EA0 text32 CODE >35:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EA5 text32 CODE >36:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EA7 text32 CODE >37:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E69 text31 CODE >22:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E69 text31 CODE >23:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E6B text31 CODE >24:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E6F text31 CODE >25:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+F4E text30 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F4E text30 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F50 text30 CODE >45:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F54 text30 CODE >46:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F58 text30 CODE >47:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F5D text30 CODE >48:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F62 text30 CODE >49:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F68 text30 CODE >52:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+F6C text30 CODE >53:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul16.c
+EC5 text29 CODE >6:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+EC5 text29 CODE >7:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+EC8 text29 CODE >9:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ECA text29 CODE >10:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ECB text29 CODE >13:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ECD text29 CODE >14:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ECE text29 CODE >16:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ED2 text29 CODE >28:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ED4 text29 CODE >29:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ED5 text29 CODE >30:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+ED6 text29 CODE >31:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\adc.c
+E57 text28 CODE >4:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\dht11.c
+E57 text28 CODE >5:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\dht11.c
+E59 text28 CODE >6:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\dht11.c
+E5B text28 CODE >7:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\dht11.c
+E5C text28 CODE >8:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\dht11.c
+E7E text27 CODE >12:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\ultraonico.c
+E7E text27 CODE >13:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\ultraonico.c
+E80 text27 CODE >14:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\ultraonico.c
+E81 text27 CODE >15:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\ultraonico.c
+E83 text27 CODE >16:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\ultraonico.c
+E84 text27 CODE >17:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\ultraonico.c
+E86 text27 CODE >18:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\ultraonico.c
+F01 text26 CODE >21:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F01 text26 CODE >22:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F03 text26 CODE >23:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F04 text26 CODE >24:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F06 text26 CODE >26:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F09 text26 CODE >28:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F0A text26 CODE >29:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F0B text26 CODE >30:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F0D text26 CODE >31:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F10 text26 CODE >32:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F12 text26 CODE >34:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F14 text26 CODE >35:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F15 text26 CODE >36:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F17 text26 CODE >37:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+F19 text26 CODE >40:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+E70 text25 CODE >17:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E70 text25 CODE >18:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E72 text25 CODE >19:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E76 text25 CODE >20:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E77 text24 CODE >27:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E77 text24 CODE >28:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E79 text24 CODE >29:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+E7D text24 CODE >30:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EA8 text23 CODE >53:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EA9 text23 CODE >54:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EAB text23 CODE >55:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EAE text23 CODE >56:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EB3 text23 CODE >57:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\i2c.c
+EB4 text22 CODE >3:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EB5 text22 CODE >4:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EB8 text22 CODE >5:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EBC text22 CODE >6:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EC1 text22 CODE >7:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EC4 text22 CODE >11:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1F2 text21 CODE >13:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1F3 text21 CODE >14:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1F4 text21 CODE >16:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+208 text21 CODE >17:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+21C text21 CODE >18:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+230 text21 CODE >19:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+244 text21 CODE >20:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+247 text21 CODE >21:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+24C text21 CODE >22:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+252 text21 CODE >24:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+257 text21 CODE >27:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+25C text21 CODE >28:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+260 text21 CODE >29:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+265 text21 CODE >30:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EEB text20 CODE >32:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EEC text20 CODE >33:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+EF7 text20 CODE >34:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+F00 text20 CODE >35:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+191 text19 CODE >37:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+191 text19 CODE >39:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+194 text19 CODE >40:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+198 text19 CODE >41:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+19C text19 CODE >42:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+19F text19 CODE >46:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1AA text19 CODE >48:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1AB text19 CODE >49:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1B3 text19 CODE >50:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1BA text19 CODE >51:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1C1 text19 CODE >51:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1C5 text19 CODE >52:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1CD text19 CODE >65:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1CE text19 CODE >67:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1D2 text19 CODE >67:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1DD text19 CODE >68:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1E4 text19 CODE >69:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1EA text19 CODE >69:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1EE text19 CODE >70:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1F0 text19 CODE >71:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+1F1 text19 CODE >72:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FB9 text18 CODE >74:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FBB text18 CODE >76:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FBC text18 CODE >79:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FBD text18 CODE >80:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FBE text18 CODE >82:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FC2 text18 CODE >83:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FC3 text18 CODE >85:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FC7 text18 CODE >86:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FC8 text18 CODE >88:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FCC text18 CODE >89:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FCD text18 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FD4 text18 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FD9 text18 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FDC text18 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FDF text18 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FE2 text18 CODE >93:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FE5 text18 CODE >94:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FEA text18 CODE >95:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FF3 text18 CODE >97:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FFA text18 CODE >98:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FFF text18 CODE >99:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+E0 text17 CODE >119:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+E1 text17 CODE >120:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+E2 text17 CODE >123:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+E8 text17 CODE >124:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+F1 text17 CODE >125:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+F3 text17 CODE >126:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+F4 text17 CODE >127:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FD text17 CODE >128:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+FE text17 CODE >130:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+109 text17 CODE >131:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+10A text17 CODE >133:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+115 text17 CODE >134:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+116 text17 CODE >135:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+11F text17 CODE >135:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+124 text17 CODE >135:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+127 text17 CODE >135:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+12A text17 CODE >138:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+12F text17 CODE >120:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+137 text17 CODE >140:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\LCD_i2c.c
+57C text16 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+57C text16 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+57D text16 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+587 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+591 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+594 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+597 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+59A text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+59D text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5A0 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5A3 text16 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5A6 text16 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5A8 text16 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5B2 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5BC text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5BF text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5C2 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5C5 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5C8 text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5CB text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5CE text16 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5D1 text16 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5D5 text16 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5DF text16 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5E8 text16 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5EC text16 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5EE text16 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5EF text16 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5F7 text16 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5FB text16 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+5FF text16 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+607 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+609 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+60D text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+611 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+615 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+619 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+61D text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+621 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+625 text16 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+629 text16 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+639 text16 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+63A text16 CODE >37:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+642 text16 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+648 text16 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+64D text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+656 text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+659 text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+65C text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+65F text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+662 text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+665 text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+668 text16 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+66B text16 CODE >42:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+67C text16 CODE >43:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
+492 text15 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+492 text15 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+493 text15 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+49D text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4A7 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4AA text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4AD text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4B0 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4B3 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4B6 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4B9 text15 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4BC text15 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4BE text15 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4C8 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4D2 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4D5 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4D8 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4DB text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4DE text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4E1 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4E4 text15 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4E7 text15 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4F0 text15 CODE >21:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4F4 text15 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4F6 text15 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4F7 text15 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+4FF text15 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+503 text15 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+507 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+509 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+50D text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+511 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+515 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+519 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+51D text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+521 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+525 text15 CODE >28:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+529 text15 CODE >29:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+539 text15 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+541 text15 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+547 text15 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+54C text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+555 text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+558 text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+55B text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+55E text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+561 text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+564 text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+567 text15 CODE >34:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+56A text15 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+57B text15 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
+F1A text14 CODE >1:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F1A text14 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F1F text14 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F23 text14 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F2C text14 CODE >3:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+F33 text14 CODE >4:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
+E87 text13 CODE >35:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+E88 text13 CODE >36:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+E8D text13 CODE >38:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+E90 text13 CODE >41:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+E5D text12 CODE >64:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+E5E text12 CODE >65:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+E62 text12 CODE >66:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+91 text11 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+91 text11 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+9B text11 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+9F text11 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+A0 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+BF text11 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+C3 text11 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+C7 text11 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+D7 text11 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+DD text11 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+DF text11 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
+F90 text10 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+F92 text10 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+F94 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+F95 text10 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+FA3 text10 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+FA8 text10 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+FB8 text10 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
+F34 text9 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+F35 text9 CODE >7:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+F39 text9 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+F3A text9 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+F3E text9 CODE >8:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+F47 text9 CODE >11:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+F4D text9 CODE >12:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
+138 text8 CODE >72:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+13A text8 CODE >77:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+13F text8 CODE >78:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+148 text8 CODE >82:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+154 text8 CODE >83:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+156 text8 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+157 text8 CODE >85:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+163 text8 CODE >86:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+168 text8 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+16E text8 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+172 text8 CODE >84:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+176 text8 CODE >90:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+17B text8 CODE >91:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+184 text8 CODE >94:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+190 text8 CODE >95:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+67D text7 CODE >287:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+67F text7 CODE >293:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+68F text7 CODE >294:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6A2 text7 CODE >295:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6A8 text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6B1 text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6B4 text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6B7 text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6BA text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6BD text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C0 text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C3 text7 CODE >296:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C6 text7 CODE >297:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6C6 text7 CODE >300:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6CB text7 CODE >301:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6CF text7 CODE >302:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6CF text7 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6D5 text7 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6DA text7 CODE >303:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6EC text7 CODE >304:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6F4 text7 CODE >305:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+6FF text7 CODE >306:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+704 text7 CODE >307:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+704 text7 CODE >310:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+709 text7 CODE >311:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+70B text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+70C text7 CODE >313:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+711 text7 CODE >314:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+740 text7 CODE >315:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+744 text7 CODE >316:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+748 text7 CODE >317:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+775 text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+775 text7 CODE >318:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+77B text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+77F text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+78C text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+795 text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+799 text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7A3 text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7A7 text7 CODE >312:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7B0 text7 CODE >321:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7BC text7 CODE >322:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7C1 text7 CODE >323:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7D9 text7 CODE >327:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+7EC text7 CODE >328:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3B7 text6 CODE >692:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3B9 text6 CODE >702:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3CA text6 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3D0 text6 CODE >703:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3D2 text6 CODE >705:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3D7 text6 CODE >706:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3DB text6 CODE >847:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3FE text6 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+404 text6 CODE >849:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+406 text6 CODE >850:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+41F text6 CODE >852:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+439 text6 CODE >1372:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+44A text6 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+450 text6 CODE >1373:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+452 text6 CODE >1374:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+45D text6 CODE >1375:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+463 text6 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+469 text6 CODE >1379:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+46B text6 CODE >1380:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+46E text6 CODE >1384:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+487 text6 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+48E text6 CODE >1385:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+491 text6 CODE >1387:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+17 text5 CODE >1390:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+19 text5 CODE >1395:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+1D text5 CODE >1396:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+20 text5 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+21 text5 CODE >1398:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+35 text5 CODE >1397:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+3F text5 CODE >1400:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+47 text5 CODE >1404:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
+5 text4 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+5 text4 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+A text4 CODE >10:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+16 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
+266 text3 CODE >5:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+266 text3 CODE >13:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+268 text3 CODE >14:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+26C text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+271 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+273 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+275 text3 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+277 text3 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+279 text3 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+279 text3 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+27D text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+282 text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+284 text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+286 text3 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+288 text3 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+28C text3 CODE >22:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+294 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+298 text3 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+29C text3 CODE >24:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+29E text3 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+29F text3 CODE >26:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2A6 text3 CODE >27:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2AA text3 CODE >25:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2AE text3 CODE >30:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2B5 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2B7 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2BB text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2BF text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2C3 text3 CODE >31:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2C7 text3 CODE >32:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2CF text3 CODE >33:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2D0 text3 CODE >35:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2D7 text3 CODE >36:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2DD text3 CODE >38:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2E2 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2E7 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2E9 text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2EB text3 CODE >39:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2ED text3 CODE >40:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+2F5 text3 CODE >41:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aldiv.c
+48 text2 CODE >8:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+48 text2 CODE >11:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+4A text2 CODE >14:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+4C text2 CODE >20:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+4E text2 CODE >23:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+83 text2 CODE >24:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+86 text2 CODE >25:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+8A text2 CODE >29:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+8D text2 CODE >31:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+90 text2 CODE >33:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\Serial.c
+F6D text1 CODE >9:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F6F text1 CODE >15:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F73 text1 CODE >16:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F77 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F79 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F7B text1 CODE >19:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F87 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+F8F text1 CODE >23:C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_sprintf.c
+2F6 maintext CODE >43:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+2F6 maintext CODE >44:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+2F9 maintext CODE >46:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+2FB maintext CODE >48:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+2FB maintext CODE >49:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+2FE maintext CODE >50:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+301 maintext CODE >51:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+309 maintext CODE >52:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+30C maintext CODE >53:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+30F maintext CODE >54:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+312 maintext CODE >56:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+315 maintext CODE >57:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+31E maintext CODE >58:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+322 maintext CODE >59:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+32E maintext CODE >64:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+331 maintext CODE >65:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+335 maintext CODE >66:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+339 maintext CODE >67:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+33C maintext CODE >68:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+340 maintext CODE >69:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+347 maintext CODE >70:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+34A maintext CODE >71:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+34D maintext CODE >73:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+350 maintext CODE >74:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+354 maintext CODE >75:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+358 maintext CODE >76:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+35B maintext CODE >77:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+35F maintext CODE >78:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+366 maintext CODE >79:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+369 maintext CODE >80:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+36C maintext CODE >82:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+377 maintext CODE >83:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+3A7 maintext CODE >135:G:\OneDrive - Soluciones Marva\MPLABx\XC8\1Calses2021\Serial1_XC8.X\main_Serial.c
+E63 clrtext CODE >8709:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+E63 clrtext CODE >8710:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+E64 clrtext CODE >8711:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+E64 clrtext CODE >8712:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+E65 clrtext CODE >8713:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+E66 clrtext CODE >8714:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+E67 clrtext CODE >8715:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+E68 clrtext CODE >8716:C:\Users\Edicion\AppData\Local\Temp\xcAscc.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Hspace_0 104D 0 ABS 0 - -
+__Hspace_1 140 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10013 0 ABS 0 - -
+Send_D7_D4@nibble 72 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+__size_of_dht11_init 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_serial_init$1519 28 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+?_abs 73 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+?_pad 24 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+main@H CB 0 BANK1 1 cstackBANK1 dist/default/production\Serial1_XC8.X.production.o
+main@T CA 0 BANK1 1 cstackBANK1 dist/default/production\Serial1_XC8.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 5E 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+_LATA 16 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_LATB 17 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_LATC 18 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+_dbuf 120 0 BANK2 1 bssBANK2 dist/default/production\Serial1_XC8.X.production.o
+_dtoa CFA 0 CODE 0 text7 dist/default/production\Serial1_XC8.X.production.o
+__end_of_I2C_start 1CEE 0 CODE 0 text25 dist/default/production\Serial1_XC8.X.production.o
+_init 1E02 0 CODE 0 text26 dist/default/production\Serial1_XC8.X.production.o
+_main 5EC 0 CODE 0 maintext dist/default/production\Serial1_XC8.X.production.o
+_nout D3 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+_prec D7 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+abs@a 73 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__end_of_I2C_write 1D68 0 CODE 0 text23 dist/default/production\Serial1_XC8.X.production.o
+pad@i 28 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+pad@p 25 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+pad@w 2A 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+start 4 0 CODE 0 init C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+___aomod@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+__size_of___aldiv 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of___aodiv 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of___aomod 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_I2C_start 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_I2C_write 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_dtoa 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_init 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+pad@fp 2C 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+?___wmul 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+__size_of_I2C_init 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_I2C_nack 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_I2C_read 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_I2C_stop 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__end_of_Write_PCF 1D8A 0 CODE 0 text22 dist/default/production\Serial1_XC8.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_vfpfcnvrt 924 0 CODE 0 text6 dist/default/production\Serial1_XC8.X.production.o
+_I2C_start 1CE0 0 CODE 0 text25 dist/default/production\Serial1_XC8.X.production.o
+_I2C_write 1D50 0 CODE 0 text23 dist/default/production\Serial1_XC8.X.production.o
+__size_of_Write_PCF 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__end_of_lcd_gotoxy 2000 0 CODE 0 text18 dist/default/production\Serial1_XC8.X.production.o
+__end_of_I2C_restart 1CE0 0 CODE 0 text31 dist/default/production\Serial1_XC8.X.production.o
+__size_of_vfpfcnvrt 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+___aldiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_Send_D7_D4 3E4 0 CODE 0 text21 dist/default/production\Serial1_XC8.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+_RC1STAbits 11D 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_Write_PCF 1D68 0 CODE 0 text22 dist/default/production\Serial1_XC8.X.production.o
+___aldiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt 76E 0 CODE 0 text6 dist/default/production\Serial1_XC8.X.production.o
+dtoa@fp 3D 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+___wmul@multiplicand 72 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+_ADCON1 94 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ADRESH 8D 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ADRESL 8C 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ANSELA F38 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ANSELB F43 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ANSELC F4E 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_dht_dat CE 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+_I2C_init 1DAE 0 CODE 0 text34 dist/default/production\Serial1_XC8.X.production.o
+_I2C_nack 1D22 0 CODE 0 text33 dist/default/production\Serial1_XC8.X.production.o
+_I2C_read 1D38 0 CODE 0 text32 dist/default/production\Serial1_XC8.X.production.o
+_I2C_stop 1CEE 0 CODE 0 text24 dist/default/production\Serial1_XC8.X.production.o
+__end_of___wmul 1EDA 0 CODE 0 text30 dist/default/production\Serial1_XC8.X.production.o
+lcd_send_byte@address 79 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+?_printf 66 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__end_of_I2C_init 1DD6 0 CODE 0 text34 dist/default/production\Serial1_XC8.X.production.o
+__end_of_I2C_nack 1D38 0 CODE 0 text33 dist/default/production\Serial1_XC8.X.production.o
+__end_of_I2C_read 1D50 0 CODE 0 text32 dist/default/production\Serial1_XC8.X.production.o
+__end_of_I2C_stop 1CFC 0 CODE 0 text24 dist/default/production\Serial1_XC8.X.production.o
+__end_of___aldiv 5EC 0 CODE 0 text3 dist/default/production\Serial1_XC8.X.production.o
+__end_of___aodiv CFA 0 CODE 0 text16 dist/default/production\Serial1_XC8.X.production.o
+__end_of___aomod AF8 0 CODE 0 text15 dist/default/production\Serial1_XC8.X.production.o
+___aodiv@quotient 73 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+Send_D7_D4@datos 76 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+?_strlen 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+___stackhi 23EF 0 ABS 0 - C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+___stacklo 20C0 0 ABS 0 - C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+__end_of_Send_D7_D4 4CC 0 CODE 0 text21 dist/default/production\Serial1_XC8.X.production.o
+___aomod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__size_of_fputc 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_fputs 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_putch 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_hc_sr04_init 1CFC 0 CODE 0 text27 dist/default/production\Serial1_XC8.X.production.o
+___aomod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+start_initialization FDA 0 CODE 0 cinit dist/default/production\Serial1_XC8.X.production.o
+lcd_puts@dato 7D 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+_low_byte DB 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+_TRISBbits 12 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_TRISCbits 13 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+___aldiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+lcd_gotoxy@address 21 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+_RC0PPS F20 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_RC1STA 11D 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_RC3PPS F23 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_RC4PPS F24 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+clear_ram0 1CC6 0 CODE 0 clrtext dist/default/production\Serial1_XC8.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__pcstackBANK1 A0 0 BANK1 1 cstackBANK1 dist/default/production\Serial1_XC8.X.production.o
+__end_of_serial_init 122 0 CODE 0 text2 dist/default/production\Serial1_XC8.X.production.o
+_TX1STA 11E 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__end_of_printf 2E 0 CODE 0 text4 dist/default/production\Serial1_XC8.X.production.o
+__size_of_I2C_restart 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+fputc@fp 74 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+fputs@fp 7A 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+__size_of_hc_sr04_init 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit 1000 0 CODE 0 cinit -
+__end_of_strlen 1E9C 0 CODE 0 text9 dist/default/production\Serial1_XC8.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf 1F20 0 CODE 0 text1 dist/default/production\Serial1_XC8.X.production.o
+__size_of_lcd_init 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_lcd_puts 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+serial_init@sx 2C 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10018 0 CONFIG 4 config -
+__size_of_lcd_gotoxy 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit FDA 0 CODE 0 cinit -
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+__end_of_serial_TX 1D22 0 CODE 0 text13 dist/default/production\Serial1_XC8.X.production.o
+_PORTBbits D 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_serial_TX 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 4 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 4 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 2000 0 STRCODE 0 stringtext1 dist/default/production\Serial1_XC8.X.production.o
+__pstringtext2 205A 0 STRCODE 0 stringtext2 dist/default/production\Serial1_XC8.X.production.o
+__pstringtext3 0 0 STRCODE 0 stringtext3 dist/default/production\Serial1_XC8.X.production.o
+__end_of_hc_sr04_init 1D0E 0 CODE 0 text27 dist/default/production\Serial1_XC8.X.production.o
+___aodiv@counter 71 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+_SSP1CON1 190 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_SSP1CON3 192 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_SSP1STAT 18F 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+___wmul 1E9C 0 CODE 0 text30 dist/default/production\Serial1_XC8.X.production.o
+___aomod@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 104D 0 ABS 0 - -
+__S1 140 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_abs 1E34 0 CODE 0 text14 dist/default/production\Serial1_XC8.X.production.o
+_pad 270 0 CODE 0 text8 dist/default/production\Serial1_XC8.X.production.o
+Write_PCF@dato 71 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+Send_D7_D4@address 75 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+_serial_TX 1D0E 0 CODE 0 text13 dist/default/production\Serial1_XC8.X.production.o
+___aodiv@sign 72 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+sprintf@fmt 66 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+_dtoa$1245 3B 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__end_of_abs 1E68 0 CODE 0 text14 dist/default/production\Serial1_XC8.X.production.o
+__end_of_pad 322 0 CODE 0 text8 dist/default/production\Serial1_XC8.X.production.o
+_g_LcdX DE 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+_g_LcdY DD 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+_lcd_init 322 0 CODE 0 text19 dist/default/production\Serial1_XC8.X.production.o
+_lcd_puts 1C0 0 CODE 0 text17 dist/default/production\Serial1_XC8.X.production.o
+__Lintentry 4 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Edicion\AppData\Local\Temp\xcAscc.o
+strlen@a 73 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+strlen@s 74 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+__size_of_adc_init 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_dht11_init 1CAE 0 CODE 0 text28 dist/default/production\Serial1_XC8.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__end_of_lcd_init 3E4 0 CODE 0 text19 dist/default/production\Serial1_XC8.X.production.o
+__end_of_lcd_puts 270 0 CODE 0 text17 dist/default/production\Serial1_XC8.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+__Lstringtext3 0 0 ABS 0 stringtext3 -
+vfpfcnvrt@fmt 4E 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__size_of_Send_D7_D4 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_lcd_send_byte 1DD6 0 CODE 0 text20 dist/default/production\Serial1_XC8.X.production.o
+pad@buf 24 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__ptext10 1F20 0 CODE 0 text10 dist/default/production\Serial1_XC8.X.production.o
+__ptext11 122 0 CODE 0 text11 dist/default/production\Serial1_XC8.X.production.o
+__ptext12 1CBA 0 CODE 0 text12 dist/default/production\Serial1_XC8.X.production.o
+__ptext13 1D0E 0 CODE 0 text13 dist/default/production\Serial1_XC8.X.production.o
+__ptext14 1E34 0 CODE 0 text14 dist/default/production\Serial1_XC8.X.production.o
+__ptext15 924 0 CODE 0 text15 dist/default/production\Serial1_XC8.X.production.o
+__ptext16 AF8 0 CODE 0 text16 dist/default/production\Serial1_XC8.X.production.o
+__ptext17 1C0 0 CODE 0 text17 dist/default/production\Serial1_XC8.X.production.o
+__ptext18 1F72 0 CODE 0 text18 dist/default/production\Serial1_XC8.X.production.o
+__ptext19 322 0 CODE 0 text19 dist/default/production\Serial1_XC8.X.production.o
+__ptext20 1DD6 0 CODE 0 text20 dist/default/production\Serial1_XC8.X.production.o
+__ptext21 3E4 0 CODE 0 text21 dist/default/production\Serial1_XC8.X.production.o
+__ptext22 1D68 0 CODE 0 text22 dist/default/production\Serial1_XC8.X.production.o
+__ptext23 1D50 0 CODE 0 text23 dist/default/production\Serial1_XC8.X.production.o
+__ptext24 1CEE 0 CODE 0 text24 dist/default/production\Serial1_XC8.X.production.o
+__ptext25 1CE0 0 CODE 0 text25 dist/default/production\Serial1_XC8.X.production.o
+__ptext26 1E02 0 CODE 0 text26 dist/default/production\Serial1_XC8.X.production.o
+__ptext27 1CFC 0 CODE 0 text27 dist/default/production\Serial1_XC8.X.production.o
+__ptext28 1CAE 0 CODE 0 text28 dist/default/production\Serial1_XC8.X.production.o
+__ptext29 1D8A 0 CODE 0 text29 dist/default/production\Serial1_XC8.X.production.o
+__ptext30 1E9C 0 CODE 0 text30 dist/default/production\Serial1_XC8.X.production.o
+__ptext31 1CD2 0 CODE 0 text31 dist/default/production\Serial1_XC8.X.production.o
+__ptext32 1D38 0 CODE 0 text32 dist/default/production\Serial1_XC8.X.production.o
+__ptext33 1D22 0 CODE 0 text33 dist/default/production\Serial1_XC8.X.production.o
+__ptext34 1DAE 0 CODE 0 text34 dist/default/production\Serial1_XC8.X.production.o
+___aldiv 4CC 0 CODE 0 text3 dist/default/production\Serial1_XC8.X.production.o
+___aodiv AF8 0 CODE 0 text16 dist/default/production\Serial1_XC8.X.production.o
+___aomod 924 0 CODE 0 text15 dist/default/production\Serial1_XC8.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 5EC 0 CODE 0 maintext dist/default/production\Serial1_XC8.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+?_dtoa 30 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+_printf A 0 CODE 0 text4 dist/default/production\Serial1_XC8.X.production.o
+__size_of_serial_init 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+___wmul@multiplier 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+_LATBbits 17 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_strlen 1E68 0 CODE 0 text9 dist/default/production\Serial1_XC8.X.production.o
+__size_of_vfprintf 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_SSP1CLKPPS EC5 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_SSP1DATPPS EC6 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ADCON0bits 93 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_adc_init 1D8A 0 CODE 0 text29 dist/default/production\Serial1_XC8.X.production.o
+main@buffer A2 0 BANK1 1 cstackBANK1 dist/default/production\Serial1_XC8.X.production.o
+?_vfpfcnvrt 4E 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+main@mm CC 0 BANK1 1 cstackBANK1 dist/default/production\Serial1_XC8.X.production.o
+__end_of_dht11_init 1CBA 0 CODE 0 text28 dist/default/production\Serial1_XC8.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR3bits 70F 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Lend_init 4 0 CODE 0 end_init -
+___aodiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+___aodiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__end_of_adc_init 1DAE 0 CODE 0 text29 dist/default/production\Serial1_XC8.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_I2C_restart 1CD2 0 CODE 0 text31 dist/default/production\Serial1_XC8.X.production.o
+printf@ap 6F 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+end_of_initialization FFA 0 CODE 0 cinit dist/default/production\Serial1_XC8.X.production.o
+__end_of_LCD_INIT_STRING 2008 0 STRCODE 0 stringtext1 dist/default/production\Serial1_XC8.X.production.o
+__Hintentry 4 0 CODE 0 intentry -
+__size_of_printf 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+fputc@c 72 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+fputs@c 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+fputs@i 21 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+fputs@s 23 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___aldiv 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+?___aodiv 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+?___aomod 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+vfprintf@fmt 5E 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_BAUD1CONbits 11F 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__size_of_strlen 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+vfpfcnvrt@ap 4F 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+vfpfcnvrt@fp 5D 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+vfpfcnvrt@ll 55 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__ptext1 1EDA 0 CODE 0 text1 dist/default/production\Serial1_XC8.X.production.o
+__ptext2 90 0 CODE 0 text2 dist/default/production\Serial1_XC8.X.production.o
+__ptext3 4CC 0 CODE 0 text3 dist/default/production\Serial1_XC8.X.production.o
+__ptext4 A 0 CODE 0 text4 dist/default/production\Serial1_XC8.X.production.o
+__ptext5 2E 0 CODE 0 text5 dist/default/production\Serial1_XC8.X.production.o
+__ptext6 76E 0 CODE 0 text6 dist/default/production\Serial1_XC8.X.production.o
+__ptext7 CFA 0 CODE 0 text7 dist/default/production\Serial1_XC8.X.production.o
+__ptext8 270 0 CODE 0 text8 dist/default/production\Serial1_XC8.X.production.o
+__ptext9 1E68 0 CODE 0 text9 dist/default/production\Serial1_XC8.X.production.o
+vfprintf@ap 60 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+vfprintf@fp 63 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+vfprintf@cfmt 64 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+___aldiv@dividend 74 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+_sprintf 1EDA 0 CODE 0 text1 dist/default/production\Serial1_XC8.X.production.o
+_vfprintf 2E 0 CODE 0 text5 dist/default/production\Serial1_XC8.X.production.o
+__size_of_lcd_send_byte 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+lcd_init@i 7C 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+sprintf@ap 69 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+__Hstringtext3 0 0 ABS 0 stringtext3 -
+__end_of_vfprintf 90 0 CODE 0 text5 dist/default/production\Serial1_XC8.X.production.o
+serial_init@baud 26 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+__end_of__initialization FFA 0 CODE 0 cinit dist/default/production\Serial1_XC8.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+_LCD_INIT_STRING 2000 0 STRCODE 0 stringtext1 dist/default/production\Serial1_XC8.X.production.o
+_SP1BRGH 11C 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_SP1BRGL 11B 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_SSP1CON2bits 191 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__end_of_lcd_send_byte 1E02 0 CODE 0 text20 dist/default/production\Serial1_XC8.X.production.o
+_high_byte DC 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+I2C_write@I2C_data 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+_SSP1ADD 18D 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_SSP1BUF 18C 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__Hend_init 8 0 CODE 0 end_init -
+___aldiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+lcd_gotoxy@x 20 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+lcd_gotoxy@y 7A 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+lcd_send_byte@n 77 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+serial_TX@dato 70 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+sprintf@f 6B 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+sprintf@s 6A 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+putch@txData 71 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+__end_of_dtoa FDA 0 CODE 0 text7 dist/default/production\Serial1_XC8.X.production.o
+__end_of_init 1E34 0 CODE 0 text26 dist/default/production\Serial1_XC8.X.production.o
+__end_of_main 76E 0 CODE 0 maintext dist/default/production\Serial1_XC8.X.production.o
+printf@fmt 66 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+_ADCLK 98 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ADPCH 9E 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_ADREF 9A 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__end_of_fputc 1C0 0 CODE 0 text11 dist/default/production\Serial1_XC8.X.production.o
+__end_of_fputs 1F72 0 CODE 0 text10 dist/default/production\Serial1_XC8.X.production.o
+?_sprintf 66 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+_PORTA C 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_PORTB D 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_PORTC E 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_RCREG 119 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_RXPPS ECB 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_TRISA 11 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_TRISB 12 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_TXREG 11A 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__end_of_putch 1CC6 0 CODE 0 text12 dist/default/production\Serial1_XC8.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_flags D9 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+_fputc 122 0 CODE 0 text11 dist/default/production\Serial1_XC8.X.production.o
+_fputs 1F20 0 CODE 0 text10 dist/default/production\Serial1_XC8.X.production.o
+_putch 1CBA 0 CODE 0 text12 dist/default/production\Serial1_XC8.X.production.o
+_width D5 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+__size_of_abs 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__size_of_pad 0 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+__initialization FDA 0 CODE 0 cinit dist/default/production\Serial1_XC8.X.production.o
+__pbssBANK1 CE 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+__pbssBANK2 120 0 BANK2 1 bssBANK2 dist/default/production\Serial1_XC8.X.production.o
+_serial_init 90 0 CODE 0 text2 dist/default/production\Serial1_XC8.X.production.o
+___wmul@product 74 0 COMMON 1 cstackCOMMON dist/default/production\Serial1_XC8.X.production.o
+dtoa@d 30 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+dtoa@i 4C 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+dtoa@n 44 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+dtoa@p 3E 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+dtoa@s 42 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+dtoa@w 40 0 BANK0 1 cstackBANK0 dist/default/production\Serial1_XC8.X.production.o
+_GlobalErr DF 0 BANK1 1 bssBANK1 dist/default/production\Serial1_XC8.X.production.o
+_ANSELAbits F38 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+_lcd_gotoxy 1F72 0 CODE 0 text18 dist/default/production\Serial1_XC8.X.production.o
+_ANSELBbits F43 0 ABS 0 - dist/default/production\Serial1_XC8.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7ED FDA 13 2
+text1 0 F6D 1EDA 23 2
+text2 0 48 90 49 2
+text3 0 266 4CC 90 2
+text4 0 5 A 12 2
+text5 0 17 2E 31 2
+text6 0 3B7 76E DB 2
+text7 0 67D CFA 170 2
+text8 0 138 270 59 2
+text9 0 F34 1E68 1A 2
+text10 0 F90 1F20 29 2
+text11 0 91 122 4F 2
+text12 0 E5D 1CBA 6 2
+text13 0 E87 1D0E A 2
+text14 0 F1A 1E34 1A 2
+text15 0 492 924 EA 2
+text16 0 57C AF8 101 2
+text17 0 E0 1C0 58 2
+text18 0 FB9 1F72 47 2
+text19 0 191 322 61 2
+text20 0 EEB 1DD6 16 2
+text21 0 1F2 3E4 74 2
+text22 0 EB4 1D68 11 2
+text23 0 EA8 1D50 C 2
+text24 0 E77 1CEE 7 2
+text25 0 E70 1CE0 7 2
+text26 0 F01 1E02 19 2
+text27 0 E7E 1CFC 9 2
+text28 0 E57 1CAE 6 2
+text29 0 EC5 1D8A 12 2
+text30 0 F4E 1E9C 1F 2
+text31 0 E69 1CD2 7 2
+text32 0 E9C 1D38 C 2
+text33 0 E91 1D22 B 2
+text34 0 ED7 1DAE 14 2
+maintext 0 2F6 5EC C1 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 50 1
+cstackBANK1 1 A0 A0 40 1
+stringtext1 0 1000 2000 4D 2
+reset_vec 0 0 0 4 2
+bssBANK2 1 120 120 20 1
+clrtext 0 E63 1CC6 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
