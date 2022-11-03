@@ -615,18 +615,18 @@ Project Directory:
     D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\
 
 Project Files:
-    main.c                                                  [12-ago.-22 15:45  CRC=19EEAA05]
-    main.h                                                  [12-ago.-22 15:19  CRC=BDE12542]
-    C:\Program Files (x86)\PICC_5.105\devices\16LF18857.h   [12-jul.-21 10:18  CRC=F188D5ED]
-    PIC16F18857_registers.h                                 [09-ago.-22 15:39  CRC=83481556]
-    MAX6675_Y.c                                             [03-jun.-22 18:45  CRC=3A3DE341]
-    lcd20x4.c                                               [21-feb.-22 21:48  CRC=C59082C4]
-    C:\Program Files (x86)\PICC_5.105\drivers\stdint.h      [13-may.-20 09:33  CRC=4FD89CC0]
-    C:\Program Files (x86)\PICC_5.105\drivers\stdbool.h     [17-abr.-19 13:48  CRC=969707C0]
-    interrupciones.c                                        [09-ago.-22 18:19  CRC=7363425C]
-    pid.c                                                   [12-ago.-22 14:56  CRC=74C6DF7F]
+    main.c                                                  [12-ago.-22 14:45  CRC=19EEAA05]
+    main.h                                                  [12-ago.-22 14:19  CRC=BDE12542]
+    C:\Program Files (x86)\PICC 5.104\devices\16LF18857.h   [13-may.-21 12:49  CRC=DDDEC7A3]
+    PIC16F18857_registers.h                                 [09-ago.-22 14:39  CRC=83481556]
+    MAX6675_Y.c                                             [03-jun.-22 17:45  CRC=3A3DE341]
+    lcd20x4.c                                               [21-feb.-22 20:48  CRC=C59082C4]
+    C:\Program Files (x86)\PICC 5.104\drivers\stdint.h      [13-may.-20 08:33  CRC=4FD89CC0]
+    C:\Program Files (x86)\PICC 5.104\drivers\stdbool.h     [17-abr.-19 12:48  CRC=969707C0]
+    interrupciones.c                                        [09-ago.-22 17:19  CRC=7363425C]
+    pid.c                                                   [12-ago.-22 13:56  CRC=74C6DF7F]
 
-Source signature=8FCFC669
+Source signature=7C25B81F
 Program memory checksum=0000
 Hex file CRC=5514
 

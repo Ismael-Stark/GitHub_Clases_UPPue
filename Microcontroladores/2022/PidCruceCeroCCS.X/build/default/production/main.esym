@@ -1,7 +1,7 @@
-D G "__PCM__" 0 0 ""5.105""
+D G "__PCM__" 0 0 ""5.104""
 D G "__DEVICE__" 0 0 ""
-D G "__DATE__" 0 0 ""12-Aug-22""
-D G "__TIME__" 0 0 ""15:45:21""
+D G "__DATE__" 0 0 ""2-Nov-22""
+D G "__TIME__" 0 0 ""14:56:12""
 D G "_UNICODE" 0 0 ""?""
 D G "__EVAL" 0 0 ""?""
 D G "__16LF18857" 0 0 "1" "Standard Header file for the PIC16LF18857 device ////////////////"
@@ -3316,7 +3316,6 @@ F B "spi_write2" 1 2
 F B "spi_data_is_in2" 0 0
 F B "setup_dac" 1 0
 F B "dac_write" 1 0
-F B "brownout_enable" 1 0
 F B "setup_cwg" 4 0
 F B "cwg_status" 0 0
 F B "cwg_restart" 0 0

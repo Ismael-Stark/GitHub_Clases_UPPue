@@ -15,12 +15,12 @@ Lines Stmts  %   Files
 ----- ----- ---  -----
    83    30  21  main.c
    74     0   0  main.h
- 2190     0   0  C:\Program Files (x86)\PICC_5.105\devices\16LF18857.h
+ 2190     0   0  C:\Program Files (x86)\PICC 5.104\devices\16LF18857.h
  4088     0   0  PIC16F18857_registers.h
    57    24  17  MAX6675_Y.c
   271    69  48  lcd20x4.c
-  195     0   0  C:\Program Files (x86)\PICC_5.105\drivers\stdint.h
-   39     0   0  C:\Program Files (x86)\PICC_5.105\drivers\stdbool.h
+  195     0   0  C:\Program Files (x86)\PICC 5.104\drivers\stdint.h
+   39     0   0  C:\Program Files (x86)\PICC 5.104\drivers\stdbool.h
    33    12   8  interrupciones.c
    21     8   6  pid.c
 ----- -----

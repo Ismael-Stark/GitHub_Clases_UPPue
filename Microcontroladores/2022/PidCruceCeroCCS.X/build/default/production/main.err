@@ -1,4 +1,4 @@
-Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\main on 12-ago.-22 at 15:45
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\main on 02-nov.-22 at 14:56
 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:2:10:  Warning#202  Variable never used:   valor
 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:3:10:  Warning#202  Variable never used:   control
 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\PidCruceCeroCCS.X\pid.c:6:10:  Warning#202  Variable never used:   rT

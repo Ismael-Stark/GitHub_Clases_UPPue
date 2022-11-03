@@ -1,7 +1,7 @@
 [PROJECT]
 Target=build\default\production\main.hex
 Processor_Text=PIC16LF18857
-CCSVersion=5.105
+CCSVersion=5.104
 Compiler=PCM
 [Target Data]
 FileList=main.c

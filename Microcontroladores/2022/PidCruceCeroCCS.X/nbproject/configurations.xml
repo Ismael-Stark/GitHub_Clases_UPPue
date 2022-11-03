@@ -43,7 +43,7 @@
         <targetPluginBoard></targetPluginBoard>
         <platformTool>noID</platformTool>
         <languageToolchain>CCSC</languageToolchain>
-        <languageToolchainVersion>5.105</languageToolchainVersion>
+        <languageToolchainVersion>5.104</languageToolchainVersion>
         <platform>3</platform>
       </toolsSet>
       <packs>
