@@ -1,0 +1,25 @@
+Name     Name ;
+PartNo   00 ;
+Date     07/11/2022 ;
+Revision 01 ;
+Designer Engineer ;
+Company  UPPue ;
+Assembly None ;
+Location  ;
+Device   g16v8 ;
+
+/* *************** INPUT PINS *********************/
+PIN  2   = A                        ; /*                                 */ 
+PIN  3   = B                         ; /*                                 */ 
+PIN  4   = C                         ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN  19   = S1                      ; /*                                 */ 
+PIN  18   = S2                      ; /*                                 */ 
+
+# suma
+! not
+& and
+
+S1 = (A&!B)#(C);
+S2 = B#A;

@@ -1,0 +1,96 @@
+{COMPONENT D:\ONEDRIVETRABAJO\CLASES\GITHUB_CLASES\SISTEMAS DIGITALES\GAL\HOLAMUNDO.SYM
+
+ {ENVIRONMENT
+  {PDIFvrev 3.00}
+  {Program "CUPL(WM) Version 5.0a"}
+  {DBtype "Schematic"}
+  {DBvrev 1.01}
+  {DBtime "Mon Nov 07 15:52:52 2022 "}
+  {DBunit "MIL"}
+  {DBgrid 10}
+  {Lyrstr "WIRES" 1 "BUS" 1 "GATE" 2 "IEEE" 2 "PINFUN" 3 "PINNUM" 1 
+          "PINNAM" 6 "PINCON" 4 "REFDES" 2 "ATTR" 6 "SDOT" 1 
+          "DEVICE" 5 "OUTLIN" 5 "ATTR2" 6 "NOTES" 6 "NETNAM" 4 
+          "CMPNAM" 5 "BORDER" 5}
+ }
+
+ {USER
+  {VIEW
+   {Mode SYMB}
+   {Nlst OPEN}
+   {Vw 0 0 2}
+   {Lv 12 2 2 2 0 0 2 2 2 2 0 0 2 1 2 0 0 0 0}
+   {Gs 10 10}
+  }
+ }
+
+ {DISPLAY
+  [Ly "PINNUM"]
+  [Ls "SOLID"][Wd 0]
+  [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+ }
+
+ {SYMBOL
+  {PIN_DEF
+   [Ly "PINCON"]
+   {P S2 {Pt "I/O"}{Lq 0}{Ploc 280 20}}
+   {P S1 {Pt "I/O"}{Lq 0}{Ploc 280 40}}
+  }
+
+  {PKG
+   [Ly "REFDES"]
+   [Ts 25][Tj "CB"][Tr 0][Tm "N"]
+   {Rdl 190 70}
+
+   [Ly "PINNUM"]
+   [Ts 15][Tj "LC"]
+   {Pnl 260 30}
+   {Pnl 260 50}
+
+   {Sd A 18 19}
+  }
+
+  {PIC
+   [Ly "GATE"]
+   [Ts 15][Tj "LC"][Tr 0][Tm "N"]
+   {R 130 60 250 0}
+   {L 250 20 280 20}
+   {L 250 40 280 40}
+   [Ly "PINNAM"]
+   [Tj "LC"]
+   [Tj "RC"]
+   {T "S2" 240 20}
+   {T "S1" 240 40}
+   [Ly "DEVICE"]
+   [Tj "CT"]
+   {T "VIRTUAL" 190 -10}
+  }
+
+  {ATR
+   {IN
+    {Org 100 20}
+    {Ty 255}
+   }
+   {EX
+    [Ly "ATTR2"]
+    [Ts 12][Tj "CT"][Tr 0][Tm "N"]
+    {At PLD D:\ONEDRIVETRABAJO\CLASES\GITHUB_CLASES\SISTEMAS DIGITALES\GAL\HOLAMUNDO 190 60}
+   }
+  }
+ }
+
+ {DETAIL
+  {ANNOTATE
+  }
+
+  {NET_DEF
+   {N S2
+   }
+   {N S1
+   }
+  }
+
+  {SUBCOMP
+  }
+ }
+}

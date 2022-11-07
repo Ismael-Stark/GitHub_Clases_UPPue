@@ -1,0 +1,21 @@
+%SIGNAL
+PIN   2 =  A 
+PIN   3 =  B 
+PIN   4 =  C 
+PIN  19 =  S1 
+PIN  18 =  S2 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+S1 =>
+    A & !B
+  # C
+
+S2 =>
+    B
+  # A
+
+%END
