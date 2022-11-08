@@ -72,6 +72,7 @@ int main(){
 	printf("la var bin guar el num: %d\n",bin);
 	/*formas de imprimir tipos de vaiables:
 	//https://learn.microsoft.com/es-es/cpp/c-runtime-library/format-specification-syntax-printf-and-wprintf-functions?view=msvc-170
+	//https://www.it.uc3m.es/pbasanta/asng/course_notes/input_output_printf_es.html#:~:text=Por%20ejemplo%20printf(%22%25*d,en%20blanco%20a%20la%20izquierda).&text=*-,Igual%20que%20el%20caso%20anterior%2C%20pero%20el%20n%C3%BAmero%20a%20utilizar,%22)%20imprime%20%E2%80%9Cabc%E2%80%9D.
 		%d para imprimir numeros enteros
 		%i para imprimir numeros enteros
 		%u para imprimir numeros sin signo
