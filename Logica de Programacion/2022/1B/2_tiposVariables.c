@@ -46,7 +46,7 @@ reales:	float, double
 */
 
 const float PI = 3.1416;
-const char SALUDO_FINAL[] = {"Listos para reprobar? XD"};//constante tipo string
+const char SALUDO_FINAL[25] = {"Listos para reprobar? XD"};//constante tipo string
 //el valor dentro de [] es ta cantidad de caracteres del mensaje +1
 //recordar que el espacio y el ? son caracteres
 
