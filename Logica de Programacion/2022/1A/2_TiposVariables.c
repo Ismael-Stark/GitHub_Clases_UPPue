@@ -17,7 +17,7 @@ tambien dentro de " " podemos poner la ruta completa donde este
 el archivo llamar
 */
 
-#define pi 3.1416
+//#define pi 3.1416
 /* tipos de variables
 cacter:	para guardar letras que esten en el codigo ASCII
 
@@ -41,7 +41,11 @@ reales:	float, double
 */
 //long y short, deben ocuparse en combinacion con int
 //unsiged y signned solo debe usarse con int(short,long) y char
+//const es para declarar constantes
 int main(){
+	const float pi = 3.1416; //declaracion de una constante
+							//una constante a la hora de declararla se le debe asignar
+							//su valor, no se puede despues
 	char a = 'Y';//comilla '' simple para guardar o de clarar una variable que guarda solamente una letra
 	unsigned char b = 88;
 	int q  = 1187124682;//32bits
