@@ -20,6 +20,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
 "111 C:\Program Files\Microchip\xc8\v2.31\pic\include\c99\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"391 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 391:     struct {
+[s S33 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S33 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"390
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 390: typedef union {
+[u S32 `S33 1 ]
+[n S32 . . ]
+"402
+[; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 402: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
+[v _PORTAbits `VS32 ~T0 @X0 0 e@12 ]
 "55 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h: 55: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1580,52 +1591,97 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _coin
 -> -> 0 `i `uc
 ]
+"6
+[; ;main.c: 6: char coinant=0;
+[v _coinant `uc ~T0 @X0 1 e ]
+[i _coinant
+-> -> 0 `i `uc
+]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"7
-[; ;main.c: 7: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
 "8
-[; ;main.c: 8: {
+[; ;main.c: 8: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"9
+[; ;main.c: 9: {
 {
 [e :U _main ]
 [f ]
-"9
-[; ;main.c: 9:     uint8_t a=0;
+"10
+[; ;main.c: 10:     uint8_t a=0;
 [v _a `uc ~T0 @X0 1 a ]
 [e = _a -> -> 0 `i `uc ]
-"11
-[; ;main.c: 11:     SYSTEM_Initialize();
+"12
+[; ;main.c: 12:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"21
-[; ;main.c: 21:     _delay((unsigned long)((500)*(32000000/4000.0)));
+"22
+[; ;main.c: 22:     _delay((unsigned long)((500)*(32000000/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"23
-[; ;main.c: 23:     (INTCONbits.GIE = 1);
+"24
+[; ;main.c: 24:     (INTCONbits.GIE = 1);
 [e = . . _INTCONbits 0 3 -> -> 1 `i `uc ]
-"26
-[; ;main.c: 26:     (INTCONbits.PEIE = 1);
+"27
+[; ;main.c: 27:     (INTCONbits.PEIE = 1);
 [e = . . _INTCONbits 0 2 -> -> 1 `i `uc ]
-"34
-[; ;main.c: 34:     while (1)
-[e :U 1570 ]
 "35
-[; ;main.c: 35:     {
-{
-"36
-[; ;main.c: 36:         printf("contador %i, coin: %i pejos\n", a,coin);
+[; ;main.c: 35:     printf("credito: %i pejos\n", a,coin);
 [e ( _printf , , (. :s 1C -> _a `i -> _coin `i ]
+"36
+[; ;main.c: 36:     while (1)
+[e :U 1570 ]
 "37
-[; ;main.c: 37:         _delay((unsigned long)((500)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+[; ;main.c: 37:     {
+{
 "39
-[; ;main.c: 39:     }
+[; ;main.c: 39:         if (coin != coinant){
+[e $ ! != -> _coin `i -> _coinant `i 1572  ]
+{
+"40
+[; ;main.c: 40:             printf("credito: %i pejos\n",coin);
+[e ( _printf , (. :s 2C -> _coin `i ]
+"41
+[; ;main.c: 41:             coinant = coin;
+[e = _coinant _coin ]
+"42
+[; ;main.c: 42:         }
+}
+[e :U 1572 ]
+"44
+[; ;main.c: 44:         if(!PORTAbits.RA5 && coin >= 5){
+[e $ ! && ! != -> . . _PORTAbits 0 5 `i -> 0 `i >= -> _coin `i -> 5 `i 1573  ]
+{
+"45
+[; ;main.c: 45:             printf("depachando litros\n");
+[e ( _printf :s 3C ]
+"46
+[; ;main.c: 46:             coin = coin - 5;
+[e = _coin -> - -> _coin `i -> 5 `i `uc ]
+"47
+[; ;main.c: 47:             _delay((unsigned long)((500)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"48
+[; ;main.c: 48:             while(!PORTAbits.RA5){}
+[e $U 1574  ]
+[e :U 1575 ]
+{
+}
+[e :U 1574 ]
+[e $ ! != -> . . _PORTAbits 0 5 `i -> 0 `i 1575  ]
+[e :U 1576 ]
+"50
+[; ;main.c: 50:         }
+}
+[e :U 1573 ]
+"52
+[; ;main.c: 52:     }
 }
 [e :U 1569 ]
 [e $U 1570  ]
 [e :U 1571 ]
-"40
-[; ;main.c: 40: }
+"53
+[; ;main.c: 53: }
 [e :UE 1568 ]
 }
 [p f _printf 8388736 ]
-[a 1C 99 111 110 116 97 100 111 114 32 37 105 44 32 99 111 105 110 58 32 37 105 32 112 101 106 111 115 10 0 ]
+[a 3C 100 101 112 97 99 104 97 110 100 111 32 108 105 116 114 111 115 10 0 ]
+[a 1C 99 114 101 100 105 116 111 58 32 37 105 32 112 101 106 111 115 10 0 ]
+[a 2C 99 114 101 100 105 116 111 58 32 37 105 32 112 101 106 111 115 10 0 ]

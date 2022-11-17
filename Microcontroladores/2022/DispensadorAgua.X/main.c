@@ -3,6 +3,7 @@
 #include "mcc_generated_files/mcc.h"
 
 char coin = 0;
+char coinant=0;
 
 void main(void)
 {
@@ -31,10 +32,22 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
+    printf("credito: %i pejos\n", a,coin);
     while (1)
     {
-        printf("contador %i, coin: %i pejos\n", a,coin);
-        __delay_ms(500);
+        
+        if (coin != coinant){
+            printf("credito: %i pejos\n",coin);
+            coinant = coin;
+        }
+
+        if(!boton_GetValue() && coin >= 5){
+            printf("depachando litros\n");
+            coin = coin - 5;
+            __delay_ms(500);
+            while(!boton_GetValue()){}
+            
+        }
         // Add your application code
     }
 }

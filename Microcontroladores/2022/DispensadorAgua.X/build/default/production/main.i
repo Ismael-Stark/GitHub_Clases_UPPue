@@ -20108,13 +20108,14 @@ void PMD_Initialize(void);
 
 
 char coin = 0;
+char coinant=0;
 
 void main(void)
 {
     uint8_t a=0;
 
     SYSTEM_Initialize();
-# 21 "main.c"
+# 22 "main.c"
     _delay((unsigned long)((500)*(32000000/4000.0)));
 
     (INTCONbits.GIE = 1);
@@ -20128,10 +20129,22 @@ void main(void)
 
 
 
+    printf("credito: %i pejos\n", a,coin);
     while (1)
     {
-        printf("contador %i, coin: %i pejos\n", a,coin);
-        _delay((unsigned long)((500)*(32000000/4000.0)));
+
+        if (coin != coinant){
+            printf("credito: %i pejos\n",coin);
+            coinant = coin;
+        }
+
+        if(!PORTAbits.RA5 && coin >= 5){
+            printf("depachando litros\n");
+            coin = coin - 5;
+            _delay((unsigned long)((500)*(32000000/4000.0)));
+            while(!PORTAbits.RA5){}
+
+        }
 
     }
 }
