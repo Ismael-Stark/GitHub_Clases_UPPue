@@ -58,13 +58,13 @@ I2C1_DATA_NACK 3
 I2C1_TIMEOUT 4
 I2C1_NULL 5
 ]
-"1 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
 [v ___aodiv __aodiv `(o  1 e 8 0 ]
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
 [v ___aomod __aomod `(o  1 e 8 0 ]
-"72 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+"72 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _pad pad `(i  1 s 2 pad ]
 "287
 [v _dtoa dtoa `(i  1 s 2 dtoa ]
@@ -72,23 +72,23 @@ I2C1_NULL 5
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 "1390
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
-"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\printf.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
-"10 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\sprcadd.c
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
-"4 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\Umul8_16.c
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul8_16.c
 [v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\pic\__eeprom.c
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
-"8 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\main.c
+"9 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\main.c
 [v _main main `(v  1 e 1 0 ]
 "66 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
@@ -236,15 +236,17 @@ I2C1_NULL 5
 [v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
 "55 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
-[s S67 . 1 `uc 1 INTEDG 1 0 :1:0 
+"5 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\sensorFlujo.c
+[v _flujo_init flujo_init `(v  1 e 1 0 ]
+[s S1189 . 1 `uc 1 INTEDG 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-"365 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163/xc8\pic\include\proc\pic16f18855.h
-[u S72 . 1 `S67 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES72  1 e 1 @11 ]
-[s S85 . 1 `uc 1 RA0 1 0 :1:0 
+"364 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h
+[u S1194 . 1 `S1189 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES1194  1 e 1 @11 ]
+[s S1284 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
@@ -253,32 +255,32 @@ I2C1_NULL 5
 `uc 1 RA6 1 0 :1:6 
 `uc 1 RA7 1 0 :1:7 
 ]
-"402
-[u S94 . 1 `S85 1 . 1 0 ]
-[v _PORTAbits PORTAbits `VES94  1 e 1 @12 ]
-"592
+"401
+[u S1293 . 1 `S1284 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1293  1 e 1 @12 ]
+"591
 [v _TRISA TRISA `VEuc  1 e 1 @17 ]
-"654
+"653
 [v _TRISB TRISB `VEuc  1 e 1 @18 ]
-"716
+"715
 [v _TRISC TRISC `VEuc  1 e 1 @19 ]
-"778
+"777
 [v _LATA LATA `VEuc  1 e 1 @22 ]
-"840
+"839
 [v _LATB LATB `VEuc  1 e 1 @23 ]
-"902
+"901
 [v _LATC LATC `VEuc  1 e 1 @24 ]
-"3504
+"3503
 [v _RC1REG RC1REG `VEuc  1 e 1 @281 ]
-"3558
+"3557
 [v _TX1REG TX1REG `VEuc  1 e 1 @282 ]
-"3619
+"3618
 [v _SP1BRGL SP1BRGL `VEuc  1 e 1 @283 ]
-"3689
+"3688
 [v _SP1BRGH SP1BRGH `VEuc  1 e 1 @284 ]
-"3743
+"3742
 [v _RC1STA RC1STA `VEuc  1 e 1 @285 ]
-[s S345 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S275 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -287,12 +289,12 @@ I2C1_NULL 5
 `uc 1 RX9 1 0 :1:6 
 `uc 1 SPEN 1 0 :1:7 
 ]
-"3769
-[u S354 . 1 `S345 1 . 1 0 ]
-[v _RC1STAbits RC1STAbits `VES354  1 e 1 @285 ]
-"3923
+"3768
+[u S284 . 1 `S275 1 . 1 0 ]
+[v _RC1STAbits RC1STAbits `VES284  1 e 1 @285 ]
+"3922
 [v _TX1STA TX1STA `VEuc  1 e 1 @286 ]
-[s S324 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S254 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -301,18 +303,18 @@ I2C1_NULL 5
 `uc 1 TX9 1 0 :1:6 
 `uc 1 CSRC 1 0 :1:7 
 ]
-"3949
-[u S333 . 1 `S324 1 . 1 0 ]
-[v _TX1STAbits TX1STAbits `VES333  1 e 1 @286 ]
-"4103
+"3948
+[u S263 . 1 `S254 1 . 1 0 ]
+[v _TX1STAbits TX1STAbits `VES263  1 e 1 @286 ]
+"4102
 [v _BAUD1CON BAUD1CON `VEuc  1 e 1 @287 ]
-"4349
+"4348
 [v _SSP1BUF SSP1BUF `VEuc  1 e 1 @396 ]
-"4369
+"4368
 [v _SSP1ADD SSP1ADD `VEuc  1 e 1 @397 ]
-"4559
+"4558
 [v _SSP1STAT SSP1STAT `VEuc  1 e 1 @399 ]
-[s S819 . 1 `uc 1 BF 1 0 :1:0 
+[s S749 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -321,34 +323,34 @@ I2C1_NULL 5
 `uc 1 CKE 1 0 :1:6 
 `uc 1 SMP 1 0 :1:7 
 ]
-"4668
-[s S828 . 1 `uc 1 . 1 0 :2:0 
+"4667
+[s S758 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S833 . 1 `uc 1 . 1 0 :2:0 
+[s S763 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S838 . 1 `uc 1 . 1 0 :2:0 
+[s S768 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S843 . 1 `uc 1 . 1 0 :2:0 
+[s S773 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[s S848 . 1 `uc 1 . 1 0 :2:0 
+[s S778 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DAT 1 0 :1:5 
 ]
-[s S854 . 1 `uc 1 BF1 1 0 :1:0 
+[s S784 . 1 `uc 1 BF1 1 0 :1:0 
 `uc 1 UA1 1 0 :1:1 
 `uc 1 R 1 0 :1:2 
 `uc 1 START 1 0 :1:3 
@@ -357,66 +359,66 @@ I2C1_NULL 5
 `uc 1 CKE1 1 0 :1:6 
 `uc 1 SMP1 1 0 :1:7 
 ]
-[s S863 . 1 `uc 1 . 1 0 :2:0 
+[s S793 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW 1 0 :1:2 
 `uc 1 START1 1 0 :1:3 
 `uc 1 STOP1 1 0 :1:4 
 `uc 1 DA 1 0 :1:5 
 ]
-[s S869 . 1 `uc 1 . 1 0 :2:0 
+[s S799 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 RW1 1 0 :1:2 
 `uc 1 I2C_START1 1 0 :1:3 
 `uc 1 I2C_STOP2 1 0 :1:4 
 `uc 1 DA1 1 0 :1:5 
 ]
-[s S875 . 1 `uc 1 . 1 0 :2:0 
+[s S805 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ1 1 0 :1:2 
 `uc 1 S2 1 0 :1:3 
 `uc 1 P2 1 0 :1:4 
 `uc 1 DATA_ADDRESS1 1 0 :1:5 
 ]
-[s S881 . 1 `uc 1 . 1 0 :2:0 
+[s S811 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A1 1 0 :1:5 
 ]
-[s S886 . 1 `uc 1 . 1 0 :2:0 
+[s S816 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_nA1 1 0 :1:5 
 ]
-[s S891 . 1 `uc 1 . 1 0 :2:0 
+[s S821 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_nW1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 I2C_DAT1 1 0 :1:5 
 ]
-[s S896 . 1 `uc 1 . 1 0 :2:0 
+[s S826 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW2 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA2 1 0 :1:5 
 ]
-[s S901 . 1 `uc 1 . 1 0 :2:0 
+[s S831 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE1 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS1 1 0 :1:5 
 ]
-[u S906 . 1 `S819 1 . 1 0 `S828 1 . 1 0 `S833 1 . 1 0 `S838 1 . 1 0 `S843 1 . 1 0 `S848 1 . 1 0 `S854 1 . 1 0 `S863 1 . 1 0 `S869 1 . 1 0 `S875 1 . 1 0 `S881 1 . 1 0 `S886 1 . 1 0 `S891 1 . 1 0 `S896 1 . 1 0 `S901 1 . 1 0 ]
-[v _SSP1STATbits SSP1STATbits `VES906  1 e 1 @399 ]
-"4923
+[u S836 . 1 `S749 1 . 1 0 `S758 1 . 1 0 `S763 1 . 1 0 `S768 1 . 1 0 `S773 1 . 1 0 `S778 1 . 1 0 `S784 1 . 1 0 `S793 1 . 1 0 `S799 1 . 1 0 `S805 1 . 1 0 `S811 1 . 1 0 `S816 1 . 1 0 `S821 1 . 1 0 `S826 1 . 1 0 `S831 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES836  1 e 1 @399 ]
+"4922
 [v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
-[s S548 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S478 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
-"4953
-[s S554 . 1 `uc 1 SSPM0 1 0 :1:0 
+"4952
+[s S484 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[s S559 . 1 `uc 1 SSPM01 1 0 :1:0 
+[s S489 . 1 `uc 1 SSPM01 1 0 :1:0 
 `uc 1 SSPM11 1 0 :1:1 
 `uc 1 SSPM21 1 0 :1:2 
 `uc 1 SSPM31 1 0 :1:3 
@@ -425,11 +427,11 @@ I2C1_NULL 5
 `uc 1 SSPOV1 1 0 :1:6 
 `uc 1 WCOL1 1 0 :1:7 
 ]
-[u S568 . 1 `S548 1 . 1 0 `S554 1 . 1 0 `S559 1 . 1 0 ]
-[v _SSP1CON1bits SSP1CON1bits `VES568  1 e 1 @400 ]
-"5043
+[u S498 . 1 `S478 1 . 1 0 `S484 1 . 1 0 `S489 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES498  1 e 1 @400 ]
+"5042
 [v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @401 ]
-[s S732 . 1 `uc 1 SEN 1 0 :1:0 
+[s S662 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -438,18 +440,18 @@ I2C1_NULL 5
 `uc 1 ACKSTAT 1 0 :1:6 
 `uc 1 GCEN 1 0 :1:7 
 ]
-"5090
-[s S741 . 1 `uc 1 . 1 0 :1:0 
+"5089
+[s S671 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADMSK 1 0 :5:1 
 ]
-[s S744 . 1 `uc 1 . 1 0 :1:0 
+[s S674 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 ADMSK1 1 0 :1:1 
 `uc 1 ADMSK2 1 0 :1:2 
 `uc 1 ADMSK3 1 0 :1:3 
 `uc 1 ADMSK4 1 0 :1:4 
 `uc 1 ADMSK5 1 0 :1:5 
 ]
-[s S751 . 1 `uc 1 SEN1 1 0 :1:0 
+[s S681 . 1 `uc 1 SEN1 1 0 :1:0 
 `uc 1 ADMSK11 1 0 :1:1 
 `uc 1 ADMSK21 1 0 :1:2 
 `uc 1 ADMSK31 1 0 :1:3 
@@ -458,122 +460,122 @@ I2C1_NULL 5
 `uc 1 ACKSTAT1 1 0 :1:6 
 `uc 1 GCEN1 1 0 :1:7 
 ]
-[s S760 . 1 `uc 1 . 1 0 :1:0 
+[s S690 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 RSEN1 1 0 :1:1 
 `uc 1 PEN1 1 0 :1:2 
 `uc 1 RCEN1 1 0 :1:3 
 `uc 1 ADMSK41 1 0 :1:4 
 `uc 1 ADMSK51 1 0 :1:5 
 ]
-[u S767 . 1 `S732 1 . 1 0 `S741 1 . 1 0 `S744 1 . 1 0 `S751 1 . 1 0 `S760 1 . 1 0 ]
-[v _SSP1CON2bits SSP1CON2bits `VES767  1 e 1 @401 ]
-[s S1239 . 1 `uc 1 INTF 1 0 :1:0 
+[u S697 . 1 `S662 1 . 1 0 `S671 1 . 1 0 `S674 1 . 1 0 `S681 1 . 1 0 `S690 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES697  1 e 1 @401 ]
+[s S1169 . 1 `uc 1 INTF 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIF 1 0 :1:4 
 `uc 1 TMR0IF 1 0 :1:5 
 ]
-"21014
-[u S1244 . 1 `S1239 1 . 1 0 ]
-[v _PIR0bits PIR0bits `VES1244  1 e 1 @1804 ]
-[s S307 . 1 `uc 1 SSP1IF 1 0 :1:0 
+"21013
+[u S1174 . 1 `S1169 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES1174  1 e 1 @1804 ]
+[s S237 . 1 `uc 1 SSP1IF 1 0 :1:0 
 `uc 1 BCL1IF 1 0 :1:1 
 `uc 1 SSP2IF 1 0 :1:2 
 `uc 1 BCL2IF 1 0 :1:3 
 `uc 1 TXIF 1 0 :1:4 
 `uc 1 RCIF 1 0 :1:5 
 ]
-"21121
-[u S314 . 1 `S307 1 . 1 0 ]
-[v _PIR3bits PIR3bits `VES314  1 e 1 @1807 ]
-[s S1267 . 1 `uc 1 INTE 1 0 :1:0 
+"21120
+[u S244 . 1 `S237 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES244  1 e 1 @1807 ]
+[s S1202 . 1 `uc 1 INTE 1 0 :1:0 
 `uc 1 . 1 0 :3:1 
 `uc 1 IOCIE 1 0 :1:4 
 `uc 1 TMR0IE 1 0 :1:5 
 ]
-"21436
-[u S1272 . 1 `S1267 1 . 1 0 ]
-[v _PIE0bits PIE0bits `VES1272  1 e 1 @1814 ]
-[s S1010 . 1 `uc 1 SSP1IE 1 0 :1:0 
+"21435
+[u S1207 . 1 `S1202 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES1207  1 e 1 @1814 ]
+[s S940 . 1 `uc 1 SSP1IE 1 0 :1:0 
 `uc 1 BCL1IE 1 0 :1:1 
 `uc 1 SSP2IE 1 0 :1:2 
 `uc 1 BCL2IE 1 0 :1:3 
 `uc 1 TXIE 1 0 :1:4 
 `uc 1 RCIE 1 0 :1:5 
 ]
-"21543
-[u S1017 . 1 `S1010 1 . 1 0 ]
-[v _PIE3bits PIE3bits `VES1017  1 e 1 @1817 ]
-"21845
+"21542
+[u S947 . 1 `S940 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES947  1 e 1 @1817 ]
+"21844
 [v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
-"21902
+"21901
 [v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
-"21973
+"21972
 [v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
-"22018
+"22017
 [v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
-"22074
+"22073
 [v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
-"22125
+"22124
 [v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
-"23196
+"23195
 [v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
-"23336
+"23335
 [v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
-"23433
+"23432
 [v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
-"23484
+"23483
 [v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
-"23542
+"23541
 [v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
-"29655
+"29654
 [v _INTPPS INTPPS `VEuc  1 e 1 @3728 ]
-"31255
+"31254
 [v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3781 ]
-"31307
+"31306
 [v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3782 ]
-"31567
+"31566
 [v _RXPPS RXPPS `VEuc  1 e 1 @3787 ]
-"32471
+"32470
 [v _RC0PPS RC0PPS `VEuc  1 e 1 @3872 ]
-"32621
+"32620
 [v _RC3PPS RC3PPS `VEuc  1 e 1 @3875 ]
-"32671
+"32670
 [v _RC4PPS RC4PPS `VEuc  1 e 1 @3876 ]
-"32871
+"32870
 [v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
-"32933
+"32932
 [v _WPUA WPUA `VEuc  1 e 1 @3897 ]
-"32995
+"32994
 [v _ODCONA ODCONA `VEuc  1 e 1 @3898 ]
-"33057
+"33056
 [v _SLRCONA SLRCONA `VEuc  1 e 1 @3899 ]
-"33119
+"33118
 [v _INLVLA INLVLA `VEuc  1 e 1 @3900 ]
-"33491
+"33490
 [v _ANSELB ANSELB `VEuc  1 e 1 @3907 ]
-"33553
+"33552
 [v _WPUB WPUB `VEuc  1 e 1 @3908 ]
-"33615
+"33614
 [v _ODCONB ODCONB `VEuc  1 e 1 @3909 ]
-"33677
+"33676
 [v _SLRCONB SLRCONB `VEuc  1 e 1 @3910 ]
-"33739
+"33738
 [v _INLVLB INLVLB `VEuc  1 e 1 @3911 ]
-"34111
+"34110
 [v _ANSELC ANSELC `VEuc  1 e 1 @3918 ]
-"34173
+"34172
 [v _WPUC WPUC `VEuc  1 e 1 @3919 ]
-"34235
+"34234
 [v _ODCONC ODCONC `VEuc  1 e 1 @3920 ]
-"34297
+"34296
 [v _SLRCONC SLRCONC `VEuc  1 e 1 @3921 ]
-"34359
+"34358
 [v _INLVLC INLVLC `VEuc  1 e 1 @3922 ]
-"34731
+"34730
 [v _WPUE WPUE `VEuc  1 e 1 @3941 ]
-"34752
+"34751
 [v _INLVLE INLVLE `VEuc  1 e 1 @3944 ]
-"55 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+"55 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _flags flags `i  1 s 2 flags ]
 [v _prec prec `i  1 s 2 prec ]
 [v _width width `i  1 s 2 width ]
@@ -581,18 +583,18 @@ I2C1_NULL 5
 [v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
 "69
 [v _nout nout `i  1 s 2 nout ]
-"5 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\main.c
+"6 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\main.c
 [v _coin coin `uc  1 e 1 0 ]
-"6
-[v _coinant coinant `uc  1 e 1 0 ]
-[s S261 . 1 `uc 1 perr 1 0 :1:0 
+"7
+[v _coinAnt coinAnt `uc  1 e 1 0 ]
+[s S191 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "52 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\mcc_generated_files/eusart.c
-[u S266 . 1 `S261 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxLastError eusartRxLastError `VES266  1 e 1 0 ]
+[u S196 . 1 `S191 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES196  1 e 1 0 ]
 "58
 [v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
@@ -603,64 +605,64 @@ I2C1_NULL 5
 [v _INT_InterruptHandler INT_InterruptHandler `*.37(v  1 e 2 0 ]
 "146 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\mcc_generated_files/i2c1_master.c
 [v _i2c1_fsmStateTable i2c1_fsmStateTable `DC[16]*.37(E12076  1 e 32 0 ]
-[s S522 . 29 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E12076 1 state 1 26 `E355 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+[s S452 . 29 `[6]*.37(E360 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E12076 1 state 1 26 `E355 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
 `uc 1 busy 1 28 :1:1 
 `uc 1 inUse 1 28 :1:2 
 `uc 1 bufferFree 1 28 :1:3 
 ]
 "165
-[v _I2C1_Status I2C1_Status `S522  1 e 29 0 ]
-"8 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\main.c
+[v _I2C1_Status I2C1_Status `S452  1 e 29 0 ]
+"9 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
-"53
+"55
 } 0
-"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\printf.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\printf.c
 [v _printf printf `(i  1 e 2 0 ]
 {
 "8
-[v printf@ap ap `[1]*.4v  1 a 1 79 ]
+[v printf@ap ap `[1]*.4v  1 a 1 75 ]
 "5
 [v printf@fmt fmt `*.25DCuc  1 p 2 70 ]
 "13
 } 0
-"1390 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\doprnt.c
+"1390 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\doprnt.c
 [v _vfprintf vfprintf `(i  1 e 2 0 ]
 {
-[s S1773 _IO_FILE 0 ]
-[v vfprintf@fp fp `*.1S1773  1 a 1 wreg ]
+[s S1778 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.1S1778  1 a 1 wreg ]
 "1393
 [v vfprintf@cfmt cfmt `*.25uc  1 a 2 68 ]
 "1390
-[v vfprintf@fp fp `*.1S1773  1 a 1 wreg ]
+[v vfprintf@fp fp `*.1S1778  1 a 1 wreg ]
 [v vfprintf@fmt fmt `*.25DCuc  1 p 2 62 ]
 [v vfprintf@ap ap `*.4*.4v  1 p 1 64 ]
 "1395
 "1390
-[v vfprintf@fp fp `*.1S1773  1 a 1 67 ]
+[v vfprintf@fp fp `*.1S1778  1 a 1 67 ]
 "1404
 } 0
 "692
 [v _vfpfcnvrt vfpfcnvrt `(i  1 s 2 vfpfcnvrt ]
 {
-[s S1773 _IO_FILE 0 ]
-[v vfpfcnvrt@fp fp `*.1S1773  1 a 1 wreg ]
+[s S1778 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.1S1778  1 a 1 wreg ]
 "696
 [v vfpfcnvrt@ll ll `o  1 a 8 53 ]
 "692
-[v vfpfcnvrt@fp fp `*.1S1773  1 a 1 wreg ]
+[v vfpfcnvrt@fp fp `*.1S1778  1 a 1 wreg ]
 [v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 46 ]
 [v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 47 ]
 "702
 "692
-[v vfpfcnvrt@fp fp `*.1S1773  1 a 1 61 ]
+[v vfpfcnvrt@fp fp `*.1S1778  1 a 1 61 ]
 "1387
 } 0
 "287
 [v _dtoa dtoa `(i  1 s 2 dtoa ]
 {
-[s S1773 _IO_FILE 0 ]
-[v dtoa@fp fp `*.1S1773  1 a 1 wreg ]
+[s S1778 _IO_FILE 0 ]
+[v dtoa@fp fp `*.1S1778  1 a 1 wreg ]
 "290
 [v dtoa@n n `o  1 a 8 36 ]
 "289
@@ -669,31 +671,31 @@ I2C1_NULL 5
 [v dtoa@w w `i  1 a 2 32 ]
 [v dtoa@p p `i  1 a 2 30 ]
 "287
-[v dtoa@fp fp `*.1S1773  1 a 1 wreg ]
+[v dtoa@fp fp `*.1S1778  1 a 1 wreg ]
 [v dtoa@d d `o  1 p 8 16 ]
 "293
 "287
-[v dtoa@fp fp `*.1S1773  1 a 1 29 ]
+[v dtoa@fp fp `*.1S1778  1 a 1 29 ]
 "328
 } 0
 "72
 [v _pad pad `(i  1 s 2 pad ]
 {
-[s S1773 _IO_FILE 0 ]
-[v pad@fp fp `*.1S1773  1 a 1 wreg ]
+[s S1778 _IO_FILE 0 ]
+[v pad@fp fp `*.1S1778  1 a 1 wreg ]
 "74
-[v pad@w w `i  1 a 2 13 ]
-[v pad@i i `i  1 a 2 11 ]
+[v pad@w w `i  1 a 2 12 ]
+[v pad@i i `i  1 a 2 10 ]
 "72
-[v pad@fp fp `*.1S1773  1 a 1 wreg ]
+[v pad@fp fp `*.1S1778  1 a 1 wreg ]
 [v pad@buf buf `*.4uc  1 p 1 7 ]
 [v pad@p p `i  1 p 2 8 ]
 "77
 "72
-[v pad@fp fp `*.1S1773  1 a 1 15 ]
+[v pad@fp fp `*.1S1778  1 a 1 14 ]
 "95
 } 0
-"5 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\strlen.c
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\strlen.c
 [v _strlen strlen `(ui  1 e 2 0 ]
 {
 [v strlen@s s `*.4DCuc  1 a 1 wreg ]
@@ -705,7 +707,7 @@ I2C1_NULL 5
 [v strlen@s s `*.4DCuc  1 a 1 5 ]
 "12
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputs.c
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputs.c
 [v _fputs fputs `(i  1 e 2 0 ]
 {
 [v fputs@s s `*.4DCuc  1 a 1 wreg ]
@@ -715,18 +717,18 @@ I2C1_NULL 5
 [v fputs@c c `uc  1 a 1 3 ]
 "8
 [v fputs@s s `*.4DCuc  1 a 1 wreg ]
-[s S1757 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputs@fp fp `*.1S1757  1 p 1 11 ]
+[s S1762 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputs@fp fp `*.1S1762  1 p 1 11 ]
 "13
 [v fputs@s s `*.4DCuc  1 a 1 6 ]
 "19
 } 0
-"8 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\nf_fputc.c
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\nf_fputc.c
 [v _fputc fputc `(i  1 e 2 0 ]
 {
 [v fputc@c c `i  1 p 2 3 ]
-[s S1757 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
-[v fputc@fp fp `*.1S1757  1 p 1 5 ]
+[s S1762 _IO_FILE 5 `*.1uc 1 buffer 1 0 `i 1 count 2 1 `i 1 limit 2 3 ]
+[v fputc@fp fp `*.1S1762  1 p 1 5 ]
 "24
 } 0
 "146 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\mcc_generated_files/eusart.c
@@ -746,13 +748,13 @@ I2C1_NULL 5
 [v EUSART_Write@txData txData `uc  1 a 1 1 ]
 "139
 } 0
-"1 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\abs.c
+"1 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\abs.c
 [v _abs abs `(i  1 e 2 0 ]
 {
 [v abs@a a `i  1 p 2 4 ]
 "4
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aomod.c
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aomod.c
 [v ___aomod __aomod `(o  1 e 8 0 ]
 {
 "12
@@ -763,7 +765,7 @@ I2C1_NULL 5
 [v ___aomod@dividend dividend `o  1 p 8 8 ]
 "36
 } 0
-"7 C:\Program Files\Microchip\xc8\v2.31\pic\sources\c99\common\aodiv.c
+"7 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\aodiv.c
 [v ___aodiv __aodiv `(o  1 e 8 0 ]
 {
 "12
@@ -775,6 +777,11 @@ I2C1_NULL 5
 [v ___aodiv@divisor divisor `o  1 p 8 0 ]
 [v ___aodiv@dividend dividend `o  1 p 8 8 ]
 "43
+} 0
+"5 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\sensorFlujo.c
+[v _flujo_init flujo_init `(v  1 e 1 0 ]
+{
+"7
 } 0
 "50 D:\OneDriveTrabajo\Clases\GitHub_Clases\Microcontroladores\2022\DispensadorAgua.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]

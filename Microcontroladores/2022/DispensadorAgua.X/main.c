@@ -1,15 +1,17 @@
 
 
 #include "mcc_generated_files/mcc.h"
+#include "sensorFlujo.h"
 
 char coin = 0;
-char coinant=0;
+char coinAnt=0;
 
 void main(void)
 {
     uint8_t a=0;
     // initialize the device
     SYSTEM_Initialize();
+    flujo_init();
 
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
@@ -32,13 +34,13 @@ void main(void)
     // Disable the Peripheral Interrupts
     //INTERRUPT_PeripheralInterruptDisable();
 
-    printf("credito: %i pejos\n", a,coin);
+    printf("credito: %i pejos\n",coin);
     while (1)
     {
         
-        if (coin != coinant){
+        if (coin != coinAnt){
             printf("credito: %i pejos\n",coin);
-            coinant = coin;
+            coinAnt = coin;
         }
 
         if(!boton_GetValue() && coin >= 5){

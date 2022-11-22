@@ -6,4 +6,5 @@ mcc_generated_files/pin_manager.h  \
 mcc_generated_files/interrupt_manager.h  \
 mcc_generated_files/i2c1_master.h  \
 mcc_generated_files/ext_int.h  \
-mcc_generated_files/eusart.h 
+mcc_generated_files/eusart.h  \
+sensorFlujo.h 

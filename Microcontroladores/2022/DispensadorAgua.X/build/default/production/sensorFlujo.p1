@@ -1,34 +1,4 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[t ~ __interrupt . k ]
-[t T1 __interrupt ]
-"21428 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 21428:     struct {
-[s S975 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S975 . INTE . IOCIE TMR0IE ]
-"21427
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 21427: typedef union {
-[u S974 `S975 1 ]
-[n S974 . . ]
-"21435
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 21435: extern volatile PIE0bits_t PIE0bits __attribute__((address(0x716)));
-[v _PIE0bits `VS974 ~T0 @X0 0 e@1814 ]
-"21006
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 21006:     struct {
-[s S956 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S956 . INTF . IOCIF TMR0IF ]
-"21005
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 21005: typedef union {
-[u S955 `S956 1 ]
-[n S955 . . ]
-"21013
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 21013: extern volatile PIR0bits_t PIR0bits __attribute__((address(0x70C)));
-[v _PIR0bits `VS955 ~T0 @X0 0 e@1804 ]
-"272 mcc_generated_files/ext_int.h
-[; ;mcc_generated_files/ext_int.h: 272: void INT_ISR(void);
-[v _INT_ISR `(v ~T0 @X0 0 ef ]
-"52 mcc_generated_files/interrupt_manager.c
-[; ;mcc_generated_files/interrupt_manager.c: 52: extern char coin;
-[v _coin `uc ~T0 @X0 0 e ]
 "54 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -1583,42 +1553,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "35049
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 35049: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
-"56 mcc_generated_files/interrupt_manager.c
-[; ;mcc_generated_files/interrupt_manager.c: 56: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
-[v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
-"57
-[; ;mcc_generated_files/interrupt_manager.c: 57: {
+"5 sensorFlujo.c
+[; ;sensorFlujo.c: 5: void flujo_init(){
+[v _flujo_init `(v ~T0 @X0 1 ef ]
 {
-[e :U _INTERRUPT_InterruptManager ]
+[e :U _flujo_init ]
 [f ]
-"59
-[; ;mcc_generated_files/interrupt_manager.c: 59:     if(PIE0bits.INTE == 1 && PIR0bits.INTF == 1)
-[e $ ! && == -> . . _PIE0bits 0 0 `i -> 1 `i == -> . . _PIR0bits 0 0 `i -> 1 `i 1569  ]
-"60
-[; ;mcc_generated_files/interrupt_manager.c: 60:     {
-{
-"61
-[; ;mcc_generated_files/interrupt_manager.c: 61:         INT_ISR();
-[e ( _INT_ISR ..  ]
-"62
-[; ;mcc_generated_files/interrupt_manager.c: 62:         coin++;
-[e ++ _coin -> -> 1 `i `uc ]
-"63
-[; ;mcc_generated_files/interrupt_manager.c: 63:     }
-}
-[e $U 1570  ]
-"64
-[; ;mcc_generated_files/interrupt_manager.c: 64:     else
-[e :U 1569 ]
-"65
-[; ;mcc_generated_files/interrupt_manager.c: 65:     {
-{
-"67
-[; ;mcc_generated_files/interrupt_manager.c: 67:     }
-}
-[e :U 1570 ]
-"68
-[; ;mcc_generated_files/interrupt_manager.c: 68: }
-[e :UE 1568 ]
+"7
+[; ;sensorFlujo.c: 7: }
+[e :UE 1564 ]
 }
