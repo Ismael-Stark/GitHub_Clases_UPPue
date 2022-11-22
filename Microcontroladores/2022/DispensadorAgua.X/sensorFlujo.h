@@ -11,8 +11,13 @@ extern "C" {
     // TODO If C++ is being used, regular C code needs function names to have C 
     // linkage so the functions can be used by the c code. 
     
-    /* !brief
-     * inicializa el sensor
+    /* !brief esto es una ayuda para entender que hace la libreria:
+     * 
+     * Esta funcion inicializa el sensor
+     * 
+     * no tiene parametros de entrada
+     * 
+     * no regresa parametros
      */
     void flujo_init();
 

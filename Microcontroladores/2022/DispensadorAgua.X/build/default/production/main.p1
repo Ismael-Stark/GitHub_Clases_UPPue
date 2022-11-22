@@ -3,12 +3,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "73 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"17 ./sensorFlujo.h
-[; ;./sensorFlujo.h: 17:     void flujo_init();
+"22 ./sensorFlujo.h
+[; ;./sensorFlujo.h: 22:     void flujo_init();
 [v _flujo_init `(v ~T0 @X0 0 e? ]
-[v F183 `(v ~T0 @X0 1 tf1`ul ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\builtins.h
-[v __delay `JF183 ~T0 @X0 0 e ]
+[v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
 "357 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 357:     struct {
@@ -21,7 +21,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "364
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 364: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
 [v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
-"111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
+"105 C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.40\pic\include\c99\stdio.h: 105: int printf(const char *restrict, ...);
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
 "390 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 390:     struct {
