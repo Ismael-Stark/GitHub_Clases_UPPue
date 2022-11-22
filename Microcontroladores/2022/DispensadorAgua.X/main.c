@@ -12,7 +12,7 @@ void main(void)
     // initialize the device
     SYSTEM_Initialize();
     flujo_init();
-
+    
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
     

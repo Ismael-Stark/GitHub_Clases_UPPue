@@ -85,6 +85,26 @@
 #define led1_SetAnalogMode()      do { ANSELAbits.ANSA0 = 1; } while(0)
 #define led1_SetDigitalMode()     do { ANSELAbits.ANSA0 = 0; } while(0)
 
+// get/set led2 aliases
+#define led2_TRIS                 TRISAbits.TRISA1
+#define led2_LAT                  LATAbits.LATA1
+#define led2_PORT                 PORTAbits.RA1
+#define led2_WPU                  WPUAbits.WPUA1
+#define led2_OD                   ODCONAbits.ODCA1
+#define led2_ANS                  ANSELAbits.ANSA1
+#define led2_SetHigh()            do { LATAbits.LATA1 = 1; } while(0)
+#define led2_SetLow()             do { LATAbits.LATA1 = 0; } while(0)
+#define led2_Toggle()             do { LATAbits.LATA1 = ~LATAbits.LATA1; } while(0)
+#define led2_GetValue()           PORTAbits.RA1
+#define led2_SetDigitalInput()    do { TRISAbits.TRISA1 = 1; } while(0)
+#define led2_SetDigitalOutput()   do { TRISAbits.TRISA1 = 0; } while(0)
+#define led2_SetPullup()          do { WPUAbits.WPUA1 = 1; } while(0)
+#define led2_ResetPullup()        do { WPUAbits.WPUA1 = 0; } while(0)
+#define led2_SetPushPull()        do { ODCONAbits.ODCA1 = 0; } while(0)
+#define led2_SetOpenDrain()       do { ODCONAbits.ODCA1 = 1; } while(0)
+#define led2_SetAnalogMode()      do { ANSELAbits.ANSA1 = 1; } while(0)
+#define led2_SetDigitalMode()     do { ANSELAbits.ANSA1 = 0; } while(0)
+
 // get/set boton aliases
 #define boton_TRIS                 TRISAbits.TRISA5
 #define boton_LAT                  LATAbits.LATA5
