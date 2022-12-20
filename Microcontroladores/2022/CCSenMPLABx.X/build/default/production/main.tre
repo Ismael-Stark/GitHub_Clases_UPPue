@@ -1,7 +1,0 @@
-青CCSenMPLABx
-   青main  0/25  Ram=0
-      団@cinit1  (Inline)  Ram=0
-      団@cinit2  (Inline)  Ram=0
-      青@PSTRINGC7_994  0/75  Ram=3
-         団@PUTCHAR_1_  0/54  Ram=1
-         青@PUTCHAR_1_  0/54  Ram=1

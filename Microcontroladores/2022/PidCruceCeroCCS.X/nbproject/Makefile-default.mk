@@ -90,8 +90,8 @@ ifneq ($(INFORMATION_MESSAGE), )
 endif
 	${MAKE}  -f nbproject/Makefile-default.mk ${DISTDIR}/PidCruceCeroCCS.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}
 
-MP_CC="C:\Program Files (x86)\PICC_5.104\CCSCON.exe"
-MP_LD="C:\Program Files (x86)\PICC_5.104\CCSCON.exe"
+MP_CC="C:\Program Files (x86)\PICC 5.104\CCSCON.exe"
+MP_LD="C:\Program Files (x86)\PICC 5.104\CCSCON.exe"
 sourceline.device=sourceline="\#device PIC16LF18857"
 sourceline.xccompat=sourceline="\#device ANSI" sourceline="\#device PASS_STRINGS=IN_RAM" sourceline="\#device CONST=READ_ONLY" sourceline="\#case" sourceline="\#TYPE SIGNED" sourceline="\#type INT=16, LONG=32"
 sourceline.gcccompat=sourceline="\#device ANSI" sourceline="\#device PASS_STRINGS=IN_RAM" sourceline="\#device CONST=READ_ONLY" sourceline="\#case" sourceline="\#TYPE SIGNED"

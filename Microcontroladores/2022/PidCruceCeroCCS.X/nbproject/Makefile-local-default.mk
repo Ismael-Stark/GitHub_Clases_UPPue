@@ -21,18 +21,18 @@ PATH:=C:/Program Files/Microchip/MPLABX/v6.00/mplab_platform/platform/../mplab_i
 # Path to java used to run MPLAB X when this makefile was created
 MP_JAVA_PATH="C:\Program Files\Microchip\MPLABX\v6.00\sys\java\zulu8.54.0.21-ca-fx-jre8.0.292-win_x64/bin/"
 OS_CURRENT="$(shell uname -s)"
-MP_CC="C:\Program Files (x86)\PICC_5.104\CCSC.exe"
+MP_CC="C:\Program Files (x86)\PICC 5.104\CCSC.exe"
 # MP_CPPC is not defined
 # MP_BC is not defined
 # MP_AS is not defined
-MP_LD="C:\Program Files (x86)\PICC_5.104\CCSC.exe"
+MP_LD="C:\Program Files (x86)\PICC 5.104\CCSC.exe"
 # MP_AR is not defined
 DEP_GEN=${MP_JAVA_PATH}java -jar "C:/Program Files/Microchip/MPLABX/v6.00/mplab_platform/platform/../mplab_ide/modules/../../bin/extractobjectdependencies.jar"
-MP_CC_DIR="C:\Program Files (x86)\PICC_5.104"
+MP_CC_DIR="C:\Program Files (x86)\PICC 5.104"
 # MP_CPPC_DIR is not defined
 # MP_BC_DIR is not defined
 # MP_AS_DIR is not defined
-MP_LD_DIR="C:\Program Files (x86)\PICC_5.104"
+MP_LD_DIR="C:\Program Files (x86)\PICC 5.104"
 # MP_AR_DIR is not defined
 # MP_BC_DIR is not defined
 DFP_DIR=C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC16F1xxxx_DFP/1.9.163
