@@ -5,6 +5,11 @@
 
 #mis ignorados
 *.exe
+*.hex
+
+#MPLABx
+dist/
+nbproject/
 
 # User-specific files
 *.rsuser
