@@ -15,6 +15,8 @@ dist/
 nbproject/
 .ca/
 
+!\Microcontroladores\2022\CCSenMPLABx.X/
+
 # User-specific files
 *.rsuser
 *.suo
