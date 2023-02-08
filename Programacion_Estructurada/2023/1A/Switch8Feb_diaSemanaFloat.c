@@ -2,14 +2,20 @@
 
 int main(){
     int dia;
+    float tom1, tom2, tom3, tom4;
+    float ptom1, ptom2, ptom3;
     float diaf;
     printf("Dame un numero del 1 al 7 (sin decimales) switch\n");
     scanf("%f",&diaf);//leemos ej 5.5
     dia = (int)diaf; //aqui se convierte float to int, 5
+    ///tomates
+    tom1 = 120; tom2 = 120; tom3 = 120; tom4 = 120; 
+    ptom1= 12;
+
     //diaf-dia  5.5 - 5 = 0.5
     //leemos ej -5.5
     //aqui se convierte float to int, -5
-    //diaf+dia  -5.5 +  5 = 
+    //diaf-dia  -5.5 - -5 = -0.5
 
     if( (diaf-dia > 0) || (diaf-dia < 0) ){
         printf("se te pidio un numero entero sin decimales");
