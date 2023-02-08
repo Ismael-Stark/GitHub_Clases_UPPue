@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2022-02-10T08:18:06</DateModified>
+  <DateModified>2023-02-07T13:45:09</DateModified>
   <ModuleName>contador</ModuleName>
   <SummaryTimeStamp>2022-02-08T09:44:31</SummaryTimeStamp>
-  <SavedFilePath>D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador/iseconfig/contador.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/OneDrive - Soluciones Marva/Xilinx/sep2021/Contador\</ImplementationReportsDirectory>
+  <SavedFilePath>D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/Contador/iseconfig/contador.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/Contador\</ImplementationReportsDirectory>
   <DateInitialized>2022-02-08T09:04:54</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
