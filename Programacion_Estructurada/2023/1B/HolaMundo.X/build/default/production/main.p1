@@ -3,15 +3,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 70: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"3614 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
-[s S3141 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3141 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
-"3613
-[u S3140 `S3141 1 ]
-[n S3140 . . ]
-"3625
-[v _PORTAbits `VS3140 ~T0 @X0 0 e@1230 ]
-"3210
+"3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3127 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
 "3209
@@ -20,6 +12,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3221
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
 [v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
+"3614
+[s S3141 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3141 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
+"3613
+[u S3140 `S3141 1 ]
+[n S3140 . . ]
+"3625
+[v _PORTAbits `VS3140 ~T0 @X0 0 e@1230 ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3645,58 +3645,63 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 70742: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"8 main.c
-[; ;main.c: 8: void main(void)
+"10 main.c
+[; ;main.c: 10: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"9
-[; ;main.c: 9: {
+"11
+[; ;main.c: 11: {
 {
 [e :U _main ]
 [f ]
-"11
-[; ;main.c: 11:     SYSTEM_Initialize();
+"13
+[; ;main.c: 13:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"26
-[; ;main.c: 26:     while (1)
-[e :U 3252 ]
-"27
-[; ;main.c: 27:     {
-{
-"33
-[; ;main.c: 33:         if(PORTAbits.RA3==1){
-[e $ ! == -> . . _PORTAbits 0 3 `i -> 1 `i 3254  ]
-{
-"34
-[; ;main.c: 34:             do { LATFbits.LATF3 = 1; } while(0);
-[e :U 3257 ]
+"14
+[; ;main.c: 14:     do { LATFbits.LATF3 = 1; } while(0);
+[e :U 3253 ]
 {
 [e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
 }
-[e :U 3256 ]
-"35
-[; ;main.c: 35:         }else{
-}
-[e $U 3258  ]
-[e :U 3254 ]
+[e :U 3252 ]
+"29
+[; ;main.c: 29:     while (1){
+[e :U 3255 ]
 {
-"36
-[; ;main.c: 36:             do { LATFbits.LATF3 = 0; } while(0);
-[e :U 3261 ]
+"30
+[; ;main.c: 30:         if(PORTAbits.RA3==1){
+[e $ ! == -> . . _PORTAbits 0 3 `i -> 1 `i 3257  ]
+{
+"31
+[; ;main.c: 31:             do { LATFbits.LATF3 = 1; } while(0);
+[e :U 3260 ]
+{
+[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 3259 ]
+"32
+[; ;main.c: 32:         }else{
+}
+[e $U 3261  ]
+[e :U 3257 ]
+{
+"33
+[; ;main.c: 33:             do { LATFbits.LATF3 = 0; } while(0);
+[e :U 3264 ]
 {
 [e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
 }
-[e :U 3260 ]
+[e :U 3263 ]
+"34
+[; ;main.c: 34:         }
+}
+[e :U 3261 ]
+"36
+[; ;main.c: 36:     }
+}
+[e :U 3254 ]
+[e $U 3255  ]
+[e :U 3256 ]
 "37
-[; ;main.c: 37:         }
-}
-[e :U 3258 ]
-"39
-[; ;main.c: 39:     }
-}
-[e :U 3251 ]
-[e $U 3252  ]
-[e :U 3253 ]
-"40
-[; ;main.c: 40: }
+[; ;main.c: 37: }
 [e :UE 3250 ]
 }

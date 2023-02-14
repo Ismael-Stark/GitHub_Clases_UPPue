@@ -39023,18 +39023,15 @@ void PMD_Initialize(void);
 
 
 
+
+
 void main(void)
 {
 
     SYSTEM_Initialize();
-# 26 "main.c"
-    while (1)
-    {
-
-
-
-
-
+    do { LATFbits.LATF3 = 1; } while(0);
+# 29 "main.c"
+    while (1){
         if(PORTAbits.RA3==1){
             do { LATFbits.LATF3 = 1; } while(0);
         }else{

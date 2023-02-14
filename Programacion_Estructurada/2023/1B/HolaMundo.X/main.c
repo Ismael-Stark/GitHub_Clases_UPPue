@@ -1,6 +1,8 @@
 
 
 #include "mcc_generated_files/mcc.h"
+#define ledon   led_SetLow()
+#define ledoff  led_SetHigh()
 
 /*
                          Main application
@@ -9,6 +11,7 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
+    ledoff;
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
@@ -25,9 +28,9 @@ void main(void)
 
     while (1){        
         if(boton_GetValue()==1){
-            led_SetHigh();
+            ledoff;
         }else{
-            led_SetLow();
+            ledon;
         }
         // Add your application code
     }

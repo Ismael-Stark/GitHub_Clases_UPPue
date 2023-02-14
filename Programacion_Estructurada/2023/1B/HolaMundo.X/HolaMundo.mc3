@@ -17384,7 +17384,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="WPUA"/>
-         <value>0</value>
+         <value>8</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.RegisterKey" moduleName="Pin Module" registerAlias="WPUB"/>
@@ -19208,7 +19208,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUA" settingAlias="WPUA3"/>
-         <value>clear</value>
+         <value>set</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="Pin Module" registerAlias="WPUA" settingAlias="WPUA4"/>
@@ -37754,7 +37754,7 @@
       </entry>
       <entry>
          <file>mcc_generated_files\pin_manager.c</file>
-         <hash>d2d1f679d57982856ced7e07049bc4bb7463fd1d882bd478f09d37bf1a5397ab</hash>
+         <hash>682ce73e37e9d5cf3cdb6fcf8924ce06b18c0746540f6852d753070acdaa7646</hash>
       </entry>
    </generatedFileHashHistoryMap>
 </config>

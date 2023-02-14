@@ -38859,7 +38859,7 @@ void PIN_MANAGER_Initialize(void)
     WPUF = 0x00;
     WPUE = 0x00;
     WPUB = 0x00;
-    WPUA = 0x00;
+    WPUA = 0x08;
     WPUC = 0x00;
 
 

@@ -4,13 +4,19 @@ int main(){
     int dia;
     float tom1, tom2, tom3, tom4;
     float ptom1, ptom2, ptom3;
+    float totalKGvedidotomate;
+        ///tomates vendidos
+    tom1 = 120; tom2 = 120; tom3 = 120; tom4 = 120; 
+    //precio kg tomate
+    ptom1= 12; ptom1= 15; ptom1= 21; 
+
+totalKGvedidotomate = tom1+tom2....tom12;
+
     float diaf;
     printf("Dame un numero del 1 al 7 (sin decimales) switch\n");
     scanf("%f",&diaf);//leemos ej 5.5
     dia = (int)diaf; //aqui se convierte float to int, 5
-    ///tomates
-    tom1 = 120; tom2 = 120; tom3 = 120; tom4 = 120; 
-    ptom1= 12;
+
 
     //diaf-dia  5.5 - 5 = 0.5
     //leemos ej -5.5
