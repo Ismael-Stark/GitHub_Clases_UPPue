@@ -9,7 +9,7 @@ Target Device  : xc3s700a
 Target Package : fg484
 Target Speed   : -4
 Mapper Version : spartan3a -- $Revision: 1.55 $
-Mapped Date    : Thu Feb 10 09:33:20 2022
+Mapped Date    : Tue Feb 14 13:54:10 2023
 
 Mapping design into LUTs...
 Running directed packing...
@@ -43,9 +43,9 @@ Logic Distribution:
 
 Average Fanout of Non-Clock Nets:                2.30
 
-Peak Memory Usage:  4503 MB
-Total REAL time to MAP completion:  1 secs 
-Total CPU time to MAP completion:   1 secs 
+Peak Memory Usage:  4500 MB
+Total REAL time to MAP completion:  11 secs 
+Total CPU time to MAP completion:   7 secs 
 
 NOTES:
 

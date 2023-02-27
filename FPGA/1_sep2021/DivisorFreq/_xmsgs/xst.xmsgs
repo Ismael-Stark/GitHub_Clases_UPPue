@@ -5,6 +5,12 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DivisorFreq</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd</arg>&quot;.
+</msg>
+
+<msg type="warning" file="HDLParsers" num="3607" delta="new" >Unit <arg fmt="%s" index="1">work/DivisorFreq/Behavioral</arg> is now defined in a different file.  It was defined in &quot;<arg fmt="%s" index="2">D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd</arg>&quot;, and is now defined in &quot;<arg fmt="%s" index="3">D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd</arg>&quot;.
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">salida_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">DivisorFreq</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;salida_1&gt; </arg>
 </msg>
 

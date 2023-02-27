@@ -1,9 +1,10 @@
-V3 3
+V3 4
 FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" 2022/02/10.09:31:36 P.20131013
-EN work/DivisorFreq 1644507192 \
-      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" \
+FL D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd 2022/02/10.09:53:07 P.20131013
+EN work/DivisorFreq 1676404422 \
+      FL D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd \
       PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
       PB ieee/std_logic_arith 1381692177
-AR work/DivisorFreq/Behavioral 1644507193 \
-      FL "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" \
-      EN work/DivisorFreq 1644507192
+AR work/DivisorFreq/Behavioral 1676404423 \
+      FL D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd \
+      EN work/DivisorFreq 1676404422

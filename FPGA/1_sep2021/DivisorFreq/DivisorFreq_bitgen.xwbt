@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\DivisorFreq\DivisorFreq.ncd
-OUTFILE=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\DivisorFreq\DivisorFreq.bit
+INFILE=D:\OneDriveTrabajo\Clases\GitHub_Clases\FPGA\1_sep2021\DivisorFreq\DivisorFreq.ncd
+OUTFILE=D:\OneDriveTrabajo\Clases\GitHub_Clases\FPGA\1_sep2021\DivisorFreq\DivisorFreq.bit
 FAMILY=Spartan3A and Spartan3AN
 PART=xc3s700a-4fg484
-WORKINGDIR=D:\OneDrive - Soluciones Marva\Xilinx\sep2021\DivisorFreq
-LICENSE=WebPack
-USER_INFO=212274149_0_0_975
+WORKINGDIR=D:\OneDriveTrabajo\Clases\GitHub_Clases\FPGA\1_sep2021\DivisorFreq
+LICENSE=ISE
+USER_INFO=212274149_0_0_804

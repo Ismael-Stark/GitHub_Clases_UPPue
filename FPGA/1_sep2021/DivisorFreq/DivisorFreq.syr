@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.29 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.09 secs
+Total CPU time to Xst completion: 0.30 secs
  
 --> Reading design: DivisorFreq.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -104,8 +104,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd" in Library work.
-Architecture behavioral of Entity divisorfreq is up to date.
+WARNING:HDLParsers:3607 - Unit work/DivisorFreq is now defined in a different file.  It was defined in "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd", and is now defined in "D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd".
+WARNING:HDLParsers:3607 - Unit work/DivisorFreq/Behavioral is now defined in a different file.  It was defined in "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd", and is now defined in "D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd".
+Compiling vhdl file "D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd" in Library work.
+Entity <divisorfreq> compiled.
+Entity <divisorfreq> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -127,11 +130,11 @@ Entity <DivisorFreq> analyzed. Unit <DivisorFreq> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <DivisorFreq>.
-    Related source file is "D:/OneDrive - Soluciones Marva/Xilinx/sep2021/DivisorFreq/DivisorFreq.vhd".
+    Related source file is "D:/OneDriveTrabajo/Clases/GitHub_Clases/FPGA/1_sep2021/DivisorFreq/DivisorFreq.vhd".
     Found 2-bit register for signal <salida>.
     Found 26-bit up counter for signal <contador>.
-    Found 26-bit comparator less for signal <contador$cmp_lt0000> created at line 27.
-    Found 26-bit comparator less for signal <salida$cmp_lt0000> created at line 35.
+    Found 26-bit comparator less for signal <contador$cmp_lt0000> created at line 28.
+    Found 26-bit comparator less for signal <salida$cmp_lt0000> created at line 36.
     Summary:
 	inferred   1 Counter(s).
 	inferred   2 D-type flip-flop(s).
@@ -346,14 +349,14 @@ Offset:              5.558ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.95 secs
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.09 secs
  
 --> 
 
-Total memory usage is 4517164 kilobytes
+Total memory usage is 4514732 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 
