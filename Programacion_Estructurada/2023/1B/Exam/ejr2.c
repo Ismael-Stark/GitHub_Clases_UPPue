@@ -37,7 +37,7 @@ int main(){
     printf("\n4\n");
 
     for(int i = 0; i < 10; i++){//filas 0
-        for(int k = 10; k > i; k--){
+        for(int k = 9; k > i; k--){
             printf(" ");
         }
         for(int j=0; j < i+1 ; j++){//columnas

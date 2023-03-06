@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "1A"
+		},
+		{
+			"path": "1B"
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"stdbool.h": "c",
+			"math.h": "c"
+		}
+	}
+}
