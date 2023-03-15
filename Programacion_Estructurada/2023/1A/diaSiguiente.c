@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-int main(){
-    int dia, mes, annio;
 
+
+int main(){
+    char matrix[1][2][2][2];
+    int dia, mes, annio;
+    char nombreMes[12][12] = {"enero","febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"};
     dia = 31;
     mes = 12;
     annio = 2010;
 
-    printf("\n\n\nla fecha actual es: %i de %i del %i",dia,mes,annio);
+    printf("\n\n\nla fecha actual es: %i de %s del %i",dia,nombreMes[mes-1],annio);
 
     dia++;
     switch (mes)
@@ -49,5 +52,5 @@ int main(){
     default:
         break;
     }
-    printf("\n\nel dia siguiente es: %i de %i del %i",dia,mes,annio);
+    printf("\n\nel dia siguiente es: %i de %s del %i",dia,nombreMes[mes-1],annio);
 }
