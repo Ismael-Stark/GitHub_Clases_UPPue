@@ -14,7 +14,7 @@ int cubo(int numero2);// esta funcion regresa un resultado
 
 
 int main(){
-    int numero,resultado;
+    int numero,resultadoCubo;
     printf("programa que calcula el cuadrado y cubo de un numero\n");
     printf("dame el numero: \n");
     scanf("%i",&numero);
@@ -23,11 +23,18 @@ int main(){
     cudrado(numero);
 
     //forma1
-    resultado = cubo(numero);
-    printf("f1:el cubo del numero es: %i\n",resultado);
+    resultadoCubo = cubo(numero);
+    printf("f1:el cubo del numero es: %i\n",resultadoCubo);
 
     //forma 2
-    printf("f2:el cubo del numero es: %i", cubo(numero));
+    //printf("f2:el cubo del numero es: %i\n", cubo(numero));
+
+    if(resultadoCubo > 10){
+        printf("el cubo es mayor que 10");
+    }else{
+        printf("el cubo es menor que 10");
+    }
+
 }
 
 /// los codigos de las fuciones se escribem

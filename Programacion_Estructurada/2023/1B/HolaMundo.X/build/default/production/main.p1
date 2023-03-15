@@ -12,7 +12,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3221
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
 [v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
-"3614
+"11 main.c
+[; ;main.c: 11: void cuadrado(int numero);
+[v _cuadrado `(v ~T0 @X0 0 ef1`i ]
+"3614 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3141 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3141 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
 "3613
@@ -3645,63 +3648,77 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 70742: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"10 main.c
-[; ;main.c: 10: void main(void)
+"13 main.c
+[; ;main.c: 13: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"11
-[; ;main.c: 11: {
+"14
+[; ;main.c: 14: {
 {
 [e :U _main ]
 [f ]
-"13
-[; ;main.c: 13:     SYSTEM_Initialize();
+"16
+[; ;main.c: 16:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"14
-[; ;main.c: 14:     do { LATFbits.LATF3 = 1; } while(0);
+"17
+[; ;main.c: 17:     do { LATFbits.LATF3 = 1; } while(0);
 [e :U 3253 ]
 {
 [e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 3252 ]
-"29
-[; ;main.c: 29:     while (1){
+"18
+[; ;main.c: 18:     cuadrado(4);
+[e ( _cuadrado (1 -> 4 `i ]
+"32
+[; ;main.c: 32:     while (1){
 [e :U 3255 ]
 {
-"30
-[; ;main.c: 30:         if(PORTAbits.RA3==1){
+"33
+[; ;main.c: 33:         if(PORTAbits.RA3==1){
 [e $ ! == -> . . _PORTAbits 0 3 `i -> 1 `i 3257  ]
 {
-"31
-[; ;main.c: 31:             do { LATFbits.LATF3 = 1; } while(0);
+"34
+[; ;main.c: 34:             do { LATFbits.LATF3 = 1; } while(0);
 [e :U 3260 ]
 {
 [e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
 }
 [e :U 3259 ]
-"32
-[; ;main.c: 32:         }else{
+"35
+[; ;main.c: 35:         }else{
 }
 [e $U 3261  ]
 [e :U 3257 ]
 {
-"33
-[; ;main.c: 33:             do { LATFbits.LATF3 = 0; } while(0);
+"36
+[; ;main.c: 36:             do { LATFbits.LATF3 = 0; } while(0);
 [e :U 3264 ]
 {
 [e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 3263 ]
-"34
-[; ;main.c: 34:         }
+"37
+[; ;main.c: 37:         }
 }
 [e :U 3261 ]
-"36
-[; ;main.c: 36:     }
+"39
+[; ;main.c: 39:     }
 }
 [e :U 3254 ]
 [e $U 3255  ]
 [e :U 3256 ]
-"37
-[; ;main.c: 37: }
+"40
+[; ;main.c: 40: }
 [e :UE 3250 ]
+}
+"45
+[; ;main.c: 45: void cuadrado(int numero){
+[v _cuadrado `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _cuadrado ]
+[v _numero `i ~T0 @X0 1 r1 ]
+[f ]
+"48
+[; ;main.c: 48: }
+[e :UE 3265 ]
 }

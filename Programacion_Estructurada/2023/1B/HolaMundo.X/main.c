@@ -7,12 +7,15 @@
 /*
                          Main application
  */
+
+void cuadrado(int numero);//prototipo de funcion
+
 void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
     ledoff;
-
+    cuadrado(4);
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
@@ -38,3 +41,8 @@ void main(void)
 /**
  End of File
 */
+
+void cuadrado(int numero){
+    //nadaaaa
+    
+}

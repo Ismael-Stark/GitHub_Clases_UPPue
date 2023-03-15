@@ -39025,12 +39025,16 @@ void PMD_Initialize(void);
 
 
 
+
+void cuadrado(int numero);
+
 void main(void)
 {
 
     SYSTEM_Initialize();
     do { LATFbits.LATF3 = 1; } while(0);
-# 29 "main.c"
+    cuadrado(4);
+# 32 "main.c"
     while (1){
         if(PORTAbits.RA3==1){
             do { LATFbits.LATF3 = 1; } while(0);
@@ -39039,4 +39043,12 @@ void main(void)
         }
 
     }
+}
+
+
+
+
+void cuadrado(int numero){
+
+
 }
