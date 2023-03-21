@@ -39018,16 +39018,7 @@ void OSCILLATOR_Initialize(void);
 # 96 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 3 "main.c" 2
-
-
-
-
-
-
-
-
-void cuadrado(int numero);
-
+# 13 "main.c"
 void main(void)
 {
 

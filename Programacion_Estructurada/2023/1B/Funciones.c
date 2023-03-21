@@ -39,6 +39,7 @@ int main(){
     //para mandar a llamar la funcion se debe escribir
     //su nombre(con argumentos) y ya
     imprimeMensaje();
+    
     sumaDosNumeros(5 , 3); //llamando una funcion que recibe argumentos
     resultado = sumaDosNumerosRegresaResultado(4, 8);
     printf("\nla suma que regresa la funcion es: %f\n\n",resultado);

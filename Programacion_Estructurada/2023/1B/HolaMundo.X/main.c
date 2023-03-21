@@ -8,7 +8,7 @@
                          Main application
  */
 
-void cuadrado(int numero);//prototipo de funcion
+//void cuadrado(int numero);//prototipo de funcion
 
 void main(void)
 {
