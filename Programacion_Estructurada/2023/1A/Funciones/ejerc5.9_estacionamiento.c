@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-#define cuotaMin 2.0
-#define adicional 0.5
-#define cuotaMax 10.0
+#define cuotaMin    2.0
+#define adicional   0.5
+#define cuotaMax    10.0
 
 float calculaImporte(float horas);
 
@@ -34,8 +34,8 @@ int main(){
 
 float calculaImporte(float horas){//ejem horas = 5.5
     float cobro;
-    float horasExtra = horas - 3;//5.5 - 3 = 2.5
     
+    float horasExtra = horas - 3;//5.5 - 3 = 2.5
     int horaExtraInt = horasExtra;// = 2
     float horaExtraFrac = horasExtra - horaExtraInt;//2.5 - 2 = 0.5
 
