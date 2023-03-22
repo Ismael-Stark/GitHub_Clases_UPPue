@@ -24,13 +24,8 @@ void imprimeMensaje(void);///esto es un prototipo de funcion
 void cuadrado_numero(int numero);
 //funcion que recibe un numero y no regresa el resultado
 
-//float suma_numeros(float numero1, float numero2);
-float suma_numeros(float numero1, float numero2){
-    float suma = numero1 + numero2;
-    imprimeMensaje();
-    return suma;
-    
-}
+float suma_numeros(float numero1, float numero2);
+
 
 
 int main(){
@@ -44,7 +39,8 @@ int main(){
     rSuma = suma_numeros(4.5 , 6.9);
     printf("el resultado de la suma es: %.2f",rSuma);
 
-}
+}///fin MAIN
+
 
 void imprimeMensaje(void){
     printf("Hola mundo desde una funcion\n\n");
@@ -56,3 +52,9 @@ void cuadrado_numero(int numero){
     imprimeMensaje();
 }
 
+float suma_numeros(float numero1, float numero2){
+    float suma = numero1 + numero2;
+    imprimeMensaje();
+    return suma;
+    
+}
