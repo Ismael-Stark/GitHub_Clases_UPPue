@@ -2,13 +2,14 @@
     Escalamiento y cambio de enteros producidos por 1 + rand() % 6 */
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
-#include <time.h>       /* time */
 
 /* la función main comienza la ejecución del programa */
 int main()
 {
     int i; /* contador */
+    
     /* initialize random seed: */
     srand (time(NULL)); //se usa para que cuando se ejecute el programa
                         //de nuevo, no genere los mismos resultados que antes
