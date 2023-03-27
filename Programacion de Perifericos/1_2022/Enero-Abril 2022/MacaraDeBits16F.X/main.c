@@ -8,6 +8,7 @@ void main(void)
 {
     // initialize the device
     SYSTEM_Initialize();
+    float x = 3.1416;
     
     //TRISx se ocupa para declarar entras o salidas
     //PORTx se ocupa para leer un pin/puerto que funcione como entrada
@@ -19,6 +20,7 @@ void main(void)
     TRISA = TRISA & ~( (1<<3)|(1<<2)|(1<<1)|(1<<0) ) ;//DEL PIN0 AL PIN3 ES SALIDA
     ANSELA = 0;//TODO EL PUERTO COMO e/s DIGITAL
     
+    printf("bjcsbdkjcs \n");
     // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
     // Use the following macros to:
 

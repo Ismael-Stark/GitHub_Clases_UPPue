@@ -4,6 +4,10 @@
 #define adicional   0.5
 #define cuotaMax    10.0
 
+#define pi 3.1416 //constante
+
+const float PII = 3.1415;//esto si es una constante
+
 float calculaImporte(float horas);
 
 int main(){

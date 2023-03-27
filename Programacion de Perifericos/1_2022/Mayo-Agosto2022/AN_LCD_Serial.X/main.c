@@ -46,7 +46,7 @@ void main(void)
         lecturaADC = ADC_GetSingleConversion(LM35);
         V = mV*lecturaADC;
         temperatura = V / 0.01;
-        printf("%3.2f\n",temperatura);
+        printf("%3.2f %3.2f %3.2f %3.2f\n",temperatura,temperatura,temperatura,temperatura);
         
         
         LED2_Toggle();
