@@ -7,6 +7,8 @@
 *.exe
 *.hex
 *.gch
+#Programacion_Estructurada/2023/1A/Funciones/ejerc5.9_estacionamiento.c
+#*.c
 
 
 
@@ -369,5 +371,3 @@ MigrationBackup/
 .ionide/
 
 .vscode/
-#Programacion_Estructurada/2023/1A/Funciones/ejerc5.9_estacionamiento.c
-#*.c
