@@ -1,8 +1,6 @@
-# 1 "Main.s"
+# 1 "MainBlinkASM.s"
 # 1 "<built-in>" 1
-# 1 "Main.s" 2
-
-
+# 1 "MainBlinkASM.s" 2
 ; PIC18F57Q84 Configuration Bit Settings
 
 ; Assembly source line config statements
@@ -14,8 +12,8 @@
 ; CONFIG2
   CONFIG CLKOUTEN = OFF ; Clock out Enable bit (CLKOUT function is disabled)
   CONFIG PR1WAY = ON ; PRLOCKED One-Way Set Enable bit (PRLOCKED bit can be cleared and set only once)
-  CONFIG CSWEN = ON ; Clock Switch Enable bit (Writing to NOSC and NDIV is allowed)
-  CONFIG JTAGEN = ON ; JTAG Enable bit (Enable JTAG Boundary Scan mode and pins)
+  CONFIG CSWEN = OFF ; Clock Switch Enable bit (Writing to NOSC and NDIV is allowed)
+  CONFIG JTAGEN = OFF ; JTAG Enable bit (Enable JTAG Boundary Scan mode and pins)
   CONFIG FCMEN = ON ; Fail-Safe Clock Monitor Enable bit (Fail-Safe Clock Monitor enabled)
   CONFIG FCMENP = ON ; Fail-Safe Clock Monitor -Primary XTAL Enable bit (FSCM timer will set FSCMP bit and OSFIF interrupt on Primary XTAL failure)
   CONFIG FCMENS = ON ; Fail-Safe Clock Monitor -Secondary XTAL Enable bit (FSCM timer will set FSCMS bit and OSFIF interrupt on Secondary XTAL failure)
@@ -47482,13 +47480,32 @@ stk_offset SET 0
 auto_size SET 0
 ENDM
 # 6 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.inc" 2 3
-# 149 "Main.s" 2
+# 147 "MainBlinkASM.s" 2
 
 psect barfunc,global,class=CODE,delta=1 ;
+  global var
+  var equ 0x01
+ global d1
+  d1 equ 0x02
+ global d2
+  d2 equ 0x03
+ global d3
+  d3 equ 0x04
+
+
   org 0;
   goto inicio;
 
   inicio:
+    BANKSEL OSCCON1
+    MOVLW 0b01110000
+    MOVWF OSCCON1
+    BANKSEL OSCCON2
+    MOVLW 0b01110000
+    MOVWF OSCCON2
+    BANKSEL OSCEN
+    MOVLW 0b10000000; BIT7 DEL OSCEN HABILITA EL OSCILADOR EXTERNO
+    MOVWF OSCEN
     BANKSEL PORTA ;
     CLRF PORTA ;Clear PORTA
     BANKSEL LATA ;
@@ -47510,23 +47527,48 @@ psect barfunc,global,class=CODE,delta=1 ;
     BANKSEL TRISF ;
     BCF TRISF,3; pin rf3 como salida
 
+
+
     loop:
- BANKSEL PORTA ;
- ;;BTFSS ;BIT TEST f, SKIP IF SET
- ;;BTFSC ;BIT TEST f, SKIP IF CLEAR
- BTFSS PORTA,3,1;
- GOTO encender;encender led
- GOTO apagar ;apaga led
+
+    bsf LATF,3 ;1 ciclo instruccion, 1cicloInstruccion = (4/F) = (4/10Mhz) = 400nS, reales 500ns
+    call delay1s ;800ns, real 1us
+    bcf LATF,3 ;1 ciclo instruccion =400nS
+    call delay1s
+
+    goto loop ;2 ciclo instruccion = 800nS
 
 
-    encender:
-    BANKSEL LATF
- BCF LATF,3 ;Clear Data Latch
- GOTO loop;
+    delay:
+    movlw 0x09 ;400ns, real 500ns
+    movwf var ;400ns, real 500ns
+    delay0:
+    decfsz var ;4 CICLOS DE INSTRUCCION 400NS *4= 1.6uS, (1.6us+800nS) = 2.4us, 2.4uS * 10 = 24us
+  ;reales ;4 CICLOS DE INSTRUCCION 500nS *4= 2uS, (2us+1uS) = 3us, 3uS * 10 = 30us
+    goto delay0
+    return;; 800ns, real 1us
 
-    apagar:
-    BANKSEL LATF
- BSF LATF,3 ;set Data Latch
- GOTO loop;
+
+    delay1s:
+ movlw 0x8A
+ movwf d1
+ movlw 0xBA
+ movwf d2
+ movlw 0x03
+ movwf d3
+Delay_0:
+ decfsz d1, f
+ goto $+2
+ decfsz d2, f
+ goto $+2
+ decfsz d3, f
+ goto Delay_0
+
+   ;1 cycle
+ nop
+
+   ;4 cycles (including call)
+ return
+
 
     end;aqui termina mi codigo en ensamblador

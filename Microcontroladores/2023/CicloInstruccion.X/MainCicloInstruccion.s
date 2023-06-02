@@ -1,5 +1,3 @@
-
-
 ; PIC18F57Q84 Configuration Bit Settings
 
 ; Assembly source line config statements
@@ -11,8 +9,8 @@
 ; CONFIG2
   CONFIG  CLKOUTEN = OFF        ; Clock out Enable bit (CLKOUT function is disabled)
   CONFIG  PR1WAY = ON           ; PRLOCKED One-Way Set Enable bit (PRLOCKED bit can be cleared and set only once)
-  CONFIG  CSWEN = ON            ; Clock Switch Enable bit (Writing to NOSC and NDIV is allowed)
-  CONFIG  JTAGEN = ON           ; JTAG Enable bit (Enable JTAG Boundary Scan mode and pins)
+  CONFIG  CSWEN = OFF            ; Clock Switch Enable bit (Writing to NOSC and NDIV is allowed)
+  CONFIG  JTAGEN = OFF           ; JTAG Enable bit (Enable JTAG Boundary Scan mode and pins)
   CONFIG  FCMEN = ON            ; Fail-Safe Clock Monitor Enable bit (Fail-Safe Clock Monitor enabled)
   CONFIG  FCMENP = ON           ; Fail-Safe Clock Monitor -Primary XTAL Enable bit (FSCM timer will set FSCMP bit and OSFIF interrupt on Primary XTAL failure)
   CONFIG  FCMENS = ON           ; Fail-Safe Clock Monitor -Secondary XTAL Enable bit (FSCM timer will set FSCMS bit and OSFIF interrupt on Secondary XTAL failure)
@@ -150,17 +148,22 @@
 psect   barfunc,global,class=CODE,delta=1 ;
   org 0;
   goto inicio;
+  
+  
 
   inicio:
-    BANKSEL OSCCON1 
-    MOVLW 0b01110000
-    MOVWF OSCCON1
-    BANKSEL OSCCON2
-    MOVLW 0b01110000
-    MOVWF OSCCON2
+    ;BANKSEL OSCCON1 
+    ;MOVLW 0b01110000
+    ;MOVWF OSCCON1
+    
+    ;BANKSEL OSCCON2
+    ;MOVLW 0b01110000
+    ;MOVWF OSCCON2
     BANKSEL OSCEN
+    ;MOVLW 0x40
     MOVLW 0b10000000; BIT7 DEL OSCEN HABILITA EL OSCILADOR EXTERNO
     MOVWF OSCEN
+    
     BANKSEL PORTA ;
     CLRF PORTA ;Clear PORTA
     BANKSEL LATA ;
@@ -180,25 +183,17 @@ psect   barfunc,global,class=CODE,delta=1 ;
     BANKSEL ANSELF ;
     BCF ANSELF,3 ;Enable digital drivers
     BANKSEL TRISF ;
-    BCF TRISF,3; pin rf3 como salida
+    BCF TRISF,3,0; pin rf3 como salida
+    
+    
+    
 
     loop:
-	BANKSEL PORTA ;
-	;;BTFSS	    ;BIT TEST f, SKIP IF SET
-	;;BTFSC	    ;BIT TEST f, SKIP IF CLEAR
-	BTFSS PORTA,3,1;
-	GOTO encender;encender led
-	GOTO apagar	;apaga led
-
     
-    encender:
-    BANKSEL LATF
-	BCF LATF,3 ;Clear Data Latch
-	GOTO loop;
+    bsf LATF,3	;1 ciclo instruccion,  1cicloInstruccion = (4/F) = (4/10Mhz) = 400nS
+    bcf LATF,3	;1 ciclo instruccion =400nS
     
-    apagar:
-    BANKSEL LATF
-	BSF LATF,3 ;set Data Latch
-	GOTO loop;
+    goto loop	;2 ciclo instruccion = 800nS
+	
     
     end;aqui termina mi codigo en ensamblador
