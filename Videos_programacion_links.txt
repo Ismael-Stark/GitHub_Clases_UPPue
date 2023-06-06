@@ -1,0 +1,34 @@
+Videos a ver y a hacer resumen en libreta
+
+¿Qué son los paradigmas de programación? - https://www.youtube.com/watch?v=hcuvB58hwlE
+Tipos de lenguajes de programacion - https://www.youtube.com/watch?v=gFMMmi-EYEM
+¿Qué tipos de lenguajes de programación existen? - https://www.youtube.com/watch?v=9YUjXYaimVQ
+¿Qué es la programacion orientada a objetos? - https://www.youtube.com/watch?v=DlphYPc_HKk
+¿Qué es la programación reactiva? - https://www.youtube.com/watch?v=tUB3rNsMYAk
+Lenguajes compilados o lenguajes interpretados ¿Cuál es la diferencia? - https://www.youtube.com/watch?v=ojqusTBq4A0
+¿Qué es .NET? Guía definitiva para entender la plataforma de Microsoft - https://www.youtube.com/watch?v=fuTDzzarQGg
+Framework vs Librería - https://www.youtube.com/watch?v=A-iKX8Shge4
+
+La verdadera historia de la computación personal - https://www.youtube.com/watch?v=r77-J_dl09E
+La historia completa de la programación  - https://www.youtube.com/watch?v=0yL_loiMbFI
+¿Por qué las computadoras solo entienden 0 y 1? - https://www.youtube.com/watch?v=-V4AbHyR_x4
+
+
+Ver los sig videos tambien
+
+¡Aprender a programar es fácil! - https://www.youtube.com/watch?v=_u7hoL-R-gE
+¿Como vencer la frustración cuando aprendes a programar? - https://www.youtube.com/watch?v=FqBoVx-Ooz8
+Los errores que cometí al aprender a programar - https://www.youtube.com/watch?v=mKVV1vBpn08
+Editor vs IDE ¿Qué usar para programar? - https://www.youtube.com/watch?v=dx_sfmbV-bo
+¿Con qué lenguaje de programación se crean los lenguajes de programación? - https://www.youtube.com/watch?v=ZmrYV5JNdV4
+Errores de programadores novatos QUE DEBES EVITAR - https://www.youtube.com/watch?v=5DXdL-ZESSw
+Errores de programadores novatos QUE DEBES EVITAR (2) - https://www.youtube.com/watch?v=Ka7qX6mSWkc
+7 Mentiras de la programación ¡QUE NO DEBES CREER! - https://www.youtube.com/watch?v=ia4tV8CADbQ
+¿Cuánta RAM necesitas para programar? Todo lo que debes saber - https://www.youtube.com/watch?v=9_C8Tb2IpMk
+Los 10 lenguajes de programación más importantes de la historia - https://www.youtube.com/watch?v=eP6QQQVy774
+¿Por qué la universidad no es suficiente? - https://www.youtube.com/watch?v=QkQOqJMP14w
+
+
+¿Qué son las BASES DE DATOS? - https://www.youtube.com/watch?v=knVwokXITGI
+¿SQL o NoSQL? ¿Cuál base de datos es mejor? - https://www.youtube.com/watch?v=8K1PKSqHFRQ
+¿Cómo diseñar una base de datos? ¿Cuáles son las etapas? - https://www.youtube.com/watch?v=WU1tUV_krtA

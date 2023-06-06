@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "serial.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,10 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 1 "./Config.h" 1
-
-
+# 1 "serial.c" 2
+# 1 "./serial.h" 1
 
 
 
@@ -38808,193 +38806,65 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
-# 7 "./Config.h" 2
-
-
-# 1 "./Fuses.h" 1
-# 14 "./Fuses.h"
-#pragma config FEXTOSC = HS
-#pragma config RSTOSC = EXTOSC
-
-
-#pragma config CLKOUTEN = OFF
-#pragma config PR1WAY = OFF
-#pragma config CSWEN = ON
-#pragma config JTAGEN = ON
-#pragma config FCMEN = OFF
-#pragma config FCMENP = ON
-#pragma config FCMENS = ON
-
-
-#pragma config MCLRE = EXTMCLR
-#pragma config PWRTS = PWRT_OFF
-#pragma config MVECEN = ON
-#pragma config IVT1WAY = ON
-#pragma config LPBOREN = OFF
-#pragma config BOREN = OFF
-
-
-#pragma config BORV = VBOR_1P9
-#pragma config ZCD = OFF
-#pragma config PPS1WAY = ON
-#pragma config STVREN = ON
-#pragma config LVP = ON
-#pragma config XINST = OFF
-
-
-#pragma config WDTCPS = WDTCPS_31
-#pragma config WDTE = OFF
-
-
-#pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
-
-
-#pragma config BBSIZE = BBSIZE_512
-#pragma config BBEN = OFF
-#pragma config SAFEN = OFF
-#pragma config DEBUG = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-#pragma config WRTD = OFF
-#pragma config WRTSAF = OFF
-#pragma config WRTAPP = OFF
-
-
-#pragma config BOOTPINSEL = RC5
-#pragma config BPEN = OFF
-#pragma config ODCON = OFF
-
-
-#pragma config CP = OFF
-
-
-#pragma config BOOTSCEN = OFF
-#pragma config BOOTCOE = HALT
-#pragma config APPSCEN = OFF
-#pragma config SAFSCEN = OFF
-#pragma config DATASCEN = OFF
-#pragma config CFGSCEN = OFF
-#pragma config COE = HALT
-#pragma config BOOTPOR = OFF
-
-
-#pragma config BCRCPOLT = hFF
-
-
-#pragma config BCRCPOLU = hFF
-
-
-#pragma config BCRCPOLH = hFF
-
-
-#pragma config BCRCPOLL = hFF
-
-
-#pragma config BCRCSEEDT = hFF
-
-
-#pragma config BCRCSEEDU = hFF
-
-
-#pragma config BCRCSEEDH = hFF
-
-
-#pragma config BCRCSEEDL = hFF
-
-
-#pragma config BCRCEREST = hFF
-
-
-#pragma config BCRCERESU = hFF
-
-
-#pragma config BCRCERESH = hFF
-
-
-#pragma config BCRCERESL = hFF
-
-
-#pragma config CRCPOLT = hFF
-
-
-#pragma config CRCPOLU = hFF
-
-
-#pragma config CRCPOLH = hFF
-
-
-#pragma config CRCPOLL = hFF
-
-
-#pragma config CRCSEEDT = hFF
-
-
-#pragma config CRCSEEDU = hFF
-
-
-#pragma config CRCSEEDH = hFF
-
-
-#pragma config CRCSEEDL = hFF
-
-
-#pragma config CRCEREST = hFF
-
-
-#pragma config CRCERESU = hFF
-
-
-#pragma config CRCERESH = hFF
-
-
-#pragma config CRCERESL = hFF
-# 9 "./Config.h" 2
-# 47 "./Config.h"
-    void init_osc(void);
-# 1 "main.c" 2
-
-# 1 "./serial.h" 1
+# 5 "./serial.h" 2
 # 45 "./serial.h"
     void serial_init(uint32_t baudios);
     void serial_write(uint8_t data);
     uint8_t serial_read(void);
-# 2 "main.c" 2
-# 12 "main.c"
-void main(void) {
-    init_osc();
-
-    LATA = 0;
-    PORTA = 0;
-
-    TRISA |= (1<<3 | 1<<0);
-    WPUA |= (1<<3);
-    ANSELA = 0;
-
-    LATF = 0;
-    PORTF = 0;
-
-    TRISF &= ~(1<<3 | 1<<2 | 1<<1 | 1<<0);
-    ANSELF = 0;
+# 1 "serial.c" 2
 
 
+void serial_init(uint32_t baudios){
 
-    LATF = LATF | (1<<3);;
-    LATF = LATF | (1<<2);;
+    U1CON0bits.BRGS = 0;
+    U1BRG = 416;
 
-    serial_init(9600);
+    U1CON0bits.MODE = 0;
+    U1CON1bits.ON = 1;
 
+    U1CON0bits.TXEN = 1;
 
-    while(1){
-# 48 "main.c"
-        LATF = LATF ^ (1<<2);;
-        LATF = LATF ^ (1<<3);;
-        _delay((unsigned long)((500)*(10000000UL/4000.0)));
-    }
+    U1CON0bits.RXEN = 1;
+
+    RF0PPS = 0x20;
+    TRISFbits.TRISF1 = 1;
+    ANSELFbits.ANSELF1 = 0;
+    WPUFbits.WPUF1 = 0;
+    INLVLFbits.INLVLF1 = 0;
+    SLRCONFbits.SLRF1 = 1;
+    ODCONFbits.ODCF1 = 0;
+
+    U1RXPPS = 0x29;
 
 
 
 
+}
+
+void serial_write(uint8_t data){
+    while(U1ERRIRbits.TXMTIF == 0);
+
+
+    U1TXB = data;
+
+
+
+
+
+
+
+}
+
+uint8_t serial_read(void){
+    return U1RXB;
+# 62 "serial.c"
+}
+
+void putch(char txData){
+    serial_write(txData);
+}
+
+char getch(void)
+{
+    return serial_read();
 }
