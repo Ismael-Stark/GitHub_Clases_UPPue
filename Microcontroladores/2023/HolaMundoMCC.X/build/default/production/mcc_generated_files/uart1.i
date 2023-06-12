@@ -1,4 +1,4 @@
-# 1 "serial.c"
+# 1 "mcc_generated_files/uart1.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,12 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "serial.c" 2
-# 1 "./serial.h" 1
-
-
-
-
+# 1 "mcc_generated_files/uart1.c" 2
+# 50 "mcc_generated_files/uart1.c"
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -20,36 +16,34 @@ extern double __fpnormalize(double);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\xc8debug.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 1 3
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\musl_xc8.h" 1 3
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 2 3
 
 
 
 
 
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\features.h" 1 3
-# 10 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\features.h" 1 3
+# 11 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 2 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int wchar_t;
-# 122 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 122 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
-# 168 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 168 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 int24_t;
-# 204 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 204 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdlib.h" 2 3
-
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 2 3
 
 int atoi (const char *);
 long atol (const char *);
@@ -70,12 +64,23 @@ unsigned long long strtoull (const char *restrict, char **restrict, int);
 int rand (void);
 void srand (unsigned);
 
+void *malloc (size_t);
+void *calloc (size_t, size_t);
+void *realloc (void *, size_t);
+void free (void *);
+
           void abort (void);
 int atexit (void (*) (void));
           void exit (int);
           void _Exit (int);
 
 void *bsearch (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+
+
+
+
+
+
 
 __attribute__((nonreentrant)) void qsort (void *, size_t, size_t, int (*)(const void *, const void *));
 
@@ -95,14 +100,7 @@ typedef struct { unsigned int quot, rem; } udiv_t;
 typedef struct { unsigned long quot, rem; } uldiv_t;
 udiv_t udiv (unsigned int, unsigned int);
 uldiv_t uldiv (unsigned long, unsigned long);
-
-
-
-
-
-size_t __ctype_get_mb_cur_max(void);
-# 4 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\xc8debug.h" 2 3
-
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\xc8debug.h" 2 3
 
 
 
@@ -117,21 +115,21 @@ extern void __builtin_software_breakpoint(void);
 
 
 
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 1 3
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 127 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uintptr_t;
-# 142 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long intptr_t;
-# 158 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef signed char int8_t;
 
 
 
 
 typedef short int16_t;
-# 173 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long int32_t;
 
 
@@ -139,7 +137,7 @@ typedef long int32_t;
 
 
 typedef long long int64_t;
-# 188 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long intmax_t;
 
 
@@ -152,7 +150,7 @@ typedef unsigned char uint8_t;
 
 
 typedef unsigned short uint16_t;
-# 209 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long uint32_t;
 
 
@@ -160,10 +158,9 @@ typedef unsigned long uint32_t;
 
 
 typedef unsigned long long uint64_t;
-# 229 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned long long uintmax_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
-
+# 23 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 2 3
 
 typedef int8_t int_fast8_t;
 
@@ -195,13 +192,13 @@ typedef uint24_t uint_fast24_t;
 typedef uint32_t uint_least32_t;
 
 typedef uint64_t uint_least64_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/stdint.h" 1 3
+# 144 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/stdint.h" 1 3
 typedef int16_t int_fast16_t;
 typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
-# 144 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdint.h" 2 3
+# 145 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 2 3
 # 5 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\builtins.h" 2 3
 
 
@@ -38805,162 +38802,17 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
-# 5 "./serial.h" 2
+# 50 "mcc_generated_files/uart1.c" 2
 
-# 1 "./Config.h" 1
+# 1 "mcc_generated_files/uart1.h" 1
+# 55 "mcc_generated_files/uart1.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
+# 55 "mcc_generated_files/uart1.h" 2
 
 
-
-
-
-
-
-
-# 1 "./Fuses.h" 1
-# 14 "./Fuses.h"
-#pragma config FEXTOSC = HS
-#pragma config RSTOSC = EXTOSC
-
-
-#pragma config CLKOUTEN = OFF
-#pragma config PR1WAY = OFF
-#pragma config CSWEN = ON
-#pragma config JTAGEN = ON
-#pragma config FCMEN = OFF
-#pragma config FCMENP = ON
-#pragma config FCMENS = ON
-
-
-#pragma config MCLRE = EXTMCLR
-#pragma config PWRTS = PWRT_OFF
-#pragma config MVECEN = ON
-#pragma config IVT1WAY = ON
-#pragma config LPBOREN = OFF
-#pragma config BOREN = OFF
-
-
-#pragma config BORV = VBOR_1P9
-#pragma config ZCD = OFF
-#pragma config PPS1WAY = ON
-#pragma config STVREN = ON
-#pragma config LVP = ON
-#pragma config XINST = OFF
-
-
-#pragma config WDTCPS = WDTCPS_31
-#pragma config WDTE = OFF
-
-
-#pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
-
-
-#pragma config BBSIZE = BBSIZE_512
-#pragma config BBEN = OFF
-#pragma config SAFEN = OFF
-#pragma config DEBUG = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-#pragma config WRTD = OFF
-#pragma config WRTSAF = OFF
-#pragma config WRTAPP = OFF
-
-
-#pragma config BOOTPINSEL = RC5
-#pragma config BPEN = OFF
-#pragma config ODCON = OFF
-
-
-#pragma config CP = OFF
-
-
-#pragma config BOOTSCEN = OFF
-#pragma config BOOTCOE = HALT
-#pragma config APPSCEN = OFF
-#pragma config SAFSCEN = OFF
-#pragma config DATASCEN = OFF
-#pragma config CFGSCEN = OFF
-#pragma config COE = HALT
-#pragma config BOOTPOR = OFF
-
-
-#pragma config BCRCPOLT = hFF
-
-
-#pragma config BCRCPOLU = hFF
-
-
-#pragma config BCRCPOLH = hFF
-
-
-#pragma config BCRCPOLL = hFF
-
-
-#pragma config BCRCSEEDT = hFF
-
-
-#pragma config BCRCSEEDU = hFF
-
-
-#pragma config BCRCSEEDH = hFF
-
-
-#pragma config BCRCSEEDL = hFF
-
-
-#pragma config BCRCEREST = hFF
-
-
-#pragma config BCRCERESU = hFF
-
-
-#pragma config BCRCERESH = hFF
-
-
-#pragma config BCRCERESL = hFF
-
-
-#pragma config CRCPOLT = hFF
-
-
-#pragma config CRCPOLU = hFF
-
-
-#pragma config CRCPOLH = hFF
-
-
-#pragma config CRCPOLL = hFF
-
-
-#pragma config CRCSEEDT = hFF
-
-
-#pragma config CRCSEEDU = hFF
-
-
-#pragma config CRCSEEDH = hFF
-
-
-#pragma config CRCSEEDL = hFF
-
-
-#pragma config CRCEREST = hFF
-
-
-#pragma config CRCERESU = hFF
-
-
-#pragma config CRCERESH = hFF
-
-
-#pragma config CRCERESL = hFF
-# 9 "./Config.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 1 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
 
 
 
@@ -38972,14 +38824,14 @@ typedef void * va_list[1];
 
 
 typedef void * __isoc_va_list[1];
-# 137 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 137 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long ssize_t;
-# 246 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 246 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long long off_t;
-# 399 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
+# 399 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef struct _IO_FILE FILE;
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdio.h" 3
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
 typedef union _G_fpos64_t {
  char __opaque[16];
  double __align;
@@ -39019,10 +38871,12 @@ int fgetc(FILE *);
 int getc(FILE *);
 int getchar(void);
 int ungetc(int, FILE *);
+int getch(void);
 
 int fputc(int, FILE *);
 int putc(int, FILE *);
 int putchar(int);
+void putch(char);
 
 char *fgets(char *restrict, int, FILE *restrict);
 
@@ -39032,28 +38886,34 @@ char *gets(char *);
 int fputs(const char *restrict, FILE *restrict);
 int puts(const char *);
 
-#pragma printf_check(printf) const
-#pragma printf_check(vprintf) const
-#pragma printf_check(sprintf) const
-#pragma printf_check(snprintf) const
-#pragma printf_check(vsprintf) const
-#pragma printf_check(vsnprintf) const
-
+__attribute__((__format__(__printf__, 1, 2)))
 int printf(const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
 int fprintf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
 int sprintf(char *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 3, 4)))
 int snprintf(char *restrict, size_t, const char *restrict, ...);
 
+__attribute__((__format__(__printf__, 1, 0)))
 int vprintf(const char *restrict, __isoc_va_list);
 int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 2, 0)))
 int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 3, 0)))
 int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
 
+__attribute__((__format__(__scanf__, 1, 2)))
 int scanf(const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
 int fscanf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
 int sscanf(const char *restrict, const char *restrict, ...);
+
+__attribute__((__format__(__scanf__, 1, 0)))
 int vscanf(const char *restrict, __isoc_va_list);
 int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__scanf__, 2, 0)))
 int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
 
 void perror(const char *);
@@ -39096,83 +38956,195 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 10 "./Config.h" 2
-# 50 "./Config.h"
-    void init_osc(void);
-    void pin_init(void);
-# 6 "./serial.h" 2
-# 44 "./serial.h"
-    void serial_init(uint32_t baudios);
-    void serial_write(uint8_t data);
-    uint8_t serial_read(void);
-    int getch(void);
-# 1 "serial.c" 2
+# 57 "mcc_generated_files/uart1.h" 2
+# 75 "mcc_generated_files/uart1.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}uart1_status_t;
+# 111 "mcc_generated_files/uart1.h"
+void UART1_Initialize(void);
+# 159 "mcc_generated_files/uart1.h"
+_Bool UART1_is_rx_ready(void);
+# 207 "mcc_generated_files/uart1.h"
+_Bool UART1_is_tx_ready(void);
+# 254 "mcc_generated_files/uart1.h"
+_Bool UART1_is_tx_done(void);
+# 302 "mcc_generated_files/uart1.h"
+uart1_status_t UART1_get_last_status(void);
+# 351 "mcc_generated_files/uart1.h"
+uint8_t UART1_Read(void);
+# 376 "mcc_generated_files/uart1.h"
+void UART1_Write(uint8_t txData);
+# 396 "mcc_generated_files/uart1.h"
+void UART1_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 414 "mcc_generated_files/uart1.h"
+void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 432 "mcc_generated_files/uart1.h"
+void UART1_SetErrorHandler(void (* interruptHandler)(void));
+# 51 "mcc_generated_files/uart1.c" 2
 
 
-void serial_init(uint32_t baudios){
-    uint16_t BRG;
-
-    U1CON0bits.BRGS = 1;
-
-
-
-
-
-
-    BRG = (uint16_t)((10000000UL / (4 * baudios) ) - 1);
-
-
-
-    U1BRG = BRG;
-
-
-    U1CON0bits.MODE = 0;
-    U1CON1bits.ON = 1;
-    U1CON0bits.TXEN = 1;
-    U1CON0bits.RXEN = 1;
-
-    TRISFbits.TRISF0 = 0;
-    ANSELFbits.ANSELF1 = 0;
-    WPUFbits.WPUF1 = 0;
-
-    RF0PPS = 0x20;
-
-    TRISFbits.TRISF1 = 1;
-    ANSELFbits.ANSELF1 = 0;
-    WPUFbits.WPUF1 = 0;
-    INLVLFbits.INLVLF1 = 0;
-    SLRCONFbits.SLRF1 = 1;
-    ODCONFbits.ODCF1 = 0;
-
-    U1RXPPS = 0x29;
+static volatile uart1_status_t uart1RxLastError;
 
 
 
+
+void (*UART1_FramingErrorHandler)(void);
+void (*UART1_OverrunErrorHandler)(void);
+void (*UART1_ErrorHandler)(void);
+
+void UART1_DefaultFramingErrorHandler(void);
+void UART1_DefaultOverrunErrorHandler(void);
+void UART1_DefaultErrorHandler(void);
+
+void UART1_Initialize(void)
+{
+
+
+
+
+
+    U1P1L = 0x00;
+
+
+    U1P1H = 0x00;
+
+
+    U1P2L = 0x00;
+
+
+    U1P2H = 0x00;
+
+
+    U1P3L = 0x00;
+
+
+    U1P3H = 0x00;
+
+
+    U1CON0 = 0xB0;
+
+
+    U1CON1 = 0x80;
+
+
+    U1CON2 = 0x00;
+
+
+    U1BRGL = 0x15;
+
+
+    U1BRGH = 0x00;
+
+
+    U1FIFO = 0x00;
+
+
+    U1UIR = 0x00;
+
+
+    U1ERRIR = 0x00;
+
+
+    U1ERRIE = 0x00;
+
+
+    UART1_SetFramingErrorHandler(UART1_DefaultFramingErrorHandler);
+    UART1_SetOverrunErrorHandler(UART1_DefaultOverrunErrorHandler);
+    UART1_SetErrorHandler(UART1_DefaultErrorHandler);
+
+    uart1RxLastError.status = 0;
 
 }
 
-void serial_write(uint8_t data){
-    while(U1ERRIRbits.TXMTIF == 0);
-
-
-    U1TXB = data;
-
-
+_Bool UART1_is_rx_ready(void)
+{
+    return (_Bool)(PIR4bits.U1RXIF);
 }
 
-uint8_t serial_read(void){
-    while(U1FIFObits.RXBF == 0);
+_Bool UART1_is_tx_ready(void)
+{
+    return (_Bool)(PIR4bits.U1TXIF && U1CON0bits.TXEN);
+}
+
+_Bool UART1_is_tx_done(void)
+{
+    return U1ERRIRbits.TXMTIF;
+}
+
+uart1_status_t UART1_get_last_status(void){
+    return uart1RxLastError;
+}
+
+uint8_t UART1_Read(void)
+{
+    while(!PIR4bits.U1RXIF)
+    {
+    }
+
+    uart1RxLastError.status = 0;
+
+    if(U1ERRIRbits.FERIF){
+        uart1RxLastError.ferr = 1;
+        UART1_FramingErrorHandler();
+    }
+
+    if(U1ERRIRbits.RXFOIF){
+        uart1RxLastError.oerr = 1;
+        UART1_OverrunErrorHandler();
+    }
+
+    if(uart1RxLastError.status){
+        UART1_ErrorHandler();
+    }
+
     return U1RXB;
 }
 
+void UART1_Write(uint8_t txData)
+{
+    while(0 == PIR4bits.U1TXIF)
+    {
+    }
 
-
-
-void putch(char txData){
-    serial_write(txData);
+    U1TXB = txData;
 }
 
 int getch(void)
 {
-    return serial_read();
+    return UART1_Read();
+}
+
+void putch(char txData)
+{
+    UART1_Write(txData);
+}
+
+
+
+
+
+void UART1_DefaultFramingErrorHandler(void){}
+
+void UART1_DefaultOverrunErrorHandler(void){}
+
+void UART1_DefaultErrorHandler(void){
+}
+
+void UART1_SetFramingErrorHandler(void (* interruptHandler)(void)){
+    UART1_FramingErrorHandler = interruptHandler;
+}
+
+void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void)){
+    UART1_OverrunErrorHandler = interruptHandler;
+}
+
+void UART1_SetErrorHandler(void (* interruptHandler)(void)){
+    UART1_ErrorHandler = interruptHandler;
 }

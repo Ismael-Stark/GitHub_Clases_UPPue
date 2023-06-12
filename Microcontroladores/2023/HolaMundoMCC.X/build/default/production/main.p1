@@ -1,17 +1,9 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"69 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 69: void SYSTEM_Initialize(void);
+"71 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"3614 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
-[s S3141 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3141 . RA0 RA1 RA2 RA3 RA4 RA5 RA6 RA7 ]
-"3613
-[u S3140 `S3141 1 ]
-[n S3140 . . ]
-"3625
-[v _PORTAbits `VS3140 ~T0 @X0 0 e@1230 ]
-"3210
+"3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3127 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
 "3209
@@ -20,6 +12,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3221
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
 [v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
+"27 main.c
+[; ;main.c: 27:         ADCvalor = ADC_GetSingleConversion(LM35);
+[c E23149 0 1 5 59 60 61 62 63 .. ]
+[n E23149 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"374 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
+[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23149 ]
+"107 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 107: int printf(const char *restrict, ...);
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3645,58 +3651,58 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 70742: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"49 main.c
-[; ;main.c: 49: void main(void)
+"6 main.c
+[; ;main.c: 6: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"50
-[; ;main.c: 50: {
+"7
+[; ;main.c: 7: {
 {
 [e :U _main ]
 [f ]
-"52
-[; ;main.c: 52:     SYSTEM_Initialize();
+"8
+[; ;main.c: 8:     uint16_t ADCvalor;
+[v _ADCvalor `us ~T0 @X0 1 a ]
+"10
+[; ;main.c: 10:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"64
-[; ;main.c: 64:     while (1)
-[e :U 3250 ]
-"65
-[; ;main.c: 65:     {
-{
-"67
-[; ;main.c: 67:         if(PORTAbits.RA3 == 0){
-[e $ ! == -> . . _PORTAbits 0 3 `i -> 0 `i 3252  ]
-{
-"68
-[; ;main.c: 68:             do { LATFbits.LATF3 = 1; } while(0);
-[e :U 3255 ]
-{
-[e = . . _LATFbits 0 3 -> -> 1 `i `uc ]
-}
-[e :U 3254 ]
-"69
-[; ;main.c: 69:         }else{
-}
-[e $U 3256  ]
+"22
+[; ;main.c: 22:     while (1)
 [e :U 3252 ]
+"23
+[; ;main.c: 23:     {
 {
-"70
-[; ;main.c: 70:             do { LATFbits.LATF3 = 0; } while(0);
+"25
+[; ;main.c: 25:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+[e :U 3256 ]
+{
+[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
+}
+[e :U 3255 ]
+"26
+[; ;main.c: 26:         do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
 [e :U 3259 ]
 {
-[e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
+[e = . . _LATFbits 0 2 -> ~ -> . . _LATFbits 0 2 `i `uc ]
 }
 [e :U 3258 ]
-"71
-[; ;main.c: 71:         }
+"27
+[; ;main.c: 27:         ADCvalor = ADC_GetSingleConversion(LM35);
+[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23149 2 ]
+"28
+[; ;main.c: 28:         printf("ADC5: %d\n",ADCvalor);
+[e ( _printf , (. :s 1C -> _ADCvalor `ui ]
+"29
+[; ;main.c: 29:         _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"30
+[; ;main.c: 30:     }
 }
-[e :U 3256 ]
-"72
-[; ;main.c: 72:     }
-}
-[e :U 3249 ]
-[e $U 3250  ]
 [e :U 3251 ]
-"73
-[; ;main.c: 73: }
-[e :UE 3248 ]
+[e $U 3252  ]
+[e :U 3253 ]
+"31
+[; ;main.c: 31: }
+[e :UE 3250 ]
 }
+[p f _printf 8388736 ]
+[a 1C 65 68 67 53 58 32 37 100 10 0 ]

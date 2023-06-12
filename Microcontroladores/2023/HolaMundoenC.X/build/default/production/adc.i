@@ -1,4 +1,4 @@
-# 1 "serial.c"
+# 1 "adc.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "serial.c" 2
-# 1 "./serial.h" 1
+# 1 "adc.c" 2
+# 1 "./adc.h" 1
+
+
 
 
 
@@ -38805,7 +38807,7 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
-# 5 "./serial.h" 2
+# 7 "./adc.h" 2
 
 # 1 "./Config.h" 1
 
@@ -39100,79 +39102,36 @@ char *tempnam(const char *, const char *);
 # 50 "./Config.h"
     void init_osc(void);
     void pin_init(void);
-# 6 "./serial.h" 2
-# 44 "./serial.h"
-    void serial_init(uint32_t baudios);
-    void serial_write(uint8_t data);
-    uint8_t serial_read(void);
-    int getch(void);
-# 1 "serial.c" 2
+# 8 "./adc.h" 2
 
 
-void serial_init(uint32_t baudios){
-    uint16_t BRG;
+    void ADC_Init();
 
-    U1CON0bits.BRGS = 1;
+    uint16_t ADC_Get_Sample(uint8_t canal);
+# 1 "adc.c" 2
 
 
 
 
+void ADC_Init(void){
 
+    ADCON0bits.CS = 0;
+    ADCLK = 0b001111;
+    ADCON2bits.MD = 0;
+    ADCON0bits.FM = 1;
+    ADREFbits.NREF = 0;
+    ADREFbits.PREF = 0;
 
-    BRG = (uint16_t)((10000000UL / (4 * baudios) ) - 1);
-
-
-
-    U1BRG = BRG;
-
-
-    U1CON0bits.MODE = 0;
-    U1CON1bits.ON = 1;
-    U1CON0bits.TXEN = 1;
-    U1CON0bits.RXEN = 1;
-
-    TRISFbits.TRISF0 = 0;
-    ANSELFbits.ANSELF1 = 0;
-    WPUFbits.WPUF1 = 0;
-
-    RF0PPS = 0x20;
-
-    TRISFbits.TRISF1 = 1;
-    ANSELFbits.ANSELF1 = 0;
-    WPUFbits.WPUF1 = 0;
-    INLVLFbits.INLVLF1 = 0;
-    SLRCONFbits.SLRF1 = 1;
-    ODCONFbits.ODCF1 = 0;
-
-    U1RXPPS = 0x29;
-
-
-
-
+    ADCON0bits.ON = 1;
 }
 
-void serial_write(uint8_t data){
-    while(U1ERRIRbits.TXMTIF == 0);
-
-
-    U1TXB = data;
-
-
-}
-
-uint8_t serial_read(void){
-    while(U1FIFObits.RXBF == 0);
-    return U1RXB;
-}
+uint16_t ADC_Get_Sample(uint8_t canal){
+    ADPCH = canal;
+    ADCON0bits.GO = 1;
+    while(ADCON0bits.GO == 1);
+    return((uint16_t)((ADRESH<<8) + ADRESL));
 
 
 
 
-void putch(char txData){
-    serial_write(txData);
-}
-
-int getch(void)
-{
-    return serial_read();
 }

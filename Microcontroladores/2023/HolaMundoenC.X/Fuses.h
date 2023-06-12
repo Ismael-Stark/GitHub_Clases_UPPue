@@ -154,4 +154,3 @@
 // Use project enums instead of #define for ON and OFF.
 
 #endif	/* XC_HEADER_TEMPLATE_H */
-

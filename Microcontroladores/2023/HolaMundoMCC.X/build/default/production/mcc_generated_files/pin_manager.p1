@@ -117,6 +117,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "61523
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 61523: extern volatile unsigned char INLVLF __attribute__((address(0x42C)));
 [v _INLVLF `Vuc ~T0 @X0 0 e@1068 ]
+"25515
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 25515: extern volatile unsigned char RF0PPS __attribute__((address(0x229)));
+[v _RF0PPS `Vuc ~T0 @X0 0 e@553 ]
+"29858
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 29858: extern volatile unsigned char U1RXPPS __attribute__((address(0x272)));
+[v _U1RXPPS `Vuc ~T0 @X0 0 e@626 ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3771,8 +3777,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 70:     TRISE = 0x07;
 [e = _TRISE -> -> 7 `i `uc ]
 "71
-[; ;mcc_generated_files/pin_manager.c: 71:     TRISF = 0xF7;
-[e = _TRISF -> -> 247 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 71:     TRISF = 0xF2;
+[e = _TRISF -> -> 242 `i `uc ]
 "72
 [; ;mcc_generated_files/pin_manager.c: 72:     TRISA = 0xFF;
 [e = _TRISA -> -> 255 `i `uc ]
@@ -3798,8 +3804,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;mcc_generated_files/pin_manager.c: 83:     ANSELE = 0x07;
 [e = _ANSELE -> -> 7 `i `uc ]
 "84
-[; ;mcc_generated_files/pin_manager.c: 84:     ANSELF = 0xF7;
-[e = _ANSELF -> -> 247 `i `uc ]
+[; ;mcc_generated_files/pin_manager.c: 84:     ANSELF = 0xF0;
+[e = _ANSELF -> -> 240 `i `uc ]
 "85
 [; ;mcc_generated_files/pin_manager.c: 85:     ANSELA = 0xF7;
 [e = _ANSELA -> -> 247 `i `uc ]
@@ -3875,19 +3881,25 @@ Version 4.0 HI-TECH Software Intermediate Code
 "125
 [; ;mcc_generated_files/pin_manager.c: 125:     INLVLF = 0xFF;
 [e = _INLVLF -> -> 255 `i `uc ]
-"133
-[; ;mcc_generated_files/pin_manager.c: 133: }
+"134
+[; ;mcc_generated_files/pin_manager.c: 134:     RF0PPS = 0x20;
+[e = _RF0PPS -> -> 32 `i `uc ]
+"135
+[; ;mcc_generated_files/pin_manager.c: 135:     U1RXPPS = 0x29;
+[e = _U1RXPPS -> -> 41 `i `uc ]
+"136
+[; ;mcc_generated_files/pin_manager.c: 136: }
 [e :UE 3246 ]
 }
-"135
-[; ;mcc_generated_files/pin_manager.c: 135: void PIN_MANAGER_IOC(void)
+"138
+[; ;mcc_generated_files/pin_manager.c: 138: void PIN_MANAGER_IOC(void)
 [v _PIN_MANAGER_IOC `(v ~T0 @X0 1 ef ]
-"136
-[; ;mcc_generated_files/pin_manager.c: 136: {
+"139
+[; ;mcc_generated_files/pin_manager.c: 139: {
 {
 [e :U _PIN_MANAGER_IOC ]
 [f ]
-"137
-[; ;mcc_generated_files/pin_manager.c: 137: }
+"140
+[; ;mcc_generated_files/pin_manager.c: 140: }
 [e :UE 3247 ]
 }

@@ -40,9 +40,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32702
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32702: extern volatile U1CON1bits_t U1CON1bits __attribute__((address(0x2AC)));
 [v _U1CON1bits `VS1527 ~T0 @X0 0 e@684 ]
-"25515
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 25515: extern volatile unsigned char RF0PPS __attribute__((address(0x229)));
-[v _RF0PPS `Vuc ~T0 @X0 0 e@553 ]
 "3552
 [s S3139 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3139 . TRISF0 TRISF1 TRISF2 TRISF3 TRISF4 TRISF5 TRISF6 TRISF7 ]
@@ -74,6 +71,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "61354
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 61354: extern volatile WPUFbits_t WPUFbits __attribute__((address(0x429)));
 [v _WPUFbits `VS2784 ~T0 @X0 0 e@1065 ]
+"25515
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 25515: extern volatile unsigned char RF0PPS __attribute__((address(0x229)));
+[v _RF0PPS `Vuc ~T0 @X0 0 e@553 ]
 "61529
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 61529:     struct {
 [s S2791 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -128,6 +128,29 @@ Version 4.0 HI-TECH Software Intermediate Code
 "32350
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32350: extern volatile unsigned char U1TXB __attribute__((address(0x2A3)));
 [v _U1TXB `Vuc ~T0 @X0 0 e@675 ]
+"32952
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32952:     struct {
+[s S1540 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1540 . RXBF RXBE XON RXIDL TXBF TXBE STPMD TXWRE ]
+"32962
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32962:     struct {
+[s S1541 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1541 . U1RXBF U1RXBE U1XON U1RXIDL U1TXBF U1TXBE U1STPMD U1TXWRE ]
+"32972
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32972:     struct {
+[s S1542 :3 `uc 1 :1 `uc 1 ]
+[n S1542 . . U1RCIDL ]
+"32976
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32976:     struct {
+[s S1543 :3 `uc 1 :1 `uc 1 ]
+[n S1543 . . RCIDL ]
+"32951
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32951: typedef union {
+[u S1539 `S1540 1 `S1541 1 `S1542 1 `S1543 1 ]
+[n S1539 . . . . . ]
+"32981
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32981: extern volatile U1FIFObits_t U1FIFObits __attribute__((address(0x2B0)));
+[v _U1FIFObits `VS1539 ~T0 @X0 0 e@688 ]
 "32292
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 32292: extern volatile unsigned char U1RXB __attribute__((address(0x2A1)));
 [v _U1RXB `Vuc ~T0 @X0 0 e@673 ]
@@ -3755,6 +3778,146 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70742
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 70742: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
+"14 ./Fuses.h
+[p x FEXTOSC  =  HS      ]
+"15
+[p x RSTOSC  =  EXTOSC   ]
+"18
+[p x CLKOUTEN  =  OFF    ]
+"19
+[p x PR1WAY  =  OFF       ]
+"20
+[p x CSWEN  =  ON        ]
+"21
+[p x JTAGEN  =  ON       ]
+"22
+[p x FCMEN  =  OFF        ]
+"23
+[p x FCMENP  =  ON       ]
+"24
+[p x FCMENS  =  ON       ]
+"27
+[p x MCLRE  =  EXTMCLR   ]
+"28
+[p x PWRTS  =  PWRT_OFF  ]
+"29
+[p x MVECEN  =  ON       ]
+"30
+[p x IVT1WAY  =  ON      ]
+"31
+[p x LPBOREN  =  OFF     ]
+"32
+[p x BOREN  =  OFF       ]
+"35
+[p x BORV  =  VBOR_1P9   ]
+"36
+[p x ZCD  =  OFF         ]
+"37
+[p x PPS1WAY  =  ON      ]
+"38
+[p x STVREN  =  ON       ]
+"39
+[p x LVP  =  ON          ]
+"40
+[p x XINST  =  OFF       ]
+"43
+[p x WDTCPS  =  WDTCPS_31 ]
+"44
+[p x WDTE  =  OFF        ]
+"47
+[p x WDTCWS  =  WDTCWS_7 ]
+"48
+[p x WDTCCS  =  SC       ]
+"51
+[p x BBSIZE  =  BBSIZE_512 ]
+"52
+[p x BBEN  =  OFF        ]
+"53
+[p x SAFEN  =  OFF       ]
+"54
+[p x DEBUG  =  OFF       ]
+"57
+[p x WRTB  =  OFF        ]
+"58
+[p x WRTC  =  OFF        ]
+"59
+[p x WRTD  =  OFF        ]
+"60
+[p x WRTSAF  =  OFF      ]
+"61
+[p x WRTAPP  =  OFF      ]
+"64
+[p x BOOTPINSEL  =  RC5  ]
+"65
+[p x BPEN  =  OFF        ]
+"66
+[p x ODCON  =  OFF       ]
+"69
+[p x CP  =  OFF          ]
+"72
+[p x BOOTSCEN  =  OFF    ]
+"73
+[p x BOOTCOE  =  HALT    ]
+"74
+[p x APPSCEN  =  OFF     ]
+"75
+[p x SAFSCEN  =  OFF     ]
+"76
+[p x DATASCEN  =  OFF    ]
+"77
+[p x CFGSCEN  =  OFF     ]
+"78
+[p x COE  =  HALT        ]
+"79
+[p x BOOTPOR  =  OFF     ]
+"82
+[p x BCRCPOLT  =  hFF    ]
+"85
+[p x BCRCPOLU  =  hFF    ]
+"88
+[p x BCRCPOLH  =  hFF    ]
+"91
+[p x BCRCPOLL  =  hFF    ]
+"94
+[p x BCRCSEEDT  =  hFF   ]
+"97
+[p x BCRCSEEDU  =  hFF   ]
+"100
+[p x BCRCSEEDH  =  hFF   ]
+"103
+[p x BCRCSEEDL  =  hFF   ]
+"106
+[p x BCRCEREST  =  hFF   ]
+"109
+[p x BCRCERESU  =  hFF   ]
+"112
+[p x BCRCERESH  =  hFF   ]
+"115
+[p x BCRCERESL  =  hFF   ]
+"118
+[p x CRCPOLT  =  hFF     ]
+"121
+[p x CRCPOLU  =  hFF     ]
+"124
+[p x CRCPOLH  =  hFF     ]
+"127
+[p x CRCPOLL  =  hFF     ]
+"130
+[p x CRCSEEDT  =  hFF    ]
+"133
+[p x CRCSEEDU  =  hFF    ]
+"136
+[p x CRCSEEDH  =  hFF    ]
+"139
+[p x CRCSEEDL  =  hFF    ]
+"142
+[p x CRCEREST  =  hFF    ]
+"145
+[p x CRCERESU  =  hFF    ]
+"148
+[p x CRCERESH  =  hFF    ]
+"151
+[p x CRCERESL  =  hFF    ]
 "3 serial.c
 [; ;serial.c: 3: void serial_init(uint32_t baudios){
 [v _serial_init `(v ~T0 @X0 1 ef1`ul ]
@@ -3762,114 +3925,136 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U _serial_init ]
 [v _baudios `ul ~T0 @X0 1 r1 ]
 [f ]
-"5
-[; ;serial.c: 5:     U1CON0bits.BRGS = 0;
-[e = . . _U1CON0bits 3 4 -> -> 0 `i `uc ]
+"4
+[; ;serial.c: 4:     uint16_t BRG;
+[v _BRG `us ~T0 @X0 1 a ]
 "6
-[; ;serial.c: 6:     U1BRG = 416;
-[e = _U1BRG -> -> 416 `i `us ]
-"8
-[; ;serial.c: 8:     U1CON0bits.MODE = 0;
-[e = . . _U1CON0bits 3 0 -> -> 0 `i `uc ]
-"9
-[; ;serial.c: 9:     U1CON1bits.ON = 1;
-[e = . . _U1CON1bits 0 6 -> -> 1 `i `uc ]
-"11
-[; ;serial.c: 11:     U1CON0bits.TXEN = 1;
-[e = . . _U1CON0bits 3 2 -> -> 1 `i `uc ]
+[; ;serial.c: 6:     U1CON0bits.BRGS = 1;
+[e = . . _U1CON0bits 3 4 -> -> 1 `i `uc ]
 "13
-[; ;serial.c: 13:     U1CON0bits.RXEN = 1;
-[e = . . _U1CON0bits 3 1 -> -> 1 `i `uc ]
-"15
-[; ;serial.c: 15:     RF0PPS = 0x20;
-[e = _RF0PPS -> -> 32 `i `uc ]
-"16
-[; ;serial.c: 16:     TRISFbits.TRISF1 = 1;
-[e = . . _TRISFbits 0 1 -> -> 1 `i `uc ]
+[; ;serial.c: 13:     BRG = (uint16_t)((10000000UL / (4 * baudios) ) - 1);
+[e = _BRG -> - / -> 10000000 `ul * -> -> -> 4 `i `l `ul _baudios -> -> -> 1 `i `l `ul `us ]
 "17
-[; ;serial.c: 17:     ANSELFbits.ANSELF1 = 0;
-[e = . . _ANSELFbits 0 1 -> -> 0 `i `uc ]
-"18
-[; ;serial.c: 18:     WPUFbits.WPUF1 = 0;
-[e = . . _WPUFbits 0 1 -> -> 0 `i `uc ]
-"19
-[; ;serial.c: 19:     INLVLFbits.INLVLF1 = 0;
-[e = . . _INLVLFbits 0 1 -> -> 0 `i `uc ]
+[; ;serial.c: 17:     U1BRG = BRG;
+[e = _U1BRG _BRG ]
 "20
-[; ;serial.c: 20:     SLRCONFbits.SLRF1 = 1;
-[e = . . _SLRCONFbits 0 1 -> -> 1 `i `uc ]
+[; ;serial.c: 20:     U1CON0bits.MODE = 0;
+[e = . . _U1CON0bits 3 0 -> -> 0 `i `uc ]
 "21
-[; ;serial.c: 21:     ODCONFbits.ODCF1 = 0;
-[e = . . _ODCONFbits 0 1 -> -> 0 `i `uc ]
+[; ;serial.c: 21:     U1CON1bits.ON = 1;
+[e = . . _U1CON1bits 0 6 -> -> 1 `i `uc ]
+"22
+[; ;serial.c: 22:     U1CON0bits.TXEN = 1;
+[e = . . _U1CON0bits 3 2 -> -> 1 `i `uc ]
 "23
-[; ;serial.c: 23:     U1RXPPS = 0x29;
+[; ;serial.c: 23:     U1CON0bits.RXEN = 1;
+[e = . . _U1CON0bits 3 1 -> -> 1 `i `uc ]
+"25
+[; ;serial.c: 25:     TRISFbits.TRISF0 = 0;
+[e = . . _TRISFbits 0 0 -> -> 0 `i `uc ]
+"26
+[; ;serial.c: 26:     ANSELFbits.ANSELF1 = 0;
+[e = . . _ANSELFbits 0 1 -> -> 0 `i `uc ]
+"27
+[; ;serial.c: 27:     WPUFbits.WPUF1 = 0;
+[e = . . _WPUFbits 0 1 -> -> 0 `i `uc ]
+"29
+[; ;serial.c: 29:     RF0PPS = 0x20;
+[e = _RF0PPS -> -> 32 `i `uc ]
+"31
+[; ;serial.c: 31:     TRISFbits.TRISF1 = 1;
+[e = . . _TRISFbits 0 1 -> -> 1 `i `uc ]
+"32
+[; ;serial.c: 32:     ANSELFbits.ANSELF1 = 0;
+[e = . . _ANSELFbits 0 1 -> -> 0 `i `uc ]
+"33
+[; ;serial.c: 33:     WPUFbits.WPUF1 = 0;
+[e = . . _WPUFbits 0 1 -> -> 0 `i `uc ]
+"34
+[; ;serial.c: 34:     INLVLFbits.INLVLF1 = 0;
+[e = . . _INLVLFbits 0 1 -> -> 0 `i `uc ]
+"35
+[; ;serial.c: 35:     SLRCONFbits.SLRF1 = 1;
+[e = . . _SLRCONFbits 0 1 -> -> 1 `i `uc ]
+"36
+[; ;serial.c: 36:     ODCONFbits.ODCF1 = 0;
+[e = . . _ODCONFbits 0 1 -> -> 0 `i `uc ]
+"38
+[; ;serial.c: 38:     U1RXPPS = 0x29;
 [e = _U1RXPPS -> -> 41 `i `uc ]
-"28
-[; ;serial.c: 28: }
-[e :UE 3246 ]
+"43
+[; ;serial.c: 43: }
+[e :UE 3248 ]
 }
-"30
-[; ;serial.c: 30: void serial_write(uint8_t data){
+"45
+[; ;serial.c: 45: void serial_write(uint8_t data){
 [v _serial_write `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _serial_write ]
 [v _data `uc ~T0 @X0 1 r1 ]
 [f ]
-"31
-[; ;serial.c: 31:     while(U1ERRIRbits.TXMTIF == 0);
-[e $U 3248  ]
-[e :U 3249 ]
-[e :U 3248 ]
-[e $ == -> . . _U1ERRIRbits 0 7 `i -> 0 `i 3249  ]
+"46
+[; ;serial.c: 46:     while(U1ERRIRbits.TXMTIF == 0);
+[e $U 3250  ]
+[e :U 3251 ]
 [e :U 3250 ]
-"34
-[; ;serial.c: 34:     U1TXB = data;
+[e $ == -> . . _U1ERRIRbits 0 7 `i -> 0 `i 3251  ]
+[e :U 3252 ]
+"49
+[; ;serial.c: 49:     U1TXB = data;
 [e = _U1TXB _data ]
-"42
-[; ;serial.c: 42: }
-[e :UE 3247 ]
+"52
+[; ;serial.c: 52: }
+[e :UE 3249 ]
 }
-"44
-[; ;serial.c: 44: uint8_t serial_read(void){
+"54
+[; ;serial.c: 54: uint8_t serial_read(void){
 [v _serial_read `(uc ~T0 @X0 1 ef ]
 {
 [e :U _serial_read ]
 [f ]
-"45
-[; ;serial.c: 45:     return U1RXB;
+"55
+[; ;serial.c: 55:     while(U1FIFObits.RXBF == 0);
+[e $U 3254  ]
+[e :U 3255 ]
+[e :U 3254 ]
+[e $ == -> . . _U1FIFObits 0 0 `i -> 0 `i 3255  ]
+[e :U 3256 ]
+"56
+[; ;serial.c: 56:     return U1RXB;
 [e ) _U1RXB ]
-[e $UE 3251  ]
-"62
-[; ;serial.c: 62: }
-[e :UE 3251 ]
+[e $UE 3253  ]
+"57
+[; ;serial.c: 57: }
+[e :UE 3253 ]
 }
-"64
-[; ;serial.c: 64: void putch(char txData){
+"62
+[; ;serial.c: 62: void putch(char txData){
 [v _putch `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _putch ]
 [v _txData `uc ~T0 @X0 1 r1 ]
 [f ]
-"65
-[; ;serial.c: 65:     serial_write(txData);
+"63
+[; ;serial.c: 63:     serial_write(txData);
 [e ( _serial_write (1 -> _txData `uc ]
-"66
-[; ;serial.c: 66: }
-[e :UE 3252 ]
+"64
+[; ;serial.c: 64: }
+[e :UE 3257 ]
 }
-"68
-[; ;serial.c: 68: char getch(void)
-[v _getch `(uc ~T0 @X0 1 ef ]
-"69
-[; ;serial.c: 69: {
+"66
+[; ;serial.c: 66: int getch(void)
+[v _getch `(i ~T0 @X0 1 ef ]
+"67
+[; ;serial.c: 67: {
 {
 [e :U _getch ]
 [f ]
-"70
-[; ;serial.c: 70:     return serial_read();
-[e ) -> ( _serial_read ..  `uc ]
-[e $UE 3253  ]
-"71
-[; ;serial.c: 71: }
-[e :UE 3253 ]
+"68
+[; ;serial.c: 68:     return serial_read();
+[e ) -> ( _serial_read ..  `i ]
+[e $UE 3258  ]
+"69
+[; ;serial.c: 69: }
+[e :UE 3258 ]
 }

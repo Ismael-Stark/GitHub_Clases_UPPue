@@ -1,41 +1,36 @@
 #include "Config.h"
 #include "serial.h"
+#include "adc.h"
 
-#define led_on() LATF = LATF & ~(1<<3); // mandar un 0 a la salida(encienden led)
-#define led_off() LATF = LATF | (1<<3);//mandar un 1 a la salida(apagan led)
-#define led_toogle() LATF = LATF ^ (1<<3);
-
-#define led2_off() LATF = LATF & ~(1<<2); // mandar un 0 a la salida(encienden led)
-#define led2_on() LATF = LATF | (1<<2);//mandar un 1 a la salida(apagan led)
-#define led2_toogle() LATF = LATF ^ (1<<2);
+//miercoles asignar equipos y proyectos de fin de cuatrimestre
 
 void main(void) {
     init_osc();
+    uint32_t count = 0; 
+    uint32_t max_count = 1000000; // 1 000 000
+    uint8_t contador=0, RX;
+    uint16_t LecturaADC;
     
-    //dksajbdsjkabsakjkv
-    //dsadnsa
-    LATA = 0;   //LIMPO LATA
-    PORTA = 0;  //LIMPIO PORTA
-    //TRISA = 0b00001000
-    TRISA |= (1<<3 | 1<<0);    //SOLO PIN A3 COMO ENTRADA, y pinA0 como entrada
-    WPUA |= (1<<3);     //SOLO SE ACTIVA PULL UP DEL PIN A3
-    ANSELA = 0;     //TODO E/S DIGITAL
     
-    LATF = 0;   //LIMPIO LATA
-    PORTF = 0;  //LIMPIO PORTA
-    //TRISF = 0b00000000;
-    TRISF &= ~(1<<3 | 1<<2 | 1<<1 | 1<<0);//PIN RF2 Y RF3 COMO SALIDAS
-    ANSELF = 0;     //TODO PUERTO COMO E/SALIDA DIGITAL
-    
-    //LATF |= (1<<2) ;  //ENCIENDO SALIDA
-    //LATF |= (1<<3) ;  //Apago LED tarjeta, recordar que led funciona con logica negada
     led_off();
     led2_on();
     
-    serial_init(9600);
+    serial_init(115200);
+    ADC_Init();
     
     
     while(1){
+        
+        LecturaADC = ADC_Get_Sample(5);
+        
+        printf("ADC0 = %d\n", LecturaADC);
+        __delay_ms(500);
+        
+        //printf("Hola mundo %d\n", contador++);
+        //RX = getch();
+        //printf("%c");
+        
+        
         /*if ( ((PORTA>>3) & 0x01) == 0  ){
             LATF = LATF & ~(1<<3);// mandar un 0 a la salida(encienden led)
         }else{
@@ -47,9 +42,20 @@ void main(void) {
         led_off();
         __delay_ms(50);*/
         
-        led2_toogle();
+        /*led2_toogle();
         led_toogle();
-        __delay_ms(500);
+        __delay_ms(500);*/
+        
+        //for (uint32_t x = 0; x<=1000000;x++)
+        //led_toogle();
+        
+        /*count += 1; 
+        if(count > max_count) 
+        {             
+            printf("count: %ld \n", count);         
+            count = 0; 
+            led_toogle();               
+        }   */
     }
     
     

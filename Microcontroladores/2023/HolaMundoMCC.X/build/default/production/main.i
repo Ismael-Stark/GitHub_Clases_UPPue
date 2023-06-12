@@ -7,7 +7,6 @@
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "main.c" 2
-# 44 "main.c"
 # 1 "./mcc_generated_files/mcc.h" 1
 # 49 "./mcc_generated_files/mcc.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 1 3
@@ -38810,9 +38809,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 118 "./mcc_generated_files/pin_manager.h"
+# 222 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 130 "./mcc_generated_files/pin_manager.h"
+# 234 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -38975,13 +38974,208 @@ char *ctermid(char *);
 char *tempnam(const char *, const char *);
 # 8 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\conio.h" 2 3
 # 54 "./mcc_generated_files/mcc.h" 2
-# 69 "./mcc_generated_files/mcc.h"
+
+# 1 "./mcc_generated_files/adc.h" 1
+# 65 "./mcc_generated_files/adc.h"
+typedef uint16_t adc_result_t;
+
+
+
+
+
+
+typedef enum
+{
+    POT1 = 0x0,
+    POT2 = 0x1,
+    LM35 = 0x5,
+    channel_VSS = 0x3B,
+    channel_Temp = 0x3C,
+    channel_DAC1 = 0x3D,
+    channel_FVR_Buffer1 = 0x3E,
+    channel_FVR_Buffer2 = 0x3F
+} ADC_channel_t;
+
+
+
+
+
+
+typedef enum
+{
+    CONTEXT_1,
+} ADC_context_t;
+# 115 "./mcc_generated_files/adc.h"
+void ADC_Initialize(void);
+# 146 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableChannelSequencer(void);
+# 168 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableChannelSequencer(void);
+# 200 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_StartChannelSequencer(void);
+# 223 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
+# 245 "./mcc_generated_files/adc.h"
+void ADC_EnableChannelScan(ADC_context_t context);
+# 269 "./mcc_generated_files/adc.h"
+void ADC_DisableChannelScan(ADC_context_t context);
+# 296 "./mcc_generated_files/adc.h"
+void ADC_StartConversion(ADC_channel_t channel);
+# 322 "./mcc_generated_files/adc.h"
+_Bool ADC_IsConversionDone(void);
+# 348 "./mcc_generated_files/adc.h"
+adc_result_t ADC_GetConversionResult(void);
+# 374 "./mcc_generated_files/adc.h"
+adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
+# 399 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_StopConversion(void);
+# 423 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SetStopOnInterrupt(void);
+# 451 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
+# 475 "./mcc_generated_files/adc.h"
+void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
+# 499 "./mcc_generated_files/adc.h"
+void ADC_SetPrechargeTime(uint16_t prechargeTime);
+# 523 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
+# 547 "./mcc_generated_files/adc.h"
+uint8_t ADC_GetCurrentCountofConversions(void);
+# 570 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_ClearAccumulator(void);
+# 594 "./mcc_generated_files/adc.h"
+uint24_t ADC_GetAccumulatorValue(void);
+# 621 "./mcc_generated_files/adc.h"
+_Bool ADC_HasAccumulatorOverflowed(void);
+# 645 "./mcc_generated_files/adc.h"
+uint16_t ADC_GetFilterValue(void);
+# 669 "./mcc_generated_files/adc.h"
+uint16_t ADC_GetPreviousResult(void);
+# 693 "./mcc_generated_files/adc.h"
+void ADC_DefineSetPoint(uint16_t setPoint);
+# 717 "./mcc_generated_files/adc.h"
+void ADC_SetUpperThreshold(uint16_t upperThreshold);
+# 741 "./mcc_generated_files/adc.h"
+void ADC_SetLowerThreshold(uint16_t lowerThreshold);
+# 766 "./mcc_generated_files/adc.h"
+uint16_t ADC_GetErrorCalculation(void);
+# 790 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableDoubleSampling(void);
+# 814 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableContinuousConversion(void);
+# 838 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableContinuousConversion(void);
+# 865 "./mcc_generated_files/adc.h"
+_Bool ADC_HasErrorCrossedUpperThreshold(void);
+# 892 "./mcc_generated_files/adc.h"
+_Bool ADC_HasErrorCrossedLowerThreshold(void);
+# 917 "./mcc_generated_files/adc.h"
+uint8_t ADC_GetConversionStageStatus(void);
+# 938 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableChargePump(void);
+# 959 "./mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableChargePump(void);
+
+
+
+
+
+
+
+void ADC_ADI_ISR(void);
+# 995 "./mcc_generated_files/adc.h"
+void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ACTI_ISR(void);
+# 1031 "./mcc_generated_files/adc.h"
+void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH1_ISR(void);
+# 1067 "./mcc_generated_files/adc.h"
+void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH2_ISR(void);
+# 1103 "./mcc_generated_files/adc.h"
+void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH3_ISR(void);
+# 1139 "./mcc_generated_files/adc.h"
+void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH4_ISR(void);
+# 1175 "./mcc_generated_files/adc.h"
+void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
+# 55 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/uart1.h" 1
+# 75 "./mcc_generated_files/uart1.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}uart1_status_t;
+# 111 "./mcc_generated_files/uart1.h"
+void UART1_Initialize(void);
+# 159 "./mcc_generated_files/uart1.h"
+_Bool UART1_is_rx_ready(void);
+# 207 "./mcc_generated_files/uart1.h"
+_Bool UART1_is_tx_ready(void);
+# 254 "./mcc_generated_files/uart1.h"
+_Bool UART1_is_tx_done(void);
+# 302 "./mcc_generated_files/uart1.h"
+uart1_status_t UART1_get_last_status(void);
+# 351 "./mcc_generated_files/uart1.h"
+uint8_t UART1_Read(void);
+# 376 "./mcc_generated_files/uart1.h"
+void UART1_Write(uint8_t txData);
+# 396 "./mcc_generated_files/uart1.h"
+void UART1_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 414 "./mcc_generated_files/uart1.h"
+void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 432 "./mcc_generated_files/uart1.h"
+void UART1_SetErrorHandler(void (* interruptHandler)(void));
+# 56 "./mcc_generated_files/mcc.h" 2
+# 71 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 82 "./mcc_generated_files/mcc.h"
+# 84 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 95 "./mcc_generated_files/mcc.h"
+# 97 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
-# 44 "main.c" 2
+# 1 "main.c" 2
 
 
 
@@ -38989,16 +39183,17 @@ void PMD_Initialize(void);
 
 void main(void)
 {
+    uint16_t ADCvalor;
 
     SYSTEM_Initialize();
-# 64 "main.c"
+# 22 "main.c"
     while (1)
     {
 
-        if(PORTAbits.RA3 == 0){
-            do { LATFbits.LATF3 = 1; } while(0);
-        }else{
-            do { LATFbits.LATF3 = 0; } while(0);
-        }
+        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+        do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
+        ADCvalor = ADC_GetSingleConversion(LM35);
+        printf("ADC5: %d\n",ADCvalor);
+        _delay((unsigned long)((500)*(10000000/4000.0)));
     }
 }

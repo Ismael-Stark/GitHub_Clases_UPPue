@@ -2,6 +2,46 @@ Version 4.0 HI-TECH Software Intermediate Code
 "5775 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 5775: extern volatile unsigned char OSCEN __attribute__((address(0x0B3)));
 [v _OSCEN `Vuc ~T0 @X0 0 e@179 ]
+"2924
+[v _LATA `Vuc ~T0 @X0 0 e@1214 ]
+"3608
+[v _PORTA `Vuc ~T0 @X0 0 e@1230 ]
+"3266
+[v _TRISA `Vuc ~T0 @X0 0 e@1222 ]
+"59304
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 59304: extern volatile unsigned char WPUA __attribute__((address(0x401)));
+[v _WPUA `Vuc ~T0 @X0 0 e@1025 ]
+"59242
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 59242: extern volatile unsigned char ANSELA __attribute__((address(0x400)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@1024 ]
+"3204
+[v _LATF `Vuc ~T0 @X0 0 e@1219 ]
+"3894
+[v _PORTF `Vuc ~T0 @X0 0 e@1235 ]
+"3546
+[v _TRISF `Vuc ~T0 @X0 0 e@1227 ]
+"61275
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 61275: extern volatile unsigned char ANSELF __attribute__((address(0x428)));
+[v _ANSELF `Vuc ~T0 @X0 0 e@1064 ]
+"3272
+[s S3129 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3129 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"3271
+[u S3128 `S3129 1 ]
+[n S3128 . . ]
+"3283
+[v _TRISAbits `VS3128 ~T0 @X0 0 e@1222 ]
+"59248
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 59248:     struct {
+[s S2709 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2709 . ANSELA0 ANSELA1 ANSELA2 ANSELA3 ANSELA4 ANSELA5 ANSELA6 ANSELA7 ]
+"59247
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 59247: typedef union {
+[u S2708 `S2709 1 ]
+[n S2708 . . ]
+"59259
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 59259: extern volatile ANSELAbits_t ANSELAbits __attribute__((address(0x400)));
+[v _ANSELAbits `VS2708 ~T0 @X0 0 e@1024 ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3777,5 +3817,60 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _OSCEN -> -> 128 `i `uc ]
 "9
 [; ;Config.c: 9: }
-[e :UE 3246 ]
+[e :UE 3248 ]
+}
+"12
+[; ;Config.c: 12: void pin_init(void){
+[v _pin_init `(v ~T0 @X0 1 ef ]
+{
+[e :U _pin_init ]
+[f ]
+"14
+[; ;Config.c: 14:     LATA = 0;
+[e = _LATA -> -> 0 `i `uc ]
+"15
+[; ;Config.c: 15:     PORTA = 0;
+[e = _PORTA -> -> 0 `i `uc ]
+"17
+[; ;Config.c: 17:     TRISA |= (1<<3 | 1<<0);
+[e =| _TRISA -> | << -> 1 `i -> 3 `i << -> 1 `i -> 0 `i `Vuc ]
+"18
+[; ;Config.c: 18:     WPUA |= (1<<3);
+[e =| _WPUA -> << -> 1 `i -> 3 `i `Vuc ]
+"19
+[; ;Config.c: 19:     ANSELA = 0;
+[e = _ANSELA -> -> 0 `i `uc ]
+"21
+[; ;Config.c: 21:     LATF = 0;
+[e = _LATF -> -> 0 `i `uc ]
+"22
+[; ;Config.c: 22:     PORTF = 0;
+[e = _PORTF -> -> 0 `i `uc ]
+"24
+[; ;Config.c: 24:     TRISF &= ~(1<<3 | 1<<2 | 1<<1 | 1<<0);
+[e =& _TRISF -> ~ | | | << -> 1 `i -> 3 `i << -> 1 `i -> 2 `i << -> 1 `i -> 1 `i << -> 1 `i -> 0 `i `Vuc ]
+"25
+[; ;Config.c: 25:     ANSELF = 0;
+[e = _ANSELF -> -> 0 `i `uc ]
+"30
+[; ;Config.c: 30:     TRISAbits.TRISA0 = 1;
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
+"31
+[; ;Config.c: 31:     ANSELAbits.ANSELA0 = 1;
+[e = . . _ANSELAbits 0 0 -> -> 1 `i `uc ]
+"32
+[; ;Config.c: 32:     TRISAbits.TRISA1 = 1;
+[e = . . _TRISAbits 0 1 -> -> 1 `i `uc ]
+"33
+[; ;Config.c: 33:     ANSELAbits.ANSELA1 = 1;
+[e = . . _ANSELAbits 0 1 -> -> 1 `i `uc ]
+"35
+[; ;Config.c: 35:     TRISA |= (1<<5);
+[e =| _TRISA -> << -> 1 `i -> 5 `i `Vuc ]
+"36
+[; ;Config.c: 36:     ANSELA |= (1<<5);
+[e =| _ANSELA -> << -> 1 `i -> 5 `i `Vuc ]
+"39
+[; ;Config.c: 39: }
+[e :UE 3249 ]
 }

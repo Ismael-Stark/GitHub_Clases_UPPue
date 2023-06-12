@@ -40,11 +40,11 @@ extern "C" {
 
     // TODO If C++ is being used, regular C code needs function names to have C 
     // linkage so the functions can be used by the c code. 
-    #define rxFlag ((PIR3>>5) & 0x01) //RCIF==0 significa que el bufer esta vacio, aun no llegan datos
-
+   
     void serial_init(uint32_t baudios);
     void serial_write(uint8_t data);
     uint8_t serial_read(void);
+    int getch(void);
     
     
 
