@@ -3953,11 +3953,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;serial.c: 25:     TRISFbits.TRISF0 = 0;
 [e = . . _TRISFbits 0 0 -> -> 0 `i `uc ]
 "26
-[; ;serial.c: 26:     ANSELFbits.ANSELF1 = 0;
-[e = . . _ANSELFbits 0 1 -> -> 0 `i `uc ]
+[; ;serial.c: 26:     ANSELFbits.ANSELF0 = 0;
+[e = . . _ANSELFbits 0 0 -> -> 0 `i `uc ]
 "27
-[; ;serial.c: 27:     WPUFbits.WPUF1 = 0;
-[e = . . _WPUFbits 0 1 -> -> 0 `i `uc ]
+[; ;serial.c: 27:     WPUFbits.WPUF0 = 0;
+[e = . . _WPUFbits 0 0 -> -> 0 `i `uc ]
 "29
 [; ;serial.c: 29:     RF0PPS = 0x20;
 [e = _RF0PPS -> -> 32 `i `uc ]

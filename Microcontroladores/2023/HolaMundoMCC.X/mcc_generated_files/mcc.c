@@ -50,6 +50,7 @@
 void SYSTEM_Initialize(void)
 {
     PMD_Initialize();
+    I2C1_Initialize();
     PIN_MANAGER_Initialize();
     ADC_Initialize();
     OSCILLATOR_Initialize();

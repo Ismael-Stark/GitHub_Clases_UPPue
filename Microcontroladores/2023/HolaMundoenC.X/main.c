@@ -6,6 +6,7 @@
 
 void main(void) {
     init_osc();
+    pin_init();
     uint32_t count = 0; 
     uint32_t max_count = 1000000; // 1 000 000
     uint8_t contador=0, RX;

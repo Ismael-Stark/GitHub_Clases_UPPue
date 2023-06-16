@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "mcc_generated_files/i2c1_master.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,102 +6,166 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
-# 1 "./mcc_generated_files/mcc.h" 1
-# 49 "./mcc_generated_files/mcc.h"
-# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 1 3
-# 18 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 3
-extern const char __xc8_OPTIM_SPEED;
-
-extern double __fpnormalize(double);
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\xc8debug.h" 1 3
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 1 3
+# 1 "mcc_generated_files/i2c1_master.c" 2
+# 47 "mcc_generated_files/i2c1_master.c"
+# 1 "mcc_generated_files/i2c1_master.h" 1
+# 54 "mcc_generated_files/i2c1_master.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 1 3
 
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\musl_xc8.h" 1 3
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 2 3
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 2 3
 
 
 
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\features.h" 1 3
-# 11 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 2 3
-# 21 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 3
+# 11 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 2 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 18 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long int wchar_t;
+
+
+
+
+
+typedef void * va_list[1];
+
+
+
+
+typedef void * __isoc_va_list[1];
 # 122 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef unsigned size_t;
+# 137 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long ssize_t;
 # 168 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __int24 int24_t;
 # 204 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef __uint24 uint24_t;
-# 22 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 2 3
+# 246 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long off_t;
+# 399 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct _IO_FILE FILE;
+# 25 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
+typedef union _G_fpos64_t {
+ char __opaque[16];
+ double __align;
+} fpos_t;
 
-int atoi (const char *);
-long atol (const char *);
-long long atoll (const char *);
-double atof (const char *);
-
-float strtof (const char *restrict, char **restrict);
-double strtod (const char *restrict, char **restrict);
-long double strtold (const char *restrict, char **restrict);
-
-
-
-long strtol (const char *restrict, char **restrict, int);
-unsigned long strtoul (const char *restrict, char **restrict, int);
-long long strtoll (const char *restrict, char **restrict, int);
-unsigned long long strtoull (const char *restrict, char **restrict, int);
-
-int rand (void);
-void srand (unsigned);
-
-void *malloc (size_t);
-void *calloc (size_t, size_t);
-void *realloc (void *, size_t);
-void free (void *);
-
-          void abort (void);
-int atexit (void (*) (void));
-          void exit (int);
-          void _Exit (int);
-
-void *bsearch (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+extern FILE *const stdin;
+extern FILE *const stdout;
+extern FILE *const stderr;
 
 
 
 
 
+FILE *fopen(const char *restrict, const char *restrict);
+FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
+int fclose(FILE *);
+
+int remove(const char *);
+int rename(const char *, const char *);
+
+int feof(FILE *);
+int ferror(FILE *);
+int fflush(FILE *);
+void clearerr(FILE *);
+
+int fseek(FILE *, long, int);
+long ftell(FILE *);
+void rewind(FILE *);
+
+int fgetpos(FILE *restrict, fpos_t *restrict);
+int fsetpos(FILE *, const fpos_t *);
+
+size_t fread(void *restrict, size_t, size_t, FILE *restrict);
+size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
+
+int fgetc(FILE *);
+int getc(FILE *);
+int getchar(void);
+int ungetc(int, FILE *);
+int getch(void);
+
+int fputc(int, FILE *);
+int putc(int, FILE *);
+int putchar(int);
+void putch(char);
+
+char *fgets(char *restrict, int, FILE *restrict);
+
+char *gets(char *);
 
 
-__attribute__((nonreentrant)) void qsort (void *, size_t, size_t, int (*)(const void *, const void *));
+int fputs(const char *restrict, FILE *restrict);
+int puts(const char *);
 
-int abs (int);
-long labs (long);
-long long llabs (long long);
+__attribute__((__format__(__printf__, 1, 2)))
+int printf(const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
+int fprintf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 2, 3)))
+int sprintf(char *restrict, const char *restrict, ...);
+__attribute__((__format__(__printf__, 3, 4)))
+int snprintf(char *restrict, size_t, const char *restrict, ...);
 
-typedef struct { int quot, rem; } div_t;
-typedef struct { long quot, rem; } ldiv_t;
-typedef struct { long long quot, rem; } lldiv_t;
+__attribute__((__format__(__printf__, 1, 0)))
+int vprintf(const char *restrict, __isoc_va_list);
+int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 2, 0)))
+int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__printf__, 3, 0)))
+int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
 
-div_t div (int, int);
-ldiv_t ldiv (long, long);
-lldiv_t lldiv (long long, long long);
+__attribute__((__format__(__scanf__, 1, 2)))
+int scanf(const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
+int fscanf(FILE *restrict, const char *restrict, ...);
+__attribute__((__format__(__scanf__, 2, 3)))
+int sscanf(const char *restrict, const char *restrict, ...);
 
-typedef struct { unsigned int quot, rem; } udiv_t;
-typedef struct { unsigned long quot, rem; } uldiv_t;
-udiv_t udiv (unsigned int, unsigned int);
-uldiv_t uldiv (unsigned long, unsigned long);
-# 5 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\xc8debug.h" 2 3
+__attribute__((__format__(__scanf__, 1, 0)))
+int vscanf(const char *restrict, __isoc_va_list);
+int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+__attribute__((__format__(__scanf__, 2, 0)))
+int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
+
+void perror(const char *);
+
+int setvbuf(FILE *restrict, char *restrict, int, size_t);
+void setbuf(FILE *restrict, char *restrict);
+
+char *tmpnam(char *);
+FILE *tmpfile(void);
+
+
+
+
+FILE *fmemopen(void *restrict, size_t, const char *restrict);
+FILE *open_memstream(char **, size_t *);
+FILE *fdopen(int, const char *);
+FILE *popen(const char *, const char *);
+int pclose(FILE *);
+int fileno(FILE *);
+int fseeko(FILE *, off_t, int);
+off_t ftello(FILE *);
+int dprintf(int, const char *restrict, ...);
+int vdprintf(int, const char *restrict, __isoc_va_list);
+void flockfile(FILE *);
+int ftrylockfile(FILE *);
+void funlockfile(FILE *);
+int getc_unlocked(FILE *);
+int getchar_unlocked(void);
+int putc_unlocked(int, FILE *);
+int putchar_unlocked(int);
+ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
+ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
+int renameat(int, const char *, int, const char *);
+char *ctermid(char *);
 
 
 
@@ -109,12 +173,8 @@ uldiv_t uldiv (unsigned long, unsigned long);
 
 
 
-#pragma intrinsic(__builtin_software_breakpoint)
-extern void __builtin_software_breakpoint(void);
-# 24 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
-# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\builtins.h" 1 3
-
-
+char *tempnam(const char *, const char *);
+# 54 "mcc_generated_files/i2c1_master.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 3
@@ -200,7 +260,166 @@ typedef int32_t int_fast32_t;
 typedef uint16_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 145 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdint.h" 2 3
-# 5 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\builtins.h" 2 3
+# 55 "mcc_generated_files/i2c1_master.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
+# 56 "mcc_generated_files/i2c1_master.h" 2
+
+
+typedef enum {
+    I2C1_NOERR,
+    I2C1_BUSY,
+    I2C1_FAIL
+
+
+} i2c1_error_t;
+
+typedef enum
+{
+    I2C1_STOP=1,
+    I2C1_RESTART_READ,
+    I2C1_RESTART_WRITE,
+    I2C1_CONTINUE,
+    I2C1_RESET_LINK
+} i2c1_operations_t;
+
+typedef uint8_t i2c1_address_t;
+typedef i2c1_operations_t (*i2c1_callback_t)(void *funPtr);
+
+
+i2c1_operations_t I2C1_CallbackReturnStop(void *funPtr);
+i2c1_operations_t I2C1_CallbackReturnReset(void *funPtr);
+i2c1_operations_t I2C1_CallbackRestartWrite(void *funPtr);
+i2c1_operations_t I2C1_CallbackRestartRead(void *funPtr);
+
+
+
+
+
+
+void I2C1_Initialize(void);
+# 101 "mcc_generated_files/i2c1_master.h"
+i2c1_error_t I2C1_Open(i2c1_address_t address);
+# 111 "mcc_generated_files/i2c1_master.h"
+i2c1_error_t I2C1_Close(void);
+# 123 "mcc_generated_files/i2c1_master.h"
+i2c1_error_t I2C1_MasterOperation(_Bool read);
+
+
+
+
+i2c1_error_t I2C1_MasterWrite(void);
+
+
+
+
+i2c1_error_t I2C1_MasterRead(void);
+# 142 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetTimeout(uint8_t timeOut);
+# 152 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetBuffer(void *buffer, size_t bufferSize);
+# 164 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetDataCompleteCallback(i2c1_callback_t cb, void *ptr);
+# 174 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetWriteCollisionCallback(i2c1_callback_t cb, void *ptr);
+# 184 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr);
+# 194 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr);
+# 204 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr);
+# 47 "mcc_generated_files/i2c1_master.c" 2
+
+# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 1 3
+# 18 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 3
+extern const char __xc8_OPTIM_SPEED;
+
+extern double __fpnormalize(double);
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\xc8debug.h" 1 3
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 1 3
+# 21 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 18 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int wchar_t;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdlib.h" 2 3
+
+int atoi (const char *);
+long atol (const char *);
+long long atoll (const char *);
+double atof (const char *);
+
+float strtof (const char *restrict, char **restrict);
+double strtod (const char *restrict, char **restrict);
+long double strtold (const char *restrict, char **restrict);
+
+
+
+long strtol (const char *restrict, char **restrict, int);
+unsigned long strtoul (const char *restrict, char **restrict, int);
+long long strtoll (const char *restrict, char **restrict, int);
+unsigned long long strtoull (const char *restrict, char **restrict, int);
+
+int rand (void);
+void srand (unsigned);
+
+void *malloc (size_t);
+void *calloc (size_t, size_t);
+void *realloc (void *, size_t);
+void free (void *);
+
+          void abort (void);
+int atexit (void (*) (void));
+          void exit (int);
+          void _Exit (int);
+
+void *bsearch (const void *, const void *, size_t, size_t, int (*)(const void *, const void *));
+
+
+
+
+
+
+
+__attribute__((nonreentrant)) void qsort (void *, size_t, size_t, int (*)(const void *, const void *));
+
+int abs (int);
+long labs (long);
+long long llabs (long long);
+
+typedef struct { int quot, rem; } div_t;
+typedef struct { long quot, rem; } ldiv_t;
+typedef struct { long long quot, rem; } lldiv_t;
+
+div_t div (int, int);
+ldiv_t ldiv (long, long);
+lldiv_t lldiv (long long, long long);
+
+typedef struct { unsigned int quot, rem; } udiv_t;
+typedef struct { unsigned long quot, rem; } uldiv_t;
+udiv_t udiv (unsigned int, unsigned int);
+uldiv_t uldiv (unsigned long, unsigned long);
+# 5 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\xc8debug.h" 2 3
+
+
+
+
+
+
+
+#pragma intrinsic(__builtin_software_breakpoint)
+extern void __builtin_software_breakpoint(void);
+# 24 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
+# 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\builtins.h" 1 3
+
+
+
+
 
 
 #pragma intrinsic(__nop)
@@ -38803,850 +39022,798 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
-# 49 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/device_config.h" 1
-# 50 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/pin_manager.h" 1
-# 246 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_Initialize (void);
-# 258 "./mcc_generated_files/pin_manager.h"
-void PIN_MANAGER_IOC(void);
-# 51 "./mcc_generated_files/mcc.h" 2
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "./mcc_generated_files/mcc.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\conio.h" 1 3
+# 48 "mcc_generated_files/i2c1_master.c" 2
 
 
 
-
-
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 1 3
-# 24 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
-
-
-
-
-
-typedef void * va_list[1];
-
-
-
-
-typedef void * __isoc_va_list[1];
-# 137 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long ssize_t;
-# 246 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long long off_t;
-# 399 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef struct _IO_FILE FILE;
-# 25 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 2 3
-# 52 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 3
-typedef union _G_fpos64_t {
- char __opaque[16];
- double __align;
-} fpos_t;
-
-extern FILE *const stdin;
-extern FILE *const stdout;
-extern FILE *const stderr;
-
-
-
-
-
-FILE *fopen(const char *restrict, const char *restrict);
-FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
-int fclose(FILE *);
-
-int remove(const char *);
-int rename(const char *, const char *);
-
-int feof(FILE *);
-int ferror(FILE *);
-int fflush(FILE *);
-void clearerr(FILE *);
-
-int fseek(FILE *, long, int);
-long ftell(FILE *);
-void rewind(FILE *);
-
-int fgetpos(FILE *restrict, fpos_t *restrict);
-int fsetpos(FILE *, const fpos_t *);
-
-size_t fread(void *restrict, size_t, size_t, FILE *restrict);
-size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
-
-int fgetc(FILE *);
-int getc(FILE *);
-int getchar(void);
-int ungetc(int, FILE *);
-int getch(void);
-
-int fputc(int, FILE *);
-int putc(int, FILE *);
-int putchar(int);
-void putch(char);
-
-char *fgets(char *restrict, int, FILE *restrict);
-
-char *gets(char *);
-
-
-int fputs(const char *restrict, FILE *restrict);
-int puts(const char *);
-
-__attribute__((__format__(__printf__, 1, 2)))
-int printf(const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int fprintf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 2, 3)))
-int sprintf(char *restrict, const char *restrict, ...);
-__attribute__((__format__(__printf__, 3, 4)))
-int snprintf(char *restrict, size_t, const char *restrict, ...);
-
-__attribute__((__format__(__printf__, 1, 0)))
-int vprintf(const char *restrict, __isoc_va_list);
-int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 2, 0)))
-int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__printf__, 3, 0)))
-int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
-
-__attribute__((__format__(__scanf__, 1, 2)))
-int scanf(const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int fscanf(FILE *restrict, const char *restrict, ...);
-__attribute__((__format__(__scanf__, 2, 3)))
-int sscanf(const char *restrict, const char *restrict, ...);
-
-__attribute__((__format__(__scanf__, 1, 0)))
-int vscanf(const char *restrict, __isoc_va_list);
-int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
-__attribute__((__format__(__scanf__, 2, 0)))
-int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
-
-void perror(const char *);
-
-int setvbuf(FILE *restrict, char *restrict, int, size_t);
-void setbuf(FILE *restrict, char *restrict);
-
-char *tmpnam(char *);
-FILE *tmpfile(void);
-
-
-
-
-FILE *fmemopen(void *restrict, size_t, const char *restrict);
-FILE *open_memstream(char **, size_t *);
-FILE *fdopen(int, const char *);
-FILE *popen(const char *, const char *);
-int pclose(FILE *);
-int fileno(FILE *);
-int fseeko(FILE *, off_t, int);
-off_t ftello(FILE *);
-int dprintf(int, const char *restrict, ...);
-int vdprintf(int, const char *restrict, __isoc_va_list);
-void flockfile(FILE *);
-int ftrylockfile(FILE *);
-void funlockfile(FILE *);
-int getc_unlocked(FILE *);
-int getchar_unlocked(void);
-int putc_unlocked(int, FILE *);
-int putchar_unlocked(int);
-ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
-ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
-int renameat(int, const char *, int, const char *);
-char *ctermid(char *);
-
-
-
-
-
-
-
-char *tempnam(const char *, const char *);
-# 8 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\conio.h" 2 3
-# 54 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/i2c1_master.h" 1
-# 58 "./mcc_generated_files/i2c1_master.h"
 typedef enum {
-    I2C1_NOERR,
-    I2C1_BUSY,
-    I2C1_FAIL
+    I2C1_IDLE = 0,
+    I2C1_SEND_ADR_READ,
+    I2C1_SEND_ADR_WRITE,
+    I2C1_TX,
+    I2C1_RX,
+    I2C1_TX_EMPTY,
+    I2C1_RX_EMPTY,
+    I2C1_SEND_RESTART_READ,
+    I2C1_SEND_RESTART_WRITE,
+    I2C1_SEND_RESTART,
+    I2C1_SEND_STOP,
+    I2C1_RX_ACK,
+    I2C1_TX_ACK,
+    I2C1_RX_NACK_STOP,
+    I2C1_RX_NACK_RESTART,
+    I2C1_RESET,
+    I2C1_ADDRESS_NACK,
+    I2C1_BUS_COLLISION,
+    I2C1_BUS_ERROR
+} i2c1_fsm_states_t;
 
 
-} i2c1_error_t;
+typedef enum {
+    I2C1_DATA_COMPLETE = 0,
+    I2C1_WRITE_COLLISION,
+    I2C1_ADDR_NACK,
+    I2C1_DATA_NACK,
+    I2C1_TIMEOUT,
+    I2C1_NULL
+} i2c1_callbackIndex_t;
 
-typedef enum
+
+typedef struct
 {
-    I2C1_STOP=1,
-    I2C1_RESTART_READ,
-    I2C1_RESTART_WRITE,
-    I2C1_CONTINUE,
-    I2C1_RESET_LINK
-} i2c1_operations_t;
+    i2c1_callback_t callbackTable[6];
+    void *callbackPayload[6];
+    uint16_t time_out;
+    uint16_t time_out_value;
+    i2c1_address_t address;
+    uint8_t *data_ptr;
+    size_t data_length;
+    i2c1_fsm_states_t state;
+    i2c1_error_t error;
+    unsigned addressNackCheck:2;
+    unsigned busy:1;
+    unsigned inUse:1;
+    unsigned bufferFree:1;
 
-typedef uint8_t i2c1_address_t;
-typedef i2c1_operations_t (*i2c1_callback_t)(void *funPtr);
+} i2c1_status_t;
 
-
-i2c1_operations_t I2C1_CallbackReturnStop(void *funPtr);
-i2c1_operations_t I2C1_CallbackReturnReset(void *funPtr);
-i2c1_operations_t I2C1_CallbackRestartWrite(void *funPtr);
-i2c1_operations_t I2C1_CallbackRestartRead(void *funPtr);
-
-
-
-
-
-
-void I2C1_Initialize(void);
-# 101 "./mcc_generated_files/i2c1_master.h"
-i2c1_error_t I2C1_Open(i2c1_address_t address);
-# 111 "./mcc_generated_files/i2c1_master.h"
-i2c1_error_t I2C1_Close(void);
-# 123 "./mcc_generated_files/i2c1_master.h"
-i2c1_error_t I2C1_MasterOperation(_Bool read);
+static void I2C1_SetCallback(i2c1_callbackIndex_t idx, i2c1_callback_t cb, void *ptr);
+static void I2C1_Poller(void);
+static __attribute__((inline)) void I2C1_ClearInterruptFlags(void);
+static __attribute__((inline)) void I2C1_MasterFsm(void);
 
 
+static __attribute__((inline)) _Bool I2C1_MasterOpen(void);
+static __attribute__((inline)) void I2C1_MasterClose(void);
+static __attribute__((inline)) uint8_t I2C1_MasterGetRxData(void);
+static __attribute__((inline)) void I2C1_MasterSendTxData(uint8_t data);
+static __attribute__((inline)) void I2C1_MasterSetCounter(uint8_t counter);
+static __attribute__((inline)) uint8_t I2C1_MasterGetCounter();
+static __attribute__((inline)) void I2C1_MasterResetBus(void);
+static __attribute__((inline)) void I2C1_MasterEnableRestart(void);
+static __attribute__((inline)) void I2C1_MasterDisableRestart(void);
+static __attribute__((inline)) void I2C1_MasterStop(void);
+static __attribute__((inline)) _Bool I2C1_MasterIsNack(void);
+static __attribute__((inline)) void I2C1_MasterSendAck(void);
+static __attribute__((inline)) void I2C1_MasterSendNack(void);
+static __attribute__((inline)) void I2C1_MasterClearBusCollision(void);
+static __attribute__((inline)) _Bool I2C1_MasterIsRxBufFull(void);
+static __attribute__((inline)) _Bool I2C1_MasterIsTxBufEmpty(void);
+static __attribute__((inline)) _Bool I2C1_MasterIsStopFlagSet(void);
+static __attribute__((inline)) _Bool I2C1_MasterIsCountFlagSet(void);
+static __attribute__((inline)) _Bool I2C1_MasterIsNackFlagSet(void);
+static __attribute__((inline)) void I2C1_MasterClearStopFlag(void);
+static __attribute__((inline)) void I2C1_MasterClearCountFlag(void);
+static __attribute__((inline)) void I2C1_MasterClearNackFlag(void);
 
 
-i2c1_error_t I2C1_MasterWrite(void);
+static __attribute__((inline)) void I2C1_MasterEnableIrq(void);
+static __attribute__((inline)) _Bool I2C1_MasterIsIrqEnabled(void);
+static __attribute__((inline)) void I2C1_MasterDisableIrq(void);
+static __attribute__((inline)) void I2C1_MasterClearIrq(void);
+static __attribute__((inline)) void I2C1_MasterWaitForEvent(void);
 
+static i2c1_fsm_states_t I2C1_DO_IDLE(void);
+static i2c1_fsm_states_t I2C1_DO_SEND_ADR_READ(void);
+static i2c1_fsm_states_t I2C1_DO_SEND_ADR_WRITE(void);
+static i2c1_fsm_states_t I2C1_DO_TX(void);
+static i2c1_fsm_states_t I2C1_DO_RX(void);
+static i2c1_fsm_states_t I2C1_DO_TX_EMPTY(void);
+static i2c1_fsm_states_t I2C1_DO_RX_EMPTY(void);
+static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_READ(void);
+static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_WRITE(void);
+static i2c1_fsm_states_t I2C1_DO_SEND_RESTART(void);
+static i2c1_fsm_states_t I2C1_DO_SEND_STOP(void);
+static i2c1_fsm_states_t I2C1_DO_RX_ACK(void);
+static i2c1_fsm_states_t I2C1_DO_TX_ACK(void);
+static i2c1_fsm_states_t I2C1_DO_RX_NACK_STOP(void);
+static i2c1_fsm_states_t I2C1_DO_RX_NACK_RESTART(void);
+static i2c1_fsm_states_t I2C1_DO_RESET(void);
+static i2c1_fsm_states_t I2C1_DO_ADDRESS_NACK(void);
+static i2c1_fsm_states_t I2C1_DO_BUS_COLLISION(void);
+static i2c1_fsm_states_t I2C1_DO_BUS_ERROR(void);
 
+typedef i2c1_fsm_states_t (*i2c1FsmHandler)(void);
+const i2c1FsmHandler i2c1_fsmStateTable[] = {
+    I2C1_DO_IDLE,
+    I2C1_DO_SEND_ADR_READ,
+    I2C1_DO_SEND_ADR_WRITE,
+    I2C1_DO_TX,
+    I2C1_DO_RX,
+    I2C1_DO_TX_EMPTY,
+    I2C1_DO_RX_EMPTY,
+    I2C1_DO_SEND_RESTART_READ,
+    I2C1_DO_SEND_RESTART_WRITE,
+    I2C1_DO_SEND_RESTART,
+    I2C1_DO_SEND_STOP,
+    I2C1_DO_RX_ACK,
+    I2C1_DO_TX_ACK,
+    I2C1_DO_RX_NACK_STOP,
+    I2C1_DO_RX_NACK_RESTART,
+    I2C1_DO_RESET,
+    I2C1_DO_ADDRESS_NACK,
+    I2C1_DO_BUS_COLLISION,
+    I2C1_DO_BUS_ERROR
+};
 
+i2c1_status_t I2C1_Status = {0};
 
-i2c1_error_t I2C1_MasterRead(void);
-# 142 "./mcc_generated_files/i2c1_master.h"
-void I2C1_SetTimeout(uint8_t timeOut);
-# 152 "./mcc_generated_files/i2c1_master.h"
-void I2C1_SetBuffer(void *buffer, size_t bufferSize);
-# 164 "./mcc_generated_files/i2c1_master.h"
-void I2C1_SetDataCompleteCallback(i2c1_callback_t cb, void *ptr);
-# 174 "./mcc_generated_files/i2c1_master.h"
-void I2C1_SetWriteCollisionCallback(i2c1_callback_t cb, void *ptr);
-# 184 "./mcc_generated_files/i2c1_master.h"
-void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr);
-# 194 "./mcc_generated_files/i2c1_master.h"
-void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr);
-# 204 "./mcc_generated_files/i2c1_master.h"
-void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr);
-# 55 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/adc.h" 1
-# 65 "./mcc_generated_files/adc.h"
-typedef uint16_t adc_result_t;
-
-
-
-
-
-
-typedef enum
+void I2C1_Initialize()
 {
-    POT1 = 0x0,
-    POT2 = 0x1,
-    LM35 = 0x5,
-    channel_VSS = 0x3B,
-    channel_Temp = 0x3C,
-    channel_DAC1 = 0x3D,
-    channel_FVR_Buffer1 = 0x3E,
-    channel_FVR_Buffer2 = 0x3F
-} ADC_channel_t;
 
+    I2C1CON0 = 0x04;
 
+    I2C1CON1 = 0x80;
 
+    I2C1CON2 = 0x18;
 
+    I2C1CLK = 0x03;
 
+    I2C1PIR = 0x00;
 
-typedef enum
+    I2C1PIE = 0x00;
+
+    I2C1ERR = 0x00;
+
+    I2C1CNTL = 0x00;
+    I2C1CNTH = 0x00;
+
+    I2C1BAUD = 0x00;
+    return;
+}
+
+i2c1_error_t I2C1_Open(i2c1_address_t address)
 {
-    CONTEXT_1,
-} ADC_context_t;
-# 115 "./mcc_generated_files/adc.h"
-void ADC_Initialize(void);
-# 146 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableChannelSequencer(void);
-# 168 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DisableChannelSequencer(void);
-# 200 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_StartChannelSequencer(void);
-# 223 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
-# 245 "./mcc_generated_files/adc.h"
-void ADC_EnableChannelScan(ADC_context_t context);
-# 269 "./mcc_generated_files/adc.h"
-void ADC_DisableChannelScan(ADC_context_t context);
-# 296 "./mcc_generated_files/adc.h"
-void ADC_StartConversion(ADC_channel_t channel);
-# 322 "./mcc_generated_files/adc.h"
-_Bool ADC_IsConversionDone(void);
-# 348 "./mcc_generated_files/adc.h"
-adc_result_t ADC_GetConversionResult(void);
-# 374 "./mcc_generated_files/adc.h"
-adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-# 399 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_StopConversion(void);
-# 423 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_SetStopOnInterrupt(void);
-# 451 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
-# 475 "./mcc_generated_files/adc.h"
-void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
-# 499 "./mcc_generated_files/adc.h"
-void ADC_SetPrechargeTime(uint16_t prechargeTime);
-# 523 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
-# 547 "./mcc_generated_files/adc.h"
-uint8_t ADC_GetCurrentCountofConversions(void);
-# 570 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_ClearAccumulator(void);
-# 594 "./mcc_generated_files/adc.h"
-uint24_t ADC_GetAccumulatorValue(void);
-# 621 "./mcc_generated_files/adc.h"
-_Bool ADC_HasAccumulatorOverflowed(void);
-# 645 "./mcc_generated_files/adc.h"
-uint16_t ADC_GetFilterValue(void);
-# 669 "./mcc_generated_files/adc.h"
-uint16_t ADC_GetPreviousResult(void);
-# 693 "./mcc_generated_files/adc.h"
-void ADC_DefineSetPoint(uint16_t setPoint);
-# 717 "./mcc_generated_files/adc.h"
-void ADC_SetUpperThreshold(uint16_t upperThreshold);
-# 741 "./mcc_generated_files/adc.h"
-void ADC_SetLowerThreshold(uint16_t lowerThreshold);
-# 766 "./mcc_generated_files/adc.h"
-uint16_t ADC_GetErrorCalculation(void);
-# 790 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableDoubleSampling(void);
-# 814 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableContinuousConversion(void);
-# 838 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DisableContinuousConversion(void);
-# 865 "./mcc_generated_files/adc.h"
-_Bool ADC_HasErrorCrossedUpperThreshold(void);
-# 892 "./mcc_generated_files/adc.h"
-_Bool ADC_HasErrorCrossedLowerThreshold(void);
-# 917 "./mcc_generated_files/adc.h"
-uint8_t ADC_GetConversionStageStatus(void);
-# 938 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_EnableChargePump(void);
-# 959 "./mcc_generated_files/adc.h"
-__attribute__((inline)) void ADC_DisableChargePump(void);
-
-
-
-
-
-
-
-void ADC_ADI_ISR(void);
-# 995 "./mcc_generated_files/adc.h"
-void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ACTI_ISR(void);
-# 1031 "./mcc_generated_files/adc.h"
-void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH1_ISR(void);
-# 1067 "./mcc_generated_files/adc.h"
-void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH2_ISR(void);
-# 1103 "./mcc_generated_files/adc.h"
-void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH3_ISR(void);
-# 1139 "./mcc_generated_files/adc.h"
-void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
-
-
-
-
-
-
-
-void ADC_ADCH4_ISR(void);
-# 1175 "./mcc_generated_files/adc.h"
-void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
-# 56 "./mcc_generated_files/mcc.h" 2
-
-# 1 "./mcc_generated_files/uart1.h" 1
-# 75 "./mcc_generated_files/uart1.h"
-typedef union {
-    struct {
-        unsigned perr : 1;
-        unsigned ferr : 1;
-        unsigned oerr : 1;
-        unsigned reserved : 5;
-    };
-    uint8_t status;
-}uart1_status_t;
-# 111 "./mcc_generated_files/uart1.h"
-void UART1_Initialize(void);
-# 159 "./mcc_generated_files/uart1.h"
-_Bool UART1_is_rx_ready(void);
-# 207 "./mcc_generated_files/uart1.h"
-_Bool UART1_is_tx_ready(void);
-# 254 "./mcc_generated_files/uart1.h"
-_Bool UART1_is_tx_done(void);
-# 302 "./mcc_generated_files/uart1.h"
-uart1_status_t UART1_get_last_status(void);
-# 351 "./mcc_generated_files/uart1.h"
-uint8_t UART1_Read(void);
-# 376 "./mcc_generated_files/uart1.h"
-void UART1_Write(uint8_t txData);
-# 396 "./mcc_generated_files/uart1.h"
-void UART1_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 414 "./mcc_generated_files/uart1.h"
-void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 432 "./mcc_generated_files/uart1.h"
-void UART1_SetErrorHandler(void (* interruptHandler)(void));
-# 57 "./mcc_generated_files/mcc.h" 2
-# 72 "./mcc_generated_files/mcc.h"
-void SYSTEM_Initialize(void);
-# 85 "./mcc_generated_files/mcc.h"
-void OSCILLATOR_Initialize(void);
-# 98 "./mcc_generated_files/mcc.h"
-void PMD_Initialize(void);
-# 1 "main.c" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\math.h" 1 3
-# 15 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\math.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 33 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef float float_t;
-
-
-
-
-typedef double double_t;
-# 16 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\math.h" 2 3
-# 42 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\math.h" 3
-int __fpclassifyf(float);
-
-
-
-
-
-
-
-int __signbitf(float);
-# 59 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\math.h" 3
-double acos(double);
-float acosf(float);
-long double acosl(long double);
-
-
-
-double acosh(double);
-float acoshf(float);
-long double acoshl(long double);
-
-
-
-double asin(double);
-float asinf(float);
-long double asinl(long double);
-
-
-
-double asinh(double);
-float asinhf(float);
-long double asinhl(long double);
-
-
-
-double atan(double);
-float atanf(float);
-long double atanl(long double);
-
-
-
-double atan2(double, double);
-float atan2f(float, float);
-long double atan2l(long double, long double);
-
-
-
-double atanh(double);
-float atanhf(float);
-long double atanhl(long double);
-
-
-
-double cbrt(double);
-float cbrtf(float);
-long double cbrtl(long double);
-
-
-
-double ceil(double);
-float ceilf(float);
-long double ceill(long double);
-
-
-
-double copysign(double, double);
-float copysignf(float, float);
-long double copysignl(long double, long double);
-
-
-
-double cos(double);
-float cosf(float);
-long double cosl(long double);
-
-
-
-double cosh(double);
-float coshf(float);
-long double coshl(long double);
-
-
-
-double erf(double);
-float erff(float);
-long double erfl(long double);
-
-
-
-double erfc(double);
-float erfcf(float);
-long double erfcl(long double);
-
-
-
-double exp(double);
-float expf(float);
-long double expl(long double);
-
-
-
-double exp2(double);
-float exp2f(float);
-long double exp2l(long double);
-
-
-
-double expm1(double);
-float expm1f(float);
-long double expm1l(long double);
-
-
-
-double fabs(double);
-float fabsf(float);
-long double fabsl(long double);
-
-
-
-double fdim(double, double);
-float fdimf(float, float);
-long double fdiml(long double, long double);
-
-
-
-double floor(double);
-float floorf(float);
-long double floorl(long double);
-
-
-
-double fma(double, double, double);
-float fmaf(float, float, float);
-long double fmal(long double, long double, long double);
-
-
-
-double fmax(double, double);
-float fmaxf(float, float);
-long double fmaxl(long double, long double);
-
-
-
-double fmin(double, double);
-float fminf(float, float);
-long double fminl(long double, long double);
-
-
-
-double fmod(double, double);
-float fmodf(float, float);
-long double fmodl(long double, long double);
-
-
-
-double frexp(double, int *);
-float frexpf(float, int *);
-long double frexpl(long double, int *);
-
-
-
-double hypot(double, double);
-float hypotf(float, float);
-long double hypotl(long double, long double);
-
-
-
-int ilogb(double);
-int ilogbf(float);
-int ilogbl(long double);
-
-
-
-double ldexp(double, int);
-float ldexpf(float, int);
-long double ldexpl(long double, int);
-
-
-
-double lgamma(double);
-float lgammaf(float);
-long double lgammal(long double);
-
-
-
-long long llrint(double);
-long long llrintf(float);
-long long llrintl(long double);
-
-
-
-long long llround(double);
-long long llroundf(float);
-long long llroundl(long double);
-
-
-
-double log(double);
-float logf(float);
-long double logl(long double);
-
-
-
-double log10(double);
-float log10f(float);
-long double log10l(long double);
-
-
-
-double log1p(double);
-float log1pf(float);
-long double log1pl(long double);
-
-
-
-double log2(double);
-float log2f(float);
-long double log2l(long double);
-
-
-
-double logb(double);
-float logbf(float);
-long double logbl(long double);
-
-
-
-long lrint(double);
-long lrintf(float);
-long lrintl(long double);
-
-
-
-long lround(double);
-long lroundf(float);
-long lroundl(long double);
-
-
-
-double modf(double, double *);
-float modff(float, float *);
-long double modfl(long double, long double *);
-
-
-
-double nan(const char *);
-float nanf(const char *);
-long double nanl(const char *);
-
-
-
-double nearbyint(double);
-float nearbyintf(float);
-long double nearbyintl(long double);
-
-
-
-double nextafter(double, double);
-float nextafterf(float, float);
-long double nextafterl(long double, long double);
-
-
-
-double nexttoward(double, long double);
-float nexttowardf(float, long double);
-long double nexttowardl(long double, long double);
-# 323 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\math.h" 3
-double pow(double, double);
-__attribute__((nonreentrant)) float powf(float, float);
-long double powl(long double, long double);
-
-
-
-double remainder(double, double);
-float remainderf(float, float);
-long double remainderl(long double, long double);
-
-
-
-double remquo(double, double, int *);
-float remquof(float, float, int *);
-long double remquol(long double, long double, int *);
-
-
-
-double rint(double);
-float rintf(float);
-long double rintl(long double);
-
-
-
-double round(double);
-float roundf(float);
-long double roundl(long double);
-
-
-
-double scalbln(double, long);
-float scalblnf(float, long);
-long double scalblnl(long double, long);
-
-
-
-double scalbn(double, int);
-float scalbnf(float, int);
-long double scalbnl(long double, int);
-
-
-
-double sin(double);
-float sinf(float);
-long double sinl(long double);
-
-
-
-double sinh(double);
-float sinhf(float);
-long double sinhl(long double);
-
-
-
-double sqrt(double);
-float sqrtf(float);
-long double sqrtl(long double);
-
-
-
-double tan(double);
-float tanf(float);
-long double tanl(long double);
-
-
-
-double tanh(double);
-float tanhf(float);
-long double tanhl(long double);
-
-
-
-double tgamma(double);
-float tgammaf(float);
-long double tgammal(long double);
-
-
-
-double trunc(double);
-float truncf(float);
-long double truncl(long double);
-# 428 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\math.h" 3
-extern int signgam;
-
-double j0(double);
-double j1(double);
-double jn(int, double);
-
-double y0(double);
-double y1(double);
-double yn(int, double);
-# 2 "main.c" 2
-
-
-
-
-
-
-
-float map(float x, float in_min, float in_max, float out_min, float out_max) {
-  return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+    i2c1_error_t returnValue = I2C1_BUSY;
+
+    if(!I2C1_Status.inUse)
+    {
+        I2C1_Status.address = address;
+        I2C1_Status.busy = 0;
+        I2C1_Status.inUse = 1;
+        I2C1_Status.addressNackCheck = 0;
+        I2C1_Status.state = I2C1_RESET;
+        I2C1_Status.time_out_value = 500;
+        I2C1_Status.bufferFree = 1;
+
+
+        I2C1_Status.callbackTable[I2C1_DATA_COMPLETE]=I2C1_CallbackReturnStop;
+        I2C1_Status.callbackPayload[I2C1_DATA_COMPLETE] = ((void*)0);
+        I2C1_Status.callbackTable[I2C1_WRITE_COLLISION]=I2C1_CallbackReturnStop;
+        I2C1_Status.callbackPayload[I2C1_WRITE_COLLISION] = ((void*)0);
+        I2C1_Status.callbackTable[I2C1_ADDR_NACK]=I2C1_CallbackReturnStop;
+        I2C1_Status.callbackPayload[I2C1_ADDR_NACK] = ((void*)0);
+        I2C1_Status.callbackTable[I2C1_DATA_NACK]=I2C1_CallbackReturnStop;
+        I2C1_Status.callbackPayload[I2C1_DATA_NACK] = ((void*)0);
+        I2C1_Status.callbackTable[I2C1_TIMEOUT]=I2C1_CallbackReturnReset;
+        I2C1_Status.callbackPayload[I2C1_TIMEOUT] = ((void*)0);
+
+        I2C1_MasterClearIrq();
+        I2C1_MasterOpen();
+        returnValue = I2C1_NOERR;
+    }
+    return returnValue;
+}
+
+i2c1_error_t I2C1_Close(void)
+{
+    i2c1_error_t returnValue = I2C1_BUSY;
+    if(!I2C1_Status.busy)
+    {
+        I2C1_Status.inUse = 0;
+        I2C1_Status.address = 0xff;
+        I2C1_MasterClearIrq();
+        I2C1_MasterDisableIrq();
+        I2C1_MasterClose();
+        returnValue = I2C1_Status.error;
+    }
+    return returnValue;
+}
+
+i2c1_error_t I2C1_MasterOperation(_Bool read)
+{
+    i2c1_error_t returnValue = I2C1_BUSY;
+    if(!I2C1_Status.busy)
+    {
+        I2C1_Status.busy = 1;
+        returnValue = I2C1_NOERR;
+        I2C1_MasterSetCounter((uint8_t) I2C1_Status.data_length);
+
+        if(read)
+        {
+            I2C1_Status.state = I2C1_RX;
+            I2C1_DO_SEND_ADR_READ();
+        }
+        else
+        {
+            I2C1_Status.state = I2C1_TX;
+            I2C1_DO_SEND_ADR_WRITE();
+        }
+        I2C1_Poller();
+    }
+    return returnValue;
+}
+
+i2c1_error_t I2C1_MasterRead(void)
+{
+    return I2C1_MasterOperation(1);
+}
+
+i2c1_error_t I2C1_MasterWrite(void)
+{
+    return I2C1_MasterOperation(0);
+}
+
+void I2C1_SetTimeOut(uint8_t timeOutValue)
+{
+    I2C1_MasterDisableIrq();
+    I2C1_Status.time_out_value = timeOutValue;
+    I2C1_MasterEnableIrq();
+}
+
+void I2C1_SetBuffer(void *buffer, size_t bufferSize)
+{
+    if(I2C1_Status.bufferFree)
+    {
+        I2C1_Status.data_ptr = buffer;
+        I2C1_Status.data_length = bufferSize;
+        I2C1_Status.bufferFree = 0;
+    }
+}
+
+void I2C1_SetDataCompleteCallback(i2c1_callback_t cb, void *ptr)
+{
+    I2C1_SetCallback(I2C1_DATA_COMPLETE, cb, ptr);
+}
+
+void I2C1_SetWriteCollisionCallback(i2c1_callback_t cb, void *ptr)
+{
+    I2C1_SetCallback(I2C1_WRITE_COLLISION, cb, ptr);
+}
+
+void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr)
+{
+    I2C1_SetCallback(I2C1_ADDR_NACK, cb, ptr);
+}
+
+void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr)
+{
+    I2C1_SetCallback(I2C1_DATA_NACK, cb, ptr);
+}
+
+void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr)
+{
+    I2C1_SetCallback(I2C1_TIMEOUT, cb, ptr);
+}
+
+static void I2C1_SetCallback(i2c1_callbackIndex_t idx, i2c1_callback_t cb, void *ptr)
+{
+    if(cb)
+    {
+        I2C1_Status.callbackTable[idx] = cb;
+        I2C1_Status.callbackPayload[idx] = ptr;
+    }
+    else
+    {
+        I2C1_Status.callbackTable[idx] = I2C1_CallbackReturnStop;
+        I2C1_Status.callbackPayload[idx] = ((void*)0);
+    }
+}
+
+static void I2C1_Poller(void)
+{
+    while(I2C1_Status.busy)
+    {
+        I2C1_MasterWaitForEvent();
+        I2C1_MasterFsm();
+    }
+}
+
+static __attribute__((inline)) void I2C1_MasterFsm(void)
+{
+    I2C1_ClearInterruptFlags();
+
+    if(I2C1_Status.addressNackCheck && I2C1_MasterIsNack())
+    {
+        I2C1_Status.state = I2C1_ADDRESS_NACK;
+    }
+    I2C1_Status.state = i2c1_fsmStateTable[I2C1_Status.state]();
+}
+
+static __attribute__((inline)) void I2C1_ClearInterruptFlags(void)
+{
+    if(I2C1_MasterIsCountFlagSet())
+    {
+        I2C1_MasterClearCountFlag();
+    }
+    else if(I2C1_MasterIsStopFlagSet())
+    {
+        I2C1_MasterClearStopFlag();
+    }
+    else if(I2C1_MasterIsNackFlagSet())
+    {
+        I2C1_MasterClearNackFlag();
+    }
+}
+
+static i2c1_fsm_states_t I2C1_DO_IDLE(void)
+{
+    I2C1_Status.busy = 0;
+    I2C1_Status.error = I2C1_NOERR;
+    return I2C1_RESET;
+}
+
+static i2c1_fsm_states_t I2C1_DO_SEND_ADR_READ(void)
+{
+    I2C1_Status.addressNackCheck = 2;
+    if(I2C1_Status.data_length == 1)
+    {
+        I2C1_DO_RX_EMPTY();
+    }
+    I2C1_MasterSendTxData((uint8_t) (I2C1_Status.address << 1 | 1));
+    return I2C1_RX;
+}
+
+static i2c1_fsm_states_t I2C1_DO_SEND_ADR_WRITE(void)
+{
+    I2C1_Status.addressNackCheck = 2;
+    I2C1_MasterSendTxData((uint8_t) (I2C1_Status.address << 1));
+    return I2C1_TX;
+}
+
+static i2c1_fsm_states_t I2C1_DO_TX(void)
+{
+    if(I2C1_MasterIsNack())
+    {
+        switch(I2C1_Status.callbackTable[I2C1_DATA_NACK](I2C1_Status.callbackPayload[I2C1_DATA_NACK]))
+        {
+            case I2C1_RESTART_READ:
+                return I2C1_DO_SEND_RESTART_READ();
+            case I2C1_RESTART_WRITE:
+                  return I2C1_DO_SEND_RESTART_WRITE();
+            default:
+            case I2C1_CONTINUE:
+            case I2C1_STOP:
+                return I2C1_IDLE;
+        }
+    }
+    else if(I2C1_MasterIsTxBufEmpty())
+    {
+        if(I2C1_Status.addressNackCheck)
+        {
+            I2C1_Status.addressNackCheck--;
+        }
+        uint8_t dataTx = *I2C1_Status.data_ptr++;
+        i2c1_fsm_states_t retFsmState = (--I2C1_Status.data_length)?I2C1_TX:I2C1_DO_TX_EMPTY();
+        I2C1_MasterSendTxData(dataTx);
+        return retFsmState;
+    }
+    else
+    {
+        return I2C1_TX;
+    }
+}
+
+static i2c1_fsm_states_t I2C1_DO_RX(void)
+{
+    if(!I2C1_MasterIsRxBufFull())
+    {
+        return I2C1_RX;
+    }
+    if(I2C1_Status.addressNackCheck)
+    {
+        I2C1_Status.addressNackCheck--;
+    }
+
+    if(--I2C1_Status.data_length)
+    {
+        *I2C1_Status.data_ptr++ = I2C1_MasterGetRxData();
+        return I2C1_RX;
+    }
+    else
+    {
+        i2c1_fsm_states_t retFsmState = I2C1_DO_RX_EMPTY();
+        *I2C1_Status.data_ptr++ = I2C1_MasterGetRxData();
+        return retFsmState;
+    }
+}
+
+static i2c1_fsm_states_t I2C1_DO_TX_EMPTY(void)
+{
+    I2C1_Status.bufferFree = 1;
+    switch(I2C1_Status.callbackTable[I2C1_DATA_COMPLETE](I2C1_Status.callbackPayload[I2C1_DATA_COMPLETE]))
+    {
+        case I2C1_RESTART_READ:
+            I2C1_MasterEnableRestart();
+            return I2C1_SEND_RESTART_READ;
+        case I2C1_CONTINUE:
+
+            I2C1_MasterSetCounter((uint8_t) I2C1_Status.data_length + 1);
+            return I2C1_TX;
+        default:
+        case I2C1_STOP:
+            I2C1_MasterDisableRestart();
+            return I2C1_SEND_STOP;
+    }
+}
+
+static i2c1_fsm_states_t I2C1_DO_RX_EMPTY(void)
+{
+    I2C1_Status.bufferFree = 1;
+    switch(I2C1_Status.callbackTable[I2C1_DATA_COMPLETE](I2C1_Status.callbackPayload[I2C1_DATA_COMPLETE]))
+    {
+        case I2C1_RESTART_WRITE:
+            I2C1_MasterEnableRestart();
+            return I2C1_SEND_RESTART_WRITE;
+        case I2C1_RESTART_READ:
+            I2C1_MasterEnableRestart();
+            return I2C1_SEND_RESTART_READ;
+        case I2C1_CONTINUE:
+
+            I2C1_MasterSetCounter((uint8_t) (I2C1_Status.data_length + 1));
+            return I2C1_RX;
+        default:
+        case I2C1_STOP:
+            if(I2C1_Status.state != I2C1_SEND_RESTART_READ)
+            {
+                I2C1_MasterDisableRestart();
+            }
+            return I2C1_RESET;
+    }
+}
+
+static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_READ(void)
+{
+    I2C1_MasterSetCounter((uint8_t) I2C1_Status.data_length);
+    return I2C1_DO_SEND_ADR_READ();
+}
+
+static i2c1_fsm_states_t I2C1_DO_SEND_RESTART_WRITE(void)
+{
+    return I2C1_SEND_ADR_WRITE;
+}
+
+
+static i2c1_fsm_states_t I2C1_DO_SEND_RESTART(void)
+{
+    return I2C1_SEND_ADR_READ;
+}
+
+static i2c1_fsm_states_t I2C1_DO_SEND_STOP(void)
+{
+    I2C1_MasterStop();
+    if(I2C1_MasterGetCounter())
+    {
+        I2C1_MasterSetCounter(0);
+        I2C1_MasterSendTxData(0);
+    }
+    return I2C1_IDLE;
+}
+
+static i2c1_fsm_states_t I2C1_DO_RX_ACK(void)
+{
+    I2C1_MasterSendAck();
+    return I2C1_RX;
+}
+
+static i2c1_fsm_states_t I2C1_DO_TX_ACK(void)
+{
+    I2C1_MasterSendAck();
+    return I2C1_TX;
+}
+
+static i2c1_fsm_states_t I2C1_DO_RX_NACK_STOP(void)
+{
+    I2C1_MasterSendNack();
+    I2C1_MasterStop();
+    return I2C1_DO_IDLE();
+}
+
+static i2c1_fsm_states_t I2C1_DO_RX_NACK_RESTART(void)
+{
+    I2C1_MasterSendNack();
+    return I2C1_SEND_RESTART;
+}
+
+static i2c1_fsm_states_t I2C1_DO_RESET(void)
+{
+    I2C1_MasterResetBus();
+    I2C1_Status.busy = 0;
+    I2C1_Status.error = I2C1_NOERR;
+    return I2C1_RESET;
+}
+static i2c1_fsm_states_t I2C1_DO_ADDRESS_NACK(void)
+{
+    I2C1_Status.addressNackCheck = 0;
+    I2C1_Status.error = I2C1_FAIL;
+    I2C1_Status.busy = 0;
+    switch(I2C1_Status.callbackTable[I2C1_ADDR_NACK](I2C1_Status.callbackPayload[I2C1_ADDR_NACK]))
+    {
+        case I2C1_RESTART_READ:
+        case I2C1_RESTART_WRITE:
+            return I2C1_DO_SEND_RESTART();
+        default:
+            return I2C1_RESET;
+    }
+}
+
+static i2c1_fsm_states_t I2C1_DO_BUS_COLLISION(void)
+{
+
+    I2C1_MasterClearIrq();
+
+    I2C1_Status.error = I2C1_FAIL;
+    switch (I2C1_Status.callbackTable[I2C1_WRITE_COLLISION](I2C1_Status.callbackPayload[I2C1_WRITE_COLLISION])) {
+    case I2C1_RESTART_READ:
+        return I2C1_DO_SEND_RESTART_READ();
+    case I2C1_RESTART_WRITE:
+        return I2C1_DO_SEND_RESTART_WRITE();
+    default:
+        return I2C1_DO_RESET();
+    }
+}
+
+static i2c1_fsm_states_t I2C1_DO_BUS_ERROR(void)
+{
+    I2C1_MasterResetBus();
+    I2C1_Status.busy = 0;
+    I2C1_Status.error = I2C1_FAIL;
+    return I2C1_RESET;
+}
+
+void I2C1_BusCollisionIsr(void)
+{
+    I2C1_MasterClearBusCollision();
+    I2C1_Status.state = I2C1_RESET;
+}
+
+i2c1_operations_t I2C1_CallbackReturnStop(void *funPtr)
+{
+    return I2C1_STOP;
+}
+
+i2c1_operations_t I2C1_CallbackReturnReset(void *funPtr)
+{
+    return I2C1_RESET_LINK;
+}
+
+i2c1_operations_t I2C1_CallbackRestartWrite(void *funPtr)
+{
+    return I2C1_RESTART_WRITE;
+}
+
+i2c1_operations_t I2C1_CallbackRestartRead(void *funPtr)
+{
+    return I2C1_RESTART_READ;
 }
 
 
 
 
-void main(void)
+static __attribute__((inline)) _Bool I2C1_MasterOpen(void)
 {
-    uint16_t ADCvalor, SensorSharp;
-    float temperatura, distancia;
-    uint8_t lecturaSerial;
-
-    SYSTEM_Initialize();
-# 34 "main.c"
-    while (1)
+    if(!I2C1CON0bits.EN)
     {
 
-        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-        do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
-        ADCvalor = ADC_GetSingleConversion(LM35);
+        I2C1PIR = 0x00;
 
-        temperatura = ((3.3/4095)*ADCvalor)*100;
+        I2C1PIE = 0x00;
 
-        printf("ADC5: temp %.3fC\n",temperatura);
-# 53 "main.c"
-        _delay((unsigned long)((900)*(10000000/4000.0)));
-# 63 "main.c"
+        I2C1ERR = 0x00;
+
+        I2C1CNTL = 0x00;
+        I2C1CNTH = 0x00;
+
+        I2C1BAUD = 0x00;
+
+        I2C1CON0bits.EN = 1;
+        return 1;
+    }
+    return 0;
+}
+
+static __attribute__((inline)) void I2C1_MasterClose(void)
+{
+
+    I2C1CON0bits.EN = 0;
+
+    I2C1PIR = 0x00;
+
+    I2C1STAT1bits.CLRBF = 1;
+}
+
+static __attribute__((inline)) uint8_t I2C1_MasterGetRxData(void)
+{
+    return I2C1RXB;
+}
+
+static __attribute__((inline)) void I2C1_MasterSendTxData(uint8_t data)
+{
+    I2C1TXB = data;
+}
+
+static __attribute__((inline)) uint8_t I2C1_MasterGetCounter()
+{
+    return I2C1CNTL;
+}
+
+static __attribute__((inline)) void I2C1_MasterSetCounter(uint8_t counter)
+{
+    I2C1CNTL = counter;
+    I2C1CNTH = 0x00;
+}
+
+static __attribute__((inline)) void I2C1_MasterResetBus(void)
+{
+
+    I2C1CON0bits.EN = 0;
+
+    I2C1STAT1bits.CLRBF = 1;
+
+    I2C1CON0bits.EN = 1;
+}
+
+static __attribute__((inline)) void I2C1_MasterEnableRestart(void)
+{
+
+    I2C1CON0bits.RSEN = 1;
+}
+
+static __attribute__((inline)) void I2C1_MasterDisableRestart(void)
+{
+
+    I2C1CON0bits.RSEN = 0;
+}
+
+static __attribute__((inline)) void I2C1_MasterStop(void)
+{
+
+    I2C1CON0bits.S = 0;
+}
+
+static __attribute__((inline)) _Bool I2C1_MasterIsNack(void)
+{
+    return I2C1CON1bits.ACKSTAT;
+}
+
+static __attribute__((inline)) void I2C1_MasterSendAck(void)
+{
+    I2C1CON1bits.ACKDT = 0;
+}
+
+static __attribute__((inline)) void I2C1_MasterSendNack(void)
+{
+    I2C1CON1bits.ACKDT = 1;
+}
+
+static __attribute__((inline)) void I2C1_MasterClearBusCollision(void)
+{
+    I2C1ERRbits.BCLIF = 0;
+    I2C1ERRbits.BTOIF = 0;
+    I2C1ERRbits.NACKIF = 0;
+}
+
+static __attribute__((inline)) _Bool I2C1_MasterIsRxBufFull(void)
+{
+    return I2C1STAT1bits.RXBF;
+}
+
+static __attribute__((inline)) _Bool I2C1_MasterIsTxBufEmpty(void)
+{
+    return I2C1STAT1bits.TXBE;
+}
+
+static __attribute__((inline)) _Bool I2C1_MasterIsStopFlagSet(void)
+{
+    return I2C1PIRbits.PCIF;
+}
+
+static __attribute__((inline)) _Bool I2C1_MasterIsCountFlagSet(void)
+{
+    return I2C1PIRbits.CNTIF;
+}
+
+static __attribute__((inline)) _Bool I2C1_MasterIsNackFlagSet(void)
+{
+    return I2C1ERRbits.NACKIF;
+}
+
+static __attribute__((inline)) void I2C1_MasterClearStopFlag(void)
+{
+    I2C1PIRbits.PCIF = 0;
+}
+
+static __attribute__((inline)) void I2C1_MasterClearCountFlag(void)
+{
+    I2C1PIRbits.CNTIF = 0;
+}
+
+static __attribute__((inline)) void I2C1_MasterClearNackFlag(void)
+{
+    I2C1ERRbits.NACKIF = 0;
+}
+
+static __attribute__((inline)) void I2C1_MasterEnableIrq(void)
+{
+    PIE7bits.I2C1IE = 1;
+    PIE7bits.I2C1EIE = 1;
+    PIE7bits.I2C1RXIE = 1;
+    PIE7bits.I2C1TXIE = 1;
+
+    I2C1PIEbits.PCIE = 1;
+    I2C1PIEbits.CNTIE = 1;
+    I2C1ERRbits.NACKIE = 1;
+}
+
+static __attribute__((inline)) _Bool I2C1_MasterIsIrqEnabled(void)
+{
+    return (PIE7bits.I2C1RXIE && PIE7bits.I2C1TXIE && PIE7bits.I2C1IE);
+}
+
+static __attribute__((inline)) void I2C1_MasterDisableIrq(void)
+{
+    PIE7bits.I2C1IE = 0;
+    PIE7bits.I2C1EIE = 0;
+    PIE7bits.I2C1RXIE = 0;
+    PIE7bits.I2C1TXIE = 0;
+    I2C1PIEbits.SCIE = 0;
+    I2C1PIEbits.PCIE = 0;
+    I2C1PIEbits.CNTIE = 0;
+    I2C1PIEbits.ACKTIE = 0;
+    I2C1PIEbits.RSCIE = 0;
+    I2C1ERRbits.BCLIE = 0;
+    I2C1ERRbits.BTOIE = 0;
+    I2C1ERRbits.NACKIE = 0;
+}
+
+static __attribute__((inline)) void I2C1_MasterClearIrq(void)
+{
+    I2C1PIR = 0x00;
+}
+
+static __attribute__((inline)) void I2C1_MasterWaitForEvent(void)
+{
+    while(1)
+    {
+        if(PIR7bits.I2C1TXIF)
+        {
+            break;
+        }
+        if(PIR7bits.I2C1RXIF)
+        {
+            break;
+        }
+        if(I2C1PIRbits.PCIF)
+        {
+            break;
+        }
+        if(I2C1PIRbits.CNTIF)
+        {
+            break;
+        }
+        if(I2C1ERRbits.NACKIF)
+        {
+            break;
+        }
     }
 }

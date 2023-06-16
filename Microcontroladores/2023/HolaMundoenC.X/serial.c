@@ -23,8 +23,8 @@ void serial_init(uint32_t baudios){
     U1CON0bits.RXEN = 1; // Rx Habilitado
     
     TRISFbits.TRISF0 = 0; // Salida
-    ANSELFbits.ANSELF1 = 0; // Digital
-    WPUFbits.WPUF1 = 0; // habilitado pull up
+    ANSELFbits.ANSELF0 = 0; // Digital
+    WPUFbits.WPUF0 = 0; // habilitado pull up
     
     RF0PPS = 0x20; // RF0 -> TX
     

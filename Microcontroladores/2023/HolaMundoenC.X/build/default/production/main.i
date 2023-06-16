@@ -39113,8 +39113,10 @@ char *tempnam(const char *, const char *);
 
 
 
+
 void main(void) {
     init_osc();
+    pin_init();
     uint32_t count = 0;
     uint32_t max_count = 1000000;
     uint8_t contador=0, RX;
@@ -39134,7 +39136,7 @@ void main(void) {
 
         printf("ADC0 = %d\n", LecturaADC);
         _delay((unsigned long)((500)*(10000000UL/4000.0)));
-# 58 "main.c"
+# 60 "main.c"
     }
 
 

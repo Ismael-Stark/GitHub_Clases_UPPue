@@ -39132,8 +39132,8 @@ void serial_init(uint32_t baudios){
     U1CON0bits.RXEN = 1;
 
     TRISFbits.TRISF0 = 0;
-    ANSELFbits.ANSELF1 = 0;
-    WPUFbits.WPUF1 = 0;
+    ANSELFbits.ANSELF0 = 0;
+    WPUFbits.WPUF0 = 0;
 
     RF0PPS = 0x20;
 

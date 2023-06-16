@@ -1,7 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"71 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
+"72 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -12,13 +12,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3221
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
 [v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
-"27 main.c
-[; ;main.c: 27:         ADCvalor = ADC_GetSingleConversion(LM35);
-[c E23149 0 1 5 59 60 61 62 63 .. ]
-[n E23149 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"39 main.c
+[; ;main.c: 39:         ADCvalor = ADC_GetSingleConversion(LM35);
+[c E23221 0 1 5 59 60 61 62 63 .. ]
+[n E23221 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "374 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23149 ]
+[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23221 ]
 "107 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
 [; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 107: int printf(const char *restrict, ...);
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
@@ -3650,59 +3650,89 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70742
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 70742: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
+"9 main.c
+[; ;main.c: 9: float map(float x, float in_min, float in_max, float out_min, float out_max) {
+[v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
+{
+[e :U _map ]
+[v _x `f ~T0 @X0 1 r1 ]
+[v _in_min `f ~T0 @X0 1 r2 ]
+[v _in_max `f ~T0 @X0 1 r3 ]
+[v _out_min `f ~T0 @X0 1 r4 ]
+[v _out_max `f ~T0 @X0 1 r5 ]
+[f ]
+"10
+[; ;main.c: 10:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
+[e $UE 3250  ]
+"11
+[; ;main.c: 11: }
+[e :UE 3250 ]
+}
 [v $root$_main `(v ~T0 @X0 0 e ]
-"6 main.c
-[; ;main.c: 6: void main(void)
+"16
+[; ;main.c: 16: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"7
-[; ;main.c: 7: {
+"17
+[; ;main.c: 17: {
 {
 [e :U _main ]
 [f ]
-"8
-[; ;main.c: 8:     uint16_t ADCvalor;
+"18
+[; ;main.c: 18:     uint16_t ADCvalor, SensorSharp;
 [v _ADCvalor `us ~T0 @X0 1 a ]
-"10
-[; ;main.c: 10:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
+[v _SensorSharp `us ~T0 @X0 1 a ]
+"19
+[; ;main.c: 19:     float temperatura, distancia;
+[v _temperatura `f ~T0 @X0 1 a ]
+[v _distancia `f ~T0 @X0 1 a ]
+"20
+[; ;main.c: 20:     uint8_t lecturaSerial;
+[v _lecturaSerial `uc ~T0 @X0 1 a ]
 "22
-[; ;main.c: 22:     while (1)
-[e :U 3252 ]
-"23
-[; ;main.c: 23:     {
+[; ;main.c: 22:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
+"34
+[; ;main.c: 34:     while (1)
+[e :U 3253 ]
+"35
+[; ;main.c: 35:     {
 {
-"25
-[; ;main.c: 25:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-[e :U 3256 ]
+"37
+[; ;main.c: 37:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+[e :U 3257 ]
 {
 [e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
 }
-[e :U 3255 ]
-"26
-[; ;main.c: 26:         do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
-[e :U 3259 ]
+[e :U 3256 ]
+"38
+[; ;main.c: 38:         do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
+[e :U 3260 ]
 {
 [e = . . _LATFbits 0 2 -> ~ -> . . _LATFbits 0 2 `i `uc ]
 }
-[e :U 3258 ]
-"27
-[; ;main.c: 27:         ADCvalor = ADC_GetSingleConversion(LM35);
-[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23149 2 ]
-"28
-[; ;main.c: 28:         printf("ADC5: %d\n",ADCvalor);
-[e ( _printf , (. :s 1C -> _ADCvalor `ui ]
-"29
-[; ;main.c: 29:         _delay((unsigned long)((500)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"30
-[; ;main.c: 30:     }
+[e :U 3259 ]
+"39
+[; ;main.c: 39:         ADCvalor = ADC_GetSingleConversion(LM35);
+[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23221 2 ]
+"41
+[; ;main.c: 41:         temperatura = ((3.3/4095)*ADCvalor)*100;
+[e = _temperatura -> * * / .3.3 -> -> 4095 `i `d -> -> _ADCvalor `ui `d -> -> 100 `i `d `f ]
+"43
+[; ;main.c: 43:         printf("ADC5: temp %.3fC\n",temperatura);
+[e ( _printf , (. :s 1C -> _temperatura `d ]
+"53
+[; ;main.c: 53:         _delay((unsigned long)((900)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 900 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"63
+[; ;main.c: 63:     }
 }
-[e :U 3251 ]
-[e $U 3252  ]
-[e :U 3253 ]
-"31
-[; ;main.c: 31: }
-[e :UE 3250 ]
+[e :U 3252 ]
+[e $U 3253  ]
+[e :U 3254 ]
+"64
+[; ;main.c: 64: }
+[e :UE 3251 ]
 }
-[p f _printf 8388736 ]
-[a 1C 65 68 67 53 58 32 37 100 10 0 ]
+[p f _printf 8462336 ]
+[a 1C 65 68 67 53 58 32 116 101 109 112 32 37 46 51 102 67 10 0 ]
