@@ -1,0 +1,16 @@
+ÀÄejemplo1
+   ÀÄmain  0/124  Ram=2
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄ@cinit2  (Inline)  Ram=0
+      ÃÄ@delay_ms1  0/22  Ram=1
+      ÃÄ@PSTRINGC7_994  0/75  Ram=3
+      ³  ÃÄ@PUTCHAR_1_  0/48  Ram=1
+      ³  ÀÄ@PUTCHAR_1_  0/48  Ram=1
+      ÃÄ@delay_ms1  0/22  Ram=1
+      ÃÄ@delay_ms1  0/22  Ram=1
+      ÃÄ@PSTRINGCN7_994  0/81  Ram=4
+      ³  ÃÄ@PUTCHAR_1_  0/48  Ram=1
+      ³  ÀÄ@PUTCHAR_1_  0/48  Ram=1
+      ÃÄ@PRINTF_LU_994  0/102  Ram=13
+      ³  ÀÄ@PUTCHAR_1_  0/48  Ram=1
+      ÀÄ@PUTCHAR_1_  0/48  Ram=1

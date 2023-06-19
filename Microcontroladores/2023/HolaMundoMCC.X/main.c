@@ -4,7 +4,11 @@
                          Main application
  */
 
-#define SerialAvailable() U1FIFObits.RXBF
+//#define SerialAvailable() U1FIFObits.RXBF
+
+bool DatoSerialDiponible = 0;
+extern uint8_t buffer[50];
+
 
 float map(float x, float in_min, float in_max, float out_min, float out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
@@ -26,7 +30,7 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
@@ -53,10 +57,10 @@ void main(void)
         __delay_ms(900);
         
         
-        //if (SerialAvailable() == 1){
-            //lecturaSerial = getch();
-            //printf("%c\n\n",lecturaSerial);
-        //}
+        if (DatoSerialDiponible == 1){
+           DatoSerialDiponible = 0;
+           printf("llego el dato: %s\n\n",buffer);
+        }
         
         
         

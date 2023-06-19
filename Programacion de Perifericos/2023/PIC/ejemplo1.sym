@@ -1,0 +1,100 @@
+004-005 @READ_PACKED_MEMORY.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+004-005 @WRITE_PACKED_MEMORY.P3
+004-005 @READ_PROGRAM_MEMORY8.P4
+006-007 @WRITE_PACKED_MEMORY.P1
+006-007 @READ_PACKED_MEMORY.P2
+020-021 @sprintf_string
+022     main.@SCRATCH1
+022     @PSTRINGC7_994.@SCRATCH1
+023     @delay_ms1.P1
+023     main.@SCRATCH2
+023     @PSTRINGC7_994.@SCRATCH2
+024     @PSTRINGCN7_994.P1
+024-025 @PRINTF_LU_994.P2
+024     @PSTRINGC7_994.@SCRATCH3
+025     @PSTRINGCN7_994.@SCRATCH1
+026     @PSTRINGCN7_994.@SCRATCH2
+027     @PSTRINGCN7_994.@SCRATCH3
+02A     @PRINTF_LU_994.@SCRATCH1
+02B     @PRINTF_LU_994.@SCRATCH2
+02C     @PRINTF_LU_994.@SCRATCH3
+02D     @PRINTF_LU_994.@SCRATCH4
+02E     @PRINTF_LU_994.@SCRATCH5
+02F     @PRINTF_LU_994.@SCRATCH6
+030     @PRINTF_LU_994.@SCRATCH7
+031     @PUTCHAR_1_.P1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+095.3   ADACLR
+30C     CCP_1_LOW
+30C     CCP_1
+30D     CCP_1_HIGH
+310     CCP_2
+310     CCP_2_LOW
+311     CCP_2_HIGH
+38E.5   PWM6OUT
+392.5   PWM7OUT
+592.5   N1OUT
+810.2   WDTSTATE
+81A-81B @READ_PROGRAM_MEMORY8.P1
+81A-81B @WRITE_PROGRAM_MEMORY8.P2
+897.0   MDBIT
+897.5   MDOUT
+990.6   C1OUT
+994.6   C2OUT
+E10.5   LC1OUT
+E1A.5   LC2OUT
+E24.5   LC3OUT
+E2E.5   LC4OUT
+
+ROM Allocation:
+000003  @const1003.call
+00000D  @const1008.call
+000012  @delay_ms1
+000028  @PUTCHAR_1_
+000058  @PSTRINGC7_994
+0000A3  @PSTRINGCN7_994
+0000F4  @PRINTF_LU_994
+00015A  main
+00015A  @cinit1
+000174  @cinit2
+
+Project Directory:
+    D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\
+
+Project Files:
+    ejemplo1.c                                              [16-jun.-23 12:16  CRC=2ECC4F04]
+    C:\Program Files (x86)\PICC\Devices\16F18855.h          [21-oct.-22 11:04  CRC=72FF19D8]
+
+Source signature=14CA82B4
+Program memory checksum=0000
+Hex file CRC=3CD5
+
+Units:
+    D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\ejemplo1 (main)
+
+Compiler Settings:
+    Processor:      PIC16F18855
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Enhanced 16:    Yes
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   ejemplo1.xsym
+    Errors:      ejemplo1.err
+    Ext Symbols: ejemplo1.esym
+    INHX8:       ejemplo1.hex
+    Symbols:     ejemplo1.sym
+    List:        ejemplo1.lst
+    Debug/COFF:  ejemplo1.cof
+    Project:     ejemplo1.ccspjt
+    Call Tree:   ejemplo1.tre
+    Statistics:  ejemplo1.STA

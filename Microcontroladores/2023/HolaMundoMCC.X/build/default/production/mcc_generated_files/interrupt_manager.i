@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/uart1.c"
+# 1 "mcc_generated_files/interrupt_manager.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,15 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/uart1.c" 2
-# 50 "mcc_generated_files/uart1.c"
+# 1 "mcc_generated_files/interrupt_manager.c" 2
+# 49 "mcc_generated_files/interrupt_manager.c"
+# 1 "mcc_generated_files/interrupt_manager.h" 1
+# 87 "mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 49 "mcc_generated_files/interrupt_manager.c" 2
+
+# 1 "mcc_generated_files/mcc.h" 1
+# 49 "mcc_generated_files/mcc.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -38802,12 +38809,27 @@ __attribute__((__unsupported__("The READTIMER" "3" "() macro is not available wi
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
-# 50 "mcc_generated_files/uart1.c" 2
+# 49 "mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/uart1.h" 1
-# 55 "mcc_generated_files/uart1.h"
+# 1 "mcc_generated_files/device_config.h" 1
+# 50 "mcc_generated_files/mcc.h" 2
+
+# 1 "mcc_generated_files/pin_manager.h" 1
+# 246 "mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 258 "mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_IOC(void);
+# 51 "mcc_generated_files/mcc.h" 2
+
+
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdbool.h" 1 3
-# 55 "mcc_generated_files/uart1.h" 2
+# 53 "mcc_generated_files/mcc.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\conio.h" 1 3
+
+
+
+
 
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\stdio.h" 1 3
@@ -38956,7 +38978,239 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 57 "mcc_generated_files/uart1.h" 2
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\conio.h" 2 3
+# 54 "mcc_generated_files/mcc.h" 2
+
+
+# 1 "mcc_generated_files/i2c1_master.h" 1
+# 58 "mcc_generated_files/i2c1_master.h"
+typedef enum {
+    I2C1_NOERR,
+    I2C1_BUSY,
+    I2C1_FAIL
+
+
+} i2c1_error_t;
+
+typedef enum
+{
+    I2C1_STOP=1,
+    I2C1_RESTART_READ,
+    I2C1_RESTART_WRITE,
+    I2C1_CONTINUE,
+    I2C1_RESET_LINK
+} i2c1_operations_t;
+
+typedef uint8_t i2c1_address_t;
+typedef i2c1_operations_t (*i2c1_callback_t)(void *funPtr);
+
+
+i2c1_operations_t I2C1_CallbackReturnStop(void *funPtr);
+i2c1_operations_t I2C1_CallbackReturnReset(void *funPtr);
+i2c1_operations_t I2C1_CallbackRestartWrite(void *funPtr);
+i2c1_operations_t I2C1_CallbackRestartRead(void *funPtr);
+
+
+
+
+
+
+void I2C1_Initialize(void);
+# 101 "mcc_generated_files/i2c1_master.h"
+i2c1_error_t I2C1_Open(i2c1_address_t address);
+# 111 "mcc_generated_files/i2c1_master.h"
+i2c1_error_t I2C1_Close(void);
+# 123 "mcc_generated_files/i2c1_master.h"
+i2c1_error_t I2C1_MasterOperation(_Bool read);
+
+
+
+
+i2c1_error_t I2C1_MasterWrite(void);
+
+
+
+
+i2c1_error_t I2C1_MasterRead(void);
+# 142 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetTimeout(uint8_t timeOut);
+# 152 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetBuffer(void *buffer, size_t bufferSize);
+# 164 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetDataCompleteCallback(i2c1_callback_t cb, void *ptr);
+# 174 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetWriteCollisionCallback(i2c1_callback_t cb, void *ptr);
+# 184 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr);
+# 194 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr);
+# 204 "mcc_generated_files/i2c1_master.h"
+void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr);
+# 56 "mcc_generated_files/mcc.h" 2
+
+# 1 "mcc_generated_files/adc.h" 1
+# 65 "mcc_generated_files/adc.h"
+typedef uint16_t adc_result_t;
+
+
+
+
+
+
+typedef enum
+{
+    POT1 = 0x0,
+    POT2 = 0x1,
+    LM35 = 0x5,
+    channel_VSS = 0x3B,
+    channel_Temp = 0x3C,
+    channel_DAC1 = 0x3D,
+    channel_FVR_Buffer1 = 0x3E,
+    channel_FVR_Buffer2 = 0x3F
+} ADC_channel_t;
+
+
+
+
+
+
+typedef enum
+{
+    CONTEXT_1,
+} ADC_context_t;
+# 115 "mcc_generated_files/adc.h"
+void ADC_Initialize(void);
+# 146 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableChannelSequencer(void);
+# 168 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableChannelSequencer(void);
+# 200 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_StartChannelSequencer(void);
+# 223 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SelectContext(ADC_context_t context);
+# 245 "mcc_generated_files/adc.h"
+void ADC_EnableChannelScan(ADC_context_t context);
+# 269 "mcc_generated_files/adc.h"
+void ADC_DisableChannelScan(ADC_context_t context);
+# 296 "mcc_generated_files/adc.h"
+void ADC_StartConversion(ADC_channel_t channel);
+# 322 "mcc_generated_files/adc.h"
+_Bool ADC_IsConversionDone(void);
+# 348 "mcc_generated_files/adc.h"
+adc_result_t ADC_GetConversionResult(void);
+# 374 "mcc_generated_files/adc.h"
+adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
+# 399 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_StopConversion(void);
+# 423 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SetStopOnInterrupt(void);
+# 451 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DischargeSampleCapacitor(void);
+# 475 "mcc_generated_files/adc.h"
+void ADC_LoadAcquisitionRegister(uint16_t acquisitionValue);
+# 499 "mcc_generated_files/adc.h"
+void ADC_SetPrechargeTime(uint16_t prechargeTime);
+# 523 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_SetRepeatCount(uint8_t repeatCount);
+# 547 "mcc_generated_files/adc.h"
+uint8_t ADC_GetCurrentCountofConversions(void);
+# 570 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_ClearAccumulator(void);
+# 594 "mcc_generated_files/adc.h"
+uint24_t ADC_GetAccumulatorValue(void);
+# 621 "mcc_generated_files/adc.h"
+_Bool ADC_HasAccumulatorOverflowed(void);
+# 645 "mcc_generated_files/adc.h"
+uint16_t ADC_GetFilterValue(void);
+# 669 "mcc_generated_files/adc.h"
+uint16_t ADC_GetPreviousResult(void);
+# 693 "mcc_generated_files/adc.h"
+void ADC_DefineSetPoint(uint16_t setPoint);
+# 717 "mcc_generated_files/adc.h"
+void ADC_SetUpperThreshold(uint16_t upperThreshold);
+# 741 "mcc_generated_files/adc.h"
+void ADC_SetLowerThreshold(uint16_t lowerThreshold);
+# 766 "mcc_generated_files/adc.h"
+uint16_t ADC_GetErrorCalculation(void);
+# 790 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableDoubleSampling(void);
+# 814 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableContinuousConversion(void);
+# 838 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableContinuousConversion(void);
+# 865 "mcc_generated_files/adc.h"
+_Bool ADC_HasErrorCrossedUpperThreshold(void);
+# 892 "mcc_generated_files/adc.h"
+_Bool ADC_HasErrorCrossedLowerThreshold(void);
+# 917 "mcc_generated_files/adc.h"
+uint8_t ADC_GetConversionStageStatus(void);
+# 938 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_EnableChargePump(void);
+# 959 "mcc_generated_files/adc.h"
+__attribute__((inline)) void ADC_DisableChargePump(void);
+
+
+
+
+
+
+
+void ADC_ADI_ISR(void);
+# 995 "mcc_generated_files/adc.h"
+void ADC_SetADIInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ACTI_ISR(void);
+# 1031 "mcc_generated_files/adc.h"
+void ADC_SetActiveClockTuningInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH1_ISR(void);
+# 1067 "mcc_generated_files/adc.h"
+void ADC_SetContext1ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH2_ISR(void);
+# 1103 "mcc_generated_files/adc.h"
+void ADC_SetContext2ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH3_ISR(void);
+# 1139 "mcc_generated_files/adc.h"
+void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
+
+
+
+
+
+
+
+void ADC_ADCH4_ISR(void);
+# 1175 "mcc_generated_files/adc.h"
+void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
+# 57 "mcc_generated_files/mcc.h" 2
+
+# 1 "mcc_generated_files/uart1.h" 1
 # 75 "mcc_generated_files/uart1.h"
 typedef union {
     struct {
@@ -39007,263 +39261,48 @@ void (*UART1_TxInterruptHandler)(void);
 void UART1_SetRxInterruptHandler(void (* InterruptHandler)(void));
 # 574 "mcc_generated_files/uart1.h"
 void UART1_SetTxInterruptHandler(void (* InterruptHandler)(void));
-# 51 "mcc_generated_files/uart1.c" 2
-# 63 "mcc_generated_files/uart1.c"
-static volatile uint8_t uart1TxHead = 0;
-static volatile uint8_t uart1TxTail = 0;
-static volatile uint8_t uart1TxBuffer[8];
-volatile uint8_t uart1TxBufferRemaining;
-
-static volatile uint8_t uart1RxHead = 0;
-static volatile uint8_t uart1RxTail = 0;
-static volatile uint8_t uart1RxBuffer[8];
-static volatile uart1_status_t uart1RxStatusBuffer[8];
-volatile uint8_t uart1RxCount;
-static volatile uart1_status_t uart1RxLastError;
+# 58 "mcc_generated_files/mcc.h" 2
+# 73 "mcc_generated_files/mcc.h"
+void SYSTEM_Initialize(void);
+# 86 "mcc_generated_files/mcc.h"
+void OSCILLATOR_Initialize(void);
+# 99 "mcc_generated_files/mcc.h"
+void PMD_Initialize(void);
+# 50 "mcc_generated_files/interrupt_manager.c" 2
 
 
+uint8_t buffer[50], contadorBuffer=0, datoSerial;
+extern _Bool DatoSerialDiponible = 0;
 
-
-void (*UART1_FramingErrorHandler)(void);
-void (*UART1_OverrunErrorHandler)(void);
-void (*UART1_ErrorHandler)(void);
-
-void UART1_DefaultFramingErrorHandler(void);
-void UART1_DefaultOverrunErrorHandler(void);
-void UART1_DefaultErrorHandler(void);
-
-void UART1_Initialize(void)
+void INTERRUPT_Initialize (void)
 {
 
-    PIE4bits.U1RXIE = 0;
-    UART1_SetRxInterruptHandler(UART1_Receive_ISR);
-    PIE4bits.U1TXIE = 0;
-    UART1_SetTxInterruptHandler(UART1_Transmit_ISR);
-
-
-
-
-    U1P1L = 0x00;
-
-
-    U1P1H = 0x00;
-
-
-    U1P2L = 0x00;
-
-
-    U1P2H = 0x00;
-
-
-    U1P3L = 0x00;
-
-
-    U1P3H = 0x00;
-
-
-    U1CON0 = 0xB0;
-
-
-    U1CON1 = 0x80;
-
-
-    U1CON2 = 0x00;
-
-
-    U1BRGL = 0x15;
-
-
-    U1BRGH = 0x00;
-
-
-    U1FIFO = 0x00;
-
-
-    U1UIR = 0x00;
-
-
-    U1ERRIR = 0x00;
-
-
-    U1ERRIE = 0x00;
-
-
-    UART1_SetFramingErrorHandler(UART1_DefaultFramingErrorHandler);
-    UART1_SetOverrunErrorHandler(UART1_DefaultOverrunErrorHandler);
-    UART1_SetErrorHandler(UART1_DefaultErrorHandler);
-
-    uart1RxLastError.status = 0;
-
-
-    uart1TxHead = 0;
-    uart1TxTail = 0;
-    uart1TxBufferRemaining = sizeof(uart1TxBuffer);
-    uart1RxHead = 0;
-    uart1RxTail = 0;
-    uart1RxCount = 0;
-
-
-    PIE4bits.U1RXIE = 1;
+    INTCON0bits.IPEN = 0;
 }
 
-_Bool UART1_is_rx_ready(void)
+void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
 {
-    return (uart1RxCount ? 1 : 0);
-}
 
-_Bool UART1_is_tx_ready(void)
-{
-    return (uart1TxBufferRemaining ? 1 : 0);
-}
-
-_Bool UART1_is_tx_done(void)
-{
-    return U1ERRIRbits.TXMTIF;
-}
-
-uart1_status_t UART1_get_last_status(void){
-    return uart1RxLastError;
-}
-
-uint8_t UART1_Read(void)
-{
-    uint8_t readValue = 0;
-
-    while(0 == uart1RxCount)
+    if(PIE4bits.U1TXIE == 1 && PIR4bits.U1TXIF == 1)
     {
+        UART1_TxInterruptHandler();
     }
-
-    uart1RxLastError = uart1RxStatusBuffer[uart1RxTail];
-
-    readValue = uart1RxBuffer[uart1RxTail++];
-    if(sizeof(uart1RxBuffer) <= uart1RxTail)
+    else if(PIE4bits.U1RXIE == 1 && PIR4bits.U1RXIF == 1)
     {
-        uart1RxTail = 0;
-    }
-    PIE4bits.U1RXIE = 0;
-    uart1RxCount--;
-    PIE4bits.U1RXIE = 1;
+        UART1_RxInterruptHandler();
+        datoSerial = getch();
+        if(datoSerial != '\n'){
+            buffer[contadorBuffer++] = datoSerial;
+        }else if(datoSerial = '\n'){
+            buffer[contadorBuffer++] = '\0';
+            contadorBuffer=0;
+            DatoSerialDiponible = 1;
+        }
 
-    return readValue;
-}
 
-void UART1_Write(uint8_t txData)
-{
-    while(0 == uart1TxBufferRemaining)
-    {
-    }
-
-    if(0 == PIE4bits.U1TXIE)
-    {
-        U1TXB = txData;
     }
     else
     {
-        PIE4bits.U1TXIE = 0;
-        uart1TxBuffer[uart1TxHead++] = txData;
-        if(sizeof(uart1TxBuffer) <= uart1TxHead)
-        {
-            uart1TxHead = 0;
-        }
-        uart1TxBufferRemaining--;
+
     }
-    PIE4bits.U1TXIE = 1;
-}
-
-int getch(void)
-{
-    return UART1_Read();
-}
-
-void putch(char txData)
-{
-    UART1_Write(txData);
-}
-
-
-
-
-
-void UART1_Transmit_ISR(void)
-{
-
-    if(sizeof(uart1TxBuffer) > uart1TxBufferRemaining)
-    {
-        U1TXB = uart1TxBuffer[uart1TxTail++];
-       if(sizeof(uart1TxBuffer) <= uart1TxTail)
-        {
-            uart1TxTail = 0;
-        }
-        uart1TxBufferRemaining++;
-    }
-    else
-    {
-        PIE4bits.U1TXIE = 0;
-    }
-
-
-}
-
-void UART1_Receive_ISR(void)
-{
-
-    uart1RxStatusBuffer[uart1RxHead].status = 0;
-
-    if(U1ERRIRbits.FERIF){
-        uart1RxStatusBuffer[uart1RxHead].ferr = 1;
-        UART1_FramingErrorHandler();
-    }
-
-    if(U1ERRIRbits.RXFOIF){
-        uart1RxStatusBuffer[uart1RxHead].oerr = 1;
-        UART1_OverrunErrorHandler();
-    }
-
-    if(uart1RxStatusBuffer[uart1RxHead].status){
-        UART1_ErrorHandler();
-    } else {
-        UART1_RxDataHandler();
-    }
-
-
-}
-
-void UART1_RxDataHandler(void){
-
-    uart1RxBuffer[uart1RxHead++] = U1RXB;
-    if(sizeof(uart1RxBuffer) <= uart1RxHead)
-    {
-        uart1RxHead = 0;
-    }
-    uart1RxCount++;
-}
-
-void UART1_DefaultFramingErrorHandler(void){}
-
-void UART1_DefaultOverrunErrorHandler(void){}
-
-void UART1_DefaultErrorHandler(void){
-    UART1_RxDataHandler();
-}
-
-void UART1_SetFramingErrorHandler(void (* interruptHandler)(void)){
-    UART1_FramingErrorHandler = interruptHandler;
-}
-
-void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void)){
-    UART1_OverrunErrorHandler = interruptHandler;
-}
-
-void UART1_SetErrorHandler(void (* interruptHandler)(void)){
-    UART1_ErrorHandler = interruptHandler;
-}
-
-
-
-void UART1_SetRxInterruptHandler(void (* InterruptHandler)(void)){
-    UART1_RxInterruptHandler = InterruptHandler;
-}
-
-void UART1_SetTxInterruptHandler(void (* InterruptHandler)(void)){
-    UART1_TxInterruptHandler = InterruptHandler;
 }

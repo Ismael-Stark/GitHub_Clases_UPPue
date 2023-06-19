@@ -1,69 +1,41 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [v F23360 `(v ~T0 @X0 0 tf ]
 [v F23362 `(v ~T0 @X0 0 tf ]
-"87 mcc_generated_files/interrupt_manager.h
-[; ;mcc_generated_files/interrupt_manager.h: 87: void INTERRUPT_Initialize (void);
-[v _INTERRUPT_Initialize `(v ~T0 @X0 0 ef ]
-"99 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 99: void PMD_Initialize(void);
-[v _PMD_Initialize `(v ~T0 @X0 0 ef ]
-"89 mcc_generated_files/i2c1_master.h
-[; ;mcc_generated_files/i2c1_master.h: 89: void I2C1_Initialize(void);
-[v _I2C1_Initialize `(v ~T0 @X0 0 ef ]
-"246 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 246: void PIN_MANAGER_Initialize (void);
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"115 mcc_generated_files/adc.h
-[; ;mcc_generated_files/adc.h: 115: void ADC_Initialize(void);
-[v _ADC_Initialize `(v ~T0 @X0 0 ef ]
-"86 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 86: void OSCILLATOR_Initialize(void);
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"116 mcc_generated_files/uart1.h
-[; ;mcc_generated_files/uart1.h: 116: void UART1_Initialize(void);
-[v _UART1_Initialize `(v ~T0 @X0 0 ef ]
-"5335 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 5335: extern volatile unsigned char OSCCON1 __attribute__((address(0x0AD)));
-[v _OSCCON1 `Vuc ~T0 @X0 0 e@173 ]
-"5475
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 5475: extern volatile unsigned char OSCCON3 __attribute__((address(0x0AF)));
-[v _OSCCON3 `Vuc ~T0 @X0 0 e@175 ]
-"5775
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 5775: extern volatile unsigned char OSCEN __attribute__((address(0x0B3)));
-[v _OSCEN `Vuc ~T0 @X0 0 e@179 ]
-"5573
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 5573: extern volatile unsigned char OSCFRQ __attribute__((address(0x0B1)));
-[v _OSCFRQ `Vuc ~T0 @X0 0 e@177 ]
-"5515
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 5515: extern volatile unsigned char OSCTUNE __attribute__((address(0x0B0)));
-[v _OSCTUNE `Vuc ~T0 @X0 0 e@176 ]
-"1338
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1338: extern volatile unsigned char PMD0 __attribute__((address(0x060)));
-[v _PMD0 `Vuc ~T0 @X0 0 e@96 ]
-"1404
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1404: extern volatile unsigned char PMD1 __attribute__((address(0x061)));
-[v _PMD1 `Vuc ~T0 @X0 0 e@97 ]
-"1466
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1466: extern volatile unsigned char PMD2 __attribute__((address(0x062)));
-[v _PMD2 `Vuc ~T0 @X0 0 e@98 ]
-"1513
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1513: extern volatile unsigned char PMD3 __attribute__((address(0x063)));
-[v _PMD3 `Vuc ~T0 @X0 0 e@99 ]
-"1564
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1564: extern volatile unsigned char PMD4 __attribute__((address(0x064)));
-[v _PMD4 `Vuc ~T0 @X0 0 e@100 ]
-"1620
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1620: extern volatile unsigned char PMD5 __attribute__((address(0x065)));
-[v _PMD5 `Vuc ~T0 @X0 0 e@101 ]
-"1677
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1677: extern volatile unsigned char PMD6 __attribute__((address(0x066)));
-[v _PMD6 `Vuc ~T0 @X0 0 e@102 ]
-"1739
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1739: extern volatile unsigned char PMD7 __attribute__((address(0x067)));
-[v _PMD7 `Vuc ~T0 @X0 0 e@103 ]
-"1801
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 1801: extern volatile unsigned char PMD8 __attribute__((address(0x068)));
-[v _PMD8 `Vuc ~T0 @X0 0 e@104 ]
+"3962 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+[s S3153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3153 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
+"3971
+[s S3154 :7 `uc 1 :1 `uc 1 ]
+[n S3154 . . GIEH ]
+"3961
+[u S3152 `S3153 1 `S3154 1 ]
+[n S3152 . . . ]
+"3976
+[v _INTCON0bits `VS3152 ~T0 @X0 0 e@1238 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt ]
+"1216
+[s S3060 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3060 . U1RXIE U1TXIE U1EIE U1IE CANRXIE CANTXIE PWM1PIE PWM1IE ]
+"1215
+[u S3059 `S3060 1 ]
+[n S3059 . . ]
+"1227
+[v _PIE4bits `VS3059 ~T0 @X0 0 e@1186 ]
+"2201
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 2201:     };
+[s S3093 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3093 . U1RXIF U1TXIF U1EIF U1IF CANRXIF CANTXIF PWM1PIF PWM1IF ]
+"2200
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 2200:         unsigned CH :8;
+[u S3092 `S3093 1 ]
+[n S3092 . . ]
+"2212
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 2212:     struct {
+[v _PIR4bits `VS3092 ~T0 @X0 0 e@1202 ]
+"91 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 91: int getch(void);
+[v _getch `(i ~T0 @X0 0 ef ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3694,102 +3666,114 @@ Version 4.0 HI-TECH Software Intermediate Code
 "536
 [; ;mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
 [v _UART1_TxInterruptHandler `*F23362 ~T0 @X0 1 e ]
-"50 mcc_generated_files/mcc.c
-[; ;mcc_generated_files/mcc.c: 50: void SYSTEM_Initialize(void)
-[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
-"51
-[; ;mcc_generated_files/mcc.c: 51: {
-{
-[e :U _SYSTEM_Initialize ]
-[f ]
-"52
-[; ;mcc_generated_files/mcc.c: 52:     INTERRUPT_Initialize();
-[e ( _INTERRUPT_Initialize ..  ]
+"52 mcc_generated_files/interrupt_manager.c
+[; ;mcc_generated_files/interrupt_manager.c: 52: uint8_t buffer[50], contadorBuffer=0, datoSerial;
+[v _buffer `uc ~T0 @X0 -> 50 `i e ]
+[v _contadorBuffer `uc ~T0 @X0 1 e ]
+[i _contadorBuffer
+-> -> 0 `i `uc
+]
+[v _datoSerial `uc ~T0 @X0 1 e ]
 "53
-[; ;mcc_generated_files/mcc.c: 53:     PMD_Initialize();
-[e ( _PMD_Initialize ..  ]
-"54
-[; ;mcc_generated_files/mcc.c: 54:     I2C1_Initialize();
-[e ( _I2C1_Initialize ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 53: extern _Bool DatoSerialDiponible = 0;
+[v _DatoSerialDiponible `a ~T0 @X0 1 e ]
+[i _DatoSerialDiponible
+-> -> 0 `i `a
+]
 "55
-[; ;mcc_generated_files/mcc.c: 55:     PIN_MANAGER_Initialize();
-[e ( _PIN_MANAGER_Initialize ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 55: void INTERRUPT_Initialize (void)
+[v _INTERRUPT_Initialize `(v ~T0 @X0 1 ef ]
 "56
-[; ;mcc_generated_files/mcc.c: 56:     ADC_Initialize();
-[e ( _ADC_Initialize ..  ]
-"57
-[; ;mcc_generated_files/mcc.c: 57:     OSCILLATOR_Initialize();
-[e ( _OSCILLATOR_Initialize ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 56: {
+{
+[e :U _INTERRUPT_Initialize ]
+[f ]
 "58
-[; ;mcc_generated_files/mcc.c: 58:     UART1_Initialize();
-[e ( _UART1_Initialize ..  ]
+[; ;mcc_generated_files/interrupt_manager.c: 58:     INTCON0bits.IPEN = 0;
+[e = . . _INTCON0bits 0 4 -> -> 0 `i `uc ]
 "59
-[; ;mcc_generated_files/mcc.c: 59: }
+[; ;mcc_generated_files/interrupt_manager.c: 59: }
 [e :UE 3250 ]
 }
+[v $root$_INTERRUPT_InterruptManager `(v ~T0 @X0 0 e ]
 "61
-[; ;mcc_generated_files/mcc.c: 61: void OSCILLATOR_Initialize(void)
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
+[; ;mcc_generated_files/interrupt_manager.c: 61: void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+[v _INTERRUPT_InterruptManager `(v ~T1 @X0 1 ef ]
 "62
-[; ;mcc_generated_files/mcc.c: 62: {
+[; ;mcc_generated_files/interrupt_manager.c: 62: {
 {
-[e :U _OSCILLATOR_Initialize ]
+[e :U _INTERRUPT_InterruptManager ]
 [f ]
 "64
-[; ;mcc_generated_files/mcc.c: 64:     OSCCON1 = 0x70;
-[e = _OSCCON1 -> -> 112 `i `uc ]
-"66
-[; ;mcc_generated_files/mcc.c: 66:     OSCCON3 = 0x00;
-[e = _OSCCON3 -> -> 0 `i `uc ]
-"68
-[; ;mcc_generated_files/mcc.c: 68:     OSCEN = 0x00;
-[e = _OSCEN -> -> 0 `i `uc ]
-"70
-[; ;mcc_generated_files/mcc.c: 70:     OSCFRQ = 0x02;
-[e = _OSCFRQ -> -> 2 `i `uc ]
-"72
-[; ;mcc_generated_files/mcc.c: 72:     OSCTUNE = 0x00;
-[e = _OSCTUNE -> -> 0 `i `uc ]
-"73
-[; ;mcc_generated_files/mcc.c: 73: }
-[e :UE 3251 ]
-}
-"75
-[; ;mcc_generated_files/mcc.c: 75: void PMD_Initialize(void)
-[v _PMD_Initialize `(v ~T0 @X0 1 ef ]
-"76
-[; ;mcc_generated_files/mcc.c: 76: {
+[; ;mcc_generated_files/interrupt_manager.c: 64:     if(PIE4bits.U1TXIE == 1 && PIR4bits.U1TXIF == 1)
+[e $ ! && == -> . . _PIE4bits 0 1 `i -> 1 `i == -> . . _PIR4bits 0 1 `i -> 1 `i 3252  ]
+"65
+[; ;mcc_generated_files/interrupt_manager.c: 65:     {
 {
-[e :U _PMD_Initialize ]
-[f ]
+"66
+[; ;mcc_generated_files/interrupt_manager.c: 66:         UART1_TxInterruptHandler();
+[e ( *U _UART1_TxInterruptHandler ..  ]
+"67
+[; ;mcc_generated_files/interrupt_manager.c: 67:     }
+}
+[e $U 3253  ]
+"68
+[; ;mcc_generated_files/interrupt_manager.c: 68:     else if(PIE4bits.U1RXIE == 1 && PIR4bits.U1RXIF == 1)
+[e :U 3252 ]
+[e $ ! && == -> . . _PIE4bits 0 0 `i -> 1 `i == -> . . _PIR4bits 0 0 `i -> 1 `i 3254  ]
+"69
+[; ;mcc_generated_files/interrupt_manager.c: 69:     {
+{
+"70
+[; ;mcc_generated_files/interrupt_manager.c: 70:         UART1_RxInterruptHandler();
+[e ( *U _UART1_RxInterruptHandler ..  ]
+"71
+[; ;mcc_generated_files/interrupt_manager.c: 71:         datoSerial = getch();
+[e = _datoSerial -> ( _getch ..  `uc ]
+"72
+[; ;mcc_generated_files/interrupt_manager.c: 72:         if(datoSerial != '\n'){
+[e $ ! != -> _datoSerial `ui -> 10 `ui 3255  ]
+{
+"73
+[; ;mcc_generated_files/interrupt_manager.c: 73:             buffer[contadorBuffer++] = datoSerial;
+[e = *U + &U _buffer * -> ++ _contadorBuffer -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux _datoSerial ]
+"74
+[; ;mcc_generated_files/interrupt_manager.c: 74:         }else if(datoSerial = '\n'){
+}
+[e $U 3256  ]
+[e :U 3255 ]
+[e $ ! != -> = _datoSerial -> -> 10 `ui `uc `i -> 0 `i 3257  ]
+{
+"75
+[; ;mcc_generated_files/interrupt_manager.c: 75:             buffer[contadorBuffer++] = '\0';
+[e = *U + &U _buffer * -> ++ _contadorBuffer -> -> 1 `i `uc `ux -> -> # *U &U _buffer `ui `ux -> -> 0 `ui `uc ]
+"76
+[; ;mcc_generated_files/interrupt_manager.c: 76:             contadorBuffer=0;
+[e = _contadorBuffer -> -> 0 `i `uc ]
+"77
+[; ;mcc_generated_files/interrupt_manager.c: 77:             DatoSerialDiponible = 1;
+[e = _DatoSerialDiponible -> -> 1 `i `a ]
 "78
-[; ;mcc_generated_files/mcc.c: 78:     PMD0 = 0x00;
-[e = _PMD0 -> -> 0 `i `uc ]
-"80
-[; ;mcc_generated_files/mcc.c: 80:     PMD1 = 0x00;
-[e = _PMD1 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/interrupt_manager.c: 78:         }
+}
+[e :U 3257 ]
+[e :U 3256 ]
+"81
+[; ;mcc_generated_files/interrupt_manager.c: 81:     }
+}
+[e $U 3258  ]
 "82
-[; ;mcc_generated_files/mcc.c: 82:     PMD2 = 0x00;
-[e = _PMD2 -> -> 0 `i `uc ]
-"84
-[; ;mcc_generated_files/mcc.c: 84:     PMD3 = 0x00;
-[e = _PMD3 -> -> 0 `i `uc ]
+[; ;mcc_generated_files/interrupt_manager.c: 82:     else
+[e :U 3254 ]
+"83
+[; ;mcc_generated_files/interrupt_manager.c: 83:     {
+{
+"85
+[; ;mcc_generated_files/interrupt_manager.c: 85:     }
+}
+[e :U 3258 ]
+[e :U 3253 ]
 "86
-[; ;mcc_generated_files/mcc.c: 86:     PMD4 = 0x00;
-[e = _PMD4 -> -> 0 `i `uc ]
-"88
-[; ;mcc_generated_files/mcc.c: 88:     PMD5 = 0x00;
-[e = _PMD5 -> -> 0 `i `uc ]
-"90
-[; ;mcc_generated_files/mcc.c: 90:     PMD6 = 0x00;
-[e = _PMD6 -> -> 0 `i `uc ]
-"92
-[; ;mcc_generated_files/mcc.c: 92:     PMD7 = 0x00;
-[e = _PMD7 -> -> 0 `i `uc ]
-"94
-[; ;mcc_generated_files/mcc.c: 94:     PMD8 = 0x00;
-[e = _PMD8 -> -> 0 `i `uc ]
-"95
-[; ;mcc_generated_files/mcc.c: 95: }
-[e :UE 3252 ]
+[; ;mcc_generated_files/interrupt_manager.c: 86: }
+[e :UE 3251 ]
 }

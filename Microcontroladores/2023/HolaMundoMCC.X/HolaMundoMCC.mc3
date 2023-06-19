@@ -42640,7 +42640,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="UART1" name="eusartInterrupts"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="UART1" name="inputmode"/>
@@ -43400,7 +43400,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="URXI" settingAlias="enable"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="URXI" settingAlias="flag"/>
@@ -43424,7 +43424,7 @@
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="UTXI" settingAlias="enable"/>
-         <value>disabled</value>
+         <value>enabled</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.SettingKey" moduleName="UART1" registerAlias="UTXI" settingAlias="flag"/>
@@ -43637,8 +43637,12 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>b275bf10b8a978e3fea7b5d33dacb5a414ab86e4fbf0502c74c3d7af1d49f727</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.h</file>
-         <hash>33c38166587c6896eebdd38850e7c5bb2bf2782caf97b0636a8bdc94da79a1f7</hash>
+         <hash>810d954ecd1be577bf85ea29ca7055a00113f41787360c8aed6eaf9b7e0d3894</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
@@ -43646,11 +43650,11 @@
       </entry>
       <entry>
          <file>mcc_generated_files\uart1.h</file>
-         <hash>e799d300ed381873415e9054b09aec761611acb64239bc5116bd11d16e655daa</hash>
+         <hash>a094f06d7eb9bcc1c4275aae2b2e13828a5b7721485f13fac312dd5cb0bde933</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\uart1.c</file>
-         <hash>c0b9f0ffb228cba497f579b1e718531d4132ecc6aa573a85e140f9463c51d2f2</hash>
+         <hash>3631742386476098ea89bb3f0373d5735081236e1dbdabf846bc745717d37b2a</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\examples\i2c1_master_example.c</file>
@@ -43689,8 +43693,12 @@
          <hash>dc47085b6334fa85e67f3be623f1b486fe09ae28a8853dc5f481f5466ccb4f3f</hash>
       </entry>
       <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>b1ff8396242956b01c56ad3c728d064704ad395915bc95147d916735f7ba9070</hash>
+      </entry>
+      <entry>
          <file>mcc_generated_files\mcc.c</file>
-         <hash>5a0cbb23078f26dea2836d689cdac52fe36e6c08ed2fa64751553ef4ae0fbccb</hash>
+         <hash>04265545c4565f262e7dee1631faef1adc134cc94a252c7484c2015163d29b6b</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\i2c1_master.c</file>

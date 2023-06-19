@@ -1,9 +1,22 @@
 Version 4.0 HI-TECH Software Intermediate Code
+[v F23360 `(v ~T0 @X0 0 tf ]
+[v F23362 `(v ~T0 @X0 0 tf ]
 [p mainexit ]
-"72 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
+"73 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+"3962 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+[s S3153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3153 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
+"3971
+[s S3154 :7 `uc 1 :1 `uc 1 ]
+[n S3154 . . GIEH ]
+"3961
+[u S3152 `S3153 1 `S3154 1 ]
+[n S3152 . . . ]
+"3976
+[v _INTCON0bits `VS3152 ~T0 @X0 0 e@1238 ]
+"3210
 [s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3127 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
 "3209
@@ -12,13 +25,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3221
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
 [v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
-"39 main.c
-[; ;main.c: 39:         ADCvalor = ADC_GetSingleConversion(LM35);
-[c E23221 0 1 5 59 60 61 62 63 .. ]
-[n E23221 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"43 main.c
+[; ;main.c: 43:         ADCvalor = ADC_GetSingleConversion(LM35);
+[c E23222 0 1 5 59 60 61 62 63 .. ]
+[n E23222 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "374 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23221 ]
+[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23222 ]
 "107 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
 [; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 107: int printf(const char *restrict, ...);
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
@@ -26,6 +39,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
+"10 main.c
+[; ;main.c: 10: extern uint8_t buffer[50];
+[v _buffer `uc ~T0 @X0 -> 0 `x e ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3650,8 +3666,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 "70742
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 70742: __asm("TOSU equ 04FFh");
 [; <" TOSU equ 04FFh ;# ">
+"518 ./mcc_generated_files/uart1.h
+[; ;./mcc_generated_files/uart1.h: 518: void (*UART1_RxInterruptHandler)(void);
+[v _UART1_RxInterruptHandler `*F23360 ~T0 @X0 1 e ]
+"536
+[; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
+[v _UART1_TxInterruptHandler `*F23362 ~T0 @X0 1 e ]
 "9 main.c
-[; ;main.c: 9: float map(float x, float in_min, float in_max, float out_min, float out_max) {
+[; ;main.c: 9: _Bool DatoSerialDiponible = 0;
+[v _DatoSerialDiponible `a ~T0 @X0 1 e ]
+[i _DatoSerialDiponible
+-> -> 0 `i `a
+]
+"13
+[; ;main.c: 13: float map(float x, float in_min, float in_max, float out_min, float out_max) {
 [v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
 {
 [e :U _map ]
@@ -3661,78 +3689,96 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _out_min `f ~T0 @X0 1 r4 ]
 [v _out_max `f ~T0 @X0 1 r5 ]
 [f ]
-"10
-[; ;main.c: 10:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+"14
+[; ;main.c: 14:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 [e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
 [e $UE 3250  ]
-"11
-[; ;main.c: 11: }
+"15
+[; ;main.c: 15: }
 [e :UE 3250 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"16
-[; ;main.c: 16: void main(void)
+"20
+[; ;main.c: 20: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"17
-[; ;main.c: 17: {
+"21
+[; ;main.c: 21: {
 {
 [e :U _main ]
 [f ]
-"18
-[; ;main.c: 18:     uint16_t ADCvalor, SensorSharp;
+"22
+[; ;main.c: 22:     uint16_t ADCvalor, SensorSharp;
 [v _ADCvalor `us ~T0 @X0 1 a ]
 [v _SensorSharp `us ~T0 @X0 1 a ]
-"19
-[; ;main.c: 19:     float temperatura, distancia;
+"23
+[; ;main.c: 23:     float temperatura, distancia;
 [v _temperatura `f ~T0 @X0 1 a ]
 [v _distancia `f ~T0 @X0 1 a ]
-"20
-[; ;main.c: 20:     uint8_t lecturaSerial;
+"24
+[; ;main.c: 24:     uint8_t lecturaSerial;
 [v _lecturaSerial `uc ~T0 @X0 1 a ]
-"22
-[; ;main.c: 22:     SYSTEM_Initialize();
+"26
+[; ;main.c: 26:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"34
-[; ;main.c: 34:     while (1)
+"33
+[; ;main.c: 33:     (INTCON0bits.GIE = 1);
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+"38
+[; ;main.c: 38:     while (1)
 [e :U 3253 ]
-"35
-[; ;main.c: 35:     {
+"39
+[; ;main.c: 39:     {
 {
-"37
-[; ;main.c: 37:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+"41
+[; ;main.c: 41:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
 [e :U 3257 ]
 {
 [e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
 }
 [e :U 3256 ]
-"38
-[; ;main.c: 38:         do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
+"42
+[; ;main.c: 42:         do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
 [e :U 3260 ]
 {
 [e = . . _LATFbits 0 2 -> ~ -> . . _LATFbits 0 2 `i `uc ]
 }
 [e :U 3259 ]
-"39
-[; ;main.c: 39:         ADCvalor = ADC_GetSingleConversion(LM35);
-[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23221 2 ]
-"41
-[; ;main.c: 41:         temperatura = ((3.3/4095)*ADCvalor)*100;
-[e = _temperatura -> * * / .3.3 -> -> 4095 `i `d -> -> _ADCvalor `ui `d -> -> 100 `i `d `f ]
 "43
-[; ;main.c: 43:         printf("ADC5: temp %.3fC\n",temperatura);
+[; ;main.c: 43:         ADCvalor = ADC_GetSingleConversion(LM35);
+[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23222 2 ]
+"45
+[; ;main.c: 45:         temperatura = ((3.3/4095)*ADCvalor)*100;
+[e = _temperatura -> * * / .3.3 -> -> 4095 `i `d -> -> _ADCvalor `ui `d -> -> 100 `i `d `f ]
+"47
+[; ;main.c: 47:         printf("ADC5: temp %.3fC\n",temperatura);
 [e ( _printf , (. :s 1C -> _temperatura `d ]
-"53
-[; ;main.c: 53:         _delay((unsigned long)((900)*(10000000/4000.0)));
+"57
+[; ;main.c: 57:         _delay((unsigned long)((900)*(10000000/4000.0)));
 [e ( __delay (1 -> * -> -> 900 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"60
+[; ;main.c: 60:         if (DatoSerialDiponible == 1){
+[e $ ! == -> _DatoSerialDiponible `i -> 1 `i 3261  ]
+{
+"61
+[; ;main.c: 61:            DatoSerialDiponible = 0;
+[e = _DatoSerialDiponible -> -> 0 `i `a ]
+"62
+[; ;main.c: 62:            printf("llego el dato: %s\n\n",buffer);
+[e ( _printf , (. :s 2C &U _buffer ]
 "63
-[; ;main.c: 63:     }
+[; ;main.c: 63:         }
+}
+[e :U 3261 ]
+"67
+[; ;main.c: 67:     }
 }
 [e :U 3252 ]
 [e $U 3253  ]
 [e :U 3254 ]
-"64
-[; ;main.c: 64: }
+"68
+[; ;main.c: 68: }
 [e :UE 3251 ]
 }
-[p f _printf 8462336 ]
+[p f _printf 8724480 ]
 [a 1C 65 68 67 53 58 32 116 101 109 112 32 37 46 51 102 67 10 0 ]
+[a 2C 108 108 101 103 111 32 101 108 32 100 97 116 111 58 32 37 115 10 10 0 ]

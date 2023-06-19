@@ -38975,6 +38975,11 @@ char *tempnam(const char *, const char *);
 # 8 "C:\\Program Files\\Microchip\\xc8\\v2.41\\pic\\include\\c99\\conio.h" 2 3
 # 54 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/interrupt_manager.h" 1
+# 87 "./mcc_generated_files/interrupt_manager.h"
+void INTERRUPT_Initialize (void);
+# 55 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/i2c1_master.h" 1
 # 58 "./mcc_generated_files/i2c1_master.h"
 typedef enum {
@@ -39039,7 +39044,7 @@ void I2C1_SetAddressNackCallback(i2c1_callback_t cb, void *ptr);
 void I2C1_SetDataNackCallback(i2c1_callback_t cb, void *ptr);
 # 204 "./mcc_generated_files/i2c1_master.h"
 void I2C1_SetTimeoutCallback(i2c1_callback_t cb, void *ptr);
-# 55 "./mcc_generated_files/mcc.h" 2
+# 56 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/adc.h" 1
 # 65 "./mcc_generated_files/adc.h"
@@ -39201,7 +39206,7 @@ void ADC_SetContext3ThresholdInterruptHandler(void (* InterruptHandler)(void));
 void ADC_ADCH4_ISR(void);
 # 1175 "./mcc_generated_files/adc.h"
 void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
-# 56 "./mcc_generated_files/mcc.h" 2
+# 57 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/uart1.h" 1
 # 75 "./mcc_generated_files/uart1.h"
@@ -39214,32 +39219,52 @@ typedef union {
     };
     uint8_t status;
 }uart1_status_t;
-# 111 "./mcc_generated_files/uart1.h"
+
+
+
+
+extern volatile uint8_t uart1TxBufferRemaining;
+extern volatile uint8_t uart1RxCount;
+# 116 "./mcc_generated_files/uart1.h"
 void UART1_Initialize(void);
-# 159 "./mcc_generated_files/uart1.h"
+# 164 "./mcc_generated_files/uart1.h"
 _Bool UART1_is_rx_ready(void);
-# 207 "./mcc_generated_files/uart1.h"
+# 212 "./mcc_generated_files/uart1.h"
 _Bool UART1_is_tx_ready(void);
-# 254 "./mcc_generated_files/uart1.h"
+# 259 "./mcc_generated_files/uart1.h"
 _Bool UART1_is_tx_done(void);
-# 302 "./mcc_generated_files/uart1.h"
+# 307 "./mcc_generated_files/uart1.h"
 uart1_status_t UART1_get_last_status(void);
-# 351 "./mcc_generated_files/uart1.h"
+# 356 "./mcc_generated_files/uart1.h"
 uint8_t UART1_Read(void);
-# 376 "./mcc_generated_files/uart1.h"
+# 381 "./mcc_generated_files/uart1.h"
 void UART1_Write(uint8_t txData);
-# 396 "./mcc_generated_files/uart1.h"
+# 402 "./mcc_generated_files/uart1.h"
+void UART1_Transmit_ISR(void);
+# 423 "./mcc_generated_files/uart1.h"
+void UART1_Receive_ISR(void);
+# 444 "./mcc_generated_files/uart1.h"
+void UART1_RxDataHandler(void);
+# 462 "./mcc_generated_files/uart1.h"
 void UART1_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 414 "./mcc_generated_files/uart1.h"
+# 480 "./mcc_generated_files/uart1.h"
 void UART1_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 432 "./mcc_generated_files/uart1.h"
+# 498 "./mcc_generated_files/uart1.h"
 void UART1_SetErrorHandler(void (* interruptHandler)(void));
-# 57 "./mcc_generated_files/mcc.h" 2
-# 72 "./mcc_generated_files/mcc.h"
+# 518 "./mcc_generated_files/uart1.h"
+void (*UART1_RxInterruptHandler)(void);
+# 536 "./mcc_generated_files/uart1.h"
+void (*UART1_TxInterruptHandler)(void);
+# 556 "./mcc_generated_files/uart1.h"
+void UART1_SetRxInterruptHandler(void (* InterruptHandler)(void));
+# 574 "./mcc_generated_files/uart1.h"
+void UART1_SetTxInterruptHandler(void (* InterruptHandler)(void));
+# 58 "./mcc_generated_files/mcc.h" 2
+# 73 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 85 "./mcc_generated_files/mcc.h"
+# 86 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 98 "./mcc_generated_files/mcc.h"
+# 99 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 1 "main.c" 2
 
@@ -39620,6 +39645,10 @@ double yn(int, double);
 
 
 
+_Bool DatoSerialDiponible = 0;
+extern uint8_t buffer[50];
+
+
 float map(float x, float in_min, float in_max, float out_min, float out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
@@ -39634,7 +39663,17 @@ void main(void)
     uint8_t lecturaSerial;
 
     SYSTEM_Initialize();
-# 34 "main.c"
+
+
+
+
+
+
+    (INTCON0bits.GIE = 1);
+
+
+
+
     while (1)
     {
 
@@ -39645,8 +39684,16 @@ void main(void)
         temperatura = ((3.3/4095)*ADCvalor)*100;
 
         printf("ADC5: temp %.3fC\n",temperatura);
-# 53 "main.c"
+# 57 "main.c"
         _delay((unsigned long)((900)*(10000000/4000.0)));
-# 63 "main.c"
+
+
+        if (DatoSerialDiponible == 1){
+           DatoSerialDiponible = 0;
+           printf("llego el dato: %s\n\n",buffer);
+        }
+
+
+
     }
 }
