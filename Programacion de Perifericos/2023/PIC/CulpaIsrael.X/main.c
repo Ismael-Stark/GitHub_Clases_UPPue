@@ -28,7 +28,7 @@ void main(void)
     while (1)
     {
         printf("Hola %d\n",contador++);
-        __delay_ms(5);
+        __delay_ms(500);
         // Add your application code
     }
 }
