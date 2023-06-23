@@ -26,7 +26,7 @@ Count=1
 1=ejemplo1 (main)
 
 [ProjectLog]
-Days=1
+Days=2
 D1=16-06-2023
 D1_L=2
 D1_L1=[44475]Stopped Editing.
@@ -35,3 +35,14 @@ TotalDebug=0
 D1_E=7
 D1_D=0
 D1_L2=[44909]Project Closed.
+D2=22-06-2023
+D2_L=6
+D2_L1=[45613]Project Opened.
+D2_L2=[45629]Project Closed.
+D2_L3=[50527]Project Opened.
+D2_L4=[50554]Project Closed.
+D2_L5=[50694]Project Opened.
+D2_L6=[50705]Project Closed.
+
+[fileformats]
+forcecoff=0

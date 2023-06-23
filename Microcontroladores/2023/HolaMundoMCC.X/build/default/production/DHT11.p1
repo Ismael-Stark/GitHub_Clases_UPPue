@@ -1,53 +1,47 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [v F23360 `(v ~T0 @X0 0 tf ]
 [v F23362 `(v ~T0 @X0 0 tf ]
-[p mainexit ]
-"73 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
-[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"49 ./DHT11.h
-[; ;./DHT11.h: 49:     void dht_init(_Bool DHTaUSAR);
-[v _dht_init `(v ~T0 @X0 0 ef1`a ]
-"3962 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
-[s S3153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3153 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
-"3971
-[s S3154 :7 `uc 1 :1 `uc 1 ]
-[n S3154 . . GIEH ]
-"3961
-[u S3152 `S3153 1 `S3154 1 ]
-[n S3152 . . . ]
-"3976
-[v _INTCON0bits `VS3152 ~T0 @X0 0 e@1238 ]
-"3210
-[s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3127 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
-"3209
-[u S3126 `S3127 1 ]
-[n S3126 . . ]
-"3221
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
-[v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
-"46 main.c
-[; ;main.c: 46:         ADCvalor = ADC_GetSingleConversion(LM35);
-[c E23222 0 1 5 59 60 61 62 63 .. ]
-[n E23222 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
-"374 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23222 ]
+"3458 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+[s S3135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3135 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
+"3457
+[u S3134 `S3135 1 ]
+[n S3134 . . ]
+"3469
+[v _TRISDbits `VS3134 ~T0 @X0 0 e@1225 ]
+"3116
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3116:         unsigned WDTPSCNT13 :1;
+[s S3123 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3123 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"3115
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3115:         unsigned WDTPSCNT12 :1;
+[u S3122 `S3123 1 ]
+[n S3122 . . ]
+"3127
+[v _LATDbits `VS3122 ~T0 @X0 0 e@1217 ]
+"3800
+[s S3147 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3147 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
+"3799
+[u S3146 `S3147 1 ]
+[n S3146 . . ]
+"3811
+[v _PORTDbits `VS3146 ~T0 @X0 0 e@1233 ]
+"60736
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 60736:     struct {
+[s S2757 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2757 . ANSELD0 ANSELD1 ANSELD2 ANSELD3 ANSELD4 ANSELD5 ANSELD6 ANSELD7 ]
+"60735
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 60735: typedef union {
+[u S2756 `S2757 1 ]
+[n S2756 . . ]
+"60747
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 60747: extern volatile ANSELDbits_t ANSELDbits __attribute__((address(0x418)));
+[v _ANSELDbits `VS2756 ~T0 @X0 0 e@1048 ]
 [v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
 [p i __delay ]
-"51 ./DHT11.h
-[; ;./DHT11.h: 51:     uint8_t leer_dht(float *tem,float *hum);
-[v _leer_dht `(uc ~T0 @X0 0 ef2`*f`*f ]
-"107 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 107: int printf(const char *restrict, ...);
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"11 main.c
-[; ;main.c: 11: extern uint8_t buffer[50];
-[v _buffer `uc ~T0 @X0 -> 0 `x e ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3678,144 +3672,240 @@ Version 4.0 HI-TECH Software Intermediate Code
 "536
 [; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
 [v _UART1_TxInterruptHandler `*F23362 ~T0 @X0 1 e ]
-"10 main.c
-[; ;main.c: 10: _Bool DatoSerialDiponible = 0;
-[v _DatoSerialDiponible `a ~T0 @X0 1 e ]
-[i _DatoSerialDiponible
+"7 DHT11.c
+[; ;DHT11.c: 7:     uint8_t dht_dat[5];
+[v _dht_dat `uc ~T0 @X0 -> 5 `i e ]
+"8
+[; ;DHT11.c: 8:     _Bool DHT_USO = 0;
+[v _DHT_USO `a ~T0 @X0 1 e ]
+[i _DHT_USO
 -> -> 0 `i `a
 ]
-"14
-[; ;main.c: 14: float map(float x, float in_min, float in_max, float out_min, float out_max) {
-[v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
+"10
+[; ;DHT11.c: 10: void dht_init(_Bool DHTaUSAR){
+[v _dht_init `(v ~T0 @X0 1 ef1`a ]
 {
-[e :U _map ]
-[v _x `f ~T0 @X0 1 r1 ]
-[v _in_min `f ~T0 @X0 1 r2 ]
-[v _in_max `f ~T0 @X0 1 r3 ]
-[v _out_min `f ~T0 @X0 1 r4 ]
-[v _out_max `f ~T0 @X0 1 r5 ]
+[e :U _dht_init ]
+[v _DHTaUSAR `a ~T0 @X0 1 r1 ]
 [f ]
+"11
+[; ;DHT11.c: 11:     TRISDbits.TRISD7 = 0;
+[e = . . _TRISDbits 0 7 -> -> 0 `i `uc ]
+"12
+[; ;DHT11.c: 12:     LATDbits.LATD7 = 1;
+[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
+"13
+[; ;DHT11.c: 13:     PORTDbits.RD7 = 0;
+[e = . . _PORTDbits 0 7 -> -> 0 `i `uc ]
+"14
+[; ;DHT11.c: 14:     ANSELDbits.ANSELD7 = 0;
+[e = . . _ANSELDbits 0 7 -> -> 0 `i `uc ]
 "15
-[; ;main.c: 15:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
-[e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
-[e $UE 3250  ]
-"16
-[; ;main.c: 16: }
+[; ;DHT11.c: 15:     DHT_USO = DHTaUSAR;
+[e = _DHT_USO _DHTaUSAR ]
+"17
+[; ;DHT11.c: 17: }
 [e :UE 3250 ]
 }
-[v $root$_main `(v ~T0 @X0 0 e ]
-"21
-[; ;main.c: 21: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
-"22
-[; ;main.c: 22: {
+"19
+[; ;DHT11.c: 19: uint8_t leer_trama_dht(){
+[v _leer_trama_dht `(uc ~T0 @X0 1 ef ]
 {
-[e :U _main ]
+[e :U _leer_trama_dht ]
 [f ]
-"23
-[; ;main.c: 23:     uint16_t ADCvalor, SensorSharp, contador=0;
-[v _ADCvalor `us ~T0 @X0 1 a ]
-[v _SensorSharp `us ~T0 @X0 1 a ]
-[v _contador `us ~T0 @X0 1 a ]
-[e = _contador -> -> 0 `i `us ]
-"24
-[; ;main.c: 24:     float temperatura, distancia;
-[v _temperatura `f ~T0 @X0 1 a ]
-[v _distancia `f ~T0 @X0 1 a ]
-"25
-[; ;main.c: 25:     uint8_t lecturaSerial;
-[v _lecturaSerial `uc ~T0 @X0 1 a ]
-"26
-[; ;main.c: 26:     float humedad, tempe,dhterr;
-[v _humedad `f ~T0 @X0 1 a ]
-[v _tempe `f ~T0 @X0 1 a ]
-[v _dhterr `f ~T0 @X0 1 a ]
-"28
-[; ;main.c: 28:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
-"29
-[; ;main.c: 29:     dht_init(0);
-[e ( _dht_init (1 -> -> 0 `i `a ]
-"36
-[; ;main.c: 36:     (INTCON0bits.GIE = 1);
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"41
-[; ;main.c: 41:     while (1)
-[e :U 3253 ]
-"42
-[; ;main.c: 42:     {
+"20
+[; ;DHT11.c: 20:     uint8_t result= 0, i=0;
+[v _result `uc ~T0 @X0 1 a ]
+[e = _result -> -> 0 `i `uc ]
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+"21
+[; ;DHT11.c: 21:     for (i=0; i< 8; i++) {
 {
-"44
-[; ;main.c: 44:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-[e :U 3257 ]
-{
-[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
-}
-[e :U 3256 ]
-"45
-[; ;main.c: 45:         do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
-[e :U 3260 ]
-{
-[e = . . _LATFbits 0 2 -> ~ -> . . _LATFbits 0 2 `i `uc ]
-}
-[e :U 3259 ]
-"46
-[; ;main.c: 46:         ADCvalor = ADC_GetSingleConversion(LM35);
-[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23222 2 ]
-"48
-[; ;main.c: 48:         temperatura = ((3.3/4095)*ADCvalor)*100;
-[e = _temperatura -> * * / .3.3 -> -> 4095 `i `d -> -> _ADCvalor `ui `d -> -> 100 `i `d `f ]
-"62
-[; ;main.c: 62:         _delay((unsigned long)((900)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 900 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"64
-[; ;main.c: 64:         dhterr = leer_dht(&tempe, &humedad);
-[e = _dhterr -> ( _leer_dht (2 , &U _tempe &U _humedad `f ]
-"66
-[; ;main.c: 66:         if (dhterr ==0){
-[e $ ! == _dhterr -> -> 0 `i `f 3261  ]
-{
-"70
-[; ;main.c: 70:             printf("{\"id\":\"ismael\",\"Temperatura\":\"%.2f\",\"humedad\":\"%.2f\",\"cont\":\"%d\"}\n", tempe,humedad,contador++);
-[e ( _printf , , , (. :s 1C -> _tempe `d -> _humedad `d -> ++ _contador -> -> 1 `i `us `ui ]
-"72
-[; ;main.c: 72:         }else{
-}
-[e $U 3262  ]
-[e :U 3261 ]
-{
-"73
-[; ;main.c: 73:             printf("\nError DHT11 verifica tus cables\n");
-[e ( _printf :s 2C ]
-"74
-[; ;main.c: 74:         }
-}
-[e :U 3262 ]
-"76
-[; ;main.c: 76:         if (DatoSerialDiponible == 1){
-[e $ ! == -> _DatoSerialDiponible `i -> 1 `i 3263  ]
-{
-"77
-[; ;main.c: 77:            DatoSerialDiponible = 0;
-[e = _DatoSerialDiponible -> -> 0 `i `a ]
-"78
-[; ;main.c: 78:            printf("llego el dato: %s\n\n",buffer);
-[e ( _printf , (. :s 3C &U _buffer ]
-"79
-[; ;main.c: 79:         }
-}
-[e :U 3263 ]
-"83
-[; ;main.c: 83:     }
-}
-[e :U 3252 ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 3252  ]
 [e $U 3253  ]
-[e :U 3254 ]
-"84
-[; ;main.c: 84: }
+[e :U 3252 ]
+{
+"22
+[; ;DHT11.c: 22:         while(PORTDbits.RD7==0);
+[e $U 3255  ]
+[e :U 3256 ]
+[e :U 3255 ]
+[e $ == -> . . _PORTDbits 0 7 `i -> 0 `i 3256  ]
+[e :U 3257 ]
+"23
+[; ;DHT11.c: 23:         _delay((unsigned long)((30)*(10000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 30 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+"24
+[; ;DHT11.c: 24:         if (PORTDbits.RD7==1)
+[e $ ! == -> . . _PORTDbits 0 7 `i -> 1 `i 3258  ]
+"25
+[; ;DHT11.c: 25:         {
+{
+"26
+[; ;DHT11.c: 26:             result |=(1<<(7-i));
+[e =| _result -> << -> 1 `i - -> 7 `i -> _i `i `uc ]
+"27
+[; ;DHT11.c: 27:         }
+}
+[e :U 3258 ]
+"28
+[; ;DHT11.c: 28:         while (PORTDbits.RD7==1);
+[e $U 3259  ]
+[e :U 3260 ]
+[e :U 3259 ]
+[e $ == -> . . _PORTDbits 0 7 `i -> 1 `i 3260  ]
+[e :U 3261 ]
+"29
+[; ;DHT11.c: 29:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 3252  ]
+[e :U 3253 ]
+}
+"30
+[; ;DHT11.c: 30:     return result;
+[e ) _result ]
+[e $UE 3251  ]
+"32
+[; ;DHT11.c: 32: }
 [e :UE 3251 ]
 }
-[p f _printf 8724608 ]
-[a 1C 123 34 105 100 34 58 34 105 115 109 97 101 108 34 44 34 84 101 109 112 101 114 97 116 117 114 97 34 58 34 37 46 50 102 34 44 34 104 117 109 101 100 97 100 34 58 34 37 46 50 102 34 44 34 99 111 110 116 34 58 34 37 100 34 125 10 0 ]
-[a 2C 10 69 114 114 111 114 32 68 72 84 49 49 32 118 101 114 105 102 105 99 97 32 116 117 115 32 99 97 98 108 101 115 10 0 ]
-[a 3C 108 108 101 103 111 32 101 108 32 100 97 116 111 58 32 37 115 10 10 0 ]
+"34
+[; ;DHT11.c: 34: uint8_t leer_dht(float *tem,float *hum){
+[v _leer_dht `(uc ~T0 @X0 1 ef2`*f`*f ]
+{
+[e :U _leer_dht ]
+[v _tem `*f ~T0 @X0 1 r1 ]
+[v _hum `*f ~T0 @X0 1 r2 ]
+[f ]
+"35
+[; ;DHT11.c: 35:     uint8_t dht_in=0,i=0, dht_check_sum=0;
+[v _dht_in `uc ~T0 @X0 1 a ]
+[e = _dht_in -> -> 0 `i `uc ]
+[v _i `uc ~T0 @X0 1 a ]
+[e = _i -> -> 0 `i `uc ]
+[v _dht_check_sum `uc ~T0 @X0 1 a ]
+[e = _dht_check_sum -> -> 0 `i `uc ]
+"36
+[; ;DHT11.c: 36:     TRISDbits.TRISD7 = 0;
+[e = . . _TRISDbits 0 7 -> -> 0 `i `uc ]
+"37
+[; ;DHT11.c: 37:     LATDbits.LATD7 = 1;
+[e = . . _LATDbits 0 7 -> -> 1 `i `uc ]
+"39
+[; ;DHT11.c: 39:     LATDbits.LATD7 = 0;
+[e = . . _LATDbits 0 7 -> -> 0 `i `uc ]
+"40
+[; ;DHT11.c: 40:     _delay((unsigned long)((18)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 18 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"41
+[; ;DHT11.c: 41:     TRISDbits.TRISD7 = 1;
+[e = . . _TRISDbits 0 7 -> -> 1 `i `uc ]
+"43
+[; ;DHT11.c: 43:     _delay((unsigned long)((22)*(10000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 22 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+"45
+[; ;DHT11.c: 45:     dht_in = PORTDbits.RD7;
+[e = _dht_in . . _PORTDbits 0 7 ]
+"47
+[; ;DHT11.c: 47:     if(dht_in) {
+[e $ ! != -> _dht_in `i -> 0 `i 3263  ]
+{
+"50
+[; ;DHT11.c: 50:         return -1;
+[e ) -> -U -> 1 `i `uc ]
+[e $UE 3262  ]
+"51
+[; ;DHT11.c: 51:     }
+}
+[e :U 3263 ]
+"52
+[; ;DHT11.c: 52:     _delay((unsigned long)((80)*(10000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+"53
+[; ;DHT11.c: 53:     dht_in = PORTDbits.RD7;
+[e = _dht_in . . _PORTDbits 0 7 ]
+"54
+[; ;DHT11.c: 54:     if(!dht_in){
+[e $ ! ! != -> _dht_in `i -> 0 `i 3264  ]
+{
+"57
+[; ;DHT11.c: 57:         return-2;
+[e ) -> -U -> 2 `i `uc ]
+[e $UE 3262  ]
+"58
+[; ;DHT11.c: 58:     }
+}
+[e :U 3264 ]
+"59
+[; ;DHT11.c: 59:     _delay((unsigned long)((80)*(10000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 80 `i `d / -> -> 10000000 `l `d .4000000.0 `ul ]
+"60
+[; ;DHT11.c: 60:     for (i=0; i<5; i++){
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 5 `i 3265  ]
+[e $U 3266  ]
+[e :U 3265 ]
+{
+"61
+[; ;DHT11.c: 61:         dht_dat[i] = leer_trama_dht();
+[e = *U + &U _dht_dat * -> _i `ux -> -> # *U &U _dht_dat `ui `ux ( _leer_trama_dht ..  ]
+"62
+[; ;DHT11.c: 62:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 5 `i 3265  ]
+[e :U 3266 ]
+}
+"63
+[; ;DHT11.c: 63:     dht_check_sum = dht_dat[0] + dht_dat[1] + dht_dat[2] + dht_dat[3];
+[e = _dht_check_sum -> + + + -> *U + &U _dht_dat * -> -> -> 0 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i -> *U + &U _dht_dat * -> -> -> 1 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i -> *U + &U _dht_dat * -> -> -> 2 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i -> *U + &U _dht_dat * -> -> -> 3 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i `uc ]
+"65
+[; ;DHT11.c: 65:     if (dht_check_sum != dht_dat[4]){
+[e $ ! != -> _dht_check_sum `i -> *U + &U _dht_dat * -> -> -> 4 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i 3268  ]
+{
+"67
+[; ;DHT11.c: 67:         return -3;
+[e ) -> -U -> 3 `i `uc ]
+[e $UE 3262  ]
+"68
+[; ;DHT11.c: 68:     }
+}
+[e :U 3268 ]
+"69
+[; ;DHT11.c: 69:     if (DHT_USO == 0){
+[e $ ! == -> _DHT_USO `i -> 0 `i 3269  ]
+{
+"70
+[; ;DHT11.c: 70:         *hum = dht_dat[0];
+[e = *U _hum -> *U + &U _dht_dat * -> -> -> 0 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `f ]
+"71
+[; ;DHT11.c: 71:         *tem = dht_dat[2];
+[e = *U _tem -> *U + &U _dht_dat * -> -> -> 2 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `f ]
+"72
+[; ;DHT11.c: 72:     }else{
+}
+[e $U 3270  ]
+[e :U 3269 ]
+{
+"73
+[; ;DHT11.c: 73:         *hum = ((dht_dat[0]<<8)| dht_dat[1]) /10.0;
+[e = *U _hum -> / -> | << -> *U + &U _dht_dat * -> -> -> 0 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i -> 8 `i -> *U + &U _dht_dat * -> -> -> 1 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i `d .10.0 `f ]
+"75
+[; ;DHT11.c: 75:         *tem = ((dht_dat[2]<<8)| dht_dat[3]) /10.0;
+[e = *U _tem -> / -> | << -> *U + &U _dht_dat * -> -> -> 2 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i -> 8 `i -> *U + &U _dht_dat * -> -> -> 3 `i `ui `ux -> -> # *U &U _dht_dat `ui `ux `i `d .10.0 `f ]
+"76
+[; ;DHT11.c: 76:     }
+}
+[e :U 3270 ]
+"79
+[; ;DHT11.c: 79:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 3262  ]
+"80
+[; ;DHT11.c: 80: }
+[e :UE 3262 ]
+}

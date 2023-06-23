@@ -1,0 +1,63 @@
+[PROJECT]
+Target=main(HolaMundo).hex
+Processor_Text=PIC16F18855
+CCSVerions=5.112
+Compiler=PCM
+CCSVersion=5.112
+[Target Data]
+FileList=main(HolaMundo).c
+[Directories]
+Include=
+[D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo)]
+Type=4
+[mru-list]
+1=main(HolaMundo).c
+
+[fileformats]
+forcecoff=0
+
+[ProjectLog]
+Days=1
+D1=22-06-2023
+D1_L=18
+D1_L1=[46625]Project Opened.
+D1_L2=[48126]Started Editing.
+D1_L3=[50586]Project Opened.
+D1_L4=[50614]Started Editing.
+D1_L5=[50726]Project Opened.
+D1_L6=[50736]Project Closed.
+D1_L7=[50743]Project Opened.
+D1_L8=[50807]Started Editing.
+D1_L9=[50864]Project Opened.
+D1_L10=[50888]Started Editing.
+D1_L11=[51395]Stopped Editing.
+TotalEdit=10
+TotalDebug=0
+D1_E=10
+D1_D=0
+D1_L12=[51922]Project Closed.
+D1_L13=[62143]Project Opened.
+D1_L14=[62205]Project Closed.
+D1_L15=[65247]Project Opened.
+D1_L16=[65260]Started Editing.
+D1_L17=[65590]Stopped Editing.
+D1_L18=[65591]Project Closed.
+
+[Opened Files]
+1=main(HolaMundo).c
+t1=2
+Count=3
+2=main(HolaMundo).h
+t2=18
+3=..\Clase2\main.h
+t3=17
+4=..\ejemplo1.c
+t4=1
+[main(HolaMundo).c]
+Type=4
+
+[defines]
+buildcount=33
+[Units]
+Count=1
+1=main(HolaMundo) (main)

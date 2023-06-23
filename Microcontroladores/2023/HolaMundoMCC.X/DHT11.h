@@ -1,8 +1,9 @@
 
 #ifndef DHT11_H
-#define	DTH11_H
+#define	DHT11_H
 
-#include <xc.h> // include processor files - each processor file is guarded.  
+#include <xc.h> // include processor files - each processor file is guarded.
+#include "mcc_generated_files/mcc.h"
 
 // TODO Insert appropriate #include <>
 
@@ -40,9 +41,15 @@ extern "C" {
 
     // TODO If C++ is being used, regular C code needs function names to have C 
     // linkage so the functions can be used by the c code. 
-    void dht_init();
+    
+    
+    #define USE_DHT11 0
+    #define USE_DHT22 1
+    
+    void dht_init(bool DHTaUSAR);
     uint8_t leer_trama_dht();
-    void leer__dht(uint8_t *tem,uint8_t *hum);
+    uint8_t leer_dht(float *tem,float *hum);
+    //uint8_t leer_dht(uint8_t *tem,uint8_t *hum);
 #ifdef	__cplusplus
 }
 #endif /* __cplusplus */

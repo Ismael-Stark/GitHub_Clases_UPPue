@@ -1,0 +1,54 @@
+
+ROM used:   340/8192 (4%)
+            340/8192 (4%) including unused fragments
+
+            0.0 Average locations per line
+            26.2 Average locations per statement
+
+RAM used:   10/1024 (1%) at main() level
+            32/1024 (3%) worst case
+
+Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack size: 16
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   26    13 100  main(HolaMundo).c
+   32     0   0  main(HolaMundo).h
+ 2190     0   0  C:\Program Files (x86)\PICC\Devices\16F18855.h
+ 4569     0   0  PIC16F18855_registers.h
+  195     0   0  C:\Program Files (x86)\PICC\Drivers\stdint.h
+----- -----
+ 7012    13 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   6    1    330  3.6  @delay_ms1
+0    121  36    5    330  3.6  main
+0      8   2    0    138  3.3  @const4114
+0     89  26    5             @PSTRINGCN7_115200_112_113
+0     98  29   11             @PRINTF_LU_115200_112_113
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               3
+    Statements              13
+    Comments                385
+    Volume (V)              1038
+    Difficulty (D)          10.3
+    Effort to implement (E) 10657
+    Time to implement (T)   10 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    69
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     3  0  
+00003-007FF   337  1708  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+
