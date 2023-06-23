@@ -1,8 +1,10 @@
 ÀÄmain(HolaMundo)
-   ÀÄmain  0/121  Ram=5
+   ÀÄmain  0/121  Ram=3
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@cinit2  (Inline)  Ram=0
-      ÃÄ@delay_ms1  0/21  Ram=1
-      ÃÄ@delay_ms1  0/21  Ram=1
-      ÃÄ@PSTRINGCN7_115200_112_113  0/89  Ram=5
-      ÀÄ@PRINTF_LU_115200_112_113  0/98  Ram=11
+      ÃÄ@PSTRINGC7_115200_112_113  0/83  Ram=4
+      ÃÄ@PSTRINGCN7_115200_112_113  0/89  Ram=6
+      ÃÄ@PRINTF_U_115200_112_113  0/66  Ram=2
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÀÄ@DIV88  0/21  Ram=3
+      ÀÄ@delay_ms1  0/22  Ram=1

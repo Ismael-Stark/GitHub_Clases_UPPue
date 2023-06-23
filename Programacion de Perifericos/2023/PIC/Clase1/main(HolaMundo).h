@@ -1,6 +1,17 @@
 #CASE
 #include <16F18855.h>
 
+#fuses NOEXTOSC,RSTOSC_HFINTRC_32MHZ,NOCLKOUT,MCLR,ZCDDIS,NOWDT,LVP,NOPROTECT,NOCPD
+
+#device ADC=10 
+#use delay(internal=32MHz)
+//#use delay(clock=32M)
+#use rs232(baud=115200,parity=N,xmit=PIN_C0,rcv=PIN_C1,bits=8,STOP=1,UART1 )
+#use i2c(Master,Fast,sda=PIN_C3,scl=PIN_C4)
+
+
+
+
 //////// Program memory: 8192x14  Data RAM: 1008  Stack: 16
 //////// I/O: 25   Analog Pins: 24
 //////// Data EEPROM: 256
@@ -18,14 +29,3 @@
 //////// Fuses: WDTWIN_50%,WDTWIN_62%,WDTWIN_75%,WDTWIN_100%,WDTWIN_SW
 //////// Fuses: WDTCLK_LFINTRC,WDTCLK_HFINTRC,WDTCLK_SW,WRT_200,NOWRT,SCANE
 //////// Fuses: NOSCANE,LVP,NOLVP,PROTECT,NOPROTECT,CPD,NOCPD
-#fuses NOEXTOSC,RSTOSC_HFINTRC_32MHZ,NOCLKOUT,MCLR,ZCDDIS,NOWDT,NOLVP,NOPROTECT,NOCPD
-
-
-#device ADC=10 
-#use delay(internal=32MHz)
-//#use delay(clock=32M)
-#use rs232(baud=115200,parity=N,xmit=PIN_C0,rcv=PIN_C1,bits=8,STOP=1,UART1 )
-#use i2c(Master,Fast,sda=PIN_C3,scl=PIN_C4)
-
-
-

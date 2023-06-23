@@ -2,11 +2,11 @@
 001     INDF1
 002     PCL
 003     STATUS
-004-005 @READ_PACKED_MEMORY.P1
-004-005 @WRITE_PACKED_MEMORY.P2
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+004-005 @WRITE_PACKED_MEMORY.P3
+004-005 @READ_PACKED_MEMORY.P4
 004     FSR0
-004-005 @WRITE_PROGRAM_MEMORY8.P1
-004-005 @READ_PROGRAM_MEMORY8.P2
 006     FSR1
 006-007 @READ_PACKED_MEMORY.P1
 006-007 @WRITE_PACKED_MEMORY.P2
@@ -15,6 +15,7 @@
 00A     PCLATH
 00B     INTCON
 00C     PORTA
+00C     PORTAbits
 00D     PORTB
 00E     PORTC
 010     PORTE
@@ -28,22 +29,23 @@
 01D     TMR0H
 01E     T0CON0
 01F     T0CON1
-021-022 main.contador
+020-021 @sprintf_string
+022     main.contador
+023     main.leer_boton
+024     @delay_ms1.P1
 024     main.@SCRATCH1
-025     @delay_ms1.P1
-025     main.@SCRATCH2
-026     @PSTRINGCN7_115200_112_113.P1
-026-027 @PRINTF_LU_115200_112_113.P2
+025     @PRINTF_U_115200_112_113.P1
+025     @PSTRINGCN7_115200_112_113.P2
+025     @PSTRINGC7_115200_112_113.@SCRATCH1
+026     @PRINTF_U_115200_112_113.P1
+026     @PSTRINGC7_115200_112_113.@SCRATCH2
+027     @DIV88.P1
+027     @PSTRINGC7_115200_112_113.@SCRATCH3
+028     @DIV88.P1
 028     @PSTRINGCN7_115200_112_113.@SCRATCH1
 029     @PSTRINGCN7_115200_112_113.@SCRATCH2
+029     @DIV88.@SCRATCH1
 02A     @PSTRINGCN7_115200_112_113.@SCRATCH3
-02A     @PRINTF_LU_115200_112_113.@SCRATCH1
-02B     @PRINTF_LU_115200_112_113.@SCRATCH2
-02C     @PRINTF_LU_115200_112_113.@SCRATCH3
-02D     @PRINTF_LU_115200_112_113.@SCRATCH4
-02E     @PRINTF_LU_115200_112_113.@SCRATCH5
-02F     @PRINTF_LU_115200_112_113.@SCRATCH6
-030     @PRINTF_LU_115200_112_113.@SCRATCH7
 077     @SCRATCH
 078     @SCRATCH
 078     _RETURN_
@@ -137,15 +139,15 @@
 29B     T6HLT
 29C     T6CLK
 29D     T6RST
-30C     CCPR1
 30C     CCP_1_LOW
 30C     CCP_1
+30C     CCPR1
 30D     CCP_1_HIGH
 30E     CCP1CON
 30F     CCP1CAP
-310     CCP_2
-310     CCPR2
 310     CCP_2_LOW
+310     CCPR2
+310     CCP_2
 311     CCP_2_HIGH
 312     CCP2CON
 313     CCP2CAP
@@ -306,8 +308,8 @@
 893     OSCFRQ
 895     CLKRCON
 896     CLKRCLK
-897     MDCON0
 897.0   MDBIT
+897     MDCON0
 897.5   MDOUT
 898     MDCON1
 899     MDSRC
@@ -483,27 +485,30 @@ FED     STKPTR
 FEE     TOS
 
 ROM Allocation:
-000003  @const4114.call
-00000B  @delay_ms1
-000020  @PSTRINGCN7_115200_112_113
-000079  @PRINTF_LU_115200_112_113
-0000DB  main
-0000DB  @cinit1
-00010B  @cinit2
+000003  @const4116.call
+000019  @const4121.call
+000021  @PSTRINGC7_115200_112_113
+000074  @PSTRINGCN7_115200_112_113
+0000CD  @DIV88
+0000E2  @PRINTF_U_115200_112_113
+000124  @delay_ms1
+00013A  @cinit1
+00013A  main
+00016D  @cinit2
 
 Project Directory:
     D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\
 
 Project Files:
-    main(HolaMundo).c                                       [22-jun.-23 18:12  CRC=5D09EA6E]
-    main(HolaMundo).h                                       [22-jun.-23 18:08  CRC=AF9A79E5]
+    main(HolaMundo).c                                       [23-jun.-23 13:06  CRC=426473D2]
+    main(HolaMundo).h                                       [23-jun.-23 12:23  CRC=9BD610E3]
     C:\Program Files (x86)\PICC\Devices\16F18855.h          [21-oct.-22 11:04  CRC=72FF19D8]
-    PIC16F18855_registers.h                                 [22-jun.-23 13:20  CRC=F79C8B63]
+    PIC16F18855_registers.h                                 [23-jun.-23 12:51  CRC=E30813FD]
     C:\Program Files (x86)\PICC\Drivers\stdint.h            [13-may.-20 09:33  CRC=4FD89CC0]
 
-Source signature=16F1430E
+Source signature=D3F2EC0A
 Program memory checksum=0000
-Hex file CRC=44B2
+Hex file CRC=B4C9
 
 Units:
     D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) (main)

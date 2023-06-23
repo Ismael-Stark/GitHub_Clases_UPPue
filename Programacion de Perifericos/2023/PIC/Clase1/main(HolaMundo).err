@@ -1,4 +1,5 @@
-Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) on 22-jun.-23 at 18:12
-*** Error 114 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 21(41,43): Printf format type is invalid  ::
-      1 Errors,  0 Warnings.
-Build Failed.
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) on 23-jun.-23 at 13:06
+>>> Warning 207 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 14(1,1): Code has no effect
+      Memory usage:   ROM=5%      RAM=1% - 3%
+      0 Errors,  1 Warnings.
+Build Successful.

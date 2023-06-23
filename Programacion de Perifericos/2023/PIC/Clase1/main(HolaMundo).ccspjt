@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=1
+Days=2
 D1=22-06-2023
 D1_L=18
 D1_L1=[46625]Project Opened.
@@ -31,7 +31,7 @@ D1_L8=[50807]Started Editing.
 D1_L9=[50864]Project Opened.
 D1_L10=[50888]Started Editing.
 D1_L11=[51395]Stopped Editing.
-TotalEdit=10
+TotalEdit=44
 TotalDebug=0
 D1_E=10
 D1_D=0
@@ -42,22 +42,36 @@ D1_L15=[65247]Project Opened.
 D1_L16=[65260]Started Editing.
 D1_L17=[65590]Stopped Editing.
 D1_L18=[65591]Project Closed.
+D2=23-06-2023
+D2_L=8
+D2_L1=[44210]Project Opened.
+D2_L2=[44332]Started Editing.
+D2_L3=[46657]Stopped Editing.
+D2_L4=[46704]Started Editing.
+D2_L5=[47004]Stopped Editing.
+D2_L6=[47151]Started Editing.
+D2_L7=[47451]Stopped Editing.
+D2_E=34
+D2_D=0
+D2_L8=[47541]Project Closed.
 
 [Opened Files]
 1=main(HolaMundo).c
-t1=2
-Count=3
+t1=13
+Count=5
 2=main(HolaMundo).h
-t2=18
-3=..\Clase2\main.h
-t3=17
-4=..\ejemplo1.c
-t4=1
+t2=1
+3=PIC16F18855_registers.h
+t3=35
+4=PIC16F18855_registers2.h
+t4=148
+5=C:\Program Files (x86)\PICC\Devices\16F18855.h
+t5=1640
 [main(HolaMundo).c]
 Type=4
 
 [defines]
-buildcount=33
+buildcount=58
 [Units]
 Count=1
 1=main(HolaMundo) (main)

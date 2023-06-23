@@ -40,8 +40,9 @@ struct PORTA {
    unsigned int RA5:1;
    unsigned int RA6:1;
    unsigned int RA7:1;
-} PORTA;
+} PORTAbits;
 #byte PORTA = 0x00C
+#byte PORTAbits = 0x00C
 
 struct PORTB {
    unsigned int RB0:1;
