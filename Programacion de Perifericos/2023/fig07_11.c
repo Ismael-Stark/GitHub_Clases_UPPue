@@ -8,6 +8,19 @@ void imprimeCaracteres(const char *ptrS);
 
 int main()
 {
+	char datoc, datos[30];
+	
+	//scanf("%s",&dato);
+	
+	//datoc = getch();
+	gets(datos);
+	
+	printf("%s\n\n\n",datos);
+	
+	
+	
+	
+	
     /* inicializa el arreglo de caracteres */
     char cadena[] = "imprime los caracteres de una cadena";
 

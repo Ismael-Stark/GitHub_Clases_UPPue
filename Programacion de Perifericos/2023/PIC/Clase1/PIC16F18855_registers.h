@@ -4,13 +4,16 @@
 
 #byte PCL = 0x002
 
-struct STATUS {
+typedef struct 
+ {
    unsigned int C:1;
    unsigned int DC:1;
    unsigned int Z:1;
    unsigned int PD:1;
    unsigned int TO:1;
-} STATUS;
+} STATUSBITS;
+STATUSBITS STATUSbits;
+#byte STATUSbits = 0x003
 #byte STATUS = 0x003
 
 #word FSR0 = 0x004
@@ -23,15 +26,19 @@ struct STATUS {
 
 #byte PCLATH = 0x00A
 
-struct INTCON {
+typedef struct 
+ {
    unsigned int INTEDG:1;
    unsigned int :5;
    unsigned int PEIE:1;
    unsigned int GIE:1;
-} INTCON;
+} INTCONBITS;
+INTCONBITS INTCONbits;
+#byte INTCONbits = 0x00B
 #byte INTCON = 0x00B
 
-struct PORTA {
+typedef struct 
+ {
    unsigned int RA0:1;
    unsigned int RA1:1;
    unsigned int RA2:1;
@@ -40,11 +47,13 @@ struct PORTA {
    unsigned int RA5:1;
    unsigned int RA6:1;
    unsigned int RA7:1;
-} PORTAbits;
-#byte PORTA = 0x00C
+} PORTABITS;
+PORTABITS PORTAbits;
 #byte PORTAbits = 0x00C
+#byte PORTA = 0x00C
 
-struct PORTB {
+typedef struct 
+ {
    unsigned int RB0:1;
    unsigned int RB1:1;
    unsigned int RB2:1;
@@ -53,10 +62,13 @@ struct PORTB {
    unsigned int RB5:1;
    unsigned int RB6:1;
    unsigned int RB7:1;
-} PORTB;
+} PORTBBITS;
+PORTBBITS PORTBbits;
+#byte PORTBbits = 0x00D
 #byte PORTB = 0x00D
 
-struct PORTC {
+typedef struct 
+ {
    unsigned int RC0:1;
    unsigned int RC1:1;
    unsigned int RC2:1;
@@ -65,10 +77,13 @@ struct PORTC {
    unsigned int RC5:1;
    unsigned int RC6:1;
    unsigned int RC7:1;
-} PORTC;
+} PORTCBITS;
+PORTCBITS PORTCbits;
+#byte PORTCbits = 0x00E
 #byte PORTC = 0x00E
 
-struct PORTE {
+typedef struct 
+ {
    unsigned int RE0:1;
    unsigned int RE1:1;
    unsigned int RE2:1;
@@ -77,10 +92,13 @@ struct PORTE {
    unsigned int RE5:1;
    unsigned int RE6:1;
    unsigned int RE7:1;
-} PORTE;
+} PORTEBITS;
+PORTEBITS PORTEbits;
+#byte PORTEbits = 0x010
 #byte PORTE = 0x010
 
-struct TRISA {
+typedef struct 
+ {
    unsigned int TRISA0:1;
    unsigned int TRISA1:1;
    unsigned int TRISA2:1;
@@ -89,10 +107,13 @@ struct TRISA {
    unsigned int TRISA5:1;
    unsigned int TRISA6:1;
    unsigned int TRISA7:1;
-} TRISA;
+} TRISABITS;
+TRISABITS TRISAbits;
+#byte TRISAbits = 0x011
 #byte TRISA = 0x011
 
-struct TRISB {
+typedef struct 
+ {
    unsigned int TRISB0:1;
    unsigned int TRISB1:1;
    unsigned int TRISB2:1;
@@ -101,10 +122,13 @@ struct TRISB {
    unsigned int TRISB5:1;
    unsigned int TRISB6:1;
    unsigned int TRISB7:1;
-} TRISB;
+} TRISBBITS;
+TRISBBITS TRISBbits;
+#byte TRISBbits = 0x012
 #byte TRISB = 0x012
 
-struct TRISC {
+typedef struct 
+ {
    unsigned int TRISC0:1;
    unsigned int TRISC1:1;
    unsigned int TRISC2:1;
@@ -113,10 +137,13 @@ struct TRISC {
    unsigned int TRISC5:1;
    unsigned int TRISC6:1;
    unsigned int TRISC7:1;
-} TRISC;
+} TRISCBITS;
+TRISCBITS TRISCbits;
+#byte TRISCbits = 0x013
 #byte TRISC = 0x013
 
-struct LATA {
+typedef struct 
+ {
    unsigned int LATA0:1;
    unsigned int LATA1:1;
    unsigned int LATA2:1;
@@ -125,10 +152,13 @@ struct LATA {
    unsigned int LATA5:1;
    unsigned int LATA6:1;
    unsigned int LATA7:1;
-} LATA;
+} LATABITS;
+LATABITS LATAbits;
+#byte LATAbits = 0x016
 #byte LATA = 0x016
 
-struct LATB {
+typedef struct 
+ {
    unsigned int LATB0:1;
    unsigned int LATB1:1;
    unsigned int LATB2:1;
@@ -137,10 +167,13 @@ struct LATB {
    unsigned int LATB5:1;
    unsigned int LATB6:1;
    unsigned int LATB7:1;
-} LATB;
+} LATBBITS;
+LATBBITS LATBbits;
+#byte LATBbits = 0x017
 #byte LATB = 0x017
 
-struct LATC {
+typedef struct 
+ {
    unsigned int LATC0:1;
    unsigned int LATC1:1;
    unsigned int LATC2:1;
@@ -149,15 +182,21 @@ struct LATC {
    unsigned int LATC5:1;
    unsigned int LATC6:1;
    unsigned int LATC7:1;
-} LATC;
+} LATCBITS;
+LATCBITS LATCbits;
+#byte LATCbits = 0x018
 #byte LATC = 0x018
 
-struct TMR0 {
+typedef struct 
+ {
    unsigned int TMR0L:8;
-} TMR0;
-#byte TMR0 = 0x01C
+} TMR0LBITS;
+TMR0LBITS TMR0Lbits;
+#byte TMR0Lbits = 0x01C
+#byte TMR0L = 0x01C
 
-struct TMR0H {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR0H:8;
@@ -167,50 +206,71 @@ struct TMR0H {
          unsigned int T0PR:8;
       };
    };
-} TMR0H;
+} TMR0HBITS;
+TMR0HBITS TMR0Hbits;
+#byte TMR0Hbits = 0x01D
 #byte TMR0H = 0x01D
 
-struct T0CON0 {
+typedef struct 
+ {
    unsigned int T0OUTPS:4;
    unsigned int T016BIT:1;
    unsigned int T0OUT:1;
    unsigned int T0OE:1;
    unsigned int T0EN:1;
-} T0CON0;
+} T0CON0BITS;
+T0CON0BITS T0CON0bits;
+#byte T0CON0bits = 0x01E
 #byte T0CON0 = 0x01E
 
-struct T0CON1 {
+typedef struct 
+ {
    unsigned int T0CKPS:4;
    unsigned int T0ASYNC:1;
    unsigned int T0CS:3;
-} T0CON1;
+} T0CON1BITS;
+T0CON1BITS T0CON1bits;
+#byte T0CON1bits = 0x01F
 #byte T0CON1 = 0x01F
 
 #word ADRES = 0x08C
 
-struct ADPREV {
+typedef struct 
+ {
    unsigned int ADPREV:8;
-} ADPREV;
-#byte ADPREV = 0x08E
+} ADPREVLBITS;
+ADPREVLBITS ADPREVLbits;
+#byte ADPREVLbits = 0x08E
+#byte ADPREVL = 0x08E
 
-struct ADPREVH {
+typedef struct 
+ {
    unsigned int ADPREV8:2;
    unsigned int ADPREV1:6;
-} ADPREVH;
+} ADPREVHBITS;
+ADPREVHBITS ADPREVHbits;
+#byte ADPREVHbits = 0x08F
 #byte ADPREVH = 0x08F
 
-struct ADACC {
+typedef struct 
+ {
    unsigned int ADACC:8;
-} ADACC;
-#byte ADACC = 0x090
+} ADACCLBITS;
+ADACCLBITS ADACCLbits;
+#byte ADACCLbits = 0x090
+#byte ADACCL = 0x090
 
-struct ADACCH {
+typedef struct 
+ {
    unsigned int ADACC8:2;
    unsigned int ADACC1:6;
-} ADACCH;
+} ADACCHBITS;
+ADACCHBITS ADACCHbits;
+#byte ADACCHbits = 0x091
 #byte ADACCH = 0x091
 
-struct ADCON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int ADGO:1;
@@ -234,131 +294,190 @@ struct ADCON0 {
          unsigned int GO:1;
       };
    };
-} ADCON0;
+} ADCON0BITS;
+ADCON0BITS ADCON0bits;
+#byte ADCON0bits = 0x093
 #byte ADCON0 = 0x093
 
-struct ADCON1 {
+typedef struct 
+ {
    unsigned int ADDSEN:1;
    unsigned int :4;
    unsigned int ADGPOL:1;
    unsigned int ADIPEN:1;
    unsigned int ADPPOL:1;
-} ADCON1;
+} ADCON1BITS;
+ADCON1BITS ADCON1bits;
+#byte ADCON1bits = 0x094
 #byte ADCON1 = 0x094
 
-struct ADCON2 {
+typedef struct 
+ {
    unsigned int ADMD:3;
    unsigned int ADACLR:1;
    unsigned int ADCRS:3;
    unsigned int ADPSIS:1;
-} ADCON2;
+} ADCON2BITS;
+ADCON2BITS ADCON2bits;
+#byte ADCON2bits = 0x095
 #byte ADCON2 = 0x095
 
-struct ADCON3 {
+typedef struct 
+ {
    unsigned int ADTMD:3;
    unsigned int ADSOI:1;
    unsigned int ADCALC:3;
-} ADCON3;
+} ADCON3BITS;
+ADCON3BITS ADCON3bits;
+#byte ADCON3bits = 0x096
 #byte ADCON3 = 0x096
 
-struct ADSTAT {
+typedef struct 
+ {
    unsigned int ADSTAT:3;
    unsigned int ADMACT:1;
    unsigned int ADMATH:1;
    unsigned int ADLTHR:1;
    unsigned int ADUTHR:1;
    unsigned int ADAOV:1;
-} ADSTAT;
+} ADSTATBITS;
+ADSTATBITS ADSTATbits;
+#byte ADSTATbits = 0x097
 #byte ADSTAT = 0x097
 
 #byte ADCLK = 0x098
 
 #byte ADACT = 0x099
 
-struct ADREF {
+typedef struct 
+ {
    unsigned int ADPREF:2;
    unsigned int :2;
    unsigned int ADNREF:1;
-} ADREF;
+} ADREFBITS;
+ADREFBITS ADREFbits;
+#byte ADREFbits = 0x09A
 #byte ADREF = 0x09A
 
 #byte ADCAP = 0x09B
 
-struct ADPRE {
+typedef struct 
+ {
    unsigned int ADPRE:8;
-} ADPRE;
+} ADPREBITS;
+ADPREBITS ADPREbits;
+#byte ADPREbits = 0x09C
 #byte ADPRE = 0x09C
 
-struct ADACQ {
+typedef struct 
+ {
    unsigned int ADACQ:8;
-} ADACQ;
+} ADACQBITS;
+ADACQBITS ADACQbits;
+#byte ADACQbits = 0x09D
 #byte ADACQ = 0x09D
 
 #byte ADPCH = 0x09E
 
-struct ADCNT {
+typedef struct 
+ {
    unsigned int ADCNT:8;
-} ADCNT;
+} ADCNTBITS;
+ADCNTBITS ADCNTbits;
+#byte ADCNTbits = 0x10C
 #byte ADCNT = 0x10C
 
-struct ADRPT {
+typedef struct 
+ {
    unsigned int ADRPT:8;
-} ADRPT;
+} ADRPTBITS;
+ADRPTBITS ADRPTbits;
+#byte ADRPTbits = 0x10D
 #byte ADRPT = 0x10D
 
-struct ADLTH {
+typedef struct 
+ {
    unsigned int ADLTH:8;
-} ADLTH;
-#byte ADLTH = 0x10E
+} ADLTHLBITS;
+ADLTHLBITS ADLTHLbits;
+#byte ADLTHLbits = 0x10E
+#byte ADLTHL = 0x10E
 
-struct ADLTHH {
+typedef struct 
+ {
    unsigned int ADLTH8:2;
    unsigned int ADLTH1:6;
-} ADLTHH;
+} ADLTHHBITS;
+ADLTHHBITS ADLTHHbits;
+#byte ADLTHHbits = 0x10F
 #byte ADLTHH = 0x10F
 
-struct ADUTH {
+typedef struct 
+ {
    unsigned int ADUTH:8;
-} ADUTH;
-#byte ADUTH = 0x110
+} ADUTHLBITS;
+ADUTHLBITS ADUTHLbits;
+#byte ADUTHLbits = 0x110
+#byte ADUTHL = 0x110
 
-struct ADUTHH {
+typedef struct 
+ {
    unsigned int ADUTH8:2;
    unsigned int ADUTH1:6;
-} ADUTHH;
+} ADUTHHBITS;
+ADUTHHBITS ADUTHHbits;
+#byte ADUTHHbits = 0x111
 #byte ADUTHH = 0x111
 
-struct ADSTPT {
+typedef struct 
+ {
    unsigned int ADSTPT:8;
-} ADSTPT;
-#byte ADSTPT = 0x112
+} ADSTPTLBITS;
+ADSTPTLBITS ADSTPTLbits;
+#byte ADSTPTLbits = 0x112
+#byte ADSTPTL = 0x112
 
-struct ADSTPTH {
+typedef struct 
+ {
    unsigned int ADSTPT8:2;
    unsigned int ADSTPT1:6;
-} ADSTPTH;
+} ADSTPTHBITS;
+ADSTPTHBITS ADSTPTHbits;
+#byte ADSTPTHbits = 0x113
 #byte ADSTPTH = 0x113
 
-struct ADFLTR {
+typedef struct 
+ {
    unsigned int ADFLTR:8;
-} ADFLTR;
-#byte ADFLTR = 0x114
+} ADFLTRLBITS;
+ADFLTRLBITS ADFLTRLbits;
+#byte ADFLTRLbits = 0x114
+#byte ADFLTRL = 0x114
 
-struct ADFLTRH {
+typedef struct 
+ {
    unsigned int ADFLTR8:2;
    unsigned int ADFLTR1:6;
-} ADFLTRH;
+} ADFLTRHBITS;
+ADFLTRHBITS ADFLTRHbits;
+#byte ADFLTRHbits = 0x115
 #byte ADFLTRH = 0x115
 
-struct ADERR {
+typedef struct 
+ {
    unsigned int ADERR:8;
-} ADERR;
-#byte ADERR = 0x116
+} ADERRLBITS;
+ADERRLBITS ADERRLbits;
+#byte ADERRLbits = 0x116
+#byte ADERRL = 0x116
 
-struct ADERRH {
+typedef struct 
+ {
    unsigned int ADERR8:2;
    unsigned int ADERR1:6;
-} ADERRH;
+} ADERRHBITS;
+ADERRHBITS ADERRHbits;
+#byte ADERRHbits = 0x117
 #byte ADERRH = 0x117
 
 #byte RC1REG = 0x119
@@ -367,7 +486,8 @@ struct ADERRH {
 
 #word SP1BRG = 0x11B
 
-struct RC1STA {
+typedef struct 
+ {
    unsigned int RX9D:1;
    unsigned int OERR:1;
    unsigned int FERR:1;
@@ -376,10 +496,13 @@ struct RC1STA {
    unsigned int SREN:1;
    unsigned int RX9:1;
    unsigned int SPEN:1;
-} RC1STA;
+} RC1STABITS;
+RC1STABITS RC1STAbits;
+#byte RC1STAbits = 0x11D
 #byte RC1STA = 0x11D
 
-struct TX1STA {
+typedef struct 
+ {
    unsigned int TX9D:1;
    unsigned int TRMT:1;
    unsigned int BRGH:1;
@@ -388,10 +511,13 @@ struct TX1STA {
    unsigned int TXEN:1;
    unsigned int TX9:1;
    unsigned int CSRC:1;
-} TX1STA;
+} TX1STABITS;
+TX1STABITS TX1STAbits;
+#byte TX1STAbits = 0x11E
 #byte TX1STA = 0x11E
 
-struct BAUD1CON {
+typedef struct 
+ {
    unsigned int ABDEN:1;
    unsigned int WUE:1;
    unsigned int :1;
@@ -400,24 +526,33 @@ struct BAUD1CON {
    unsigned int :1;
    unsigned int RCIDL:1;
    unsigned int ABDOVF:1;
-} BAUD1CON;
+} BAUD1CONBITS;
+BAUD1CONBITS BAUD1CONbits;
+#byte BAUD1CONbits = 0x11F
 #byte BAUD1CON = 0x11F
 
 #byte SSP1BUF = 0x18C
 
 
-struct SSP1ADD {
+typedef struct 
+ {
    unsigned int MSK:8;
-} SSP1ADD;
+} SSP1ADDBITS;
+SSP1ADDBITS SSP1ADDbits;
+#byte SSP1ADDbits = 0x18D
 #byte SSP1ADD = 0x18D
 
 
-struct SSP1MSK {
+typedef struct 
+ {
    unsigned int MSK:8;
-} SSP1MSK;
+} SSP1MSKBITS;
+SSP1MSKBITS SSP1MSKbits;
+#byte SSP1MSKbits = 0x18E
 #byte SSP1MSK = 0x18E
 
-struct SSP1STAT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int BF:1;
@@ -498,19 +633,25 @@ struct SSP1STAT {
          unsigned int A2:1;
       };
    };
-} SSP1STAT;
+} SSP1STATBITS;
+SSP1STATBITS SSP1STATbits;
+#byte SSP1STATbits = 0x18F
 #byte SSP1STAT = 0x18F
 
-struct SSP1CON1 {
+typedef struct 
+ {
    unsigned int SSPM:4;
    unsigned int CKP:1;
    unsigned int SSPEN:1;
    unsigned int SSPOV:1;
    unsigned int WCOL:1;
-} SSP1CON1;
+} SSP1CON1BITS;
+SSP1CON1BITS SSP1CON1bits;
+#byte SSP1CON1bits = 0x190
 #byte SSP1CON1 = 0x190
 
-struct SSP1CON2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int SEN:1;
@@ -537,10 +678,13 @@ struct SSP1CON2 {
          unsigned int GCEN1:1;
       };
    };
-} SSP1CON2;
+} SSP1CON2BITS;
+SSP1CON2BITS SSP1CON2bits;
+#byte SSP1CON2bits = 0x191
 #byte SSP1CON2 = 0x191
 
-struct SSP1CON3 {
+typedef struct 
+ {
    unsigned int DHEN:1;
    unsigned int AHEN:1;
    unsigned int SBCDE:1;
@@ -549,13 +693,16 @@ struct SSP1CON3 {
    unsigned int SCIE:1;
    unsigned int PCIE:1;
    unsigned int ACKTIM:1;
-} SSP1CON3;
+} SSP1CON3BITS;
+SSP1CON3BITS SSP1CON3bits;
+#byte SSP1CON3bits = 0x192
 #byte SSP1CON3 = 0x192
 
 #byte SSP2BUF = 0x196
 
 
-struct SSP2ADD {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MSK:8;
@@ -572,16 +719,22 @@ struct SSP2ADD {
          unsigned int MSK72:1;
       };
    };
-} SSP2ADD;
+} SSP2ADDBITS;
+SSP2ADDBITS SSP2ADDbits;
+#byte SSP2ADDbits = 0x197
 #byte SSP2ADD = 0x197
 
 
-struct SSP2MSK {
+typedef struct 
+ {
    unsigned int MSK:8;
-} SSP2MSK;
+} SSP2MSKBITS;
+SSP2MSKBITS SSP2MSKbits;
+#byte SSP2MSKbits = 0x198
 #byte SSP2MSK = 0x198
 
-struct SSP2STAT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int BF:1;
@@ -708,10 +861,13 @@ struct SSP2STAT {
          unsigned int ADDRESS2:1;
       };
    };
-} SSP2STAT;
+} SSP2STATBITS;
+SSP2STATBITS SSP2STATbits;
+#byte SSP2STATbits = 0x199
 #byte SSP2STAT = 0x199
 
-struct SSP2CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int SSPM:4;
@@ -732,10 +888,13 @@ struct SSP2CON1 {
          unsigned int WCOL2:1;
       };
    };
-} SSP2CON1;
+} SSP2CON1BITS;
+SSP2CON1BITS SSP2CON1bits;
+#byte SSP2CON1bits = 0x19A
 #byte SSP2CON1 = 0x19A
 
-struct SSP2CON2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int SEN:1;
@@ -784,10 +943,13 @@ struct SSP2CON2 {
          unsigned int ADMSK52:1;
       };
    };
-} SSP2CON2;
+} SSP2CON2BITS;
+SSP2CON2BITS SSP2CON2bits;
+#byte SSP2CON2bits = 0x19B
 #byte SSP2CON2 = 0x19B
 
-struct SSP2CON3 {
+typedef struct 
+ {
    unsigned int DHEN:1;
    unsigned int AHEN:1;
    unsigned int SBCDE:1;
@@ -796,10 +958,13 @@ struct SSP2CON3 {
    unsigned int SCIE:1;
    unsigned int PCIE:1;
    unsigned int ACKTIM:1;
-} SSP2CON3;
+} SSP2CON3BITS;
+SSP2CON3BITS SSP2CON3bits;
+#byte SSP2CON3bits = 0x19C
 #byte SSP2CON3 = 0x19C
 
-struct TMR1L {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR1L:8;
@@ -828,10 +993,13 @@ struct TMR1L {
          unsigned int CAL71:1;
       };
    };
-} TMR1;
-#byte TMR1 = 0x20C
+} TMR1LBITS;
+TMR1LBITS TMR1Lbits;
+#byte TMR1Lbits = 0x20C
+#byte TMR1L = 0x20C
 
-struct TMR1H {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR1H:8;
@@ -848,10 +1016,13 @@ struct TMR1H {
          unsigned int TMR11:6;
       };
    };
-} TMR1H;
+} TMR1HBITS;
+TMR1HBITS TMR1Hbits;
+#byte TMR1Hbits = 0x20D
 #byte TMR1H = 0x20D
 
-struct T1CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int ON:1;
@@ -869,10 +1040,13 @@ struct T1CON {
          unsigned int T1CKPS:2;
       };
    };
-} T1CON;
+} T1CONBITS;
+T1CONBITS T1CONbits;
+#byte T1CONbits = 0x20E
 #byte T1CON = 0x20E
 
-struct T1GCON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :2;
@@ -894,14 +1068,17 @@ struct T1GCON {
          unsigned int T1GE:1;
       };
    };
-} T1GCON;
+} T1GCONBITS;
+T1GCONBITS T1GCONbits;
+#byte T1GCONbits = 0x20F
 #byte T1GCON = 0x20F
 
 #byte T1GATE = 0x210
 
 #byte T1CLK = 0x211
 
-struct TMR3L {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR3L:8;
@@ -923,10 +1100,13 @@ struct TMR3L {
          unsigned int CAL63:1;
       };
    };
-} TMR3;
-#byte TMR3 = 0x212
+} TMR3LBITS;
+TMR3LBITS TMR3Lbits;
+#byte TMR3Lbits = 0x212
+#byte TMR3L = 0x212
 
-struct TMR3H {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR3H:8;
@@ -937,10 +1117,13 @@ struct TMR3H {
          unsigned int TMR31:6;
       };
    };
-} TMR3H;
+} TMR3HBITS;
+TMR3HBITS TMR3Hbits;
+#byte TMR3Hbits = 0x213
 #byte TMR3H = 0x213
 
-struct T3CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int ON:1;
@@ -965,10 +1148,13 @@ struct T3CON {
          unsigned int RD163:1;
       };
    };
-} T3CON;
+} T3CONBITS;
+T3CONBITS T3CONbits;
+#byte T3CONbits = 0x214
 #byte T3CON = 0x214
 
-struct T3GCON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :2;
@@ -990,14 +1176,17 @@ struct T3GCON {
          unsigned int T3GE:1;
       };
    };
-} T3GCON;
+} T3GCONBITS;
+T3GCONBITS T3GCONbits;
+#byte T3GCONbits = 0x215
 #byte T3GCON = 0x215
 
 #byte T3GATE = 0x216
 
 #byte T3CLK = 0x217
 
-struct TMR5L {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR5L:8;
@@ -1020,10 +1209,13 @@ struct TMR5L {
          unsigned int CAL75:1;
       };
    };
-} TMR5;
-#byte TMR5 = 0x218
+} TMR5LBITS;
+TMR5LBITS TMR5Lbits;
+#byte TMR5Lbits = 0x218
+#byte TMR5L = 0x218
 
-struct TMR5H {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR5H:8;
@@ -1034,10 +1226,13 @@ struct TMR5H {
          unsigned int TMR51:6;
       };
    };
-} TMR5H;
+} TMR5HBITS;
+TMR5HBITS TMR5Hbits;
+#byte TMR5Hbits = 0x219
 #byte TMR5H = 0x219
 
-struct T5CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int ON:1;
@@ -1062,10 +1257,13 @@ struct T5CON {
          unsigned int RD165:1;
       };
    };
-} T5CON;
+} T5CONBITS;
+T5CONBITS T5CONbits;
+#byte T5CONbits = 0x21A
 #byte T5CON = 0x21A
 
-struct T5GCON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :2;
@@ -1087,33 +1285,42 @@ struct T5GCON {
          unsigned int T5GE:1;
       };
    };
-} T5GCON;
+} T5GCONBITS;
+T5GCONBITS T5GCONbits;
+#byte T5GCONbits = 0x21B
 #byte T5GCON = 0x21B
 
 #byte T5GATE = 0x21C
 
 #byte T5CLK = 0x21D
 
-struct CCPTMRS0 {
+typedef struct 
+ {
    unsigned int C1TSEL:2;
    unsigned int C2TSEL:2;
    unsigned int C3TSEL:2;
    unsigned int C4TSEL:2;
-} CCPTMRS0;
+} CCPTMRS0BITS;
+CCPTMRS0BITS CCPTMRS0bits;
+#byte CCPTMRS0bits = 0x21E
 #byte CCPTMRS0 = 0x21E
 
-struct CCPTMRS1 {
+typedef struct 
+ {
    unsigned int C5TSEL:2;
    unsigned int P6TSEL:2;
    unsigned int P7TSEL:2;
-} CCPTMRS1;
+} CCPTMRS1BITS;
+CCPTMRS1BITS CCPTMRS1bits;
+#byte CCPTMRS1bits = 0x21F
 #byte CCPTMRS1 = 0x21F
 
 #byte T2TMR = 0x28C
 
 #byte T2PR = 0x28D
 
-struct T2CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int OUTPS:4;
@@ -1134,10 +1341,13 @@ struct T2CON {
          unsigned int TMR2ON:1;
       };
    };
-} T2CON;
+} T2CONBITS;
+T2CONBITS T2CONbits;
+#byte T2CONbits = 0x28E
 #byte T2CON = 0x28E
 
-struct T2HLT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:5;
@@ -1153,7 +1363,9 @@ struct T2HLT {
          unsigned int T2PSYNC:1;
       };
    };
-} T2HLT;
+} T2HLTBITS;
+T2HLTBITS T2HLTbits;
+#byte T2HLTbits = 0x28F
 #byte T2HLT = 0x28F
 
 #byte T2CLK = 0x290
@@ -1164,7 +1376,8 @@ struct T2HLT {
 
 #byte T4PR = 0x293
 
-struct T4CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int OUTPS:4;
@@ -1185,10 +1398,13 @@ struct T4CON {
          unsigned int TMR4ON:1;
       };
    };
-} T4CON;
+} T4CONBITS;
+T4CONBITS T4CONbits;
+#byte T4CONbits = 0x294
 #byte T4CON = 0x294
 
-struct T4HLT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:5;
@@ -1204,7 +1420,9 @@ struct T4HLT {
          unsigned int T4PSYNC:1;
       };
    };
-} T4HLT;
+} T4HLTBITS;
+T4HLTBITS T4HLTbits;
+#byte T4HLTbits = 0x295
 #byte T4HLT = 0x295
 
 #byte T4CLK = 0x296
@@ -1215,7 +1433,8 @@ struct T4HLT {
 
 #byte T6PR = 0x299
 
-struct T6CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int OUTPS:4;
@@ -1236,10 +1455,13 @@ struct T6CON {
          unsigned int TMR6ON:1;
       };
    };
-} T6CON;
+} T6CONBITS;
+T6CONBITS T6CONbits;
+#byte T6CONbits = 0x29A
 #byte T6CON = 0x29A
 
-struct T6HLT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:5;
@@ -1255,7 +1477,9 @@ struct T6HLT {
          unsigned int T6PSYNC:1;
       };
    };
-} T6HLT;
+} T6HLTBITS;
+T6HLTBITS T6HLTbits;
+#byte T6HLTbits = 0x29B
 #byte T6HLT = 0x29B
 
 #byte T6CLK = 0x29C
@@ -1264,7 +1488,8 @@ struct T6HLT {
 
 #word CCPR1 = 0x30C
 
-struct CCP1CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:4;
@@ -1289,11 +1514,14 @@ struct CCP1CON {
          unsigned int P1M:2;
       };
    };
-} CCP1CON;
+} CCP1CONBITS;
+CCP1CONBITS CCP1CONbits;
+#byte CCP1CONbits = 0x30E
 #byte CCP1CON = 0x30E
 
 
-struct CCP1CAP {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CTS:8;
@@ -1303,12 +1531,15 @@ struct CCP1CAP {
          unsigned int CCP1CTS:8;
       };
    };
-} CCP1CAP;
+} CCP1CAPBITS;
+CCP1CAPBITS CCP1CAPbits;
+#byte CCP1CAPbits = 0x30F
 #byte CCP1CAP = 0x30F
 
 #word CCPR2 = 0x310
 
-struct CCP2CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:4;
@@ -1333,11 +1564,14 @@ struct CCP2CON {
          unsigned int P2M:2;
       };
    };
-} CCP2CON;
+} CCP2CONBITS;
+CCP2CONBITS CCP2CONbits;
+#byte CCP2CONbits = 0x312
 #byte CCP2CON = 0x312
 
 
-struct CCP2CAP {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CTS:8;
@@ -1347,12 +1581,15 @@ struct CCP2CAP {
          unsigned int CCP2CTS:8;
       };
    };
-} CCP2CAP;
+} CCP2CAPBITS;
+CCP2CAPBITS CCP2CAPbits;
+#byte CCP2CAPbits = 0x313
 #byte CCP2CAP = 0x313
 
 #word CCPR3 = 0x314
 
-struct CCP3CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:4;
@@ -1377,11 +1614,14 @@ struct CCP3CON {
          unsigned int P3M:2;
       };
    };
-} CCP3CON;
+} CCP3CONBITS;
+CCP3CONBITS CCP3CONbits;
+#byte CCP3CONbits = 0x316
 #byte CCP3CON = 0x316
 
 
-struct CCP3CAP {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CTS:8;
@@ -1391,12 +1631,15 @@ struct CCP3CAP {
          unsigned int CCP3CTS:8;
       };
    };
-} CCP3CAP;
+} CCP3CAPBITS;
+CCP3CAPBITS CCP3CAPbits;
+#byte CCP3CAPbits = 0x317
 #byte CCP3CAP = 0x317
 
 #word CCPR4 = 0x318
 
-struct CCP4CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:4;
@@ -1421,11 +1664,14 @@ struct CCP4CON {
          unsigned int P4M:2;
       };
    };
-} CCP4CON;
+} CCP4CONBITS;
+CCP4CONBITS CCP4CONbits;
+#byte CCP4CONbits = 0x31A
 #byte CCP4CON = 0x31A
 
 
-struct CCP4CAP {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CTS:8;
@@ -1435,12 +1681,15 @@ struct CCP4CAP {
          unsigned int CCP4CTS:8;
       };
    };
-} CCP4CAP;
+} CCP4CAPBITS;
+CCP4CAPBITS CCP4CAPbits;
+#byte CCP4CAPbits = 0x31B
 #byte CCP4CAP = 0x31B
 
 #word CCPR5 = 0x31C
 
-struct CCP5CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:4;
@@ -1465,10 +1714,13 @@ struct CCP5CON {
          unsigned int P5M:2;
       };
    };
-} CCP5CON;
+} CCP5CONBITS;
+CCP5CONBITS CCP5CONbits;
+#byte CCP5CONbits = 0x31E
 #byte CCP5CON = 0x31E
 
-struct CCP5CAP {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CTS:8;
@@ -1478,10 +1730,13 @@ struct CCP5CAP {
          unsigned int CCP5CTS:8;
       };
    };
-} CCP5CAP;
+} CCP5CAPBITS;
+CCP5CAPBITS CCP5CAPbits;
+#byte CCP5CAPbits = 0x31F
 #byte CCP5CAP = 0x31F
 
-struct PWM6DCL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :6;
@@ -1500,10 +1755,13 @@ struct PWM6DCL {
          unsigned int PWMPW:2;
       };
    };
-} PWM6DC;
-#byte PWM6DC = 0x38C
+} PWM6DCLBITS;
+PWM6DCLBITS PWM6DCLbits;
+#byte PWM6DCLbits = 0x38C
+#byte PWM6DCL = 0x38C
 
-struct PWM6DCH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int DC2:8;
@@ -1519,10 +1777,13 @@ struct PWM6DCH {
          unsigned int PWMPW2:8;
       };
    };
-} PWM6DCH;
+} PWM6DCHBITS;
+PWM6DCHBITS PWM6DCHbits;
+#byte PWM6DCHbits = 0x38D
 #byte PWM6DCH = 0x38D
 
-struct PWM6CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :4;
@@ -1540,10 +1801,13 @@ struct PWM6CON {
          unsigned int PWM6EN:1;
       };
    };
-} PWM6CON;
+} PWM6CONBITS;
+PWM6CONBITS PWM6CONbits;
+#byte PWM6CONbits = 0x38E
 #byte PWM6CON = 0x38E
 
-struct PWM7DCL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :6;
@@ -1562,10 +1826,13 @@ struct PWM7DCL {
          unsigned int PWMPW:2;
       };
    };
-} PWM7DC;
-#byte PWM7DC = 0x390
+} PWM7DCLBITS;
+PWM7DCLBITS PWM7DCLbits;
+#byte PWM7DCLbits = 0x390
+#byte PWM7DCL = 0x390
 
-struct PWM7DCH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int DC2:8;
@@ -1581,10 +1848,13 @@ struct PWM7DCH {
          unsigned int PWMPW2:8;
       };
    };
-} PWM7DCH;
+} PWM7DCHBITS;
+PWM7DCHBITS PWM7DCHbits;
+#byte PWM7DCHbits = 0x391
 #byte PWM7DCH = 0x391
 
-struct PWM7CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :4;
@@ -1602,11 +1872,14 @@ struct PWM7CON {
          unsigned int PWM7EN:1;
       };
    };
-} PWM7CON;
+} PWM7CONBITS;
+PWM7CONBITS PWM7CONbits;
+#byte PWM7CONbits = 0x392
 #byte PWM7CON = 0x392
 
 
-struct SCANLADRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LADR:8;
@@ -1616,11 +1889,14 @@ struct SCANLADRL {
          unsigned int SCANLADR:8;
       };
    };
-} SCANLADR;
-#byte SCANLADR = 0x40C
+} SCANLADRLBITS;
+SCANLADRLBITS SCANLADRLbits;
+#byte SCANLADRLbits = 0x40C
+#byte SCANLADRL = 0x40C
 
 
-struct SCANLADRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LADR8:2;
@@ -1632,11 +1908,14 @@ struct SCANLADRH {
          unsigned int SCANLADR1:6;
       };
    };
-} SCANLADRH;
+} SCANLADRHBITS;
+SCANLADRHBITS SCANLADRHbits;
+#byte SCANLADRHbits = 0x40D
 #byte SCANLADRH = 0x40D
 
 
-struct SCANHADRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int HADR:8;
@@ -1646,11 +1925,14 @@ struct SCANHADRL {
          unsigned int SCANHADR:8;
       };
    };
-} SCANHADR;
-#byte SCANHADR = 0x40E
+} SCANHADRLBITS;
+SCANHADRLBITS SCANHADRLbits;
+#byte SCANHADRLbits = 0x40E
+#byte SCANHADRL = 0x40E
 
 
-struct SCANHADRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int HADR8:2;
@@ -1662,10 +1944,13 @@ struct SCANHADRH {
          unsigned int SCANHADR1:6;
       };
    };
-} SCANHADRH;
+} SCANHADRHBITS;
+SCANHADRHBITS SCANHADRHbits;
+#byte SCANHADRHbits = 0x40F
 #byte SCANHADRH = 0x40F
 
-struct SCANCON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:2;
@@ -1694,57 +1979,84 @@ struct SCANCON0 {
          unsigned int DABORT:1;
       };
    };
-} SCANCON0;
+} SCANCON0BITS;
+SCANCON0BITS SCANCON0bits;
+#byte SCANCON0bits = 0x410
 #byte SCANCON0 = 0x410
 
 #byte SCANTRIG = 0x411
 
-struct CRCDAT {
+typedef struct 
+ {
    unsigned int DATA:8;
-} CRCDAT;
-#byte CRCDAT = 0x416
+} CRCDATLBITS;
+CRCDATLBITS CRCDATLbits;
+#byte CRCDATLbits = 0x416
+#byte CRCDATL = 0x416
 
-struct CRCDATH {
+typedef struct 
+ {
    unsigned int DATA8:2;
    unsigned int DATA1:6;
-} CRCDATH;
+} CRCDATHBITS;
+CRCDATHBITS CRCDATHbits;
+#byte CRCDATHbits = 0x417
 #byte CRCDATH = 0x417
 
-struct CRCACC {
+typedef struct 
+ {
    unsigned int ACC:8;
-} CRCACC;
-#byte CRCACC = 0x418
+} CRCACCLBITS;
+CRCACCLBITS CRCACCLbits;
+#byte CRCACCLbits = 0x418
+#byte CRCACCL = 0x418
 
-struct CRCACCH {
+typedef struct 
+ {
    unsigned int ACC8:2;
    unsigned int ACC1:6;
-} CRCACCH;
+} CRCACCHBITS;
+CRCACCHBITS CRCACCHbits;
+#byte CRCACCHbits = 0x419
 #byte CRCACCH = 0x419
 
-struct CRCSHIFT {
+typedef struct 
+ {
    unsigned int SHFT:8;
-} CRCSHIFT;
-#byte CRCSHIFT = 0x41A
+} CRCSHIFTLBITS;
+CRCSHIFTLBITS CRCSHIFTLbits;
+#byte CRCSHIFTLbits = 0x41A
+#byte CRCSHIFTL = 0x41A
 
-struct CRCSHIFTH {
+typedef struct 
+ {
    unsigned int SHFT8:2;
    unsigned int SHFT1:6;
-} CRCSHIFTH;
+} CRCSHIFTHBITS;
+CRCSHIFTHBITS CRCSHIFTHbits;
+#byte CRCSHIFTHbits = 0x41B
 #byte CRCSHIFTH = 0x41B
 
-struct CRCXOR {
+typedef struct 
+ {
    unsigned int :1;
    unsigned int X1:7;
-} CRCXOR;
-#byte CRCXOR = 0x41C
+} CRCXORLBITS;
+CRCXORLBITS CRCXORLbits;
+#byte CRCXORLbits = 0x41C
+#byte CRCXORL = 0x41C
 
-struct CRCXORH {
+typedef struct 
+ {
    unsigned int X8:2;
    unsigned int X1:6;
-} CRCXORH;
+} CRCXORHBITS;
+CRCXORHBITS CRCXORHbits;
+#byte CRCXORHbits = 0x41D
 #byte CRCXORH = 0x41D
 
-struct CRCCON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int FULL:1;
@@ -1761,16 +2073,22 @@ struct CRCCON0 {
          unsigned int CRCEN:1;
       };
    };
-} CRCCON0;
+} CRCCON0BITS;
+CRCCON0BITS CRCCON0bits;
+#byte CRCCON0bits = 0x41E
 #byte CRCCON0 = 0x41E
 
-struct CRCCON1 {
+typedef struct 
+ {
    unsigned int PLEN:4;
    unsigned int DLEN:4;
-} CRCCON1;
+} CRCCON1BITS;
+CRCCON1BITS CRCCON1bits;
+#byte CRCCON1bits = 0x41F
 #byte CRCCON1 = 0x41F
 
-struct SMT1TMRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR:8;
@@ -1780,10 +2098,13 @@ struct SMT1TMRL {
          unsigned int SMT1TMR:8;
       };
    };
-} SMT1TMR;
-#byte SMT1TMR = 0x48C
+} SMT1TMRLBITS;
+SMT1TMRLBITS SMT1TMRLbits;
+#byte SMT1TMRLbits = 0x48C
+#byte SMT1TMRL = 0x48C
 
-struct SMT1TMRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR8:2;
@@ -1795,10 +2116,13 @@ struct SMT1TMRH {
          unsigned int SMT1TMR1:6;
       };
    };
-} SMT1TMRH;
+} SMT1TMRHBITS;
+SMT1TMRHBITS SMT1TMRHbits;
+#byte SMT1TMRHbits = 0x48D
 #byte SMT1TMRH = 0x48D
 
-struct SMT1TMRU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR16:4;
@@ -1810,10 +2134,13 @@ struct SMT1TMRU {
          unsigned int SMT1TMR2:4;
       };
    };
-} SMT1TMRU;
+} SMT1TMRUBITS;
+SMT1TMRUBITS SMT1TMRUbits;
+#byte SMT1TMRUbits = 0x48E
 #byte SMT1TMRU = 0x48E
 
-struct SMT1CPRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPR:8;
@@ -1823,10 +2150,13 @@ struct SMT1CPRL {
          unsigned int SMT1CPR:8;
       };
    };
-} SMT1CPR;
-#byte SMT1CPR = 0x48F
+} SMT1CPRLBITS;
+SMT1CPRLBITS SMT1CPRLbits;
+#byte SMT1CPRLbits = 0x48F
+#byte SMT1CPRL = 0x48F
 
-struct SMT1CPRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPR8:2;
@@ -1838,10 +2168,13 @@ struct SMT1CPRH {
          unsigned int SMT1CPR1:6;
       };
    };
-} SMT1CPRH;
+} SMT1CPRHBITS;
+SMT1CPRHBITS SMT1CPRHbits;
+#byte SMT1CPRHbits = 0x490
 #byte SMT1CPRH = 0x490
 
-struct SMT1CPRU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPR16:4;
@@ -1853,10 +2186,13 @@ struct SMT1CPRU {
          unsigned int SMT1CPR2:4;
       };
    };
-} SMT1CPRU;
+} SMT1CPRUBITS;
+SMT1CPRUBITS SMT1CPRUbits;
+#byte SMT1CPRUbits = 0x491
 #byte SMT1CPRU = 0x491
 
-struct SMT1CPWL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPW:8;
@@ -1866,10 +2202,13 @@ struct SMT1CPWL {
          unsigned int SMT1CPW:8;
       };
    };
-} SMT1CPW;
-#byte SMT1CPW = 0x492
+} SMT1CPWLBITS;
+SMT1CPWLBITS SMT1CPWLbits;
+#byte SMT1CPWLbits = 0x492
+#byte SMT1CPWL = 0x492
 
-struct SMT1CPWH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPW8:2;
@@ -1881,10 +2220,13 @@ struct SMT1CPWH {
          unsigned int SMT1CPW1:6;
       };
    };
-} SMT1CPWH;
+} SMT1CPWHBITS;
+SMT1CPWHBITS SMT1CPWHbits;
+#byte SMT1CPWHbits = 0x493
 #byte SMT1CPWH = 0x493
 
-struct SMT1CPWU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPW16:4;
@@ -1896,10 +2238,13 @@ struct SMT1CPWU {
          unsigned int SMT1CPW2:4;
       };
    };
-} SMT1CPWU;
+} SMT1CPWUBITS;
+SMT1CPWUBITS SMT1CPWUbits;
+#byte SMT1CPWUbits = 0x494
 #byte SMT1CPWU = 0x494
 
-struct SMT1PRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PR:8;
@@ -1909,10 +2254,13 @@ struct SMT1PRL {
          unsigned int SMT1PR:8;
       };
    };
-} SMT1PR;
-#byte SMT1PR = 0x495
+} SMT1PRLBITS;
+SMT1PRLBITS SMT1PRLbits;
+#byte SMT1PRLbits = 0x495
+#byte SMT1PRL = 0x495
 
-struct SMT1PRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PR8:2;
@@ -1924,10 +2272,13 @@ struct SMT1PRH {
          unsigned int SMT1PR1:6;
       };
    };
-} SMT1PRH;
+} SMT1PRHBITS;
+SMT1PRHBITS SMT1PRHbits;
+#byte SMT1PRHbits = 0x496
 #byte SMT1PRH = 0x496
 
-struct SMT1PRU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PR16:4;
@@ -1939,10 +2290,13 @@ struct SMT1PRU {
          unsigned int SMT1PR2:4;
       };
    };
-} SMT1PRU;
+} SMT1PRUBITS;
+SMT1PRUBITS SMT1PRUbits;
+#byte SMT1PRUbits = 0x497
 #byte SMT1PRU = 0x497
 
-struct SMT1CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PS:2;
@@ -1964,10 +2318,13 @@ struct SMT1CON0 {
          unsigned int SMT1EN:1;
       };
    };
-} SMT1CON0;
+} SMT1CON0BITS;
+SMT1CON0BITS SMT1CON0bits;
+#byte SMT1CON0bits = 0x498
 #byte SMT1CON0 = 0x498
 
-struct SMT1CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:4;
@@ -1982,10 +2339,13 @@ struct SMT1CON1 {
          unsigned int SMT1GO:1;
       };
    };
-} SMT1CON1;
+} SMT1CON1BITS;
+SMT1CON1BITS SMT1CON1bits;
+#byte SMT1CON1bits = 0x499
 #byte SMT1CON1 = 0x499
 
-struct SMT1STAT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int AS:1;
@@ -2014,7 +2374,9 @@ struct SMT1STAT {
          unsigned int SMT1RST:1;
       };
    };
-} SMT1STAT;
+} SMT1STATBITS;
+SMT1STATBITS SMT1STATbits;
+#byte SMT1STATbits = 0x49A
 #byte SMT1STAT = 0x49A
 
 #byte SMT1CLK = 0x49B
@@ -2023,7 +2385,8 @@ struct SMT1STAT {
 
 #byte SMT1WIN = 0x49D
 
-struct SMT2TMRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR:8;
@@ -2033,10 +2396,13 @@ struct SMT2TMRL {
          unsigned int SMT2TMR:8;
       };
    };
-} SMT2TMR;
-#byte SMT2TMR = 0x50C
+} SMT2TMRLBITS;
+SMT2TMRLBITS SMT2TMRLbits;
+#byte SMT2TMRLbits = 0x50C
+#byte SMT2TMRL = 0x50C
 
-struct SMT2TMRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR8:2;
@@ -2048,10 +2414,13 @@ struct SMT2TMRH {
          unsigned int SMT2TMR1:6;
       };
    };
-} SMT2TMRH;
+} SMT2TMRHBITS;
+SMT2TMRHBITS SMT2TMRHbits;
+#byte SMT2TMRHbits = 0x50D
 #byte SMT2TMRH = 0x50D
 
-struct SMT2TMRU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR16:4;
@@ -2063,10 +2432,13 @@ struct SMT2TMRU {
          unsigned int SMT2TMR2:4;
       };
    };
-} SMT2TMRU;
+} SMT2TMRUBITS;
+SMT2TMRUBITS SMT2TMRUbits;
+#byte SMT2TMRUbits = 0x50E
 #byte SMT2TMRU = 0x50E
 
-struct SMT2CPRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPR:8;
@@ -2076,10 +2448,13 @@ struct SMT2CPRL {
          unsigned int SMT2CPR:8;
       };
    };
-} SMT2CPR;
-#byte SMT2CPR = 0x50F
+} SMT2CPRLBITS;
+SMT2CPRLBITS SMT2CPRLbits;
+#byte SMT2CPRLbits = 0x50F
+#byte SMT2CPRL = 0x50F
 
-struct SMT2CPRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPR8:2;
@@ -2091,10 +2466,13 @@ struct SMT2CPRH {
          unsigned int SMT2CPR1:6;
       };
    };
-} SMT2CPRH;
+} SMT2CPRHBITS;
+SMT2CPRHBITS SMT2CPRHbits;
+#byte SMT2CPRHbits = 0x510
 #byte SMT2CPRH = 0x510
 
-struct SMT2CPRU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPR16:4;
@@ -2106,10 +2484,13 @@ struct SMT2CPRU {
          unsigned int SMT2CPR2:4;
       };
    };
-} SMT2CPRU;
+} SMT2CPRUBITS;
+SMT2CPRUBITS SMT2CPRUbits;
+#byte SMT2CPRUbits = 0x511
 #byte SMT2CPRU = 0x511
 
-struct SMT2CPWL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPW:8;
@@ -2119,10 +2500,13 @@ struct SMT2CPWL {
          unsigned int SMT2CPW:8;
       };
    };
-} SMT2CPW;
-#byte SMT2CPW = 0x512
+} SMT2CPWLBITS;
+SMT2CPWLBITS SMT2CPWLbits;
+#byte SMT2CPWLbits = 0x512
+#byte SMT2CPWL = 0x512
 
-struct SMT2CPWH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPW8:2;
@@ -2134,10 +2518,13 @@ struct SMT2CPWH {
          unsigned int SMT2CPW1:6;
       };
    };
-} SMT2CPWH;
+} SMT2CPWHBITS;
+SMT2CPWHBITS SMT2CPWHbits;
+#byte SMT2CPWHbits = 0x513
 #byte SMT2CPWH = 0x513
 
-struct SMT2CPWU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CPW16:4;
@@ -2149,10 +2536,13 @@ struct SMT2CPWU {
          unsigned int SMT2CPW2:4;
       };
    };
-} SMT2CPWU;
+} SMT2CPWUBITS;
+SMT2CPWUBITS SMT2CPWUbits;
+#byte SMT2CPWUbits = 0x514
 #byte SMT2CPWU = 0x514
 
-struct SMT2PRL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PR:8;
@@ -2162,10 +2552,13 @@ struct SMT2PRL {
          unsigned int SMT2PR:8;
       };
    };
-} SMT2PR;
-#byte SMT2PR = 0x515
+} SMT2PRLBITS;
+SMT2PRLBITS SMT2PRLbits;
+#byte SMT2PRLbits = 0x515
+#byte SMT2PRL = 0x515
 
-struct SMT2PRH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PR8:2;
@@ -2177,10 +2570,13 @@ struct SMT2PRH {
          unsigned int SMT2PR1:6;
       };
    };
-} SMT2PRH;
+} SMT2PRHBITS;
+SMT2PRHBITS SMT2PRHbits;
+#byte SMT2PRHbits = 0x516
 #byte SMT2PRH = 0x516
 
-struct SMT2PRU {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PR16:4;
@@ -2192,10 +2588,13 @@ struct SMT2PRU {
          unsigned int SMT2PR2:4;
       };
    };
-} SMT2PRU;
+} SMT2PRUBITS;
+SMT2PRUBITS SMT2PRUbits;
+#byte SMT2PRUbits = 0x517
 #byte SMT2PRU = 0x517
 
-struct SMT2CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PS:2;
@@ -2217,10 +2616,13 @@ struct SMT2CON0 {
          unsigned int SMT2EN:1;
       };
    };
-} SMT2CON0;
+} SMT2CON0BITS;
+SMT2CON0BITS SMT2CON0bits;
+#byte SMT2CON0bits = 0x518
 #byte SMT2CON0 = 0x518
 
-struct SMT2CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:4;
@@ -2235,10 +2637,13 @@ struct SMT2CON1 {
          unsigned int SMT2GO:1;
       };
    };
-} SMT2CON1;
+} SMT2CON1BITS;
+SMT2CON1BITS SMT2CON1bits;
+#byte SMT2CON1bits = 0x519
 #byte SMT2CON1 = 0x519
 
-struct SMT2STAT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int AS:1;
@@ -2267,7 +2672,9 @@ struct SMT2STAT {
          unsigned int SMT2RST:1;
       };
    };
-} SMT2STAT;
+} SMT2STATBITS;
+SMT2STATBITS SMT2STATbits;
+#byte SMT2STATbits = 0x51A
 #byte SMT2STAT = 0x51A
 
 #byte SMT2CLK = 0x51B
@@ -2276,58 +2683,83 @@ struct SMT2STAT {
 
 #byte SMT2WIN = 0x51D
 
-struct NCO1ACC {
+typedef struct 
+ {
    unsigned int NCO1ACC:8;
-} NCO1ACC;
-#byte NCO1ACC = 0x58C
+} NCO1ACCLBITS;
+NCO1ACCLBITS NCO1ACCLbits;
+#byte NCO1ACCLbits = 0x58C
+#byte NCO1ACCL = 0x58C
 
-struct NCO1ACCH {
+typedef struct 
+ {
    unsigned int NCO1ACC8:2;
    unsigned int NCO1ACC1:6;
-} NCO1ACCH;
+} NCO1ACCHBITS;
+NCO1ACCHBITS NCO1ACCHbits;
+#byte NCO1ACCHbits = 0x58D
 #byte NCO1ACCH = 0x58D
 
-struct NCO1ACCU {
+typedef struct 
+ {
    unsigned int NCO1ACC16:4;
    unsigned int NCO1ACC2:4;
-} NCO1ACCU;
+} NCO1ACCUBITS;
+NCO1ACCUBITS NCO1ACCUbits;
+#byte NCO1ACCUbits = 0x58E
 #byte NCO1ACCU = 0x58E
 
-struct NCO1INC {
+typedef struct 
+ {
    unsigned int NCO1INC:8;
-} NCO1INC;
-#byte NCO1INC = 0x58F
+} NCO1INCLBITS;
+NCO1INCLBITS NCO1INCLbits;
+#byte NCO1INCLbits = 0x58F
+#byte NCO1INCL = 0x58F
 
-struct NCO1INCH {
+typedef struct 
+ {
    unsigned int NCO1INC8:2;
    unsigned int NCO1INC1:6;
-} NCO1INCH;
+} NCO1INCHBITS;
+NCO1INCHBITS NCO1INCHbits;
+#byte NCO1INCHbits = 0x590
 #byte NCO1INCH = 0x590
 
-struct NCO1INCU {
+typedef struct 
+ {
    unsigned int NCO1INC16:4;
    unsigned int NCO1INC2:4;
-} NCO1INCU;
+} NCO1INCUBITS;
+NCO1INCUBITS NCO1INCUbits;
+#byte NCO1INCUbits = 0x591
 #byte NCO1INCU = 0x591
 
-struct NCO1CON {
+typedef struct 
+ {
    unsigned int N1PFM:1;
    unsigned int :3;
    unsigned int N1POL:1;
    unsigned int N1OUT:1;
    unsigned int N1OE:1;
    unsigned int N1EN:1;
-} NCO1CON;
+} NCO1CONBITS;
+NCO1CONBITS NCO1CONbits;
+#byte NCO1CONbits = 0x592
 #byte NCO1CON = 0x592
 
-struct NCO1CLK {
+typedef struct 
+ {
    unsigned int N1CKS:4;
    unsigned int :1;
    unsigned int N1PWS:3;
-} NCO1CLK;
+} NCO1CLKBITS;
+NCO1CLKBITS NCO1CLKbits;
+#byte NCO1CLKbits = 0x593
 #byte NCO1CLK = 0x593
 
-struct CWG1CLKCON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CS:1;
@@ -2337,7 +2769,9 @@ struct CWG1CLKCON {
          unsigned int CWG1CS:1;
       };
    };
-} CWG1CLKCON;
+} CWG1CLKCONBITS;
+CWG1CLKCONBITS CWG1CLKCONbits;
+#byte CWG1CLKCONbits = 0x60C
 #byte CWG1CLKCON = 0x60C
 
 #byte CWG1ISM = 0x60D
@@ -2346,7 +2780,8 @@ struct CWG1CLKCON {
 
 #byte CWG1DBF = 0x60F
 
-struct CWG1CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:3;
@@ -2369,10 +2804,13 @@ struct CWG1CON0 {
          unsigned int CWG1EN:1;
       };
    };
-} CWG1CON0;
+} CWG1CON0BITS;
+CWG1CON0BITS CWG1CON0bits;
+#byte CWG1CON0bits = 0x610
 #byte CWG1CON0 = 0x610
 
-struct CWG1CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int POLA:1;
@@ -2392,10 +2830,13 @@ struct CWG1CON1 {
          unsigned int CWG1IN:1;
       };
    };
-} CWG1CON1;
+} CWG1CON1BITS;
+CWG1CON1BITS CWG1CON1bits;
+#byte CWG1CON1bits = 0x611
 #byte CWG1CON1 = 0x611
 
-struct CWG1AS0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :2;
@@ -2413,10 +2854,13 @@ struct CWG1AS0 {
          unsigned int CWG1SHUTDOWN:1;
       };
    };
-} CWG1AS0;
+} CWG1AS0BITS;
+CWG1AS0BITS CWG1AS0bits;
+#byte CWG1AS0bits = 0x612
 #byte CWG1AS0 = 0x612
 
-struct CWG1AS1 {
+typedef struct 
+ {
    unsigned int AS0E:1;
    unsigned int AS1E:1;
    unsigned int AS2E:1;
@@ -2424,10 +2868,13 @@ struct CWG1AS1 {
    unsigned int AS4E:1;
    unsigned int AS5E:1;
    unsigned int AS6E:1;
-} CWG1AS1;
+} CWG1AS1BITS;
+CWG1AS1BITS CWG1AS1bits;
+#byte CWG1AS1bits = 0x613
 #byte CWG1AS1 = 0x613
 
-struct CWG1STR {
+typedef struct 
+ {
    union {
       struct {
          unsigned int STRA:1;
@@ -2451,10 +2898,13 @@ struct CWG1STR {
          unsigned int CWG1OVRD:1;
       };
    };
-} CWG1STR;
+} CWG1STRBITS;
+CWG1STRBITS CWG1STRbits;
+#byte CWG1STRbits = 0x614
 #byte CWG1STR = 0x614
 
-struct CWG2CLKCON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CS:1;
@@ -2464,7 +2914,9 @@ struct CWG2CLKCON {
          unsigned int CWG2CS:1;
       };
    };
-} CWG2CLKCON;
+} CWG2CLKCONBITS;
+CWG2CLKCONBITS CWG2CLKCONbits;
+#byte CWG2CLKCONbits = 0x616
 #byte CWG2CLKCON = 0x616
 
 #byte CWG2ISM = 0x617
@@ -2473,7 +2925,8 @@ struct CWG2CLKCON {
 
 #byte CWG2DBF = 0x619
 
-struct CWG2CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:3;
@@ -2496,10 +2949,13 @@ struct CWG2CON0 {
          unsigned int CWG2EN:1;
       };
    };
-} CWG2CON0;
+} CWG2CON0BITS;
+CWG2CON0BITS CWG2CON0bits;
+#byte CWG2CON0bits = 0x61A
 #byte CWG2CON0 = 0x61A
 
-struct CWG2CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int POLA:1;
@@ -2519,10 +2975,13 @@ struct CWG2CON1 {
          unsigned int CWG2IN:1;
       };
    };
-} CWG2CON1;
+} CWG2CON1BITS;
+CWG2CON1BITS CWG2CON1bits;
+#byte CWG2CON1bits = 0x61B
 #byte CWG2CON1 = 0x61B
 
-struct CWG2AS0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :2;
@@ -2540,10 +2999,13 @@ struct CWG2AS0 {
          unsigned int CWG2SHUTDOWN:1;
       };
    };
-} CWG2AS0;
+} CWG2AS0BITS;
+CWG2AS0BITS CWG2AS0bits;
+#byte CWG2AS0bits = 0x61C
 #byte CWG2AS0 = 0x61C
 
-struct CWG2AS1 {
+typedef struct 
+ {
    unsigned int AS0E:1;
    unsigned int AS1E:1;
    unsigned int AS2E:1;
@@ -2551,10 +3013,13 @@ struct CWG2AS1 {
    unsigned int AS4E:1;
    unsigned int AS5E:1;
    unsigned int AS6E:1;
-} CWG2AS1;
+} CWG2AS1BITS;
+CWG2AS1BITS CWG2AS1bits;
+#byte CWG2AS1bits = 0x61D
 #byte CWG2AS1 = 0x61D
 
-struct CWG2STR {
+typedef struct 
+ {
    union {
       struct {
          unsigned int STRA:1;
@@ -2578,10 +3043,13 @@ struct CWG2STR {
          unsigned int CWG2OVRD:1;
       };
    };
-} CWG2STR;
+} CWG2STRBITS;
+CWG2STRBITS CWG2STRbits;
+#byte CWG2STRbits = 0x61E
 #byte CWG2STR = 0x61E
 
-struct CWG3CLKCON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CS:1;
@@ -2591,7 +3059,9 @@ struct CWG3CLKCON {
          unsigned int CWG3CS:1;
       };
    };
-} CWG3CLKCON;
+} CWG3CLKCONBITS;
+CWG3CLKCONBITS CWG3CLKCONbits;
+#byte CWG3CLKCONbits = 0x68C
 #byte CWG3CLKCON = 0x68C
 
 #byte CWG3ISM = 0x68D
@@ -2600,7 +3070,8 @@ struct CWG3CLKCON {
 
 #byte CWG3DBF = 0x68F
 
-struct CWG3CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MODE:3;
@@ -2623,10 +3094,13 @@ struct CWG3CON0 {
          unsigned int CWG3EN:1;
       };
    };
-} CWG3CON0;
+} CWG3CON0BITS;
+CWG3CON0BITS CWG3CON0bits;
+#byte CWG3CON0bits = 0x690
 #byte CWG3CON0 = 0x690
 
-struct CWG3CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int POLA:1;
@@ -2646,10 +3120,13 @@ struct CWG3CON1 {
          unsigned int CWG3IN:1;
       };
    };
-} CWG3CON1;
+} CWG3CON1BITS;
+CWG3CON1BITS CWG3CON1bits;
+#byte CWG3CON1bits = 0x691
 #byte CWG3CON1 = 0x691
 
-struct CWG3AS0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int :2;
@@ -2667,10 +3144,13 @@ struct CWG3AS0 {
          unsigned int CWG3SHUTDOWN:1;
       };
    };
-} CWG3AS0;
+} CWG3AS0BITS;
+CWG3AS0BITS CWG3AS0bits;
+#byte CWG3AS0bits = 0x692
 #byte CWG3AS0 = 0x692
 
-struct CWG3AS1 {
+typedef struct 
+ {
    unsigned int AS0E:1;
    unsigned int AS1E:1;
    unsigned int AS2E:1;
@@ -2678,10 +3158,13 @@ struct CWG3AS1 {
    unsigned int AS4E:1;
    unsigned int AS5E:1;
    unsigned int AS6E:1;
-} CWG3AS1;
+} CWG3AS1BITS;
+CWG3AS1BITS CWG3AS1bits;
+#byte CWG3AS1bits = 0x693
 #byte CWG3AS1 = 0x693
 
-struct CWG3STR {
+typedef struct 
+ {
    union {
       struct {
          unsigned int STRA:1;
@@ -2705,55 +3188,73 @@ struct CWG3STR {
          unsigned int CWG3OVRD:1;
       };
    };
-} CWG3STR;
+} CWG3STRBITS;
+CWG3STRBITS CWG3STRbits;
+#byte CWG3STRbits = 0x694
 #byte CWG3STR = 0x694
 
-struct PIR0 {
+typedef struct 
+ {
    unsigned int INTF:1;
    unsigned int :3;
    unsigned int IOCIF:1;
    unsigned int TMR0IF:1;
-} PIR0;
+} PIR0BITS;
+PIR0BITS PIR0bits;
+#byte PIR0bits = 0x70C
 #byte PIR0 = 0x70C
 
-struct PIR1 {
+typedef struct 
+ {
    unsigned int ADIF:1;
    unsigned int ADTIF:1;
    unsigned int :4;
    unsigned int CSWIF:1;
    unsigned int OSFIF:1;
-} PIR1;
+} PIR1BITS;
+PIR1BITS PIR1bits;
+#byte PIR1bits = 0x70D
 #byte PIR1 = 0x70D
 
-struct PIR2 {
+typedef struct 
+ {
    unsigned int C1IF:1;
    unsigned int C2IF:1;
    unsigned int :4;
    unsigned int ZCDIF:1;
-} PIR2;
+} PIR2BITS;
+PIR2BITS PIR2bits;
+#byte PIR2bits = 0x70E
 #byte PIR2 = 0x70E
 
-struct PIR3 {
+typedef struct 
+ {
    unsigned int SSP1IF:1;
    unsigned int BCL1IF:1;
    unsigned int SSP2IF:1;
    unsigned int BCL2IF:1;
    unsigned int TXIF:1;
    unsigned int RCIF:1;
-} PIR3;
+} PIR3BITS;
+PIR3BITS PIR3bits;
+#byte PIR3bits = 0x70F
 #byte PIR3 = 0x70F
 
-struct PIR4 {
+typedef struct 
+ {
    unsigned int TMR1IF:1;
    unsigned int TMR2IF:1;
    unsigned int TMR3IF:1;
    unsigned int TMR4IF:1;
    unsigned int TMR5IF:1;
    unsigned int TMR6IF:1;
-} PIR4;
+} PIR4BITS;
+PIR4BITS PIR4bits;
+#byte PIR4bits = 0x710
 #byte PIR4 = 0x710
 
-struct PIR5 {
+typedef struct 
+ {
    unsigned int TMR1GIF:1;
    unsigned int TMR3GIF:1;
    unsigned int TMR5GIF:1;
@@ -2762,19 +3263,25 @@ struct PIR5 {
    unsigned int CLC2IF:1;
    unsigned int CLC3IF:1;
    unsigned int CLC4IF:1;
-} PIR5;
+} PIR5BITS;
+PIR5BITS PIR5bits;
+#byte PIR5bits = 0x711
 #byte PIR5 = 0x711
 
-struct PIR6 {
+typedef struct 
+ {
    unsigned int CCP1IF:1;
    unsigned int CCP2IF:1;
    unsigned int CCP3IF:1;
    unsigned int CCP4IF:1;
    unsigned int CCP5IF:1;
-} PIR6;
+} PIR6BITS;
+PIR6BITS PIR6bits;
+#byte PIR6bits = 0x712
 #byte PIR6 = 0x712
 
-struct PIR7 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CWG1IF:1;
@@ -2792,65 +3299,86 @@ struct PIR7 {
          unsigned int NCOIF:1;
       };
    };
-} PIR7;
+} PIR7BITS;
+PIR7BITS PIR7bits;
+#byte PIR7bits = 0x713
 #byte PIR7 = 0x713
 
-struct PIR8 {
+typedef struct 
+ {
    unsigned int SMT1IF:1;
    unsigned int SMT1PRAIF:1;
    unsigned int SMT1PWAIF:1;
    unsigned int SMT2IF:1;
    unsigned int SMT2PRAIF:1;
    unsigned int SMT2PWAIF:1;
-} PIR8;
+} PIR8BITS;
+PIR8BITS PIR8bits;
+#byte PIR8bits = 0x714
 #byte PIR8 = 0x714
 
-struct PIE0 {
+typedef struct 
+ {
    unsigned int INTE:1;
    unsigned int :3;
    unsigned int IOCIE:1;
    unsigned int TMR0IE:1;
-} PIE0;
+} PIE0BITS;
+PIE0BITS PIE0bits;
+#byte PIE0bits = 0x716
 #byte PIE0 = 0x716
 
-struct PIE1 {
+typedef struct 
+ {
    unsigned int ADIE:1;
    unsigned int ADTIE:1;
    unsigned int :4;
    unsigned int CSWIE:1;
    unsigned int OSFIE:1;
-} PIE1;
+} PIE1BITS;
+PIE1BITS PIE1bits;
+#byte PIE1bits = 0x717
 #byte PIE1 = 0x717
 
-struct PIE2 {
+typedef struct 
+ {
    unsigned int C1IE:1;
    unsigned int C2IE:1;
    unsigned int :4;
    unsigned int ZCDIE:1;
-} PIE2;
+} PIE2BITS;
+PIE2BITS PIE2bits;
+#byte PIE2bits = 0x718
 #byte PIE2 = 0x718
 
-struct PIE3 {
+typedef struct 
+ {
    unsigned int SSP1IE:1;
    unsigned int BCL1IE:1;
    unsigned int SSP2IE:1;
    unsigned int BCL2IE:1;
    unsigned int TXIE:1;
    unsigned int RCIE:1;
-} PIE3;
+} PIE3BITS;
+PIE3BITS PIE3bits;
+#byte PIE3bits = 0x719
 #byte PIE3 = 0x719
 
-struct PIE4 {
+typedef struct 
+ {
    unsigned int TMR1IE:1;
    unsigned int TMR2IE:1;
    unsigned int TMR3IE:1;
    unsigned int TMR4IE:1;
    unsigned int TMR5IE:1;
    unsigned int TMR6IE:1;
-} PIE4;
+} PIE4BITS;
+PIE4BITS PIE4bits;
+#byte PIE4bits = 0x71A
 #byte PIE4 = 0x71A
 
-struct PIE5 {
+typedef struct 
+ {
    unsigned int TMR1GIE:1;
    unsigned int TMR3GIE:1;
    unsigned int TMR5GIE:1;
@@ -2859,19 +3387,25 @@ struct PIE5 {
    unsigned int CLC2IE:1;
    unsigned int CLC3IE:1;
    unsigned int CLC4IE:1;
-} PIE5;
+} PIE5BITS;
+PIE5BITS PIE5bits;
+#byte PIE5bits = 0x71B
 #byte PIE5 = 0x71B
 
-struct PIE6 {
+typedef struct 
+ {
    unsigned int CCP1IE:1;
    unsigned int CCP2IE:1;
    unsigned int CCP3IE:1;
    unsigned int CCP4IE:1;
    unsigned int CCP5IE:1;
-} PIE6;
+} PIE6BITS;
+PIE6BITS PIE6bits;
+#byte PIE6bits = 0x71C
 #byte PIE6 = 0x71C
 
-struct PIE7 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int CWG1IE:1;
@@ -2889,20 +3423,26 @@ struct PIE7 {
          unsigned int NCOIE:1;
       };
    };
-} PIE7;
+} PIE7BITS;
+PIE7BITS PIE7bits;
+#byte PIE7bits = 0x71D
 #byte PIE7 = 0x71D
 
-struct PIE8 {
+typedef struct 
+ {
    unsigned int SMT1IE:1;
    unsigned int SMT1PRAIE:1;
    unsigned int SMT1PWAIE:1;
    unsigned int SMT2IE:1;
    unsigned int SMT2PRAIE:1;
    unsigned int SMT2PWAIE:1;
-} PIE8;
+} PIE8BITS;
+PIE8BITS PIE8bits;
+#byte PIE8bits = 0x71E
 #byte PIE8 = 0x71E
 
-struct PMD0 {
+typedef struct 
+ {
    unsigned int IOCMD:1;
    unsigned int CLKRMD:1;
    unsigned int NVMMD:1;
@@ -2911,10 +3451,13 @@ struct PMD0 {
    unsigned int :1;
    unsigned int FVRMD:1;
    unsigned int SYSCMD:1;
-} PMD0;
+} PMD0BITS;
+PMD0BITS PMD0bits;
+#byte PMD0bits = 0x796
 #byte PMD0 = 0x796
 
-struct PMD1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int TMR0MD:1;
@@ -2932,20 +3475,26 @@ struct PMD1 {
          unsigned int NCO1MD:1;
       };
    };
-} PMD1;
+} PMD1BITS;
+PMD1BITS PMD1bits;
+#byte PMD1bits = 0x797
 #byte PMD1 = 0x797
 
-struct PMD2 {
+typedef struct 
+ {
    unsigned int ZCDMD:1;
    unsigned int CMP1MD:1;
    unsigned int CMP2MD:1;
    unsigned int :2;
    unsigned int ADCMD:1;
    unsigned int DACMD:1;
-} PMD2;
+} PMD2BITS;
+PMD2BITS PMD2bits;
+#byte PMD2bits = 0x798
 #byte PMD2 = 0x798
 
-struct PMD3 {
+typedef struct 
+ {
    unsigned int CCP1MD:1;
    unsigned int CCP2MD:1;
    unsigned int CCP3MD:1;
@@ -2953,10 +3502,13 @@ struct PMD3 {
    unsigned int CCP5MD:1;
    unsigned int PWM6MD:1;
    unsigned int PWM7MD:1;
-} PMD3;
+} PMD3BITS;
+PMD3BITS PMD3bits;
+#byte PMD3bits = 0x799
 #byte PMD3 = 0x799
 
-struct PMD4 {
+typedef struct 
+ {
    unsigned int CWG1MD:1;
    unsigned int CWG2MD:1;
    unsigned int CWG3MD:1;
@@ -2964,10 +3516,13 @@ struct PMD4 {
    unsigned int MSSP1MD:1;
    unsigned int MSSP2MD:1;
    unsigned int UART1MD:1;
-} PMD4;
+} PMD4BITS;
+PMD4BITS PMD4bits;
+#byte PMD4bits = 0x79A
 #byte PMD4 = 0x79A
 
-struct PMD5 {
+typedef struct 
+ {
    unsigned int DSMMD:1;
    unsigned int CLC1MD:1;
    unsigned int CLC2MD:1;
@@ -2976,10 +3531,13 @@ struct PMD5 {
    unsigned int :1;
    unsigned int SMT1MD:1;
    unsigned int SMT2MD:1;
-} PMD5;
+} PMD5BITS;
+PMD5BITS PMD5bits;
+#byte PMD5bits = 0x79B
 #byte PMD5 = 0x79B
 
-struct WDTCON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int SEN:1;
@@ -2996,10 +3554,13 @@ struct WDTCON0 {
          unsigned int WDTSEN:1;
       };
    };
-} WDTCON0;
+} WDTCON0BITS;
+WDTCON0BITS WDTCON0bits;
+#byte WDTCON0bits = 0x80C
 #byte WDTCON0 = 0x80C
 
-struct WDTCON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int WINDOW:3;
@@ -3011,10 +3572,13 @@ struct WDTCON1 {
          unsigned int WDTWINDOW:3;
       };
    };
-} WDTCON1;
+} WDTCON1BITS;
+WDTCON1BITS WDTCON1bits;
+#byte WDTCON1bits = 0x80D
 #byte WDTCON1 = 0x80D
 
-struct WDTPSL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PSCNT:8;
@@ -3024,10 +3588,13 @@ struct WDTPSL {
          unsigned int WDTPSCNT:8;
       };
    };
-} WDTPS;
-#byte WDTPS = 0x80E
+} WDTPSLBITS;
+WDTPSLBITS WDTPSLbits;
+#byte WDTPSLbits = 0x80E
+#byte WDTPSL = 0x80E
 
-struct WDTPSH {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PSCNT8:2;
@@ -3039,10 +3606,13 @@ struct WDTPSH {
          unsigned int WDTPSCNT1:6;
       };
    };
-} WDTPSH;
+} WDTPSHBITS;
+WDTPSHBITS WDTPSHbits;
+#byte WDTPSHbits = 0x80F
 #byte WDTPSH = 0x80F
 
-struct WDTTMR {
+typedef struct 
+ {
    union {
       struct {
          unsigned int PSCNT16:2;
@@ -3055,24 +3625,33 @@ struct WDTTMR {
          unsigned int WDTSTATE:1;
       };
    };
-} WDTTMR;
+} WDTTMRBITS;
+WDTTMRBITS WDTTMRbits;
+#byte WDTTMRbits = 0x810
 #byte WDTTMR = 0x810
 
-struct BORCON {
+typedef struct 
+ {
    unsigned int BORRDY:1;
    unsigned int :6;
    unsigned int SBOREN:1;
-} BORCON;
+} BORCONBITS;
+BORCONBITS BORCONbits;
+#byte BORCONbits = 0x811
 #byte BORCON = 0x811
 
 
-struct VREGCON {
+typedef struct 
+ {
    unsigned int :1;
    unsigned int VREGPM:1;
-} VREGCON;
+} VREGCONBITS;
+VREGCONBITS VREGCONbits;
+#byte VREGCONbits = 0x812
 #byte VREGCON = 0x812
 
-struct PCON0 {
+typedef struct 
+ {
    unsigned int BOR:1;
    unsigned int POR:1;
    unsigned int RI:1;
@@ -3081,39 +3660,57 @@ struct PCON0 {
    unsigned int WDTWV:1;
    unsigned int STKUNF:1;
    unsigned int STKOVF:1;
-} PCON0;
+} PCON0BITS;
+PCON0BITS PCON0bits;
+#byte PCON0bits = 0x813
 #byte PCON0 = 0x813
 
-struct CCDCON {
+typedef struct 
+ {
    unsigned int CCDS:2;
    unsigned int :5;
    unsigned int CCDEN:1;
-} CCDCON;
+} CCDCONBITS;
+CCDCONBITS CCDCONbits;
+#byte CCDCONbits = 0x814
 #byte CCDCON = 0x814
 
-struct NVMADR {
+typedef struct 
+ {
    unsigned int NVMADR:8;
-} NVMADR;
-#byte NVMADR = 0x81A
+} NVMADRLBITS;
+NVMADRLBITS NVMADRLbits;
+#byte NVMADRLbits = 0x81A
+#byte NVMADRL = 0x81A
 
-struct NVMADRH {
+typedef struct 
+ {
    unsigned int NVMADR8:2;
    unsigned int NVMADR1:5;
-} NVMADRH;
+} NVMADRHBITS;
+NVMADRHBITS NVMADRHbits;
+#byte NVMADRHbits = 0x81B
 #byte NVMADRH = 0x81B
 
-struct NVMDAT {
+typedef struct 
+ {
    unsigned int NVMDAT:8;
-} NVMDAT;
-#byte NVMDAT = 0x81C
+} NVMDATLBITS;
+NVMDATLBITS NVMDATLbits;
+#byte NVMDATLbits = 0x81C
+#byte NVMDATL = 0x81C
 
-struct NVMDATH {
+typedef struct 
+ {
    unsigned int NVMDAT8:2;
    unsigned int NVMDAT1:4;
-} NVMDATH;
+} NVMDATHBITS;
+NVMDATHBITS NVMDATHbits;
+#byte NVMDATHbits = 0x81D
 #byte NVMDATH = 0x81D
 
-struct NVMCON1 {
+typedef struct 
+ {
    unsigned int RD:1;
    unsigned int WR:1;
    unsigned int WREN:1;
@@ -3121,44 +3718,59 @@ struct NVMCON1 {
    unsigned int FREE:1;
    unsigned int LWLO:1;
    unsigned int NVMREGS:1;
-} NVMCON1;
+} NVMCON1BITS;
+NVMCON1BITS NVMCON1bits;
+#byte NVMCON1bits = 0x81E
 #byte NVMCON1 = 0x81E
 
 #byte NVMCON2 = 0x81F
 
-struct CPUDOZE {
+typedef struct 
+ {
    unsigned int DOZE:3;
    unsigned int :1;
    unsigned int DOE:1;
    unsigned int ROI:1;
    unsigned int DOZEN:1;
    unsigned int IDLEN:1;
-} CPUDOZE;
+} CPUDOZEBITS;
+CPUDOZEBITS CPUDOZEbits;
+#byte CPUDOZEbits = 0x88C
 #byte CPUDOZE = 0x88C
 
-struct OSCCON1 {
+typedef struct 
+ {
    unsigned int NDIV:4;
    unsigned int NOSC:3;
-} OSCCON1;
+} OSCCON1BITS;
+OSCCON1BITS OSCCON1bits;
+#byte OSCCON1bits = 0x88D
 #byte OSCCON1 = 0x88D
 
-struct OSCCON2 {
+typedef struct 
+ {
    unsigned int CDIV:4;
    unsigned int COSC:3;
-} OSCCON2;
+} OSCCON2BITS;
+OSCCON2BITS OSCCON2bits;
+#byte OSCCON2bits = 0x88E
 #byte OSCCON2 = 0x88E
 
-struct OSCCON3 {
+typedef struct 
+ {
    unsigned int :3;
    unsigned int NOSCR:1;
    unsigned int ORDY:1;
    unsigned int :1;
    unsigned int SOSCPWR:1;
    unsigned int CSWHOLD:1;
-} OSCCON3;
+} OSCCON3BITS;
+OSCCON3BITS OSCCON3bits;
+#byte OSCCON3bits = 0x88F
 #byte OSCCON3 = 0x88F
 
-struct OSCSTAT {
+typedef struct 
+ {
    unsigned int PLLR:1;
    unsigned int :1;
    unsigned int ADOR:1;
@@ -3167,10 +3779,13 @@ struct OSCSTAT {
    unsigned int MFOR:1;
    unsigned int HFOR:1;
    unsigned int EXTOR:1;
-} OSCSTAT;
+} OSCSTATBITS;
+OSCSTATBITS OSCSTATbits;
+#byte OSCSTATbits = 0x890
 #byte OSCSTAT = 0x890
 
-struct OSCEN {
+typedef struct 
+ {
    unsigned int :2;
    unsigned int ADOEN:1;
    unsigned int SOSCEN:1;
@@ -3178,57 +3793,72 @@ struct OSCEN {
    unsigned int MFOEN:1;
    unsigned int HFOEN:1;
    unsigned int EXTOEN:1;
-} OSCEN;
+} OSCENBITS;
+OSCENBITS OSCENbits;
+#byte OSCENbits = 0x891
 #byte OSCEN = 0x891
 
 #byte OSCTUNE = 0x892
 
 #byte OSCFRQ = 0x893
 
-struct CLKRCON {
+typedef struct 
+ {
    unsigned int CLKRDIV:3;
    unsigned int CLKRDC:2;
    unsigned int :2;
    unsigned int CLKREN:1;
-} CLKRCON;
+} CLKRCONBITS;
+CLKRCONBITS CLKRCONbits;
+#byte CLKRCONbits = 0x895
 #byte CLKRCON = 0x895
 
 #byte CLKRCLK = 0x896
 
-struct MDCON0 {
+typedef struct 
+ {
    unsigned int MDBIT:1;
    unsigned int :3;
    unsigned int MDOPOL:1;
    unsigned int MDOUT:1;
    unsigned int :1;
    unsigned int MDEN:1;
-} MDCON0;
+} MDCON0BITS;
+MDCON0BITS MDCON0bits;
+#byte MDCON0bits = 0x897
 #byte MDCON0 = 0x897
 
-struct MDCON1 {
+typedef struct 
+ {
    unsigned int MDCLSYNC:1;
    unsigned int MDCLPOL:1;
    unsigned int :2;
    unsigned int MDCHSYNC:1;
    unsigned int MDCHPOL:1;
-} MDCON1;
+} MDCON1BITS;
+MDCON1BITS MDCON1bits;
+#byte MDCON1bits = 0x898
 #byte MDCON1 = 0x898
 
 #byte MDSRC = 0x899
 
 #word MDCAR = 0x89A
 
-struct FVRCON {
+typedef struct 
+ {
    unsigned int ADFVR:2;
    unsigned int CDAFVR:2;
    unsigned int TSRNG:1;
    unsigned int TSEN:1;
    unsigned int FVRRDY:1;
    unsigned int FVREN:1;
-} FVRCON;
+} FVRCONBITS;
+FVRCONBITS FVRCONbits;
+#byte FVRCONbits = 0x90C
 #byte FVRCON = 0x90C
 
-struct DAC1CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int NSS:1;
@@ -3250,12 +3880,15 @@ struct DAC1CON0 {
          unsigned int DAC1EN:1;
       };
    };
-} DAC1CON0;
+} DAC1CON0BITS;
+DAC1CON0BITS DAC1CON0bits;
+#byte DAC1CON0bits = 0x90E
 #byte DAC1CON0 = 0x90E
 
 #byte DAC1CON1 = 0x90F
 
-struct ZCD1CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int INTN:1;
@@ -3289,10 +3922,13 @@ struct ZCD1CON {
          unsigned int ZCDEN:1;
       };
    };
-} ZCD1CON;
+} ZCD1CONBITS;
+ZCD1CONBITS ZCD1CONbits;
+#byte ZCD1CONbits = 0x91F
 #byte ZCD1CON = 0x91F
 
-struct CMOUT {
+typedef struct 
+ {
    union {
       struct {
          unsigned int MC1OUT:1;
@@ -3304,10 +3940,13 @@ struct CMOUT {
          unsigned int C2OUT:1;
       };
    };
-} CMOUT;
+} CMOUTBITS;
+CMOUTBITS CMOUTbits;
+#byte CMOUTbits = 0x98F
 #byte CMOUT = 0x98F
 
-struct CM1CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int SYNC:1;
@@ -3331,10 +3970,13 @@ struct CM1CON0 {
          unsigned int C1ON:1;
       };
    };
-} CM1CON0;
+} CM1CON0BITS;
+CM1CON0BITS CM1CON0bits;
+#byte CM1CON0bits = 0x990
 #byte CM1CON0 = 0x990
 
-struct CM1CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int INTN:1;
@@ -3346,14 +3988,17 @@ struct CM1CON1 {
          unsigned int C1INTP:1;
       };
    };
-} CM1CON1;
+} CM1CON1BITS;
+CM1CON1BITS CM1CON1bits;
+#byte CM1CON1bits = 0x991
 #byte CM1CON1 = 0x991
 
 #byte CM1NSEL = 0x992
 
 #byte CM1PSEL = 0x993
 
-struct CM2CON0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int SYNC:1;
@@ -3377,10 +4022,13 @@ struct CM2CON0 {
          unsigned int C2ON:1;
       };
    };
-} CM2CON0;
+} CM2CON0BITS;
+CM2CON0BITS CM2CON0bits;
+#byte CM2CON0bits = 0x994
 #byte CM2CON0 = 0x994
 
-struct CM2CON1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int INTN:1;
@@ -3392,22 +4040,28 @@ struct CM2CON1 {
          unsigned int C2INTP:1;
       };
    };
-} CM2CON1;
+} CM2CON1BITS;
+CM2CON1BITS CM2CON1bits;
+#byte CM2CON1bits = 0x995
 #byte CM2CON1 = 0x995
 
 #byte CM2NSEL = 0x996
 
 #byte CM2PSEL = 0x997
 
-struct CLCDATA {
+typedef struct 
+ {
    unsigned int MLC1OUT:1;
    unsigned int MLC2OUT:1;
    unsigned int MLC3OUT:1;
    unsigned int MLC4OUT:1;
-} CLCDATA;
+} CLCDATABITS;
+CLCDATABITS CLCDATAbits;
+#byte CLCDATAbits = 0xE0F
 #byte CLCDATA = 0xE0F
 
-struct CLC1CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1MODE:3;
@@ -3427,10 +4081,13 @@ struct CLC1CON {
          unsigned int EN:1;
       };
    };
-} CLC1CON;
+} CLC1CONBITS;
+CLC1CONBITS CLC1CONbits;
+#byte CLC1CONbits = 0xE10
 #byte CLC1CON = 0xE10
 
-struct CLC1POL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1G1POL:1;
@@ -3450,10 +4107,13 @@ struct CLC1POL {
          unsigned int POL:1;
       };
    };
-} CLC1POL;
+} CLC1POLBITS;
+CLC1POLBITS CLC1POLbits;
+#byte CLC1POLbits = 0xE11
 #byte CLC1POL = 0xE11
 
-struct CLC1SEL0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1D1S:8;
@@ -3463,10 +4123,13 @@ struct CLC1SEL0 {
          unsigned int D1S:8;
       };
    };
-} CLC1SEL0;
+} CLC1SEL0BITS;
+CLC1SEL0BITS CLC1SEL0bits;
+#byte CLC1SEL0bits = 0xE12
 #byte CLC1SEL0 = 0xE12
 
-struct CLC1SEL1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1D2S:8;
@@ -3476,10 +4139,13 @@ struct CLC1SEL1 {
          unsigned int D2S:8;
       };
    };
-} CLC1SEL1;
+} CLC1SEL1BITS;
+CLC1SEL1BITS CLC1SEL1bits;
+#byte CLC1SEL1bits = 0xE13
 #byte CLC1SEL1 = 0xE13
 
-struct CLC1SEL2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1D3S:8;
@@ -3489,10 +4155,13 @@ struct CLC1SEL2 {
          unsigned int D3S:8;
       };
    };
-} CLC1SEL2;
+} CLC1SEL2BITS;
+CLC1SEL2BITS CLC1SEL2bits;
+#byte CLC1SEL2bits = 0xE14
 #byte CLC1SEL2 = 0xE14
 
-struct CLC1SEL3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1D4S:8;
@@ -3502,10 +4171,13 @@ struct CLC1SEL3 {
          unsigned int D4S:8;
       };
    };
-} CLC1SEL3;
+} CLC1SEL3BITS;
+CLC1SEL3BITS CLC1SEL3bits;
+#byte CLC1SEL3bits = 0xE15
 #byte CLC1SEL3 = 0xE15
 
-struct CLC1GLS0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1G1D1N:1;
@@ -3529,10 +4201,13 @@ struct CLC1GLS0 {
          unsigned int D4T:1;
       };
    };
-} CLC1GLS0;
+} CLC1GLS0BITS;
+CLC1GLS0BITS CLC1GLS0bits;
+#byte CLC1GLS0bits = 0xE16
 #byte CLC1GLS0 = 0xE16
 
-struct CLC1GLS1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1G2D1N:1;
@@ -3556,10 +4231,13 @@ struct CLC1GLS1 {
          unsigned int D4T:1;
       };
    };
-} CLC1GLS1;
+} CLC1GLS1BITS;
+CLC1GLS1BITS CLC1GLS1bits;
+#byte CLC1GLS1bits = 0xE17
 #byte CLC1GLS1 = 0xE17
 
-struct CLC1GLS2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1G3D1N:1;
@@ -3583,10 +4261,13 @@ struct CLC1GLS2 {
          unsigned int D4T:1;
       };
    };
-} CLC1GLS2;
+} CLC1GLS2BITS;
+CLC1GLS2BITS CLC1GLS2bits;
+#byte CLC1GLS2bits = 0xE18
 #byte CLC1GLS2 = 0xE18
 
-struct CLC1GLS3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC1G4D1N:1;
@@ -3610,10 +4291,13 @@ struct CLC1GLS3 {
          unsigned int G4D4T:1;
       };
    };
-} CLC1GLS3;
+} CLC1GLS3BITS;
+CLC1GLS3BITS CLC1GLS3bits;
+#byte CLC1GLS3bits = 0xE19
 #byte CLC1GLS3 = 0xE19
 
-struct CLC2CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2MODE:3;
@@ -3633,10 +4317,13 @@ struct CLC2CON {
          unsigned int EN:1;
       };
    };
-} CLC2CON;
+} CLC2CONBITS;
+CLC2CONBITS CLC2CONbits;
+#byte CLC2CONbits = 0xE1A
 #byte CLC2CON = 0xE1A
 
-struct CLC2POL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2G1POL:1;
@@ -3656,10 +4343,13 @@ struct CLC2POL {
          unsigned int POL:1;
       };
    };
-} CLC2POL;
+} CLC2POLBITS;
+CLC2POLBITS CLC2POLbits;
+#byte CLC2POLbits = 0xE1B
 #byte CLC2POL = 0xE1B
 
-struct CLC2SEL0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2D1S:8;
@@ -3669,10 +4359,13 @@ struct CLC2SEL0 {
          unsigned int D1S:8;
       };
    };
-} CLC2SEL0;
+} CLC2SEL0BITS;
+CLC2SEL0BITS CLC2SEL0bits;
+#byte CLC2SEL0bits = 0xE1C
 #byte CLC2SEL0 = 0xE1C
 
-struct CLC2SEL1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2D2S:8;
@@ -3682,10 +4375,13 @@ struct CLC2SEL1 {
          unsigned int D2S:8;
       };
    };
-} CLC2SEL1;
+} CLC2SEL1BITS;
+CLC2SEL1BITS CLC2SEL1bits;
+#byte CLC2SEL1bits = 0xE1D
 #byte CLC2SEL1 = 0xE1D
 
-struct CLC2SEL2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2D3S:8;
@@ -3695,10 +4391,13 @@ struct CLC2SEL2 {
          unsigned int D3S:8;
       };
    };
-} CLC2SEL2;
+} CLC2SEL2BITS;
+CLC2SEL2BITS CLC2SEL2bits;
+#byte CLC2SEL2bits = 0xE1E
 #byte CLC2SEL2 = 0xE1E
 
-struct CLC2SEL3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2D4S:8;
@@ -3708,10 +4407,13 @@ struct CLC2SEL3 {
          unsigned int D4S:8;
       };
    };
-} CLC2SEL3;
+} CLC2SEL3BITS;
+CLC2SEL3BITS CLC2SEL3bits;
+#byte CLC2SEL3bits = 0xE1F
 #byte CLC2SEL3 = 0xE1F
 
-struct CLC2GLS0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2G1D1N:1;
@@ -3735,10 +4437,13 @@ struct CLC2GLS0 {
          unsigned int D4T:1;
       };
    };
-} CLC2GLS0;
+} CLC2GLS0BITS;
+CLC2GLS0BITS CLC2GLS0bits;
+#byte CLC2GLS0bits = 0xE20
 #byte CLC2GLS0 = 0xE20
 
-struct CLC2GLS1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2G2D1N:1;
@@ -3762,10 +4467,13 @@ struct CLC2GLS1 {
          unsigned int D4T:1;
       };
    };
-} CLC2GLS1;
+} CLC2GLS1BITS;
+CLC2GLS1BITS CLC2GLS1bits;
+#byte CLC2GLS1bits = 0xE21
 #byte CLC2GLS1 = 0xE21
 
-struct CLC2GLS2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2G3D1N:1;
@@ -3789,10 +4497,13 @@ struct CLC2GLS2 {
          unsigned int D4T:1;
       };
    };
-} CLC2GLS2;
+} CLC2GLS2BITS;
+CLC2GLS2BITS CLC2GLS2bits;
+#byte CLC2GLS2bits = 0xE22
 #byte CLC2GLS2 = 0xE22
 
-struct CLC2GLS3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC2G4D1N:1;
@@ -3816,10 +4527,13 @@ struct CLC2GLS3 {
          unsigned int G4D4T:1;
       };
    };
-} CLC2GLS3;
+} CLC2GLS3BITS;
+CLC2GLS3BITS CLC2GLS3bits;
+#byte CLC2GLS3bits = 0xE23
 #byte CLC2GLS3 = 0xE23
 
-struct CLC3CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3MODE:3;
@@ -3839,10 +4553,13 @@ struct CLC3CON {
          unsigned int EN:1;
       };
    };
-} CLC3CON;
+} CLC3CONBITS;
+CLC3CONBITS CLC3CONbits;
+#byte CLC3CONbits = 0xE24
 #byte CLC3CON = 0xE24
 
-struct CLC3POL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3G1POL:1;
@@ -3862,10 +4579,13 @@ struct CLC3POL {
          unsigned int POL:1;
       };
    };
-} CLC3POL;
+} CLC3POLBITS;
+CLC3POLBITS CLC3POLbits;
+#byte CLC3POLbits = 0xE25
 #byte CLC3POL = 0xE25
 
-struct CLC3SEL0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3D1S:8;
@@ -3875,10 +4595,13 @@ struct CLC3SEL0 {
          unsigned int D1S:8;
       };
    };
-} CLC3SEL0;
+} CLC3SEL0BITS;
+CLC3SEL0BITS CLC3SEL0bits;
+#byte CLC3SEL0bits = 0xE26
 #byte CLC3SEL0 = 0xE26
 
-struct CLC3SEL1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3D2S:8;
@@ -3888,10 +4611,13 @@ struct CLC3SEL1 {
          unsigned int D2S:8;
       };
    };
-} CLC3SEL1;
+} CLC3SEL1BITS;
+CLC3SEL1BITS CLC3SEL1bits;
+#byte CLC3SEL1bits = 0xE27
 #byte CLC3SEL1 = 0xE27
 
-struct CLC3SEL2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3D3S:8;
@@ -3901,10 +4627,13 @@ struct CLC3SEL2 {
          unsigned int D3S:8;
       };
    };
-} CLC3SEL2;
+} CLC3SEL2BITS;
+CLC3SEL2BITS CLC3SEL2bits;
+#byte CLC3SEL2bits = 0xE28
 #byte CLC3SEL2 = 0xE28
 
-struct CLC3SEL3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3D4S:8;
@@ -3914,10 +4643,13 @@ struct CLC3SEL3 {
          unsigned int D4S:8;
       };
    };
-} CLC3SEL3;
+} CLC3SEL3BITS;
+CLC3SEL3BITS CLC3SEL3bits;
+#byte CLC3SEL3bits = 0xE29
 #byte CLC3SEL3 = 0xE29
 
-struct CLC3GLS0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3G1D1N:1;
@@ -3941,10 +4673,13 @@ struct CLC3GLS0 {
          unsigned int D4T:1;
       };
    };
-} CLC3GLS0;
+} CLC3GLS0BITS;
+CLC3GLS0BITS CLC3GLS0bits;
+#byte CLC3GLS0bits = 0xE2A
 #byte CLC3GLS0 = 0xE2A
 
-struct CLC3GLS1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3G2D1N:1;
@@ -3968,10 +4703,13 @@ struct CLC3GLS1 {
          unsigned int D4T:1;
       };
    };
-} CLC3GLS1;
+} CLC3GLS1BITS;
+CLC3GLS1BITS CLC3GLS1bits;
+#byte CLC3GLS1bits = 0xE2B
 #byte CLC3GLS1 = 0xE2B
 
-struct CLC3GLS2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3G3D1N:1;
@@ -3995,10 +4733,13 @@ struct CLC3GLS2 {
          unsigned int D4T:1;
       };
    };
-} CLC3GLS2;
+} CLC3GLS2BITS;
+CLC3GLS2BITS CLC3GLS2bits;
+#byte CLC3GLS2bits = 0xE2C
 #byte CLC3GLS2 = 0xE2C
 
-struct CLC3GLS3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC3G4D1N:1;
@@ -4022,10 +4763,13 @@ struct CLC3GLS3 {
          unsigned int G4D4T:1;
       };
    };
-} CLC3GLS3;
+} CLC3GLS3BITS;
+CLC3GLS3BITS CLC3GLS3bits;
+#byte CLC3GLS3bits = 0xE2D
 #byte CLC3GLS3 = 0xE2D
 
-struct CLC4CON {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4MODE:3;
@@ -4045,10 +4789,13 @@ struct CLC4CON {
          unsigned int EN:1;
       };
    };
-} CLC4CON;
+} CLC4CONBITS;
+CLC4CONBITS CLC4CONbits;
+#byte CLC4CONbits = 0xE2E
 #byte CLC4CON = 0xE2E
 
-struct CLC4POL {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4G1POL:1;
@@ -4068,10 +4815,13 @@ struct CLC4POL {
          unsigned int POL:1;
       };
    };
-} CLC4POL;
+} CLC4POLBITS;
+CLC4POLBITS CLC4POLbits;
+#byte CLC4POLbits = 0xE2F
 #byte CLC4POL = 0xE2F
 
-struct CLC4SEL0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4D1S:8;
@@ -4081,10 +4831,13 @@ struct CLC4SEL0 {
          unsigned int D1S:8;
       };
    };
-} CLC4SEL0;
+} CLC4SEL0BITS;
+CLC4SEL0BITS CLC4SEL0bits;
+#byte CLC4SEL0bits = 0xE30
 #byte CLC4SEL0 = 0xE30
 
-struct CLC4SEL1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4D2S:8;
@@ -4094,10 +4847,13 @@ struct CLC4SEL1 {
          unsigned int D2S:8;
       };
    };
-} CLC4SEL1;
+} CLC4SEL1BITS;
+CLC4SEL1BITS CLC4SEL1bits;
+#byte CLC4SEL1bits = 0xE31
 #byte CLC4SEL1 = 0xE31
 
-struct CLC4SEL2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4D3S:8;
@@ -4107,10 +4863,13 @@ struct CLC4SEL2 {
          unsigned int D3S:8;
       };
    };
-} CLC4SEL2;
+} CLC4SEL2BITS;
+CLC4SEL2BITS CLC4SEL2bits;
+#byte CLC4SEL2bits = 0xE32
 #byte CLC4SEL2 = 0xE32
 
-struct CLC4SEL3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4D4S:8;
@@ -4120,10 +4879,13 @@ struct CLC4SEL3 {
          unsigned int D4S:8;
       };
    };
-} CLC4SEL3;
+} CLC4SEL3BITS;
+CLC4SEL3BITS CLC4SEL3bits;
+#byte CLC4SEL3bits = 0xE33
 #byte CLC4SEL3 = 0xE33
 
-struct CLC4GLS0 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4G1D1N:1;
@@ -4147,10 +4909,13 @@ struct CLC4GLS0 {
          unsigned int D4T:1;
       };
    };
-} CLC4GLS0;
+} CLC4GLS0BITS;
+CLC4GLS0BITS CLC4GLS0bits;
+#byte CLC4GLS0bits = 0xE34
 #byte CLC4GLS0 = 0xE34
 
-struct CLC4GLS1 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4G2D1N:1;
@@ -4174,10 +4939,13 @@ struct CLC4GLS1 {
          unsigned int D4T:1;
       };
    };
-} CLC4GLS1;
+} CLC4GLS1BITS;
+CLC4GLS1BITS CLC4GLS1bits;
+#byte CLC4GLS1bits = 0xE35
 #byte CLC4GLS1 = 0xE35
 
-struct CLC4GLS2 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4G3D1N:1;
@@ -4201,10 +4969,13 @@ struct CLC4GLS2 {
          unsigned int D4T:1;
       };
    };
-} CLC4GLS2;
+} CLC4GLS2BITS;
+CLC4GLS2BITS CLC4GLS2bits;
+#byte CLC4GLS2bits = 0xE36
 #byte CLC4GLS2 = 0xE36
 
-struct CLC4GLS3 {
+typedef struct 
+ {
    union {
       struct {
          unsigned int LC4G4D1N:1;
@@ -4228,12 +4999,17 @@ struct CLC4GLS3 {
          unsigned int G4D4T:1;
       };
    };
-} CLC4GLS3;
+} CLC4GLS3BITS;
+CLC4GLS3BITS CLC4GLS3bits;
+#byte CLC4GLS3bits = 0xE37
 #byte CLC4GLS3 = 0xE37
 
-struct PPSLOCK {
+typedef struct 
+ {
    unsigned int PPSLOCKED:1;
-} PPSLOCK;
+} PPSLOCKBITS;
+PPSLOCKBITS PPSLOCKbits;
+#byte PPSLOCKbits = 0xE8F
 #byte PPSLOCK = 0xE8F
 
 #byte INTPPS = 0xE90
@@ -4362,191 +5138,299 @@ struct PPSLOCK {
 
 #byte RC7PPS = 0xF27
 
-struct ANSELA {
+typedef struct 
+ {
    unsigned int ANSA:8;
-} ANSELA;
+} ANSELABITS;
+ANSELABITS ANSELAbits;
+#byte ANSELAbits = 0xF38
 #byte ANSELA = 0xF38
 
-struct WPUA {
+typedef struct 
+ {
    unsigned int WPUA:8;
-} WPUA;
+} WPUABITS;
+WPUABITS WPUAbits;
+#byte WPUAbits = 0xF39
 #byte WPUA = 0xF39
 
-struct ODCONA {
+typedef struct 
+ {
    unsigned int ODCA:8;
-} ODCONA;
+} ODCONABITS;
+ODCONABITS ODCONAbits;
+#byte ODCONAbits = 0xF3A
 #byte ODCONA = 0xF3A
 
-struct SLRCONA {
+typedef struct 
+ {
    unsigned int SLRA:8;
-} SLRCONA;
+} SLRCONABITS;
+SLRCONABITS SLRCONAbits;
+#byte SLRCONAbits = 0xF3B
 #byte SLRCONA = 0xF3B
 
-struct INLVLA {
+typedef struct 
+ {
    unsigned int INLVLA:8;
-} INLVLA;
+} INLVLABITS;
+INLVLABITS INLVLAbits;
+#byte INLVLAbits = 0xF3C
 #byte INLVLA = 0xF3C
 
-struct IOCAP {
+typedef struct 
+ {
    unsigned int IOCAP:8;
-} IOCAP;
+} IOCAPBITS;
+IOCAPBITS IOCAPbits;
+#byte IOCAPbits = 0xF3D
 #byte IOCAP = 0xF3D
 
-struct IOCAN {
+typedef struct 
+ {
    unsigned int IOCAN:8;
-} IOCAN;
+} IOCANBITS;
+IOCANBITS IOCANbits;
+#byte IOCANbits = 0xF3E
 #byte IOCAN = 0xF3E
 
-struct IOCAF {
+typedef struct 
+ {
    unsigned int IOCAF:8;
-} IOCAF;
+} IOCAFBITS;
+IOCAFBITS IOCAFbits;
+#byte IOCAFbits = 0xF3F
 #byte IOCAF = 0xF3F
 
-struct CCDNA {
+typedef struct 
+ {
    unsigned int CCDNA:8;
-} CCDNA;
+} CCDNABITS;
+CCDNABITS CCDNAbits;
+#byte CCDNAbits = 0xF40
 #byte CCDNA = 0xF40
 
-struct CCDPA {
+typedef struct 
+ {
    unsigned int CCDPA:8;
-} CCDPA;
+} CCDPABITS;
+CCDPABITS CCDPAbits;
+#byte CCDPAbits = 0xF41
 #byte CCDPA = 0xF41
 
-struct ANSELB {
+typedef struct 
+ {
    unsigned int ANSB:8;
-} ANSELB;
+} ANSELBBITS;
+ANSELBBITS ANSELBbits;
+#byte ANSELBbits = 0xF43
 #byte ANSELB = 0xF43
 
-struct WPUB {
+typedef struct 
+ {
    unsigned int WPUB:8;
-} WPUB;
+} WPUBBITS;
+WPUBBITS WPUBbits;
+#byte WPUBbits = 0xF44
 #byte WPUB = 0xF44
 
-struct ODCONB {
+typedef struct 
+ {
    unsigned int ODCB:8;
-} ODCONB;
+} ODCONBBITS;
+ODCONBBITS ODCONBbits;
+#byte ODCONBbits = 0xF45
 #byte ODCONB = 0xF45
 
-struct SLRCONB {
+typedef struct 
+ {
    unsigned int SLRB:8;
-} SLRCONB;
+} SLRCONBBITS;
+SLRCONBBITS SLRCONBbits;
+#byte SLRCONBbits = 0xF46
 #byte SLRCONB = 0xF46
 
-struct INLVLB {
+typedef struct 
+ {
    unsigned int INLVLB:8;
-} INLVLB;
+} INLVLBBITS;
+INLVLBBITS INLVLBbits;
+#byte INLVLBbits = 0xF47
 #byte INLVLB = 0xF47
 
-struct IOCBP {
+typedef struct 
+ {
    unsigned int IOCBP:8;
-} IOCBP;
+} IOCBPBITS;
+IOCBPBITS IOCBPbits;
+#byte IOCBPbits = 0xF48
 #byte IOCBP = 0xF48
 
-struct IOCBN {
+typedef struct 
+ {
    unsigned int IOCBN:8;
-} IOCBN;
+} IOCBNBITS;
+IOCBNBITS IOCBNbits;
+#byte IOCBNbits = 0xF49
 #byte IOCBN = 0xF49
 
-struct IOCBF {
+typedef struct 
+ {
    unsigned int IOCBF:8;
-} IOCBF;
+} IOCBFBITS;
+IOCBFBITS IOCBFbits;
+#byte IOCBFbits = 0xF4A
 #byte IOCBF = 0xF4A
 
-struct CCDNB {
+typedef struct 
+ {
    unsigned int CCDNB:8;
-} CCDNB;
+} CCDNBBITS;
+CCDNBBITS CCDNBbits;
+#byte CCDNBbits = 0xF4B
 #byte CCDNB = 0xF4B
 
-struct CCDPB {
+typedef struct 
+ {
    unsigned int CCDPB:8;
-} CCDPB;
+} CCDPBBITS;
+CCDPBBITS CCDPBbits;
+#byte CCDPBbits = 0xF4C
 #byte CCDPB = 0xF4C
 
-struct ANSELC {
+typedef struct 
+ {
    unsigned int ANSC:8;
-} ANSELC;
+} ANSELCBITS;
+ANSELCBITS ANSELCbits;
+#byte ANSELCbits = 0xF4E
 #byte ANSELC = 0xF4E
 
-struct WPUC {
+typedef struct 
+ {
    unsigned int WPUC:8;
-} WPUC;
+} WPUCBITS;
+WPUCBITS WPUCbits;
+#byte WPUCbits = 0xF4F
 #byte WPUC = 0xF4F
 
-struct ODCONC {
+typedef struct 
+ {
    unsigned int ODCC:8;
-} ODCONC;
+} ODCONCBITS;
+ODCONCBITS ODCONCbits;
+#byte ODCONCbits = 0xF50
 #byte ODCONC = 0xF50
 
-struct SLRCONC {
+typedef struct 
+ {
    unsigned int SLRC:8;
-} SLRCONC;
+} SLRCONCBITS;
+SLRCONCBITS SLRCONCbits;
+#byte SLRCONCbits = 0xF51
 #byte SLRCONC = 0xF51
 
-struct INLVLC {
+typedef struct 
+ {
    unsigned int INLVLC:8;
-} INLVLC;
+} INLVLCBITS;
+INLVLCBITS INLVLCbits;
+#byte INLVLCbits = 0xF52
 #byte INLVLC = 0xF52
 
-struct IOCCP {
+typedef struct 
+ {
    unsigned int IOCCP:8;
-} IOCCP;
+} IOCCPBITS;
+IOCCPBITS IOCCPbits;
+#byte IOCCPbits = 0xF53
 #byte IOCCP = 0xF53
 
-struct IOCCN {
+typedef struct 
+ {
    unsigned int IOCCN:8;
-} IOCCN;
+} IOCCNBITS;
+IOCCNBITS IOCCNbits;
+#byte IOCCNbits = 0xF54
 #byte IOCCN = 0xF54
 
-struct IOCCF {
+typedef struct 
+ {
    unsigned int IOCCF:8;
-} IOCCF;
+} IOCCFBITS;
+IOCCFBITS IOCCFbits;
+#byte IOCCFbits = 0xF55
 #byte IOCCF = 0xF55
 
-struct CCDNC {
+typedef struct 
+ {
    unsigned int CCDNC:8;
-} CCDNC;
+} CCDNCBITS;
+CCDNCBITS CCDNCbits;
+#byte CCDNCbits = 0xF56
 #byte CCDNC = 0xF56
 
-struct CCDPC {
+typedef struct 
+ {
    unsigned int CCDPC:8;
-} CCDPC;
+} CCDPCBITS;
+CCDPCBITS CCDPCbits;
+#byte CCDPCbits = 0xF57
 #byte CCDPC = 0xF57
 
-struct WPUE {
+typedef struct 
+ {
    unsigned int :3;
    unsigned int WPUE3:1;
-} WPUE;
+} WPUEBITS;
+WPUEBITS WPUEbits;
+#byte WPUEbits = 0xF65
 #byte WPUE = 0xF65
 
-struct INLVLE {
+typedef struct 
+ {
    unsigned int :3;
    unsigned int INLVLE3:1;
-} INLVLE;
+} INLVLEBITS;
+INLVLEBITS INLVLEbits;
+#byte INLVLEbits = 0xF68
 #byte INLVLE = 0xF68
 
-struct IOCEP {
+typedef struct 
+ {
    unsigned int :3;
    unsigned int IOCEP3:1;
-} IOCEP;
+} IOCEPBITS;
+IOCEPBITS IOCEPbits;
+#byte IOCEPbits = 0xF69
 #byte IOCEP = 0xF69
 
-struct IOCEN {
+typedef struct 
+ {
    unsigned int :3;
    unsigned int IOCEN3:1;
-} IOCEN;
+} IOCENBITS;
+IOCENBITS IOCENbits;
+#byte IOCENbits = 0xF6A
 #byte IOCEN = 0xF6A
 
-struct IOCEF {
+typedef struct 
+ {
    unsigned int :3;
    unsigned int IOCEF3:1;
-} IOCEF;
+} IOCEFBITS;
+IOCEFBITS IOCEFbits;
+#byte IOCEFbits = 0xF6B
 #byte IOCEF = 0xF6B
 
-struct STATUS_SHAD {
+typedef struct 
+ {
    unsigned int C_SHAD:1;
    unsigned int DC_SHAD:1;
    unsigned int Z_SHAD:1;
-} STATUS_SHAD;
+} STATUS_SHADBITS;
+STATUS_SHADBITS STATUS_SHADbits;
+#byte STATUS_SHADbits = 0xFE4
 #byte STATUS_SHAD = 0xFE4
 
 #byte WREG_SHAD = 0xFE5

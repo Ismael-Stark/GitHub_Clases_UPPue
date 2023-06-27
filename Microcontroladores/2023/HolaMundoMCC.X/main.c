@@ -1,6 +1,7 @@
 #include "mcc_generated_files/mcc.h"
 #include <math.h>
 #include "DHT11.h"
+#include "HC_SR04.h"
 /*
                          Main application
  */
@@ -27,6 +28,7 @@ void main(void)
     // Initialize the device
     SYSTEM_Initialize();
     dht_init(USE_DHT11);
+    HC_SR04_init();
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
@@ -64,10 +66,10 @@ void main(void)
         dhterr = leer_dht(&tempe, &humedad);
         
         if (dhterr ==0){
-            //printf("\nEl DHT11: H:%.1f%%, T:%.1f\n",humedad, tempe);
+            printf("\nEl DHT11: H:%.1f%%, T:%.1f\n",humedad, tempe);
             //printf("Humedad:%.1f%%, Temperatura:%.1f\n",humedad, tempe);
             //printf("{\"id\":\"ismael\",\"Temperatura\":\"%.2f\",\"humedad\":\"%.2f\"}\n", tempe,humedad);
-            printf("{\"id\":\"ismael\",\"Temperatura\":\"%.2f\",\"humedad\":\"%.2f\",\"cont\":\"%d\"}\n", tempe,humedad,contador++);
+            //printf("{\"id\":\"ismael\",\"Temperatura\":\"%.2f\",\"humedad\":\"%.2f\",\"cont\":\"%d\"}\n", tempe,humedad,contador++);
             //printf("%.2f\n", tempe);
         }else{
             printf("\nError DHT11 verifica tus cables\n");
@@ -78,7 +80,7 @@ void main(void)
            printf("llego el dato: %s\n\n",buffer);
         }
         
-        
+        printf("\nLa distancia es: %.2f cm\n",HC_SR04_cm() );
         
     }
 }

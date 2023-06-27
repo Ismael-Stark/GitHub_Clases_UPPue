@@ -1,0 +1,37 @@
+[PROJECT]
+Target=main_2.hex
+Processor_Text=PIC16F18855
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=main_2.c
+[main_2.c]
+Type=4
+[mru-list]
+1=main_2.c
+
+[defines]
+buildcount=5
+
+[Opened Files]
+1=main(HolaMundo).c
+t1=1
+Count=1
+
+[ProjectLog]
+Days=1
+D1=27-06-2023
+D1_L=6
+D1_L1=[45066]Stopped Editing.
+D1_L2=[45546]Started Editing.
+D1_L3=[46144]Stopped Editing.
+D1_L4=[46237]Started Editing.
+D1_L5=[46318]Stopped Editing.
+TotalEdit=9
+TotalDebug=0
+D1_E=9
+D1_D=0
+D1_L6=[46318]Project Closed.
+[Units]
+Count=1
+1=main_2 (main)

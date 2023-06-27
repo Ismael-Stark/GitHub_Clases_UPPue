@@ -1,5 +1,14 @@
-Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) on 23-jun.-23 at 13:06
->>> Warning 207 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 14(1,1): Code has no effect
-      Memory usage:   ROM=5%      RAM=1% - 3%
-      0 Errors,  1 Warnings.
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) on 27-jun.-23 at 13:44
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 36(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 38(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 42(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 44(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 48(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 50(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 54(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 56(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 7(12,20): Variable never used:   contador
+>>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 7(26,36): Variable never used:   leer_boton
+      Memory usage:   ROM=4%      RAM=1% - 2%
+      0 Errors,  10 Warnings.
 Build Successful.

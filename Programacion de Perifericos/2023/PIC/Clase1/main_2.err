@@ -1,0 +1,10 @@
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2 on 27-jun.-23 at 12:51
+>>> Warning 207 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.c" Line 18(1,1): Code has no effect
+*** Error 12 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.c" Line 35(16,17): Undefined identifier   x
+*** Error 12 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.c" Line 37(16,17): Undefined identifier   x
+*** Error 12 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.c" Line 39(16,17): Undefined identifier   x
+*** Error 12 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.c" Line 41(16,17): Undefined identifier   x
+*** Error 12 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.c" Line 43(16,17): Undefined identifier   x
+*** Error 12 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.c" Line 45(16,17): Undefined identifier   x
+      6 Errors,  1 Warnings.
+Build Failed.

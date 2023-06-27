@@ -1,19 +1,19 @@
-CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
+CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 12:41
 
-               Filename:   D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).lst
+               Filename:   D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main_2.lst
 
-               ROM used:   348 words (4%)
+               ROM used:   237 words (3%)
                            Largest free fragment is 2048
-               RAM used:   11 (1%) at main() level
+               RAM used:   9 (1%) at main() level
                            24 (2%) worst case
                Stack used: 0 locations
                Stack size: 16
 
 *
 0000:  MOVLP  00
-0001:  GOTO   06C
+0001:  GOTO   081
 0002:  NOP
-.................... #include <main_h.h>
+.................... #include <main(HolaMundo).h>
 .................... #CASE
 .................... #include <16F18855.h>
 .................... //////////// Standard Header file for the PIC16F18855 device ////////////////
@@ -131,7 +131,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 0068:  MOVLB  10
 0069:  MOVLP  00
 006A:  MOVLB  00
-006B:  GOTO   0B8 (RETURN)
+006B:  GOTO   0CD (RETURN)
 .................... 
 .................... #list
 .................... 
@@ -140,6 +140,27 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #device ADC=10 
 .................... #use delay(internal=32MHz)
+006C:  MOVLW  20
+006D:  MOVWF  05
+006E:  MOVLW  04
+006F:  MOVWF  04
+0070:  MOVF   00,W
+0071:  BTFSC  03.2
+0072:  GOTO   080
+0073:  MOVLW  0A
+0074:  MOVWF  78
+0075:  CLRF   77
+0076:  DECFSZ 77,F
+0077:  GOTO   076
+0078:  DECFSZ 78,F
+0079:  GOTO   075
+007A:  MOVLW  5F
+007B:  MOVWF  77
+007C:  DECFSZ 77,F
+007D:  GOTO   07C
+007E:  DECFSZ 00,F
+007F:  GOTO   073
+0080:  RETURN
 .................... //#use delay(clock=32M)
 .................... #use rs232(baud=115200,parity=N,xmit=PIN_C0,rcv=PIN_C1,bits=8,STOP=1,UART1 )
 .................... #use i2c(Master,Fast,sda=PIN_C3,scl=PIN_C4)
@@ -172,16 +193,13 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte PCL = 0x002
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct STATUS {
 ....................    unsigned int C:1;
 ....................    unsigned int DC:1;
 ....................    unsigned int Z:1;
 ....................    unsigned int PD:1;
 ....................    unsigned int TO:1;
-.................... } STATUSBITS;
-.................... STATUSBITS STATUSbits;
-.................... #byte STATUSbits = 0x003
+.................... } STATUS;
 .................... #byte STATUS = 0x003
 .................... 
 .................... #word FSR0 = 0x004
@@ -194,19 +212,15 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte PCLATH = 0x00A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct INTCON {
 ....................    unsigned int INTEDG:1;
 ....................    unsigned int :5;
 ....................    unsigned int PEIE:1;
 ....................    unsigned int GIE:1;
-.................... } INTCONBITS;
-.................... INTCONBITS INTCONbits;
-.................... #byte INTCONbits = 0x00B
+.................... } INTCON;
 .................... #byte INTCON = 0x00B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PORTA {
 ....................    unsigned int RA0:1;
 ....................    unsigned int RA1:1;
 ....................    unsigned int RA2:1;
@@ -215,13 +229,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int RA5:1;
 ....................    unsigned int RA6:1;
 ....................    unsigned int RA7:1;
-.................... } PORTABITS;
-.................... PORTABITS PORTAbits;
-.................... #byte PORTAbits = 0x00C
+.................... } PORTAbits;
 .................... #byte PORTA = 0x00C
+.................... #byte PORTAbits = 0x00C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PORTB {
 ....................    unsigned int RB0:1;
 ....................    unsigned int RB1:1;
 ....................    unsigned int RB2:1;
@@ -230,13 +242,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int RB5:1;
 ....................    unsigned int RB6:1;
 ....................    unsigned int RB7:1;
-.................... } PORTBBITS;
-.................... PORTBBITS PORTBbits;
-.................... #byte PORTBbits = 0x00D
+.................... } PORTB;
 .................... #byte PORTB = 0x00D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PORTC {
 ....................    unsigned int RC0:1;
 ....................    unsigned int RC1:1;
 ....................    unsigned int RC2:1;
@@ -245,13 +254,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int RC5:1;
 ....................    unsigned int RC6:1;
 ....................    unsigned int RC7:1;
-.................... } PORTCBITS;
-.................... PORTCBITS PORTCbits;
-.................... #byte PORTCbits = 0x00E
+.................... } PORTC;
 .................... #byte PORTC = 0x00E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PORTE {
 ....................    unsigned int RE0:1;
 ....................    unsigned int RE1:1;
 ....................    unsigned int RE2:1;
@@ -260,13 +266,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int RE5:1;
 ....................    unsigned int RE6:1;
 ....................    unsigned int RE7:1;
-.................... } PORTEBITS;
-.................... PORTEBITS PORTEbits;
-.................... #byte PORTEbits = 0x010
+.................... } PORTE;
 .................... #byte PORTE = 0x010
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TRISA {
 ....................    unsigned int TRISA0:1;
 ....................    unsigned int TRISA1:1;
 ....................    unsigned int TRISA2:1;
@@ -275,13 +278,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int TRISA5:1;
 ....................    unsigned int TRISA6:1;
 ....................    unsigned int TRISA7:1;
-.................... } TRISABITS;
-.................... TRISABITS TRISAbits;
-.................... #byte TRISAbits = 0x011
+.................... } TRISA;
 .................... #byte TRISA = 0x011
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TRISB {
 ....................    unsigned int TRISB0:1;
 ....................    unsigned int TRISB1:1;
 ....................    unsigned int TRISB2:1;
@@ -290,13 +290,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int TRISB5:1;
 ....................    unsigned int TRISB6:1;
 ....................    unsigned int TRISB7:1;
-.................... } TRISBBITS;
-.................... TRISBBITS TRISBbits;
-.................... #byte TRISBbits = 0x012
+.................... } TRISB;
 .................... #byte TRISB = 0x012
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TRISC {
 ....................    unsigned int TRISC0:1;
 ....................    unsigned int TRISC1:1;
 ....................    unsigned int TRISC2:1;
@@ -305,13 +302,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int TRISC5:1;
 ....................    unsigned int TRISC6:1;
 ....................    unsigned int TRISC7:1;
-.................... } TRISCBITS;
-.................... TRISCBITS TRISCbits;
-.................... #byte TRISCbits = 0x013
+.................... } TRISC;
 .................... #byte TRISC = 0x013
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct LATA {
 ....................    unsigned int LATA0:1;
 ....................    unsigned int LATA1:1;
 ....................    unsigned int LATA2:1;
@@ -320,13 +314,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int LATA5:1;
 ....................    unsigned int LATA6:1;
 ....................    unsigned int LATA7:1;
-.................... } LATABITS;
-.................... LATABITS LATAbits;
-.................... #byte LATAbits = 0x016
+.................... } LATA;
 .................... #byte LATA = 0x016
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct LATB {
 ....................    unsigned int LATB0:1;
 ....................    unsigned int LATB1:1;
 ....................    unsigned int LATB2:1;
@@ -335,13 +326,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int LATB5:1;
 ....................    unsigned int LATB6:1;
 ....................    unsigned int LATB7:1;
-.................... } LATBBITS;
-.................... LATBBITS LATBbits;
-.................... #byte LATBbits = 0x017
+.................... } LATB;
 .................... #byte LATB = 0x017
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct LATC {
 ....................    unsigned int LATC0:1;
 ....................    unsigned int LATC1:1;
 ....................    unsigned int LATC2:1;
@@ -350,21 +338,15 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int LATC5:1;
 ....................    unsigned int LATC6:1;
 ....................    unsigned int LATC7:1;
-.................... } LATCBITS;
-.................... LATCBITS LATCbits;
-.................... #byte LATCbits = 0x018
+.................... } LATC;
 .................... #byte LATC = 0x018
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR0 {
 ....................    unsigned int TMR0L:8;
-.................... } TMR0LBITS;
-.................... TMR0LBITS TMR0Lbits;
-.................... #byte TMR0Lbits = 0x01C
-.................... #byte TMR0L = 0x01C
+.................... } TMR0;
+.................... #byte TMR0 = 0x01C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR0H {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR0H:8;
@@ -374,71 +356,50 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T0PR:8;
 ....................       };
 ....................    };
-.................... } TMR0HBITS;
-.................... TMR0HBITS TMR0Hbits;
-.................... #byte TMR0Hbits = 0x01D
+.................... } TMR0H;
 .................... #byte TMR0H = 0x01D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T0CON0 {
 ....................    unsigned int T0OUTPS:4;
 ....................    unsigned int T016BIT:1;
 ....................    unsigned int T0OUT:1;
 ....................    unsigned int T0OE:1;
 ....................    unsigned int T0EN:1;
-.................... } T0CON0BITS;
-.................... T0CON0BITS T0CON0bits;
-.................... #byte T0CON0bits = 0x01E
+.................... } T0CON0;
 .................... #byte T0CON0 = 0x01E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T0CON1 {
 ....................    unsigned int T0CKPS:4;
 ....................    unsigned int T0ASYNC:1;
 ....................    unsigned int T0CS:3;
-.................... } T0CON1BITS;
-.................... T0CON1BITS T0CON1bits;
-.................... #byte T0CON1bits = 0x01F
+.................... } T0CON1;
 .................... #byte T0CON1 = 0x01F
 .................... 
 .................... #word ADRES = 0x08C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADPREV {
 ....................    unsigned int ADPREV:8;
-.................... } ADPREVLBITS;
-.................... ADPREVLBITS ADPREVLbits;
-.................... #byte ADPREVLbits = 0x08E
-.................... #byte ADPREVL = 0x08E
+.................... } ADPREV;
+.................... #byte ADPREV = 0x08E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADPREVH {
 ....................    unsigned int ADPREV8:2;
 ....................    unsigned int ADPREV1:6;
-.................... } ADPREVHBITS;
-.................... ADPREVHBITS ADPREVHbits;
-.................... #byte ADPREVHbits = 0x08F
+.................... } ADPREVH;
 .................... #byte ADPREVH = 0x08F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADACC {
 ....................    unsigned int ADACC:8;
-.................... } ADACCLBITS;
-.................... ADACCLBITS ADACCLbits;
-.................... #byte ADACCLbits = 0x090
-.................... #byte ADACCL = 0x090
+.................... } ADACC;
+.................... #byte ADACC = 0x090
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADACCH {
 ....................    unsigned int ADACC8:2;
 ....................    unsigned int ADACC1:6;
-.................... } ADACCHBITS;
-.................... ADACCHBITS ADACCHbits;
-.................... #byte ADACCHbits = 0x091
+.................... } ADACCH;
 .................... #byte ADACCH = 0x091
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADCON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int ADGO:1;
@@ -462,190 +423,131 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int GO:1;
 ....................       };
 ....................    };
-.................... } ADCON0BITS;
-.................... ADCON0BITS ADCON0bits;
-.................... #byte ADCON0bits = 0x093
+.................... } ADCON0;
 .................... #byte ADCON0 = 0x093
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADCON1 {
 ....................    unsigned int ADDSEN:1;
 ....................    unsigned int :4;
 ....................    unsigned int ADGPOL:1;
 ....................    unsigned int ADIPEN:1;
 ....................    unsigned int ADPPOL:1;
-.................... } ADCON1BITS;
-.................... ADCON1BITS ADCON1bits;
-.................... #byte ADCON1bits = 0x094
+.................... } ADCON1;
 .................... #byte ADCON1 = 0x094
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADCON2 {
 ....................    unsigned int ADMD:3;
 ....................    unsigned int ADACLR:1;
 ....................    unsigned int ADCRS:3;
 ....................    unsigned int ADPSIS:1;
-.................... } ADCON2BITS;
-.................... ADCON2BITS ADCON2bits;
-.................... #byte ADCON2bits = 0x095
+.................... } ADCON2;
 .................... #byte ADCON2 = 0x095
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADCON3 {
 ....................    unsigned int ADTMD:3;
 ....................    unsigned int ADSOI:1;
 ....................    unsigned int ADCALC:3;
-.................... } ADCON3BITS;
-.................... ADCON3BITS ADCON3bits;
-.................... #byte ADCON3bits = 0x096
+.................... } ADCON3;
 .................... #byte ADCON3 = 0x096
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADSTAT {
 ....................    unsigned int ADSTAT:3;
 ....................    unsigned int ADMACT:1;
 ....................    unsigned int ADMATH:1;
 ....................    unsigned int ADLTHR:1;
 ....................    unsigned int ADUTHR:1;
 ....................    unsigned int ADAOV:1;
-.................... } ADSTATBITS;
-.................... ADSTATBITS ADSTATbits;
-.................... #byte ADSTATbits = 0x097
+.................... } ADSTAT;
 .................... #byte ADSTAT = 0x097
 .................... 
 .................... #byte ADCLK = 0x098
 .................... 
 .................... #byte ADACT = 0x099
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADREF {
 ....................    unsigned int ADPREF:2;
 ....................    unsigned int :2;
 ....................    unsigned int ADNREF:1;
-.................... } ADREFBITS;
-.................... ADREFBITS ADREFbits;
-.................... #byte ADREFbits = 0x09A
+.................... } ADREF;
 .................... #byte ADREF = 0x09A
 .................... 
 .................... #byte ADCAP = 0x09B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADPRE {
 ....................    unsigned int ADPRE:8;
-.................... } ADPREBITS;
-.................... ADPREBITS ADPREbits;
-.................... #byte ADPREbits = 0x09C
+.................... } ADPRE;
 .................... #byte ADPRE = 0x09C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADACQ {
 ....................    unsigned int ADACQ:8;
-.................... } ADACQBITS;
-.................... ADACQBITS ADACQbits;
-.................... #byte ADACQbits = 0x09D
+.................... } ADACQ;
 .................... #byte ADACQ = 0x09D
 .................... 
 .................... #byte ADPCH = 0x09E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADCNT {
 ....................    unsigned int ADCNT:8;
-.................... } ADCNTBITS;
-.................... ADCNTBITS ADCNTbits;
-.................... #byte ADCNTbits = 0x10C
+.................... } ADCNT;
 .................... #byte ADCNT = 0x10C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADRPT {
 ....................    unsigned int ADRPT:8;
-.................... } ADRPTBITS;
-.................... ADRPTBITS ADRPTbits;
-.................... #byte ADRPTbits = 0x10D
+.................... } ADRPT;
 .................... #byte ADRPT = 0x10D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADLTH {
 ....................    unsigned int ADLTH:8;
-.................... } ADLTHLBITS;
-.................... ADLTHLBITS ADLTHLbits;
-.................... #byte ADLTHLbits = 0x10E
-.................... #byte ADLTHL = 0x10E
+.................... } ADLTH;
+.................... #byte ADLTH = 0x10E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADLTHH {
 ....................    unsigned int ADLTH8:2;
 ....................    unsigned int ADLTH1:6;
-.................... } ADLTHHBITS;
-.................... ADLTHHBITS ADLTHHbits;
-.................... #byte ADLTHHbits = 0x10F
+.................... } ADLTHH;
 .................... #byte ADLTHH = 0x10F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADUTH {
 ....................    unsigned int ADUTH:8;
-.................... } ADUTHLBITS;
-.................... ADUTHLBITS ADUTHLbits;
-.................... #byte ADUTHLbits = 0x110
-.................... #byte ADUTHL = 0x110
+.................... } ADUTH;
+.................... #byte ADUTH = 0x110
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADUTHH {
 ....................    unsigned int ADUTH8:2;
 ....................    unsigned int ADUTH1:6;
-.................... } ADUTHHBITS;
-.................... ADUTHHBITS ADUTHHbits;
-.................... #byte ADUTHHbits = 0x111
+.................... } ADUTHH;
 .................... #byte ADUTHH = 0x111
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADSTPT {
 ....................    unsigned int ADSTPT:8;
-.................... } ADSTPTLBITS;
-.................... ADSTPTLBITS ADSTPTLbits;
-.................... #byte ADSTPTLbits = 0x112
-.................... #byte ADSTPTL = 0x112
+.................... } ADSTPT;
+.................... #byte ADSTPT = 0x112
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADSTPTH {
 ....................    unsigned int ADSTPT8:2;
 ....................    unsigned int ADSTPT1:6;
-.................... } ADSTPTHBITS;
-.................... ADSTPTHBITS ADSTPTHbits;
-.................... #byte ADSTPTHbits = 0x113
+.................... } ADSTPTH;
 .................... #byte ADSTPTH = 0x113
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADFLTR {
 ....................    unsigned int ADFLTR:8;
-.................... } ADFLTRLBITS;
-.................... ADFLTRLBITS ADFLTRLbits;
-.................... #byte ADFLTRLbits = 0x114
-.................... #byte ADFLTRL = 0x114
+.................... } ADFLTR;
+.................... #byte ADFLTR = 0x114
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADFLTRH {
 ....................    unsigned int ADFLTR8:2;
 ....................    unsigned int ADFLTR1:6;
-.................... } ADFLTRHBITS;
-.................... ADFLTRHBITS ADFLTRHbits;
-.................... #byte ADFLTRHbits = 0x115
+.................... } ADFLTRH;
 .................... #byte ADFLTRH = 0x115
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADERR {
 ....................    unsigned int ADERR:8;
-.................... } ADERRLBITS;
-.................... ADERRLBITS ADERRLbits;
-.................... #byte ADERRLbits = 0x116
-.................... #byte ADERRL = 0x116
+.................... } ADERR;
+.................... #byte ADERR = 0x116
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ADERRH {
 ....................    unsigned int ADERR8:2;
 ....................    unsigned int ADERR1:6;
-.................... } ADERRHBITS;
-.................... ADERRHBITS ADERRHbits;
-.................... #byte ADERRHbits = 0x117
+.................... } ADERRH;
 .................... #byte ADERRH = 0x117
 .................... 
 .................... #byte RC1REG = 0x119
@@ -654,8 +556,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #word SP1BRG = 0x11B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct RC1STA {
 ....................    unsigned int RX9D:1;
 ....................    unsigned int OERR:1;
 ....................    unsigned int FERR:1;
@@ -664,13 +565,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int SREN:1;
 ....................    unsigned int RX9:1;
 ....................    unsigned int SPEN:1;
-.................... } RC1STABITS;
-.................... RC1STABITS RC1STAbits;
-.................... #byte RC1STAbits = 0x11D
+.................... } RC1STA;
 .................... #byte RC1STA = 0x11D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TX1STA {
 ....................    unsigned int TX9D:1;
 ....................    unsigned int TRMT:1;
 ....................    unsigned int BRGH:1;
@@ -679,13 +577,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int TXEN:1;
 ....................    unsigned int TX9:1;
 ....................    unsigned int CSRC:1;
-.................... } TX1STABITS;
-.................... TX1STABITS TX1STAbits;
-.................... #byte TX1STAbits = 0x11E
+.................... } TX1STA;
 .................... #byte TX1STA = 0x11E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct BAUD1CON {
 ....................    unsigned int ABDEN:1;
 ....................    unsigned int WUE:1;
 ....................    unsigned int :1;
@@ -694,33 +589,24 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int :1;
 ....................    unsigned int RCIDL:1;
 ....................    unsigned int ABDOVF:1;
-.................... } BAUD1CONBITS;
-.................... BAUD1CONBITS BAUD1CONbits;
-.................... #byte BAUD1CONbits = 0x11F
+.................... } BAUD1CON;
 .................... #byte BAUD1CON = 0x11F
 .................... 
 .................... #byte SSP1BUF = 0x18C
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP1ADD {
 ....................    unsigned int MSK:8;
-.................... } SSP1ADDBITS;
-.................... SSP1ADDBITS SSP1ADDbits;
-.................... #byte SSP1ADDbits = 0x18D
+.................... } SSP1ADD;
 .................... #byte SSP1ADD = 0x18D
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP1MSK {
 ....................    unsigned int MSK:8;
-.................... } SSP1MSKBITS;
-.................... SSP1MSKBITS SSP1MSKbits;
-.................... #byte SSP1MSKbits = 0x18E
+.................... } SSP1MSK;
 .................... #byte SSP1MSK = 0x18E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP1STAT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int BF:1;
@@ -801,25 +687,19 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int A2:1;
 ....................       };
 ....................    };
-.................... } SSP1STATBITS;
-.................... SSP1STATBITS SSP1STATbits;
-.................... #byte SSP1STATbits = 0x18F
+.................... } SSP1STAT;
 .................... #byte SSP1STAT = 0x18F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP1CON1 {
 ....................    unsigned int SSPM:4;
 ....................    unsigned int CKP:1;
 ....................    unsigned int SSPEN:1;
 ....................    unsigned int SSPOV:1;
 ....................    unsigned int WCOL:1;
-.................... } SSP1CON1BITS;
-.................... SSP1CON1BITS SSP1CON1bits;
-.................... #byte SSP1CON1bits = 0x190
+.................... } SSP1CON1;
 .................... #byte SSP1CON1 = 0x190
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP1CON2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int SEN:1;
@@ -846,13 +726,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int GCEN1:1;
 ....................       };
 ....................    };
-.................... } SSP1CON2BITS;
-.................... SSP1CON2BITS SSP1CON2bits;
-.................... #byte SSP1CON2bits = 0x191
+.................... } SSP1CON2;
 .................... #byte SSP1CON2 = 0x191
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP1CON3 {
 ....................    unsigned int DHEN:1;
 ....................    unsigned int AHEN:1;
 ....................    unsigned int SBCDE:1;
@@ -861,16 +738,13 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int SCIE:1;
 ....................    unsigned int PCIE:1;
 ....................    unsigned int ACKTIM:1;
-.................... } SSP1CON3BITS;
-.................... SSP1CON3BITS SSP1CON3bits;
-.................... #byte SSP1CON3bits = 0x192
+.................... } SSP1CON3;
 .................... #byte SSP1CON3 = 0x192
 .................... 
 .................... #byte SSP2BUF = 0x196
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP2ADD {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MSK:8;
@@ -887,22 +761,16 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int MSK72:1;
 ....................       };
 ....................    };
-.................... } SSP2ADDBITS;
-.................... SSP2ADDBITS SSP2ADDbits;
-.................... #byte SSP2ADDbits = 0x197
+.................... } SSP2ADD;
 .................... #byte SSP2ADD = 0x197
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP2MSK {
 ....................    unsigned int MSK:8;
-.................... } SSP2MSKBITS;
-.................... SSP2MSKBITS SSP2MSKbits;
-.................... #byte SSP2MSKbits = 0x198
+.................... } SSP2MSK;
 .................... #byte SSP2MSK = 0x198
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP2STAT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int BF:1;
@@ -1029,13 +897,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int ADDRESS2:1;
 ....................       };
 ....................    };
-.................... } SSP2STATBITS;
-.................... SSP2STATBITS SSP2STATbits;
-.................... #byte SSP2STATbits = 0x199
+.................... } SSP2STAT;
 .................... #byte SSP2STAT = 0x199
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP2CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int SSPM:4;
@@ -1056,13 +921,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int WCOL2:1;
 ....................       };
 ....................    };
-.................... } SSP2CON1BITS;
-.................... SSP2CON1BITS SSP2CON1bits;
-.................... #byte SSP2CON1bits = 0x19A
+.................... } SSP2CON1;
 .................... #byte SSP2CON1 = 0x19A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP2CON2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int SEN:1;
@@ -1111,13 +973,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int ADMSK52:1;
 ....................       };
 ....................    };
-.................... } SSP2CON2BITS;
-.................... SSP2CON2BITS SSP2CON2bits;
-.................... #byte SSP2CON2bits = 0x19B
+.................... } SSP2CON2;
 .................... #byte SSP2CON2 = 0x19B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SSP2CON3 {
 ....................    unsigned int DHEN:1;
 ....................    unsigned int AHEN:1;
 ....................    unsigned int SBCDE:1;
@@ -1126,13 +985,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int SCIE:1;
 ....................    unsigned int PCIE:1;
 ....................    unsigned int ACKTIM:1;
-.................... } SSP2CON3BITS;
-.................... SSP2CON3BITS SSP2CON3bits;
-.................... #byte SSP2CON3bits = 0x19C
+.................... } SSP2CON3;
 .................... #byte SSP2CON3 = 0x19C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR1L {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR1L:8;
@@ -1161,13 +1017,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CAL71:1;
 ....................       };
 ....................    };
-.................... } TMR1LBITS;
-.................... TMR1LBITS TMR1Lbits;
-.................... #byte TMR1Lbits = 0x20C
-.................... #byte TMR1L = 0x20C
+.................... } TMR1;
+.................... #byte TMR1 = 0x20C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR1H {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR1H:8;
@@ -1184,13 +1037,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int TMR11:6;
 ....................       };
 ....................    };
-.................... } TMR1HBITS;
-.................... TMR1HBITS TMR1Hbits;
-.................... #byte TMR1Hbits = 0x20D
+.................... } TMR1H;
 .................... #byte TMR1H = 0x20D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T1CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int ON:1;
@@ -1208,13 +1058,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T1CKPS:2;
 ....................       };
 ....................    };
-.................... } T1CONBITS;
-.................... T1CONBITS T1CONbits;
-.................... #byte T1CONbits = 0x20E
+.................... } T1CON;
 .................... #byte T1CON = 0x20E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T1GCON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :2;
@@ -1236,17 +1083,14 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T1GE:1;
 ....................       };
 ....................    };
-.................... } T1GCONBITS;
-.................... T1GCONBITS T1GCONbits;
-.................... #byte T1GCONbits = 0x20F
+.................... } T1GCON;
 .................... #byte T1GCON = 0x20F
 .................... 
 .................... #byte T1GATE = 0x210
 .................... 
 .................... #byte T1CLK = 0x211
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR3L {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR3L:8;
@@ -1268,13 +1112,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CAL63:1;
 ....................       };
 ....................    };
-.................... } TMR3LBITS;
-.................... TMR3LBITS TMR3Lbits;
-.................... #byte TMR3Lbits = 0x212
-.................... #byte TMR3L = 0x212
+.................... } TMR3;
+.................... #byte TMR3 = 0x212
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR3H {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR3H:8;
@@ -1285,13 +1126,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int TMR31:6;
 ....................       };
 ....................    };
-.................... } TMR3HBITS;
-.................... TMR3HBITS TMR3Hbits;
-.................... #byte TMR3Hbits = 0x213
+.................... } TMR3H;
 .................... #byte TMR3H = 0x213
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T3CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int ON:1;
@@ -1316,13 +1154,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int RD163:1;
 ....................       };
 ....................    };
-.................... } T3CONBITS;
-.................... T3CONBITS T3CONbits;
-.................... #byte T3CONbits = 0x214
+.................... } T3CON;
 .................... #byte T3CON = 0x214
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T3GCON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :2;
@@ -1344,17 +1179,14 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T3GE:1;
 ....................       };
 ....................    };
-.................... } T3GCONBITS;
-.................... T3GCONBITS T3GCONbits;
-.................... #byte T3GCONbits = 0x215
+.................... } T3GCON;
 .................... #byte T3GCON = 0x215
 .................... 
 .................... #byte T3GATE = 0x216
 .................... 
 .................... #byte T3CLK = 0x217
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR5L {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR5L:8;
@@ -1377,13 +1209,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CAL75:1;
 ....................       };
 ....................    };
-.................... } TMR5LBITS;
-.................... TMR5LBITS TMR5Lbits;
-.................... #byte TMR5Lbits = 0x218
-.................... #byte TMR5L = 0x218
+.................... } TMR5;
+.................... #byte TMR5 = 0x218
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct TMR5H {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR5H:8;
@@ -1394,13 +1223,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int TMR51:6;
 ....................       };
 ....................    };
-.................... } TMR5HBITS;
-.................... TMR5HBITS TMR5Hbits;
-.................... #byte TMR5Hbits = 0x219
+.................... } TMR5H;
 .................... #byte TMR5H = 0x219
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T5CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int ON:1;
@@ -1425,13 +1251,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int RD165:1;
 ....................       };
 ....................    };
-.................... } T5CONBITS;
-.................... T5CONBITS T5CONbits;
-.................... #byte T5CONbits = 0x21A
+.................... } T5CON;
 .................... #byte T5CON = 0x21A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T5GCON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :2;
@@ -1453,42 +1276,33 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T5GE:1;
 ....................       };
 ....................    };
-.................... } T5GCONBITS;
-.................... T5GCONBITS T5GCONbits;
-.................... #byte T5GCONbits = 0x21B
+.................... } T5GCON;
 .................... #byte T5GCON = 0x21B
 .................... 
 .................... #byte T5GATE = 0x21C
 .................... 
 .................... #byte T5CLK = 0x21D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCPTMRS0 {
 ....................    unsigned int C1TSEL:2;
 ....................    unsigned int C2TSEL:2;
 ....................    unsigned int C3TSEL:2;
 ....................    unsigned int C4TSEL:2;
-.................... } CCPTMRS0BITS;
-.................... CCPTMRS0BITS CCPTMRS0bits;
-.................... #byte CCPTMRS0bits = 0x21E
+.................... } CCPTMRS0;
 .................... #byte CCPTMRS0 = 0x21E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCPTMRS1 {
 ....................    unsigned int C5TSEL:2;
 ....................    unsigned int P6TSEL:2;
 ....................    unsigned int P7TSEL:2;
-.................... } CCPTMRS1BITS;
-.................... CCPTMRS1BITS CCPTMRS1bits;
-.................... #byte CCPTMRS1bits = 0x21F
+.................... } CCPTMRS1;
 .................... #byte CCPTMRS1 = 0x21F
 .................... 
 .................... #byte T2TMR = 0x28C
 .................... 
 .................... #byte T2PR = 0x28D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T2CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int OUTPS:4;
@@ -1509,13 +1323,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int TMR2ON:1;
 ....................       };
 ....................    };
-.................... } T2CONBITS;
-.................... T2CONBITS T2CONbits;
-.................... #byte T2CONbits = 0x28E
+.................... } T2CON;
 .................... #byte T2CON = 0x28E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T2HLT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:5;
@@ -1531,9 +1342,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T2PSYNC:1;
 ....................       };
 ....................    };
-.................... } T2HLTBITS;
-.................... T2HLTBITS T2HLTbits;
-.................... #byte T2HLTbits = 0x28F
+.................... } T2HLT;
 .................... #byte T2HLT = 0x28F
 .................... 
 .................... #byte T2CLK = 0x290
@@ -1544,8 +1353,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte T4PR = 0x293
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T4CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int OUTPS:4;
@@ -1566,13 +1374,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int TMR4ON:1;
 ....................       };
 ....................    };
-.................... } T4CONBITS;
-.................... T4CONBITS T4CONbits;
-.................... #byte T4CONbits = 0x294
+.................... } T4CON;
 .................... #byte T4CON = 0x294
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T4HLT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:5;
@@ -1588,9 +1393,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T4PSYNC:1;
 ....................       };
 ....................    };
-.................... } T4HLTBITS;
-.................... T4HLTBITS T4HLTbits;
-.................... #byte T4HLTbits = 0x295
+.................... } T4HLT;
 .................... #byte T4HLT = 0x295
 .................... 
 .................... #byte T4CLK = 0x296
@@ -1601,8 +1404,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte T6PR = 0x299
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T6CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int OUTPS:4;
@@ -1623,13 +1425,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int TMR6ON:1;
 ....................       };
 ....................    };
-.................... } T6CONBITS;
-.................... T6CONBITS T6CONbits;
-.................... #byte T6CONbits = 0x29A
+.................... } T6CON;
 .................... #byte T6CON = 0x29A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct T6HLT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:5;
@@ -1645,9 +1444,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int T6PSYNC:1;
 ....................       };
 ....................    };
-.................... } T6HLTBITS;
-.................... T6HLTBITS T6HLTbits;
-.................... #byte T6HLTbits = 0x29B
+.................... } T6HLT;
 .................... #byte T6HLT = 0x29B
 .................... 
 .................... #byte T6CLK = 0x29C
@@ -1656,8 +1453,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #word CCPR1 = 0x30C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP1CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:4;
@@ -1682,14 +1478,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int P1M:2;
 ....................       };
 ....................    };
-.................... } CCP1CONBITS;
-.................... CCP1CONBITS CCP1CONbits;
-.................... #byte CCP1CONbits = 0x30E
+.................... } CCP1CON;
 .................... #byte CCP1CON = 0x30E
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP1CAP {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CTS:8;
@@ -1699,15 +1492,12 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CCP1CTS:8;
 ....................       };
 ....................    };
-.................... } CCP1CAPBITS;
-.................... CCP1CAPBITS CCP1CAPbits;
-.................... #byte CCP1CAPbits = 0x30F
+.................... } CCP1CAP;
 .................... #byte CCP1CAP = 0x30F
 .................... 
 .................... #word CCPR2 = 0x310
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP2CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:4;
@@ -1732,14 +1522,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int P2M:2;
 ....................       };
 ....................    };
-.................... } CCP2CONBITS;
-.................... CCP2CONBITS CCP2CONbits;
-.................... #byte CCP2CONbits = 0x312
+.................... } CCP2CON;
 .................... #byte CCP2CON = 0x312
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP2CAP {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CTS:8;
@@ -1749,15 +1536,12 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CCP2CTS:8;
 ....................       };
 ....................    };
-.................... } CCP2CAPBITS;
-.................... CCP2CAPBITS CCP2CAPbits;
-.................... #byte CCP2CAPbits = 0x313
+.................... } CCP2CAP;
 .................... #byte CCP2CAP = 0x313
 .................... 
 .................... #word CCPR3 = 0x314
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP3CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:4;
@@ -1782,14 +1566,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int P3M:2;
 ....................       };
 ....................    };
-.................... } CCP3CONBITS;
-.................... CCP3CONBITS CCP3CONbits;
-.................... #byte CCP3CONbits = 0x316
+.................... } CCP3CON;
 .................... #byte CCP3CON = 0x316
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP3CAP {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CTS:8;
@@ -1799,15 +1580,12 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CCP3CTS:8;
 ....................       };
 ....................    };
-.................... } CCP3CAPBITS;
-.................... CCP3CAPBITS CCP3CAPbits;
-.................... #byte CCP3CAPbits = 0x317
+.................... } CCP3CAP;
 .................... #byte CCP3CAP = 0x317
 .................... 
 .................... #word CCPR4 = 0x318
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP4CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:4;
@@ -1832,14 +1610,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int P4M:2;
 ....................       };
 ....................    };
-.................... } CCP4CONBITS;
-.................... CCP4CONBITS CCP4CONbits;
-.................... #byte CCP4CONbits = 0x31A
+.................... } CCP4CON;
 .................... #byte CCP4CON = 0x31A
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP4CAP {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CTS:8;
@@ -1849,15 +1624,12 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CCP4CTS:8;
 ....................       };
 ....................    };
-.................... } CCP4CAPBITS;
-.................... CCP4CAPBITS CCP4CAPbits;
-.................... #byte CCP4CAPbits = 0x31B
+.................... } CCP4CAP;
 .................... #byte CCP4CAP = 0x31B
 .................... 
 .................... #word CCPR5 = 0x31C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP5CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:4;
@@ -1882,13 +1654,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int P5M:2;
 ....................       };
 ....................    };
-.................... } CCP5CONBITS;
-.................... CCP5CONBITS CCP5CONbits;
-.................... #byte CCP5CONbits = 0x31E
+.................... } CCP5CON;
 .................... #byte CCP5CON = 0x31E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCP5CAP {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CTS:8;
@@ -1898,13 +1667,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CCP5CTS:8;
 ....................       };
 ....................    };
-.................... } CCP5CAPBITS;
-.................... CCP5CAPBITS CCP5CAPbits;
-.................... #byte CCP5CAPbits = 0x31F
+.................... } CCP5CAP;
 .................... #byte CCP5CAP = 0x31F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PWM6DCL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :6;
@@ -1923,13 +1689,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int PWMPW:2;
 ....................       };
 ....................    };
-.................... } PWM6DCLBITS;
-.................... PWM6DCLBITS PWM6DCLbits;
-.................... #byte PWM6DCLbits = 0x38C
-.................... #byte PWM6DCL = 0x38C
+.................... } PWM6DC;
+.................... #byte PWM6DC = 0x38C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PWM6DCH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int DC2:8;
@@ -1945,13 +1708,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int PWMPW2:8;
 ....................       };
 ....................    };
-.................... } PWM6DCHBITS;
-.................... PWM6DCHBITS PWM6DCHbits;
-.................... #byte PWM6DCHbits = 0x38D
+.................... } PWM6DCH;
 .................... #byte PWM6DCH = 0x38D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PWM6CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :4;
@@ -1969,13 +1729,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int PWM6EN:1;
 ....................       };
 ....................    };
-.................... } PWM6CONBITS;
-.................... PWM6CONBITS PWM6CONbits;
-.................... #byte PWM6CONbits = 0x38E
+.................... } PWM6CON;
 .................... #byte PWM6CON = 0x38E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PWM7DCL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :6;
@@ -1994,13 +1751,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int PWMPW:2;
 ....................       };
 ....................    };
-.................... } PWM7DCLBITS;
-.................... PWM7DCLBITS PWM7DCLbits;
-.................... #byte PWM7DCLbits = 0x390
-.................... #byte PWM7DCL = 0x390
+.................... } PWM7DC;
+.................... #byte PWM7DC = 0x390
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PWM7DCH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int DC2:8;
@@ -2016,13 +1770,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int PWMPW2:8;
 ....................       };
 ....................    };
-.................... } PWM7DCHBITS;
-.................... PWM7DCHBITS PWM7DCHbits;
-.................... #byte PWM7DCHbits = 0x391
+.................... } PWM7DCH;
 .................... #byte PWM7DCH = 0x391
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PWM7CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :4;
@@ -2040,14 +1791,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int PWM7EN:1;
 ....................       };
 ....................    };
-.................... } PWM7CONBITS;
-.................... PWM7CONBITS PWM7CONbits;
-.................... #byte PWM7CONbits = 0x392
+.................... } PWM7CON;
 .................... #byte PWM7CON = 0x392
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SCANLADRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LADR:8;
@@ -2057,14 +1805,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SCANLADR:8;
 ....................       };
 ....................    };
-.................... } SCANLADRLBITS;
-.................... SCANLADRLBITS SCANLADRLbits;
-.................... #byte SCANLADRLbits = 0x40C
-.................... #byte SCANLADRL = 0x40C
+.................... } SCANLADR;
+.................... #byte SCANLADR = 0x40C
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SCANLADRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LADR8:2;
@@ -2076,14 +1821,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SCANLADR1:6;
 ....................       };
 ....................    };
-.................... } SCANLADRHBITS;
-.................... SCANLADRHBITS SCANLADRHbits;
-.................... #byte SCANLADRHbits = 0x40D
+.................... } SCANLADRH;
 .................... #byte SCANLADRH = 0x40D
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SCANHADRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int HADR:8;
@@ -2093,14 +1835,11 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SCANHADR:8;
 ....................       };
 ....................    };
-.................... } SCANHADRLBITS;
-.................... SCANHADRLBITS SCANHADRLbits;
-.................... #byte SCANHADRLbits = 0x40E
-.................... #byte SCANHADRL = 0x40E
+.................... } SCANHADR;
+.................... #byte SCANHADR = 0x40E
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SCANHADRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int HADR8:2;
@@ -2112,13 +1851,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SCANHADR1:6;
 ....................       };
 ....................    };
-.................... } SCANHADRHBITS;
-.................... SCANHADRHBITS SCANHADRHbits;
-.................... #byte SCANHADRHbits = 0x40F
+.................... } SCANHADRH;
 .................... #byte SCANHADRH = 0x40F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SCANCON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:2;
@@ -2147,84 +1883,57 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int DABORT:1;
 ....................       };
 ....................    };
-.................... } SCANCON0BITS;
-.................... SCANCON0BITS SCANCON0bits;
-.................... #byte SCANCON0bits = 0x410
+.................... } SCANCON0;
 .................... #byte SCANCON0 = 0x410
 .................... 
 .................... #byte SCANTRIG = 0x411
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCDAT {
 ....................    unsigned int DATA:8;
-.................... } CRCDATLBITS;
-.................... CRCDATLBITS CRCDATLbits;
-.................... #byte CRCDATLbits = 0x416
-.................... #byte CRCDATL = 0x416
+.................... } CRCDAT;
+.................... #byte CRCDAT = 0x416
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCDATH {
 ....................    unsigned int DATA8:2;
 ....................    unsigned int DATA1:6;
-.................... } CRCDATHBITS;
-.................... CRCDATHBITS CRCDATHbits;
-.................... #byte CRCDATHbits = 0x417
+.................... } CRCDATH;
 .................... #byte CRCDATH = 0x417
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCACC {
 ....................    unsigned int ACC:8;
-.................... } CRCACCLBITS;
-.................... CRCACCLBITS CRCACCLbits;
-.................... #byte CRCACCLbits = 0x418
-.................... #byte CRCACCL = 0x418
+.................... } CRCACC;
+.................... #byte CRCACC = 0x418
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCACCH {
 ....................    unsigned int ACC8:2;
 ....................    unsigned int ACC1:6;
-.................... } CRCACCHBITS;
-.................... CRCACCHBITS CRCACCHbits;
-.................... #byte CRCACCHbits = 0x419
+.................... } CRCACCH;
 .................... #byte CRCACCH = 0x419
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCSHIFT {
 ....................    unsigned int SHFT:8;
-.................... } CRCSHIFTLBITS;
-.................... CRCSHIFTLBITS CRCSHIFTLbits;
-.................... #byte CRCSHIFTLbits = 0x41A
-.................... #byte CRCSHIFTL = 0x41A
+.................... } CRCSHIFT;
+.................... #byte CRCSHIFT = 0x41A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCSHIFTH {
 ....................    unsigned int SHFT8:2;
 ....................    unsigned int SHFT1:6;
-.................... } CRCSHIFTHBITS;
-.................... CRCSHIFTHBITS CRCSHIFTHbits;
-.................... #byte CRCSHIFTHbits = 0x41B
+.................... } CRCSHIFTH;
 .................... #byte CRCSHIFTH = 0x41B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCXOR {
 ....................    unsigned int :1;
 ....................    unsigned int X1:7;
-.................... } CRCXORLBITS;
-.................... CRCXORLBITS CRCXORLbits;
-.................... #byte CRCXORLbits = 0x41C
-.................... #byte CRCXORL = 0x41C
+.................... } CRCXOR;
+.................... #byte CRCXOR = 0x41C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCXORH {
 ....................    unsigned int X8:2;
 ....................    unsigned int X1:6;
-.................... } CRCXORHBITS;
-.................... CRCXORHBITS CRCXORHbits;
-.................... #byte CRCXORHbits = 0x41D
+.................... } CRCXORH;
 .................... #byte CRCXORH = 0x41D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCCON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int FULL:1;
@@ -2241,22 +1950,16 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CRCEN:1;
 ....................       };
 ....................    };
-.................... } CRCCON0BITS;
-.................... CRCCON0BITS CRCCON0bits;
-.................... #byte CRCCON0bits = 0x41E
+.................... } CRCCON0;
 .................... #byte CRCCON0 = 0x41E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CRCCON1 {
 ....................    unsigned int PLEN:4;
 ....................    unsigned int DLEN:4;
-.................... } CRCCON1BITS;
-.................... CRCCON1BITS CRCCON1bits;
-.................... #byte CRCCON1bits = 0x41F
+.................... } CRCCON1;
 .................... #byte CRCCON1 = 0x41F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1TMRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR:8;
@@ -2266,13 +1969,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1TMR:8;
 ....................       };
 ....................    };
-.................... } SMT1TMRLBITS;
-.................... SMT1TMRLBITS SMT1TMRLbits;
-.................... #byte SMT1TMRLbits = 0x48C
-.................... #byte SMT1TMRL = 0x48C
+.................... } SMT1TMR;
+.................... #byte SMT1TMR = 0x48C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1TMRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR8:2;
@@ -2284,13 +1984,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1TMR1:6;
 ....................       };
 ....................    };
-.................... } SMT1TMRHBITS;
-.................... SMT1TMRHBITS SMT1TMRHbits;
-.................... #byte SMT1TMRHbits = 0x48D
+.................... } SMT1TMRH;
 .................... #byte SMT1TMRH = 0x48D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1TMRU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR16:4;
@@ -2302,13 +1999,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1TMR2:4;
 ....................       };
 ....................    };
-.................... } SMT1TMRUBITS;
-.................... SMT1TMRUBITS SMT1TMRUbits;
-.................... #byte SMT1TMRUbits = 0x48E
+.................... } SMT1TMRU;
 .................... #byte SMT1TMRU = 0x48E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CPRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPR:8;
@@ -2318,13 +2012,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1CPR:8;
 ....................       };
 ....................    };
-.................... } SMT1CPRLBITS;
-.................... SMT1CPRLBITS SMT1CPRLbits;
-.................... #byte SMT1CPRLbits = 0x48F
-.................... #byte SMT1CPRL = 0x48F
+.................... } SMT1CPR;
+.................... #byte SMT1CPR = 0x48F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CPRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPR8:2;
@@ -2336,13 +2027,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1CPR1:6;
 ....................       };
 ....................    };
-.................... } SMT1CPRHBITS;
-.................... SMT1CPRHBITS SMT1CPRHbits;
-.................... #byte SMT1CPRHbits = 0x490
+.................... } SMT1CPRH;
 .................... #byte SMT1CPRH = 0x490
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CPRU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPR16:4;
@@ -2354,13 +2042,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1CPR2:4;
 ....................       };
 ....................    };
-.................... } SMT1CPRUBITS;
-.................... SMT1CPRUBITS SMT1CPRUbits;
-.................... #byte SMT1CPRUbits = 0x491
+.................... } SMT1CPRU;
 .................... #byte SMT1CPRU = 0x491
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CPWL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPW:8;
@@ -2370,13 +2055,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1CPW:8;
 ....................       };
 ....................    };
-.................... } SMT1CPWLBITS;
-.................... SMT1CPWLBITS SMT1CPWLbits;
-.................... #byte SMT1CPWLbits = 0x492
-.................... #byte SMT1CPWL = 0x492
+.................... } SMT1CPW;
+.................... #byte SMT1CPW = 0x492
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CPWH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPW8:2;
@@ -2388,13 +2070,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1CPW1:6;
 ....................       };
 ....................    };
-.................... } SMT1CPWHBITS;
-.................... SMT1CPWHBITS SMT1CPWHbits;
-.................... #byte SMT1CPWHbits = 0x493
+.................... } SMT1CPWH;
 .................... #byte SMT1CPWH = 0x493
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CPWU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPW16:4;
@@ -2406,13 +2085,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1CPW2:4;
 ....................       };
 ....................    };
-.................... } SMT1CPWUBITS;
-.................... SMT1CPWUBITS SMT1CPWUbits;
-.................... #byte SMT1CPWUbits = 0x494
+.................... } SMT1CPWU;
 .................... #byte SMT1CPWU = 0x494
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1PRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PR:8;
@@ -2422,13 +2098,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1PR:8;
 ....................       };
 ....................    };
-.................... } SMT1PRLBITS;
-.................... SMT1PRLBITS SMT1PRLbits;
-.................... #byte SMT1PRLbits = 0x495
-.................... #byte SMT1PRL = 0x495
+.................... } SMT1PR;
+.................... #byte SMT1PR = 0x495
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1PRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PR8:2;
@@ -2440,13 +2113,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1PR1:6;
 ....................       };
 ....................    };
-.................... } SMT1PRHBITS;
-.................... SMT1PRHBITS SMT1PRHbits;
-.................... #byte SMT1PRHbits = 0x496
+.................... } SMT1PRH;
 .................... #byte SMT1PRH = 0x496
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1PRU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PR16:4;
@@ -2458,13 +2128,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1PR2:4;
 ....................       };
 ....................    };
-.................... } SMT1PRUBITS;
-.................... SMT1PRUBITS SMT1PRUbits;
-.................... #byte SMT1PRUbits = 0x497
+.................... } SMT1PRU;
 .................... #byte SMT1PRU = 0x497
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PS:2;
@@ -2486,13 +2153,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1EN:1;
 ....................       };
 ....................    };
-.................... } SMT1CON0BITS;
-.................... SMT1CON0BITS SMT1CON0bits;
-.................... #byte SMT1CON0bits = 0x498
+.................... } SMT1CON0;
 .................... #byte SMT1CON0 = 0x498
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:4;
@@ -2507,13 +2171,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1GO:1;
 ....................       };
 ....................    };
-.................... } SMT1CON1BITS;
-.................... SMT1CON1BITS SMT1CON1bits;
-.................... #byte SMT1CON1bits = 0x499
+.................... } SMT1CON1;
 .................... #byte SMT1CON1 = 0x499
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT1STAT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int AS:1;
@@ -2542,9 +2203,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT1RST:1;
 ....................       };
 ....................    };
-.................... } SMT1STATBITS;
-.................... SMT1STATBITS SMT1STATbits;
-.................... #byte SMT1STATbits = 0x49A
+.................... } SMT1STAT;
 .................... #byte SMT1STAT = 0x49A
 .................... 
 .................... #byte SMT1CLK = 0x49B
@@ -2553,8 +2212,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte SMT1WIN = 0x49D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2TMRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR:8;
@@ -2564,13 +2222,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2TMR:8;
 ....................       };
 ....................    };
-.................... } SMT2TMRLBITS;
-.................... SMT2TMRLBITS SMT2TMRLbits;
-.................... #byte SMT2TMRLbits = 0x50C
-.................... #byte SMT2TMRL = 0x50C
+.................... } SMT2TMR;
+.................... #byte SMT2TMR = 0x50C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2TMRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR8:2;
@@ -2582,13 +2237,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2TMR1:6;
 ....................       };
 ....................    };
-.................... } SMT2TMRHBITS;
-.................... SMT2TMRHBITS SMT2TMRHbits;
-.................... #byte SMT2TMRHbits = 0x50D
+.................... } SMT2TMRH;
 .................... #byte SMT2TMRH = 0x50D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2TMRU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR16:4;
@@ -2600,13 +2252,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2TMR2:4;
 ....................       };
 ....................    };
-.................... } SMT2TMRUBITS;
-.................... SMT2TMRUBITS SMT2TMRUbits;
-.................... #byte SMT2TMRUbits = 0x50E
+.................... } SMT2TMRU;
 .................... #byte SMT2TMRU = 0x50E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CPRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPR:8;
@@ -2616,13 +2265,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2CPR:8;
 ....................       };
 ....................    };
-.................... } SMT2CPRLBITS;
-.................... SMT2CPRLBITS SMT2CPRLbits;
-.................... #byte SMT2CPRLbits = 0x50F
-.................... #byte SMT2CPRL = 0x50F
+.................... } SMT2CPR;
+.................... #byte SMT2CPR = 0x50F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CPRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPR8:2;
@@ -2634,13 +2280,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2CPR1:6;
 ....................       };
 ....................    };
-.................... } SMT2CPRHBITS;
-.................... SMT2CPRHBITS SMT2CPRHbits;
-.................... #byte SMT2CPRHbits = 0x510
+.................... } SMT2CPRH;
 .................... #byte SMT2CPRH = 0x510
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CPRU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPR16:4;
@@ -2652,13 +2295,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2CPR2:4;
 ....................       };
 ....................    };
-.................... } SMT2CPRUBITS;
-.................... SMT2CPRUBITS SMT2CPRUbits;
-.................... #byte SMT2CPRUbits = 0x511
+.................... } SMT2CPRU;
 .................... #byte SMT2CPRU = 0x511
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CPWL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPW:8;
@@ -2668,13 +2308,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2CPW:8;
 ....................       };
 ....................    };
-.................... } SMT2CPWLBITS;
-.................... SMT2CPWLBITS SMT2CPWLbits;
-.................... #byte SMT2CPWLbits = 0x512
-.................... #byte SMT2CPWL = 0x512
+.................... } SMT2CPW;
+.................... #byte SMT2CPW = 0x512
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CPWH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPW8:2;
@@ -2686,13 +2323,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2CPW1:6;
 ....................       };
 ....................    };
-.................... } SMT2CPWHBITS;
-.................... SMT2CPWHBITS SMT2CPWHbits;
-.................... #byte SMT2CPWHbits = 0x513
+.................... } SMT2CPWH;
 .................... #byte SMT2CPWH = 0x513
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CPWU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CPW16:4;
@@ -2704,13 +2338,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2CPW2:4;
 ....................       };
 ....................    };
-.................... } SMT2CPWUBITS;
-.................... SMT2CPWUBITS SMT2CPWUbits;
-.................... #byte SMT2CPWUbits = 0x514
+.................... } SMT2CPWU;
 .................... #byte SMT2CPWU = 0x514
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2PRL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PR:8;
@@ -2720,13 +2351,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2PR:8;
 ....................       };
 ....................    };
-.................... } SMT2PRLBITS;
-.................... SMT2PRLBITS SMT2PRLbits;
-.................... #byte SMT2PRLbits = 0x515
-.................... #byte SMT2PRL = 0x515
+.................... } SMT2PR;
+.................... #byte SMT2PR = 0x515
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2PRH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PR8:2;
@@ -2738,13 +2366,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2PR1:6;
 ....................       };
 ....................    };
-.................... } SMT2PRHBITS;
-.................... SMT2PRHBITS SMT2PRHbits;
-.................... #byte SMT2PRHbits = 0x516
+.................... } SMT2PRH;
 .................... #byte SMT2PRH = 0x516
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2PRU {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PR16:4;
@@ -2756,13 +2381,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2PR2:4;
 ....................       };
 ....................    };
-.................... } SMT2PRUBITS;
-.................... SMT2PRUBITS SMT2PRUbits;
-.................... #byte SMT2PRUbits = 0x517
+.................... } SMT2PRU;
 .................... #byte SMT2PRU = 0x517
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PS:2;
@@ -2784,13 +2406,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2EN:1;
 ....................       };
 ....................    };
-.................... } SMT2CON0BITS;
-.................... SMT2CON0BITS SMT2CON0bits;
-.................... #byte SMT2CON0bits = 0x518
+.................... } SMT2CON0;
 .................... #byte SMT2CON0 = 0x518
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:4;
@@ -2805,13 +2424,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2GO:1;
 ....................       };
 ....................    };
-.................... } SMT2CON1BITS;
-.................... SMT2CON1BITS SMT2CON1bits;
-.................... #byte SMT2CON1bits = 0x519
+.................... } SMT2CON1;
 .................... #byte SMT2CON1 = 0x519
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SMT2STAT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int AS:1;
@@ -2840,9 +2456,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int SMT2RST:1;
 ....................       };
 ....................    };
-.................... } SMT2STATBITS;
-.................... SMT2STATBITS SMT2STATbits;
-.................... #byte SMT2STATbits = 0x51A
+.................... } SMT2STAT;
 .................... #byte SMT2STAT = 0x51A
 .................... 
 .................... #byte SMT2CLK = 0x51B
@@ -2851,83 +2465,58 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte SMT2WIN = 0x51D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1ACC {
 ....................    unsigned int NCO1ACC:8;
-.................... } NCO1ACCLBITS;
-.................... NCO1ACCLBITS NCO1ACCLbits;
-.................... #byte NCO1ACCLbits = 0x58C
-.................... #byte NCO1ACCL = 0x58C
+.................... } NCO1ACC;
+.................... #byte NCO1ACC = 0x58C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1ACCH {
 ....................    unsigned int NCO1ACC8:2;
 ....................    unsigned int NCO1ACC1:6;
-.................... } NCO1ACCHBITS;
-.................... NCO1ACCHBITS NCO1ACCHbits;
-.................... #byte NCO1ACCHbits = 0x58D
+.................... } NCO1ACCH;
 .................... #byte NCO1ACCH = 0x58D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1ACCU {
 ....................    unsigned int NCO1ACC16:4;
 ....................    unsigned int NCO1ACC2:4;
-.................... } NCO1ACCUBITS;
-.................... NCO1ACCUBITS NCO1ACCUbits;
-.................... #byte NCO1ACCUbits = 0x58E
+.................... } NCO1ACCU;
 .................... #byte NCO1ACCU = 0x58E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1INC {
 ....................    unsigned int NCO1INC:8;
-.................... } NCO1INCLBITS;
-.................... NCO1INCLBITS NCO1INCLbits;
-.................... #byte NCO1INCLbits = 0x58F
-.................... #byte NCO1INCL = 0x58F
+.................... } NCO1INC;
+.................... #byte NCO1INC = 0x58F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1INCH {
 ....................    unsigned int NCO1INC8:2;
 ....................    unsigned int NCO1INC1:6;
-.................... } NCO1INCHBITS;
-.................... NCO1INCHBITS NCO1INCHbits;
-.................... #byte NCO1INCHbits = 0x590
+.................... } NCO1INCH;
 .................... #byte NCO1INCH = 0x590
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1INCU {
 ....................    unsigned int NCO1INC16:4;
 ....................    unsigned int NCO1INC2:4;
-.................... } NCO1INCUBITS;
-.................... NCO1INCUBITS NCO1INCUbits;
-.................... #byte NCO1INCUbits = 0x591
+.................... } NCO1INCU;
 .................... #byte NCO1INCU = 0x591
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1CON {
 ....................    unsigned int N1PFM:1;
 ....................    unsigned int :3;
 ....................    unsigned int N1POL:1;
 ....................    unsigned int N1OUT:1;
 ....................    unsigned int N1OE:1;
 ....................    unsigned int N1EN:1;
-.................... } NCO1CONBITS;
-.................... NCO1CONBITS NCO1CONbits;
-.................... #byte NCO1CONbits = 0x592
+.................... } NCO1CON;
 .................... #byte NCO1CON = 0x592
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NCO1CLK {
 ....................    unsigned int N1CKS:4;
 ....................    unsigned int :1;
 ....................    unsigned int N1PWS:3;
-.................... } NCO1CLKBITS;
-.................... NCO1CLKBITS NCO1CLKbits;
-.................... #byte NCO1CLKbits = 0x593
+.................... } NCO1CLK;
 .................... #byte NCO1CLK = 0x593
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG1CLKCON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CS:1;
@@ -2937,9 +2526,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG1CS:1;
 ....................       };
 ....................    };
-.................... } CWG1CLKCONBITS;
-.................... CWG1CLKCONBITS CWG1CLKCONbits;
-.................... #byte CWG1CLKCONbits = 0x60C
+.................... } CWG1CLKCON;
 .................... #byte CWG1CLKCON = 0x60C
 .................... 
 .................... #byte CWG1ISM = 0x60D
@@ -2948,8 +2535,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte CWG1DBF = 0x60F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG1CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:3;
@@ -2972,13 +2558,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG1EN:1;
 ....................       };
 ....................    };
-.................... } CWG1CON0BITS;
-.................... CWG1CON0BITS CWG1CON0bits;
-.................... #byte CWG1CON0bits = 0x610
+.................... } CWG1CON0;
 .................... #byte CWG1CON0 = 0x610
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG1CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int POLA:1;
@@ -2998,13 +2581,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG1IN:1;
 ....................       };
 ....................    };
-.................... } CWG1CON1BITS;
-.................... CWG1CON1BITS CWG1CON1bits;
-.................... #byte CWG1CON1bits = 0x611
+.................... } CWG1CON1;
 .................... #byte CWG1CON1 = 0x611
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG1AS0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :2;
@@ -3022,13 +2602,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG1SHUTDOWN:1;
 ....................       };
 ....................    };
-.................... } CWG1AS0BITS;
-.................... CWG1AS0BITS CWG1AS0bits;
-.................... #byte CWG1AS0bits = 0x612
+.................... } CWG1AS0;
 .................... #byte CWG1AS0 = 0x612
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG1AS1 {
 ....................    unsigned int AS0E:1;
 ....................    unsigned int AS1E:1;
 ....................    unsigned int AS2E:1;
@@ -3036,13 +2613,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int AS4E:1;
 ....................    unsigned int AS5E:1;
 ....................    unsigned int AS6E:1;
-.................... } CWG1AS1BITS;
-.................... CWG1AS1BITS CWG1AS1bits;
-.................... #byte CWG1AS1bits = 0x613
+.................... } CWG1AS1;
 .................... #byte CWG1AS1 = 0x613
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG1STR {
 ....................    union {
 ....................       struct {
 ....................          unsigned int STRA:1;
@@ -3066,13 +2640,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG1OVRD:1;
 ....................       };
 ....................    };
-.................... } CWG1STRBITS;
-.................... CWG1STRBITS CWG1STRbits;
-.................... #byte CWG1STRbits = 0x614
+.................... } CWG1STR;
 .................... #byte CWG1STR = 0x614
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG2CLKCON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CS:1;
@@ -3082,9 +2653,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG2CS:1;
 ....................       };
 ....................    };
-.................... } CWG2CLKCONBITS;
-.................... CWG2CLKCONBITS CWG2CLKCONbits;
-.................... #byte CWG2CLKCONbits = 0x616
+.................... } CWG2CLKCON;
 .................... #byte CWG2CLKCON = 0x616
 .................... 
 .................... #byte CWG2ISM = 0x617
@@ -3093,8 +2662,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte CWG2DBF = 0x619
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG2CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:3;
@@ -3117,13 +2685,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG2EN:1;
 ....................       };
 ....................    };
-.................... } CWG2CON0BITS;
-.................... CWG2CON0BITS CWG2CON0bits;
-.................... #byte CWG2CON0bits = 0x61A
+.................... } CWG2CON0;
 .................... #byte CWG2CON0 = 0x61A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG2CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int POLA:1;
@@ -3143,13 +2708,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG2IN:1;
 ....................       };
 ....................    };
-.................... } CWG2CON1BITS;
-.................... CWG2CON1BITS CWG2CON1bits;
-.................... #byte CWG2CON1bits = 0x61B
+.................... } CWG2CON1;
 .................... #byte CWG2CON1 = 0x61B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG2AS0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :2;
@@ -3167,13 +2729,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG2SHUTDOWN:1;
 ....................       };
 ....................    };
-.................... } CWG2AS0BITS;
-.................... CWG2AS0BITS CWG2AS0bits;
-.................... #byte CWG2AS0bits = 0x61C
+.................... } CWG2AS0;
 .................... #byte CWG2AS0 = 0x61C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG2AS1 {
 ....................    unsigned int AS0E:1;
 ....................    unsigned int AS1E:1;
 ....................    unsigned int AS2E:1;
@@ -3181,13 +2740,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int AS4E:1;
 ....................    unsigned int AS5E:1;
 ....................    unsigned int AS6E:1;
-.................... } CWG2AS1BITS;
-.................... CWG2AS1BITS CWG2AS1bits;
-.................... #byte CWG2AS1bits = 0x61D
+.................... } CWG2AS1;
 .................... #byte CWG2AS1 = 0x61D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG2STR {
 ....................    union {
 ....................       struct {
 ....................          unsigned int STRA:1;
@@ -3211,13 +2767,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG2OVRD:1;
 ....................       };
 ....................    };
-.................... } CWG2STRBITS;
-.................... CWG2STRBITS CWG2STRbits;
-.................... #byte CWG2STRbits = 0x61E
+.................... } CWG2STR;
 .................... #byte CWG2STR = 0x61E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG3CLKCON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CS:1;
@@ -3227,9 +2780,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG3CS:1;
 ....................       };
 ....................    };
-.................... } CWG3CLKCONBITS;
-.................... CWG3CLKCONBITS CWG3CLKCONbits;
-.................... #byte CWG3CLKCONbits = 0x68C
+.................... } CWG3CLKCON;
 .................... #byte CWG3CLKCON = 0x68C
 .................... 
 .................... #byte CWG3ISM = 0x68D
@@ -3238,8 +2789,7 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte CWG3DBF = 0x68F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG3CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MODE:3;
@@ -3262,13 +2812,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG3EN:1;
 ....................       };
 ....................    };
-.................... } CWG3CON0BITS;
-.................... CWG3CON0BITS CWG3CON0bits;
-.................... #byte CWG3CON0bits = 0x690
+.................... } CWG3CON0;
 .................... #byte CWG3CON0 = 0x690
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG3CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int POLA:1;
@@ -3288,13 +2835,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG3IN:1;
 ....................       };
 ....................    };
-.................... } CWG3CON1BITS;
-.................... CWG3CON1BITS CWG3CON1bits;
-.................... #byte CWG3CON1bits = 0x691
+.................... } CWG3CON1;
 .................... #byte CWG3CON1 = 0x691
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG3AS0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int :2;
@@ -3312,13 +2856,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG3SHUTDOWN:1;
 ....................       };
 ....................    };
-.................... } CWG3AS0BITS;
-.................... CWG3AS0BITS CWG3AS0bits;
-.................... #byte CWG3AS0bits = 0x692
+.................... } CWG3AS0;
 .................... #byte CWG3AS0 = 0x692
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG3AS1 {
 ....................    unsigned int AS0E:1;
 ....................    unsigned int AS1E:1;
 ....................    unsigned int AS2E:1;
@@ -3326,13 +2867,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int AS4E:1;
 ....................    unsigned int AS5E:1;
 ....................    unsigned int AS6E:1;
-.................... } CWG3AS1BITS;
-.................... CWG3AS1BITS CWG3AS1bits;
-.................... #byte CWG3AS1bits = 0x693
+.................... } CWG3AS1;
 .................... #byte CWG3AS1 = 0x693
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CWG3STR {
 ....................    union {
 ....................       struct {
 ....................          unsigned int STRA:1;
@@ -3356,73 +2894,55 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int CWG3OVRD:1;
 ....................       };
 ....................    };
-.................... } CWG3STRBITS;
-.................... CWG3STRBITS CWG3STRbits;
-.................... #byte CWG3STRbits = 0x694
+.................... } CWG3STR;
 .................... #byte CWG3STR = 0x694
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR0 {
 ....................    unsigned int INTF:1;
 ....................    unsigned int :3;
 ....................    unsigned int IOCIF:1;
 ....................    unsigned int TMR0IF:1;
-.................... } PIR0BITS;
-.................... PIR0BITS PIR0bits;
-.................... #byte PIR0bits = 0x70C
+.................... } PIR0;
 .................... #byte PIR0 = 0x70C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR1 {
 ....................    unsigned int ADIF:1;
 ....................    unsigned int ADTIF:1;
 ....................    unsigned int :4;
 ....................    unsigned int CSWIF:1;
 ....................    unsigned int OSFIF:1;
-.................... } PIR1BITS;
-.................... PIR1BITS PIR1bits;
-.................... #byte PIR1bits = 0x70D
+.................... } PIR1;
 .................... #byte PIR1 = 0x70D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR2 {
 ....................    unsigned int C1IF:1;
 ....................    unsigned int C2IF:1;
 ....................    unsigned int :4;
 ....................    unsigned int ZCDIF:1;
-.................... } PIR2BITS;
-.................... PIR2BITS PIR2bits;
-.................... #byte PIR2bits = 0x70E
+.................... } PIR2;
 .................... #byte PIR2 = 0x70E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR3 {
 ....................    unsigned int SSP1IF:1;
 ....................    unsigned int BCL1IF:1;
 ....................    unsigned int SSP2IF:1;
 ....................    unsigned int BCL2IF:1;
 ....................    unsigned int TXIF:1;
 ....................    unsigned int RCIF:1;
-.................... } PIR3BITS;
-.................... PIR3BITS PIR3bits;
-.................... #byte PIR3bits = 0x70F
+.................... } PIR3;
 .................... #byte PIR3 = 0x70F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR4 {
 ....................    unsigned int TMR1IF:1;
 ....................    unsigned int TMR2IF:1;
 ....................    unsigned int TMR3IF:1;
 ....................    unsigned int TMR4IF:1;
 ....................    unsigned int TMR5IF:1;
 ....................    unsigned int TMR6IF:1;
-.................... } PIR4BITS;
-.................... PIR4BITS PIR4bits;
-.................... #byte PIR4bits = 0x710
+.................... } PIR4;
 .................... #byte PIR4 = 0x710
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR5 {
 ....................    unsigned int TMR1GIF:1;
 ....................    unsigned int TMR3GIF:1;
 ....................    unsigned int TMR5GIF:1;
@@ -3431,25 +2951,19 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int CLC2IF:1;
 ....................    unsigned int CLC3IF:1;
 ....................    unsigned int CLC4IF:1;
-.................... } PIR5BITS;
-.................... PIR5BITS PIR5bits;
-.................... #byte PIR5bits = 0x711
+.................... } PIR5;
 .................... #byte PIR5 = 0x711
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR6 {
 ....................    unsigned int CCP1IF:1;
 ....................    unsigned int CCP2IF:1;
 ....................    unsigned int CCP3IF:1;
 ....................    unsigned int CCP4IF:1;
 ....................    unsigned int CCP5IF:1;
-.................... } PIR6BITS;
-.................... PIR6BITS PIR6bits;
-.................... #byte PIR6bits = 0x712
+.................... } PIR6;
 .................... #byte PIR6 = 0x712
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR7 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CWG1IF:1;
@@ -3467,86 +2981,65 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int NCOIF:1;
 ....................       };
 ....................    };
-.................... } PIR7BITS;
-.................... PIR7BITS PIR7bits;
-.................... #byte PIR7bits = 0x713
+.................... } PIR7;
 .................... #byte PIR7 = 0x713
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIR8 {
 ....................    unsigned int SMT1IF:1;
 ....................    unsigned int SMT1PRAIF:1;
 ....................    unsigned int SMT1PWAIF:1;
 ....................    unsigned int SMT2IF:1;
 ....................    unsigned int SMT2PRAIF:1;
 ....................    unsigned int SMT2PWAIF:1;
-.................... } PIR8BITS;
-.................... PIR8BITS PIR8bits;
-.................... #byte PIR8bits = 0x714
+.................... } PIR8;
 .................... #byte PIR8 = 0x714
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE0 {
 ....................    unsigned int INTE:1;
 ....................    unsigned int :3;
 ....................    unsigned int IOCIE:1;
 ....................    unsigned int TMR0IE:1;
-.................... } PIE0BITS;
-.................... PIE0BITS PIE0bits;
-.................... #byte PIE0bits = 0x716
+.................... } PIE0;
 .................... #byte PIE0 = 0x716
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE1 {
 ....................    unsigned int ADIE:1;
 ....................    unsigned int ADTIE:1;
 ....................    unsigned int :4;
 ....................    unsigned int CSWIE:1;
 ....................    unsigned int OSFIE:1;
-.................... } PIE1BITS;
-.................... PIE1BITS PIE1bits;
-.................... #byte PIE1bits = 0x717
+.................... } PIE1;
 .................... #byte PIE1 = 0x717
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE2 {
 ....................    unsigned int C1IE:1;
 ....................    unsigned int C2IE:1;
 ....................    unsigned int :4;
 ....................    unsigned int ZCDIE:1;
-.................... } PIE2BITS;
-.................... PIE2BITS PIE2bits;
-.................... #byte PIE2bits = 0x718
+.................... } PIE2;
 .................... #byte PIE2 = 0x718
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE3 {
 ....................    unsigned int SSP1IE:1;
 ....................    unsigned int BCL1IE:1;
 ....................    unsigned int SSP2IE:1;
 ....................    unsigned int BCL2IE:1;
 ....................    unsigned int TXIE:1;
 ....................    unsigned int RCIE:1;
-.................... } PIE3BITS;
-.................... PIE3BITS PIE3bits;
-.................... #byte PIE3bits = 0x719
+.................... } PIE3;
 .................... #byte PIE3 = 0x719
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE4 {
 ....................    unsigned int TMR1IE:1;
 ....................    unsigned int TMR2IE:1;
 ....................    unsigned int TMR3IE:1;
 ....................    unsigned int TMR4IE:1;
 ....................    unsigned int TMR5IE:1;
 ....................    unsigned int TMR6IE:1;
-.................... } PIE4BITS;
-.................... PIE4BITS PIE4bits;
-.................... #byte PIE4bits = 0x71A
+.................... } PIE4;
 .................... #byte PIE4 = 0x71A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE5 {
 ....................    unsigned int TMR1GIE:1;
 ....................    unsigned int TMR3GIE:1;
 ....................    unsigned int TMR5GIE:1;
@@ -3555,25 +3048,19 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int CLC2IE:1;
 ....................    unsigned int CLC3IE:1;
 ....................    unsigned int CLC4IE:1;
-.................... } PIE5BITS;
-.................... PIE5BITS PIE5bits;
-.................... #byte PIE5bits = 0x71B
+.................... } PIE5;
 .................... #byte PIE5 = 0x71B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE6 {
 ....................    unsigned int CCP1IE:1;
 ....................    unsigned int CCP2IE:1;
 ....................    unsigned int CCP3IE:1;
 ....................    unsigned int CCP4IE:1;
 ....................    unsigned int CCP5IE:1;
-.................... } PIE6BITS;
-.................... PIE6BITS PIE6bits;
-.................... #byte PIE6bits = 0x71C
+.................... } PIE6;
 .................... #byte PIE6 = 0x71C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE7 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int CWG1IE:1;
@@ -3591,26 +3078,20 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int NCOIE:1;
 ....................       };
 ....................    };
-.................... } PIE7BITS;
-.................... PIE7BITS PIE7bits;
-.................... #byte PIE7bits = 0x71D
+.................... } PIE7;
 .................... #byte PIE7 = 0x71D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PIE8 {
 ....................    unsigned int SMT1IE:1;
 ....................    unsigned int SMT1PRAIE:1;
 ....................    unsigned int SMT1PWAIE:1;
 ....................    unsigned int SMT2IE:1;
 ....................    unsigned int SMT2PRAIE:1;
 ....................    unsigned int SMT2PWAIE:1;
-.................... } PIE8BITS;
-.................... PIE8BITS PIE8bits;
-.................... #byte PIE8bits = 0x71E
+.................... } PIE8;
 .................... #byte PIE8 = 0x71E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PMD0 {
 ....................    unsigned int IOCMD:1;
 ....................    unsigned int CLKRMD:1;
 ....................    unsigned int NVMMD:1;
@@ -3619,13 +3100,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int :1;
 ....................    unsigned int FVRMD:1;
 ....................    unsigned int SYSCMD:1;
-.................... } PMD0BITS;
-.................... PMD0BITS PMD0bits;
-.................... #byte PMD0bits = 0x796
+.................... } PMD0;
 .................... #byte PMD0 = 0x796
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PMD1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int TMR0MD:1;
@@ -3643,26 +3121,20 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int NCO1MD:1;
 ....................       };
 ....................    };
-.................... } PMD1BITS;
-.................... PMD1BITS PMD1bits;
-.................... #byte PMD1bits = 0x797
+.................... } PMD1;
 .................... #byte PMD1 = 0x797
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PMD2 {
 ....................    unsigned int ZCDMD:1;
 ....................    unsigned int CMP1MD:1;
 ....................    unsigned int CMP2MD:1;
 ....................    unsigned int :2;
 ....................    unsigned int ADCMD:1;
 ....................    unsigned int DACMD:1;
-.................... } PMD2BITS;
-.................... PMD2BITS PMD2bits;
-.................... #byte PMD2bits = 0x798
+.................... } PMD2;
 .................... #byte PMD2 = 0x798
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PMD3 {
 ....................    unsigned int CCP1MD:1;
 ....................    unsigned int CCP2MD:1;
 ....................    unsigned int CCP3MD:1;
@@ -3670,13 +3142,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int CCP5MD:1;
 ....................    unsigned int PWM6MD:1;
 ....................    unsigned int PWM7MD:1;
-.................... } PMD3BITS;
-.................... PMD3BITS PMD3bits;
-.................... #byte PMD3bits = 0x799
+.................... } PMD3;
 .................... #byte PMD3 = 0x799
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PMD4 {
 ....................    unsigned int CWG1MD:1;
 ....................    unsigned int CWG2MD:1;
 ....................    unsigned int CWG3MD:1;
@@ -3684,13 +3153,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int MSSP1MD:1;
 ....................    unsigned int MSSP2MD:1;
 ....................    unsigned int UART1MD:1;
-.................... } PMD4BITS;
-.................... PMD4BITS PMD4bits;
-.................... #byte PMD4bits = 0x79A
+.................... } PMD4;
 .................... #byte PMD4 = 0x79A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PMD5 {
 ....................    unsigned int DSMMD:1;
 ....................    unsigned int CLC1MD:1;
 ....................    unsigned int CLC2MD:1;
@@ -3699,13 +3165,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int :1;
 ....................    unsigned int SMT1MD:1;
 ....................    unsigned int SMT2MD:1;
-.................... } PMD5BITS;
-.................... PMD5BITS PMD5bits;
-.................... #byte PMD5bits = 0x79B
+.................... } PMD5;
 .................... #byte PMD5 = 0x79B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WDTCON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int SEN:1;
@@ -3722,13 +3185,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int WDTSEN:1;
 ....................       };
 ....................    };
-.................... } WDTCON0BITS;
-.................... WDTCON0BITS WDTCON0bits;
-.................... #byte WDTCON0bits = 0x80C
+.................... } WDTCON0;
 .................... #byte WDTCON0 = 0x80C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WDTCON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int WINDOW:3;
@@ -3740,13 +3200,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int WDTWINDOW:3;
 ....................       };
 ....................    };
-.................... } WDTCON1BITS;
-.................... WDTCON1BITS WDTCON1bits;
-.................... #byte WDTCON1bits = 0x80D
+.................... } WDTCON1;
 .................... #byte WDTCON1 = 0x80D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WDTPSL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PSCNT:8;
@@ -3756,13 +3213,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int WDTPSCNT:8;
 ....................       };
 ....................    };
-.................... } WDTPSLBITS;
-.................... WDTPSLBITS WDTPSLbits;
-.................... #byte WDTPSLbits = 0x80E
-.................... #byte WDTPSL = 0x80E
+.................... } WDTPS;
+.................... #byte WDTPS = 0x80E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WDTPSH {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PSCNT8:2;
@@ -3774,13 +3228,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int WDTPSCNT1:6;
 ....................       };
 ....................    };
-.................... } WDTPSHBITS;
-.................... WDTPSHBITS WDTPSHbits;
-.................... #byte WDTPSHbits = 0x80F
+.................... } WDTPSH;
 .................... #byte WDTPSH = 0x80F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WDTTMR {
 ....................    union {
 ....................       struct {
 ....................          unsigned int PSCNT16:2;
@@ -3793,33 +3244,24 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int WDTSTATE:1;
 ....................       };
 ....................    };
-.................... } WDTTMRBITS;
-.................... WDTTMRBITS WDTTMRbits;
-.................... #byte WDTTMRbits = 0x810
+.................... } WDTTMR;
 .................... #byte WDTTMR = 0x810
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct BORCON {
 ....................    unsigned int BORRDY:1;
 ....................    unsigned int :6;
 ....................    unsigned int SBOREN:1;
-.................... } BORCONBITS;
-.................... BORCONBITS BORCONbits;
-.................... #byte BORCONbits = 0x811
+.................... } BORCON;
 .................... #byte BORCON = 0x811
 .................... 
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct VREGCON {
 ....................    unsigned int :1;
 ....................    unsigned int VREGPM:1;
-.................... } VREGCONBITS;
-.................... VREGCONBITS VREGCONbits;
-.................... #byte VREGCONbits = 0x812
+.................... } VREGCON;
 .................... #byte VREGCON = 0x812
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PCON0 {
 ....................    unsigned int BOR:1;
 ....................    unsigned int POR:1;
 ....................    unsigned int RI:1;
@@ -3828,57 +3270,39 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int WDTWV:1;
 ....................    unsigned int STKUNF:1;
 ....................    unsigned int STKOVF:1;
-.................... } PCON0BITS;
-.................... PCON0BITS PCON0bits;
-.................... #byte PCON0bits = 0x813
+.................... } PCON0;
 .................... #byte PCON0 = 0x813
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCDCON {
 ....................    unsigned int CCDS:2;
 ....................    unsigned int :5;
 ....................    unsigned int CCDEN:1;
-.................... } CCDCONBITS;
-.................... CCDCONBITS CCDCONbits;
-.................... #byte CCDCONbits = 0x814
+.................... } CCDCON;
 .................... #byte CCDCON = 0x814
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NVMADR {
 ....................    unsigned int NVMADR:8;
-.................... } NVMADRLBITS;
-.................... NVMADRLBITS NVMADRLbits;
-.................... #byte NVMADRLbits = 0x81A
-.................... #byte NVMADRL = 0x81A
+.................... } NVMADR;
+.................... #byte NVMADR = 0x81A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NVMADRH {
 ....................    unsigned int NVMADR8:2;
 ....................    unsigned int NVMADR1:5;
-.................... } NVMADRHBITS;
-.................... NVMADRHBITS NVMADRHbits;
-.................... #byte NVMADRHbits = 0x81B
+.................... } NVMADRH;
 .................... #byte NVMADRH = 0x81B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NVMDAT {
 ....................    unsigned int NVMDAT:8;
-.................... } NVMDATLBITS;
-.................... NVMDATLBITS NVMDATLbits;
-.................... #byte NVMDATLbits = 0x81C
-.................... #byte NVMDATL = 0x81C
+.................... } NVMDAT;
+.................... #byte NVMDAT = 0x81C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NVMDATH {
 ....................    unsigned int NVMDAT8:2;
 ....................    unsigned int NVMDAT1:4;
-.................... } NVMDATHBITS;
-.................... NVMDATHBITS NVMDATHbits;
-.................... #byte NVMDATHbits = 0x81D
+.................... } NVMDATH;
 .................... #byte NVMDATH = 0x81D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct NVMCON1 {
 ....................    unsigned int RD:1;
 ....................    unsigned int WR:1;
 ....................    unsigned int WREN:1;
@@ -3886,59 +3310,44 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int FREE:1;
 ....................    unsigned int LWLO:1;
 ....................    unsigned int NVMREGS:1;
-.................... } NVMCON1BITS;
-.................... NVMCON1BITS NVMCON1bits;
-.................... #byte NVMCON1bits = 0x81E
+.................... } NVMCON1;
 .................... #byte NVMCON1 = 0x81E
 .................... 
 .................... #byte NVMCON2 = 0x81F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CPUDOZE {
 ....................    unsigned int DOZE:3;
 ....................    unsigned int :1;
 ....................    unsigned int DOE:1;
 ....................    unsigned int ROI:1;
 ....................    unsigned int DOZEN:1;
 ....................    unsigned int IDLEN:1;
-.................... } CPUDOZEBITS;
-.................... CPUDOZEBITS CPUDOZEbits;
-.................... #byte CPUDOZEbits = 0x88C
+.................... } CPUDOZE;
 .................... #byte CPUDOZE = 0x88C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct OSCCON1 {
 ....................    unsigned int NDIV:4;
 ....................    unsigned int NOSC:3;
-.................... } OSCCON1BITS;
-.................... OSCCON1BITS OSCCON1bits;
-.................... #byte OSCCON1bits = 0x88D
+.................... } OSCCON1;
 .................... #byte OSCCON1 = 0x88D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct OSCCON2 {
 ....................    unsigned int CDIV:4;
 ....................    unsigned int COSC:3;
-.................... } OSCCON2BITS;
-.................... OSCCON2BITS OSCCON2bits;
-.................... #byte OSCCON2bits = 0x88E
+.................... } OSCCON2;
 .................... #byte OSCCON2 = 0x88E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct OSCCON3 {
 ....................    unsigned int :3;
 ....................    unsigned int NOSCR:1;
 ....................    unsigned int ORDY:1;
 ....................    unsigned int :1;
 ....................    unsigned int SOSCPWR:1;
 ....................    unsigned int CSWHOLD:1;
-.................... } OSCCON3BITS;
-.................... OSCCON3BITS OSCCON3bits;
-.................... #byte OSCCON3bits = 0x88F
+.................... } OSCCON3;
 .................... #byte OSCCON3 = 0x88F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct OSCSTAT {
 ....................    unsigned int PLLR:1;
 ....................    unsigned int :1;
 ....................    unsigned int ADOR:1;
@@ -3947,13 +3356,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int MFOR:1;
 ....................    unsigned int HFOR:1;
 ....................    unsigned int EXTOR:1;
-.................... } OSCSTATBITS;
-.................... OSCSTATBITS OSCSTATbits;
-.................... #byte OSCSTATbits = 0x890
+.................... } OSCSTAT;
 .................... #byte OSCSTAT = 0x890
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct OSCEN {
 ....................    unsigned int :2;
 ....................    unsigned int ADOEN:1;
 ....................    unsigned int SOSCEN:1;
@@ -3961,72 +3367,57 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................    unsigned int MFOEN:1;
 ....................    unsigned int HFOEN:1;
 ....................    unsigned int EXTOEN:1;
-.................... } OSCENBITS;
-.................... OSCENBITS OSCENbits;
-.................... #byte OSCENbits = 0x891
+.................... } OSCEN;
 .................... #byte OSCEN = 0x891
 .................... 
 .................... #byte OSCTUNE = 0x892
 .................... 
 .................... #byte OSCFRQ = 0x893
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLKRCON {
 ....................    unsigned int CLKRDIV:3;
 ....................    unsigned int CLKRDC:2;
 ....................    unsigned int :2;
 ....................    unsigned int CLKREN:1;
-.................... } CLKRCONBITS;
-.................... CLKRCONBITS CLKRCONbits;
-.................... #byte CLKRCONbits = 0x895
+.................... } CLKRCON;
 .................... #byte CLKRCON = 0x895
 .................... 
 .................... #byte CLKRCLK = 0x896
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct MDCON0 {
 ....................    unsigned int MDBIT:1;
 ....................    unsigned int :3;
 ....................    unsigned int MDOPOL:1;
 ....................    unsigned int MDOUT:1;
 ....................    unsigned int :1;
 ....................    unsigned int MDEN:1;
-.................... } MDCON0BITS;
-.................... MDCON0BITS MDCON0bits;
-.................... #byte MDCON0bits = 0x897
+.................... } MDCON0;
 .................... #byte MDCON0 = 0x897
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct MDCON1 {
 ....................    unsigned int MDCLSYNC:1;
 ....................    unsigned int MDCLPOL:1;
 ....................    unsigned int :2;
 ....................    unsigned int MDCHSYNC:1;
 ....................    unsigned int MDCHPOL:1;
-.................... } MDCON1BITS;
-.................... MDCON1BITS MDCON1bits;
-.................... #byte MDCON1bits = 0x898
+.................... } MDCON1;
 .................... #byte MDCON1 = 0x898
 .................... 
 .................... #byte MDSRC = 0x899
 .................... 
 .................... #word MDCAR = 0x89A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct FVRCON {
 ....................    unsigned int ADFVR:2;
 ....................    unsigned int CDAFVR:2;
 ....................    unsigned int TSRNG:1;
 ....................    unsigned int TSEN:1;
 ....................    unsigned int FVRRDY:1;
 ....................    unsigned int FVREN:1;
-.................... } FVRCONBITS;
-.................... FVRCONBITS FVRCONbits;
-.................... #byte FVRCONbits = 0x90C
+.................... } FVRCON;
 .................... #byte FVRCON = 0x90C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct DAC1CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int NSS:1;
@@ -4048,15 +3439,12 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int DAC1EN:1;
 ....................       };
 ....................    };
-.................... } DAC1CON0BITS;
-.................... DAC1CON0BITS DAC1CON0bits;
-.................... #byte DAC1CON0bits = 0x90E
+.................... } DAC1CON0;
 .................... #byte DAC1CON0 = 0x90E
 .................... 
 .................... #byte DAC1CON1 = 0x90F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ZCD1CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int INTN:1;
@@ -4090,13 +3478,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int ZCDEN:1;
 ....................       };
 ....................    };
-.................... } ZCD1CONBITS;
-.................... ZCD1CONBITS ZCD1CONbits;
-.................... #byte ZCD1CONbits = 0x91F
+.................... } ZCD1CON;
 .................... #byte ZCD1CON = 0x91F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CMOUT {
 ....................    union {
 ....................       struct {
 ....................          unsigned int MC1OUT:1;
@@ -4108,13 +3493,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int C2OUT:1;
 ....................       };
 ....................    };
-.................... } CMOUTBITS;
-.................... CMOUTBITS CMOUTbits;
-.................... #byte CMOUTbits = 0x98F
+.................... } CMOUT;
 .................... #byte CMOUT = 0x98F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CM1CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int SYNC:1;
@@ -4138,13 +3520,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int C1ON:1;
 ....................       };
 ....................    };
-.................... } CM1CON0BITS;
-.................... CM1CON0BITS CM1CON0bits;
-.................... #byte CM1CON0bits = 0x990
+.................... } CM1CON0;
 .................... #byte CM1CON0 = 0x990
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CM1CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int INTN:1;
@@ -4156,17 +3535,14 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int C1INTP:1;
 ....................       };
 ....................    };
-.................... } CM1CON1BITS;
-.................... CM1CON1BITS CM1CON1bits;
-.................... #byte CM1CON1bits = 0x991
+.................... } CM1CON1;
 .................... #byte CM1CON1 = 0x991
 .................... 
 .................... #byte CM1NSEL = 0x992
 .................... 
 .................... #byte CM1PSEL = 0x993
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CM2CON0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int SYNC:1;
@@ -4190,13 +3566,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int C2ON:1;
 ....................       };
 ....................    };
-.................... } CM2CON0BITS;
-.................... CM2CON0BITS CM2CON0bits;
-.................... #byte CM2CON0bits = 0x994
+.................... } CM2CON0;
 .................... #byte CM2CON0 = 0x994
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CM2CON1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int INTN:1;
@@ -4208,28 +3581,22 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int C2INTP:1;
 ....................       };
 ....................    };
-.................... } CM2CON1BITS;
-.................... CM2CON1BITS CM2CON1bits;
-.................... #byte CM2CON1bits = 0x995
+.................... } CM2CON1;
 .................... #byte CM2CON1 = 0x995
 .................... 
 .................... #byte CM2NSEL = 0x996
 .................... 
 .................... #byte CM2PSEL = 0x997
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLCDATA {
 ....................    unsigned int MLC1OUT:1;
 ....................    unsigned int MLC2OUT:1;
 ....................    unsigned int MLC3OUT:1;
 ....................    unsigned int MLC4OUT:1;
-.................... } CLCDATABITS;
-.................... CLCDATABITS CLCDATAbits;
-.................... #byte CLCDATAbits = 0xE0F
+.................... } CLCDATA;
 .................... #byte CLCDATA = 0xE0F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1MODE:3;
@@ -4249,13 +3616,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int EN:1;
 ....................       };
 ....................    };
-.................... } CLC1CONBITS;
-.................... CLC1CONBITS CLC1CONbits;
-.................... #byte CLC1CONbits = 0xE10
+.................... } CLC1CON;
 .................... #byte CLC1CON = 0xE10
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1POL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1G1POL:1;
@@ -4275,13 +3639,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int POL:1;
 ....................       };
 ....................    };
-.................... } CLC1POLBITS;
-.................... CLC1POLBITS CLC1POLbits;
-.................... #byte CLC1POLbits = 0xE11
+.................... } CLC1POL;
 .................... #byte CLC1POL = 0xE11
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1SEL0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1D1S:8;
@@ -4291,13 +3652,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D1S:8;
 ....................       };
 ....................    };
-.................... } CLC1SEL0BITS;
-.................... CLC1SEL0BITS CLC1SEL0bits;
-.................... #byte CLC1SEL0bits = 0xE12
+.................... } CLC1SEL0;
 .................... #byte CLC1SEL0 = 0xE12
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1SEL1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1D2S:8;
@@ -4307,13 +3665,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D2S:8;
 ....................       };
 ....................    };
-.................... } CLC1SEL1BITS;
-.................... CLC1SEL1BITS CLC1SEL1bits;
-.................... #byte CLC1SEL1bits = 0xE13
+.................... } CLC1SEL1;
 .................... #byte CLC1SEL1 = 0xE13
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1SEL2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1D3S:8;
@@ -4323,13 +3678,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D3S:8;
 ....................       };
 ....................    };
-.................... } CLC1SEL2BITS;
-.................... CLC1SEL2BITS CLC1SEL2bits;
-.................... #byte CLC1SEL2bits = 0xE14
+.................... } CLC1SEL2;
 .................... #byte CLC1SEL2 = 0xE14
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1SEL3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1D4S:8;
@@ -4339,13 +3691,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4S:8;
 ....................       };
 ....................    };
-.................... } CLC1SEL3BITS;
-.................... CLC1SEL3BITS CLC1SEL3bits;
-.................... #byte CLC1SEL3bits = 0xE15
+.................... } CLC1SEL3;
 .................... #byte CLC1SEL3 = 0xE15
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1GLS0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1G1D1N:1;
@@ -4369,13 +3718,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC1GLS0BITS;
-.................... CLC1GLS0BITS CLC1GLS0bits;
-.................... #byte CLC1GLS0bits = 0xE16
+.................... } CLC1GLS0;
 .................... #byte CLC1GLS0 = 0xE16
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1GLS1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1G2D1N:1;
@@ -4399,13 +3745,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC1GLS1BITS;
-.................... CLC1GLS1BITS CLC1GLS1bits;
-.................... #byte CLC1GLS1bits = 0xE17
+.................... } CLC1GLS1;
 .................... #byte CLC1GLS1 = 0xE17
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1GLS2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1G3D1N:1;
@@ -4429,13 +3772,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC1GLS2BITS;
-.................... CLC1GLS2BITS CLC1GLS2bits;
-.................... #byte CLC1GLS2bits = 0xE18
+.................... } CLC1GLS2;
 .................... #byte CLC1GLS2 = 0xE18
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC1GLS3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC1G4D1N:1;
@@ -4459,13 +3799,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int G4D4T:1;
 ....................       };
 ....................    };
-.................... } CLC1GLS3BITS;
-.................... CLC1GLS3BITS CLC1GLS3bits;
-.................... #byte CLC1GLS3bits = 0xE19
+.................... } CLC1GLS3;
 .................... #byte CLC1GLS3 = 0xE19
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2MODE:3;
@@ -4485,13 +3822,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int EN:1;
 ....................       };
 ....................    };
-.................... } CLC2CONBITS;
-.................... CLC2CONBITS CLC2CONbits;
-.................... #byte CLC2CONbits = 0xE1A
+.................... } CLC2CON;
 .................... #byte CLC2CON = 0xE1A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2POL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2G1POL:1;
@@ -4511,13 +3845,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int POL:1;
 ....................       };
 ....................    };
-.................... } CLC2POLBITS;
-.................... CLC2POLBITS CLC2POLbits;
-.................... #byte CLC2POLbits = 0xE1B
+.................... } CLC2POL;
 .................... #byte CLC2POL = 0xE1B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2SEL0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2D1S:8;
@@ -4527,13 +3858,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D1S:8;
 ....................       };
 ....................    };
-.................... } CLC2SEL0BITS;
-.................... CLC2SEL0BITS CLC2SEL0bits;
-.................... #byte CLC2SEL0bits = 0xE1C
+.................... } CLC2SEL0;
 .................... #byte CLC2SEL0 = 0xE1C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2SEL1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2D2S:8;
@@ -4543,13 +3871,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D2S:8;
 ....................       };
 ....................    };
-.................... } CLC2SEL1BITS;
-.................... CLC2SEL1BITS CLC2SEL1bits;
-.................... #byte CLC2SEL1bits = 0xE1D
+.................... } CLC2SEL1;
 .................... #byte CLC2SEL1 = 0xE1D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2SEL2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2D3S:8;
@@ -4559,13 +3884,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D3S:8;
 ....................       };
 ....................    };
-.................... } CLC2SEL2BITS;
-.................... CLC2SEL2BITS CLC2SEL2bits;
-.................... #byte CLC2SEL2bits = 0xE1E
+.................... } CLC2SEL2;
 .................... #byte CLC2SEL2 = 0xE1E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2SEL3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2D4S:8;
@@ -4575,13 +3897,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4S:8;
 ....................       };
 ....................    };
-.................... } CLC2SEL3BITS;
-.................... CLC2SEL3BITS CLC2SEL3bits;
-.................... #byte CLC2SEL3bits = 0xE1F
+.................... } CLC2SEL3;
 .................... #byte CLC2SEL3 = 0xE1F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2GLS0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2G1D1N:1;
@@ -4605,13 +3924,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC2GLS0BITS;
-.................... CLC2GLS0BITS CLC2GLS0bits;
-.................... #byte CLC2GLS0bits = 0xE20
+.................... } CLC2GLS0;
 .................... #byte CLC2GLS0 = 0xE20
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2GLS1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2G2D1N:1;
@@ -4635,13 +3951,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC2GLS1BITS;
-.................... CLC2GLS1BITS CLC2GLS1bits;
-.................... #byte CLC2GLS1bits = 0xE21
+.................... } CLC2GLS1;
 .................... #byte CLC2GLS1 = 0xE21
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2GLS2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2G3D1N:1;
@@ -4665,13 +3978,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC2GLS2BITS;
-.................... CLC2GLS2BITS CLC2GLS2bits;
-.................... #byte CLC2GLS2bits = 0xE22
+.................... } CLC2GLS2;
 .................... #byte CLC2GLS2 = 0xE22
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC2GLS3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC2G4D1N:1;
@@ -4695,13 +4005,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int G4D4T:1;
 ....................       };
 ....................    };
-.................... } CLC2GLS3BITS;
-.................... CLC2GLS3BITS CLC2GLS3bits;
-.................... #byte CLC2GLS3bits = 0xE23
+.................... } CLC2GLS3;
 .................... #byte CLC2GLS3 = 0xE23
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3MODE:3;
@@ -4721,13 +4028,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int EN:1;
 ....................       };
 ....................    };
-.................... } CLC3CONBITS;
-.................... CLC3CONBITS CLC3CONbits;
-.................... #byte CLC3CONbits = 0xE24
+.................... } CLC3CON;
 .................... #byte CLC3CON = 0xE24
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3POL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3G1POL:1;
@@ -4747,13 +4051,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int POL:1;
 ....................       };
 ....................    };
-.................... } CLC3POLBITS;
-.................... CLC3POLBITS CLC3POLbits;
-.................... #byte CLC3POLbits = 0xE25
+.................... } CLC3POL;
 .................... #byte CLC3POL = 0xE25
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3SEL0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3D1S:8;
@@ -4763,13 +4064,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D1S:8;
 ....................       };
 ....................    };
-.................... } CLC3SEL0BITS;
-.................... CLC3SEL0BITS CLC3SEL0bits;
-.................... #byte CLC3SEL0bits = 0xE26
+.................... } CLC3SEL0;
 .................... #byte CLC3SEL0 = 0xE26
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3SEL1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3D2S:8;
@@ -4779,13 +4077,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D2S:8;
 ....................       };
 ....................    };
-.................... } CLC3SEL1BITS;
-.................... CLC3SEL1BITS CLC3SEL1bits;
-.................... #byte CLC3SEL1bits = 0xE27
+.................... } CLC3SEL1;
 .................... #byte CLC3SEL1 = 0xE27
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3SEL2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3D3S:8;
@@ -4795,13 +4090,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D3S:8;
 ....................       };
 ....................    };
-.................... } CLC3SEL2BITS;
-.................... CLC3SEL2BITS CLC3SEL2bits;
-.................... #byte CLC3SEL2bits = 0xE28
+.................... } CLC3SEL2;
 .................... #byte CLC3SEL2 = 0xE28
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3SEL3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3D4S:8;
@@ -4811,13 +4103,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4S:8;
 ....................       };
 ....................    };
-.................... } CLC3SEL3BITS;
-.................... CLC3SEL3BITS CLC3SEL3bits;
-.................... #byte CLC3SEL3bits = 0xE29
+.................... } CLC3SEL3;
 .................... #byte CLC3SEL3 = 0xE29
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3GLS0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3G1D1N:1;
@@ -4841,13 +4130,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC3GLS0BITS;
-.................... CLC3GLS0BITS CLC3GLS0bits;
-.................... #byte CLC3GLS0bits = 0xE2A
+.................... } CLC3GLS0;
 .................... #byte CLC3GLS0 = 0xE2A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3GLS1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3G2D1N:1;
@@ -4871,13 +4157,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC3GLS1BITS;
-.................... CLC3GLS1BITS CLC3GLS1bits;
-.................... #byte CLC3GLS1bits = 0xE2B
+.................... } CLC3GLS1;
 .................... #byte CLC3GLS1 = 0xE2B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3GLS2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3G3D1N:1;
@@ -4901,13 +4184,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC3GLS2BITS;
-.................... CLC3GLS2BITS CLC3GLS2bits;
-.................... #byte CLC3GLS2bits = 0xE2C
+.................... } CLC3GLS2;
 .................... #byte CLC3GLS2 = 0xE2C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC3GLS3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC3G4D1N:1;
@@ -4931,13 +4211,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int G4D4T:1;
 ....................       };
 ....................    };
-.................... } CLC3GLS3BITS;
-.................... CLC3GLS3BITS CLC3GLS3bits;
-.................... #byte CLC3GLS3bits = 0xE2D
+.................... } CLC3GLS3;
 .................... #byte CLC3GLS3 = 0xE2D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4CON {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4MODE:3;
@@ -4957,13 +4234,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int EN:1;
 ....................       };
 ....................    };
-.................... } CLC4CONBITS;
-.................... CLC4CONBITS CLC4CONbits;
-.................... #byte CLC4CONbits = 0xE2E
+.................... } CLC4CON;
 .................... #byte CLC4CON = 0xE2E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4POL {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4G1POL:1;
@@ -4983,13 +4257,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int POL:1;
 ....................       };
 ....................    };
-.................... } CLC4POLBITS;
-.................... CLC4POLBITS CLC4POLbits;
-.................... #byte CLC4POLbits = 0xE2F
+.................... } CLC4POL;
 .................... #byte CLC4POL = 0xE2F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4SEL0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4D1S:8;
@@ -4999,13 +4270,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D1S:8;
 ....................       };
 ....................    };
-.................... } CLC4SEL0BITS;
-.................... CLC4SEL0BITS CLC4SEL0bits;
-.................... #byte CLC4SEL0bits = 0xE30
+.................... } CLC4SEL0;
 .................... #byte CLC4SEL0 = 0xE30
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4SEL1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4D2S:8;
@@ -5015,13 +4283,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D2S:8;
 ....................       };
 ....................    };
-.................... } CLC4SEL1BITS;
-.................... CLC4SEL1BITS CLC4SEL1bits;
-.................... #byte CLC4SEL1bits = 0xE31
+.................... } CLC4SEL1;
 .................... #byte CLC4SEL1 = 0xE31
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4SEL2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4D3S:8;
@@ -5031,13 +4296,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D3S:8;
 ....................       };
 ....................    };
-.................... } CLC4SEL2BITS;
-.................... CLC4SEL2BITS CLC4SEL2bits;
-.................... #byte CLC4SEL2bits = 0xE32
+.................... } CLC4SEL2;
 .................... #byte CLC4SEL2 = 0xE32
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4SEL3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4D4S:8;
@@ -5047,13 +4309,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4S:8;
 ....................       };
 ....................    };
-.................... } CLC4SEL3BITS;
-.................... CLC4SEL3BITS CLC4SEL3bits;
-.................... #byte CLC4SEL3bits = 0xE33
+.................... } CLC4SEL3;
 .................... #byte CLC4SEL3 = 0xE33
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4GLS0 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4G1D1N:1;
@@ -5077,13 +4336,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC4GLS0BITS;
-.................... CLC4GLS0BITS CLC4GLS0bits;
-.................... #byte CLC4GLS0bits = 0xE34
+.................... } CLC4GLS0;
 .................... #byte CLC4GLS0 = 0xE34
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4GLS1 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4G2D1N:1;
@@ -5107,13 +4363,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC4GLS1BITS;
-.................... CLC4GLS1BITS CLC4GLS1bits;
-.................... #byte CLC4GLS1bits = 0xE35
+.................... } CLC4GLS1;
 .................... #byte CLC4GLS1 = 0xE35
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4GLS2 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4G3D1N:1;
@@ -5137,13 +4390,10 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int D4T:1;
 ....................       };
 ....................    };
-.................... } CLC4GLS2BITS;
-.................... CLC4GLS2BITS CLC4GLS2bits;
-.................... #byte CLC4GLS2bits = 0xE36
+.................... } CLC4GLS2;
 .................... #byte CLC4GLS2 = 0xE36
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CLC4GLS3 {
 ....................    union {
 ....................       struct {
 ....................          unsigned int LC4G4D1N:1;
@@ -5167,17 +4417,12 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 ....................          unsigned int G4D4T:1;
 ....................       };
 ....................    };
-.................... } CLC4GLS3BITS;
-.................... CLC4GLS3BITS CLC4GLS3bits;
-.................... #byte CLC4GLS3bits = 0xE37
+.................... } CLC4GLS3;
 .................... #byte CLC4GLS3 = 0xE37
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct PPSLOCK {
 ....................    unsigned int PPSLOCKED:1;
-.................... } PPSLOCKBITS;
-.................... PPSLOCKBITS PPSLOCKbits;
-.................... #byte PPSLOCKbits = 0xE8F
+.................... } PPSLOCK;
 .................... #byte PPSLOCK = 0xE8F
 .................... 
 .................... #byte INTPPS = 0xE90
@@ -5306,299 +4551,191 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... #byte RC7PPS = 0xF27
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ANSELA {
 ....................    unsigned int ANSA:8;
-.................... } ANSELABITS;
-.................... ANSELABITS ANSELAbits;
-.................... #byte ANSELAbits = 0xF38
+.................... } ANSELA;
 .................... #byte ANSELA = 0xF38
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WPUA {
 ....................    unsigned int WPUA:8;
-.................... } WPUABITS;
-.................... WPUABITS WPUAbits;
-.................... #byte WPUAbits = 0xF39
+.................... } WPUA;
 .................... #byte WPUA = 0xF39
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ODCONA {
 ....................    unsigned int ODCA:8;
-.................... } ODCONABITS;
-.................... ODCONABITS ODCONAbits;
-.................... #byte ODCONAbits = 0xF3A
+.................... } ODCONA;
 .................... #byte ODCONA = 0xF3A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SLRCONA {
 ....................    unsigned int SLRA:8;
-.................... } SLRCONABITS;
-.................... SLRCONABITS SLRCONAbits;
-.................... #byte SLRCONAbits = 0xF3B
+.................... } SLRCONA;
 .................... #byte SLRCONA = 0xF3B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct INLVLA {
 ....................    unsigned int INLVLA:8;
-.................... } INLVLABITS;
-.................... INLVLABITS INLVLAbits;
-.................... #byte INLVLAbits = 0xF3C
+.................... } INLVLA;
 .................... #byte INLVLA = 0xF3C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCAP {
 ....................    unsigned int IOCAP:8;
-.................... } IOCAPBITS;
-.................... IOCAPBITS IOCAPbits;
-.................... #byte IOCAPbits = 0xF3D
+.................... } IOCAP;
 .................... #byte IOCAP = 0xF3D
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCAN {
 ....................    unsigned int IOCAN:8;
-.................... } IOCANBITS;
-.................... IOCANBITS IOCANbits;
-.................... #byte IOCANbits = 0xF3E
+.................... } IOCAN;
 .................... #byte IOCAN = 0xF3E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCAF {
 ....................    unsigned int IOCAF:8;
-.................... } IOCAFBITS;
-.................... IOCAFBITS IOCAFbits;
-.................... #byte IOCAFbits = 0xF3F
+.................... } IOCAF;
 .................... #byte IOCAF = 0xF3F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCDNA {
 ....................    unsigned int CCDNA:8;
-.................... } CCDNABITS;
-.................... CCDNABITS CCDNAbits;
-.................... #byte CCDNAbits = 0xF40
+.................... } CCDNA;
 .................... #byte CCDNA = 0xF40
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCDPA {
 ....................    unsigned int CCDPA:8;
-.................... } CCDPABITS;
-.................... CCDPABITS CCDPAbits;
-.................... #byte CCDPAbits = 0xF41
+.................... } CCDPA;
 .................... #byte CCDPA = 0xF41
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ANSELB {
 ....................    unsigned int ANSB:8;
-.................... } ANSELBBITS;
-.................... ANSELBBITS ANSELBbits;
-.................... #byte ANSELBbits = 0xF43
+.................... } ANSELB;
 .................... #byte ANSELB = 0xF43
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WPUB {
 ....................    unsigned int WPUB:8;
-.................... } WPUBBITS;
-.................... WPUBBITS WPUBbits;
-.................... #byte WPUBbits = 0xF44
+.................... } WPUB;
 .................... #byte WPUB = 0xF44
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ODCONB {
 ....................    unsigned int ODCB:8;
-.................... } ODCONBBITS;
-.................... ODCONBBITS ODCONBbits;
-.................... #byte ODCONBbits = 0xF45
+.................... } ODCONB;
 .................... #byte ODCONB = 0xF45
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SLRCONB {
 ....................    unsigned int SLRB:8;
-.................... } SLRCONBBITS;
-.................... SLRCONBBITS SLRCONBbits;
-.................... #byte SLRCONBbits = 0xF46
+.................... } SLRCONB;
 .................... #byte SLRCONB = 0xF46
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct INLVLB {
 ....................    unsigned int INLVLB:8;
-.................... } INLVLBBITS;
-.................... INLVLBBITS INLVLBbits;
-.................... #byte INLVLBbits = 0xF47
+.................... } INLVLB;
 .................... #byte INLVLB = 0xF47
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCBP {
 ....................    unsigned int IOCBP:8;
-.................... } IOCBPBITS;
-.................... IOCBPBITS IOCBPbits;
-.................... #byte IOCBPbits = 0xF48
+.................... } IOCBP;
 .................... #byte IOCBP = 0xF48
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCBN {
 ....................    unsigned int IOCBN:8;
-.................... } IOCBNBITS;
-.................... IOCBNBITS IOCBNbits;
-.................... #byte IOCBNbits = 0xF49
+.................... } IOCBN;
 .................... #byte IOCBN = 0xF49
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCBF {
 ....................    unsigned int IOCBF:8;
-.................... } IOCBFBITS;
-.................... IOCBFBITS IOCBFbits;
-.................... #byte IOCBFbits = 0xF4A
+.................... } IOCBF;
 .................... #byte IOCBF = 0xF4A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCDNB {
 ....................    unsigned int CCDNB:8;
-.................... } CCDNBBITS;
-.................... CCDNBBITS CCDNBbits;
-.................... #byte CCDNBbits = 0xF4B
+.................... } CCDNB;
 .................... #byte CCDNB = 0xF4B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCDPB {
 ....................    unsigned int CCDPB:8;
-.................... } CCDPBBITS;
-.................... CCDPBBITS CCDPBbits;
-.................... #byte CCDPBbits = 0xF4C
+.................... } CCDPB;
 .................... #byte CCDPB = 0xF4C
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ANSELC {
 ....................    unsigned int ANSC:8;
-.................... } ANSELCBITS;
-.................... ANSELCBITS ANSELCbits;
-.................... #byte ANSELCbits = 0xF4E
+.................... } ANSELC;
 .................... #byte ANSELC = 0xF4E
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WPUC {
 ....................    unsigned int WPUC:8;
-.................... } WPUCBITS;
-.................... WPUCBITS WPUCbits;
-.................... #byte WPUCbits = 0xF4F
+.................... } WPUC;
 .................... #byte WPUC = 0xF4F
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct ODCONC {
 ....................    unsigned int ODCC:8;
-.................... } ODCONCBITS;
-.................... ODCONCBITS ODCONCbits;
-.................... #byte ODCONCbits = 0xF50
+.................... } ODCONC;
 .................... #byte ODCONC = 0xF50
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct SLRCONC {
 ....................    unsigned int SLRC:8;
-.................... } SLRCONCBITS;
-.................... SLRCONCBITS SLRCONCbits;
-.................... #byte SLRCONCbits = 0xF51
+.................... } SLRCONC;
 .................... #byte SLRCONC = 0xF51
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct INLVLC {
 ....................    unsigned int INLVLC:8;
-.................... } INLVLCBITS;
-.................... INLVLCBITS INLVLCbits;
-.................... #byte INLVLCbits = 0xF52
+.................... } INLVLC;
 .................... #byte INLVLC = 0xF52
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCCP {
 ....................    unsigned int IOCCP:8;
-.................... } IOCCPBITS;
-.................... IOCCPBITS IOCCPbits;
-.................... #byte IOCCPbits = 0xF53
+.................... } IOCCP;
 .................... #byte IOCCP = 0xF53
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCCN {
 ....................    unsigned int IOCCN:8;
-.................... } IOCCNBITS;
-.................... IOCCNBITS IOCCNbits;
-.................... #byte IOCCNbits = 0xF54
+.................... } IOCCN;
 .................... #byte IOCCN = 0xF54
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCCF {
 ....................    unsigned int IOCCF:8;
-.................... } IOCCFBITS;
-.................... IOCCFBITS IOCCFbits;
-.................... #byte IOCCFbits = 0xF55
+.................... } IOCCF;
 .................... #byte IOCCF = 0xF55
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCDNC {
 ....................    unsigned int CCDNC:8;
-.................... } CCDNCBITS;
-.................... CCDNCBITS CCDNCbits;
-.................... #byte CCDNCbits = 0xF56
+.................... } CCDNC;
 .................... #byte CCDNC = 0xF56
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct CCDPC {
 ....................    unsigned int CCDPC:8;
-.................... } CCDPCBITS;
-.................... CCDPCBITS CCDPCbits;
-.................... #byte CCDPCbits = 0xF57
+.................... } CCDPC;
 .................... #byte CCDPC = 0xF57
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct WPUE {
 ....................    unsigned int :3;
 ....................    unsigned int WPUE3:1;
-.................... } WPUEBITS;
-.................... WPUEBITS WPUEbits;
-.................... #byte WPUEbits = 0xF65
+.................... } WPUE;
 .................... #byte WPUE = 0xF65
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct INLVLE {
 ....................    unsigned int :3;
 ....................    unsigned int INLVLE3:1;
-.................... } INLVLEBITS;
-.................... INLVLEBITS INLVLEbits;
-.................... #byte INLVLEbits = 0xF68
+.................... } INLVLE;
 .................... #byte INLVLE = 0xF68
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCEP {
 ....................    unsigned int :3;
 ....................    unsigned int IOCEP3:1;
-.................... } IOCEPBITS;
-.................... IOCEPBITS IOCEPbits;
-.................... #byte IOCEPbits = 0xF69
+.................... } IOCEP;
 .................... #byte IOCEP = 0xF69
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCEN {
 ....................    unsigned int :3;
 ....................    unsigned int IOCEN3:1;
-.................... } IOCENBITS;
-.................... IOCENBITS IOCENbits;
-.................... #byte IOCENbits = 0xF6A
+.................... } IOCEN;
 .................... #byte IOCEN = 0xF6A
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct IOCEF {
 ....................    unsigned int :3;
 ....................    unsigned int IOCEF3:1;
-.................... } IOCEFBITS;
-.................... IOCEFBITS IOCEFbits;
-.................... #byte IOCEFbits = 0xF6B
+.................... } IOCEF;
 .................... #byte IOCEF = 0xF6B
 .................... 
-.................... typedef struct 
-....................  {
+.................... struct STATUS_SHAD {
 ....................    unsigned int C_SHAD:1;
 ....................    unsigned int DC_SHAD:1;
 ....................    unsigned int Z_SHAD:1;
-.................... } STATUS_SHADBITS;
-.................... STATUS_SHADBITS STATUS_SHADbits;
-.................... #byte STATUS_SHADbits = 0xFE4
+.................... } STATUS_SHAD;
 .................... #byte STATUS_SHAD = 0xFE4
 .................... 
 .................... #byte WREG_SHAD = 0xFE5
@@ -5817,98 +4954,107 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... 
 .................... 
 .................... 
-.................... void main(){
-006C:  MOVLW  55
-006D:  MOVLB  1D
-006E:  MOVWF  0F
-006F:  MOVLW  AA
-0070:  MOVWF  0F
-0071:  BCF    0F.0
-0072:  MOVLW  11
-0073:  MOVWF  4B
-0074:  MOVLW  10
-0075:  MOVLB  1E
-0076:  MOVWF  20
-0077:  MOVLW  55
-0078:  MOVLB  1D
-0079:  MOVWF  0F
-007A:  MOVLW  AA
-007B:  MOVWF  0F
-007C:  BSF    0F.0
-007D:  MOVLB  11
-007E:  CLRF   12
-007F:  CLRF   0F
-0080:  CLRF   11
-0081:  MOVLW  05
-0082:  MOVWF  13
-0083:  MOVLW  10
-0084:  MOVWF  0D
-0085:  MOVLB  02
-0086:  BSF    1F.3
-0087:  MOVLW  44
-0088:  MOVWF  1B
-0089:  MOVLW  00
-008A:  MOVWF  1C
-008B:  MOVLW  A6
-008C:  MOVWF  1E
-008D:  MOVLW  90
-008E:  MOVWF  1D
-008F:  MOVLB  00
-0090:  CLRF   21
-0091:  CLRF   20
-0092:  MOVLB  1E
-0093:  CLRF   38
-0094:  CLRF   43
-0095:  CLRF   4E
-0096:  MOVLB  13
-0097:  CLRF   11
-0098:  CLRF   12
-0099:  CLRF   13
-009A:  CLRF   10
-009B:  CLRF   15
-009C:  CLRF   16
-009D:  CLRF   17
-009E:  CLRF   14
+.................... #define x 30
+.................... 
+.................... 
+.................... 
+.................... 
+.................... 
+.................... 
+.................... 
+.................... void main()
+0081:  MOVLW  55
+0082:  MOVLB  1D
+0083:  MOVWF  0F
+0084:  MOVLW  AA
+0085:  MOVWF  0F
+0086:  BCF    0F.0
+0087:  MOVLW  11
+0088:  MOVWF  4B
+0089:  MOVLW  10
+008A:  MOVLB  1E
+008B:  MOVWF  20
+008C:  MOVLW  55
+008D:  MOVLB  1D
+008E:  MOVWF  0F
+008F:  MOVLW  AA
+0090:  MOVWF  0F
+0091:  BSF    0F.0
+0092:  MOVLB  11
+0093:  CLRF   12
+0094:  CLRF   0F
+0095:  CLRF   11
+0096:  MOVLW  05
+0097:  MOVWF  13
+0098:  MOVLW  10
+0099:  MOVWF  0D
+009A:  MOVLB  02
+009B:  BSF    1F.3
+009C:  MOVLW  44
+009D:  MOVWF  1B
+009E:  MOVLW  00
+009F:  MOVWF  1C
+00A0:  MOVLW  A6
+00A1:  MOVWF  1E
+00A2:  MOVLW  90
+00A3:  MOVWF  1D
+00A4:  MOVLB  00
+00A5:  CLRF   21
+00A6:  CLRF   20
+00A7:  MOVLB  1E
+00A8:  CLRF   38
+00A9:  CLRF   43
+00AA:  CLRF   4E
+00AB:  MOVLB  13
+00AC:  CLRF   11
+00AD:  CLRF   12
+00AE:  CLRF   13
+00AF:  CLRF   10
+00B0:  CLRF   15
+00B1:  CLRF   16
+00B2:  CLRF   17
+00B3:  CLRF   14
+.................... {
 ....................    setup_oscillator(OSC_HFINTRC_32MHZ|OSC_CLK_DIV_BY_1|OSC_HFINTRC_ENABLED);
-009F:  MOVLB  11
-00A0:  CLRF   12
-00A1:  CLRF   0F
-00A2:  MOVLW  40
-00A3:  MOVWF  11
-00A4:  MOVLW  06
-00A5:  MOVWF  13
-00A6:  MOVLW  60
-00A7:  MOVWF  0D
+00B4:  MOVLB  11
+00B5:  CLRF   12
+00B6:  CLRF   0F
+00B7:  MOVLW  40
+00B8:  MOVWF  11
+00B9:  MOVLW  06
+00BA:  MOVWF  13
+00BB:  MOVLW  60
+00BC:  MOVWF  0D
 ....................    uint8_t contador = 0, leer_boton;
-....................    uint8_t leerSerial;
-00A8:  MOVLB  00
-00A9:  CLRF   22
-....................    
+00BD:  MOVLB  00
+00BE:  CLRF   22
 ....................    TRISA = 0b11110000;//DE RA0 A RA3, COMO SALIDAS, LODEMAS SON ENTRADAS
-00AA:  MOVLW  F0
-00AB:  MOVWF  11
+00BF:  MOVLW  F0
+00C0:  MOVWF  11
 ....................    PORTA = 0; //LIMPIO PORTA
-00AC:  CLRF   0C
+00C1:  CLRF   0C
 ....................    LATA = 0; //LIMPIO LATA
-00AD:  CLRF   16
+00C2:  CLRF   16
 ....................    ANSELA = 0; //TODO DIGITAL
-00AE:  MOVLB  1E
-00AF:  CLRF   38
-....................    WPUA = 0;//SIN RESISTENCIAS PULL-UP      
-00B0:  CLRF   39
+00C3:  MOVLB  1E
+00C4:  CLRF   38
+....................    WPUA = 0;//SIN RESISTENCIAS PULL-UP   
+00C5:  CLRF   39
+....................    PORTAbits.RA5;
+....................    
 ....................    printf("\nHola mundo usando la tarjeta PIC16f18855\n");
-00B1:  MOVLW  03
-00B2:  MOVLB  10
-00B3:  MOVWF  1A
-00B4:  MOVLW  00
-00B5:  MOVWF  1B
-00B6:  MOVLB  00
-00B7:  GOTO   019
+00C6:  MOVLW  03
+00C7:  MOVLB  10
+00C8:  MOVWF  1A
+00C9:  MOVLW  00
+00CA:  MOVWF  1B
+00CB:  MOVLB  00
+00CC:  GOTO   019
 ....................    while(TRUE)
 ....................    {
 .................... //!      leer_boton = PORTA;
-.................... //!      //leer_boton >>= 5;
-.................... //!      //if ( PORTAbits.RA5 == 0){
+....................       //leer_boton >>= 5;
+....................       //if ( PORTAbits.RA5 == 0){
 .................... //!      if ( (( leer_boton >>5 ) & 0X01)  == 0){
 .................... //!         LATA = 0b00001111;
 .................... //!         printf("contador = %u\n",contador++);
@@ -5916,204 +5062,57 @@ CCS PCM C Compiler, Version 5.112, 4770               27-jun.-23 13:44
 .................... //!      }else{
 .................... //!         LATA = 0b00000000; //APAGANDO LEDS
 .................... //!      }
-.................... //!      LATA = 0b00000000; //APAGANDO LEDS
-.................... //!      delay_ms(500);
-.................... //!      LATA = 0b00001111; //enciendo LEDS
-.................... //!      delay_ms(500);     
+.................... 
+....................       LATA = 0b00000001; //APAGANDO LEDS
+00CD:  MOVLW  01
+00CE:  MOVWF  16
+....................       delay_ms(x);
+00CF:  MOVLW  1E
+00D0:  MOVWF  24
+00D1:  CALL   06C
+....................       LATA = 0b00000010; //enciendo LEDS
+00D2:  MOVLW  02
+00D3:  MOVWF  16
+....................       delay_ms(x);
+00D4:  MOVLW  1E
+00D5:  MOVWF  24
+00D6:  CALL   06C
+....................       LATA = 0b00000100; //enciendo LEDS
+00D7:  MOVLW  04
+00D8:  MOVWF  16
+....................       delay_ms(x);
+00D9:  MOVLW  1E
+00DA:  MOVWF  24
+00DB:  CALL   06C
+....................       LATA = 0b00001000; //enciendo LEDS
+00DC:  MOVLW  08
+00DD:  MOVWF  16
+....................       delay_ms(x);
+00DE:  MOVLW  1E
+00DF:  MOVWF  24
+00E0:  CALL   06C
+....................       LATA = 0b00000100; //enciendo LEDS
+00E1:  MOVLW  04
+00E2:  MOVWF  16
+....................       delay_ms(x);
+00E3:  MOVLW  1E
+00E4:  MOVWF  24
+00E5:  CALL   06C
+....................       LATA = 0b00000010; //enciendo LEDS
+00E6:  MOVLW  02
+00E7:  MOVWF  16
+....................       delay_ms(x);
+00E8:  MOVLW  1E
+00E9:  MOVWF  24
+00EA:  CALL   06C
+00EB:  GOTO   0CD
+.................... 
+....................       
 .................... //!      printf("contador = %u\n",contador++);
 .................... 
-....................       leerSerial =  getch();
-00B8:  MOVLB  0E
-00B9:  BTFSS  0F.5
-00BA:  GOTO   0B9
-00BB:  MOVLB  02
-00BC:  MOVF   19,W
-00BD:  MOVLB  00
-00BE:  MOVWF  24
-....................       
-....................       if (leerSerial == 'T' | leerSerial == 't'){
-00BF:  MOVF   24,W
-00C0:  SUBLW  54
-00C1:  BTFSC  03.2
-00C2:  GOTO   0C5
-00C3:  MOVLW  00
-00C4:  GOTO   0C6
-00C5:  MOVLW  01
-00C6:  MOVWF  25
-00C7:  MOVF   24,W
-00C8:  SUBLW  74
-00C9:  BTFSC  03.2
-00CA:  GOTO   0CD
-00CB:  MOVLW  00
-00CC:  GOTO   0CE
-00CD:  MOVLW  01
-00CE:  IORWF  25,W
-00CF:  BTFSC  03.2
-00D0:  GOTO   0D4
-....................          LATA = 0b00001111; //enciendo LEDS
-00D1:  MOVLW  0F
-00D2:  MOVWF  16
-....................       }else if (leerSerial == 'y' | leerSerial == 'Y' ){
-00D3:  GOTO   0E6
-00D4:  MOVF   24,W
-00D5:  SUBLW  79
-00D6:  BTFSC  03.2
-00D7:  GOTO   0DA
-00D8:  MOVLW  00
-00D9:  GOTO   0DB
-00DA:  MOVLW  01
-00DB:  MOVWF  25
-00DC:  MOVF   24,W
-00DD:  SUBLW  59
-00DE:  BTFSC  03.2
-00DF:  GOTO   0E2
-00E0:  MOVLW  00
-00E1:  GOTO   0E3
-00E2:  MOVLW  01
-00E3:  IORWF  25,W
-00E4:  BTFSS  03.2
-....................          LATA = 0b00000000; //APAGANDO LEDS
-00E5:  CLRF   16
-....................       }
-....................       
-....................       if (leerSerial == 'a' | leerSerial == 'A'){
-00E6:  MOVF   24,W
-00E7:  SUBLW  61
-00E8:  BTFSC  03.2
-00E9:  GOTO   0EC
-00EA:  MOVLW  00
-00EB:  GOTO   0ED
-00EC:  MOVLW  01
-00ED:  MOVWF  25
-00EE:  MOVF   24,W
-00EF:  SUBLW  41
-00F0:  BTFSC  03.2
-00F1:  GOTO   0F4
-00F2:  MOVLW  00
-00F3:  GOTO   0F5
-00F4:  MOVLW  01
-00F5:  IORWF  25,W
-00F6:  BTFSC  03.2
-00F7:  GOTO   0FA
-....................          LATA = LATA | 0b00000001; //enciendo LED A0
-00F8:  BSF    16.0
-....................       }else if (leerSerial == 'z' | leerSerial == 'Z' ){
-00F9:  GOTO   10C
-00FA:  MOVF   24,W
-00FB:  SUBLW  7A
-00FC:  BTFSC  03.2
-00FD:  GOTO   100
-00FE:  MOVLW  00
-00FF:  GOTO   101
-0100:  MOVLW  01
-0101:  MOVWF  25
-0102:  MOVF   24,W
-0103:  SUBLW  5A
-0104:  BTFSC  03.2
-0105:  GOTO   108
-0106:  MOVLW  00
-0107:  GOTO   109
-0108:  MOVLW  01
-0109:  IORWF  25,W
-010A:  BTFSS  03.2
-....................          LATA = LATA & 0b11111110; //APAGANDO LED A0
-010B:  BCF    16.0
-....................       }
-....................       
-....................       if (leerSerial == 'd' | leerSerial == 'D'){
-010C:  MOVF   24,W
-010D:  SUBLW  64
-010E:  BTFSC  03.2
-010F:  GOTO   112
-0110:  MOVLW  00
-0111:  GOTO   113
-0112:  MOVLW  01
-0113:  MOVWF  25
-0114:  MOVF   24,W
-0115:  SUBLW  44
-0116:  BTFSC  03.2
-0117:  GOTO   11A
-0118:  MOVLW  00
-0119:  GOTO   11B
-011A:  MOVLW  01
-011B:  IORWF  25,W
-011C:  BTFSC  03.2
-011D:  GOTO   120
-....................          LATA = LATA | 0b00001000; //enciendo LED A3
-011E:  BSF    16.3
-....................       }else if (leerSerial == 'V' | leerSerial == 'v' ){
-011F:  GOTO   134
-0120:  MOVF   24,W
-0121:  SUBLW  56
-0122:  BTFSC  03.2
-0123:  GOTO   126
-0124:  MOVLW  00
-0125:  GOTO   127
-0126:  MOVLW  01
-0127:  MOVWF  25
-0128:  MOVF   24,W
-0129:  SUBLW  76
-012A:  BTFSC  03.2
-012B:  GOTO   12E
-012C:  MOVLW  00
-012D:  GOTO   12F
-012E:  MOVLW  01
-012F:  IORWF  25,W
-0130:  BTFSC  03.2
-0131:  GOTO   134
-....................          LATA = LATA & 0b1110111; //APAGANDO LED A3
-0132:  MOVLW  77
-0133:  ANDWF  16,F
-....................       }
-....................       
-....................       if (leerSerial == 'S' | leerSerial == 's'){
-0134:  MOVF   24,W
-0135:  SUBLW  53
-0136:  BTFSC  03.2
-0137:  GOTO   13A
-0138:  MOVLW  00
-0139:  GOTO   13B
-013A:  MOVLW  01
-013B:  MOVWF  25
-013C:  MOVF   24,W
-013D:  SUBLW  73
-013E:  BTFSC  03.2
-013F:  GOTO   142
-0140:  MOVLW  00
-0141:  GOTO   143
-0142:  MOVLW  01
-0143:  IORWF  25,W
-0144:  BTFSC  03.2
-0145:  GOTO   148
-....................          LATA = LATA | (1<<1); //enciendo LED A1
-0146:  BSF    16.1
-....................       }else if (leerSerial == 'x' | leerSerial == 'X' ){
-0147:  GOTO   15A
-0148:  MOVF   24,W
-0149:  SUBLW  78
-014A:  BTFSC  03.2
-014B:  GOTO   14E
-014C:  MOVLW  00
-014D:  GOTO   14F
-014E:  MOVLW  01
-014F:  MOVWF  25
-0150:  MOVF   24,W
-0151:  SUBLW  58
-0152:  BTFSC  03.2
-0153:  GOTO   156
-0154:  MOVLW  00
-0155:  GOTO   157
-0156:  MOVLW  01
-0157:  IORWF  25,W
-0158:  BTFSS  03.2
-....................          LATA = LATA & ~(1<<1); //APAGANDO LED A1
-0159:  BCF    16.1
-....................       }
-015A:  GOTO   0B8
-....................       
 ....................    }
 .................... }
-015B:  SLEEP
+00EC:  SLEEP
 
 Configuration Fuses:
    Word  1: 3F9C   NOEXTOSC RSTOSC_HFINTRC_PLL NOCLKOUT CKS FCMEN
