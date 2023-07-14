@@ -103,26 +103,26 @@ void main(void) {
         lcd_showCustomChar(10,2,1);*/
     }
     
-     while(1){
-        
-        
-        EMC1001_read(&high_byte, &low_byte);
-        
-        sprintf(buffer,"%d.%d\n",high_byte, low_byte);
-        printf(buffer);
-        sprintf(buffer,"\f%d.%d\n",high_byte, low_byte);
-        lcd_puts(buffer);
-        
-        __delay_ms(1000);
-        
-    }
+//     while(1){
+//        
+//        
+//        EMC1001_read(&high_byte, &low_byte);
+//        
+//        sprintf(buffer,"%d.%d\n",high_byte, low_byte);
+//        printf(buffer);
+//        sprintf(buffer,"\f%d.%d\n",high_byte, low_byte);
+//        lcd_puts(buffer);
+//        
+//        __delay_ms(1000);
+//        
+//    }
     
     
     while(1){
-        tecla = teclado_get();
-        if(tecla !=0 ){
-            printf("tecla presionada %c\n\n",tecla);
-        }
+//        tecla = teclado_get();
+//        if(tecla !=0 ){
+//            printf("tecla presionada %c\n\n",tecla);
+//        }
         __delay_ms(100);
         
         /*LATA = LATA | (1<<3);
@@ -147,11 +147,11 @@ void main(void) {
          * 
          * */
         
-        /*adc = adc_read(8);//leo pinB0
+        adc = adc_read(8);//leo pinB0
         sprintf(buffer,"ANB0 = %i \n\n",adc);
-        printf(buffer);*/
-        
-        //uart_send_string(buffer);
+        printf(buffer);
+                
+        uart_send_string(buffer);
         
         /*if (rxFlag ==1){
             rx = uart_rx();

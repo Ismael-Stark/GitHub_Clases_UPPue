@@ -1,49 +1,59 @@
 
-ROM used:   348/8192 (4%)
-            348/8192 (4%) including unused fragments
+ROM used:   832/8192 (10%)
+            832/8192 (10%) including unused fragments
 
-            0.0 Average locations per line
-            9.9 Average locations per statement
+            0.1 Average locations per line
+            21.9 Average locations per statement
 
-RAM used:   11/1024 (1%) at main() level
-            24/1024 (2%) worst case
+RAM used:   19/1024 (2%) at main() level
+            39/1024 (4%) worst case
 
-Stack used: 0 worst case (0 in main + 0 for interrupts)
+Stack used: 1 worst case (1 in main + 0 for interrupts)
 Stack size: 16
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   62    35 100  main(HolaMundo).c
-   32     0   0  main_h.h
+  132    38 100  main(HolaMundo).c
+   23     0   0  main_h.h
  2190     0   0  C:\Program Files (x86)\PICC\Devices\16F18855.h
  5454     0   0  PIC16F18855_registers.h
   195     0   0  C:\Program Files (x86)\PICC\Drivers\stdint.h
 ----- -----
- 7933    35 Total
+ 7994    38 Total
 
 Page ROM  %  RAM    Vol Diff  Functions:
 ---- --- --- ---    --- ----  ----------
-0    240  69    4   1241  6.3  main
-0     22   6    0             @const4706
-0     83  24    3             @PSTRINGC7_115200_112_113
+0     22   3    1             @delay_ms1
+0     36   4    3             @I2C_READ_129
+0     36   4    1             @I2C_WRITE_129
+0    160  19   12    827  4.8  main
+0     22   3    0             @const4722
+0     83  10    4             @PSTRINGC7_115200_112_113
+0     26   3    0    894  5.7  @const4727
+0     89  11    4             @PSTRINGCN7_115200_112_113
+0     21   3    3             @DIV88
+0    104  12    7             @PRINTF_D_115200_112_113
+0     66   8    2    380  3.3  @PRINTF_U_115200_112_113
+0    164  20    7    431  3.8  leer_sensor
+ Inline         2             @MUL88
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               1
-    Statements              35
-    Comments                405
-    Volume (V)              1249
-    Difficulty (D)          6.1
-    Effort to implement (E) 7559
-    Time to implement (T)   7 minutes
+    Functions               4
+    Statements              38
+    Comments                441
+    Volume (V)              3377
+    Difficulty (D)          16.8
+    Effort to implement (E) 56687
+    Time to implement (T)   52 minutes
     Est Delivered Bugs (B)  0
-    Cyclomatic Complexity   8
-    Maintainability (MI)    63
+    Cyclomatic Complexity   2
+    Maintainability (MI)    73
 
  Segment     Used  Free
 -----------  ----  ----
 00000-00002     3  0  
-00003-007FF   345  1700  
+00003-007FF   829  1216  
 00800-00FFF     0  2048  
 01000-017FF     0  2048  
 01800-01FFF     0  2048  

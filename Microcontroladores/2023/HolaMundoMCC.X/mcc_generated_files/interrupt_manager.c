@@ -79,6 +79,19 @@ void __interrupt() INTERRUPT_InterruptManager (void)
         //printf("%c\n\n",getch());//nunca usar mucho codigo(bloqueante) en las interrupciones
         ///__delay_ms();; nunca usar Delay en interrupciones
     }
+    else if(PIE3bits.TMR0IE == 1 && PIR3bits.TMR0IF == 1)
+    {
+        TMR0_ISR();
+        LED1_Toggle();
+//        seg++;
+//        if(seg>60){
+//            seg==0;
+//            min++;
+//            if(min>60){
+//                hr;
+//            }
+//        }
+    }
     else
     {
         //Unhandled Interrupt

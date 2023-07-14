@@ -8,14 +8,14 @@ void imprimeCaracteres(const char *ptrS);
 
 int main()
 {
-	char datoc, datos[30];
+	char datoc, dato_s[30];
 	
 	//scanf("%s",&dato);
 	
 	//datoc = getch();
-	gets(datos);
+	gets(dato_s);
 	
-	printf("%s\n\n\n",datos);
+	printf("%s\n\n\n",dato_s);
 	
 	
 	

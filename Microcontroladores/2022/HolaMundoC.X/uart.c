@@ -62,12 +62,12 @@ void uart_send_string(uint8_t *dato){
     }
 }
 
-void putch(uint8_t dato){//redireccionar el STDIO.h
+void putch(char dato){//redireccionar el STDIO.h
     //por el puerto serial, para enviar datos  printf
     uart_tx( dato);
 }
 
-uint8_t getch(){//redireccionar el STDIO.h
+int getch(){//redireccionar el STDIO.h
     //por el puerto serial, para recibir datos
     return uart_rx();
 }

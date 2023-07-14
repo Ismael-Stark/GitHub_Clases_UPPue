@@ -1,5 +1,23 @@
 ÀÄmain(HolaMundo)
-   ÀÄmain  0/240  Ram=4
+   ÀÄmain  0/160  Ram=12
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄ@cinit2  (Inline)  Ram=0
-      ÀÄ@PSTRINGC7_115200_112_113  0/83  Ram=3
+      ÃÄ@PSTRINGC7_115200_112_113  0/83  Ram=4
+      ÃÄleer_sensor  0/164  Ram=7
+      ³  ÃÄ@I2C_WRITE_129  0/36  Ram=1
+      ³  ÃÄ@I2C_WRITE_129  0/36  Ram=1
+      ³  ÃÄ@I2C_WRITE_129  0/36  Ram=1
+      ³  ÃÄ@I2C_READ_129  0/36  Ram=3
+      ³  ÃÄ@I2C_WRITE_129  0/36  Ram=1
+      ³  ÃÄ@I2C_WRITE_129  0/36  Ram=1
+      ³  ÃÄ@I2C_WRITE_129  0/36  Ram=1
+      ³  ÃÄ@I2C_READ_129  0/36  Ram=3
+      ³  ÀÄ@MUL88  (Inline)  Ram=2
+      ÃÄ@PSTRINGCN7_115200_112_113  0/89  Ram=4
+      ÃÄ@PRINTF_D_115200_112_113  0/104  Ram=7
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÀÄ@DIV88  0/21  Ram=3
+      ÃÄ@PRINTF_U_115200_112_113  0/66  Ram=2
+      ³  ÃÄ@DIV88  0/21  Ram=3
+      ³  ÀÄ@DIV88  0/21  Ram=3
+      ÀÄ@delay_ms1  0/22  Ram=1

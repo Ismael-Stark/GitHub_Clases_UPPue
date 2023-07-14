@@ -38805,9 +38805,9 @@ unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 34 "C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\\pic\\include\\xc.h" 2 3
 # 54 "mcc_generated_files/pin_manager.h" 2
-# 246 "mcc_generated_files/pin_manager.h"
+# 270 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 258 "mcc_generated_files/pin_manager.h"
+# 282 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 49 "mcc_generated_files/pin_manager.c" 2
 
@@ -38835,18 +38835,18 @@ void PIN_MANAGER_Initialize(void)
     TRISF = 0xF2;
     TRISA = 0xFF;
     TRISB = 0xF9;
-    TRISC = 0xFF;
+    TRISC = 0x7F;
     TRISD = 0xFF;
 
 
 
 
     ANSELD = 0xFF;
-    ANSELC = 0xFF;
+    ANSELC = 0x7F;
     ANSELB = 0xF9;
     ANSELE = 0x07;
     ANSELF = 0xF0;
-    ANSELA = 0xF7;
+    ANSELA = 0xE7;
 
 
 
@@ -38888,11 +38888,13 @@ void PIN_MANAGER_Initialize(void)
     INLVLE = 0x0F;
     INLVLF = 0xFF;
 # 134 "mcc_generated_files/pin_manager.c"
+    T1CKIPPS = 0x04;
     I2C1SDAPPS = 0x0A;
     RB1PPS = 0x37;
     RB2PPS = 0x38;
     RF0PPS = 0x20;
     U1RXPPS = 0x29;
+    RC7PPS = 0x15;
     I2C1SCLPPS = 0x09;
 }
 

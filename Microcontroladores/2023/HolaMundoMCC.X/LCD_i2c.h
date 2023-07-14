@@ -49,8 +49,8 @@ Const char Letra1[8]={0b11011,0b11011,0b00000,0b11111,0b10001,0b10001,0b01110,0b
 #define delay_us(x)     __delay_us(x)
 typedef uint8_t         int8;
 
-//#define PCF      64  // Puede ser 112 ó 64 (PCF8574T=64, PCF8574A=112, PCF8574=64)
-#define PCF       32    //PCF8574A = 56  = 0b00111000,        PCF8574T = 32 = 0b00100000
+//#define PCF      64  // Puede ser 112 ó 64 (PCF8574T=64, PCF8574A=112, PCF8574=64) //a8bit
+#define PCF       32    //PCF8574A = 56  = 0b00111000,        PCF8574T = 32 = 0b00100000 //a7bit
 #define PCF_ID    7   //direccion i2c
 
 #define blacking  8

@@ -38809,9 +38809,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 246 "./mcc_generated_files/pin_manager.h"
+# 270 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 258 "./mcc_generated_files/pin_manager.h"
+# 282 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -39208,6 +39208,348 @@ void ADC_ADCH4_ISR(void);
 void ADC_SetContext4ThresholdInterruptHandler(void (* InterruptHandler)(void));
 # 57 "./mcc_generated_files/mcc.h" 2
 
+# 1 "./mcc_generated_files/tmr1.h" 1
+# 100 "./mcc_generated_files/tmr1.h"
+void TMR1_Initialize(void);
+# 129 "./mcc_generated_files/tmr1.h"
+void TMR1_StartTimer(void);
+# 161 "./mcc_generated_files/tmr1.h"
+void TMR1_StopTimer(void);
+# 196 "./mcc_generated_files/tmr1.h"
+uint16_t TMR1_ReadTimer(void);
+# 235 "./mcc_generated_files/tmr1.h"
+void TMR1_WriteTimer(uint16_t timerVal);
+# 271 "./mcc_generated_files/tmr1.h"
+void TMR1_Reload(void);
+# 310 "./mcc_generated_files/tmr1.h"
+void TMR1_StartSinglePulseAcquisition(void);
+# 349 "./mcc_generated_files/tmr1.h"
+uint8_t TMR1_CheckGateValueStatus(void);
+# 387 "./mcc_generated_files/tmr1.h"
+_Bool TMR1_HasOverflowOccured(void);
+# 58 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr2.h" 1
+# 79 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+# 89 "./mcc_generated_files/tmr2.h"
+   TMR2_ROP_STARTS_TMRON,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSHIGH,
+
+
+
+
+   TMR2_ROP_STARTS_TMRON_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSBOTHEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSRISINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSFALLINGEDGE,
+
+
+
+
+   TMR2_ROP_RESETS_ERSLOW,
+
+
+
+
+   TMR2_ROP_RESETS_ERSHIGH,
+# 135 "./mcc_generated_files/tmr2.h"
+   TMR2_OS_STARTS_TMRON,
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGE ,
+
+
+
+
+   TMR2_OS_STARTS_ERSBOTHEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTRISINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE,
+
+
+
+
+
+   TMR2_OS_STARTS_ERSRISINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_ERSFALLINGEDGEDETECT,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSHIGH = 0x16,
+
+
+
+
+   TMR2_OS_STARTS_TMRON_ERSLOW = 0x17,
+# 192 "./mcc_generated_files/tmr2.h"
+   TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT = 0x11,
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT = 0x12,
+
+
+
+
+
+   TMR2_MS_STARTS_TMRON_ERSBOTHEDGE = 0x13
+
+} TMR2_HLT_MODE;
+# 220 "./mcc_generated_files/tmr2.h"
+typedef enum
+{
+
+
+    TMR2_T2INPPS,
+
+
+
+    TMR2_RESERVED,
+
+
+
+    TMR2_T4POSTSCALED,
+
+
+
+    TMR2_T6POSTSCALED,
+
+
+
+    TMR2_CCP1_OUT,
+
+
+
+    TMR2_CCP2_OUT,
+
+
+
+    TMR2_CCP3_OUT,
+
+
+
+    TMR2_PWM1S1P1_OUT,
+
+
+
+    TMR2_PWM1S1P2_OUT,
+
+
+
+    TMR2_PWM2S1P1_OUT,
+
+
+
+    TMR2_PWM2S1P2_OUT,
+
+
+
+    TMR2_PWM3S1P1_OUT,
+
+
+
+    TMR2_PWM3S1P2_OUT,
+
+
+
+    TMR2_RESERVED_2,
+
+
+
+    TMR2_RESERVED_3,
+
+
+
+    TMR2_CMP1_OUT,
+
+
+
+    TMR2_CMP2_OUT,
+
+
+
+    TMR2_ZCD_OUTPUT,
+
+
+
+    TMR2_CLC1_OUT,
+
+
+
+    TMR2_CLC2_OUT,
+
+
+
+    TMR2_CLC3_OUT,
+
+
+
+    TMR2_CLC4_OUT,
+
+
+
+    TMR2_CLC5_OUT,
+
+
+
+    TMR2_CLC6_OUT,
+
+
+
+    TMR2_CLC7_OUT,
+
+
+
+    TMR2_CLC8_OUT,
+
+
+
+    TMR2_UART1_RX_EDGE,
+
+
+
+    TMR2_UART1_TX_EDGE,
+
+
+
+    TMR2_UART2_RX_EDGE,
+
+
+
+    TMR2_UART2_TX_EDGE,
+
+
+
+    TMR2_UART3_RX_EDGE,
+
+
+
+    TMR2_UART3_TX_EDGE,
+
+
+
+    TMR2_UART4_RX_EDGE,
+
+
+
+    TMR2_UART4_TX_EDGE,
+
+
+
+    TMR2_UART5_RX_EDGE,
+
+
+
+    TMR2_UART5_TX_EDGE,
+
+
+
+    TMR2_RESERVED_4
+
+
+} TMR2_HLT_EXT_RESET_SOURCE;
+# 413 "./mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 449 "./mcc_generated_files/tmr2.h"
+void TMR2_ModeSet(TMR2_HLT_MODE mode);
+# 484 "./mcc_generated_files/tmr2.h"
+void TMR2_ExtResetSourceSet(TMR2_HLT_EXT_RESET_SOURCE reset);
+# 513 "./mcc_generated_files/tmr2.h"
+void TMR2_Start(void);
+# 542 "./mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 574 "./mcc_generated_files/tmr2.h"
+void TMR2_Stop(void);
+# 606 "./mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 641 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_Counter8BitGet(void);
+# 676 "./mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 715 "./mcc_generated_files/tmr2.h"
+void TMR2_Counter8BitSet(uint8_t timerVal);
+# 754 "./mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 806 "./mcc_generated_files/tmr2.h"
+void TMR2_Period8BitSet(uint8_t periodVal);
+# 858 "./mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 896 "./mcc_generated_files/tmr2.h"
+_Bool TMR2_HasOverflowOccured(void);
+# 59 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/tmr0.h" 1
+# 100 "./mcc_generated_files/tmr0.h"
+void TMR0_Initialize(void);
+# 129 "./mcc_generated_files/tmr0.h"
+void TMR0_StartTimer(void);
+# 161 "./mcc_generated_files/tmr0.h"
+void TMR0_StopTimer(void);
+# 197 "./mcc_generated_files/tmr0.h"
+uint16_t TMR0_ReadTimer(void);
+# 236 "./mcc_generated_files/tmr0.h"
+void TMR0_WriteTimer(uint16_t timerVal);
+# 272 "./mcc_generated_files/tmr0.h"
+void TMR0_Reload(void);
+# 290 "./mcc_generated_files/tmr0.h"
+void TMR0_ISR(void);
+# 309 "./mcc_generated_files/tmr0.h"
+ void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+# 327 "./mcc_generated_files/tmr0.h"
+extern void (*TMR0_InterruptHandler)(void);
+# 345 "./mcc_generated_files/tmr0.h"
+void TMR0_DefaultInterruptHandler(void);
+# 60 "./mcc_generated_files/mcc.h" 2
+
+# 1 "./mcc_generated_files/pwm1.h" 1
+# 97 "./mcc_generated_files/pwm1.h"
+void PWM1_Initialize(void);
+# 124 "./mcc_generated_files/pwm1.h"
+void PWM1_LoadDutyValue(uint16_t dutyValue);
+# 156 "./mcc_generated_files/pwm1.h"
+_Bool PWM1_OutputStatusGet(void);
+# 61 "./mcc_generated_files/mcc.h" 2
+
 # 1 "./mcc_generated_files/uart1.h" 1
 # 75 "./mcc_generated_files/uart1.h"
 typedef union {
@@ -39259,12 +39601,12 @@ void (*UART1_TxInterruptHandler)(void);
 void UART1_SetRxInterruptHandler(void (* InterruptHandler)(void));
 # 574 "./mcc_generated_files/uart1.h"
 void UART1_SetTxInterruptHandler(void (* InterruptHandler)(void));
-# 58 "./mcc_generated_files/mcc.h" 2
-# 73 "./mcc_generated_files/mcc.h"
+# 62 "./mcc_generated_files/mcc.h" 2
+# 77 "./mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 86 "./mcc_generated_files/mcc.h"
+# 90 "./mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 99 "./mcc_generated_files/mcc.h"
+# 103 "./mcc_generated_files/mcc.h"
 void PMD_Initialize(void);
 # 1 "main.c" 2
 
@@ -39639,18 +39981,64 @@ double y1(double);
 double yn(int, double);
 # 2 "main.c" 2
 
+
 # 1 "./DHT11.h" 1
 # 49 "./DHT11.h"
     void dht_init(_Bool DHTaUSAR);
     uint8_t leer_trama_dht();
     uint8_t leer_dht(float *tem,float *hum);
-# 3 "main.c" 2
+# 4 "main.c" 2
 
 # 1 "./HC_SR04.h" 1
-# 48 "./HC_SR04.h"
+# 52 "./HC_SR04.h"
     void HC_SR04_init();
     float HC_SR04_cm();
-# 4 "main.c" 2
+# 5 "main.c" 2
+
+# 1 "./LCD_i2c.h" 1
+# 45 "./LCD_i2c.h"
+# 1 "./mcc_generated_files/examples/i2c1_master_example.h" 1
+# 54 "./mcc_generated_files/examples/i2c1_master_example.h"
+uint8_t I2C1_Read1ByteRegister(i2c1_address_t address, uint8_t reg);
+uint16_t I2C1_Read2ByteRegister(i2c1_address_t address, uint8_t reg);
+void I2C1_Write1ByteRegister(i2c1_address_t address, uint8_t reg, uint8_t data);
+void I2C1_Write2ByteRegister(i2c1_address_t address, uint8_t reg, uint16_t data);
+void I2C1_WriteNBytes(i2c1_address_t address, uint8_t *data, size_t len);
+void I2C1_ReadNBytes(i2c1_address_t address, uint8_t *data, size_t len);
+void I2C1_ReadDataBlock(i2c1_address_t address, uint8_t reg, uint8_t *data, size_t len);
+# 45 "./LCD_i2c.h" 2
+
+
+
+
+
+typedef uint8_t int8;
+# 71 "./LCD_i2c.h"
+int8 g_LcdX, g_LcdY;
+
+
+
+
+
+int8 const LCD_INIT_STRING[4] =
+{
+ 0x20 | (2 << 2),
+ 0xc,
+ 1,
+ 6
+ };
+
+void Write_PCF(char dato);
+void Send_D7_D4(int8 address,int8 nibble);
+void lcd_send_byte(int8 address, int8 n);
+void lcd_init(void);
+void lcd_gotoxy(int8 x, int8 y);
+void lcd_putc(unsigned char c);
+void lcd_puts(unsigned char *dato);
+void Clear_LCD();
+void CGRAM(uint8_t n);
+void CGRAM_x(uint8_t p);
+# 6 "main.c" 2
 
 
 
@@ -39661,12 +40049,17 @@ double yn(int, double);
 _Bool DatoSerialDiponible = 0;
 extern uint8_t buffer[50];
 
-
+uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
+                                {0,1,0,0},
+                                {0,0,1,0},
+                                {0,0,0,1},
+                           };
+# 30 "main.c"
 float map(float x, float in_min, float in_max, float out_min, float out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
 
-
+void Mpasos_init();
 
 
 void main(void)
@@ -39675,11 +40068,14 @@ void main(void)
     float temperatura, distancia;
     uint8_t lecturaSerial;
     float humedad, tempe,dhterr;
+    uint8_t buffer[34];
 
     SYSTEM_Initialize();
+    lcd_init();
     dht_init(0);
     HC_SR04_init();
-
+    lcd_puts("\fHola Mundo");
+    Mpasos_init();
 
 
 
@@ -39692,33 +40088,27 @@ void main(void)
 
     while (1)
     {
-
-        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-        do { LATFbits.LATF2 = ~LATFbits.LATF2; } while(0);
-        ADCvalor = ADC_GetSingleConversion(LM35);
-
-        temperatura = ((3.3/4095)*ADCvalor)*100;
-# 64 "main.c"
-        _delay((unsigned long)((900)*(10000000/4000.0)));
-
-        dhterr = leer_dht(&tempe, &humedad);
-
-        if (dhterr ==0){
-            printf("\nEl DHT11: H:%.1f%%, T:%.1f\n",humedad, tempe);
-
-
-
-
-        }else{
-            printf("\nError DHT11 verifica tus cables\n");
+        for(uint8_t i = 0 ; i<4;i++){
+            LATFbits.LATF4 = Pasos_Soft[i][3];
+            _delay((unsigned long)((1)*(10000000/4000.0)));
+            LATFbits.LATF5 = Pasos_Soft[i][2];
+            _delay((unsigned long)((1)*(10000000/4000.0)));
+            LATFbits.LATF6 = Pasos_Soft[i][1];
+            _delay((unsigned long)((1)*(10000000/4000.0)));
+            LATFbits.LATF7 = Pasos_Soft[i][0];
+            _delay((unsigned long)((1)*(10000000/4000.0)));
         }
-
-        if (DatoSerialDiponible == 1){
-           DatoSerialDiponible = 0;
-           printf("llego el dato: %s\n\n",buffer);
-        }
-
-        printf("\nLa distancia es: %.2f cm\n",HC_SR04_cm() );
-
+# 140 "main.c"
     }
+}
+
+
+
+
+
+
+void Mpasos_init(){
+    LATF = 0;
+    PORTF = 0;
+    TRISF &= ~( (1<<7)|(1<<6)|(1<<5)|(1<<4) );
 }

@@ -31,6 +31,7 @@ node-red  http://127.0.0.1:1880/
 
 cd C:\Archivos de programa\mosquitto
 mosquitto_sub -t test -h broker.hivemq.com
+mosquitto_pub -t test -h broker.hivemq.com -q 2 -i  SAT3 -m "true"
 
 mosquitto_sub -t UPPue/hum1 -h broker.hivemq.com
 mosquitto_sub -t UPPue/temp1 -h broker.hivemq.com

@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F23360 `(v ~T0 @X0 0 tf ]
-[v F23362 `(v ~T0 @X0 0 tf ]
+[v F23471 `(v ~T0 @X0 0 tf ]
+[v F23473 `(v ~T0 @X0 0 tf ]
 "3458 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3135 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3135 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
@@ -3668,10 +3668,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 04FFh ;# ">
 "518 ./mcc_generated_files/uart1.h
 [; ;./mcc_generated_files/uart1.h: 518: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F23360 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F23471 ~T0 @X0 1 e ]
 "536
 [; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F23362 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F23473 ~T0 @X0 1 e ]
 "3 HC_SR04.c
 [; ;HC_SR04.c: 3: void HC_SR04_init(){
 [v _HC_SR04_init `(v ~T0 @X0 1 ef ]
@@ -3688,11 +3688,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;HC_SR04.c: 6:     LATDbits.LATD6 =0;
 [e = . . _LATDbits 0 6 -> -> 0 `i `uc ]
 "7
-[; ;HC_SR04.c: 7:     ANSELDbits.ANSELD6 = 0;
-[e = . . _ANSELDbits 0 6 -> -> 0 `i `uc ]
-"8
-[; ;HC_SR04.c: 8:     ANSELDbits.ANSELD7 = 0;
+[; ;HC_SR04.c: 7:     ANSELDbits.ANSELD7 = 0;
 [e = . . _ANSELDbits 0 7 -> -> 0 `i `uc ]
+"8
+[; ;HC_SR04.c: 8:     ANSELDbits.ANSELD6 = 0;
+[e = . . _ANSELDbits 0 6 -> -> 0 `i `uc ]
 "10
 [; ;HC_SR04.c: 10: }
 [e :UE 3250 ]

@@ -1,11 +1,32 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"71 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 71: void SYSTEM_Initialize(void);
+"72 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 72: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "107 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
 [; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 107: int printf(const char *restrict, ...);
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"783 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 783:     struct {
+[s S47 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S47 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
+"782
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 782: typedef union {
+[u S46 `S47 1 ]
+[n S46 . . ]
+"794
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 794: extern volatile LATAbits_t LATAbits __attribute__((address(0x016)));
+[v _LATAbits `VS46 ~T0 @X0 0 e@22 ]
+"38 main.c
+[; ;main.c: 38:         uint16_t Leer_adc = ADCC_GetSingleConversion(LM35);
+[c E12091 4 8 60 61 62 63 .. ]
+[n E12091 . POT LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_buf1  ]
+"250 ./mcc_generated_files/adcc.h
+[; ;./mcc_generated_files/adcc.h: 250: adc_result_t ADCC_GetSingleConversion(adcc_channel_t channel);
+[v _ADCC_GetSingleConversion `(us ~T0 @X0 0 ef1`E12091 ]
+"54 ./mcc_generated_files/examples/i2c1_master_example.h
+[; ;./mcc_generated_files/examples/i2c1_master_example.h: 54: uint8_t I2C1_Read1ByteRegister(i2c1_address_t address, uint8_t reg);
+[v _I2C1_Read1ByteRegister `(uc ~T0 @X0 0 ef2`uc`uc ]
 [v F192 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\builtins.h
 [v __delay `JF192 ~T0 @X0 0 e ]
@@ -1565,42 +1586,110 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC16F1xxxx_DFP/1.15.191/xc8\pic\include\proc\pic16f18855.h: 35049: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
 [v $root$_main `(v ~T0 @X0 0 e ]
-"7 main.c
-[; ;main.c: 7: void main(void)
+"8 main.c
+[; ;main.c: 8: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"8
-[; ;main.c: 8: {
+"9
+[; ;main.c: 9: {
 {
 [e :U _main ]
 [f ]
-"9
-[; ;main.c: 9:     uint8_t contador=0;
+"10
+[; ;main.c: 10:      uint8_t temph, templ;
+[v _temph `uc ~T0 @X0 1 a ]
+[v _templ `uc ~T0 @X0 1 a ]
+"11
+[; ;main.c: 11:     uint8_t contador=0;
 [v _contador `uc ~T0 @X0 1 a ]
 [e = _contador -> -> 0 `i `uc ]
-"11
-[; ;main.c: 11:     SYSTEM_Initialize();
+"13
+[; ;main.c: 13:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"28
-[; ;main.c: 28:     while (1)
-[e :U 1570 ]
 "29
-[; ;main.c: 29:     {
-{
+[; ;main.c: 29:      printf("Hola mundooooooooo\n");
+[e ( _printf :s 1C ]
 "30
-[; ;main.c: 30:         printf("Hola %d\n",contador++);
-[e ( _printf , (. :s 1C -> ++ _contador -> -> 1 `i `uc `i ]
-"31
-[; ;main.c: 31:         _delay((unsigned long)((5)*(32000000/4000.0)));
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
-"33
-[; ;main.c: 33:     }
-}
-[e :U 1569 ]
-[e $U 1570  ]
+[; ;main.c: 30:     do { LATAbits.LATA0 = 1; } while(0);
 [e :U 1571 ]
-"34
-[; ;main.c: 34: }
+{
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+}
+[e :U 1570 ]
+"31
+[; ;main.c: 31:     do { LATAbits.LATA1 = 1; } while(0);
+[e :U 1574 ]
+{
+[e = . . _LATAbits 0 1 -> -> 1 `i `uc ]
+}
+[e :U 1573 ]
+"32
+[; ;main.c: 32:     do { LATAbits.LATA2 = 1; } while(0);
+[e :U 1577 ]
+{
+[e = . . _LATAbits 0 2 -> -> 1 `i `uc ]
+}
+[e :U 1576 ]
+"33
+[; ;main.c: 33:     do { LATAbits.LATA3 = 1; } while(0);
+[e :U 1580 ]
+{
+[e = . . _LATAbits 0 3 -> -> 1 `i `uc ]
+}
+[e :U 1579 ]
+"35
+[; ;main.c: 35:     while (1)
+[e :U 1582 ]
+"36
+[; ;main.c: 36:     {
+{
+"37
+[; ;main.c: 37:         printf("Hola %d\n",contador++);
+[e ( _printf , (. :s 2C -> ++ _contador -> -> 1 `i `uc `i ]
+"38
+[; ;main.c: 38:         uint16_t Leer_adc = ADCC_GetSingleConversion(LM35);
+[v _Leer_adc `us ~T0 @X0 1 a ]
+[e = _Leer_adc ( _ADCC_GetSingleConversion (1 . `E12091 1 ]
+"39
+[; ;main.c: 39:         float volt = (5.0*Leer_adc)/1024;
+[v _volt `f ~T0 @X0 1 a ]
+[e = _volt -> / * .5.0 -> -> _Leer_adc `ui `d -> -> 1024 `i `d `f ]
+"40
+[; ;main.c: 40:         float tempe = (3.3*100*Leer_adc)/1024;
+[v _tempe `f ~T0 @X0 1 a ]
+[e = _tempe -> / * * .3.3 -> -> 100 `i `d -> -> _Leer_adc `ui `d -> -> 1024 `i `d `f ]
+"41
+[; ;main.c: 41:         printf("ADC_RB0: %d,Volt: %.5f, temp %.2f\n",Leer_adc,volt,tempe);
+[e ( _printf , , , (. :s 3C -> _Leer_adc `ui -> _volt `d -> _tempe `d ]
+"44
+[; ;main.c: 44:         temph = I2C1_Read1ByteRegister(0b0111000, 0x00);
+[e = _temph ( _I2C1_Read1ByteRegister (2 , -> -> 56 `i `uc -> -> 0 `i `uc ]
+"45
+[; ;main.c: 45:         templ = I2C1_Read1ByteRegister(0b0111000, 0x02);
+[e = _templ ( _I2C1_Read1ByteRegister (2 , -> -> 56 `i `uc -> -> 2 `i `uc ]
+"46
+[; ;main.c: 46:         templ >>= 6;
+[e =>> _templ -> -> 6 `i `uc ]
+"47
+[; ;main.c: 47:         templ *= 25;
+[e =* _templ -> -> 25 `i `uc ]
+"53
+[; ;main.c: 53:         printf("MPLABx la temperatura es: %d.%d\n\n", temph,templ);
+[e ( _printf , , (. :s 4C -> _temph `i -> _templ `i ]
+"54
+[; ;main.c: 54:         _delay((unsigned long)((1000)*(32000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 32000000 `l `d .4000.0 `ul ]
+"56
+[; ;main.c: 56:     }
+}
+[e :U 1581 ]
+[e $U 1582  ]
+[e :U 1583 ]
+"57
+[; ;main.c: 57: }
 [e :UE 1568 ]
 }
-[p f _printf 8388736 ]
-[a 1C 72 111 108 97 32 37 100 10 0 ]
+[p f _printf 8462464 ]
+[a 1C 72 111 108 97 32 109 117 110 100 111 111 111 111 111 111 111 111 111 10 0 ]
+[a 3C 65 68 67 95 82 66 48 58 32 37 100 44 86 111 108 116 58 32 37 46 53 102 44 32 116 101 109 112 32 37 46 50 102 10 0 ]
+[a 2C 72 111 108 97 32 37 100 10 0 ]
+[a 4C 77 80 76 65 66 120 32 108 97 32 116 101 109 112 101 114 97 116 117 114 97 32 101 115 58 32 37 100 46 37 100 10 10 0 ]

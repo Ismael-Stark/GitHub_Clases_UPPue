@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F23360 `(v ~T0 @X0 0 tf ]
-[v F23362 `(v ~T0 @X0 0 tf ]
+[v F23471 `(v ~T0 @X0 0 tf ]
+[v F23473 `(v ~T0 @X0 0 tf ]
 "3962 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3153 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
@@ -36,6 +36,34 @@ Version 4.0 HI-TECH Software Intermediate Code
 "91 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
 [; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 91: int getch(void);
 [v _getch `(i ~T0 @X0 0 ef ]
+"1154 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+[s S3058 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3058 . SPI1RXIE SPI1TXIE SPI1IE TMR2IE TMR1IE TMR1GIE CCP1IE TMR0IE ]
+"1153
+[u S3057 `S3058 1 ]
+[n S3057 . . ]
+"1165
+[v _PIE3bits `VS3057 ~T0 @X0 0 e@1185 ]
+"2139
+[s S3091 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3091 . SPI1RXIF SPI1TXIF SPI1IF TMR2IF TMR1IF TMR1GIF CCP1IF TMR0IF ]
+"2138
+[u S3090 `S3091 1 ]
+[n S3090 . . ]
+"2150
+[v _PIR3bits `VS3090 ~T0 @X0 0 e@1201 ]
+"290 mcc_generated_files/tmr0.h
+[; ;mcc_generated_files/tmr0.h: 290: void TMR0_ISR(void);
+[v _TMR0_ISR `(v ~T0 @X0 0 ef ]
+"3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+[s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3127 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
+"3209
+[u S3126 `S3127 1 ]
+[n S3126 . . ]
+"3221
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
+[v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -3662,10 +3690,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 04FFh ;# ">
 "518 mcc_generated_files/uart1.h
 [; ;mcc_generated_files/uart1.h: 518: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F23360 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F23471 ~T0 @X0 1 e ]
 "536
 [; ;mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F23362 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F23473 ~T0 @X0 1 e ]
 "52 mcc_generated_files/interrupt_manager.c
 [; ;mcc_generated_files/interrupt_manager.c: 52: uint8_t buffer[50], contadorBuffer=0, datoSerial;
 [v _buffer `uc ~T0 @X0 -> 50 `i e ]
@@ -3763,17 +3791,39 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 3258  ]
 "82
-[; ;mcc_generated_files/interrupt_manager.c: 82:     else
+[; ;mcc_generated_files/interrupt_manager.c: 82:     else if(PIE3bits.TMR0IE == 1 && PIR3bits.TMR0IF == 1)
 [e :U 3254 ]
+[e $ ! && == -> . . _PIE3bits 0 7 `i -> 1 `i == -> . . _PIR3bits 0 7 `i -> 1 `i 3259  ]
 "83
 [; ;mcc_generated_files/interrupt_manager.c: 83:     {
 {
+"84
+[; ;mcc_generated_files/interrupt_manager.c: 84:         TMR0_ISR();
+[e ( _TMR0_ISR ..  ]
 "85
-[; ;mcc_generated_files/interrupt_manager.c: 85:     }
+[; ;mcc_generated_files/interrupt_manager.c: 85:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+[e :U 3262 ]
+{
+[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
 }
+[e :U 3261 ]
+"94
+[; ;mcc_generated_files/interrupt_manager.c: 94:     }
+}
+[e $U 3263  ]
+"95
+[; ;mcc_generated_files/interrupt_manager.c: 95:     else
+[e :U 3259 ]
+"96
+[; ;mcc_generated_files/interrupt_manager.c: 96:     {
+{
+"98
+[; ;mcc_generated_files/interrupt_manager.c: 98:     }
+}
+[e :U 3263 ]
 [e :U 3258 ]
 [e :U 3253 ]
-"86
-[; ;mcc_generated_files/interrupt_manager.c: 86: }
+"99
+[; ;mcc_generated_files/interrupt_manager.c: 99: }
 [e :UE 3251 ]
 }
