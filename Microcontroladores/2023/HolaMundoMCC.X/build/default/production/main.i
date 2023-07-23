@@ -40073,9 +40073,9 @@ void main(void)
     SYSTEM_Initialize();
     lcd_init();
     dht_init(0);
-    HC_SR04_init();
+
     lcd_puts("\fHola Mundo");
-    Mpasos_init();
+
 
 
 
@@ -40088,17 +40088,7 @@ void main(void)
 
     while (1)
     {
-        for(uint8_t i = 0 ; i<4;i++){
-            LATFbits.LATF4 = Pasos_Soft[i][3];
-            _delay((unsigned long)((1)*(10000000/4000.0)));
-            LATFbits.LATF5 = Pasos_Soft[i][2];
-            _delay((unsigned long)((1)*(10000000/4000.0)));
-            LATFbits.LATF6 = Pasos_Soft[i][1];
-            _delay((unsigned long)((1)*(10000000/4000.0)));
-            LATFbits.LATF7 = Pasos_Soft[i][0];
-            _delay((unsigned long)((1)*(10000000/4000.0)));
-        }
-# 140 "main.c"
+# 139 "main.c"
     }
 }
 

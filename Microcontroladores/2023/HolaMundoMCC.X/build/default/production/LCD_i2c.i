@@ -39674,6 +39674,7 @@ void Write_PCF(char dato){
 
    I2C1_Write1ByteRegister( 32|(7),0,(dato|8) );
 
+
 }
 
 void Send_D7_D4(int8 address,int8 nibble){
@@ -39716,7 +39717,7 @@ void lcd_init(void){
       _delay((unsigned long)((5)*(10000000/4000.0)));
    }
     Send_D7_D4(0,0x02);
-# 65 "LCD_i2c.c"
+# 66 "LCD_i2c.c"
    for(i=0; i < sizeof(LCD_INIT_STRING); i++)
    {
       lcd_send_byte(0, LCD_INIT_STRING[i]);

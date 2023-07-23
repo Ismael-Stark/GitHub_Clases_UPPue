@@ -45,9 +45,9 @@ void main(void)
     SYSTEM_Initialize();
     lcd_init();
     dht_init(USE_DHT11);
-    HC_SR04_init();
+    //HC_SR04_init();
     lcd_puts("\fHola Mundo");
-    Mpasos_init();
+    //Mpasos_init();
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
@@ -60,16 +60,16 @@ void main(void)
 
     while (1)
     {
-        for(uint8_t i = 0 ; i<4;i++){
-            LATFbits.LATF4 = Pasos_Soft[i][3];
-            __delay_ms(1);
-            LATFbits.LATF5 = Pasos_Soft[i][2];
-            __delay_ms(1);
-            LATFbits.LATF6 = Pasos_Soft[i][1];
-            __delay_ms(1);
-            LATFbits.LATF7 = Pasos_Soft[i][0];
-            __delay_ms(1);
-        }
+//        for(uint8_t i = 0 ; i<4;i++){
+//            LATFbits.LATF4 = Pasos_Soft[i][3];
+//            __delay_ms(1);
+//            LATFbits.LATF5 = Pasos_Soft[i][2];
+//            __delay_ms(1);
+//            LATFbits.LATF6 = Pasos_Soft[i][1];
+//            __delay_ms(1);
+//            LATFbits.LATF7 = Pasos_Soft[i][0];
+//            __delay_ms(1);
+//        }
 //          for(uint8_t i = 0 ; i<4;i++){
 //            Pasos_Soft[i][3] ? LATF |=(1<<4) : LATF &=~(1<<4);
 //            Pasos_Soft[i][2] ? LATF |=(1<<5) : LATF &=~(1<<5);

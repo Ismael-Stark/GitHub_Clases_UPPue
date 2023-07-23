@@ -7,6 +7,7 @@ void Write_PCF(char dato){
    I2C_stop();*/
    
    I2C1_Write1ByteRegister( PCF|(PCF_ID),0,(dato|blacking) );
+   //I2C1_Write1ByteRegister( PCF|(PCF_ID),0,(dato) );
       
 }
 
