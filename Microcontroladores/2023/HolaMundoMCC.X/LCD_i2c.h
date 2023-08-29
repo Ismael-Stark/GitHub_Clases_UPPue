@@ -39,12 +39,11 @@ Const char Letra1[8]={0b11011,0b11011,0b00000,0b11111,0b10001,0b10001,0b01110,0b
 #ifndef LCD_I2C_H
 #define LCD_I2C_H
 
-
-#include <stdint.h>
 #include "mcc_generated_files/mcc.h"
 #include "mcc_generated_files/examples/i2c1_master_example.h"
 #include <stdint.h> //descomentar en caso de ser necesario
 #include <xc.h>
+
 #define delay_ms(x)     __delay_ms(x)
 #define delay_us(x)     __delay_us(x)
 typedef uint8_t         int8;

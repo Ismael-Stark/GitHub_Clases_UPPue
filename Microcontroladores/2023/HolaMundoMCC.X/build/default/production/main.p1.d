@@ -14,4 +14,5 @@ mcc_generated_files/uart1.h  \
 DHT11.h  \
 HC_SR04.h  \
 LCD_i2c.h  \
-mcc_generated_files/examples/i2c1_master_example.h 
+mcc_generated_files/examples/i2c1_master_example.h  \
+DS1307.h 

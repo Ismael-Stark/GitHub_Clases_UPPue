@@ -17,7 +17,7 @@ Type=4
 forcecoff=0
 
 [ProjectLog]
-Days=8
+Days=9
 D1=22-06-2023
 D1_L=18
 D1_L1=[46625]Project Opened.
@@ -126,6 +126,12 @@ D8_L5=[48637]Stopped Editing.
 D8_E=18
 D8_D=0
 D8_L6=[51219]Project Closed.
+D9=08-08-2023
+D9_L=4
+D9_L1=[44511]Project Opened.
+D9_L2=[44522]Project Closed.
+D9_L3=[44610]Project Opened.
+D9_L4=[44658]Project Closed.
 
 [Opened Files]
 1=main(HolaMundo).c

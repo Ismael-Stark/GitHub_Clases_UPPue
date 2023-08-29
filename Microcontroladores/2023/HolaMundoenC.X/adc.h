@@ -1,8 +1,8 @@
 
 
 
-#ifndef ADC
-#define	ADC
+#ifndef ADC_H
+#define	ADC_H
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include "Config.h"

@@ -5,15 +5,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "77 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 77: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"88 ./LCD_i2c.h
-[; ;./LCD_i2c.h: 88: void lcd_init(void);
-[v _lcd_init `(v ~T0 @X0 0 ef ]
-"49 ./DHT11.h
-[; ;./DHT11.h: 49:     void dht_init(_Bool DHTaUSAR);
-[v _dht_init `(v ~T0 @X0 0 ef1`a ]
-"91 ./LCD_i2c.h
-[; ;./LCD_i2c.h: 91: void lcd_puts(unsigned char *dato);
-[v _lcd_puts `(v ~T0 @X0 0 ef1`*uc ]
 "3962 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3153 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
@@ -25,7 +16,30 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3152 . . . ]
 "3976
 [v _INTCON0bits `VS3152 ~T0 @X0 0 e@1238 ]
-"3204
+"107 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
+[; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 107: int printf(const char *restrict, ...);
+[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+[v F192 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
+[v __delay `JF192 ~T0 @X0 0 e ]
+[p i __delay ]
+"3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+[s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3127 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
+"3209
+[u S3126 `S3127 1 ]
+[n S3126 . . ]
+"3221
+[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
+[v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
+"88 main.c
+[; ;main.c: 88:         ADCvalor = ADC_GetSingleConversion(POT1);
+[c E23222 0 1 5 59 60 61 62 63 .. ]
+[n E23222 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+"374 ./mcc_generated_files/adc.h
+[; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
+[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23222 ]
+"3204 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [v _LATF `Vuc ~T0 @X0 0 e@1219 ]
 "3894
 [v _PORTF `Vuc ~T0 @X0 0 e@1235 ]
@@ -3661,12 +3675,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "536
 [; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
 [v _UART1_TxInterruptHandler `*F23473 ~T0 @X0 1 e ]
-"71 ./LCD_i2c.h
-[; ;./LCD_i2c.h: 71: int8 g_LcdX, g_LcdY;
+"70 ./LCD_i2c.h
+[; ;./LCD_i2c.h: 70: int8 g_LcdX, g_LcdY;
 [v _g_LcdX `uc ~T0 @X0 1 e ]
 [v _g_LcdY `uc ~T0 @X0 1 e ]
-"77
-[; ;./LCD_i2c.h: 77: int8 const LCD_INIT_STRING[4] =
+"76
+[; ;./LCD_i2c.h: 76: int8 const LCD_INIT_STRING[4] =
 [v _LCD_INIT_STRING `Cuc ~T0 @X0 -> 4 `i e ]
 [i _LCD_INIT_STRING
 :U ..
@@ -3676,16 +3690,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 6 `i `uc
 ..
 ]
-"13 main.c
-[; ;main.c: 13: _Bool DatoSerialDiponible = 0;
+"14 main.c
+[; ;main.c: 14: _Bool DatoSerialDiponible = 0;
 [v _DatoSerialDiponible `a ~T0 @X0 1 e ]
 [i _DatoSerialDiponible
 -> -> 0 `i `a
 ]
-[v F23972 `uc ~T0 @X0 -> 4 `i t ]
-"16
-[; ;main.c: 16: uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
-[v _Pasos_Soft `F23972 ~T0 @X0 -> 4 `i e ]
+[v F24004 `uc ~T0 @X0 -> 4 `i t ]
+"17
+[; ;main.c: 17: uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
+[v _Pasos_Soft `F24004 ~T0 @X0 -> 4 `i e ]
 [i _Pasos_Soft
 :U ..
 :U ..
@@ -3714,8 +3728,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-"30
-[; ;main.c: 30: float map(float x, float in_min, float in_max, float out_min, float out_max) {
+"31
+[; ;main.c: 31: float map(float x, float in_min, float in_max, float out_min, float out_max) {
 [v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
 {
 [e :U _map ]
@@ -3725,92 +3739,120 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _out_min `f ~T0 @X0 1 r4 ]
 [v _out_max `f ~T0 @X0 1 r5 ]
 [f ]
-"31
-[; ;main.c: 31:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+"32
+[; ;main.c: 32:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 [e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
 [e $UE 3250  ]
-"32
-[; ;main.c: 32: }
+"33
+[; ;main.c: 33: }
 [e :UE 3250 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"37
-[; ;main.c: 37: void main(void)
-[v _main `(v ~T0 @X0 1 ef ]
 "38
-[; ;main.c: 38: {
+[; ;main.c: 38: void main(void)
+[v _main `(v ~T0 @X0 1 ef ]
+"39
+[; ;main.c: 39: {
 {
 [e :U _main ]
 [f ]
-"39
-[; ;main.c: 39:     uint16_t ADCvalor, SensorSharp, contador=0;
+"40
+[; ;main.c: 40:     uint16_t ADCvalor, SensorSharp, contador=0;
 [v _ADCvalor `us ~T0 @X0 1 a ]
 [v _SensorSharp `us ~T0 @X0 1 a ]
 [v _contador `us ~T0 @X0 1 a ]
 [e = _contador -> -> 0 `i `us ]
-"40
-[; ;main.c: 40:     float temperatura, distancia;
+"41
+[; ;main.c: 41:     float temperatura, distancia;
 [v _temperatura `f ~T0 @X0 1 a ]
 [v _distancia `f ~T0 @X0 1 a ]
-"41
-[; ;main.c: 41:     uint8_t lecturaSerial;
-[v _lecturaSerial `uc ~T0 @X0 1 a ]
 "42
-[; ;main.c: 42:     float humedad, tempe,dhterr;
+[; ;main.c: 42:     uint8_t lecturaSerial;
+[v _lecturaSerial `uc ~T0 @X0 1 a ]
+"43
+[; ;main.c: 43:     float humedad, tempe,dhterr;
 [v _humedad `f ~T0 @X0 1 a ]
 [v _tempe `f ~T0 @X0 1 a ]
 [v _dhterr `f ~T0 @X0 1 a ]
-"43
-[; ;main.c: 43:     uint8_t buffer[34];
+"44
+[; ;main.c: 44:     uint8_t buffer[34];
 [v _buffer `uc ~T0 @X0 -> 34 `i a ]
-"45
-[; ;main.c: 45:     SYSTEM_Initialize();
-[e ( _SYSTEM_Initialize ..  ]
 "46
-[; ;main.c: 46:     lcd_init();
-[e ( _lcd_init ..  ]
-"47
-[; ;main.c: 47:     dht_init(0);
-[e ( _dht_init (1 -> -> 0 `i `a ]
-"49
-[; ;main.c: 49:     lcd_puts("\fHola Mundo");
-[e ( _lcd_puts (1 :s 1C ]
-"56
-[; ;main.c: 56:     (INTCON0bits.GIE = 1);
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"61
-[; ;main.c: 61:     while (1)
-[e :U 3253 ]
+[; ;main.c: 46:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
 "62
-[; ;main.c: 62:     {
+[; ;main.c: 62:     (INTCON0bits.GIE = 1);
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+"66
+[; ;main.c: 66:     printf("Hola ds1307\n");
+[e ( _printf :s 1C ]
+"67
+[; ;main.c: 67:     _delay((unsigned long)((100)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"68
+[; ;main.c: 68:     uint8_t hr,min,sec,mes,dia,anno,diasem;
+[v _hr `uc ~T0 @X0 1 a ]
+[v _min `uc ~T0 @X0 1 a ]
+[v _sec `uc ~T0 @X0 1 a ]
+[v _mes `uc ~T0 @X0 1 a ]
+[v _dia `uc ~T0 @X0 1 a ]
+[v _anno `uc ~T0 @X0 1 a ]
+[v _diasem `uc ~T0 @X0 1 a ]
+"77
+[; ;main.c: 77:     while (1)
+[e :U 3253 ]
+"78
+[; ;main.c: 78:     {
 {
-"139
-[; ;main.c: 139:     }
+"79
+[; ;main.c: 79:         printf("contador %d\n",contador ++);
+[e ( _printf , (. :s 2C -> ++ _contador -> -> 1 `i `us `ui ]
+"80
+[; ;main.c: 80:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+[e :U 3257 ]
+{
+[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
+}
+[e :U 3256 ]
+"88
+[; ;main.c: 88:         ADCvalor = ADC_GetSingleConversion(POT1);
+[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23222 0 ]
+"89
+[; ;main.c: 89:         printf("La ADC es: %d\n",ADCvalor);
+[e ( _printf , (. :s 3C -> _ADCvalor `ui ]
+"90
+[; ;main.c: 90:         _delay((unsigned long)((1500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"167
+[; ;main.c: 167:     }
 }
 [e :U 3252 ]
 [e $U 3253  ]
 [e :U 3254 ]
-"140
-[; ;main.c: 140: }
+"168
+[; ;main.c: 168: }
 [e :UE 3251 ]
 }
-"147
-[; ;main.c: 147: void Mpasos_init(){
+"175
+[; ;main.c: 175: void Mpasos_init(){
 [v _Mpasos_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _Mpasos_init ]
 [f ]
-"148
-[; ;main.c: 148:     LATF = 0;
+"176
+[; ;main.c: 176:     LATF = 0;
 [e = _LATF -> -> 0 `i `uc ]
-"149
-[; ;main.c: 149:     PORTF = 0;
+"177
+[; ;main.c: 177:     PORTF = 0;
 [e = _PORTF -> -> 0 `i `uc ]
-"150
-[; ;main.c: 150:     TRISF &= ~( (1<<7)|(1<<6)|(1<<5)|(1<<4) );
+"178
+[; ;main.c: 178:     TRISF &= ~( (1<<7)|(1<<6)|(1<<5)|(1<<4) );
 [e =& _TRISF -> ~ | | | << -> 1 `i -> 7 `i << -> 1 `i -> 6 `i << -> 1 `i -> 5 `i << -> 1 `i -> 4 `i `Vuc ]
-"151
-[; ;main.c: 151: }
-[e :UE 3255 ]
+"179
+[; ;main.c: 179: }
+[e :UE 3258 ]
 }
-[a 1C 12 72 111 108 97 32 77 117 110 100 111 0 ]
+[p f _printf 8388736 ]
+[a 2C 99 111 110 116 97 100 111 114 32 37 100 10 0 ]
+[a 3C 76 97 32 65 68 67 32 101 115 58 32 37 100 10 0 ]
+[a 1C 72 111 108 97 32 100 115 49 51 48 55 10 0 ]

@@ -3,7 +3,8 @@
 #include <pic18f57q84.h>
 #include "DHT11.h"
 #include "HC_SR04.h"
-#include "LCD_i2c.h"
+#include "LCD_i2c.h"]
+#include "DS1307.h"
 /*
                          Main application
  */
@@ -43,11 +44,16 @@ void main(void)
     uint8_t buffer[34];
     // Initialize the device
     SYSTEM_Initialize();
-    lcd_init();
-    dht_init(USE_DHT11);
+    //lcd_init();
+    //dht_init(USE_DHT11);
     //HC_SR04_init();
-    lcd_puts("\fHola Mundo");
+    //lcd_puts("\fHola mundo");
+    //__delay_ms(100);
+    
     //Mpasos_init();
+    
+    
+    
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
     // Use the following macros to:
@@ -57,9 +63,32 @@ void main(void)
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-
+    printf("Hola ds1307\n");
+    __delay_ms(100);
+    uint8_t hr,min,sec,mes,dia,anno,diasem;
+    //ds1307_init();
+    
+    /////// ds1307_set_date_time(day,mth,year,dow,hour,min,sec)
+//    uint8_t hr = 15,min=32,sec=0,mes=8,dia=16,anno=2023,diasem=3;
+    //ds1307_set_date_time(dia,mes,anno,diasem,hr,min,sec);
+    //ds1307_set_date_time(18,8,23,5,12,20,0);
+    //ds1307_set_date(day,mth,year,dow)
+    //ds1307_set_date(16,8,23,3);
     while (1)
-    {
+    {        
+        printf("contador %d\n",contador ++);
+        LED1_Toggle();
+//        /// ds1307_get_time(hr,min,sec)
+//        ds1307_get_time(&hr,&min,&sec);
+//        /// ds1307_get_date(day,mth,year,dow)
+//        ds1307_get_date(&dia,&mes,&anno,&diasem);
+//        printf("La hora es: %00d:%00d:%00d\n",hr,min,sec);
+//        printf("La fecha es: %d/%d/%d\n",dia,mes,anno);
+        
+        ADCvalor = ADC_GetSingleConversion(POT1);
+        
+        printf("La ADC es: %d\n",ADCvalor);
+        __delay_ms(1500);
 //        for(uint8_t i = 0 ; i<4;i++){
 //            LATFbits.LATF4 = Pasos_Soft[i][3];
 //            __delay_ms(1);

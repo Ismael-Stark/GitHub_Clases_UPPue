@@ -1,0 +1,56 @@
+[PROJECT]
+Target=main(RTC_DS1337).hex
+Processor_Text=PIC16F18855
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=main(RTC_DS1337).c
+[main(RTC_DS1337).c]
+Type=4
+[mru-list]
+1=main(RTC_DS1337).c
+
+[defines]
+buildcount=6
+
+[ProjectLog]
+Days=3
+D1=16-08-2023
+D1_L=4
+D1_L1=[60256]Stopped Editing.
+D1_L2=[60266]Started Editing.
+D1_L3=[60742]Stopped Editing.
+TotalEdit=12
+TotalDebug=0
+D1_E=5
+D1_D=0
+D1_L4=[62378]Project Closed.
+D2=17-08-2023
+D2_L=2
+D2_L1=[62606]Project Opened.
+D2_L2=[63307]Project Closed.
+D3=18-08-2023
+D3_L=8
+D3_L1=[40869]Project Opened.
+D3_L2=[41330]Started Editing.
+D3_L3=[41948]Stopped Editing.
+D3_L4=[43267]Started Editing.
+D3_L5=[43641]Stopped Editing.
+D3_E=7
+D3_D=0
+D3_L6=[45306]Project Closed.
+D3_L7=[47552]Project Opened.
+D3_L8=[47583]Project Closed.
+
+[Opened Files]
+1=main(RTC_DS1337).c
+t1=53
+2=ds1337.c
+t2=52
+Count=2
+[Units]
+Count=1
+1=main(RTC_DS1337) (main)
+
+[fileformats]
+forcecoff=0

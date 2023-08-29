@@ -1,0 +1,9 @@
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase2_LCD\main(LCD_i2c) on 18-ago.-23 at 13:14
+>>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase2_LCD\main(LCD_i2c).c" Line 44(12,20): Variable never used:   contador
+>>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase2_LCD\main(LCD_i2c).c" Line 44(26,36): Variable never used:   leer_boton
+>>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase2_LCD\main(LCD_i2c).c" Line 45(12,22): Variable never used:   leerSerial
+>>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase2_LCD\main(LCD_i2c).c" Line 47(13,20): Variable never used:   LeerADC
+>>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase2_LCD\main(LCD_i2c).c" Line 48(10,17): Variable never used:   voltaje
+      Memory usage:   ROM=22%      RAM=10% - 13%
+      0 Errors,  5 Warnings.
+Build Successful.

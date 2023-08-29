@@ -3638,12 +3638,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "536
 [; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
 [v _UART1_TxInterruptHandler `*F23473 ~T0 @X0 1 e ]
-"71 ./LCD_i2c.h
-[; ;./LCD_i2c.h: 71: int8 g_LcdX, g_LcdY;
+"70 ./LCD_i2c.h
+[; ;./LCD_i2c.h: 70: int8 g_LcdX, g_LcdY;
 [v _g_LcdX `uc ~T0 @X0 1 e ]
 [v _g_LcdY `uc ~T0 @X0 1 e ]
-"77
-[; ;./LCD_i2c.h: 77: int8 const LCD_INIT_STRING[4] =
+"76
+[; ;./LCD_i2c.h: 76: int8 const LCD_INIT_STRING[4] =
 [v _LCD_INIT_STRING `Cuc ~T0 @X0 -> 4 `i e ]
 [i _LCD_INIT_STRING
 :U ..

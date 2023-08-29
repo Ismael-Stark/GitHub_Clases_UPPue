@@ -39996,7 +39996,7 @@ double yn(int, double);
 # 5 "main.c" 2
 
 # 1 "./LCD_i2c.h" 1
-# 45 "./LCD_i2c.h"
+# 43 "./LCD_i2c.h"
 # 1 "./mcc_generated_files/examples/i2c1_master_example.h" 1
 # 54 "./mcc_generated_files/examples/i2c1_master_example.h"
 uint8_t I2C1_Read1ByteRegister(i2c1_address_t address, uint8_t reg);
@@ -40006,14 +40006,15 @@ void I2C1_Write2ByteRegister(i2c1_address_t address, uint8_t reg, uint16_t data)
 void I2C1_WriteNBytes(i2c1_address_t address, uint8_t *data, size_t len);
 void I2C1_ReadNBytes(i2c1_address_t address, uint8_t *data, size_t len);
 void I2C1_ReadDataBlock(i2c1_address_t address, uint8_t reg, uint8_t *data, size_t len);
-# 45 "./LCD_i2c.h" 2
+# 43 "./LCD_i2c.h" 2
+
 
 
 
 
 
 typedef uint8_t int8;
-# 71 "./LCD_i2c.h"
+# 70 "./LCD_i2c.h"
 int8 g_LcdX, g_LcdY;
 
 
@@ -40040,6 +40041,23 @@ void CGRAM(uint8_t n);
 void CGRAM_x(uint8_t p);
 # 6 "main.c" 2
 
+# 1 "./DS1307.h" 1
+# 69 "./DS1307.h"
+    uint8_t bin2bcd(uint8_t binary_value);
+    uint8_t bcd2bin(uint8_t bcd_value);
+
+    void ds1307_init(void);
+    void ds1307_set_date_time(uint8_t day,uint8_t mth,uint8_t year,uint8_t dow,uint8_t hr,uint8_t min,uint8_t sec);
+
+    void ds1307_set_date(uint8_t day,uint8_t mth,uint8_t year,uint8_t dow);
+
+    void ds1307_set_time(uint8_t hr,uint8_t min,uint8_t sec);
+
+    void ds1307_get_date(uint8_t *ptrDay,uint8_t *ptrMth,uint8_t *ptrYear,uint8_t *ptrDow);
+    void ds1307_get_time(uint8_t *ptrHr,uint8_t *ptrMin,uint8_t *ptrSec);
+    void ds1307_OUT(void);
+# 7 "main.c" 2
+
 
 
 
@@ -40054,7 +40072,7 @@ uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
                                 {0,0,1,0},
                                 {0,0,0,1},
                            };
-# 30 "main.c"
+# 31 "main.c"
 float map(float x, float in_min, float in_max, float out_min, float out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
@@ -40071,24 +40089,30 @@ void main(void)
     uint8_t buffer[34];
 
     SYSTEM_Initialize();
-    lcd_init();
-    dht_init(0);
-
-    lcd_puts("\fHola Mundo");
-
-
-
-
-
-
+# 62 "main.c"
     (INTCON0bits.GIE = 1);
 
 
 
-
+    printf("Hola ds1307\n");
+    _delay((unsigned long)((100)*(10000000/4000.0)));
+    uint8_t hr,min,sec,mes,dia,anno,diasem;
+# 77 "main.c"
     while (1)
     {
-# 139 "main.c"
+        printf("contador %d\n",contador ++);
+        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+
+
+
+
+
+
+
+        ADCvalor = ADC_GetSingleConversion(POT1);
+        printf("La ADC es: %d\n",ADCvalor);
+        _delay((unsigned long)((1500)*(10000000/4000.0)));
+# 167 "main.c"
     }
 }
 

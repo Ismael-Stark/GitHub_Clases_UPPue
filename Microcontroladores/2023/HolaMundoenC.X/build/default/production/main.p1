@@ -1,10 +1,10 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"50 ./Config.h
-[; ;./Config.h: 50:     void init_osc(void);
+"52 ./Config.h
+[; ;./Config.h: 52:     void init_osc(void);
 [v _init_osc `(v ~T0 @X0 0 ef ]
-"51
-[; ;./Config.h: 51:     void pin_init(void);
+"53
+[; ;./Config.h: 53:     void pin_init(void);
 [v _pin_init `(v ~T0 @X0 0 ef ]
 "3204 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [v _LATF `Vuc ~T0 @X0 0 e@1219 ]
@@ -14,7 +14,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "10 ./adc.h
 [; ;./adc.h: 10:     void ADC_Init();
 [v _ADC_Init `(v ~T0 @X0 0 e? ]
-"12
+"44 ./I2C.h
+[; ;./I2C.h: 44:     void I2C_init(void);
+[v _I2C_init `(v ~T0 @X0 0 ef ]
+"12 ./adc.h
 [; ;./adc.h: 12:     uint16_t ADC_Get_Sample(uint8_t canal);
 [v _ADC_Get_Sample `(us ~T0 @X0 0 ef1`uc ]
 "111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
@@ -3788,67 +3791,70 @@ Version 4.0 HI-TECH Software Intermediate Code
 "151
 [p x CRCERESL  =  hFF    ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"7 main.c
-[; ;main.c: 7: void main(void) {
+"8 main.c
+[; ;main.c: 8: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"8
-[; ;main.c: 8:     init_osc();
-[e ( _init_osc ..  ]
 "9
-[; ;main.c: 9:     pin_init();
-[e ( _pin_init ..  ]
+[; ;main.c: 9:     init_osc();
+[e ( _init_osc ..  ]
 "10
-[; ;main.c: 10:     uint32_t count = 0;
+[; ;main.c: 10:     pin_init();
+[e ( _pin_init ..  ]
+"11
+[; ;main.c: 11:     uint32_t count = 0;
 [v _count `ul ~T0 @X0 1 a ]
 [e = _count -> -> -> 0 `i `l `ul ]
-"11
-[; ;main.c: 11:     uint32_t max_count = 1000000;
+"12
+[; ;main.c: 12:     uint32_t max_count = 1000000;
 [v _max_count `ul ~T0 @X0 1 a ]
 [e = _max_count -> -> 1000000 `l `ul ]
-"12
-[; ;main.c: 12:     uint8_t contador=0, RX;
+"13
+[; ;main.c: 13:     uint8_t contador=0, RX;
 [v _contador `uc ~T0 @X0 1 a ]
 [e = _contador -> -> 0 `i `uc ]
 [v _RX `uc ~T0 @X0 1 a ]
-"13
-[; ;main.c: 13:     uint16_t LecturaADC;
+"14
+[; ;main.c: 14:     uint16_t LecturaADC;
 [v _LecturaADC `us ~T0 @X0 1 a ]
-"16
-[; ;main.c: 16:     LATF = LATF | (1<<3);;
-[e = _LATF -> | -> _LATF `i << -> 1 `i -> 3 `i `uc ]
 "17
-[; ;main.c: 17:     LATF = LATF | (1<<2);;
+[; ;main.c: 17:     LATF = LATF | (1<<3);;
+[e = _LATF -> | -> _LATF `i << -> 1 `i -> 3 `i `uc ]
+"18
+[; ;main.c: 18:     LATF = LATF | (1<<2);;
 [e = _LATF -> | -> _LATF `i << -> 1 `i -> 2 `i `uc ]
-"19
-[; ;main.c: 19:     serial_init(115200);
-[e ( _serial_init (1 -> -> 115200 `l `ul ]
 "20
-[; ;main.c: 20:     ADC_Init();
+[; ;main.c: 20:     serial_init(115200);
+[e ( _serial_init (1 -> -> 115200 `l `ul ]
+"21
+[; ;main.c: 21:     ADC_Init();
 [e ( _ADC_Init ..  ]
-"23
-[; ;main.c: 23:     while(1){
+"22
+[; ;main.c: 22:     I2C_init();
+[e ( _I2C_init ..  ]
+"25
+[; ;main.c: 25:     while(1){
 [e :U 3250 ]
 {
-"25
-[; ;main.c: 25:         LecturaADC = ADC_Get_Sample(5);
-[e = _LecturaADC ( _ADC_Get_Sample (1 -> -> 5 `i `uc ]
 "27
-[; ;main.c: 27:         printf("ADC0 = %d\n", LecturaADC);
+[; ;main.c: 27:         LecturaADC = ADC_Get_Sample(5);
+[e = _LecturaADC ( _ADC_Get_Sample (1 -> -> 5 `i `uc ]
+"29
+[; ;main.c: 29:         printf("ADC0 = %d\n", LecturaADC);
 [e ( _printf , (. :s 1C -> _LecturaADC `ui ]
-"28
-[; ;main.c: 28:         _delay((unsigned long)((500)*(10000000UL/4000.0)));
+"30
+[; ;main.c: 30:         _delay((unsigned long)((500)*(10000000UL/4000.0)));
 [e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `ul `d .4000.0 `ul ]
-"60
-[; ;main.c: 60:     }
+"62
+[; ;main.c: 62:     }
 }
 [e :U 3249 ]
 [e $U 3250  ]
 [e :U 3251 ]
-"65
-[; ;main.c: 65: }
+"67
+[; ;main.c: 67: }
 [e :UE 3248 ]
 }
 [p f _printf 8388736 ]

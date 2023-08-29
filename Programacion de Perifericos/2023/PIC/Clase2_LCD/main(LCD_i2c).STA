@@ -1,0 +1,79 @@
+
+ROM used:   1840/8192 (22%)
+            1840/8192 (22%) including unused fragments
+
+            0.2 Average locations per line
+            13.0 Average locations per statement
+
+RAM used:   103/1024 (10%) at main() level
+            132/1024 (13%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 16
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  114    52  37  main(LCD_i2c).c
+   23     0   0  main_h.h
+ 2190     0   0  C:\Program Files (x86)\PICC\Devices\16F18855.h
+ 5454     0   0  PIC16F18855_registers.h
+  195     0   0  C:\Program Files (x86)\PICC\Drivers\stdint.h
+  243    90  63  LCD_i2c.c
+----- -----
+ 8219   142 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   1    1             @delay_ms1
+0     45   2    3             @I2C_READ_129
+0     38   2    1             @I2C_WRITE_129
+0      5   0    0             @const4712
+0     32   2    2    104  2.1  Write_PCF
+0     63   3    4    851  5.4  Send_D7_D4
+0     22   1    3     98  2.8  lcd_send_byte
+0     86   5    2    538  5.7  lcd_init
+0     56   3    4    467  6.5  lcd_gotoxy
+0     48   3    2    307  5.1  lcd_putc
+0     78   4    3    377  6.5  lcd_puts
+0     43   2    5    209  5.5  lcd_setCustomChar
+0     15   1    3    102  2.3  lcd_showCustomCharXY
+0    365  20   62   1586  5.4  main
+0      6   0    0             @const4762
+0     13   1    1             @SPRINTF
+0     79   4    3             @PSTRINGC7_4729
+0     34   2    0             @const4767
+0     83   5    3             @PSTRINGC7_115200_112_113
+0     26   1    0             @const4769
+0     93   5    6             @PSTRINGCN7_115200_112_113
+0     23   1    3             @DIV88
+0    109   6    7             @PRINTF_D_115200_112_113
+0     71   4    2             @PRINTF_U_115200_112_113
+0     13   1    0             @const4781
+0     89   5    6             @PSTRINGCN7_4763
+0     99   5    7             @PRINTF_D_4763
+0    182  10    9    431  3.8  leer_sensor
+ Inline         2             @MUL88
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               11
+    Statements              142
+    Comments                459
+    Volume (V)              7830
+    Difficulty (D)          48.7
+    Effort to implement (E) 381552
+    Time to implement (T)   5 hours, 53 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   19
+    Maintainability (MI)    68
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     3  0  
+00003-007FF  1837  208  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

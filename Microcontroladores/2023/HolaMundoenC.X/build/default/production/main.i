@@ -39091,7 +39091,11 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 10 "./Config.h" 2
-# 50 "./Config.h"
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 12 "./Config.h" 2
+# 52 "./Config.h"
     void init_osc(void);
     void pin_init(void);
 # 1 "main.c" 2
@@ -39111,6 +39115,11 @@ char *tempnam(const char *, const char *);
     uint16_t ADC_Get_Sample(uint8_t canal);
 # 3 "main.c" 2
 
+# 1 "./I2C.h" 1
+# 44 "./I2C.h"
+    void I2C_init(void);
+# 4 "main.c" 2
+
 
 
 
@@ -39128,6 +39137,7 @@ void main(void) {
 
     serial_init(115200);
     ADC_Init();
+    I2C_init();
 
 
     while(1){
@@ -39136,7 +39146,7 @@ void main(void) {
 
         printf("ADC0 = %d\n", LecturaADC);
         _delay((unsigned long)((500)*(10000000UL/4000.0)));
-# 60 "main.c"
+# 62 "main.c"
     }
 
 

@@ -39099,7 +39099,11 @@ char *ctermid(char *);
 
 char *tempnam(const char *, const char *);
 # 10 "./Config.h" 2
-# 50 "./Config.h"
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
+# 12 "./Config.h" 2
+# 52 "./Config.h"
     void init_osc(void);
     void pin_init(void);
 # 8 "./adc.h" 2

@@ -1,0 +1,66 @@
+
+ROM used:   943/8192 (12%)
+            943/8192 (12%) including unused fragments
+
+            0.1 Average locations per line
+            8.2 Average locations per statement
+
+RAM used:   15/1024 (1%) at main() level
+            37/1024 (4%) worst case
+
+Stack used: 2 worst case (2 in main + 0 for interrupts)
+Stack size: 16
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   82    41  36  main(RTC).c
+   23     0   0  main_h.h
+ 2190     0   0  C:\Program Files (x86)\PICC\Devices\16F18855.h
+ 5454     0   0  PIC16F18855_registers.h
+  195     0   0  C:\Program Files (x86)\PICC\Drivers\stdint.h
+  154    74  64  ds1307.c
+----- -----
+ 8098   115 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   2    1             @delay_ms1
+0     36   4    3             @I2C_READ_129
+0     36   4    1             @I2C_WRITE_129
+0    139  15    2    497  2.4  ds1307_init
+ Inline         9    383  3.1  ds1307_get_date
+ Inline         7    315  3.0  ds1307_get_time
+ Inline         3    240  6.0  bin2bcd
+0     19   2    3    157  4.4  bcd2bin
+0    350  37    8   1002  4.4  main
+0     22   2    0             @const4749
+0     83   9    5             @PSTRINGC7_115200_112_113
+0     10   1    0             @const4754
+0     88   9    5    431  3.8  @PSTRINGCN7_115200_112_113
+0     21   2    3    431  3.8  @DIV88
+0    103  11    7    431  3.8  @PRINTF_D0_115200_112_113
+0     12   1    0             @const4763
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               9
+    Statements              115
+    Comments                443
+    Volume (V)              6046
+    Difficulty (D)          33.9
+    Effort to implement (E) 205235
+    Time to implement (T)   3 hours, 10 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   1
+    Maintainability (MI)    46
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     3  0  
+00003-007FF   940  1105  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

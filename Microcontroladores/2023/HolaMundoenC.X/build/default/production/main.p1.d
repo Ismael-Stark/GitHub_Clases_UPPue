@@ -3,4 +3,5 @@ main.c  \
 Config.h  \
 Fuses.h  \
 serial.h  \
-adc.h 
+adc.h  \
+I2C.h 

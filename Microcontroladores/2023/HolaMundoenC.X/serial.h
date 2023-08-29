@@ -1,6 +1,6 @@
 
-#ifndef SERIAL
-#define	SERIAL
+#ifndef SERIAL_H
+#define	SERIAL_H
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include "Config.h"

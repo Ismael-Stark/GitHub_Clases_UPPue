@@ -1,6 +1,8 @@
 #include "Config.h"
 #include "serial.h"
 #include "adc.h"
+#include "I2C.h"
+
 
 //miercoles asignar equipos y proyectos de fin de cuatrimestre
 
@@ -18,6 +20,7 @@ void main(void) {
     
     serial_init(115200);
     ADC_Init();
+    I2C_init();
     
     
     while(1){

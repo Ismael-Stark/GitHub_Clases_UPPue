@@ -1,0 +1,35 @@
+[PROJECT]
+Target=main(RTC).hex
+Processor_Text=PIC16F18855
+CCSVersion=5.112
+Compiler=PCM
+[Target Data]
+FileList=main(RTC).c
+[main(RTC).c]
+Type=4
+[mru-list]
+1=main(RTC).c
+
+[defines]
+buildcount=5
+
+[Opened Files]
+1=main(RTC).c
+t1=34
+2=ds1307.c
+t2=34
+Count=2
+[Units]
+Count=1
+1=main(RTC) (main)
+
+[ProjectLog]
+Days=1
+D1=16-08-2023
+D1_L=2
+D1_L1=[47401]Stopped Editing.
+TotalEdit=7
+TotalDebug=0
+D1_E=7
+D1_D=0
+D1_L2=[59851]Project Closed.

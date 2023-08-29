@@ -1,13 +1,15 @@
 
 
 
-#ifndef CONFIG
-#define	CONFIG
+#ifndef CONFIG_H
+#define	CONFIG_H
 
 #include <xc.h> // include processor files - each processor file is guarded.  
 #include <pic18f57q84.h>
 #include "Fuses.h"
 #include <stdio.h>
+#include <stdint.h>
+#include <stdbool.h>
 #define _XTAL_FREQ 10000000UL// unsigned Long 32 bits
 // TODO Insert appropriate #include <>
 
