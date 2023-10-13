@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F23471 `(v ~T0 @X0 0 tf ]
-[v F23473 `(v ~T0 @X0 0 tf ]
+[v F23472 `(v ~T0 @X0 0 tf ]
+[v F23474 `(v ~T0 @X0 0 tf ]
 "3962 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3153 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
@@ -33,9 +33,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 "2212
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 2212:     struct {
 [v _PIR4bits `VS3092 ~T0 @X0 0 e@1202 ]
-"91 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 91: int getch(void);
-[v _getch `(i ~T0 @X0 0 ef ]
+"14 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\conio.h
+[; ;C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\conio.h: 14: extern char getch(void);
+[v _getch `(uc ~T0 @X0 0 ef ]
 "1154 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3058 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S3058 . SPI1RXIE SPI1TXIE SPI1IE TMR2IE TMR1IE TMR1GIE CCP1IE TMR0IE ]
@@ -3690,10 +3690,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 04FFh ;# ">
 "518 mcc_generated_files/uart1.h
 [; ;mcc_generated_files/uart1.h: 518: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F23471 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F23472 ~T0 @X0 1 e ]
 "536
 [; ;mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F23473 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F23474 ~T0 @X0 1 e ]
 "52 mcc_generated_files/interrupt_manager.c
 [; ;mcc_generated_files/interrupt_manager.c: 52: uint8_t buffer[50], contadorBuffer=0, datoSerial;
 [v _buffer `uc ~T0 @X0 -> 50 `i e ]

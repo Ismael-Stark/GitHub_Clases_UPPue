@@ -29,26 +29,26 @@ Page ROM  %  RAM    Vol Diff  Functions:
 0    160  19   12    827  4.8  main
 0     22   3    0             @const4722
 0     83  10    4             @PSTRINGC7_115200_112_113
-0     26   3    0    894  5.7  @const4727
+0     26   3    0             @const4727
 0     89  11    4             @PSTRINGCN7_115200_112_113
 0     21   3    3             @DIV88
 0    104  12    7             @PRINTF_D_115200_112_113
-0     66   8    2    380  3.3  @PRINTF_U_115200_112_113
+0     66   8    2             @PRINTF_U_115200_112_113
 0    164  20    7    431  3.8  leer_sensor
  Inline         2             @MUL88
  Inline         0             @cinit1
 
 Program metrics:
-    Functions               4
+    Functions               2
     Statements              38
     Comments                441
-    Volume (V)              3377
-    Difficulty (D)          16.8
-    Effort to implement (E) 56687
-    Time to implement (T)   52 minutes
+    Volume (V)              1489
+    Difficulty (D)          7.7
+    Effort to implement (E) 11417
+    Time to implement (T)   11 minutes
     Est Delivered Bugs (B)  0
-    Cyclomatic Complexity   2
-    Maintainability (MI)    73
+    Cyclomatic Complexity   1
+    Maintainability (MI)    46
 
  Segment     Used  Free
 -----------  ----  ----

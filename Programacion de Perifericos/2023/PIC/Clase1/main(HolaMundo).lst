@@ -1,4 +1,4 @@
-CCS PCM C Compiler, Version 5.112, 4770               11-jul.-23 13:25
+CCS PCM C Compiler, Version 5.112, 4770               28-sep.-23 14:32
 
                Filename:   D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).lst
 
@@ -6441,7 +6441,7 @@ CCS PCM C Compiler, Version 5.112, 4770               11-jul.-23 13:25
 033C:  DECFSZ 2D,F
 033D:  GOTO   339
 033E:  GOTO   30C
-....................    
+.................... 
 ....................    
 .................... //!      leer_boton = PORTA;
 .................... //!      //leer_boton >>= 5;

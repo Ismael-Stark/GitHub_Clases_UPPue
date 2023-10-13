@@ -1,6 +1,6 @@
 Version 4.0 HI-TECH Software Intermediate Code
-[v F23471 `(v ~T0 @X0 0 tf ]
-[v F23473 `(v ~T0 @X0 0 tf ]
+[v F23472 `(v ~T0 @X0 0 tf ]
+[v F23474 `(v ~T0 @X0 0 tf ]
 [p mainexit ]
 "77 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 77: void SYSTEM_Initialize(void);
@@ -16,12 +16,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S3152 . . . ]
 "3976
 [v _INTCON0bits `VS3152 ~T0 @X0 0 e@1238 ]
-"107 C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h
-[; ;C:\Program Files\Microchip\xc8\v2.41\pic\include\c99\stdio.h: 107: int printf(const char *restrict, ...);
+"111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-[v F192 `(v ~T0 @X0 1 tf1`ul ]
+[v F183 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
-[v __delay `JF192 ~T0 @X0 0 e ]
+[v __delay `JF183 ~T0 @X0 0 e ]
 [p i __delay ]
 "3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -34,11 +33,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
 "88 main.c
 [; ;main.c: 88:         ADCvalor = ADC_GetSingleConversion(POT1);
-[c E23222 0 1 5 59 60 61 62 63 .. ]
-[n E23222 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
+[c E23223 0 1 5 59 60 61 62 63 .. ]
+[n E23223 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
 "374 ./mcc_generated_files/adc.h
 [; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23222 ]
+[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23223 ]
 "3204 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [v _LATF `Vuc ~T0 @X0 0 e@1219 ]
 "3894
@@ -3671,10 +3670,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; <" TOSU equ 04FFh ;# ">
 "518 ./mcc_generated_files/uart1.h
 [; ;./mcc_generated_files/uart1.h: 518: void (*UART1_RxInterruptHandler)(void);
-[v _UART1_RxInterruptHandler `*F23471 ~T0 @X0 1 e ]
+[v _UART1_RxInterruptHandler `*F23472 ~T0 @X0 1 e ]
 "536
 [; ;./mcc_generated_files/uart1.h: 536: void (*UART1_TxInterruptHandler)(void);
-[v _UART1_TxInterruptHandler `*F23473 ~T0 @X0 1 e ]
+[v _UART1_TxInterruptHandler `*F23474 ~T0 @X0 1 e ]
 "70 ./LCD_i2c.h
 [; ;./LCD_i2c.h: 70: int8 g_LcdX, g_LcdY;
 [v _g_LcdX `uc ~T0 @X0 1 e ]
@@ -3696,10 +3695,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _DatoSerialDiponible
 -> -> 0 `i `a
 ]
-[v F24004 `uc ~T0 @X0 -> 4 `i t ]
+[v F24005 `uc ~T0 @X0 -> 4 `i t ]
 "17
 [; ;main.c: 17: uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
-[v _Pasos_Soft `F24004 ~T0 @X0 -> 4 `i e ]
+[v _Pasos_Soft `F24005 ~T0 @X0 -> 4 `i e ]
 [i _Pasos_Soft
 :U ..
 :U ..
@@ -3816,40 +3815,40 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 3256 ]
 "88
 [; ;main.c: 88:         ADCvalor = ADC_GetSingleConversion(POT1);
-[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23222 0 ]
-"89
-[; ;main.c: 89:         printf("La ADC es: %d\n",ADCvalor);
-[e ( _printf , (. :s 3C -> _ADCvalor `ui ]
+[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23223 0 ]
 "90
-[; ;main.c: 90:         _delay((unsigned long)((1500)*(10000000/4000.0)));
+[; ;main.c: 90:         printf("La ADC es: %d\n",ADCvalor);
+[e ( _printf , (. :s 3C -> _ADCvalor `ui ]
+"91
+[; ;main.c: 91:         _delay((unsigned long)((1500)*(10000000/4000.0)));
 [e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"167
-[; ;main.c: 167:     }
+"168
+[; ;main.c: 168:     }
 }
 [e :U 3252 ]
 [e $U 3253  ]
 [e :U 3254 ]
-"168
-[; ;main.c: 168: }
+"169
+[; ;main.c: 169: }
 [e :UE 3251 ]
 }
-"175
-[; ;main.c: 175: void Mpasos_init(){
+"176
+[; ;main.c: 176: void Mpasos_init(){
 [v _Mpasos_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _Mpasos_init ]
 [f ]
-"176
-[; ;main.c: 176:     LATF = 0;
-[e = _LATF -> -> 0 `i `uc ]
 "177
-[; ;main.c: 177:     PORTF = 0;
-[e = _PORTF -> -> 0 `i `uc ]
+[; ;main.c: 177:     LATF = 0;
+[e = _LATF -> -> 0 `i `uc ]
 "178
-[; ;main.c: 178:     TRISF &= ~( (1<<7)|(1<<6)|(1<<5)|(1<<4) );
-[e =& _TRISF -> ~ | | | << -> 1 `i -> 7 `i << -> 1 `i -> 6 `i << -> 1 `i -> 5 `i << -> 1 `i -> 4 `i `Vuc ]
+[; ;main.c: 178:     PORTF = 0;
+[e = _PORTF -> -> 0 `i `uc ]
 "179
-[; ;main.c: 179: }
+[; ;main.c: 179:     TRISF &= ~( (1<<7)|(1<<6)|(1<<5)|(1<<4) );
+[e =& _TRISF -> ~ | | | << -> 1 `i -> 7 `i << -> 1 `i -> 6 `i << -> 1 `i -> 5 `i << -> 1 `i -> 4 `i `Vuc ]
+"180
+[; ;main.c: 180: }
 [e :UE 3258 ]
 }
 [p f _printf 8388736 ]

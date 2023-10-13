@@ -1,4 +1,8 @@
-Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) on 11-jul.-23 at 13:25
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) on 28-sep.-23 at 14:32
+*** Error 24 "C:\Program Files (x86)\PICC\Devices\16F18855.h" Line 11(9,20): Unknown device type    -- Try PCM
+      1 Errors,  0 Warnings.
+Build Failed.
+Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo) on 28-sep.-23 at 14:32
 >>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 14(12,20): Variable never used:   contador
 >>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 14(26,36): Variable never used:   leer_boton
 >>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase1\main(HolaMundo).c" Line 15(12,22): Variable never used:   leerSerial

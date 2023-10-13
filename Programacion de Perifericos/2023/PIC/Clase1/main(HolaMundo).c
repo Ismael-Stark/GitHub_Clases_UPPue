@@ -36,7 +36,7 @@ void main(){
    leer_sensor(&TH,&TL);
    printf("la temperatura del sensore de la tarejeta es:%d.%u\n",TH, TL);
    delay_ms(1000);
-   
+
    
 //!      leer_boton = PORTA;
 //!      //leer_boton >>= 5;
