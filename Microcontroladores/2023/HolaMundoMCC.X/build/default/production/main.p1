@@ -1,43 +1,27 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [v F23472 `(v ~T0 @X0 0 tf ]
 [v F23474 `(v ~T0 @X0 0 tf ]
+"93 ./Stepper.h
+[; ;./Stepper.h: 93:     struct Stepper{
+[s S3250 `i 1 `ul 1 `i 1 `i 1 `i 1 `ul 1 ]
+[n S3250 Stepper direction step_delay number_of_steps pin_count step_number last_step_time ]
 [p mainexit ]
 "77 ./mcc_generated_files/mcc.h
 [; ;./mcc_generated_files/mcc.h: 77: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
-"3962 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
-[s S3153 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3153 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
-"3971
-[s S3154 :7 `uc 1 :1 `uc 1 ]
-[n S3154 . . GIEH ]
-"3961
-[u S3152 `S3153 1 `S3154 1 ]
-[n S3152 . . . ]
-"3976
-[v _INTCON0bits `VS3152 ~T0 @X0 0 e@1238 ]
-"111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
-[v _printf `(i ~T0 @X0 0 ev`*Cuc ]
+"82 ./Stepper.h
+[; ;./Stepper.h: 82:     void stepper_init(int number_of_steps);
+[v _stepper_init `(v ~T0 @X0 0 ef1`i ]
+"84
+[; ;./Stepper.h: 84:     void stepper_setSpeed(long whatSpeed);
+[v _stepper_setSpeed `(v ~T0 @X0 0 ef1`l ]
+"86
+[; ;./Stepper.h: 86:     void stepper_step(int steps_to_move);
+[v _stepper_step `(v ~T0 @X0 0 ef1`i ]
 [v F183 `(v ~T0 @X0 1 tf1`ul ]
 "12 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\builtins.h
 [v __delay `JF183 ~T0 @X0 0 e ]
 [p i __delay ]
-"3210 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
-[s S3127 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S3127 . LATF0 LATF1 LATF2 LATF3 LATF4 LATF5 LATF6 LATF7 ]
-"3209
-[u S3126 `S3127 1 ]
-[n S3126 . . ]
-"3221
-[; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 3221: typedef union {
-[v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
-"88 main.c
-[; ;main.c: 88:         ADCvalor = ADC_GetSingleConversion(POT1);
-[c E23223 0 1 5 59 60 61 62 63 .. ]
-[n E23223 . POT1 POT2 LM35 channel_VSS channel_Temp channel_DAC1 channel_FVR_Buffer1 channel_FVR_Buffer2  ]
-"374 ./mcc_generated_files/adc.h
-[; ;./mcc_generated_files/adc.h: 374: adc_result_t ADC_GetSingleConversion(ADC_channel_t channel);
-[v _ADC_GetSingleConversion `(us ~T0 @X0 0 ef1`E23223 ]
 "3204 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [v _LATF `Vuc ~T0 @X0 0 e@1219 ]
 "3894
@@ -3689,16 +3673,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 6 `i `uc
 ..
 ]
-"14 main.c
-[; ;main.c: 14: _Bool DatoSerialDiponible = 0;
+"111 ./Stepper.h
+[; ;./Stepper.h: 111:     struct Stepper stepper;
+[v _stepper `S3250 ~T0 @X0 1 e ]
+"17 main.c
+[; ;main.c: 17: _Bool DatoSerialDiponible = 0;
 [v _DatoSerialDiponible `a ~T0 @X0 1 e ]
 [i _DatoSerialDiponible
 -> -> 0 `i `a
 ]
-[v F24005 `uc ~T0 @X0 -> 4 `i t ]
-"17
-[; ;main.c: 17: uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
-[v _Pasos_Soft `F24005 ~T0 @X0 -> 4 `i e ]
+[v F24024 `uc ~T0 @X0 -> 4 `i t ]
+"20
+[; ;main.c: 20: uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
+[v _Pasos_Soft `F24024 ~T0 @X0 -> 4 `i e ]
 [i _Pasos_Soft
 :U ..
 :U ..
@@ -3727,8 +3714,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 ..
 ..
 ]
-"31
-[; ;main.c: 31: float map(float x, float in_min, float in_max, float out_min, float out_max) {
+"34
+[; ;main.c: 34: float map(float x, float in_min, float in_max, float out_min, float out_max) {
 [v _map `(f ~T0 @X0 1 ef5`f`f`f`f`f ]
 {
 [e :U _map ]
@@ -3738,120 +3725,99 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _out_min `f ~T0 @X0 1 r4 ]
 [v _out_max `f ~T0 @X0 1 r5 ]
 [f ]
-"32
-[; ;main.c: 32:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+"35
+[; ;main.c: 35:   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 [e ) + / * - _x _in_min - _out_max _out_min - _in_max _in_min _out_min ]
-[e $UE 3250  ]
-"33
-[; ;main.c: 33: }
-[e :UE 3250 ]
+[e $UE 3251  ]
+"36
+[; ;main.c: 36: }
+[e :UE 3251 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"38
-[; ;main.c: 38: void main(void)
+"41
+[; ;main.c: 41: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"39
-[; ;main.c: 39: {
+"42
+[; ;main.c: 42: {
 {
 [e :U _main ]
 [f ]
-"40
-[; ;main.c: 40:     uint16_t ADCvalor, SensorSharp, contador=0;
+"43
+[; ;main.c: 43:     uint16_t ADCvalor, SensorSharp, contador=0;
 [v _ADCvalor `us ~T0 @X0 1 a ]
 [v _SensorSharp `us ~T0 @X0 1 a ]
 [v _contador `us ~T0 @X0 1 a ]
 [e = _contador -> -> 0 `i `us ]
-"41
-[; ;main.c: 41:     float temperatura, distancia;
+"44
+[; ;main.c: 44:     float temperatura, distancia;
 [v _temperatura `f ~T0 @X0 1 a ]
 [v _distancia `f ~T0 @X0 1 a ]
-"42
-[; ;main.c: 42:     uint8_t lecturaSerial;
+"45
+[; ;main.c: 45:     uint8_t lecturaSerial, diley=100;
 [v _lecturaSerial `uc ~T0 @X0 1 a ]
-"43
-[; ;main.c: 43:     float humedad, tempe,dhterr;
+[v _diley `uc ~T0 @X0 1 a ]
+[e = _diley -> -> 100 `i `uc ]
+"46
+[; ;main.c: 46:     float humedad, tempe,dhterr;
 [v _humedad `f ~T0 @X0 1 a ]
 [v _tempe `f ~T0 @X0 1 a ]
 [v _dhterr `f ~T0 @X0 1 a ]
-"44
-[; ;main.c: 44:     uint8_t buffer[34];
+"47
+[; ;main.c: 47:     uint8_t buffer[34];
 [v _buffer `uc ~T0 @X0 -> 34 `i a ]
-"46
-[; ;main.c: 46:     SYSTEM_Initialize();
+"49
+[; ;main.c: 49:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"62
-[; ;main.c: 62:     (INTCON0bits.GIE = 1);
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"66
-[; ;main.c: 66:     printf("Hola ds1307\n");
-[e ( _printf :s 1C ]
-"67
-[; ;main.c: 67:     _delay((unsigned long)((100)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"68
-[; ;main.c: 68:     uint8_t hr,min,sec,mes,dia,anno,diasem;
-[v _hr `uc ~T0 @X0 1 a ]
-[v _min `uc ~T0 @X0 1 a ]
-[v _sec `uc ~T0 @X0 1 a ]
-[v _mes `uc ~T0 @X0 1 a ]
-[v _dia `uc ~T0 @X0 1 a ]
-[v _anno `uc ~T0 @X0 1 a ]
-[v _diasem `uc ~T0 @X0 1 a ]
-"77
-[; ;main.c: 77:     while (1)
-[e :U 3253 ]
-"78
-[; ;main.c: 78:     {
-{
-"79
-[; ;main.c: 79:         printf("contador %d\n",contador ++);
-[e ( _printf , (. :s 2C -> ++ _contador -> -> 1 `i `us `ui ]
-"80
-[; ;main.c: 80:         do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-[e :U 3257 ]
-{
-[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
-}
-[e :U 3256 ]
-"88
-[; ;main.c: 88:         ADCvalor = ADC_GetSingleConversion(POT1);
-[e = _ADCvalor ( _ADC_GetSingleConversion (1 . `E23223 0 ]
-"90
-[; ;main.c: 90:         printf("La ADC es: %d\n",ADCvalor);
-[e ( _printf , (. :s 3C -> _ADCvalor `ui ]
-"91
-[; ;main.c: 91:         _delay((unsigned long)((1500)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 1500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"168
-[; ;main.c: 168:     }
-}
-[e :U 3252 ]
-[e $U 3253  ]
+"57
+[; ;main.c: 57:     stepper_init(200);
+[e ( _stepper_init (1 -> 200 `i ]
+"58
+[; ;main.c: 58:     stepper_setSpeed(60);
+[e ( _stepper_setSpeed (1 -> -> 60 `i `l ]
+"85
+[; ;main.c: 85:     while (1)
 [e :U 3254 ]
-"169
-[; ;main.c: 169: }
-[e :UE 3251 ]
+"86
+[; ;main.c: 86:     {
+{
+"88
+[; ;main.c: 88:         stepper_step(200);
+[e ( _stepper_step (1 -> 200 `i ]
+"89
+[; ;main.c: 89:         _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"93
+[; ;main.c: 93:         stepper_step(-200);
+[e ( _stepper_step (1 -U -> 200 `i ]
+"94
+[; ;main.c: 94:         _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"184
+[; ;main.c: 184:     }
 }
-"176
-[; ;main.c: 176: void Mpasos_init(){
+[e :U 3253 ]
+[e $U 3254  ]
+[e :U 3255 ]
+"185
+[; ;main.c: 185: }
+[e :UE 3252 ]
+}
+"192
+[; ;main.c: 192: void Mpasos_init(){
 [v _Mpasos_init `(v ~T0 @X0 1 ef ]
 {
 [e :U _Mpasos_init ]
 [f ]
-"177
-[; ;main.c: 177:     LATF = 0;
+"193
+[; ;main.c: 193:     LATF = 0;
 [e = _LATF -> -> 0 `i `uc ]
-"178
-[; ;main.c: 178:     PORTF = 0;
+"194
+[; ;main.c: 194:     PORTF = 0;
 [e = _PORTF -> -> 0 `i `uc ]
-"179
-[; ;main.c: 179:     TRISF &= ~( (1<<7)|(1<<6)|(1<<5)|(1<<4) );
+"195
+[; ;main.c: 195:     TRISF &= ~( (1<<7)|(1<<6)|(1<<5)|(1<<4) );
 [e =& _TRISF -> ~ | | | << -> 1 `i -> 7 `i << -> 1 `i -> 6 `i << -> 1 `i -> 5 `i << -> 1 `i -> 4 `i `Vuc ]
-"180
-[; ;main.c: 180: }
-[e :UE 3258 ]
+"196
+[; ;main.c: 196: }
+[e :UE 3256 ]
 }
-[p f _printf 8388736 ]
-[a 2C 99 111 110 116 97 100 111 114 32 37 100 10 0 ]
-[a 3C 76 97 32 65 68 67 32 101 115 58 32 37 100 10 0 ]
-[a 1C 72 111 108 97 32 100 115 49 51 48 55 10 0 ]

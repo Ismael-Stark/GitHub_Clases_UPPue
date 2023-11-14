@@ -40080,12 +40080,33 @@ void CGRAM_x(uint8_t p);
     void ds1307_OUT(void);
 # 7 "main.c" 2
 
+# 1 "./Stepper.h" 1
+# 82 "./Stepper.h"
+    void stepper_init(int number_of_steps);
+
+    void stepper_setSpeed(long whatSpeed);
+
+    void stepper_step(int steps_to_move);
+    int stepper_version(void);
 
 
+    static void stepMotor(int this_step);
+    static void delay_us_stepper(uint32_t x);
+
+    struct Stepper{
+        int direction;
+        unsigned long step_delay;
+        int number_of_steps;
+        int pin_count;
+        int step_number;
+# 107 "./Stepper.h"
+        unsigned long last_step_time;
+    };
 
 
-
-
+    struct Stepper stepper;
+# 8 "main.c" 2
+# 17 "main.c"
 _Bool DatoSerialDiponible = 0;
 extern uint8_t buffer[50];
 
@@ -40094,7 +40115,7 @@ uint8_t Pasos_Soft[4][4] = { {1,0,0,0},
                                 {0,0,1,0},
                                 {0,0,0,1},
                            };
-# 31 "main.c"
+# 34 "main.c"
 float map(float x, float in_min, float in_max, float out_min, float out_max) {
   return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
 }
@@ -40106,36 +40127,32 @@ void main(void)
 {
     uint16_t ADCvalor, SensorSharp, contador=0;
     float temperatura, distancia;
-    uint8_t lecturaSerial;
+    uint8_t lecturaSerial, diley=100;
     float humedad, tempe,dhterr;
     uint8_t buffer[34];
 
     SYSTEM_Initialize();
-# 62 "main.c"
-    (INTCON0bits.GIE = 1);
 
 
 
-    printf("Hola ds1307\n");
-    _delay((unsigned long)((100)*(10000000/4000.0)));
-    uint8_t hr,min,sec,mes,dia,anno,diasem;
-# 77 "main.c"
+
+
+
+
+    stepper_init(200);
+    stepper_setSpeed(60);
+# 85 "main.c"
     while (1)
     {
-        printf("contador %d\n",contador ++);
-        do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+
+        stepper_step(200);
+        _delay((unsigned long)((500)*(10000000/4000.0)));
 
 
 
-
-
-
-
-        ADCvalor = ADC_GetSingleConversion(POT1);
-
-        printf("La ADC es: %d\n",ADCvalor);
-        _delay((unsigned long)((1500)*(10000000/4000.0)));
-# 168 "main.c"
+        stepper_step(-200);
+        _delay((unsigned long)((500)*(10000000/4000.0)));
+# 184 "main.c"
     }
 }
 

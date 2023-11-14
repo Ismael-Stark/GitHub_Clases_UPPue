@@ -4123,8 +4123,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :UE 3260 ]
 }
 "224
-[; ;mcc_generated_files/uart1.c: 224: int getch(void)
-[v _getch `(i ~T0 @X0 1 ef ]
+[; ;mcc_generated_files/uart1.c: 224: char getch(void)
+[v _getch `(uc ~T0 @X0 1 ef ]
 "225
 [; ;mcc_generated_files/uart1.c: 225: {
 {
@@ -4132,7 +4132,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "226
 [; ;mcc_generated_files/uart1.c: 226:     return UART1_Read();
-[e ) -> ( _UART1_Read ..  `i ]
+[e ) -> ( _UART1_Read ..  `uc ]
 [e $UE 3267  ]
 "227
 [; ;mcc_generated_files/uart1.c: 227: }

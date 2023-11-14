@@ -1,0 +1,71 @@
+
+ROM used:   1188/8192 (15%)
+            1188/8192 (15%) including unused fragments
+
+            0.1 Average locations per line
+            9.8 Average locations per statement
+
+RAM used:   25/1024 (2%) at main() level
+            43/1024 (4%) worst case
+
+Stack used: 2 worst case (2 in main + 0 for interrupts)
+Stack size: 16
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   89    49  40  main(HolaMundo).c
+   23     0   0  main_h.h
+ 2190     0   0  C:\Program Files (x86)\PICC\Devices\16F18855.h
+ 5454     0   0  PIC16F18855_registers.h
+  195     0   0  C:\Program Files (x86)\PICC\Drivers\stdint.h
+  125    72  60  tm1637yo.c
+----- -----
+ 8076   121 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     21   2    1             @delay_ms1
+0     36   3    4             @I2C_READ_129
+0     36   3    1             @I2C_WRITE_129
+0     11   1    0     78  1.2  TM1637_start
+0     21   2    0    144  1.3  TM1637_stop
+0     18   2    1    149  2.2  TM1637_ask
+0     34   3    3    359  6.0  TM1637_WrByte
+0     34   3    3    407  4.1  TM1637_init
+0     20   2    3    223  3.0  TM1637_Display
+0     29   2    4    367  2.1  TM1637_DisplayAll
+0    313  26    8   1724  6.3  main
+0     22   2    0             @const4737
+0     83   7    4             @PSTRINGC7_115200_112_113
+0     26   2    0             @const4742
+0     89   7    4             @PSTRINGCN7_115200_112_113
+0     21   2    3    431  3.8  @DIV88
+0    104   9    8             @PRINTF_D_115200_112_113
+0     66   6    2             @PRINTF_U_115200_112_113
+0     37   3    5             @DIVS88
+0    164  14    7    431  3.8  leer_sensor
+ Inline         2             @MUL88
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               10
+    Statements              121
+    Comments                434
+    Volume (V)              6584
+    Difficulty (D)          32.9
+    Effort to implement (E) 216425
+    Time to implement (T)   3 hours, 20 minutes
+    Est Delivered Bugs (B)  1
+    Cyclomatic Complexity   3
+    Maintainability (MI)    62
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     3  0  
+00003-007FF  1185  860  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01FFF     0  2048  
+
+
+

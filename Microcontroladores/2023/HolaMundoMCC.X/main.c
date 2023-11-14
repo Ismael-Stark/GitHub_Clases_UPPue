@@ -3,8 +3,11 @@
 #include <pic18f57q84.h>
 #include "DHT11.h"
 #include "HC_SR04.h"
-#include "LCD_i2c.h"]
+#include "LCD_i2c.h"
 #include "DS1307.h"
+#include "Stepper.h"
+
+#define stepsPerRevolution 200 //pasos fijos del motor a 1.8grados
 /*
                          Main application
  */
@@ -39,7 +42,7 @@ void main(void)
 {
     uint16_t ADCvalor, SensorSharp, contador=0;
     float temperatura, distancia;
-    uint8_t lecturaSerial;
+    uint8_t lecturaSerial, diley=100;
     float humedad, tempe,dhterr;
     uint8_t buffer[34];
     // Initialize the device
@@ -51,7 +54,12 @@ void main(void)
     //__delay_ms(100);
     
     //Mpasos_init();
+    stepper_init(stepsPerRevolution);
+    stepper_setSpeed(60);
     
+    
+
+
     
     
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
@@ -59,13 +67,13 @@ void main(void)
     // Use the following macros to:
 
     // Enable the Global Interrupts
-    INTERRUPT_GlobalInterruptEnable();
+    //INTERRUPT_GlobalInterruptEnable();
 
     // Disable the Global Interrupts
     //INTERRUPT_GlobalInterruptDisable();
-    printf("Hola ds1307\n");
-    __delay_ms(100);
-    uint8_t hr,min,sec,mes,dia,anno,diasem;
+    //printf("Hola ds1307\n");
+    //__delay_ms(100);
+    //uint8_t hr,min,sec,mes,dia,anno,diasem;
     //ds1307_init();
     
     /////// ds1307_set_date_time(day,mth,year,dow,hour,min,sec)
@@ -75,9 +83,17 @@ void main(void)
     //ds1307_set_date(day,mth,year,dow)
     //ds1307_set_date(16,8,23,3);
     while (1)
-    {        
-        printf("contador %d\n",contador ++);
-        LED1_Toggle();
+    {   
+        //printf("clockwise\n");
+        stepper_step(stepsPerRevolution);
+        __delay_ms(500);
+
+    // step one revolution in the other direction:
+        //printf("counterclockwise\n");
+        stepper_step(-stepsPerRevolution);
+        __delay_ms(500);
+        //printf("contador %d\n",contador ++);
+        //LED1_Toggle();
 //        /// ds1307_get_time(hr,min,sec)
 //        ds1307_get_time(&hr,&min,&sec);
 //        /// ds1307_get_date(day,mth,year,dow)
@@ -85,10 +101,10 @@ void main(void)
 //        printf("La hora es: %00d:%00d:%00d\n",hr,min,sec);
 //        printf("La fecha es: %d/%d/%d\n",dia,mes,anno);
         
-        ADCvalor = ADC_GetSingleConversion(POT1);
+        //ADCvalor = ADC_GetSingleConversion(POT1);
         
-        printf("La ADC es: %d\n",ADCvalor);
-        __delay_ms(1500);
+        //printf("La ADC es: %d\n",ADCvalor);
+        //__delay_ms(1500);
 //        for(uint8_t i = 0 ; i<4;i++){
 //            LATFbits.LATF4 = Pasos_Soft[i][3];
 //            __delay_ms(1);
