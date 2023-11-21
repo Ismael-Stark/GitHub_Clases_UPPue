@@ -38809,9 +38809,9 @@ unsigned char __t3rd16on(void);
 # 50 "mcc_generated_files/mcc.h" 2
 
 # 1 "mcc_generated_files/pin_manager.h" 1
-# 222 "mcc_generated_files/pin_manager.h"
+# 242 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 234 "mcc_generated_files/pin_manager.h"
+# 254 "mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "mcc_generated_files/mcc.h" 2
 

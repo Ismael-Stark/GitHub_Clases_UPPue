@@ -38810,9 +38810,9 @@ unsigned char __t3rd16on(void);
 # 50 "./mcc_generated_files/mcc.h" 2
 
 # 1 "./mcc_generated_files/pin_manager.h" 1
-# 222 "./mcc_generated_files/pin_manager.h"
+# 242 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 234 "./mcc_generated_files/pin_manager.h"
+# 254 "./mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
 # 51 "./mcc_generated_files/mcc.h" 2
 
@@ -39517,6 +39517,10 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
 # 33 "main.c" 2
 
 
+
+void activarMotor();
+void pulsos(int pulsos);
+
 char texto[13];
 char UID[13];
 char buf[8];
@@ -39552,12 +39556,23 @@ void main(void)
 {
 
     SYSTEM_Initialize();
-# 80 "main.c"
+# 84 "main.c"
     do { LATFbits.LATF3 = 0; } while(0);
     _delay((unsigned long)((100)*(10000000/4000.0)));
     printf("Hola mundo mcc SoftSpi\n");
     Soft_SPI_Init();
     MFRC522_Init();
+
+    for (int i = 0; i < 5; i++) {
+
+        LATAbits.LATA0 = 1;
+        _delay((unsigned long)((1)*(10000000/4000.0)));
+
+        LATAbits.LATA0 = 0;
+        _delay((unsigned long)((1)*(10000000/4000.0)));
+
+    }
+     _delay((unsigned long)((500)*(10000000/4000.0)));
 
     while (1)
     {
@@ -39592,6 +39607,7 @@ void main(void)
 
                 if (codigo_rfid == 3731160114) {
                     do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+                    activarMotor();
                     printf("TAG1\r\n");
 
                 } else if (codigo_rfid == 3881036155) {
@@ -39602,8 +39618,10 @@ void main(void)
 
                     printf("TAG3\r\n");
 
-                } else if (codigo_rfid == 3727351763) {
+                } else if (codigo_rfid == 563250307) {
 
+                    do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+                    activarMotor();
                     printf("TAG4\r\n");
 
                 }
@@ -39622,4 +39640,23 @@ void main(void)
         }
 
     }
+}
+
+void activarMotor(){
+    pulsos(200);
+    _delay((unsigned long)((800)*(10000000/4000.0)));
+    pulsos(200);
+    _delay((unsigned long)((1000)*(10000000/4000.0)));
+
+}
+
+void pulsos(int pulsos){
+    for (int i=0;i<pulsos;i++){
+        LATAbits.LATA0 = 1;
+        _delay((unsigned long)((1)*(10000000/4000.0)));
+
+        LATAbits.LATA0 = 0;
+        _delay((unsigned long)((1)*(10000000/4000.0)));
+    }
+
 }

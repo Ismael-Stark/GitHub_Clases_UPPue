@@ -32,6 +32,10 @@
 #include "stdio.h"
 #include "string.h"
 
+#define anchoPulsos 1
+void activarMotor();
+void pulsos(int pulsos);
+
 char texto[13];
 char UID[13]; // almacena el buffer del codigo de rfid
 char buf[8];  
@@ -82,6 +86,17 @@ void main(void)
     printf("Hola mundo mcc SoftSpi\n");
     Soft_SPI_Init();
     MFRC522_Init(); //inicializa la tarjeta
+    
+    for (int i = 0; i < 5; i++) {
+    
+        LATAbits.LATA0 = 1;
+        __delay_ms(1);
+
+        LATAbits.LATA0 = 0;
+        __delay_ms(1);
+    
+    }
+     __delay_ms(500);
 
     while (1)
     {
@@ -116,6 +131,7 @@ void main(void)
 
                 if (codigo_rfid == 3731160114) {
                     LED_Toggle();
+                    activarMotor();
                     printf("TAG1\r\n");
 
                 } else if (codigo_rfid == 3881036155) {
@@ -126,8 +142,10 @@ void main(void)
                     //led3 = ~led3;
                     printf("TAG3\r\n");
 
-                } else if (codigo_rfid == 3727351763) {
+                } else if (codigo_rfid == 563250307) {
                     //led4 = ~led4;
+                    LED_Toggle();
+                    activarMotor();
                     printf("TAG4\r\n");
 
                 }
@@ -147,6 +165,28 @@ void main(void)
         //while(MFRC522_isCard(&TagType));
     }//fin while
 }//Fin Main
+
+void activarMotor(){
+    pulsos(200);
+    __delay_ms(800);
+    pulsos(200);
+    __delay_ms(1000);
+
+}
+
+void pulsos(int pulsos){
+    for (int i=0;i<pulsos;i++){
+        LATAbits.LATA0 = 1;
+        __delay_ms(anchoPulsos);
+
+        LATAbits.LATA0 = 0;
+        __delay_ms(anchoPulsos);
+    }
+    
+}
+
+
+
 /**
  End of File
 */

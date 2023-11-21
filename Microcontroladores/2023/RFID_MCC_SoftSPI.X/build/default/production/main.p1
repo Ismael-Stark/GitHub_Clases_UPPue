@@ -80,8 +80,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _LATFbits `VS3126 ~T0 @X0 0 e@1219 ]
 "111 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
 [v _printf `(i ~T0 @X0 0 ev`*Cuc ]
-"113
+"2930 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
+[s S3117 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S3117 . LATA0 LATA1 LATA2 LATA3 LATA4 LATA5 LATA6 LATA7 ]
+"2929
+[u S3116 `S3117 1 ]
+[n S3116 . . ]
+"2941
+[v _LATAbits `VS3116 ~T0 @X0 0 e@1214 ]
+"113 C:\Program Files\Microchip\xc8\v2.32\pic\include\c99\stdio.h
 [v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
+"36 main.c
+[; ;main.c: 36: void activarMotor();
+[v _activarMotor `(v ~T0 @X0 0 e? ]
+"37
+[; ;main.c: 37: void pulsos(int pulsos);
+[v _pulsos `(v ~T0 @X0 0 ef1`i ]
 "362 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f57q84.h: 362: __asm("BOOTREG equ 038h");
 [; <" BOOTREG equ 038h ;# ">
@@ -5057,239 +5071,344 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./RC522.h: 471: }
 [e :UE 3340 ]
 }
-"35 main.c
-[; ;main.c: 35: char texto[13];
+"39 main.c
+[; ;main.c: 39: char texto[13];
 [v _texto `uc ~T0 @X0 -> 13 `i e ]
-"36
-[; ;main.c: 36: char UID[13];
-[v _UID `uc ~T0 @X0 -> 13 `i e ]
-"37
-[; ;main.c: 37: char buf[8];
-[v _buf `uc ~T0 @X0 -> 8 `i e ]
 "40
-[; ;main.c: 40: unsigned int TagType;
-[v _TagType `ui ~T0 @X0 1 e ]
+[; ;main.c: 40: char UID[13];
+[v _UID `uc ~T0 @X0 -> 13 `i e ]
 "41
-[; ;main.c: 41: char cont;
-[v _cont `uc ~T0 @X0 1 e ]
+[; ;main.c: 41: char buf[8];
+[v _buf `uc ~T0 @X0 -> 8 `i e ]
+"44
+[; ;main.c: 44: unsigned int TagType;
+[v _TagType `ui ~T0 @X0 1 e ]
 "45
-[; ;main.c: 45: unsigned long codigo_rfid;
+[; ;main.c: 45: char cont;
+[v _cont `uc ~T0 @X0 1 e ]
+"49
+[; ;main.c: 49: unsigned long codigo_rfid;
 [v _codigo_rfid `ul ~T0 @X0 1 e ]
-"50
-[; ;main.c: 50: unsigned long Hash_algoritmo() {
+"54
+[; ;main.c: 54: unsigned long Hash_algoritmo() {
 [v _Hash_algoritmo `(ul ~T0 @X0 1 ef ]
 {
 [e :U _Hash_algoritmo ]
 [f ]
-"51
-[; ;main.c: 51:     unsigned long hash_acum = 2166136261;
+"55
+[; ;main.c: 55:     unsigned long hash_acum = 2166136261;
 [v _hash_acum `ul ~T0 @X0 1 a ]
 [e = _hash_acum -> -> 2166136261 `o `ul ]
-"53
-[; ;main.c: 53:     for (cont = 0; cont <= 4; cont++)
+"57
+[; ;main.c: 57:     for (cont = 0; cont <= 4; cont++)
 {
 [e = _cont -> -> 0 `i `uc ]
 [e $ <= -> _cont `i -> 4 `i 3345  ]
 [e $U 3346  ]
 [e :U 3345 ]
-"54
-[; ;main.c: 54:     {
+"58
+[; ;main.c: 58:     {
 {
-"56
-[; ;main.c: 56:         hash_acum = (hash_acum * 16777619) ^ UID[cont];
+"60
+[; ;main.c: 60:         hash_acum = (hash_acum * 16777619) ^ UID[cont];
 [e = _hash_acum ^ * _hash_acum -> -> 16777619 `l `ul -> *U + &U _UID * -> _cont `ux -> -> # *U &U _UID `ui `ux `ul ]
-"57
-[; ;main.c: 57:     }
+"61
+[; ;main.c: 61:     }
 }
 [e ++ _cont -> -> 1 `i `uc ]
 [e $ <= -> _cont `i -> 4 `i 3345  ]
 [e :U 3346 ]
 }
-"59
-[; ;main.c: 59:     return (hash_acum);
+"63
+[; ;main.c: 63:     return (hash_acum);
 [e ) _hash_acum ]
 [e $UE 3344  ]
-"60
-[; ;main.c: 60: }
+"64
+[; ;main.c: 64: }
 [e :UE 3344 ]
 }
 [v $root$_main `(v ~T0 @X0 0 e ]
-"66
-[; ;main.c: 66: void main(void)
+"70
+[; ;main.c: 70: void main(void)
 [v _main `(v ~T0 @X0 1 ef ]
-"67
-[; ;main.c: 67: {
+"71
+[; ;main.c: 71: {
 {
 [e :U _main ]
 [f ]
-"69
-[; ;main.c: 69:     SYSTEM_Initialize();
+"73
+[; ;main.c: 73:     SYSTEM_Initialize();
 [e ( _SYSTEM_Initialize ..  ]
-"80
-[; ;main.c: 80:     do { LATFbits.LATF3 = 0; } while(0);
+"84
+[; ;main.c: 84:     do { LATFbits.LATF3 = 0; } while(0);
 [e :U 3351 ]
 {
 [e = . . _LATFbits 0 3 -> -> 0 `i `uc ]
 }
 [e :U 3350 ]
-"81
-[; ;main.c: 81:     _delay((unsigned long)((100)*(10000000/4000.0)));
+"85
+[; ;main.c: 85:     _delay((unsigned long)((100)*(10000000/4000.0)));
 [e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"82
-[; ;main.c: 82:     printf("Hola mundo mcc SoftSpi\n");
-[e ( _printf :s 1C ]
-"83
-[; ;main.c: 83:     Soft_SPI_Init();
-[e ( _Soft_SPI_Init ..  ]
-"84
-[; ;main.c: 84:     MFRC522_Init();
-[e ( _MFRC522_Init ..  ]
 "86
-[; ;main.c: 86:     while (1)
-[e :U 3353 ]
+[; ;main.c: 86:     printf("Hola mundo mcc SoftSpi\n");
+[e ( _printf :s 1C ]
 "87
-[; ;main.c: 87:     {
+[; ;main.c: 87:     Soft_SPI_Init();
+[e ( _Soft_SPI_Init ..  ]
+"88
+[; ;main.c: 88:     MFRC522_Init();
+[e ( _MFRC522_Init ..  ]
+"90
+[; ;main.c: 90:     for (int i = 0; i < 5; i++) {
 {
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $ < _i -> 5 `i 3352  ]
+[e $U 3353  ]
+[e :U 3352 ]
+{
+"92
+[; ;main.c: 92:         LATAbits.LATA0 = 1;
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
 "93
-[; ;main.c: 93:         if (MFRC522_isCard(&TagType)) {
-[e $ ! != -> ( _MFRC522_isCard (1 -> &U _TagType `*uc `i -> 0 `i 3355  ]
-{
+[; ;main.c: 93:         _delay((unsigned long)((1)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
 "95
-[; ;main.c: 95:             if (MFRC522_ReadCardSerial(&UID)) {
-[e $ ! != -> ( _MFRC522_ReadCardSerial (1 -> &U _UID `*uc `i -> 0 `i 3356  ]
-{
-"97
-[; ;main.c: 97:                 printf("CODIGO_UID=");
-[e ( _printf :s 2C ]
+[; ;main.c: 95:         LATAbits.LATA0 = 0;
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+"96
+[; ;main.c: 96:         _delay((unsigned long)((1)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
 "98
-[; ;main.c: 98:                 for (char i = 0; i < 4; i++)
+[; ;main.c: 98:     }
+}
+[e ++ _i -> 1 `i ]
+[e $ < _i -> 5 `i 3352  ]
+[e :U 3353 ]
+}
+"99
+[; ;main.c: 99:      _delay((unsigned long)((500)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"101
+[; ;main.c: 101:     while (1)
+[e :U 3356 ]
+"102
+[; ;main.c: 102:     {
+{
+"108
+[; ;main.c: 108:         if (MFRC522_isCard(&TagType)) {
+[e $ ! != -> ( _MFRC522_isCard (1 -> &U _TagType `*uc `i -> 0 `i 3358  ]
+{
+"110
+[; ;main.c: 110:             if (MFRC522_ReadCardSerial(&UID)) {
+[e $ ! != -> ( _MFRC522_ReadCardSerial (1 -> &U _UID `*uc `i -> 0 `i 3359  ]
+{
+"112
+[; ;main.c: 112:                 printf("CODIGO_UID=");
+[e ( _printf :s 2C ]
+"113
+[; ;main.c: 113:                 for (char i = 0; i < 4; i++)
 {
 [v _i `uc ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `uc ]
-[e $ < -> _i `i -> 4 `i 3357  ]
-[e $U 3358  ]
-[e :U 3357 ]
-"99
-[; ;main.c: 99:                 {
+[e $ < -> _i `i -> 4 `i 3360  ]
+[e $U 3361  ]
+[e :U 3360 ]
+"114
+[; ;main.c: 114:                 {
 {
-"100
-[; ;main.c: 100:                     sprintf(buf,"%X", UID[i] );
+"115
+[; ;main.c: 115:                     sprintf(buf,"%X", UID[i] );
 [e ( _sprintf (1 , (. , &U _buf :s 3C -> *U + &U _UID * -> _i `ux -> -> # *U &U _UID `ui `ux `i ]
-"101
-[; ;main.c: 101:                     printf(buf);
+"116
+[; ;main.c: 116:                     printf(buf);
 [e ( _printf -> &U _buf `*Cuc ]
-"102
-[; ;main.c: 102:                 }
+"117
+[; ;main.c: 117:                 }
 }
 [e ++ _i -> -> 1 `i `uc ]
-[e $ < -> _i `i -> 4 `i 3357  ]
-[e :U 3358 ]
+[e $ < -> _i `i -> 4 `i 3360  ]
+[e :U 3361 ]
 }
-"104
-[; ;main.c: 104:                 printf("\n");
+"119
+[; ;main.c: 119:                 printf("\n");
 [e ( _printf :s 4C ]
-"106
-[; ;main.c: 106:                 codigo_rfid = Hash_algoritmo();
+"121
+[; ;main.c: 121:                 codigo_rfid = Hash_algoritmo();
 [e = _codigo_rfid ( _Hash_algoritmo ..  ]
-"107
-[; ;main.c: 107:                 sprintf(texto, "%lu", codigo_rfid);
+"122
+[; ;main.c: 122:                 sprintf(texto, "%lu", codigo_rfid);
 [e ( _sprintf (1 , (. , &U _texto :s 5C _codigo_rfid ]
-"112
-[; ;main.c: 112:                 printf("CODIGO_RFID=");
+"127
+[; ;main.c: 127:                 printf("CODIGO_RFID=");
 [e ( _printf :s 6C ]
-"113
-[; ;main.c: 113:                 printf(texto);
+"128
+[; ;main.c: 128:                 printf(texto);
 [e ( _printf -> &U _texto `*Cuc ]
-"115
-[; ;main.c: 115:                 printf("\n");
+"130
+[; ;main.c: 130:                 printf("\n");
 [e ( _printf :s 7C ]
-"117
-[; ;main.c: 117:                 if (codigo_rfid == 3731160114) {
-[e $ ! == -> _codigo_rfid `o -> 3731160114 `o 3360  ]
+"132
+[; ;main.c: 132:                 if (codigo_rfid == 3731160114) {
+[e $ ! == -> _codigo_rfid `o -> 3731160114 `o 3363  ]
 {
-"118
-[; ;main.c: 118:                     do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
-[e :U 3363 ]
+"133
+[; ;main.c: 133:                     do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+[e :U 3366 ]
 {
 [e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
 }
-[e :U 3362 ]
-"119
-[; ;main.c: 119:                     printf("TAG1\r\n");
-[e ( _printf :s 8C ]
-"121
-[; ;main.c: 121:                 } else if (codigo_rfid == 3881036155) {
-}
-[e $U 3364  ]
-[e :U 3360 ]
-[e $ ! == -> _codigo_rfid `o -> 3881036155 `o 3365  ]
-{
-"123
-[; ;main.c: 123:                     printf("TAG2\r\n");
-[e ( _printf :s 9C ]
-"125
-[; ;main.c: 125:                 } else if (codigo_rfid == 2884436501) {
-}
-[e $U 3366  ]
 [e :U 3365 ]
-[e $ ! == -> _codigo_rfid `o -> 2884436501 `o 3367  ]
-{
-"127
-[; ;main.c: 127:                     printf("TAG3\r\n");
-[e ( _printf :s 10C ]
-"129
-[; ;main.c: 129:                 } else if (codigo_rfid == 3727351763) {
-}
-[e $U 3368  ]
-[e :U 3367 ]
-[e $ ! == -> _codigo_rfid `o -> 3727351763 `o 3369  ]
-{
-"131
-[; ;main.c: 131:                     printf("TAG4\r\n");
-[e ( _printf :s 11C ]
-"133
-[; ;main.c: 133:                 }
-}
-[e :U 3369 ]
-[e :U 3368 ]
-[e :U 3366 ]
-[e :U 3364 ]
+"134
+[; ;main.c: 134:                     activarMotor();
+[e ( _activarMotor ..  ]
 "135
-[; ;main.c: 135:                 codigo_rfid = 0;
-[e = _codigo_rfid -> -> -> 0 `i `l `ul ]
-"138
-[; ;main.c: 138:                 _delay((unsigned long)((100)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"140
-[; ;main.c: 140:                 while(MFRC522_ReadCardSerial(&UID));
-[e $U 3370  ]
-[e :U 3371 ]
-[e :U 3370 ]
-[e $ != -> ( _MFRC522_ReadCardSerial (1 -> &U _UID `*uc `i -> 0 `i 3371  ]
-[e :U 3372 ]
-"141
-[; ;main.c: 141:                 _delay((unsigned long)((200)*(10000000/4000.0)));
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
-"142
-[; ;main.c: 142:             }
+[; ;main.c: 135:                     printf("TAG1\r\n");
+[e ( _printf :s 8C ]
+"137
+[; ;main.c: 137:                 } else if (codigo_rfid == 3881036155) {
 }
-[e :U 3356 ]
-"146
-[; ;main.c: 146:         }
+[e $U 3367  ]
+[e :U 3363 ]
+[e $ ! == -> _codigo_rfid `o -> 3881036155 `o 3368  ]
+{
+"139
+[; ;main.c: 139:                     printf("TAG2\r\n");
+[e ( _printf :s 9C ]
+"141
+[; ;main.c: 141:                 } else if (codigo_rfid == 2884436501) {
+}
+[e $U 3369  ]
+[e :U 3368 ]
+[e $ ! == -> _codigo_rfid `o -> 2884436501 `o 3370  ]
+{
+"143
+[; ;main.c: 143:                     printf("TAG3\r\n");
+[e ( _printf :s 10C ]
+"145
+[; ;main.c: 145:                 } else if (codigo_rfid == 563250307) {
+}
+[e $U 3371  ]
+[e :U 3370 ]
+[e $ ! == _codigo_rfid -> -> 563250307 `l `ul 3372  ]
+{
+"147
+[; ;main.c: 147:                     do { LATFbits.LATF3 = ~LATFbits.LATF3; } while(0);
+[e :U 3375 ]
+{
+[e = . . _LATFbits 0 3 -> ~ -> . . _LATFbits 0 3 `i `uc ]
+}
+[e :U 3374 ]
+"148
+[; ;main.c: 148:                     activarMotor();
+[e ( _activarMotor ..  ]
+"149
+[; ;main.c: 149:                     printf("TAG4\r\n");
+[e ( _printf :s 11C ]
+"151
+[; ;main.c: 151:                 }
+}
+[e :U 3372 ]
+[e :U 3371 ]
+[e :U 3369 ]
+[e :U 3367 ]
+"153
+[; ;main.c: 153:                 codigo_rfid = 0;
+[e = _codigo_rfid -> -> -> 0 `i `l `ul ]
+"156
+[; ;main.c: 156:                 _delay((unsigned long)((100)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 100 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"158
+[; ;main.c: 158:                 while(MFRC522_ReadCardSerial(&UID));
+[e $U 3376  ]
+[e :U 3377 ]
+[e :U 3376 ]
+[e $ != -> ( _MFRC522_ReadCardSerial (1 -> &U _UID `*uc `i -> 0 `i 3377  ]
+[e :U 3378 ]
+"159
+[; ;main.c: 159:                 _delay((unsigned long)((200)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"160
+[; ;main.c: 160:             }
+}
+[e :U 3359 ]
+"164
+[; ;main.c: 164:         }
+}
+[e :U 3358 ]
+"166
+[; ;main.c: 166:     }
 }
 [e :U 3355 ]
-"148
-[; ;main.c: 148:     }
-}
-[e :U 3352 ]
-[e $U 3353  ]
-[e :U 3354 ]
-"149
-[; ;main.c: 149: }
+[e $U 3356  ]
+[e :U 3357 ]
+"167
+[; ;main.c: 167: }
 [e :UE 3348 ]
 }
-[p f _sprintf 10486800 ]
+"169
+[; ;main.c: 169: void activarMotor(){
+[v _activarMotor `(v ~T0 @X0 1 ef ]
+{
+[e :U _activarMotor ]
+[f ]
+"170
+[; ;main.c: 170:     pulsos(200);
+[e ( _pulsos (1 -> 200 `i ]
+"171
+[; ;main.c: 171:     _delay((unsigned long)((800)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 800 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"172
+[; ;main.c: 172:     pulsos(200);
+[e ( _pulsos (1 -> 200 `i ]
+"173
+[; ;main.c: 173:     _delay((unsigned long)((1000)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"175
+[; ;main.c: 175: }
+[e :UE 3379 ]
+}
+"177
+[; ;main.c: 177: void pulsos(int pulsos){
+[v _pulsos `(v ~T0 @X0 1 ef1`i ]
+{
+[e :U _pulsos ]
+[v _pulsos `i ~T0 @X0 1 r1 ]
+[f ]
+"178
+[; ;main.c: 178:     for (int i=0;i<pulsos;i++){
+{
+[v _i `i ~T0 @X0 1 a ]
+[e = _i -> 0 `i ]
+[e $U 3384  ]
+[e :U 3381 ]
+{
+"179
+[; ;main.c: 179:         LATAbits.LATA0 = 1;
+[e = . . _LATAbits 0 0 -> -> 1 `i `uc ]
+"180
+[; ;main.c: 180:         _delay((unsigned long)((1)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"182
+[; ;main.c: 182:         LATAbits.LATA0 = 0;
+[e = . . _LATAbits 0 0 -> -> 0 `i `uc ]
+"183
+[; ;main.c: 183:         _delay((unsigned long)((1)*(10000000/4000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 10000000 `l `d .4000.0 `ul ]
+"184
+[; ;main.c: 184:     }
+}
+[e ++ _i -> 1 `i ]
+[e :U 3384 ]
+[e $ < _i _pulsos 3381  ]
+[e :U 3382 ]
+}
+"186
+[; ;main.c: 186: }
+[e :UE 3380 ]
+}
 [p f _printf 9437696 ]
+[p f _sprintf 10486800 ]
 [a 5C 37 108 117 0 ]
 [a 3C 37 88 0 ]
 [a 2C 67 79 68 73 71 79 95 85 73 68 61 0 ]
