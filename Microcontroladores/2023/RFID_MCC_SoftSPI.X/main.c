@@ -33,6 +33,8 @@
 #include "string.h"
 
 #define anchoPulsos 1
+#define habilitaMotor() LATAbits.LATA1 = 0
+#define deshabilitaMotor() LATAbits.LATA1 = 1
 void activarMotor();
 void pulsos(int pulsos);
 
@@ -71,6 +73,7 @@ void main(void)
 {
     // Initialize the device
     SYSTEM_Initialize();
+    deshabilitaMotor();
 
     // If using interrupts in PIC18 High/Low Priority Mode you need to enable the Global High and Low Interrupts
     // If using interrupts in PIC Mid-Range Compatibility Mode you need to enable the Global Interrupts
@@ -87,6 +90,7 @@ void main(void)
     Soft_SPI_Init();
     MFRC522_Init(); //inicializa la tarjeta
     
+    habilitaMotor();
     for (int i = 0; i < 5; i++) {
     
         LATAbits.LATA0 = 1;
@@ -96,6 +100,7 @@ void main(void)
         __delay_ms(1);
     
     }
+    deshabilitaMotor();
      __delay_ms(500);
 
     while (1)
@@ -175,6 +180,7 @@ void activarMotor(){
 }
 
 void pulsos(int pulsos){
+    habilitaMotor();
     for (int i=0;i<pulsos;i++){
         LATAbits.LATA0 = 1;
         __delay_ms(anchoPulsos);
@@ -182,6 +188,7 @@ void pulsos(int pulsos){
         LATAbits.LATA0 = 0;
         __delay_ms(anchoPulsos);
     }
+    deshabilitaMotor();
     
 }
 

@@ -1,5 +1,0 @@
-Compiling D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase_SensorTemp_TM1637(display7Seg)\main(HolaMundo) on 19-oct.-23 at 18:42
->>> Warning 202 "D:\OneDriveTrabajo\Clases\GitHub_Clases\Programacion de Perifericos\2023\PIC\Clase_SensorTemp_TM1637(display7Seg)\main(HolaMundo).c" Line 23(12,20): Variable never used:   contador
-      Memory usage:   ROM=15%      RAM=2% - 4%
-      0 Errors,  1 Warnings.
-Build Successful.
