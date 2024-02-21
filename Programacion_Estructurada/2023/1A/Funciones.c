@@ -25,7 +25,7 @@ void cuadrado_numero(int numero);
 //funcion que recibe un numero y no regresa el resultado
 
 float suma_numeros(float numero1, float numero2);
-
+//funcion que recibe dos numero y regresa el resultado
 
 
 int main(){

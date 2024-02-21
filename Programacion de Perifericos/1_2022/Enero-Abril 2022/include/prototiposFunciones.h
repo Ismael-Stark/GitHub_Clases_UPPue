@@ -23,7 +23,7 @@ El nombre asignado a la funcion
 la lista de parametros
 
 *el prototipo de una funcion se hace de la siguiente forma:
-tipo Nomre_de_la_funcion (lista deparametros o  lista de tipos de arcumentos);
+tipo Nomre_de_la_funcion (lista deparametros o  lista de tipos de argumentos);
 
 */
 
